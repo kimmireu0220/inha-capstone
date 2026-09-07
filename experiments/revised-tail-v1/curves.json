@@ -1,0 +1,1082 @@
+[
+  {
+    "branch": "P01",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-1.png",
+    "sha256": "3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043",
+    "metrics": {
+      "mae": 0.01682279445230961,
+      "ssim": 0.9092685580253601,
+      "lpips": 0.029075920581817627
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-2.png",
+    "sha256": "5edf621a615953f5454253bd0ea31f3c9b0a40ff0e037d0a27286c04e4a44a8e",
+    "metrics": {
+      "mae": 0.025318698957562447,
+      "ssim": 0.8610936999320984,
+      "lpips": 0.045663982629776
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-3.png",
+    "sha256": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+    "metrics": {
+      "mae": 0.03235635906457901,
+      "ssim": 0.8246541023254395,
+      "lpips": 0.06535055488348007
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-4.png",
+    "sha256": "93069e877fb11f264f2f8af78ab9c008158be25cdafee7422470c38d49eec4a6",
+    "metrics": {
+      "mae": 0.04575975611805916,
+      "ssim": 0.7748034000396729,
+      "lpips": 0.09369942545890808
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-5.png",
+    "sha256": "920021a6c61ee4781e4b3eea0c42cee999eaf258855b6ebe212f6f44d0b2f91e",
+    "metrics": {
+      "mae": 0.05325869098305702,
+      "ssim": 0.7275538444519043,
+      "lpips": 0.1472696214914322
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-6.png",
+    "sha256": "62722e56d65c4519472ba85f6cfbab205edb03e6362e434a6bc5f35b4d11ffe1",
+    "metrics": {
+      "mae": 0.05713431537151337,
+      "ssim": 0.7041564583778381,
+      "lpips": 0.15798193216323853
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-7.png",
+    "sha256": "e8abd8ccfffaead18ab620feeda61f6b002ad1e270ead96393bb47f846a761b2",
+    "metrics": {
+      "mae": 0.06003551930189133,
+      "ssim": 0.6880168914794922,
+      "lpips": 0.16779829561710358
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-8.png",
+    "sha256": "35960e73a70622c0624edddfc39de04be7967e1bd5d9672e4147f6e1e0995b7c",
+    "metrics": {
+      "mae": 0.06567317992448807,
+      "ssim": 0.6651027202606201,
+      "lpips": 0.17702649533748627
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P01",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c770278a2aa512cc0ba98d51e4482a2f034e87fafb628ac50b19e581e4b98d07.png",
+    "sha256": "c9452208da161ff37ad673d387e91d685c8462fce65c82a548dc1a6cf5a6eb6e",
+    "metrics": {
+      "mae": 0.07317664474248886,
+      "ssim": 0.6282134652137756,
+      "lpips": 0.20342886447906494
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P01",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/7c8d0946616d761ad2d55ef859cbfacf70d0a8a0e113205fcd9874e489821ef7.png",
+    "sha256": "7b8d398a7ebb4855be7f8667f496e49f6da50d799b6d50b41b51c9887772a2f7",
+    "metrics": {
+      "mae": 0.14570675790309906,
+      "ssim": 0.4989817440509796,
+      "lpips": 0.27048414945602417
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P02",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-1.png",
+    "sha256": "6422f8b64f6844af7ea0f0e89708fb3d74ee0a666f76ec2348b819285fa81386",
+    "metrics": {
+      "mae": 0.021788310259580612,
+      "ssim": 0.8218111991882324,
+      "lpips": 0.05121392011642456
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-2.png",
+    "sha256": "a5c7b3cb7efb45f4dc0700bb8d69adc8d87c42f27de5157c2bc7ab6ec1eb5ae5",
+    "metrics": {
+      "mae": 0.030131500214338303,
+      "ssim": 0.7501263618469238,
+      "lpips": 0.07663755118846893
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-3.png",
+    "sha256": "aeec89e4090fd037e749ed471be7f1378df4d528ceb7026ce935de3ecbaeb135",
+    "metrics": {
+      "mae": 0.03669736534357071,
+      "ssim": 0.6926453709602356,
+      "lpips": 0.0967579185962677
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-4.png",
+    "sha256": "0cbd67590dc9d6924e97a9bdeb700db2988b50c0b9ef26d4d2c9f61609779fd2",
+    "metrics": {
+      "mae": 0.04702320322394371,
+      "ssim": 0.6243091225624084,
+      "lpips": 0.12890082597732544
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-5.png",
+    "sha256": "de3404e40c52884eca4700f7141ed4dd245b04347493aa7030ef33d844da63f6",
+    "metrics": {
+      "mae": 0.07907287031412125,
+      "ssim": 0.4742469787597656,
+      "lpips": 0.18909992277622223
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-6.png",
+    "sha256": "3759fd3429ad1b07fe4effade7e47d5815091fb64b3f65f40321767d4f936596",
+    "metrics": {
+      "mae": 0.0823577344417572,
+      "ssim": 0.45751288533210754,
+      "lpips": 0.20260554552078247
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-7.png",
+    "sha256": "0affc060402d8b0072c4f0ae399f9b19d53b46764d81f434739084ab1399d67a",
+    "metrics": {
+      "mae": 0.08702487498521805,
+      "ssim": 0.4287870228290558,
+      "lpips": 0.23098960518836975
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-8.png",
+    "sha256": "15a93c0b704376c2a9e617da20ec9ad467618d63332beaaaf34673500c50b815",
+    "metrics": {
+      "mae": 0.09236957877874374,
+      "ssim": 0.3990817070007324,
+      "lpips": 0.2334298938512802
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P02",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/cf272b209fce91dcbb34a793ef6b4828230a54d0ed473de855d7cce5a13af6de.png",
+    "sha256": "f96bdff0df1d5a089625e70d6b99ef20b09138200735d9ebe7f22f4982555ca9",
+    "metrics": {
+      "mae": 0.09657423198223114,
+      "ssim": 0.3798588216304779,
+      "lpips": 0.259820818901062
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P02",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/d420a5bf6e07cffe19c5db8e418c56b5ca39efb940549ee148cc5a155c9c573a.png",
+    "sha256": "9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43",
+    "metrics": {
+      "mae": 0.1283421516418457,
+      "ssim": 0.36652669310569763,
+      "lpips": 0.26662883162498474
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-1.png",
+    "sha256": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+    "metrics": {
+      "mae": 0.016818616539239883,
+      "ssim": 0.8832266926765442,
+      "lpips": 0.0397653803229332
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-2.png",
+    "sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+    "metrics": {
+      "mae": 0.023919278755784035,
+      "ssim": 0.8415461182594299,
+      "lpips": 0.06436368077993393
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
+    "sha256": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+    "metrics": {
+      "mae": 0.035219378769397736,
+      "ssim": 0.8154917359352112,
+      "lpips": 0.08458372950553894
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
+    "sha256": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+    "metrics": {
+      "mae": 0.04619228467345238,
+      "ssim": 0.7493398189544678,
+      "lpips": 0.1184653639793396
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-5.png",
+    "sha256": "fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
+    "metrics": {
+      "mae": 0.12108762562274933,
+      "ssim": 0.4625864028930664,
+      "lpips": 0.24226857721805573
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-6.png",
+    "sha256": "66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
+    "metrics": {
+      "mae": 0.12087925523519516,
+      "ssim": 0.45227834582328796,
+      "lpips": 0.25372883677482605
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-7.png",
+    "sha256": "323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
+    "metrics": {
+      "mae": 0.12076550722122192,
+      "ssim": 0.4395838975906372,
+      "lpips": 0.2693564295768738
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-8.png",
+    "sha256": "8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
+    "metrics": {
+      "mae": 0.12047415226697922,
+      "ssim": 0.4257400333881378,
+      "lpips": 0.2859041690826416
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
+    "sha256": "d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465",
+    "metrics": {
+      "mae": 0.12254548072814941,
+      "ssim": 0.40891745686531067,
+      "lpips": 0.30787450075149536
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P03-r1",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
+    "sha256": "521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
+    "metrics": {
+      "mae": 0.2008240669965744,
+      "ssim": 0.25522199273109436,
+      "lpips": 0.41561371088027954
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
+    "sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
+    "metrics": {
+      "mae": 0.016378622502088547,
+      "ssim": 0.8791654706001282,
+      "lpips": 0.04099458456039429
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
+    "sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+    "metrics": {
+      "mae": 0.023844851180911064,
+      "ssim": 0.8237112164497375,
+      "lpips": 0.0622045174241066
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
+    "sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
+    "metrics": {
+      "mae": 0.03382294997572899,
+      "ssim": 0.771628201007843,
+      "lpips": 0.08722404390573502
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
+    "sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
+    "metrics": {
+      "mae": 0.04822344332933426,
+      "ssim": 0.7013835906982422,
+      "lpips": 0.13435223698616028
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
+    "sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
+    "metrics": {
+      "mae": 0.19147811830043793,
+      "ssim": 0.32670143246650696,
+      "lpips": 0.5045062303543091
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
+    "sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
+    "metrics": {
+      "mae": 0.19174440205097198,
+      "ssim": 0.32239654660224915,
+      "lpips": 0.505614161491394
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
+    "sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
+    "metrics": {
+      "mae": 0.19085060060024261,
+      "ssim": 0.3148510456085205,
+      "lpips": 0.5105254650115967
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
+    "sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
+    "metrics": {
+      "mae": 0.19178110361099243,
+      "ssim": 0.3048759996891022,
+      "lpips": 0.5150160789489746
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
+    "sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
+    "metrics": {
+      "mae": 0.19077569246292114,
+      "ssim": 0.29578396677970886,
+      "lpips": 0.5228796601295471
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P03-r2",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
+    "sha256": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
+    "metrics": {
+      "mae": 0.25273093581199646,
+      "ssim": 0.17960941791534424,
+      "lpips": 0.5659546256065369
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P04",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+    "sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+    "metrics": {
+      "mae": 0.01840371824800968,
+      "ssim": 0.8883209228515625,
+      "lpips": 0.031728047877550125
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+    "sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+    "metrics": {
+      "mae": 0.025968050584197044,
+      "ssim": 0.8348621726036072,
+      "lpips": 0.05477737635374069
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png",
+    "sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+    "metrics": {
+      "mae": 0.03271098807454109,
+      "ssim": 0.7871373295783997,
+      "lpips": 0.07703612744808197
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png",
+    "sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+    "metrics": {
+      "mae": 0.05544218793511391,
+      "ssim": 0.71294766664505,
+      "lpips": 0.12006574869155884
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png",
+    "sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+    "metrics": {
+      "mae": 0.13240620493888855,
+      "ssim": 0.4151075780391693,
+      "lpips": 0.34183269739151
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png",
+    "sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+    "metrics": {
+      "mae": 0.13438569009304047,
+      "ssim": 0.4023829996585846,
+      "lpips": 0.3525209426879883
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png",
+    "sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+    "metrics": {
+      "mae": 0.13611829280853271,
+      "ssim": 0.4022347033023834,
+      "lpips": 0.3479330241680145
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png",
+    "sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+    "metrics": {
+      "mae": 0.13804741203784943,
+      "ssim": 0.3897973299026489,
+      "lpips": 0.3590282201766968
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c39cf5cf388d11ff05256723aea92efedb1062f57f7dcb95a1a31d1e3f2d67b3.png",
+    "sha256": "69dd6819343740ae5cb234dcec7dd78d7998ba197a3a1b2da94a459382353519",
+    "metrics": {
+      "mae": 0.1399747133255005,
+      "ssim": 0.3754703104496002,
+      "lpips": 0.3721795082092285
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P04",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/eda17b0b5f52c14a740cbb1d937d90e7bfd2ebb33fd7fe887d5bbb1b6d1c4987.png",
+    "sha256": "5aa04a5c54be19bcc2bb750402d42bffcc8fb6dd4fc1d7d85ded4388fe163b08",
+    "metrics": {
+      "mae": 0.2195051908493042,
+      "ssim": 0.24451230466365814,
+      "lpips": 0.45022645592689514
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P05",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-1.png",
+    "sha256": "6d9106aa3aadeeb985b1878c5509ce0f5da341b972cfbce4be9c79454841b09d",
+    "metrics": {
+      "mae": 0.015822634100914,
+      "ssim": 0.8821151256561279,
+      "lpips": 0.048692625015974045
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-2.png",
+    "sha256": "f6f9652b5ac951928b29a122fdc799834db4acc6f9830732f5c09925e77bf305",
+    "metrics": {
+      "mae": 0.022392643615603447,
+      "ssim": 0.815277099609375,
+      "lpips": 0.06950265914201736
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-3.png",
+    "sha256": "5590e5c30ece7661bb1ac2d39e4c4d14f0c2dd48f62302623e4b03c967374eef",
+    "metrics": {
+      "mae": 0.0282905176281929,
+      "ssim": 0.7789292335510254,
+      "lpips": 0.09390426427125931
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-4.png",
+    "sha256": "9b1a43ca55185dd3d4b046d97d01afd48996708f2781878e37527aae66ea7709",
+    "metrics": {
+      "mae": 0.04256638512015343,
+      "ssim": 0.6973174214363098,
+      "lpips": 0.13186918199062347
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-5.png",
+    "sha256": "b29fc97456cd3f84f2b43093ccea9d3fe5702bb55f1d94c8be875da01a4b1130",
+    "metrics": {
+      "mae": 0.13363569974899292,
+      "ssim": 0.41188350319862366,
+      "lpips": 0.43358439207077026
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-6.png",
+    "sha256": "a47813f7d3aefc2c386f4384c503c27678447332af629c936c3fe5295902e42b",
+    "metrics": {
+      "mae": 0.13394500315189362,
+      "ssim": 0.40122947096824646,
+      "lpips": 0.4366246163845062
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-7.png",
+    "sha256": "824ca468c306cdae41af869c08bed8c0e10c4e1707bc2c9e74fce91fca53ab1a",
+    "metrics": {
+      "mae": 0.13378362357616425,
+      "ssim": 0.3929974138736725,
+      "lpips": 0.44054850935935974
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-8.png",
+    "sha256": "5952565501716b3ad06bbbd5e9d307c65ce548f0ed2c5e3aae046a7912bc4f37",
+    "metrics": {
+      "mae": 0.13546288013458252,
+      "ssim": 0.3777247965335846,
+      "lpips": 0.45329034328460693
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P05",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/9d5a2414af8ab26ea6b8232f73a50093c0f511d02bf8fa3ce7910213eeaa3323.png",
+    "sha256": "2ecf2d7404183ed9e9888331c55941bf86fceff3e4b66019dfe448122475a1fe",
+    "metrics": {
+      "mae": 0.13451658189296722,
+      "ssim": 0.37728404998779297,
+      "lpips": 0.45400717854499817
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P05",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/78f6bc399780d19df4f64cb8bbb4c0fcb6a48d10040828b34ff19058ab49f628.png",
+    "sha256": "d9f6bb7cb333570fa80e508e444b49db0e1cde91640e19f363e7c17b18ebc3f1",
+    "metrics": {
+      "mae": 0.24122847616672516,
+      "ssim": 0.24444396793842316,
+      "lpips": 0.5315648317337036
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P06",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-1.png",
+    "sha256": "5d52a0d716c9c76ad725e99e9910eb81a8db5770702f0e8e02e69aafd5818e14",
+    "metrics": {
+      "mae": 0.016039207577705383,
+      "ssim": 0.8770872950553894,
+      "lpips": 0.052219681441783905
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-2.png",
+    "sha256": "3b0dd622f8fe7c0ce8b4fb8173e2cf7f414d37dfc02b5b5ed5218ee1b7e428aa",
+    "metrics": {
+      "mae": 0.022228486835956573,
+      "ssim": 0.8333027362823486,
+      "lpips": 0.07619599997997284
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-3.png",
+    "sha256": "fbbc2f2a6163d555e1cfe9aa8bd0b836abb7242576e8e31f189650aa2a3a61dd",
+    "metrics": {
+      "mae": 0.02911248989403248,
+      "ssim": 0.7905220985412598,
+      "lpips": 0.0997520461678505
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-4.png",
+    "sha256": "999c822946c3ba0b1ba32398cf2aee0200536848c685cf8da8c0fc439dc5ea0c",
+    "metrics": {
+      "mae": 0.04030841961503029,
+      "ssim": 0.7304844260215759,
+      "lpips": 0.14814046025276184
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-5.png",
+    "sha256": "b84bcc00604b0f5d45b0383d3fee5eb80b760ac6cce6f75ba3b8dfbdfe20fd14",
+    "metrics": {
+      "mae": 0.06792251020669937,
+      "ssim": 0.5909715294837952,
+      "lpips": 0.21689721941947937
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-6.png",
+    "sha256": "a9729e585d5348ed34aaf1f92af2a3e0ec4dadf621f955e39646fb3f1af7ce00",
+    "metrics": {
+      "mae": 0.06756208837032318,
+      "ssim": 0.5814064145088196,
+      "lpips": 0.23464888334274292
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-7.png",
+    "sha256": "a0348cfeb5cdaca256c07bd58d3bd4088750b2e9853c7faba0f4bacfba46129d",
+    "metrics": {
+      "mae": 0.0670701339840889,
+      "ssim": 0.5728539824485779,
+      "lpips": 0.24356715381145477
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-8.png",
+    "sha256": "ad66feeb437d1f0d721778bce79f6d8326bd6d7e76d101eea6ea0e32ab23ab23",
+    "metrics": {
+      "mae": 0.06696654111146927,
+      "ssim": 0.5530668497085571,
+      "lpips": 0.27116531133651733
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P06",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f5056d73335a30e55762621567865688d01c6c2f09b94185f82ed8e93e706ae3.png",
+    "sha256": "77acee908b5367fff308bee17f4dfb5e1154953057b0dd48eb5c1037893da094",
+    "metrics": {
+      "mae": 0.06881317496299744,
+      "ssim": 0.5451095104217529,
+      "lpips": 0.2784115970134735
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P06",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/608125c2cadb67320d528299817b86ec178b0aaca3d86bb2051578ea16482f21.png",
+    "sha256": "6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a",
+    "metrics": {
+      "mae": 0.13443037867546082,
+      "ssim": 0.40591657161712646,
+      "lpips": 0.3830995559692383
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+    "sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+    "metrics": {
+      "mae": 0.01840371824800968,
+      "ssim": 0.8883209228515625,
+      "lpips": 0.031728047877550125
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+    "sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+    "metrics": {
+      "mae": 0.025968050584197044,
+      "ssim": 0.8348621726036072,
+      "lpips": 0.05477737635374069
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+    "sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+    "metrics": {
+      "mae": 0.018093613907694817,
+      "ssim": 0.8852024078369141,
+      "lpips": 0.033253010362386703
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+    "sha256": "610444a04d2071dc68c45c67ea694bbe73d1fc08a0e46a256fb95b25dec271c3",
+    "metrics": {
+      "mae": 0.035345517098903656,
+      "ssim": 0.8041757941246033,
+      "lpips": 0.07039143145084381
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png",
+    "sha256": "9733909576b2d9bb26aed98bdbe9e1b437d62b11ade73b89c980b1f866d6c745",
+    "metrics": {
+      "mae": 0.20014876127243042,
+      "ssim": 0.28137946128845215,
+      "lpips": 0.5144404768943787
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+    "sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+    "metrics": {
+      "mae": 0.11808444559574127,
+      "ssim": 0.46854367852211,
+      "lpips": 0.23934999108314514
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.png",
+    "sha256": "66d22f872d5942633870b0ffba1efd8b66dbe448111b726b71ea37dea445fee0",
+    "metrics": {
+      "mae": 0.11908809095621109,
+      "ssim": 0.4622059166431427,
+      "lpips": 0.2421887218952179
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png",
+    "sha256": "c7670b999d9252ef617d6cbbec3e54b1336560d72a7f72f15a8e106bb7c9d4db",
+    "metrics": {
+      "mae": 0.12065834552049637,
+      "ssim": 0.4554166793823242,
+      "lpips": 0.25079846382141113
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+    "sha256": "e73b8f420ce7b7adf3c6acd1e27c331defc6156df9568637b292a35bdf744403",
+    "metrics": {
+      "mae": 0.07454399019479752,
+      "ssim": 0.6816647052764893,
+      "lpips": 0.12434537708759308
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P04-fixed3",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/5d85660ecc75942393f96d72b45086706c447162e07839726a5d771c522652a2.png",
+    "sha256": "95baf932315b5b66c219615243b71698caa3712c3a211d894c8e981a14e2def0",
+    "metrics": {
+      "mae": 0.1456567794084549,
+      "ssim": 0.5448765754699707,
+      "lpips": 0.22375284135341644
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 1,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+    "sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+    "metrics": {
+      "mae": 0.01840371824800968,
+      "ssim": 0.8883209228515625,
+      "lpips": 0.031728047877550125
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 2,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+    "sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+    "metrics": {
+      "mae": 0.025968050584197044,
+      "ssim": 0.8348621726036072,
+      "lpips": 0.05477737635374069
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 3,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+    "sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+    "metrics": {
+      "mae": 0.018093613907694817,
+      "ssim": 0.8852024078369141,
+      "lpips": 0.033253010362386703
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 4,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png",
+    "sha256": "0dad891319963f217bc8f572380689d59a5e4c3a16af6d3a9f181c7399fef472",
+    "metrics": {
+      "mae": 0.026393255218863487,
+      "ssim": 0.8662427067756653,
+      "lpips": 0.058615006506443024
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 5,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.png",
+    "sha256": "36e4aacca1f0e0f9d1f647dfc4f8b02e75f31fca083b8cfced9aff3ea0d67803",
+    "metrics": {
+      "mae": 0.09568075835704803,
+      "ssim": 0.5687956809997559,
+      "lpips": 0.18760992586612701
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 6,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+    "sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+    "metrics": {
+      "mae": 0.11808444559574127,
+      "ssim": 0.46854367852211,
+      "lpips": 0.23934999108314514
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 7,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png",
+    "sha256": "c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f",
+    "metrics": {
+      "mae": 0.03167292848229408,
+      "ssim": 0.8630642294883728,
+      "lpips": 0.06362206488847733
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 8,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png",
+    "sha256": "3014d2c1bde808ff66c027895de2e1ee37d9d75dd5307dce2d7ddfe17b9ab39f",
+    "metrics": {
+      "mae": 0.04390442743897438,
+      "ssim": 0.8412739634513855,
+      "lpips": 0.08152759820222855
+    },
+    "source": "reused_prefix"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 9,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+    "sha256": "e73b8f420ce7b7adf3c6acd1e27c331defc6156df9568637b292a35bdf744403",
+    "metrics": {
+      "mae": 0.07454399019479752,
+      "ssim": 0.6816647052764893,
+      "lpips": 0.12434537708759308
+    },
+    "source": "revised_tail"
+  },
+  {
+    "branch": "P04-triggered",
+    "stage": 10,
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/0584df0f0264621e36baf9958de82a612b7952e9f8cec8396db470aafe1acf0f.png",
+    "sha256": "58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf",
+    "metrics": {
+      "mae": 0.14220327138900757,
+      "ssim": 0.694753885269165,
+      "lpips": 0.18617664277553558
+    },
+    "source": "revised_tail"
+  }
+]

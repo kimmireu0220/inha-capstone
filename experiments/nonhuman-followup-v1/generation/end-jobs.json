@@ -1,0 +1,129 @@
+[
+  {
+    "id": "f7d3d61c9268e64cdc10e69fc83fa2fc13f9fa1ffa411135f7996d984320514a",
+    "stage": 10,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P01.png",
+    "input_sha256": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f7d3d61c9268e64cdc10e69fc83fa2fc13f9fa1ffa411135f7996d984320514a.png",
+    "branches": [
+      "P01-end-only"
+    ]
+  },
+  {
+    "id": "f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398",
+    "stage": 10,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
+    "input_sha256": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398.png",
+    "branches": [
+      "P02-end-only"
+    ]
+  },
+  {
+    "id": "06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0",
+    "stage": 10,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+    "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
+    "branches": [
+      "P03-r1-end-only",
+      "P03-r2-end-only"
+    ]
+  },
+  {
+    "id": "c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f",
+    "stage": 10,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+    "input_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f.png",
+    "branches": [
+      "P05-end-only"
+    ]
+  },
+  {
+    "id": "9f07dd1ff9f715e364bbfb6b8429a6bb85ffdb1a1dffbadc3606fa87133e26b0",
+    "stage": 10,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+    "input_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/9f07dd1ff9f715e364bbfb6b8429a6bb85ffdb1a1dffbadc3606fa87133e26b0.png",
+    "branches": [
+      "P06-end-only"
+    ]
+  },
+  {
+    "id": "c01d8c9766811bf9cf5d8629bbfc08ea6560f2cd63ea1950370cf0316b2f77d1",
+    "stage": 1,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+    "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c01d8c9766811bf9cf5d8629bbfc08ea6560f2cd63ea1950370cf0316b2f77d1.png",
+    "branches": [
+      "P04-always-original"
+    ]
+  },
+  {
+    "id": "34c9eac283afb01246cca9c2cf4a27b28ef3089eb3ede8c0ad94b6b8ddb8c3b7",
+    "stage": 2,
+    "kind": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+    "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant."
+    },
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/34c9eac283afb01246cca9c2cf4a27b28ef3089eb3ede8c0ad94b6b8ddb8c3b7.png",
+    "branches": [
+      "P04-always-original"
+    ]
+  }
+]

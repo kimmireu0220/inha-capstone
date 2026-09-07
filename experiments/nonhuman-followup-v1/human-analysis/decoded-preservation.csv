@@ -1,0 +1,17 @@
+rater,submitted_at,candidate,policy,sources,preservation,preservation_failed,face_severity,face_clear
+R01,2026-09-06T01:19:16.671Z,b3f370e531cc,end_regeneration,P03-r1-end-only+P03-r2-end-only,2,False,1,False
+R01,2026-09-06T01:19:16.671Z,bb2c7b8a2c5e,sequential,P06,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,155d22026a52,fixed_interval_3,P04-fixed3,1,False,1,False
+R01,2026-09-06T01:19:16.671Z,c0686c315980,sequential,P01,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,94a26a5b4671,trigger_once,P04-once-triggered,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,b2519d4912f9,sequential,P03-r1,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,4bfd2079d0ad,end_regeneration,P06-end-only,2,False,0,False
+R01,2026-09-06T01:19:16.671Z,a65cd2b2d783,sequential,P03-r2,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,059fe2aefa51,shared_rebase_final,P04-triggered+P04-end-only+P04-always-original,2,False,0,False
+R01,2026-09-06T01:19:16.671Z,7098591a79e4,sequential,P02,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,eb3182889c7d,sequential,P05,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,f8b314c1a1ac,end_regeneration,P05-end-only,2,False,1,False
+R01,2026-09-06T01:19:16.671Z,12558593c454,end_regeneration,P02-end-only,2,False,1,False
+R01,2026-09-06T01:19:16.671Z,47a88bcfbc20,trigger_once,P06-once-triggered,0,True,3,True
+R01,2026-09-06T01:19:16.671Z,c517bc371306,end_regeneration,P01-end-only,2,False,0,False
+R01,2026-09-06T01:19:16.671Z,79c56808971b,sequential,P04,0,True,3,True
