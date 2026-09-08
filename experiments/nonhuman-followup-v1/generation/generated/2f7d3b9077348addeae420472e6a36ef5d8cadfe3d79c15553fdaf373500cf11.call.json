@@ -1,0 +1,25 @@
+{
+  "id": "2f7d3b9077348addeae420472e6a36ef5d8cadfe3d79c15553fdaf373500cf11",
+  "stage": 5,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/591e44e949888b85f8f3e1f78bc319fff2981ff277e5ee7ac865a6a892b56040.png",
+  "input_sha256": "dfa488159b0fac00006f32601cdf77fff1babb74cead1c45a69000ea12c8b78e",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the background with a modern office. Keep lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small round silver pendant.",
+    "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2f7d3b9077348addeae420472e6a36ef5d8cadfe3d79c15553fdaf373500cf11.png",
+  "branches": [
+    "P05-once-triggered"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a07237-bef7-75a1-91d9-71c79469df68/exec-825c48d6-0f33-45c2-a29c-9d021e69b047.png",
+  "started": "2026-09-05T15:53:43.110Z",
+  "completed": "2026-09-05T15:54:59.558Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "f7fe333332c317e33fec8664693bf0483d5d72c2ae7ee5f91e1cefe5ea954ef9"
+}

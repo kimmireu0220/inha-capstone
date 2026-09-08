@@ -1,0 +1,54 @@
+{
+  "trigger": "first fixed LPIPS >=0.0555075, offline replay, both runs step2; no agent/human rating used",
+  "planned_before_generation": "2026-09-05T10:02:49.953Z",
+  "jobs": [
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "repair",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-1/repair.png",
+      "prompt": "Use case: identity-preserve. Input image 1 is the edit target. Photorealistic portrait, requested size 1024x1536. Correct only the unnatural patterned, etched-looking texture on the face and neck, restoring plausible natural skin texture without beautification, de-aging or smoothing away normal skin detail. Preserve the person's identity, facial geometry, expression, hair, gaze, head and body pose, proportions, framing, camera, background, clothing and lighting. Preserve these current requirements:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\nNo text, logo or watermark."
+    },
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "rollback",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-1/rollback.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd a thin silver necklace with one small round silver pendant.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant."
+    },
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "rebase",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-1/rebase.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following accessory additions together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant."
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "repair",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-2/repair.png",
+      "prompt": "Use case: identity-preserve. Input image 1 is the edit target. Photorealistic portrait, requested size 1024x1536. Correct only the unnatural patterned, etched-looking texture on the face and neck, restoring plausible natural skin texture without beautification, de-aging or smoothing away normal skin detail. Preserve the person's identity, facial geometry, expression, hair, gaze, head and body pose, proportions, framing, camera, background, clothing and lighting. Preserve these current requirements:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\nNo text, logo or watermark."
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "rollback",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-2/rollback.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd a thin silver necklace with one small round silver pendant.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant."
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "rebase",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-2/rebase.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following accessory additions together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant."
+    }
+  ]
+}

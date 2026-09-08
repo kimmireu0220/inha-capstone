@@ -1,0 +1,29 @@
+{
+  "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-full/reference.png",
+  "reference_crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-crops/reference.png",
+  "candidates": [
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-full/b473965f6732.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-crops/b473965f6732.png"
+    },
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-full/d5e6c611d5bd.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-crops/d5e6c611d5bd.png"
+    },
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-full/d7a5bef0f738.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-crops/d7a5bef0f738.png"
+    },
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-full/e28775bcfbc4.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/metrics/run-1/blind-crops/e28775bcfbc4.png"
+    }
+  ],
+  "requirements": [
+    "Small silver hoop earrings on both ears.",
+    "A thin silver necklace with one small round silver pendant.",
+    "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "A navy blazer over an ivory crewneck shirt."
+  ],
+  "instructions": "Compare each randomized candidate with reference. Use full images for requirements and fixed face crops for facial changes. Do not inspect mappings, metrics, generation prompts or other ratings before evaluation."
+}

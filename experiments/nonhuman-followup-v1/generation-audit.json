@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "new_successful_unique_calls": 25,
+  "failed_calls_recorded": 1,
+  "new_attempts": 26,
+  "unexecuted_planned_calls": 1,
+  "retries_recorded": 0,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "branch_count": 11,
+  "generated_by_branch": {
+    "P03-r1-end-only": 1,
+    "P03-r2-end-only": 1,
+    "P06-once-triggered": 8,
+    "P04-once-triggered": 4,
+    "P05-once-triggered": 6,
+    "P04-always-original": 2,
+    "P06-end-only": 1,
+    "P05-end-only": 1,
+    "P02-end-only": 1,
+    "P01-end-only": 1
+  },
+  "checks": [
+    "collection_terminated_and_no_pending",
+    "25_unique_records_and_outputs",
+    "failed_stage_and_input",
+    "input_and_output_hashes",
+    "input_prompt_digest",
+    "first_attempt",
+    "no_discarded_pocket_prompt",
+    "requested_dimensions",
+    "stage_coverage_or_explicit_failure",
+    "original_reference_and_roi",
+    "once_only_reset",
+    "continuation_input_link",
+    "original_input_for_end_and_always",
+    "P03_shared_end",
+    "P04_shared_end_and_always"
+  ],
+  "note": "Failure/retry counts describe retained call records; no model-version or seed reproducibility is asserted.",
+  "hashes": {
+    "generation/progress.json": "0d67905b92a1e30802dc6d611abfad4217abcb8f02623a10c5080356b0bb0a1b",
+    "generation/pending.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "PROTOCOL.md": "a844bc38a89ce76c49fe8548763127eb53a52ee65aca34ea13e192546e6006fd",
+    "EXTENSION_EVALUATION.md": "1c9b5e1ec154a73b7e977c675de5e1ab6677dd5d094c0a4eb5ddeb62fb1a520a"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "inha-face-survey",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-09-07",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "assets": {
+    "directory": "dist/client",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "inha-face-survey",
+      "database_id": "REPLACE_WITH_CREATED_DATABASE_ID",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "no_bundle": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.js",
+        "**/*.mjs"
+      ]
+    }
+  ]
+}

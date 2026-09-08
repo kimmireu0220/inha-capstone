@@ -1,0 +1,81 @@
+{
+  "evaluation_type": "single independent agent visual review",
+  "human_or_population_validation": false,
+  "rubric": {
+    "face_preservation": {"0": "no noticeable unintended change", "1": "slight", "2": "clear", "3": "severe"},
+    "naturalness": {"0": "natural", "1": "slight artifact", "2": "clear artificial texture/distortion", "3": "severe"}
+  },
+  "method_note": "Viewed the reference and all ten individual candidate crops in manifest order. Scores concern visible face changes and skin rendering; background changes and added earrings do not themselves determine these scores. Identity remains recognizable in every crop. Natural creases alone are not treated as artifacts; repeated angular grooves and etched highlights absent from the reference are.",
+  "ratings": [
+    {
+      "id": "1bbbbf5aa9de",
+      "face_preservation": 2,
+      "naturalness": 3,
+      "uncertain": false,
+      "evidence": "Eye surrounds, cheeks and mouth have clearly changed contours and shading. Dense, bright, intersecting grooves cover the forehead, nose bridge, cheeks and chin, with a strongly carved surface and dark segmented under-eye areas. Facial identity remains recognizable."
+    },
+    {
+      "id": "ffba17be7e3a",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "The mouth appears more pursed and the cheek and under-eye shading is more sculpted than the reference. Repeated angular forehead lines, bright cheek hatching and vertical chin grooves form a clearly artificial surface pattern."
+    },
+    {
+      "id": "9cd01bff1a49",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "Amber-looking irises, heavier eye surrounds and altered lip and cheek contours visibly differ from the reference. Extensive forehead etching, repeated parallel cheek grooves and chin striations give the skin an artificial relief texture."
+    },
+    {
+      "id": "d27aac01a79b",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "Face outline and identity are close, but lips and cheek shading visibly shift. Connected pale forehead grooves, patterned highlights on the cheeks and vertical chin lines are clearly more etched than the reference skin."
+    },
+    {
+      "id": "80c369b2ffc7",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "The eyes look warmer and their surrounding folds darker; the cheeks and mouth are more sculpted. Angular forehead lines and broad repeated cheek and chin ridges produce conspicuous artificial skin relief."
+    },
+    {
+      "id": "cc6491f09e2c",
+      "face_preservation": 1,
+      "naturalness": 1,
+      "uncertain": false,
+      "evidence": "Major facial proportions stay close to the reference, with slight changes to mouth shape and cheek highlights. Fine repeated forehead and cheek marks and faint vertical chin streaks suggest mild etching, but most skin still reads plausibly photographic."
+    },
+    {
+      "id": "5e7af0c60281",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "Cheek definition, eye surrounds and lip contours clearly differ from the reference. Bright connected forehead lines, parallel cheek grooves and segmented chin highlights make the skin visibly artificial."
+    },
+    {
+      "id": "81741ebd9767",
+      "face_preservation": 1,
+      "naturalness": 0,
+      "uncertain": false,
+      "evidence": "Eyes, nose and face outline remain very close to the reference. Slight mouth and cheek tonal differences are visible, but skin texture looks plausibly natural without conspicuous etched or repeated ridge patterns."
+    },
+    {
+      "id": "2223a209b119",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "Eye surrounds, mouth and cheek contours are clearly more sculpted than in the reference. Dense forehead etching, bright parallel cheek lines and angular chin highlights cover substantial skin area and look artificial."
+    },
+    {
+      "id": "d2ea10d2e9c5",
+      "face_preservation": 2,
+      "naturalness": 2,
+      "uncertain": false,
+      "evidence": "The eyes and under-eye folds have stronger definition and the lip and cheek contours visibly shift. Intersecting forehead grooves and broad repeated cheek and chin striations are clearly artificial rather than ordinary isolated wrinkles."
+    }
+  ]
+}

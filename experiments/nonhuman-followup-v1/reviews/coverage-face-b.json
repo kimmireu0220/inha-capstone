@@ -1,0 +1,41 @@
+{
+  "reviewer": "blind_face_b",
+  "type": "AI_assistant_visual_observation",
+  "human": false,
+  "blinded_to": [
+    "method",
+    "stage",
+    "metrics",
+    "previous_ratings"
+  ],
+  "identity_assessment": "not_performed",
+  "items": [
+    {
+      "id": "552acf7beb95",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마에 약한 판상 선이 추가되고 턱에 희미한 고리무늬가 보이나 피부 왜곡은 작다."
+    },
+    {
+      "id": "581bcfbd041a",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마에 얇은 고리형 선과 볼·턱의 약한 물결결이 보이지만 전체적인 변형은 작다."
+    },
+    {
+      "id": "fe85937a58bd",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 겹친 곡선과 양 볼·턱의 가는 반복무늬가 뚜렷하게 생겨 피부가 인위적으로 보인다."
+    }
+  ],
+  "viewed_sheets": [
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-coverage-face/sheet-01.png"
+  ]
+}

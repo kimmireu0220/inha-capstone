@@ -1,0 +1,44 @@
+{
+  "reviewer": "blind_face_a",
+  "type": "AI_assistant_visual_observation",
+  "human": false,
+  "blinded_to": [
+    "method",
+    "stage",
+    "metrics",
+    "previous_ratings"
+  ],
+  "same_person_assessment": "excluded",
+  "same_person_note": "이미지 간 동일인 여부는 평가하지 않았으며 모든 항목을 not_assessed로 기록했다.",
+  "observation_note": "허용된 익명 비교 PNG만 직접 시각 관찰했다. 원본의 자연 주름·점·피부결과 귀걸이는 인위성 열화로 평가하지 않았다. 외관 변화는 얼굴의 밝기·색조·배치·형태에서 확인한 변화를 별도 기록했다.",
+  "items": [
+    {
+      "id": "552acf7beb95",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마와 턱에 가늘고 굽은 선과 희미한 고리 무늬가 더해졌지만 전체적인 인위성은 약하다."
+    },
+    {
+      "id": "581bcfbd041a",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마 중앙과 턱에 원본보다 약한 곡선이 더해지고 볼 피부결이 조금 늘어진 듯하다."
+    },
+    {
+      "id": "fe85937a58bd",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 반복 곡선과 볼·입가·턱의 고리 무늬가 새로 생겨 인위성이 뚜렷하다."
+    }
+  ],
+  "viewed_sheets": [
+    "sheet-01.png"
+  ],
+  "viewed_individuals": []
+}

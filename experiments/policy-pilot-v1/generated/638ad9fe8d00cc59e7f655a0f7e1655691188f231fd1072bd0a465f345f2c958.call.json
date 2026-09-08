@@ -1,0 +1,24 @@
+{
+  "id": "638ad9fe8d00cc59e7f655a0f7e1655691188f231fd1072bd0a465f345f2c958",
+  "stage": 10,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/345358dc205512a4522fbd9f5882d54ebde6a49dfb359db4a855071cf1cc87e7.png",
+  "input_sha256": "cedeac0284f0964d2d41ab836b6e6b65d128e798c2d1a924b532bf0cca242e72",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+    "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+    "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/638ad9fe8d00cc59e7f655a0f7e1655691188f231fd1072bd0a465f345f2c958.png",
+  "policies": [
+    "fixed3"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-40738637-3693-4bf4-b16f-5085154e627e.png",
+  "started": "2026-09-05T12:49:58.019Z",
+  "completed": "2026-09-05T12:54:07.712Z",
+  "attempt": 1
+}

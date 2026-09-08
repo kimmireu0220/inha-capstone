@@ -1,0 +1,25 @@
+{
+  "id": "11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725",
+  "stage": 9,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
+  "input_sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the crewneck shirt color from ivory to burgundy. Keep the charcoal grey blazer, blue pin, necklace, earrings and background unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "branches": [
+    "P03-r2"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-8dc736b8-be71-4997-a142-b5602091bb6c.png",
+  "started": "2026-09-05T14:52:03.286Z",
+  "completed": "2026-09-05T14:54:35.629Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba"
+}

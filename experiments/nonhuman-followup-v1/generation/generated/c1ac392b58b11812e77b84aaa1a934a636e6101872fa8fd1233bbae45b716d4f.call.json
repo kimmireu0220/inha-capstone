@@ -1,0 +1,25 @@
+{
+  "id": "c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f",
+  "stage": 10,
+  "kind": "rebase",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+  "input_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+    "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f.png",
+  "branches": [
+    "P05-end-only"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a07237-bef7-75a1-91d9-71c79469df68/exec-818792a8-83fd-4c0a-9215-1f7643beccf8.png",
+  "started": "2026-09-05T15:43:01.595Z",
+  "completed": "2026-09-05T15:43:47.766Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "2197ec4b57bfc80159ea1682b352432f948353c0fe358d40828b2d3b5ba0b9f1"
+}

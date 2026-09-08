@@ -1,0 +1,1362 @@
+{
+  "method": "integer_translation_ncc_sigma3_radius64",
+  "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "script_sha256": "ee8fb643b247859305be1f0ff49e340fd8c0b62b902a8a3b209971d4bf70d694",
+  "protocol_sha256": "f07e39029cdb689720c6bdf147219c4dea85c2454a67e2ca891cb51a012d7877",
+  "tests": [
+    {
+      "kind": "known_translation",
+      "expected_dx": 0,
+      "expected_dy": 0,
+      "found": {
+        "dx": 0,
+        "dy": 0,
+        "ncc": 1.0000004768371582,
+        "boundary": false
+      },
+      "before": {
+        "mae": 0.0,
+        "ssim": 1.0,
+        "lpips": 0.0
+      },
+      "after": {
+        "mae": 0.0,
+        "ssim": 1.0,
+        "lpips": 0.0
+      }
+    },
+    {
+      "kind": "known_translation",
+      "expected_dx": 24,
+      "expected_dy": 35,
+      "found": {
+        "dx": 24,
+        "dy": 35,
+        "ncc": 1.0,
+        "boundary": false
+      },
+      "before": {
+        "mae": 0.16677764058113098,
+        "ssim": 0.368065744638443,
+        "lpips": 0.46822452545166016
+      },
+      "after": {
+        "mae": 0.0,
+        "ssim": 1.0,
+        "lpips": 0.0
+      }
+    },
+    {
+      "kind": "known_translation",
+      "expected_dx": -31,
+      "expected_dy": -20,
+      "found": {
+        "dx": -31,
+        "dy": -20,
+        "ncc": 1.0000003576278687,
+        "boundary": false
+      },
+      "before": {
+        "mae": 0.16439694166183472,
+        "ssim": 0.37699949741363525,
+        "lpips": 0.4826737344264984
+      },
+      "after": {
+        "mae": 0.0,
+        "ssim": 1.0,
+        "lpips": 0.0
+      }
+    },
+    {
+      "kind": "brightness_offset_not_corrected",
+      "found": {
+        "dx": 0,
+        "dy": 0,
+        "ncc": 1.0000007152557373,
+        "boundary": false
+      },
+      "after": {
+        "mae": 0.02999994345009327,
+        "ssim": 0.9758444428443909,
+        "lpips": 0.001595133449882269
+      }
+    }
+  ],
+  "unique_images": 29,
+  "boundary_hits": 0,
+  "rows": {
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png": {
+      "source_sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+      "dx": 0,
+      "dy": 0,
+      "ncc": 0.998278796672821,
+      "boundary": false,
+      "before": {
+        "mae": 0.01840371824800968,
+        "ssim": 0.8883209228515625,
+        "lpips": 0.031728047877550125
+      },
+      "after": {
+        "mae": 0.01840371824800968,
+        "ssim": 0.8883209228515625,
+        "lpips": 0.031728047877550125
+      },
+      "lpips_drop": 0.0,
+      "old_threshold_before": false,
+      "old_threshold_after": false,
+      "crop_id": "72f0074fe7df"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png": {
+      "source_sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9968666434288025,
+      "boundary": false,
+      "before": {
+        "mae": 0.025968050584197044,
+        "ssim": 0.8348621726036072,
+        "lpips": 0.05477737635374069
+      },
+      "after": {
+        "mae": 0.023362623527646065,
+        "ssim": 0.8567665219306946,
+        "lpips": 0.05424788221716881
+      },
+      "lpips_drop": 0.0005294941365718842,
+      "old_threshold_before": false,
+      "old_threshold_after": false,
+      "crop_id": "06b5c9dc02fb"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png": {
+      "source_sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9947376847267151,
+      "boundary": false,
+      "before": {
+        "mae": 0.03271098807454109,
+        "ssim": 0.7871373295783997,
+        "lpips": 0.07703612744808197
+      },
+      "after": {
+        "mae": 0.029098980128765106,
+        "ssim": 0.8208720088005066,
+        "lpips": 0.07321377098560333
+      },
+      "lpips_drop": 0.0038223564624786377,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "0ee7d7c5349d"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png": {
+      "source_sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+      "dx": -1,
+      "dy": -2,
+      "ncc": 0.9633194804191589,
+      "boundary": false,
+      "before": {
+        "mae": 0.05544218793511391,
+        "ssim": 0.71294766664505,
+        "lpips": 0.12006574869155884
+      },
+      "after": {
+        "mae": 0.04820133373141289,
+        "ssim": 0.7773118019104004,
+        "lpips": 0.10510864853858948
+      },
+      "lpips_drop": 0.01495710015296936,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "afb9ee34d297"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png": {
+      "source_sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+      "dx": -1,
+      "dy": 21,
+      "ncc": 0.9360107779502869,
+      "boundary": false,
+      "before": {
+        "mae": 0.13240620493888855,
+        "ssim": 0.4151075780391693,
+        "lpips": 0.34183269739151
+      },
+      "after": {
+        "mae": 0.06295200437307358,
+        "ssim": 0.7224617004394531,
+        "lpips": 0.15251649916172028
+      },
+      "lpips_drop": 0.18931619822978973,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "cf4f8303118f"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png": {
+      "source_sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+      "dx": -1,
+      "dy": 21,
+      "ncc": 0.9337500333786011,
+      "boundary": false,
+      "before": {
+        "mae": 0.13438569009304047,
+        "ssim": 0.4023829996585846,
+        "lpips": 0.3525209426879883
+      },
+      "after": {
+        "mae": 0.0668826773762703,
+        "ssim": 0.6964426040649414,
+        "lpips": 0.16892492771148682
+      },
+      "lpips_drop": 0.18359601497650146,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "9662d6d1c973"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png": {
+      "source_sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+      "dx": -1,
+      "dy": 21,
+      "ncc": 0.93198561668396,
+      "boundary": false,
+      "before": {
+        "mae": 0.13611829280853271,
+        "ssim": 0.4022347033023834,
+        "lpips": 0.3479330241680145
+      },
+      "after": {
+        "mae": 0.06988504528999329,
+        "ssim": 0.6864304542541504,
+        "lpips": 0.1652376651763916
+      },
+      "lpips_drop": 0.18269535899162292,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "fd58722931d8"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png": {
+      "source_sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+      "dx": -1,
+      "dy": 21,
+      "ncc": 0.9364189505577087,
+      "boundary": false,
+      "before": {
+        "mae": 0.13804741203784943,
+        "ssim": 0.3897973299026489,
+        "lpips": 0.3590282201766968
+      },
+      "after": {
+        "mae": 0.07338233292102814,
+        "ssim": 0.6560167670249939,
+        "lpips": 0.1850573867559433
+      },
+      "lpips_drop": 0.17397083342075348,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "3e58666b152e"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-9.png": {
+      "source_sha256": "c03f7d6d03f5279c36f7419f54376895f6485fcd20aa0741cd3f166cac034c82",
+      "dx": 0,
+      "dy": 21,
+      "ncc": 0.9310536980628967,
+      "boundary": false,
+      "before": {
+        "mae": 0.1417878121137619,
+        "ssim": 0.3806942403316498,
+        "lpips": 0.372521311044693
+      },
+      "after": {
+        "mae": 0.08007998764514923,
+        "ssim": 0.6376940608024597,
+        "lpips": 0.20732487738132477
+      },
+      "lpips_drop": 0.16519643366336823,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "c03f7d6d03f5"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-10.png": {
+      "source_sha256": "d69af00e4f1b60b0f645c61dd471fc978b2c97c06526eaef997f292ef7ba20ad",
+      "dx": 0,
+      "dy": 20,
+      "ncc": 0.6240564584732056,
+      "boundary": false,
+      "before": {
+        "mae": 0.22973395884037018,
+        "ssim": 0.25780877470970154,
+        "lpips": 0.44460469484329224
+      },
+      "after": {
+        "mae": 0.1863699108362198,
+        "ssim": 0.46242889761924744,
+        "lpips": 0.30438676476478577
+      },
+      "lpips_drop": 0.14021793007850647,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "d69af00e4f1b"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png": {
+      "source_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9984006881713867,
+      "boundary": false,
+      "before": {
+        "mae": 0.018093613907694817,
+        "ssim": 0.8852024078369141,
+        "lpips": 0.033253010362386703
+      },
+      "after": {
+        "mae": 0.018137197941541672,
+        "ssim": 0.8782609105110168,
+        "lpips": 0.03545316308736801
+      },
+      "lpips_drop": -0.002200152724981308,
+      "old_threshold_before": false,
+      "old_threshold_after": false,
+      "crop_id": "fd9030e0ebd4"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png": {
+      "source_sha256": "610444a04d2071dc68c45c67ea694bbe73d1fc08a0e46a256fb95b25dec271c3",
+      "dx": 0,
+      "dy": -2,
+      "ncc": 0.9707047343254089,
+      "boundary": false,
+      "before": {
+        "mae": 0.035345517098903656,
+        "ssim": 0.8041757941246033,
+        "lpips": 0.07039143145084381
+      },
+      "after": {
+        "mae": 0.03527210280299187,
+        "ssim": 0.800224244594574,
+        "lpips": 0.07201632857322693
+      },
+      "lpips_drop": -0.0016248971223831177,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "610444a04d20"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png": {
+      "source_sha256": "9733909576b2d9bb26aed98bdbe9e1b437d62b11ade73b89c980b1f866d6c745",
+      "dx": 21,
+      "dy": 39,
+      "ncc": 0.8410038352012634,
+      "boundary": false,
+      "before": {
+        "mae": 0.20014876127243042,
+        "ssim": 0.28137946128845215,
+        "lpips": 0.5144404768943787
+      },
+      "after": {
+        "mae": 0.09146071970462799,
+        "ssim": 0.5405318140983582,
+        "lpips": 0.1740308552980423
+      },
+      "lpips_drop": 0.34040962159633636,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "9733909576b2"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/bc01329be131e649185e1a3b5752a6610d827874dbc6442249ca13267fb6c576.png": {
+      "source_sha256": "12f69dd691ee7c2ae4b64a616545bc18362d0eb8cc80ccacdb36a988c5e1c18c",
+      "dx": 21,
+      "dy": 39,
+      "ncc": 0.8304176330566406,
+      "boundary": false,
+      "before": {
+        "mae": 0.20254626870155334,
+        "ssim": 0.2748970687389374,
+        "lpips": 0.5162861347198486
+      },
+      "after": {
+        "mae": 0.09671229869127274,
+        "ssim": 0.5216591954231262,
+        "lpips": 0.1869426816701889
+      },
+      "lpips_drop": 0.32934345304965973,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "12f69dd691ee"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png": {
+      "source_sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+      "dx": 1,
+      "dy": 11,
+      "ncc": 0.8654777407646179,
+      "boundary": false,
+      "before": {
+        "mae": 0.11808444559574127,
+        "ssim": 0.46854367852211,
+        "lpips": 0.23934999108314514
+      },
+      "after": {
+        "mae": 0.07823135703802109,
+        "ssim": 0.6631171107292175,
+        "lpips": 0.14190733432769775
+      },
+      "lpips_drop": 0.09744265675544739,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "f82b49698966"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.png": {
+      "source_sha256": "66d22f872d5942633870b0ffba1efd8b66dbe448111b726b71ea37dea445fee0",
+      "dx": 1,
+      "dy": 11,
+      "ncc": 0.8641934394836426,
+      "boundary": false,
+      "before": {
+        "mae": 0.11908809095621109,
+        "ssim": 0.4622059166431427,
+        "lpips": 0.2421887218952179
+      },
+      "after": {
+        "mae": 0.08072896301746368,
+        "ssim": 0.6453781127929688,
+        "lpips": 0.15010370314121246
+      },
+      "lpips_drop": 0.09208501875400543,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "66d22f872d59"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png": {
+      "source_sha256": "c7670b999d9252ef617d6cbbec3e54b1336560d72a7f72f15a8e106bb7c9d4db",
+      "dx": 1,
+      "dy": 11,
+      "ncc": 0.8688352704048157,
+      "boundary": false,
+      "before": {
+        "mae": 0.12065834552049637,
+        "ssim": 0.4554166793823242,
+        "lpips": 0.25079846382141113
+      },
+      "after": {
+        "mae": 0.08268927037715912,
+        "ssim": 0.6330306529998779,
+        "lpips": 0.15840576589107513
+      },
+      "lpips_drop": 0.092392697930336,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "c7670b999d92"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/f009775e087b921cf77364a20ee99985cdcd5e5a2ea0b7c902bc381d6d3487a0.png": {
+      "source_sha256": "5ebdf9873e290c9f8f8aa4ffbeab49520b29c0a6e6eceb6db017609c77e11179",
+      "dx": 1,
+      "dy": 11,
+      "ncc": 0.8630322217941284,
+      "boundary": false,
+      "before": {
+        "mae": 0.12431470304727554,
+        "ssim": 0.440036416053772,
+        "lpips": 0.2620500922203064
+      },
+      "after": {
+        "mae": 0.08751509338617325,
+        "ssim": 0.6088228821754456,
+        "lpips": 0.17256441712379456
+      },
+      "lpips_drop": 0.08948567509651184,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "5ebdf9873e29"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/345358dc205512a4522fbd9f5882d54ebde6a49dfb359db4a855071cf1cc87e7.png": {
+      "source_sha256": "cedeac0284f0964d2d41ab836b6e6b65d128e798c2d1a924b532bf0cca242e72",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9678887128829956,
+      "boundary": false,
+      "before": {
+        "mae": 0.03536982834339142,
+        "ssim": 0.8669959902763367,
+        "lpips": 0.08377732336521149
+      },
+      "after": {
+        "mae": 0.03857387229800224,
+        "ssim": 0.8312471508979797,
+        "lpips": 0.08900270611047745
+      },
+      "lpips_drop": -0.005225382745265961,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "cedeac0284f0"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/638ad9fe8d00cc59e7f655a0f7e1655691188f231fd1072bd0a465f345f2c958.png": {
+      "source_sha256": "9a1c4c8706b42a4cc2aae5e9863bdc9d581cf78ef92cae1edc5ee4bf5b006a08",
+      "dx": -1,
+      "dy": -1,
+      "ncc": 0.6368065476417542,
+      "boundary": false,
+      "before": {
+        "mae": 0.1439516693353653,
+        "ssim": 0.6595562100410461,
+        "lpips": 0.20348213613033295
+      },
+      "after": {
+        "mae": 0.1478138417005539,
+        "ssim": 0.6023281216621399,
+        "lpips": 0.20685970783233643
+      },
+      "lpips_drop": -0.003377571702003479,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "9a1c4c8706b4"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png": {
+      "source_sha256": "0dad891319963f217bc8f572380689d59a5e4c3a16af6d3a9f181c7399fef472",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9656414985656738,
+      "boundary": false,
+      "before": {
+        "mae": 0.026393255218863487,
+        "ssim": 0.8662427067756653,
+        "lpips": 0.058615006506443024
+      },
+      "after": {
+        "mae": 0.03145251423120499,
+        "ssim": 0.8049346804618835,
+        "lpips": 0.06547147035598755
+      },
+      "lpips_drop": -0.006856463849544525,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "0dad89131996"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/d587b62c5a8856428510c2ede45ceb7afdcef1456b1e79409fde656df81eed1f.png": {
+      "source_sha256": "707a793e84d04d497c49a01a0a4c0e7c0a0b5680305a195e3400665104ceadcf",
+      "dx": 0,
+      "dy": 0,
+      "ncc": 0.9518546462059021,
+      "boundary": false,
+      "before": {
+        "mae": 0.046532582491636276,
+        "ssim": 0.7939947247505188,
+        "lpips": 0.10405464470386505
+      },
+      "after": {
+        "mae": 0.046532582491636276,
+        "ssim": 0.7939947247505188,
+        "lpips": 0.10405464470386505
+      },
+      "lpips_drop": 0.0,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "707a793e84d0"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.png": {
+      "source_sha256": "36e4aacca1f0e0f9d1f647dfc4f8b02e75f31fca083b8cfced9aff3ea0d67803",
+      "dx": 0,
+      "dy": 8,
+      "ncc": 0.9098455905914307,
+      "boundary": false,
+      "before": {
+        "mae": 0.09568075835704803,
+        "ssim": 0.5687956809997559,
+        "lpips": 0.18760992586612701
+      },
+      "after": {
+        "mae": 0.07467646896839142,
+        "ssim": 0.6490752696990967,
+        "lpips": 0.13018178939819336
+      },
+      "lpips_drop": 0.057428136467933655,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "36e4aacca1f0"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/02895bf7683e78987fbf26ea1d928d2286029f703eea07e0b8e6353d61094fa4.png": {
+      "source_sha256": "8efd3a564ce4382e9dfcc1cb143599dd29f2c83efdd8506a18517ac7d4a01a24",
+      "dx": 0,
+      "dy": 8,
+      "ncc": 0.9064508676528931,
+      "boundary": false,
+      "before": {
+        "mae": 0.10459073632955551,
+        "ssim": 0.5544605851173401,
+        "lpips": 0.1947019398212433
+      },
+      "after": {
+        "mae": 0.0848408117890358,
+        "ssim": 0.6291152834892273,
+        "lpips": 0.1421038657426834
+      },
+      "lpips_drop": 0.052598074078559875,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "8efd3a564ce4"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png": {
+      "source_sha256": "c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9683824777603149,
+      "boundary": false,
+      "before": {
+        "mae": 0.03167292848229408,
+        "ssim": 0.8630642294883728,
+        "lpips": 0.06362206488847733
+      },
+      "after": {
+        "mae": 0.03250129148364067,
+        "ssim": 0.850684642791748,
+        "lpips": 0.0666557252407074
+      },
+      "lpips_drop": -0.003033660352230072,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "c232ff01835b"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/86563337655addccdfc721da2ae10e46cfaa6eeed99a1bf18e47f95ff99131ef.png": {
+      "source_sha256": "920dc7f39f176b2d99342c21aab87099667bd6ecdd50ad5d39702c1ba593f148",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9749243259429932,
+      "boundary": false,
+      "before": {
+        "mae": 0.039342064410448074,
+        "ssim": 0.8109073638916016,
+        "lpips": 0.07624213397502899
+      },
+      "after": {
+        "mae": 0.03762112185359001,
+        "ssim": 0.8266474604606628,
+        "lpips": 0.07438379526138306
+      },
+      "lpips_drop": 0.001858338713645935,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "920dc7f39f17"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png": {
+      "source_sha256": "3014d2c1bde808ff66c027895de2e1ee37d9d75dd5307dce2d7ddfe17b9ab39f",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.9378072619438171,
+      "boundary": false,
+      "before": {
+        "mae": 0.04390442743897438,
+        "ssim": 0.8412739634513855,
+        "lpips": 0.08152759820222855
+      },
+      "after": {
+        "mae": 0.04752016440033913,
+        "ssim": 0.7983755469322205,
+        "lpips": 0.08751408755779266
+      },
+      "lpips_drop": -0.005986489355564117,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "3014d2c1bde8"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/5f17ea2fc06c1672cb9c4c20d533f88ef51361c6c19fb732c8b8d74dee9e4d82.png": {
+      "source_sha256": "13dffdd600c2ea4c556516227fcb0f9100c7f7ea4ceba1b79ea6b1816c7a8259",
+      "dx": 0,
+      "dy": -1,
+      "ncc": 0.936920166015625,
+      "boundary": false,
+      "before": {
+        "mae": 0.046589381992816925,
+        "ssim": 0.8273442387580872,
+        "lpips": 0.09025458246469498
+      },
+      "after": {
+        "mae": 0.049336209893226624,
+        "ssim": 0.798346221446991,
+        "lpips": 0.0939706563949585
+      },
+      "lpips_drop": -0.0037160739302635193,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "13dffdd600c2"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/1aa5a3ad21e5dc70f547b61a4673c7504390809a75fc929add21481a3f9fb8a6.png": {
+      "source_sha256": "7f3ceff51b82d4a7c37016121491e5ba2eb78bffb3641d70ab0086bef2bb7a15",
+      "dx": 5,
+      "dy": 0,
+      "ncc": 0.6435267329216003,
+      "boundary": false,
+      "before": {
+        "mae": 0.1581823229789734,
+        "ssim": 0.48046746850013733,
+        "lpips": 0.2212597131729126
+      },
+      "after": {
+        "mae": 0.13788925111293793,
+        "ssim": 0.643937349319458,
+        "lpips": 0.18437452614307404
+      },
+      "lpips_drop": 0.03688518702983856,
+      "old_threshold_before": true,
+      "old_threshold_after": true,
+      "crop_id": "7f3ceff51b82"
+    }
+  },
+  "summary": {
+    "sequential": {
+      "mean_fixed_lpips": 0.25020481906831266,
+      "mean_aligned_lpips": 0.14477464705705642,
+      "final_fixed_lpips": 0.44460469484329224,
+      "final_aligned_lpips": 0.30438676476478577,
+      "old_threshold_count_before": 8,
+      "old_threshold_count_after": 8,
+      "stage_rows": [
+        {
+          "source_sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+          "dx": 0,
+          "dy": 0,
+          "ncc": 0.998278796672821,
+          "boundary": false,
+          "before": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "after": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "lpips_drop": 0.0,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "72f0074fe7df"
+        },
+        {
+          "source_sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9968666434288025,
+          "boundary": false,
+          "before": {
+            "mae": 0.025968050584197044,
+            "ssim": 0.8348621726036072,
+            "lpips": 0.05477737635374069
+          },
+          "after": {
+            "mae": 0.023362623527646065,
+            "ssim": 0.8567665219306946,
+            "lpips": 0.05424788221716881
+          },
+          "lpips_drop": 0.0005294941365718842,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "06b5c9dc02fb"
+        },
+        {
+          "source_sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9947376847267151,
+          "boundary": false,
+          "before": {
+            "mae": 0.03271098807454109,
+            "ssim": 0.7871373295783997,
+            "lpips": 0.07703612744808197
+          },
+          "after": {
+            "mae": 0.029098980128765106,
+            "ssim": 0.8208720088005066,
+            "lpips": 0.07321377098560333
+          },
+          "lpips_drop": 0.0038223564624786377,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "0ee7d7c5349d"
+        },
+        {
+          "source_sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+          "dx": -1,
+          "dy": -2,
+          "ncc": 0.9633194804191589,
+          "boundary": false,
+          "before": {
+            "mae": 0.05544218793511391,
+            "ssim": 0.71294766664505,
+            "lpips": 0.12006574869155884
+          },
+          "after": {
+            "mae": 0.04820133373141289,
+            "ssim": 0.7773118019104004,
+            "lpips": 0.10510864853858948
+          },
+          "lpips_drop": 0.01495710015296936,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "afb9ee34d297"
+        },
+        {
+          "source_sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+          "dx": -1,
+          "dy": 21,
+          "ncc": 0.9360107779502869,
+          "boundary": false,
+          "before": {
+            "mae": 0.13240620493888855,
+            "ssim": 0.4151075780391693,
+            "lpips": 0.34183269739151
+          },
+          "after": {
+            "mae": 0.06295200437307358,
+            "ssim": 0.7224617004394531,
+            "lpips": 0.15251649916172028
+          },
+          "lpips_drop": 0.18931619822978973,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "cf4f8303118f"
+        },
+        {
+          "source_sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+          "dx": -1,
+          "dy": 21,
+          "ncc": 0.9337500333786011,
+          "boundary": false,
+          "before": {
+            "mae": 0.13438569009304047,
+            "ssim": 0.4023829996585846,
+            "lpips": 0.3525209426879883
+          },
+          "after": {
+            "mae": 0.0668826773762703,
+            "ssim": 0.6964426040649414,
+            "lpips": 0.16892492771148682
+          },
+          "lpips_drop": 0.18359601497650146,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "9662d6d1c973"
+        },
+        {
+          "source_sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+          "dx": -1,
+          "dy": 21,
+          "ncc": 0.93198561668396,
+          "boundary": false,
+          "before": {
+            "mae": 0.13611829280853271,
+            "ssim": 0.4022347033023834,
+            "lpips": 0.3479330241680145
+          },
+          "after": {
+            "mae": 0.06988504528999329,
+            "ssim": 0.6864304542541504,
+            "lpips": 0.1652376651763916
+          },
+          "lpips_drop": 0.18269535899162292,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "fd58722931d8"
+        },
+        {
+          "source_sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+          "dx": -1,
+          "dy": 21,
+          "ncc": 0.9364189505577087,
+          "boundary": false,
+          "before": {
+            "mae": 0.13804741203784943,
+            "ssim": 0.3897973299026489,
+            "lpips": 0.3590282201766968
+          },
+          "after": {
+            "mae": 0.07338233292102814,
+            "ssim": 0.6560167670249939,
+            "lpips": 0.1850573867559433
+          },
+          "lpips_drop": 0.17397083342075348,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "3e58666b152e"
+        },
+        {
+          "source_sha256": "c03f7d6d03f5279c36f7419f54376895f6485fcd20aa0741cd3f166cac034c82",
+          "dx": 0,
+          "dy": 21,
+          "ncc": 0.9310536980628967,
+          "boundary": false,
+          "before": {
+            "mae": 0.1417878121137619,
+            "ssim": 0.3806942403316498,
+            "lpips": 0.372521311044693
+          },
+          "after": {
+            "mae": 0.08007998764514923,
+            "ssim": 0.6376940608024597,
+            "lpips": 0.20732487738132477
+          },
+          "lpips_drop": 0.16519643366336823,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "c03f7d6d03f5"
+        },
+        {
+          "source_sha256": "d69af00e4f1b60b0f645c61dd471fc978b2c97c06526eaef997f292ef7ba20ad",
+          "dx": 0,
+          "dy": 20,
+          "ncc": 0.6240564584732056,
+          "boundary": false,
+          "before": {
+            "mae": 0.22973395884037018,
+            "ssim": 0.25780877470970154,
+            "lpips": 0.44460469484329224
+          },
+          "after": {
+            "mae": 0.1863699108362198,
+            "ssim": 0.46242889761924744,
+            "lpips": 0.30438676476478577
+          },
+          "lpips_drop": 0.14021793007850647,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "d69af00e4f1b"
+        }
+      ]
+    },
+    "fixed3": {
+      "mean_fixed_lpips": 0.17241869792342185,
+      "mean_aligned_lpips": 0.11137554943561553,
+      "final_fixed_lpips": 0.20348213613033295,
+      "final_aligned_lpips": 0.20685970783233643,
+      "old_threshold_count_before": 7,
+      "old_threshold_count_after": 7,
+      "stage_rows": [
+        {
+          "source_sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+          "dx": 0,
+          "dy": 0,
+          "ncc": 0.998278796672821,
+          "boundary": false,
+          "before": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "after": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "lpips_drop": 0.0,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "72f0074fe7df"
+        },
+        {
+          "source_sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9968666434288025,
+          "boundary": false,
+          "before": {
+            "mae": 0.025968050584197044,
+            "ssim": 0.8348621726036072,
+            "lpips": 0.05477737635374069
+          },
+          "after": {
+            "mae": 0.023362623527646065,
+            "ssim": 0.8567665219306946,
+            "lpips": 0.05424788221716881
+          },
+          "lpips_drop": 0.0005294941365718842,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "06b5c9dc02fb"
+        },
+        {
+          "source_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9984006881713867,
+          "boundary": false,
+          "before": {
+            "mae": 0.018093613907694817,
+            "ssim": 0.8852024078369141,
+            "lpips": 0.033253010362386703
+          },
+          "after": {
+            "mae": 0.018137197941541672,
+            "ssim": 0.8782609105110168,
+            "lpips": 0.03545316308736801
+          },
+          "lpips_drop": -0.002200152724981308,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "fd9030e0ebd4"
+        },
+        {
+          "source_sha256": "610444a04d2071dc68c45c67ea694bbe73d1fc08a0e46a256fb95b25dec271c3",
+          "dx": 0,
+          "dy": -2,
+          "ncc": 0.9707047343254089,
+          "boundary": false,
+          "before": {
+            "mae": 0.035345517098903656,
+            "ssim": 0.8041757941246033,
+            "lpips": 0.07039143145084381
+          },
+          "after": {
+            "mae": 0.03527210280299187,
+            "ssim": 0.800224244594574,
+            "lpips": 0.07201632857322693
+          },
+          "lpips_drop": -0.0016248971223831177,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "610444a04d20"
+        },
+        {
+          "source_sha256": "9733909576b2d9bb26aed98bdbe9e1b437d62b11ade73b89c980b1f866d6c745",
+          "dx": 21,
+          "dy": 39,
+          "ncc": 0.8410038352012634,
+          "boundary": false,
+          "before": {
+            "mae": 0.20014876127243042,
+            "ssim": 0.28137946128845215,
+            "lpips": 0.5144404768943787
+          },
+          "after": {
+            "mae": 0.09146071970462799,
+            "ssim": 0.5405318140983582,
+            "lpips": 0.1740308552980423
+          },
+          "lpips_drop": 0.34040962159633636,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "9733909576b2"
+        },
+        {
+          "source_sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+          "dx": 1,
+          "dy": 11,
+          "ncc": 0.8654777407646179,
+          "boundary": false,
+          "before": {
+            "mae": 0.11808444559574127,
+            "ssim": 0.46854367852211,
+            "lpips": 0.23934999108314514
+          },
+          "after": {
+            "mae": 0.07823135703802109,
+            "ssim": 0.6631171107292175,
+            "lpips": 0.14190733432769775
+          },
+          "lpips_drop": 0.09744265675544739,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "f82b49698966"
+        },
+        {
+          "source_sha256": "66d22f872d5942633870b0ffba1efd8b66dbe448111b726b71ea37dea445fee0",
+          "dx": 1,
+          "dy": 11,
+          "ncc": 0.8641934394836426,
+          "boundary": false,
+          "before": {
+            "mae": 0.11908809095621109,
+            "ssim": 0.4622059166431427,
+            "lpips": 0.2421887218952179
+          },
+          "after": {
+            "mae": 0.08072896301746368,
+            "ssim": 0.6453781127929688,
+            "lpips": 0.15010370314121246
+          },
+          "lpips_drop": 0.09208501875400543,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "66d22f872d59"
+        },
+        {
+          "source_sha256": "c7670b999d9252ef617d6cbbec3e54b1336560d72a7f72f15a8e106bb7c9d4db",
+          "dx": 1,
+          "dy": 11,
+          "ncc": 0.8688352704048157,
+          "boundary": false,
+          "before": {
+            "mae": 0.12065834552049637,
+            "ssim": 0.4554166793823242,
+            "lpips": 0.25079846382141113
+          },
+          "after": {
+            "mae": 0.08268927037715912,
+            "ssim": 0.6330306529998779,
+            "lpips": 0.15840576589107513
+          },
+          "lpips_drop": 0.092392697930336,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "c7670b999d92"
+        },
+        {
+          "source_sha256": "cedeac0284f0964d2d41ab836b6e6b65d128e798c2d1a924b532bf0cca242e72",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9678887128829956,
+          "boundary": false,
+          "before": {
+            "mae": 0.03536982834339142,
+            "ssim": 0.8669959902763367,
+            "lpips": 0.08377732336521149
+          },
+          "after": {
+            "mae": 0.03857387229800224,
+            "ssim": 0.8312471508979797,
+            "lpips": 0.08900270611047745
+          },
+          "lpips_drop": -0.005225382745265961,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "cedeac0284f0"
+        },
+        {
+          "source_sha256": "9a1c4c8706b42a4cc2aae5e9863bdc9d581cf78ef92cae1edc5ee4bf5b006a08",
+          "dx": -1,
+          "dy": -1,
+          "ncc": 0.6368065476417542,
+          "boundary": false,
+          "before": {
+            "mae": 0.1439516693353653,
+            "ssim": 0.6595562100410461,
+            "lpips": 0.20348213613033295
+          },
+          "after": {
+            "mae": 0.1478138417005539,
+            "ssim": 0.6023281216621399,
+            "lpips": 0.20685970783233643
+          },
+          "lpips_drop": -0.003377571702003479,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "9a1c4c8706b4"
+        }
+      ]
+    },
+    "triggered": {
+      "mean_fixed_lpips": 0.10555200576782227,
+      "mean_aligned_lpips": 0.08865367323160171,
+      "final_fixed_lpips": 0.2212597131729126,
+      "final_aligned_lpips": 0.18437452614307404,
+      "old_threshold_count_before": 7,
+      "old_threshold_count_after": 7,
+      "stage_rows": [
+        {
+          "source_sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+          "dx": 0,
+          "dy": 0,
+          "ncc": 0.998278796672821,
+          "boundary": false,
+          "before": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "after": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "lpips_drop": 0.0,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "72f0074fe7df"
+        },
+        {
+          "source_sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9968666434288025,
+          "boundary": false,
+          "before": {
+            "mae": 0.025968050584197044,
+            "ssim": 0.8348621726036072,
+            "lpips": 0.05477737635374069
+          },
+          "after": {
+            "mae": 0.023362623527646065,
+            "ssim": 0.8567665219306946,
+            "lpips": 0.05424788221716881
+          },
+          "lpips_drop": 0.0005294941365718842,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "06b5c9dc02fb"
+        },
+        {
+          "source_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9984006881713867,
+          "boundary": false,
+          "before": {
+            "mae": 0.018093613907694817,
+            "ssim": 0.8852024078369141,
+            "lpips": 0.033253010362386703
+          },
+          "after": {
+            "mae": 0.018137197941541672,
+            "ssim": 0.8782609105110168,
+            "lpips": 0.03545316308736801
+          },
+          "lpips_drop": -0.002200152724981308,
+          "old_threshold_before": false,
+          "old_threshold_after": false,
+          "crop_id": "fd9030e0ebd4"
+        },
+        {
+          "source_sha256": "0dad891319963f217bc8f572380689d59a5e4c3a16af6d3a9f181c7399fef472",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9656414985656738,
+          "boundary": false,
+          "before": {
+            "mae": 0.026393255218863487,
+            "ssim": 0.8662427067756653,
+            "lpips": 0.058615006506443024
+          },
+          "after": {
+            "mae": 0.03145251423120499,
+            "ssim": 0.8049346804618835,
+            "lpips": 0.06547147035598755
+          },
+          "lpips_drop": -0.006856463849544525,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "0dad89131996"
+        },
+        {
+          "source_sha256": "36e4aacca1f0e0f9d1f647dfc4f8b02e75f31fca083b8cfced9aff3ea0d67803",
+          "dx": 0,
+          "dy": 8,
+          "ncc": 0.9098455905914307,
+          "boundary": false,
+          "before": {
+            "mae": 0.09568075835704803,
+            "ssim": 0.5687956809997559,
+            "lpips": 0.18760992586612701
+          },
+          "after": {
+            "mae": 0.07467646896839142,
+            "ssim": 0.6490752696990967,
+            "lpips": 0.13018178939819336
+          },
+          "lpips_drop": 0.057428136467933655,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "36e4aacca1f0"
+        },
+        {
+          "source_sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+          "dx": 1,
+          "dy": 11,
+          "ncc": 0.8654777407646179,
+          "boundary": false,
+          "before": {
+            "mae": 0.11808444559574127,
+            "ssim": 0.46854367852211,
+            "lpips": 0.23934999108314514
+          },
+          "after": {
+            "mae": 0.07823135703802109,
+            "ssim": 0.6631171107292175,
+            "lpips": 0.14190733432769775
+          },
+          "lpips_drop": 0.09744265675544739,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "f82b49698966"
+        },
+        {
+          "source_sha256": "c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9683824777603149,
+          "boundary": false,
+          "before": {
+            "mae": 0.03167292848229408,
+            "ssim": 0.8630642294883728,
+            "lpips": 0.06362206488847733
+          },
+          "after": {
+            "mae": 0.03250129148364067,
+            "ssim": 0.850684642791748,
+            "lpips": 0.0666557252407074
+          },
+          "lpips_drop": -0.003033660352230072,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "c232ff01835b"
+        },
+        {
+          "source_sha256": "3014d2c1bde808ff66c027895de2e1ee37d9d75dd5307dce2d7ddfe17b9ab39f",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9378072619438171,
+          "boundary": false,
+          "before": {
+            "mae": 0.04390442743897438,
+            "ssim": 0.8412739634513855,
+            "lpips": 0.08152759820222855
+          },
+          "after": {
+            "mae": 0.04752016440033913,
+            "ssim": 0.7983755469322205,
+            "lpips": 0.08751408755779266
+          },
+          "lpips_drop": -0.005986489355564117,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "3014d2c1bde8"
+        },
+        {
+          "source_sha256": "cedeac0284f0964d2d41ab836b6e6b65d128e798c2d1a924b532bf0cca242e72",
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9678887128829956,
+          "boundary": false,
+          "before": {
+            "mae": 0.03536982834339142,
+            "ssim": 0.8669959902763367,
+            "lpips": 0.08377732336521149
+          },
+          "after": {
+            "mae": 0.03857387229800224,
+            "ssim": 0.8312471508979797,
+            "lpips": 0.08900270611047745
+          },
+          "lpips_drop": -0.005225382745265961,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "cedeac0284f0"
+        },
+        {
+          "source_sha256": "7f3ceff51b82d4a7c37016121491e5ba2eb78bffb3641d70ab0086bef2bb7a15",
+          "dx": 5,
+          "dy": 0,
+          "ncc": 0.6435267329216003,
+          "boundary": false,
+          "before": {
+            "mae": 0.1581823229789734,
+            "ssim": 0.48046746850013733,
+            "lpips": 0.2212597131729126
+          },
+          "after": {
+            "mae": 0.13788925111293793,
+            "ssim": 0.643937349319458,
+            "lpips": 0.18437452614307404
+          },
+          "lpips_drop": 0.03688518702983856,
+          "old_threshold_before": true,
+          "old_threshold_after": true,
+          "crop_id": "7f3ceff51b82"
+        }
+      ]
+    }
+  },
+  "human_evaluation": "not_collected",
+  "independent_agent_evaluation": "not_collected"
+}

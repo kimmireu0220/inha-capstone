@@ -1,0 +1,670 @@
+{
+  "complete": false,
+  "full_design_complete": false,
+  "collection_complete": true,
+  "terminal_failures": {
+    "P05-once-triggered": {
+      "stage": 9,
+      "failure_id": "1953781fd3ecbf8a2704d42202801912622e67f8bd0a8db3646b7ccac42111d2",
+      "reason": "generation_failed_no_retry"
+    }
+  },
+  "branches": [
+    {
+      "name": "P04-once-triggered",
+      "person": "P04",
+      "policy": "once-triggered",
+      "alarm_stage": 3,
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "rows": [
+        {
+          "stage": 1,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+          "metrics": {
+            "mae": 0.01840371824800968,
+            "ssim": 0.8883209228515625,
+            "lpips": 0.031728047877550125
+          },
+          "rebased": false
+        },
+        {
+          "stage": 2,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+          "metrics": {
+            "mae": 0.025968050584197044,
+            "ssim": 0.8348621726036072,
+            "lpips": 0.05477737635374069
+          },
+          "rebased": false
+        },
+        {
+          "stage": 3,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+          "metrics": {
+            "mae": 0.018093613907694817,
+            "ssim": 0.8852024078369141,
+            "lpips": 0.033253010362386703
+          },
+          "rebased": true
+        },
+        {
+          "stage": 4,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+          "metrics": {
+            "mae": 0.035345517098903656,
+            "ssim": 0.8041757941246033,
+            "lpips": 0.07039143145084381
+          },
+          "rebased": false
+        },
+        {
+          "stage": 5,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png",
+          "metrics": {
+            "mae": 0.20014876127243042,
+            "ssim": 0.28137946128845215,
+            "lpips": 0.5144404768943787
+          },
+          "rebased": false
+        },
+        {
+          "stage": 6,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/bc01329be131e649185e1a3b5752a6610d827874dbc6442249ca13267fb6c576.png",
+          "metrics": {
+            "mae": 0.20254626870155334,
+            "ssim": 0.2748970687389374,
+            "lpips": 0.5162861347198486
+          },
+          "rebased": false
+        },
+        {
+          "stage": 7,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/bc01329be131e649185e1a3b5752a6610d827874dbc6442249ca13267fb6c576.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1b96784128614c002ef05f87b2553f74e16f98ed55d98431059e48b2728b08be.png",
+          "metrics": {
+            "mae": 0.20389650762081146,
+            "ssim": 0.2701603174209595,
+            "lpips": 0.5141247510910034
+          },
+          "rebased": false
+        },
+        {
+          "stage": 8,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1b96784128614c002ef05f87b2553f74e16f98ed55d98431059e48b2728b08be.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/b49c1cb78e70318e9e5814a7d5465b1f5a7f63db665aaa1f862092782c726349.png",
+          "metrics": {
+            "mae": 0.2052837610244751,
+            "ssim": 0.2629941403865814,
+            "lpips": 0.5179169774055481
+          },
+          "rebased": false
+        },
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/b49c1cb78e70318e9e5814a7d5465b1f5a7f63db665aaa1f862092782c726349.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/640e4039ccd152214d33985ae60f0f3170a40ebe2098218d7adb5f2cf62c22ff.png",
+          "metrics": {
+            "mae": 0.20779387652873993,
+            "ssim": 0.25389596819877625,
+            "lpips": 0.5253676772117615
+          },
+          "rebased": false
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/640e4039ccd152214d33985ae60f0f3170a40ebe2098218d7adb5f2cf62c22ff.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/a79f43d43e541a45c9e2735d4ebb2e8997714570ca8d0cd122054521a8f6ebc7.png",
+          "metrics": {
+            "mae": 0.2465388923883438,
+            "ssim": 0.22978626191616058,
+            "lpips": 0.5694571733474731
+          },
+          "rebased": false
+        }
+      ],
+      "logical_calls": 11
+    },
+    {
+      "name": "P05-once-triggered",
+      "person": "P05",
+      "policy": "once-triggered",
+      "alarm_stage": 2,
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "rows": [
+        {
+          "stage": 1,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-1.png",
+          "metrics": {
+            "mae": 0.015822634100914,
+            "ssim": 0.8821151256561279,
+            "lpips": 0.048692625015974045
+          },
+          "rebased": false
+        },
+        {
+          "stage": 2,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/rebase.png",
+          "metrics": {
+            "mae": 0.01782056875526905,
+            "ssim": 0.858210027217865,
+            "lpips": 0.04252468794584274
+          },
+          "rebased": true
+        },
+        {
+          "stage": 3,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/rebase.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/a189cc1123c68e0a0497f1c420222f569c46f148b4a429e363d7a4dbdcfde2ad.png",
+          "metrics": {
+            "mae": 0.022932985797524452,
+            "ssim": 0.8179461359977722,
+            "lpips": 0.06708072125911713
+          },
+          "rebased": false
+        },
+        {
+          "stage": 4,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/a189cc1123c68e0a0497f1c420222f569c46f148b4a429e363d7a4dbdcfde2ad.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/591e44e949888b85f8f3e1f78bc319fff2981ff277e5ee7ac865a6a892b56040.png",
+          "metrics": {
+            "mae": 0.04443921148777008,
+            "ssim": 0.7202920913696289,
+            "lpips": 0.1104809120297432
+          },
+          "rebased": false
+        },
+        {
+          "stage": 5,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/591e44e949888b85f8f3e1f78bc319fff2981ff277e5ee7ac865a6a892b56040.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2f7d3b9077348addeae420472e6a36ef5d8cadfe3d79c15553fdaf373500cf11.png",
+          "metrics": {
+            "mae": 0.06353718787431717,
+            "ssim": 0.7343623042106628,
+            "lpips": 0.1327250897884369
+          },
+          "rebased": false
+        },
+        {
+          "stage": 6,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2f7d3b9077348addeae420472e6a36ef5d8cadfe3d79c15553fdaf373500cf11.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/e5073b92f75e95932443f154cd8cb562b9ef6978bff7c19ff67b30ac28add594.png",
+          "metrics": {
+            "mae": 0.06906642764806747,
+            "ssim": 0.6937413811683655,
+            "lpips": 0.1533958911895752
+          },
+          "rebased": false
+        },
+        {
+          "stage": 7,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/e5073b92f75e95932443f154cd8cb562b9ef6978bff7c19ff67b30ac28add594.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/3ac4a141edceb3249ad25d6fd5a2f7fd6666ca0e78f2598c51a4323f523c30a9.png",
+          "metrics": {
+            "mae": 0.07781306654214859,
+            "ssim": 0.6688655018806458,
+            "lpips": 0.16179943084716797
+          },
+          "rebased": false
+        },
+        {
+          "stage": 8,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/3ac4a141edceb3249ad25d6fd5a2f7fd6666ca0e78f2598c51a4323f523c30a9.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/9be1eb1b850deca7ad429188abd1b7ec5ca9d252b1c2c1f997074eb58700c572.png",
+          "metrics": {
+            "mae": 0.08195889741182327,
+            "ssim": 0.6380129456520081,
+            "lpips": 0.1853266954421997
+          },
+          "rebased": false
+        }
+      ],
+      "stopped": {
+        "stage": 9,
+        "failure_id": "1953781fd3ecbf8a2704d42202801912622e67f8bd0a8db3646b7ccac42111d2",
+        "reason": "generation_failed_no_retry"
+      },
+      "planned_logical_calls": 11,
+      "observed_successful_calls": 9,
+      "observed_attempted_calls": 10
+    },
+    {
+      "name": "P06-once-triggered",
+      "person": "P06",
+      "policy": "once-triggered",
+      "alarm_stage": 2,
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "rows": [
+        {
+          "stage": 1,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-1.png",
+          "metrics": {
+            "mae": 0.016039207577705383,
+            "ssim": 0.8770872950553894,
+            "lpips": 0.052219681441783905
+          },
+          "rebased": false
+        },
+        {
+          "stage": 2,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/rebase.png",
+          "metrics": {
+            "mae": 0.01791081205010414,
+            "ssim": 0.8638374209403992,
+            "lpips": 0.04879290983080864
+          },
+          "rebased": true
+        },
+        {
+          "stage": 3,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/rebase.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/d5a1b9fde2bb0c002b7fff15262856ad26e5c6621283c9884c67687c641e904e.png",
+          "metrics": {
+            "mae": 0.023800665512681007,
+            "ssim": 0.8164615035057068,
+            "lpips": 0.07393765449523926
+          },
+          "rebased": false
+        },
+        {
+          "stage": 4,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/d5a1b9fde2bb0c002b7fff15262856ad26e5c6621283c9884c67687c641e904e.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/cae07b9439767a701294cf3efb354dbe831b96cc66c2a652c5d666cd154fbb26.png",
+          "metrics": {
+            "mae": 0.03808801621198654,
+            "ssim": 0.7457380294799805,
+            "lpips": 0.12130487710237503
+          },
+          "rebased": false
+        },
+        {
+          "stage": 5,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/cae07b9439767a701294cf3efb354dbe831b96cc66c2a652c5d666cd154fbb26.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1b8b4384bf4073dd36f5ca9a8df48a8b18372a9b38e41f4f86875e3e58cdc810.png",
+          "metrics": {
+            "mae": 0.09202216565608978,
+            "ssim": 0.5110464692115784,
+            "lpips": 0.2531405985355377
+          },
+          "rebased": false
+        },
+        {
+          "stage": 6,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1b8b4384bf4073dd36f5ca9a8df48a8b18372a9b38e41f4f86875e3e58cdc810.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1256d8a511946bcf06674cc377eeb81040b3421d88f9f31679292e004dd74279.png",
+          "metrics": {
+            "mae": 0.09789947420358658,
+            "ssim": 0.49220263957977295,
+            "lpips": 0.2700533866882324
+          },
+          "rebased": false
+        },
+        {
+          "stage": 7,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1256d8a511946bcf06674cc377eeb81040b3421d88f9f31679292e004dd74279.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1c8416f722796bf0c978ad0d7cd7d9b396e294e141f2c30bfc1ebdb0a899c4f9.png",
+          "metrics": {
+            "mae": 0.1041456013917923,
+            "ssim": 0.47104668617248535,
+            "lpips": 0.2874263525009155
+          },
+          "rebased": false
+        },
+        {
+          "stage": 8,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1c8416f722796bf0c978ad0d7cd7d9b396e294e141f2c30bfc1ebdb0a899c4f9.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2c33ab93b8dadc9e073ac39ace4aa4b22c4e1870c40c9c79e9cc1562e08d583f.png",
+          "metrics": {
+            "mae": 0.10720978677272797,
+            "ssim": 0.45228028297424316,
+            "lpips": 0.30472028255462646
+          },
+          "rebased": false
+        },
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2c33ab93b8dadc9e073ac39ace4aa4b22c4e1870c40c9c79e9cc1562e08d583f.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/968515bb0c769a4eb8cdfe313683dda18ae6e952a82b761c56f5edb94a6248e0.png",
+          "metrics": {
+            "mae": 0.11064629256725311,
+            "ssim": 0.4441892206668854,
+            "lpips": 0.3074617385864258
+          },
+          "rebased": false
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/968515bb0c769a4eb8cdfe313683dda18ae6e952a82b761c56f5edb94a6248e0.png",
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/b1c253901c302614e4d7d4b6bcec1c4603540d76dc332e5e08f13b7060f821e8.png",
+          "metrics": {
+            "mae": 0.1730796843767166,
+            "ssim": 0.3262294828891754,
+            "lpips": 0.39165157079696655
+          },
+          "rebased": false
+        }
+      ],
+      "logical_calls": 11
+    },
+    {
+      "name": "P01-end-only",
+      "person": "P01",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P01.png",
+      "roi": [
+        340,
+        120,
+        660,
+        480
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f7d3d61c9268e64cdc10e69fc83fa2fc13f9fa1ffa411135f7996d984320514a.png",
+          "metrics": {
+            "mae": 0.16480223834514618,
+            "ssim": 0.42618611454963684,
+            "lpips": 0.2761557698249817
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P02-end-only",
+      "person": "P02",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
+      "roi": [
+        352,
+        160,
+        672,
+        520
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398.png",
+          "metrics": {
+            "mae": 0.07742524147033691,
+            "ssim": 0.7169287800788879,
+            "lpips": 0.11530911177396774
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P03-r1-end-only",
+      "person": "P03-r1",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "roi": [
+        352,
+        64,
+        672,
+        424
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
+          "metrics": {
+            "mae": 0.1474795937538147,
+            "ssim": 0.4508729875087738,
+            "lpips": 0.2523171007633209
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P03-r2-end-only",
+      "person": "P03-r2",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "roi": [
+        352,
+        64,
+        672,
+        424
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
+          "metrics": {
+            "mae": 0.1474795937538147,
+            "ssim": 0.4508729875087738,
+            "lpips": 0.2523171007633209
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P04-end-only",
+      "person": "P04",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/0584df0f0264621e36baf9958de82a612b7952e9f8cec8396db470aafe1acf0f.png",
+          "metrics": {
+            "mae": 0.14220327138900757,
+            "ssim": 0.694753885269165,
+            "lpips": 0.18617664277553558
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P05-end-only",
+      "person": "P05",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f.png",
+          "metrics": {
+            "mae": 0.15727263689041138,
+            "ssim": 0.5925163626670837,
+            "lpips": 0.23568332195281982
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P06-end-only",
+      "person": "P06",
+      "policy": "end-only",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "rows": [
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/9f07dd1ff9f715e364bbfb6b8429a6bb85ffdb1a1dffbadc3606fa87133e26b0.png",
+          "metrics": {
+            "mae": 0.12653160095214844,
+            "ssim": 0.4720388948917389,
+            "lpips": 0.3100045621395111
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 11,
+      "single_shot_calls": 1
+    },
+    {
+      "name": "P04-always-original",
+      "person": "P04",
+      "policy": "always-original",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "rows": [
+        {
+          "stage": 1,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c01d8c9766811bf9cf5d8629bbfc08ea6560f2cd63ea1950370cf0316b2f77d1.png",
+          "metrics": {
+            "mae": 0.0165006835013628,
+            "ssim": 0.8933680057525635,
+            "lpips": 0.03469075262546539
+          },
+          "rebased": true
+        },
+        {
+          "stage": 2,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/34c9eac283afb01246cca9c2cf4a27b28ef3089eb3ede8c0ad94b6b8ddb8c3b7.png",
+          "metrics": {
+            "mae": 0.02022259682416916,
+            "ssim": 0.8826797604560852,
+            "lpips": 0.032905057072639465
+          },
+          "rebased": true
+        },
+        {
+          "stage": 3,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+          "metrics": {
+            "mae": 0.018093613907694817,
+            "ssim": 0.8852024078369141,
+            "lpips": 0.033253010362386703
+          },
+          "rebased": true
+        },
+        {
+          "stage": 4,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png",
+          "metrics": {
+            "mae": 0.026393255218863487,
+            "ssim": 0.8662427067756653,
+            "lpips": 0.058615006506443024
+          },
+          "rebased": true
+        },
+        {
+          "stage": 5,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.png",
+          "metrics": {
+            "mae": 0.09568075835704803,
+            "ssim": 0.5687956809997559,
+            "lpips": 0.18760992586612701
+          },
+          "rebased": true
+        },
+        {
+          "stage": 6,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+          "metrics": {
+            "mae": 0.11808444559574127,
+            "ssim": 0.46854367852211,
+            "lpips": 0.23934999108314514
+          },
+          "rebased": true
+        },
+        {
+          "stage": 7,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png",
+          "metrics": {
+            "mae": 0.03167292848229408,
+            "ssim": 0.8630642294883728,
+            "lpips": 0.06362206488847733
+          },
+          "rebased": true
+        },
+        {
+          "stage": 8,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png",
+          "metrics": {
+            "mae": 0.04390442743897438,
+            "ssim": 0.8412739634513855,
+            "lpips": 0.08152759820222855
+          },
+          "rebased": true
+        },
+        {
+          "stage": 9,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+          "metrics": {
+            "mae": 0.07454399019479752,
+            "ssim": 0.6816647052764893,
+            "lpips": 0.12434537708759308
+          },
+          "rebased": true
+        },
+        {
+          "stage": 10,
+          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/0584df0f0264621e36baf9958de82a612b7952e9f8cec8396db470aafe1acf0f.png",
+          "metrics": {
+            "mae": 0.14220327138900757,
+            "ssim": 0.694753885269165,
+            "lpips": 0.18617664277553558
+          },
+          "rebased": true
+        }
+      ],
+      "logical_calls": 10
+    }
+  ],
+  "new_calls": 25,
+  "new_failed_calls": 1,
+  "human_evaluation": "not_collected"
+}

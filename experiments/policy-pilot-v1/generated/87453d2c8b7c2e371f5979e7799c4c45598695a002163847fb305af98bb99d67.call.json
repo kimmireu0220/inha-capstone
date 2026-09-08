@@ -1,0 +1,23 @@
+{
+  "id": "87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67",
+  "stage": 7,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+  "input_sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.png",
+  "policies": [
+    "fixed3"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-be99d540-ce9d-4288-9522-d808de4b6268.png",
+  "started": "2026-09-05T12:39:05.854Z",
+  "completed": "2026-09-05T12:40:32.641Z",
+  "attempt": 1
+}

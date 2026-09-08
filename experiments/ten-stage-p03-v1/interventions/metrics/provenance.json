@@ -1,0 +1,56 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "config_sha256": "9af1e4f6f4d0c4e7e2d921de22a0c9a4301a421c6337efc38b5ce14ba0553995",
+  "script_sha256": "b14b31a5a10dae112d8d7ab45e388e0b56ea3d80fbfbc1863a5a931638abd5b4",
+  "prompts_sha256": "3705499a388c0b953edec13b27d5dcd5b6fca8b07231ccf1c4a5118d4ee1311f",
+  "sequential_metrics_sha256": "71a39cdd330f3ad7a1e3e6c88eb55181d039d6bf083b24652ed736591cf89bb2",
+  "algorithm_reference": "experiments/ten-stage-p03-v1/metrics/compute.py",
+  "algorithm_reference_sha256": "0a03161acf68bab65bac7c47104dfe47e5e16b330c2a60e83d09508745640340",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "blind_mapping_sha256": "84ecd699457ba13c38a66d95af2fec9c3db5a10ebac75aa79d76ba3e6bf4fe21",
+  "blinded_image_sha256": {
+    "run-1": {
+      "blind-full/10d6d2addd11.png": "653acb9ccf2b4c530d55002204f183f4c88551ce50cf1a91036ea98d030f2c8b",
+      "blind-full/46a0cda95c5d.png": "f4b9e410aefb6239acc8833a6f70abed876c8c1be7bdefb118de4a2ff209f82f",
+      "blind-full/822a130e3713.png": "6677734c41d78b9a97672ae78bcacff3aff75da89e16b80f912214fc44742b94",
+      "blind-full/868fc8f0e20a.png": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "blind-full/reference.png": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "blind-crops/10d6d2addd11.png": "13f469d5cbce2ae0cd1fdd6ef975981de39e0bee4fb842c6378079371da95ace",
+      "blind-crops/46a0cda95c5d.png": "80bddaedf11ea848321943bf7e9d32a7b13888ac1c33495bbb40d9695ba517aa",
+      "blind-crops/822a130e3713.png": "592bdb74a78daac5526ea722a24f048ffd46dce6aaac7ed981c76e1204efbbd0",
+      "blind-crops/868fc8f0e20a.png": "4044c08e8154f41baf80af6960ad47c0b57875ad2ef32909f3bcb261ab916ccd",
+      "blind-crops/reference.png": "905ed2ac3874257781177c3da7a0aed7f0bdedbe03f2757132a81108ca597a21"
+    },
+    "run-2": {
+      "blind-full/3f459a02cf8c.png": "32520ceea9f03a7e4d4d527cb3eef62e633b00008e5c635e08b93c4623a5e7ab",
+      "blind-full/53d70db283de.png": "0f4d1f27be874b933e77c9b024f0e683e1607cf5e5b8283bb5344f68d54ba537",
+      "blind-full/943f0c997fee.png": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+      "blind-full/d37dc20eb58e.png": "d0c920cf1e9537227ec870eea00efad48c67b11232d55d7cf209f172c7c05d1b",
+      "blind-full/reference.png": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "blind-crops/3f459a02cf8c.png": "8010d52fee5d462bd278e90ecbcf52d5e591b1cf716506d077c555dd9eec8b48",
+      "blind-crops/53d70db283de.png": "d9f4185c92bd148154980577a6c05ae4b26261b42b57b6b74f731f2c4bd65d66",
+      "blind-crops/943f0c997fee.png": "cbe69c3b71a96d14572c6d27d99c1ef1f502554feba5de77f699f9261cfdebcf",
+      "blind-crops/d37dc20eb58e.png": "bb2dbd82c5aa659d083a1d6d8438dc86f5c0f571659a904bb8a135d6a525cace",
+      "blind-crops/reference.png": "905ed2ac3874257781177c3da7a0aed7f0bdedbe03f2757132a81108ca597a21"
+    }
+  }
+}

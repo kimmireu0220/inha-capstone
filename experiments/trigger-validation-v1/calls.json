@@ -1,0 +1,518 @@
+[
+  {
+    "id": "step-1",
+    "stage": 1,
+    "korean": "양쪽 귀에 작은 은색 링 귀걸이",
+    "change": "Add small silver hoop earrings to both ears.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd small silver hoop earrings to both ears.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-2",
+    "stage": 2,
+    "korean": "얇은 은색 목걸이와 작은 원형 은색 펜던트",
+    "change": "Add a thin silver necklace with one small round silver pendant.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd a thin silver necklace with one small round silver pendant.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-3",
+    "stage": 3,
+    "korean": "화면 오른쪽 가슴에 작은 버건디 원형 핀 하나",
+    "change": "Add exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right)."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd exactly one small burgundy circular pin on the person's left chest (viewer-right).\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-4",
+    "stage": 4,
+    "korean": "남색 재킷과 아이보리 라운드넥 셔츠",
+    "change": "Change clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-5",
+    "stage": 5,
+    "korean": "현대적 사무실 배경",
+    "change": "Replace only the background with a modern office. Keep lighting on the person unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the background with a modern office. Keep lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-6",
+    "stage": 6,
+    "korean": "기존 핀을 코발트 파란색으로 변경",
+    "change": "Change the existing burgundy circular pin to cobalt blue. Keep its size, circular shape and location. Do not add another pin.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange the existing burgundy circular pin to cobalt blue. Keep its size, circular shape and location. Do not add another pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-7",
+    "stage": 7,
+    "korean": "기존 펜던트를 작은 은색 물방울 모양으로 변경",
+    "change": "Change only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-8",
+    "stage": 8,
+    "korean": "기존 재킷을 차콜 회색으로 변경",
+    "change": "Change only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-9",
+    "stage": 9,
+    "korean": "핀 반대편인 화면 왼쪽 가슴 주머니에 버건디 포켓스퀘어",
+    "change": "Add one small burgundy pocket square in the blazer's breast pocket on the person's right chest (viewer-left). Keep the existing pin on the opposite side.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged.",
+      "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-9.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd one small burgundy pocket square in the blazer's breast pocket on the person's right chest (viewer-left). Keep the existing pin on the opposite side.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-10",
+    "stage": 10,
+    "korean": "사무실을 나무 책장이 있는 조용한 도서관으로 변경",
+    "change": "Replace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+      "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-9.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-10.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+    "run": 1,
+    "person": "P04"
+  },
+  {
+    "id": "step-1",
+    "stage": 1,
+    "korean": "양쪽 귀에 작은 은색 링 귀걸이",
+    "change": "Add small silver hoop earrings to both ears.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-1.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd small silver hoop earrings to both ears.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-2",
+    "stage": 2,
+    "korean": "얇은 은색 목걸이와 작은 원형 은색 펜던트",
+    "change": "Add a thin silver necklace with one small round silver pendant.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-1.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-2.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd a thin silver necklace with one small round silver pendant.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-3",
+    "stage": 3,
+    "korean": "화면 오른쪽 가슴에 작은 버건디 원형 핀 하나",
+    "change": "Add exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right)."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-2.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-3.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd exactly one small burgundy circular pin on the person's left chest (viewer-right).\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-4",
+    "stage": 4,
+    "korean": "남색 재킷과 아이보리 라운드넥 셔츠",
+    "change": "Change clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-3.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-4.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-5",
+    "stage": 5,
+    "korean": "현대적 사무실 배경",
+    "change": "Replace only the background with a modern office. Keep lighting on the person unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-4.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-5.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the background with a modern office. Keep lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-6",
+    "stage": 6,
+    "korean": "기존 핀을 코발트 파란색으로 변경",
+    "change": "Change the existing burgundy circular pin to cobalt blue. Keep its size, circular shape and location. Do not add another pin.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-5.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-6.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange the existing burgundy circular pin to cobalt blue. Keep its size, circular shape and location. Do not add another pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-7",
+    "stage": 7,
+    "korean": "기존 펜던트를 작은 은색 물방울 모양으로 변경",
+    "change": "Change only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-6.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-7.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-8",
+    "stage": 8,
+    "korean": "기존 재킷을 차콜 회색으로 변경",
+    "change": "Change only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-7.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-8.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-9",
+    "stage": 9,
+    "korean": "핀 반대편인 화면 왼쪽 가슴 주머니에 버건디 포켓스퀘어",
+    "change": "Add one small burgundy pocket square in the blazer's breast pocket on the person's right chest (viewer-left). Keep the existing pin on the opposite side.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged.",
+      "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-8.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-9.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd one small burgundy pocket square in the blazer's breast pocket on the person's right chest (viewer-left). Keep the existing pin on the opposite side.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-10",
+    "stage": 10,
+    "korean": "사무실을 나무 책장이 있는 조용한 도서관으로 변경",
+    "change": "Replace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+      "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-9.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-10.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+    "run": 1,
+    "person": "P05"
+  },
+  {
+    "id": "step-1",
+    "stage": 1,
+    "korean": "양쪽 귀에 작은 은색 링 귀걸이",
+    "change": "Add small silver hoop earrings to both ears.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-1.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd small silver hoop earrings to both ears.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-2",
+    "stage": 2,
+    "korean": "얇은 은색 목걸이와 작은 원형 은색 펜던트",
+    "change": "Add a thin silver necklace with one small round silver pendant.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-1.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-2.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd a thin silver necklace with one small round silver pendant.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-3",
+    "stage": 3,
+    "korean": "화면 오른쪽 가슴에 작은 버건디 원형 핀 하나",
+    "change": "Add exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right)."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-2.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-3.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd exactly one small burgundy circular pin on the person's left chest (viewer-right).\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-4",
+    "stage": 4,
+    "korean": "남색 재킷과 아이보리 라운드넥 셔츠",
+    "change": "Change clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-3.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-4.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-5",
+    "stage": 5,
+    "korean": "현대적 사무실 배경",
+    "change": "Replace only the background with a modern office. Keep lighting on the person unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-4.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-5.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the background with a modern office. Keep lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-6",
+    "stage": 6,
+    "korean": "기존 핀을 코발트 파란색으로 변경",
+    "change": "Change the existing burgundy circular pin to cobalt blue. Keep its size, circular shape and location. Do not add another pin.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small round silver pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-5.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-6.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange the existing burgundy circular pin to cobalt blue. Keep its size, circular shape and location. Do not add another pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-7",
+    "stage": 7,
+    "korean": "기존 펜던트를 작은 은색 물방울 모양으로 변경",
+    "change": "Change only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A navy blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-6.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-7.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-8",
+    "stage": 8,
+    "korean": "기존 재킷을 차콜 회색으로 변경",
+    "change": "Change only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-7.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-8.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-9",
+    "stage": 9,
+    "korean": "핀 반대편인 화면 왼쪽 가슴 주머니에 버건디 포켓스퀘어",
+    "change": "Add one small burgundy pocket square in the blazer's breast pocket on the person's right chest (viewer-left). Keep the existing pin on the opposite side.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A modern office background; original lighting on the person remains unchanged.",
+      "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-8.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-9.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd one small burgundy pocket square in the blazer's breast pocket on the person's right chest (viewer-left). Keep the existing pin on the opposite side.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+    "run": 1,
+    "person": "P06"
+  },
+  {
+    "id": "step-10",
+    "stage": 10,
+    "korean": "사무실을 나무 책장이 있는 조용한 도서관으로 변경",
+    "change": "Replace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.",
+    "state": {
+      "earrings": "Small silver hoop earrings on both ears.",
+      "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+      "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+      "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+      "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+      "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+    },
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-9.png",
+    "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-10.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the office background with a quiet library with wooden bookshelves. Keep the person and lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.\n- One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin.",
+    "run": 1,
+    "person": "P06"
+  }
+]

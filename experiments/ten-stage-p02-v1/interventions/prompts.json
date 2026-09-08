@@ -1,0 +1,17 @@
+[
+  {
+    "id": "repair",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-2.png",
+    "prompt": "Use case: identity-preserve. Input image 1 is the edit target. Photorealistic portrait, requested size 1024x1536. Correct only the unnatural patterned, etched-looking texture on the face and neck, restoring plausible natural skin texture without beautification, de-aging or smoothing away normal skin detail. Preserve the person's identity, facial geometry, expression, hair, gaze, head and body pose, proportions, framing, camera, background, clothing and lighting. Preserve these current requirements:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\nNo text, logo or watermark."
+  },
+  {
+    "id": "rollback",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-1.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd a thin silver necklace with one small round silver pendant.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant."
+  },
+  {
+    "id": "rebase",
+    "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
+    "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following accessory additions together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant."
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "sessions": 1,
+  "ratings": 16,
+  "overall": {
+    "0": 9,
+    "1": 1,
+    "2": 6
+  },
+  "by_policy": {
+    "end_regeneration": {
+      "n": 5,
+      "preservation_counts": {
+        "2": 5
+      },
+      "failed_rate": 0.0,
+      "mean_preservation": 2.0
+    },
+    "fixed_interval_3": {
+      "n": 1,
+      "preservation_counts": {
+        "1": 1
+      },
+      "failed_rate": 0.0,
+      "mean_preservation": 1.0
+    },
+    "sequential": {
+      "n": 7,
+      "preservation_counts": {
+        "0": 7
+      },
+      "failed_rate": 1.0,
+      "mean_preservation": 0.0
+    },
+    "shared_rebase_final": {
+      "n": 1,
+      "preservation_counts": {
+        "2": 1
+      },
+      "failed_rate": 0.0,
+      "mean_preservation": 2.0
+    },
+    "trigger_once": {
+      "n": 2,
+      "preservation_counts": {
+        "0": 2
+      },
+      "failed_rate": 1.0,
+      "mean_preservation": 0.0
+    }
+  },
+  "paired_with_face": {
+    "n": 16,
+    "clear_face_equals_failed_preservation": 16,
+    "rate": 1.0,
+    "note": "Same-rater paired descriptions; not independent validation."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "c01d8c9766811bf9cf5d8629bbfc08ea6560f2cd63ea1950370cf0316b2f77d1",
+  "stage": 1,
+  "kind": "rebase",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+  "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c01d8c9766811bf9cf5d8629bbfc08ea6560f2cd63ea1950370cf0316b2f77d1.png",
+  "branches": [
+    "P04-always-original"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a07237-bef7-75a1-91d9-71c79469df68/exec-1464f787-712b-4803-9202-71c56f027a64.png",
+  "started": "2026-09-05T15:46:24.081Z",
+  "completed": "2026-09-05T15:47:08.262Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "5a8c2c6a931b2488dd8138369a9148577094a63951da8f646a2fba17dfbc7144"
+}

@@ -1,0 +1,34 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "script_sha256": "e7cf71dae5fb6866b538a9d281af8a484ce668d43c1953bbbf87c91fdf6b8926",
+  "config_sha256": "6767ec6888489a5ca88e55d9e4b71c5f9fd0efe621ca7dc5748336c59dfb9b3d",
+  "baseline_metrics_sha256": "05e692971d1778996aab4083907f84bab91922bc2d71fc5cf4151e3a4bf40e4c",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "blind_full_sha256": {
+    "0d71c8671851.png": "a5c7b3cb7efb45f4dc0700bb8d69adc8d87c42f27de5157c2bc7ab6ec1eb5ae5",
+    "1c31dca1b23a.png": "c4e62d3557ae8dc936e31f561e0ddea45ab5f40bbaed0a2d9e23f0138634ba63",
+    "767ddede1587.png": "f9c8f029578051236fbd6354d1c3a31dab0fac4f9f47e6248e394c6f17774c65",
+    "81e100cc10b5.png": "c44110f76807bc9da2e6ef7d78979e3ae7c281ec39508328a843b735b6fbf2a1",
+    "reference.png": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0"
+  },
+  "blind_mapping_sha256": "95eb11450f31e562372207c1f096b34e809a8b2a90e480708f19ca3bf128c6ed"
+}

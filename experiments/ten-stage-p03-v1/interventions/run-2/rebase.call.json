@@ -1,0 +1,13 @@
+{
+  "run": 2,
+  "stage": 2,
+  "method": "rebase",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/run-2/rebase.png",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following accessory additions together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.",
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-6b8aa662-cb92-4f86-970f-f558622d00ec.png",
+  "started": "2026-09-05T10:06:59.295Z",
+  "completed": "2026-09-05T10:08:58.072Z",
+  "attempt": 1,
+  "status": "success"
+}

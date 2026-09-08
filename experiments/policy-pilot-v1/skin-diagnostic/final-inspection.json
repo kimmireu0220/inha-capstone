@@ -1,0 +1,75 @@
+{
+  "schema": "policy-final-author-inspection-v1",
+  "reviewer": "primary execution agent",
+  "blinded": false,
+  "independent": false,
+  "source": "Direct visual inspection of three final full images and actual final state; not human responses.",
+  "results": {
+    "sequential": {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-10.png",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+        "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+        "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+        "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+        "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+      },
+      "earrings": "Small hoops visible on both ears.",
+      "necklace": "One thin necklace with a teardrop-like pendant visible.",
+      "pin": "One blue circular pin visible at viewer-right; exact cobalt shade not colorimetrically verified.",
+      "clothes": "Dark grey blazer and light ivory crewneck visible.",
+      "library": "Wooden bookshelves and books visible; original person lighting preservation not established.",
+      "pocket": {
+        "status": "partial",
+        "expected": "One small burgundy pocket square at viewer-left, opposite the blue pin.",
+        "observed": "One burgundy pocket square at viewer-right, same side as the blue pin."
+      },
+      "all_requirements_met": false
+    },
+    "fixed3": {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/638ad9fe8d00cc59e7f655a0f7e1655691188f231fd1072bd0a465f345f2c958.png",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+        "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+        "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+        "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+        "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+      },
+      "earrings": "Small hoops visible on both ears.",
+      "necklace": "One thin necklace with a teardrop-like pendant visible.",
+      "pin": "One blue circular pin visible at viewer-right; exact cobalt shade not colorimetrically verified.",
+      "clothes": "Dark grey blazer and light ivory crewneck visible.",
+      "library": "Wooden bookshelves and books visible; original person lighting preservation not established.",
+      "pocket": {
+        "status": "partial",
+        "expected": "One small burgundy pocket square at viewer-left, opposite the blue pin.",
+        "observed": "One burgundy pocket square at viewer-right, same side as the blue pin."
+      },
+      "all_requirements_met": false
+    },
+    "triggered": {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/1aa5a3ad21e5dc70f547b61a4673c7504390809a75fc929add21481a3f9fb8a6.png",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+        "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+        "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+        "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+        "pocket": "One small burgundy pocket square in a breast pocket at viewer-left, opposite the blue pin."
+      },
+      "earrings": "Small hoops visible on both ears.",
+      "necklace": "One thin necklace with a teardrop-like pendant visible.",
+      "pin": "One blue circular pin visible at viewer-right; exact cobalt shade not colorimetrically verified.",
+      "clothes": "Dark grey blazer and light ivory crewneck visible.",
+      "library": "Wooden bookshelves and books visible; original person lighting preservation not established.",
+      "pocket": {
+        "status": "partial",
+        "expected": "One small burgundy pocket square at viewer-left, opposite the blue pin.",
+        "observed": "One burgundy pocket square at viewer-right, same side as the blue pin."
+      },
+      "all_requirements_met": false
+    }
+  }
+}

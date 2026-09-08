@@ -1,0 +1,275 @@
+{
+  "schema": "trigger-validation-summary-v1",
+  "portraits": 3,
+  "trajectories": 3,
+  "sequential_outputs": 30,
+  "rebase_outputs": 3,
+  "results": [
+    {
+      "person": "P04",
+      "stage": 3,
+      "first_alarms": {
+        "mae": 3,
+        "ssim": 2,
+        "lpips": 3
+      },
+      "baseline": {
+        "file": "step-3.png",
+        "stage": 3,
+        "mae": 0.03271098807454109,
+        "ssim": 0.7871373295783997,
+        "lpips": 0.07703612744808197,
+        "source_sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+        "measured_at": "2026-09-05T11:11:57.507548+00:00",
+        "alarms": {
+          "mae": true,
+          "ssim": true,
+          "lpips": true
+        }
+      },
+      "rebase": {
+        "file": "rebase.png",
+        "stage": null,
+        "mae": 0.018093613907694817,
+        "ssim": 0.8852024078369141,
+        "lpips": 0.033253010362386703,
+        "source_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+        "measured_at": "2026-09-05T11:15:17.652937+00:00",
+        "alarms": {
+          "mae": false,
+          "ssim": false,
+          "lpips": false
+        }
+      },
+      "delta": {
+        "mae": -0.014617374166846275,
+        "ssim": 0.0980650782585144,
+        "lpips": -0.04378311708569527
+      },
+      "agent_best": [
+        "rebase"
+      ],
+      "agent_ratings": {
+        "baseline": {
+          "id": "160b8a9646a7",
+          "requirements": [
+            {
+              "requirement": "Small silver hoop earrings on both ears.",
+              "rating": "충족",
+              "evidence": "양 귓불에 작은 은색 고리가 보인다."
+            },
+            {
+              "requirement": "A thin silver necklace with one small round silver pendant.",
+              "rating": "충족",
+              "evidence": "가느다란 은색 줄과 중앙의 작은 원형 펜던트 하나가 보인다."
+            },
+            {
+              "requirement": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+              "rating": "충족",
+              "evidence": "화면 오른쪽 가슴에 버건디 원형 핀 하나가 보인다."
+            }
+          ],
+          "face_change": 1,
+          "skin_artifact": 2,
+          "usable": "아니오",
+          "evidence": "눈·코·입의 배치는 대체로 유지되지만 눈가와 입가 윤곽 및 피부 명암이 조금 변했다. 원본에 없던 굽은 선과 밝은 조각 같은 무늬가 이마·볼·턱·목에 뚜렷하다. 셔츠에는 촘촘한 새 곡선 무늬가 전면적으로 생기고 배경도 얼룩져 보여 그대로 사용하기 어렵다. 원본의 자연 주름은 결함으로 세지 않았다."
+        },
+        "rebase": {
+          "id": "ba98ba50857e",
+          "requirements": [
+            {
+              "requirement": "Small silver hoop earrings on both ears.",
+              "rating": "충족",
+              "evidence": "양쪽 귀에 작은 은색 고리가 보인다."
+            },
+            {
+              "requirement": "A thin silver necklace with one small round silver pendant.",
+              "rating": "충족",
+              "evidence": "얇은 은색 체인과 둥근 은색 펜던트 하나가 보인다."
+            },
+            {
+              "requirement": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+              "rating": "충족",
+              "evidence": "화면 오른쪽 가슴에 작은 진한 붉은 원형 핀 하나가 보인다."
+            }
+          ],
+          "face_change": 0,
+          "skin_artifact": 1,
+          "usable": "예",
+          "evidence": "얼굴 주요 윤곽·표정·눈과 입의 형태가 원본과 매우 가깝다. 이마와 턱의 일부 결이 조금 더 도식적으로 보이나 경미하다. 회색 상의에 원본보다 곡선형 질감이 추가되어 완전한 의상 보존은 아니지만 전체 인물 사진에서 자연스러운 원단 질감으로 받아들일 여지가 있고, 배경·신체 윤곽에 뚜렷한 파손은 없다. 경미한 차이를 허용하는 기준으로 사용 가능이다."
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 2,
+      "first_alarms": {
+        "mae": 4,
+        "ssim": 2,
+        "lpips": 2
+      },
+      "baseline": {
+        "file": "step-2.png",
+        "stage": 2,
+        "mae": 0.022392643615603447,
+        "ssim": 0.815277099609375,
+        "lpips": 0.06950265914201736,
+        "source_sha256": "f6f9652b5ac951928b29a122fdc799834db4acc6f9830732f5c09925e77bf305",
+        "measured_at": "2026-09-05T11:07:31.672149+00:00",
+        "alarms": {
+          "mae": false,
+          "ssim": true,
+          "lpips": true
+        }
+      },
+      "rebase": {
+        "file": "rebase.png",
+        "stage": null,
+        "mae": 0.01782056875526905,
+        "ssim": 0.858210027217865,
+        "lpips": 0.04252468794584274,
+        "source_sha256": "9f6a838878b3f1decc1d3ca93b43e2c5ac6484f3d7ac4f2b87fc81e56182f099",
+        "measured_at": "2026-09-05T11:11:58.075955+00:00",
+        "alarms": {
+          "mae": false,
+          "ssim": false,
+          "lpips": false
+        }
+      },
+      "delta": {
+        "mae": -0.004572074860334396,
+        "ssim": 0.04293292760848999,
+        "lpips": -0.02697797119617462
+      },
+      "agent_best": [
+        "rebase"
+      ],
+      "agent_ratings": {
+        "baseline": {
+          "id": "987e78af80fe",
+          "requirements": [
+            {
+              "requirement": "Small silver hoop earrings on both ears.",
+              "rating": "충족",
+              "evidence": "양 귀 아래 작은 은색 고리가 보인다."
+            },
+            {
+              "requirement": "A thin silver necklace with one small round silver pendant.",
+              "rating": "충족",
+              "evidence": "얇은 은색 줄과 작은 둥근 은색 펜던트 하나가 보인다."
+            }
+          ],
+          "face_change": 1,
+          "skin_artifact": 2,
+          "usable": "아니오",
+          "evidence": "주요 얼굴 형태는 유지되지만 눈 주변·입술·턱의 명암과 선명도가 조금 달라졌다. 이마의 원래 가로 주름 사이에 밝은 불규칙 도형이 생기고 턱에는 닫힌 고리 모양, 볼에는 굽이치는 선이 뚜렷하다. 회색 상의 전면도 촘촘한 새 도형 무늬로 변하고 배경이 더 얼룩져 사용 불가로 판단한다."
+        },
+        "rebase": {
+          "id": "3b848eab6730",
+          "requirements": [
+            {
+              "requirement": "Small silver hoop earrings on both ears.",
+              "rating": "충족",
+              "evidence": "양 귓불에 작고 가는 은색 고리가 보인다."
+            },
+            {
+              "requirement": "A thin silver necklace with one small round silver pendant.",
+              "rating": "충족",
+              "evidence": "가느다란 금속성 은색 목걸이와 작은 원형 펜던트 하나가 보인다."
+            }
+          ],
+          "face_change": 1,
+          "skin_artifact": 2,
+          "usable": "아니오",
+          "evidence": "원본 얼굴의 비율과 표정은 가깝지만 턱과 입 주변 피부가 약간 재형성된 듯 보인다. 다른 후보보다 덜 강하더라도 턱의 고리 모양과 이마의 넓은 밝은 도형이 crop에서 분명하여 경미함을 넘는 새 피부 무늬로 판단한다. 상의의 추가 질감은 상대적으로 약하고 배경과 자세는 안정적이지만 얼굴 무늬 때문에 그대로 사용하기 어렵다."
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 2,
+      "first_alarms": {
+        "mae": 3,
+        "ssim": 2,
+        "lpips": 2
+      },
+      "baseline": {
+        "file": "step-2.png",
+        "stage": 2,
+        "mae": 0.022228486835956573,
+        "ssim": 0.8333027362823486,
+        "lpips": 0.07619599997997284,
+        "source_sha256": "3b0dd622f8fe7c0ce8b4fb8173e2cf7f414d37dfc02b5b5ed5218ee1b7e428aa",
+        "measured_at": "2026-09-05T11:07:32.041331+00:00",
+        "alarms": {
+          "mae": false,
+          "ssim": true,
+          "lpips": true
+        }
+      },
+      "rebase": {
+        "file": "rebase.png",
+        "stage": null,
+        "mae": 0.01791081205010414,
+        "ssim": 0.8638374209403992,
+        "lpips": 0.04879290983080864,
+        "source_sha256": "e51eb26ebbe0008b244947de63478de76cd4f4808f10f5ec209aca392a190387",
+        "measured_at": "2026-09-05T11:11:58.581289+00:00",
+        "alarms": {
+          "mae": false,
+          "ssim": false,
+          "lpips": false
+        }
+      },
+      "delta": {
+        "mae": -0.004317674785852432,
+        "ssim": 0.030534684658050537,
+        "lpips": -0.0274030901491642
+      },
+      "agent_best": [
+        "rebase"
+      ],
+      "agent_ratings": {
+        "rebase": {
+          "id": "7a48f64b5de0",
+          "requirements": [
+            {
+              "requirement": "Small silver hoop earrings on both ears.",
+              "rating": "충족",
+              "evidence": "양 귓불에 작은 은색 고리가 보인다."
+            },
+            {
+              "requirement": "A thin silver necklace with one small round silver pendant.",
+              "rating": "충족",
+              "evidence": "얇은 은색 목걸이와 작은 원형 펜던트 하나가 보인다."
+            }
+          ],
+          "face_change": 0,
+          "skin_artifact": 1,
+          "usable": "예",
+          "evidence": "눈·코·입·턱선과 표정이 원본과 매우 가깝다. 이마와 볼의 잔선이 약간 더 굽이치고 대비가 커졌지만 원래 있던 주름과 비교하면 추가 인위성은 약하다. 셔츠의 새 곡선형 질감은 보이나 전체에서 강한 파손으로 보이지 않고 배경과 자세도 안정적이다. 경미한 질감 차이를 허용하면 사용 가능이다."
+        },
+        "baseline": {
+          "id": "bade99510139",
+          "requirements": [
+            {
+              "requirement": "Small silver hoop earrings on both ears.",
+              "rating": "충족",
+              "evidence": "양쪽 귀에 은색 고리 귀걸이가 보인다."
+            },
+            {
+              "requirement": "A thin silver necklace with one small round silver pendant.",
+              "rating": "충족",
+              "evidence": "가느다란 은색 줄과 원형 은색 펜던트 하나가 보인다."
+            }
+          ],
+          "face_change": 1,
+          "skin_artifact": 2,
+          "usable": "아니오",
+          "evidence": "정체성을 크게 바꿀 정도는 아니지만 눈가·입가의 곡선과 명암이 미세하게 달라졌다. 원본의 이마 주름 외에 반복되는 꺾인 선·고리 모양이 이마와 볼에 생기며 목과 손에도 인위적인 결이 보인다. 상의 전면에 강한 새 무늬가 생기고 배경의 얼룩도 증가해 그대로 사용하기 어렵다."
+        }
+      }
+    }
+  ],
+  "human_evaluation_status": "excluded_incompatible_protocol_2026-09-08"
+}

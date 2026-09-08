@@ -1,0 +1,164 @@
+{
+  "sequential_outputs": 20,
+  "intervention_outputs": 6,
+  "sequential_prompts_exactly_match_P01": true,
+  "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+  "outputs": [
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-1.png",
+      "sha256": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-2.png",
+      "sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "input_sha256": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-3.png",
+      "sha256": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+      "input_sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-4.png",
+      "sha256": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+      "input_sha256": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-5.png",
+      "sha256": "fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
+      "input_sha256": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-6.png",
+      "sha256": "66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
+      "input_sha256": "fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-7.png",
+      "sha256": "323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
+      "input_sha256": "66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-8.png",
+      "sha256": "8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
+      "input_sha256": "323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-9.png",
+      "sha256": "881bf3b951c3b4b3d780c141076eda711630aec9335204d3a272da96de0e17a8",
+      "input_sha256": "8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-1/step-10.png",
+      "sha256": "9d09d3e04317802a77d780b988660e31ec308553621af352abcca712b85093a7",
+      "input_sha256": "881bf3b951c3b4b3d780c141076eda711630aec9335204d3a272da96de0e17a8",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-1.png",
+      "sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
+      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-2.png",
+      "sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+      "input_sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-3.png",
+      "sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
+      "input_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-4.png",
+      "sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
+      "input_sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-5.png",
+      "sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
+      "input_sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-6.png",
+      "sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
+      "input_sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-7.png",
+      "sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
+      "input_sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-8.png",
+      "sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
+      "input_sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-9.png",
+      "sha256": "633a1dcd3e7d0d89831a1f76386b73ace48bd41e1e60119deea11bb307322534",
+      "input_sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/run-2/step-10.png",
+      "sha256": "7e0283e28b91a20d948e30a69ace04edc1f9577dec735adccdeebf2bba3aa8f3",
+      "input_sha256": "633a1dcd3e7d0d89831a1f76386b73ace48bd41e1e60119deea11bb307322534",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/interventions/run-1/repair.png",
+      "sha256": "653acb9ccf2b4c530d55002204f183f4c88551ce50cf1a91036ea98d030f2c8b",
+      "input_sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/interventions/run-1/rollback.png",
+      "sha256": "6677734c41d78b9a97672ae78bcacff3aff75da89e16b80f912214fc44742b94",
+      "input_sha256": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/interventions/run-1/rebase.png",
+      "sha256": "f4b9e410aefb6239acc8833a6f70abed876c8c1be7bdefb118de4a2ff209f82f",
+      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/interventions/run-2/repair.png",
+      "sha256": "32520ceea9f03a7e4d4d527cb3eef62e633b00008e5c635e08b93c4623a5e7ab",
+      "input_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/interventions/run-2/rollback.png",
+      "sha256": "d0c920cf1e9537227ec870eea00efad48c67b11232d55d7cf209f172c7c05d1b",
+      "input_sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
+      "first_success": true
+    },
+    {
+      "output": "experiments/ten-stage-p03-v1/interventions/run-2/rebase.png",
+      "sha256": "0f4d1f27be874b933e77c9b024f0e683e1607cf5e5b8283bb5344f68d54ba537",
+      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "first_success": true
+    }
+  ]
+}

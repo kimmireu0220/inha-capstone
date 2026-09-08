@@ -1,0 +1,23 @@
+{
+  "id": "d587b62c5a8856428510c2ede45ceb7afdcef1456b1e79409fde656df81eed1f",
+  "stage": 5,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png",
+  "input_sha256": "0dad891319963f217bc8f572380689d59a5e4c3a16af6d3a9f181c7399fef472",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nReplace only the background with a modern office. Keep lighting on the person unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small round silver pendant.",
+    "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/d587b62c5a8856428510c2ede45ceb7afdcef1456b1e79409fde656df81eed1f.png",
+  "policies": [
+    "triggered"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-8b63f359-4b4c-4fdf-94fe-2c6889cf7f1c.png",
+  "started": "2026-09-05T12:33:47.921Z",
+  "completed": "2026-09-05T12:36:36.276Z",
+  "attempt": 1
+}

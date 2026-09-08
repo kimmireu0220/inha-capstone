@@ -1,0 +1,17 @@
+{
+  "policy": "fixed3",
+  "stage": 9,
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png",
+  "raw": {
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/f009775e087b921cf77364a20ee99985cdcd5e5a2ea0b7c902bc381d6d3487a0.png",
+    "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/f009775e087b921cf77364a20ee99985cdcd5e5a2ea0b7c902bc381d6d3487a0.call.json"
+  },
+  "metrics": {
+    "mae": 0.12431470304727554,
+    "ssim": 0.440036416053772,
+    "lpips": 0.2620500922203064
+  },
+  "rebase": true,
+  "threshold": 0.0555075,
+  "recorded_at": "2026-09-05T12:47:39.530781+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "reference": "assets/people/P03.png",
+  "roi_xyxy": [352, 64, 672, 424],
+  "crop_size_wh": [320, 360],
+  "roi_policy": "Fixed from P03 original alone before inspecting any candidate. Pillow exclusive right/bottom. Covers forehead, eyes, both cheeks, nose, mouth and chin; identical coordinates across both runs and every step.",
+  "image_processing": "Decode Pillow RGB, crop only. No resizing, registration, adaptive alignment, color correction, or normalization beyond stated metric ranges.",
+  "runs": [1, 2],
+  "steps": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "mae": "Mean absolute error over RGB channels and pixels, float32 RGB [0,1]; also reported in [0,255] units.",
+  "ssim": {"implementation": "skimage.metrics.structural_similarity", "channel_axis": 2, "data_range": 1.0, "win_size": 7, "gaussian_weights": false, "use_sample_covariance": true},
+  "lpips": {"network": "alex", "version": "0.1", "input_range": [-1, 1], "spatial": false, "device": "cpu", "eval": true},
+  "thresholds": {"mae_0_1_gte": 0.0288375, "ssim_lte": 0.842874, "lpips_alex_v0_1_gte": 0.0555075},
+  "primary_alarm": "lpips_alex_v0_1_gte",
+  "limits": [
+    "Fixed thresholds are transferred unchanged; no fitting or ratings used.",
+    "Descriptive image differences are not a validated detector or identity/surgery measure.",
+    "Fixed crops conflate pose, texture, lighting, and displacement with edited facial content.",
+    "Two sequential runs share one reference identity and do not establish generalization."
+  ]
+}

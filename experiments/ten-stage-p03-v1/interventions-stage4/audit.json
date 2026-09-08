@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-09-05T10:44:46.481Z",
+  "calls": [
+    {
+      "run": 1,
+      "method": "repair",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-1/repair.png",
+      "input_sha256": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+      "output_sha256": "4638f4c9b3b176a209e969fbd57db010cfc5d6ccb96225c0393345c44b139775",
+      "source_copy_identical": true,
+      "prompt_exact": true,
+      "attempt": 1
+    },
+    {
+      "run": 1,
+      "method": "rollback",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-1/rollback.png",
+      "input_sha256": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+      "output_sha256": "9cf770710a417e8b0576a62a34628e8bf3ab973bbe66db2bcf5477dd1d3781ad",
+      "source_copy_identical": true,
+      "prompt_exact": true,
+      "attempt": 1
+    },
+    {
+      "run": 1,
+      "method": "rebase",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-1/rebase.png",
+      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "output_sha256": "8034635aa214f6958849a8da298e4160a5ea7f0415502fd20baeac04acb8b742",
+      "source_copy_identical": true,
+      "prompt_exact": true,
+      "attempt": 1
+    },
+    {
+      "run": 2,
+      "method": "repair",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-2/repair.png",
+      "input_sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
+      "output_sha256": "c0983458bfb41c40ccfbc56d0c0ab343e97806707da46fa1f067bf1cda40a208",
+      "source_copy_identical": true,
+      "prompt_exact": true,
+      "attempt": 1
+    },
+    {
+      "run": 2,
+      "method": "rollback",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-2/rollback.png",
+      "input_sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
+      "output_sha256": "6ab5651c40b1739c741b85425191b60211b72d955ad31a7ed640b475defcb53e",
+      "source_copy_identical": true,
+      "prompt_exact": true,
+      "attempt": 1
+    },
+    {
+      "run": 2,
+      "method": "rebase",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-2/rebase.png",
+      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "output_sha256": "a726632235a1da9cbd04525de099026ae5541f01399a614890599a695aa7fbe3",
+      "source_copy_identical": true,
+      "prompt_exact": true,
+      "attempt": 1
+    }
+  ],
+  "survey_sha256": "a8c3e2340980b831c4a9b6fa332b98ca020f3c5522fc5c4791fafc94ecf83a9e"
+}

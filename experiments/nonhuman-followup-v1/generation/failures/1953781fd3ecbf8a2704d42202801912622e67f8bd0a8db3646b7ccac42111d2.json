@@ -1,0 +1,43 @@
+{
+  "id": "1953781fd3ecbf8a2704d42202801912622e67f8bd0a8db3646b7ccac42111d2",
+  "stage": 9,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/9be1eb1b850deca7ad429188abd1b7ec5ca9d252b1c2c1f997074eb58700c572.png",
+  "input_sha256": "07e5c8cfb13cdf99259683c4b5786bb84e44731afdee483cb6f2945b766d5696",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the crewneck shirt color from ivory to burgundy. Keep the charcoal grey blazer, blue pin, necklace, earrings and background unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1953781fd3ecbf8a2704d42202801912622e67f8bd0a8db3646b7ccac42111d2.png",
+  "branches": [
+    "P05-once-triggered"
+  ],
+  "status": "failed",
+  "output_status": "planned_path_only; file_not_created",
+  "output_exists": false,
+  "start": "2026-09-05T16:07:00.102Z",
+  "end": "2026-09-05T16:09:22.078Z",
+  "end_semantics": "Time the failure was recorded after the tool response was observed; exact tool rejection completion time was not captured.",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "http_status": 400,
+  "error": {
+    "message": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID a681a655-f237-46f3-81d6-cce762090bbd.",
+    "type": "image_generation_user_error",
+    "param": null,
+    "code": "moderation_blocked",
+    "moderation_details": {
+      "moderation_stage": "output",
+      "categories": [
+        "other"
+      ]
+    }
+  },
+  "requestID": "a681a655-f237-46f3-81d6-cce762090bbd",
+  "retried": false,
+  "dependent_stage_10": "not_attempted; stage_9_output_unavailable"
+}

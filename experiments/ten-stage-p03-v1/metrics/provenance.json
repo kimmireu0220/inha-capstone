@@ -1,0 +1,51 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "config_sha256": "9af1e4f6f4d0c4e7e2d921de22a0c9a4301a421c6337efc38b5ce14ba0553995",
+  "script_sha256": "0a03161acf68bab65bac7c47104dfe47e5e16b330c2a60e83d09508745640340",
+  "algorithm_reference": "experiments/ten-stage-p02-v1/metrics/compute.py",
+  "algorithm_reference_sha256": "ebcd58e3ad584a97c0c0d056161a53d3ac34b665cbe8a5d0abd64995db017ac7",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "crop_sha256": {
+    "0017ed7d7c30.png": "5399b33a8264ce396408324bb746593521d99b806009c7d990ba44df69260669",
+    "012b04bfa329.png": "f22c989fd2a336779423876e745e0d790ebbdd285ac2d08b3dd8773d2b89a261",
+    "027d130c5a4c.png": "cbe69c3b71a96d14572c6d27d99c1ef1f502554feba5de77f699f9261cfdebcf",
+    "040d2fbb0b32.png": "925d9b385a439b6477300d91aac28dbb06322ee7862b69cd36b8a905d9bc8d55",
+    "41adb57dbe3f.png": "d6ad4f6bcdf98e3d868b4d72e3de90ea01adff027552e64662daa54990c32f76",
+    "4276f1be4394.png": "24e5dc3d1474d7ac5faa375fd00194d564368c19699b7af1fac16a3ea0e297ea",
+    "4737f0695880.png": "bdac37b16d55de9d782c89acf9115172ad3a51b7e08af12e1f6ea655d94daff7",
+    "5777d5aeb12e.png": "e0a0ffe3556643264492689d843a7d80748f0766f63ce347e3fce1102ba315f1",
+    "58a21e92233d.png": "7e3a79679e3f919a87de14c1a63fe0af71c83d92ca4b877acd7757b436857bf2",
+    "6e2a5f2bd681.png": "224092c36d30e46b7e5d24a3a241c59ad47462df5e21cf0fb7be3770088e9260",
+    "9d09534dc6fe.png": "4044c08e8154f41baf80af6960ad47c0b57875ad2ef32909f3bcb261ab916ccd",
+    "a21e1d4003ad.png": "287059a96b17bde33dc7b406269e9c2f23e6675edfe48ca89e4ea5c636fee42f",
+    "a554b7355766.png": "8f0479791563a2649ce6536788239f9f7f18c708f3647bad6677839f6ae786b3",
+    "b871a4d5ceaf.png": "4f99ab9cda5c937ced530c4d728b33a5230e0a4ed9fd9942cec221ccec9572fa",
+    "ba060cd7a5a5.png": "f819711eb9ed1b687c26088f6e7648c796b92f66b64b2b22084ce7a5960bfadc",
+    "bdfa370af7e5.png": "5b038842ec0d8641706b7f1f0196dc58c5feae6d6c2bb27e7efa48d7e86befba",
+    "d490aa7337db.png": "78441be7492976da9ab751114ca42e94b18f58c62a5cd3b7f79f7d16e354304a",
+    "db00a7880372.png": "a0c1183984915febb6dd1846fd5049735a1884799143f02eeeabcaf1940ce3bc",
+    "db1dfebb7044.png": "bb4539b2ea31f76c59189124b36a05fd7cc877bf379332a864b22f543496a845",
+    "fe888429c3fc.png": "978c4d6c745f11330e5159fb1d06f760e9b7ad4c2ffc7554b1084eba33460495",
+    "reference.png": "905ed2ac3874257781177c3da7a0aed7f0bdedbe03f2757132a81108ca597a21"
+  },
+  "blind_mapping_sha256": "ef5cbbf4348daea35a088213cfc0ba3a9701ea4411a283db522d67962967bc55"
+}

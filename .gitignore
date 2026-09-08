@@ -9,3 +9,15 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Private research inputs and local runtime state
+**/human-responses/
+**/human-review/submissions/
+**/human-review/*responses*.json
+**/human-review/*analysis*.json
+**/human-face-review/*.json
+experiments/nonhuman-followup-v1/private/
+*.tsbuildinfo
+*.sqlite
+*.sqlite3
+*.db

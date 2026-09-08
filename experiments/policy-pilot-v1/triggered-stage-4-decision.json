@@ -1,0 +1,17 @@
+{
+  "policy": "triggered",
+  "stage": 4,
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+  "raw": {
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+    "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.call.json"
+  },
+  "metrics": {
+    "mae": 0.035345517098903656,
+    "ssim": 0.8041757941246033,
+    "lpips": 0.07039143145084381
+  },
+  "rebase": true,
+  "threshold": 0.0555075,
+  "recorded_at": "2026-09-05T12:31:24.724509+00:00"
+}

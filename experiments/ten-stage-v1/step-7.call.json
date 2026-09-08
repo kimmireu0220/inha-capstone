@@ -1,0 +1,21 @@
+{
+  "id": "step-7",
+  "stage": 7,
+  "korean": "기존 펜던트를 작은 은색 물방울 모양으로 변경",
+  "change": "Change only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-6.png",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-7.png",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the existing round pendant to a small silver teardrop pendant, retaining the thin silver chain.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "started": "2026-09-05T07:58:18.866Z",
+  "completed": "2026-09-05T08:00:27.636Z",
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-1cb1ac44-b2f7-4959-a497-975842650493.png",
+  "status": "success",
+  "attempt": 1
+}

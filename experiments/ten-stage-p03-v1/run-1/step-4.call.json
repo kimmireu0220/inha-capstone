@@ -1,0 +1,21 @@
+{
+  "id": "step-4",
+  "stage": 4,
+  "korean": "남색 재킷과 아이보리 라운드넥 셔츠",
+  "change": "Change clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small round silver pendant.",
+    "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt."
+  },
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.",
+  "run": 1,
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-8c0f5a62-60aa-4a73-adf8-d0f262962c78.png",
+  "started": "2026-09-05T09:43:51.787Z",
+  "completed": "2026-09-05T09:45:07.986Z",
+  "attempt": 1,
+  "status": "success"
+}

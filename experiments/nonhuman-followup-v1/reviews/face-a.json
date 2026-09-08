@@ -1,0 +1,823 @@
+{
+  "reviewer": "blind_face_a",
+  "type": "AI_assistant_visual_observation",
+  "human": false,
+  "blinded_to": [
+    "method",
+    "stage",
+    "metrics",
+    "previous_ratings"
+  ],
+  "same_person_assessment": "excluded",
+  "same_person_note": "이미지 간 동일인 여부는 평가하지 않았으며 모든 항목을 not_assessed로 기록했다.",
+  "observation_note": "허용된 익명 비교 PNG만 직접 시각 관찰했다. 원본의 자연 주름·점·피부결과 귀걸이는 인위성 열화로 평가하지 않았다. 외관 변화는 얼굴의 밝기·색조·배치·형태에서 확인한 변화를 별도 기록했다.",
+  "items": [
+    {
+      "id": "8710bfc1fe",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱 전반에 원본에 없는 촘촘한 굽은 선과 잎맥 같은 무늬가 생겼다."
+    },
+    {
+      "id": "b619a822ae",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마에서 볼·턱까지 반복되는 반투명 선무늬와 녹은 듯한 피부가 매우 두드러진다."
+    },
+    {
+      "id": "63ba503d04",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "피부색과 얼굴 배치가 조금 달라졌으나 새로 생긴 부자연스러운 반복무늬는 뚜렷하지 않다."
+    },
+    {
+      "id": "bcaf9e160a",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마에 겹치는 곡선, 볼과 턱에 늘어진 선무늬가 원본보다 뚜렷하다."
+    },
+    {
+      "id": "8ab89669f7",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 턱에 새 곡선 무늬가 반복되고 볼의 피부결도 인위적인 선으로 바뀌었다."
+    },
+    {
+      "id": "9f4a085639",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 넓은 굽은 선과 매끈하게 녹은 듯한 피부 질감이 보인다."
+    },
+    {
+      "id": "8d5dc3b512",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "얼굴 전반의 반복 곡선과 볼의 벌레 같은 선, 턱의 뒤엉킨 무늬가 심하다."
+    },
+    {
+      "id": "632a4ef734",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 잎맥 같은 선과 볼·턱의 가늘고 굽은 무늬가 새로 나타난다."
+    },
+    {
+      "id": "1d4b154ccb",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·양 볼·턱에 원본에 없는 굵고 겹치는 곡선과 벌레 같은 피부 무늬가 넓게 퍼져 있다."
+    },
+    {
+      "id": "bf25faed15",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": false,
+      "confidence": "high",
+      "reason": "이마 주름과 볼·턱 피부결이 원본과 같아 보이며 새로운 인위적 무늬가 없다."
+    },
+    {
+      "id": "4d9b92794f",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 볼의 돌기·잎맥 같은 선, 턱의 반복 굴곡이 매우 두드러진다."
+    },
+    {
+      "id": "c44d3ea000",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마부터 턱까지 반복 선과 얼룩진 돌기 무늬가 생겨 피부가 뒤틀려 보인다."
+    },
+    {
+      "id": "8494f0c8a1",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴 위치와 색조는 달라졌지만 이마·볼 피부결에서 뚜렷한 새 인위적 반복무늬는 보이지 않는다."
+    },
+    {
+      "id": "9cbcce1660",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "얼굴 전체에 겹겹의 밝은 곡선과 녹아 흐른 듯한 무늬가 강하게 나타난다."
+    },
+    {
+      "id": "d1689f2e83",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "밝기와 얼굴 배치가 달라졌으나 보이는 가는 피부결은 자연스러운 범위이며 뚜렷한 반복무늬가 없다."
+    },
+    {
+      "id": "9a98449a6f",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 격자 같은 곡선과 양 볼·턱의 구불거리는 피부무늬가 심하다."
+    },
+    {
+      "id": "c56e51c9eb",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·눈가·볼·턱 전체의 뒤엉킨 곡선과 피부 변형이 강하고 입 주변도 늘어져 보인다."
+    },
+    {
+      "id": "73cbbb1c4e",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 양 볼, 턱에 잎맥 같은 선과 반복 돌기가 넓게 형성되어 있다."
+    },
+    {
+      "id": "ab3520f4c3",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마에 겹친 곡선 무늬가 생기고 볼·턱이 매끈하게 녹으며 굴곡이 반복된다."
+    },
+    {
+      "id": "55ebca671e",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 촘촘한 교차 곡선과 양 볼·입가·턱의 늘어진 피부 무늬가 심하다."
+    },
+    {
+      "id": "3bfe0e375d",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 볼에 새 곡선이 생겼고 턱에 원형의 반복무늬와 녹은 듯한 피부가 보인다."
+    },
+    {
+      "id": "b594d1e886",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 촘촘한 잎맥 무늬와 불규칙한 돌기가 넓게 생겼다."
+    },
+    {
+      "id": "6774ea0f59",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "전체 형태는 자연스럽지만 턱과 볼 일부에 원본보다 가늘고 굽은 인위적인 선이 약하게 보인다."
+    },
+    {
+      "id": "7a3d696871",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "피부가 약간 매끈해지고 얼굴 배치가 달라졌으나 분명한 새 반복무늬는 확인되지 않는다."
+    },
+    {
+      "id": "647892ea49",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴이 조금 매끈해졌지만 원본의 주름 형태를 벗어나는 뚜렷한 반복무늬는 보이지 않는다."
+    },
+    {
+      "id": "8cf69d26b0",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 겹친 고리·곡선과 볼·턱의 녹아 흐르는 듯한 피부 굴곡이 심하다."
+    },
+    {
+      "id": "84f3d3e237",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마부터 턱까지 촘촘한 반복 곡선이 생기고 입 주변 피부도 강하게 뒤틀려 보인다."
+    },
+    {
+      "id": "a8c56338be",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 미간의 가는 고리 무늬, 볼·턱의 길게 늘어진 피부결이 새로 보인다."
+    },
+    {
+      "id": "7e07f4cfea",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 볼에 새 굽은 선이 반복되고 턱에는 불규칙한 곡선 무늬가 나타난다."
+    },
+    {
+      "id": "720b46fba1",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·눈가·볼·턱에 굽은 띠와 고리 모양이 넓게 반복되어 피부가 심하게 인위적이다."
+    },
+    {
+      "id": "ae82e408bc",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 촘촘한 구불선과 볼의 돌기, 턱의 뒤엉킨 선무늬가 두드러진다."
+    },
+    {
+      "id": "77d72e1ad6",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 원본에는 없는 고리와 굽은 선이 뚜렷하게 퍼져 있다."
+    },
+    {
+      "id": "79303ded95",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "얼굴의 배치가 약간 달라졌지만 피부결과 주름은 자연스럽고 새 인위적 무늬가 보이지 않는다."
+    },
+    {
+      "id": "d71b50d039",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱 전체에 겹친 고리와 벌레 같은 곡선이 반복되며 피부가 녹은 듯하다."
+    },
+    {
+      "id": "ed30630108",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마에 겹치는 곡선이 새로 생겼고 볼·턱에도 가늘고 길게 늘어진 무늬가 보인다."
+    },
+    {
+      "id": "3a8b3ccf1b",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 고리와 볼·턱의 긴 곡선 무늬가 뚜렷하며 피부가 부분적으로 녹아 보인다."
+    },
+    {
+      "id": "a501bb73a3",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 볼에 촘촘한 돌기·잎맥 무늬가 생기고 턱 피부가 반복적으로 뒤틀렸다."
+    },
+    {
+      "id": "40d3f5f6e4",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 겹친 곡선과 볼의 두꺼운 구불선, 턱의 뭉친 무늬가 강하게 보인다."
+    },
+    {
+      "id": "ac3b44fed0",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·입가·턱에 밝은 고리와 굽은 띠가 넓게 반복되어 인위성이 강하다."
+    },
+    {
+      "id": "20adc924b9",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "얼굴 전반에 촘촘한 벌레·잎맥 같은 선과 돌기가 생기고 입가도 뒤틀려 보인다."
+    },
+    {
+      "id": "c7bd1ff93e",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 구불선과 볼·턱의 가는 반복무늬가 원본의 자연스러운 주름보다 뚜렷하다."
+    },
+    {
+      "id": "d9011155c6",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 미간에 새로운 고리 무늬가 생기고 볼·턱의 피부도 길게 늘어진 듯하다."
+    },
+    {
+      "id": "9019ba1ce1",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마 중앙과 턱에 가늘고 굽은 선이 약하게 새로 보이지만 전체적인 인위성은 약하다."
+    },
+    {
+      "id": "1e855a61d4",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "턱의 희미한 고리와 이마의 일부 곡선이 인위적으로 보이나 변화는 약하다."
+    },
+    {
+      "id": "a2ed720a53",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴 위치와 피부의 매끈함은 달라졌으나 확실한 새 반복무늬는 보이지 않는다."
+    },
+    {
+      "id": "784ac39000",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마와 턱에 희미한 곡선·고리 무늬가 더해졌지만 강한 피부왜곡은 없다."
+    },
+    {
+      "id": "6b6822b7c0",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 겹친 곡선과 볼·턱의 굵게 녹아 흐르는 듯한 피부무늬가 심하다."
+    },
+    {
+      "id": "fecbbdacf5",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 새 구불선이 반복되고 피부가 부분적으로 매끈하게 뭉개져 보인다."
+    },
+    {
+      "id": "a804cb4c70",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·눈가·볼·턱의 구불거리는 선이 넓게 반복되고 입 주변 피부가 녹아 보인다."
+    },
+    {
+      "id": "e37b25e866",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 격자 같은 곡선과 볼·턱의 굵은 굴곡이 심하며 입가 형태도 비정상적으로 뭉쳐 있다."
+    },
+    {
+      "id": "f6dfb6e61d",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마와 턱에 원본보다 굽은 가는 선이 약하게 더해졌으나 볼의 인위성은 크지 않다."
+    },
+    {
+      "id": "345587986a",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·눈가·볼·턱에 겹친 고리와 늘어진 곡선이 두드러져 피부가 심하게 인위적이다."
+    },
+    {
+      "id": "2652bb4928",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마부터 턱까지 촘촘한 반복 선이 생기고 볼과 입가 피부가 강하게 뒤틀려 보인다."
+    },
+    {
+      "id": "b389155808",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 미간의 반복 고리, 볼·턱의 늘어진 선무늬가 원본에 비해 뚜렷하다."
+    },
+    {
+      "id": "ecd39fd234",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": false,
+      "confidence": "high",
+      "reason": "원본의 자연스러운 이마 주름과 볼·턱 피부결이 유지되어 새 인위적 무늬가 보이지 않는다."
+    },
+    {
+      "id": "5aa5ee8e19",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·양 볼·턱에 밝은 고리와 구불선이 넓게 반복되고 피부가 매끈하게 녹은 듯하다."
+    },
+    {
+      "id": "3f9e727788",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·눈가·볼·턱에 겹친 곡선과 뭉친 피부무늬가 강하고 입 주변도 녹은 듯하다."
+    },
+    {
+      "id": "de0540477b",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴 배치와 색조는 조금 달라졌지만 주름·피부결에 뚜렷한 새 인위적 반복무늬는 없다."
+    },
+    {
+      "id": "86a25de442",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 촘촘한 겹선과 볼·입가·턱의 잎맥 같은 무늬가 넓게 나타나 피부가 뒤틀려 보인다."
+    },
+    {
+      "id": "9e9b10b73a",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 겹치는 굵은 고리와 벌레 같은 선이 강하게 반복된다."
+    },
+    {
+      "id": "735e4e1b1e",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "얼굴 전체에 돌기와 구불선이 촘촘하게 생기고 볼·턱 피부가 심하게 변형되어 보인다."
+    },
+    {
+      "id": "ecc8bfb441",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 고리와 볼·턱의 넓게 늘어진 피부무늬가 원본에 비해 뚜렷하다."
+    },
+    {
+      "id": "09a39a2cab",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마 중앙과 턱에 가는 곡선이 약하게 더해지고 일부 피부결이 매끈하게 뭉개져 보인다."
+    },
+    {
+      "id": "40cd7350c7",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": false,
+      "confidence": "high",
+      "reason": "원본의 주름과 볼·턱 피부결이 유지되어 새로운 무늬나 분명한 외관 변화가 보이지 않는다."
+    },
+    {
+      "id": "e5c5fae80c",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴 배치와 피부의 매끈함은 달라졌지만 새로 생긴 뚜렷한 반복무늬는 보이지 않는다."
+    },
+    {
+      "id": "a6a8666433",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 새로운 고리와 길게 굽은 선이 반복되고 피부가 녹은 듯 매끈해졌다."
+    },
+    {
+      "id": "c2dfea3f7f",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마와 턱에 원본보다 구불거리는 가는 선이 조금 더해졌으나 인위성은 약하다."
+    },
+    {
+      "id": "ffa08d2f15",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 촘촘한 교차 곡선과 볼·턱의 잎맥 같은 무늬가 강하며 입가 피부도 늘어졌다."
+    },
+    {
+      "id": "b2504bd037",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·미간과 볼·턱에 원본에 없는 가늘고 반복적인 곡선 무늬가 뚜렷하다."
+    },
+    {
+      "id": "770a6b1089",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "밝기와 얼굴 위치가 조금 달라졌지만 피부결이 자연스러운 범위이고 확실한 인위적 반복무늬는 없다."
+    },
+    {
+      "id": "c44756875b",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": false,
+      "confidence": "high",
+      "reason": "이마·볼·턱의 원래 피부결이 그대로 보여 새 무늬나 분명한 외관 변화가 없다."
+    },
+    {
+      "id": "44337f50df",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마 중앙과 턱의 가는 고리·곡선이 약하게 보이나 전체적인 피부왜곡은 크지 않다."
+    },
+    {
+      "id": "5bd3984379",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·눈가·볼·턱 전체에 겹친 고리와 벌레 같은 선이 넓게 반복되어 심하게 인위적이다."
+    },
+    {
+      "id": "487f95f6cc",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 양 볼의 굵은 굽은 띠, 턱의 고리 무늬가 심하며 피부가 녹아 붙은 듯하다."
+    },
+    {
+      "id": "24eb387abc",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마와 볼의 길게 굽은 선, 턱의 고리 무늬가 새로 생기고 피부결이 녹은 듯해졌다."
+    },
+    {
+      "id": "47a67522c3",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 촘촘한 곡선과 볼·턱의 잎맥 같은 피부무늬가 강하게 나타난다."
+    },
+    {
+      "id": "17d211a8d4",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·입가·턱에 굵은 겹선과 고리가 반복되어 피부가 강하게 뒤틀려 보인다."
+    },
+    {
+      "id": "a3b065c5bd",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱 전반에 굽은 띠와 고리 무늬가 강하고 매끈하게 녹은 피부 질감이 보인다."
+    },
+    {
+      "id": "84e0755a99",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마 중앙과 턱에 가는 곡선이 약하게 더해졌고 볼 피부결도 조금 뭉개져 보인다."
+    },
+    {
+      "id": "52b780756e",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 격자 같은 곡선과 볼·입가·턱의 굵고 뒤엉킨 무늬가 심하다."
+    },
+    {
+      "id": "d1ca9f1f9b",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱의 반복 곡선과 뭉친 피부무늬가 심하고 입가 피부가 녹은 듯 보인다."
+    },
+    {
+      "id": "a3aee00b03",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴의 배치와 매끈함은 달라졌으나 이마·볼·턱에 확실한 새 반복무늬는 없다."
+    },
+    {
+      "id": "003b47f0d6",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마 중앙과 턱에 원본보다 가늘고 굽은 선이 조금 더해진 정도로 보인다."
+    },
+    {
+      "id": "1c844bbafd",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "이마와 턱의 미세한 고리·곡선이 새로 보이지만 피부왜곡의 정도는 약하다."
+    },
+    {
+      "id": "15af953fb2",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 두껍게 굽은 띠와 밝은 고리가 반복되고 피부가 녹아 붙은 듯하다."
+    },
+    {
+      "id": "8bf0904e3b",
+      "severity": 1,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "볼과 턱의 가늘고 굽은 선이 약하게 추가되고 이마 피부가 조금 뭉개져 보인다."
+    },
+    {
+      "id": "ee70e89bdf",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 겹친 곡선과 볼·턱의 반복 고리 무늬가 뚜렷하게 생겼다."
+    },
+    {
+      "id": "e5a9dd33a1",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱의 가는 반복 곡선이 뚜렷하고 원본보다 피부가 인위적으로 늘어나 보인다."
+    },
+    {
+      "id": "6d8c6b9241",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 넓은 굽은 띠와 고리가 반복되고 피부가 녹아 붙은 듯한 인위성이 강하다."
+    },
+    {
+      "id": "71c7084573",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "얼굴 전반에 촘촘한 고리·구불선이 생기고 입가와 턱 피부가 강하게 뒤틀렸다."
+    },
+    {
+      "id": "5ce39affb2",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 가늘고 반복적인 곡선이 뚜렷하며 피부결이 부분적으로 녹은 듯하다."
+    },
+    {
+      "id": "c3fd332aed",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 반복 고리와 볼·턱의 가는 곡선 무늬가 원본보다 뚜렷하게 나타난다."
+    },
+    {
+      "id": "a8b565588c",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "medium",
+      "reason": "얼굴 배치와 피부 밝기는 달라졌지만 확실한 새 인위적 반복무늬는 보이지 않는다."
+    },
+    {
+      "id": "68aff2db56",
+      "severity": 2,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·미간의 고리 무늬와 볼·턱의 잎맥 같은 선이 뚜렷하고 피부가 늘어진 듯하다."
+    },
+    {
+      "id": "0c136ed27d",
+      "severity": 0,
+      "same_person": "not_assessed",
+      "appearance_shift": false,
+      "confidence": "high",
+      "reason": "원본의 이마 주름과 볼·턱 피부결이 유지되어 새로운 인위적 무늬가 보이지 않는다."
+    },
+    {
+      "id": "bc2c15a09c",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마·볼·턱에 촘촘한 겹선과 고리 무늬가 강하고 입가 피부도 인위적으로 늘어나 보인다."
+    },
+    {
+      "id": "bf1daf5bdd",
+      "severity": 3,
+      "same_person": "not_assessed",
+      "appearance_shift": true,
+      "confidence": "high",
+      "reason": "이마의 겹친 곡선과 볼·입가·턱의 잎맥 같은 선이 넓게 반복되어 피부가 심하게 인위적이다."
+    }
+  ],
+  "viewed_sheets": [
+    "sheet-01.png",
+    "sheet-02.png",
+    "sheet-03.png",
+    "sheet-04.png",
+    "sheet-05.png",
+    "sheet-06.png",
+    "sheet-07.png",
+    "sheet-08.png",
+    "sheet-09.png",
+    "sheet-10.png",
+    "sheet-11.png",
+    "sheet-12.png",
+    "sheet-13.png",
+    "sheet-14.png",
+    "sheet-15.png",
+    "sheet-16.png",
+    "sheet-17.png",
+    "sheet-18.png",
+    "sheet-19.png",
+    "sheet-20.png",
+    "sheet-21.png",
+    "sheet-22.png",
+    "sheet-23.png",
+    "sheet-24.png",
+    "sheet-25.png"
+  ],
+  "viewed_individuals": [
+    "8494f0c8a1.png",
+    "d1689f2e83.png"
+  ]
+}

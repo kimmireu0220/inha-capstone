@@ -1,0 +1,182 @@
+{
+  "primary": "lpips_alex_v0_1",
+  "threshold_source": "P01 stage2/stage3 midpoint, rounded and fixed in PROTOCOL.md before P02 generation",
+  "online_execution": false,
+  "note": "Offline replay of fixed rules; not human-validated detector accuracy.",
+  "detectors": [
+    {
+      "metric": "mae_0_1",
+      "threshold": 0.0288375,
+      "direction": "gte",
+      "first_alarm": 2,
+      "predictions": [
+        {
+          "step": 1,
+          "value": 0.021788310259580612,
+          "alarm": false
+        },
+        {
+          "step": 2,
+          "value": 0.030131500214338303,
+          "alarm": true
+        },
+        {
+          "step": 3,
+          "value": 0.03669736534357071,
+          "alarm": true
+        },
+        {
+          "step": 4,
+          "value": 0.04702320322394371,
+          "alarm": true
+        },
+        {
+          "step": 5,
+          "value": 0.07907287031412125,
+          "alarm": true
+        },
+        {
+          "step": 6,
+          "value": 0.0823577344417572,
+          "alarm": true
+        },
+        {
+          "step": 7,
+          "value": 0.08702487498521805,
+          "alarm": true
+        },
+        {
+          "step": 8,
+          "value": 0.09236957877874374,
+          "alarm": true
+        },
+        {
+          "step": 9,
+          "value": 0.09158827364444733,
+          "alarm": true
+        },
+        {
+          "step": 10,
+          "value": 0.11688792705535889,
+          "alarm": true
+        }
+      ]
+    },
+    {
+      "metric": "ssim",
+      "threshold": 0.842874,
+      "direction": "lte",
+      "first_alarm": 1,
+      "predictions": [
+        {
+          "step": 1,
+          "value": 0.8218111991882324,
+          "alarm": true
+        },
+        {
+          "step": 2,
+          "value": 0.7501263618469238,
+          "alarm": true
+        },
+        {
+          "step": 3,
+          "value": 0.6926453709602356,
+          "alarm": true
+        },
+        {
+          "step": 4,
+          "value": 0.6243091225624084,
+          "alarm": true
+        },
+        {
+          "step": 5,
+          "value": 0.4742469787597656,
+          "alarm": true
+        },
+        {
+          "step": 6,
+          "value": 0.45751288533210754,
+          "alarm": true
+        },
+        {
+          "step": 7,
+          "value": 0.4287870228290558,
+          "alarm": true
+        },
+        {
+          "step": 8,
+          "value": 0.3990817070007324,
+          "alarm": true
+        },
+        {
+          "step": 9,
+          "value": 0.3838556110858917,
+          "alarm": true
+        },
+        {
+          "step": 10,
+          "value": 0.3855646550655365,
+          "alarm": true
+        }
+      ]
+    },
+    {
+      "metric": "lpips_alex_v0_1",
+      "threshold": 0.0555075,
+      "direction": "gte",
+      "first_alarm": 2,
+      "predictions": [
+        {
+          "step": 1,
+          "value": 0.05121392011642456,
+          "alarm": false
+        },
+        {
+          "step": 2,
+          "value": 0.07663755118846893,
+          "alarm": true
+        },
+        {
+          "step": 3,
+          "value": 0.0967579185962677,
+          "alarm": true
+        },
+        {
+          "step": 4,
+          "value": 0.12890082597732544,
+          "alarm": true
+        },
+        {
+          "step": 5,
+          "value": 0.18909992277622223,
+          "alarm": true
+        },
+        {
+          "step": 6,
+          "value": 0.20260554552078247,
+          "alarm": true
+        },
+        {
+          "step": 7,
+          "value": 0.23098960518836975,
+          "alarm": true
+        },
+        {
+          "step": 8,
+          "value": 0.2334298938512802,
+          "alarm": true
+        },
+        {
+          "step": 9,
+          "value": 0.25805771350860596,
+          "alarm": true
+        },
+        {
+          "step": 10,
+          "value": 0.25182461738586426,
+          "alarm": true
+        }
+      ]
+    }
+  ]
+}

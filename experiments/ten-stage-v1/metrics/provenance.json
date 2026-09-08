@@ -1,0 +1,39 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "config_sha256": "60378f20bfabb30e2d755d98de50af0db4257e051ef9fe8ece1e9bb9fefa8474",
+  "script_sha256": "b307f9aa15e99204632a2de5a0419bbad3299e893ebd694d2e40bbd15fd7e1c0",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "crop_sha256": {
+    "1bbbbf5aa9de.png": "851482b8f6d0bbeb10bbec4dc23180ae09914a2b96ed42eb0c378831a57bee8d",
+    "2223a209b119.png": "3cccf32ee3ee1fa9adc3b539a60f9293f998498c3fe67f4cefa4934b8fd229f3",
+    "5e7af0c60281.png": "ef0fe61c6a8c6b822bec1720099965e0b6bc61fbf7ddb6fdd9b6e0038610ffae",
+    "80c369b2ffc7.png": "de4e2620d7323c15122150b3420b535cd86d1cd9347c6f7e70970de2b97c5487",
+    "81741ebd9767.png": "7d486b0d4344a4d221fc6ee90bec4aa3b98320299577bf798dd2980ce01aa4f5",
+    "9cd01bff1a49.png": "d4a3feb4d9f7f64bd73fe3d36c6997cbed4f18c85550cb545ecead846f7127a4",
+    "cc6491f09e2c.png": "bb1830fbe2ebd76a682c950eecf82877e593244aece7cd0774b70230dc61ad10",
+    "d27aac01a79b.png": "e30e4abeaba264df45f11c9c1ecfb227fddffe784e053b6677a269b82bf86043",
+    "d2ea10d2e9c5.png": "08ee4e01c1acb166aa7332ddc8bf8a3da033f349f35fbab4a860335749e4ce19",
+    "ffba17be7e3a.png": "d6201797f5eafec8871693eb6ae4278a89320aca6790b1ba1dfbf33ed437645d",
+    "reference.png": "2f2e2c714aa12266888cfc49c2c81eabd30da4ba8156b8ca861faf4fcf71a086"
+  },
+  "blind_mapping_sha256": "e2373957fa8d0d26911385dc116d05bf294448f7df78838ed92962dac0bc3d3e"
+}

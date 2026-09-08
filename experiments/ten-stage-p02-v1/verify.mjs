@@ -1,0 +1,20 @@
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const jobs=JSON.parse(readFileSync(path.join(root,'calls.json')));
+const prior=JSON.parse(readFileSync(path.join(root,'../ten-stage-v1/calls.json')));
+assert.equal(jobs.length,10);
+const results=jobs.map((j,i)=>{
+ const log=JSON.parse(readFileSync(j.output.replace('.png','.call.json')));
+ assert.equal(j.prompt,prior[i].prompt);assert.equal(log.prompt,j.prompt);
+ assert.equal(log.input,i?jobs[i-1].output:path.resolve(root,'../../assets/people/P02.png'));
+ assert.equal(log.attempt,1);assert.equal(log.status,'success');
+ const out=readFileSync(j.output);assert.equal(hash(out),hash(readFileSync(log.source)));
+ assert.equal(out.readUInt32BE(16),1024);assert.equal(out.readUInt32BE(20),1536);
+ return {stage:i+1,input_sha256:hash(readFileSync(log.input)),output_sha256:hash(out)};
+});
+console.log(JSON.stringify({verified:true,results},null,2));

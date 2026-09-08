@@ -1,0 +1,228 @@
+{
+  "checked_at": "2026-09-05T12:58:47.456151+00:00",
+  "all_checks_passed": true,
+  "person": "P04",
+  "unique_portraits": 1,
+  "policy_rows": 30,
+  "unique_used_outputs": 29,
+  "new_actual_calls": 18,
+  "records": {
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png": {
+      "sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.call.json",
+      "record_sha256": "3df218917252b12ddacb1aad022c35aa82740973f9e3eece3d5ddd3e1bcf42c5"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png": {
+      "sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+      "input_sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.call.json",
+      "record_sha256": "9b41ad05df8e35930b918b4fcbac6e50089d1f534edaa31e071e1a1121e732e5"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png": {
+      "sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+      "input_sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.call.json",
+      "record_sha256": "b5f5214b81c039ed25be3e65403a5584d4f4eb7d512e55b28c92da99f26ee0c8"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png": {
+      "sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png",
+      "input_sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.call.json",
+      "record_sha256": "231aac232781168094dda223d03f5ad30ad02a5cfe2963deccad66cbef3ccabb"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png": {
+      "sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png",
+      "input_sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.call.json",
+      "record_sha256": "b8e2842c5f7f535212f7a3eda2921a45f925cde020fa9b6ee1f9d28b2a575617"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png": {
+      "sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png",
+      "input_sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.call.json",
+      "record_sha256": "faec23db02deeb5606538a03e243b6a58b48f30f1986b95477bf69cce35a30c7"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png": {
+      "sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png",
+      "input_sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.call.json",
+      "record_sha256": "61ef896488c2345ac8edc12814aa8ad0195c59bd57a85cdca3732c11d0a58461"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png": {
+      "sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png",
+      "input_sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.call.json",
+      "record_sha256": "d9068018d0d32777d4262959b6202aa7935bd987aefdaad9d5e242a1775e5ad4"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-9.png": {
+      "sha256": "c03f7d6d03f5279c36f7419f54376895f6485fcd20aa0741cd3f166cac034c82",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png",
+      "input_sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-9.call.json",
+      "record_sha256": "170298a031c0d0a6bdd44a8af4b7ffb6127453fab11600b903c4f442fa3231f8"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-10.png": {
+      "sha256": "d69af00e4f1b60b0f645c61dd471fc978b2c97c06526eaef997f292ef7ba20ad",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-9.png",
+      "input_sha256": "c03f7d6d03f5279c36f7419f54376895f6485fcd20aa0741cd3f166cac034c82",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-10.call.json",
+      "record_sha256": "6e3b3907c1c04ce764ee72c0260cefa233539ec82c6a5cf80f26fad0fd65ea83"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png": {
+      "sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.call.json",
+      "record_sha256": "3b2b7fd006a89af811842bae409e506700121f086db56b6b6fb8263b2fde5b74"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png": {
+      "sha256": "610444a04d2071dc68c45c67ea694bbe73d1fc08a0e46a256fb95b25dec271c3",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+      "input_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.call.json",
+      "record_sha256": "7ad60fe87fec0354d8218fb0ba3446a306852eadc7e6b47580bca70a9f115242"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png": {
+      "sha256": "9733909576b2d9bb26aed98bdbe9e1b437d62b11ade73b89c980b1f866d6c745",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+      "input_sha256": "610444a04d2071dc68c45c67ea694bbe73d1fc08a0e46a256fb95b25dec271c3",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.call.json",
+      "record_sha256": "5f1b456c5c5eaa12be63f46b5ccd6ac19cc4b7e636c7ba0780147cfb1655d563"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/bc01329be131e649185e1a3b5752a6610d827874dbc6442249ca13267fb6c576.png": {
+      "sha256": "12f69dd691ee7c2ae4b64a616545bc18362d0eb8cc80ccacdb36a988c5e1c18c",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png",
+      "input_sha256": "9733909576b2d9bb26aed98bdbe9e1b437d62b11ade73b89c980b1f866d6c745",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/bc01329be131e649185e1a3b5752a6610d827874dbc6442249ca13267fb6c576.call.json",
+      "record_sha256": "f3d7c3a54d96d85110287d658500254aa50e52ed5c79ae8435083254fb96eb2b"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png": {
+      "sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.call.json",
+      "record_sha256": "28c2fa30f137a214ba74eebdc11570aa722cc21a818a8743167d752e2b0f7de7"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.png": {
+      "sha256": "66d22f872d5942633870b0ffba1efd8b66dbe448111b726b71ea37dea445fee0",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+      "input_sha256": "f82b496989668c7523ce98f6f322fed5f4b0c62c48bfc767e7e40ac7d88ad421",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.call.json",
+      "record_sha256": "56f083a6635a19c2eb7a047ee7c877336251524bad13ed222aadfc98ec47147f"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png": {
+      "sha256": "c7670b999d9252ef617d6cbbec3e54b1336560d72a7f72f15a8e106bb7c9d4db",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.png",
+      "input_sha256": "66d22f872d5942633870b0ffba1efd8b66dbe448111b726b71ea37dea445fee0",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.call.json",
+      "record_sha256": "c53b0ccd8f9cf3f53db47ed50807277ffe8e1e7e322222a4178e58d0039d3193"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/f009775e087b921cf77364a20ee99985cdcd5e5a2ea0b7c902bc381d6d3487a0.png": {
+      "sha256": "5ebdf9873e290c9f8f8aa4ffbeab49520b29c0a6e6eceb6db017609c77e11179",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png",
+      "input_sha256": "c7670b999d9252ef617d6cbbec3e54b1336560d72a7f72f15a8e106bb7c9d4db",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/f009775e087b921cf77364a20ee99985cdcd5e5a2ea0b7c902bc381d6d3487a0.call.json",
+      "record_sha256": "f37a91ff9ef167f3cd6989f82367922a88258ba7eceda66961b17b5d1dc43599"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/345358dc205512a4522fbd9f5882d54ebde6a49dfb359db4a855071cf1cc87e7.png": {
+      "sha256": "cedeac0284f0964d2d41ab836b6e6b65d128e798c2d1a924b532bf0cca242e72",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/345358dc205512a4522fbd9f5882d54ebde6a49dfb359db4a855071cf1cc87e7.call.json",
+      "record_sha256": "2f45792688b95d64a878a9e63321dca6d1571d6380e6e5cd3245360a1ae26617"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/638ad9fe8d00cc59e7f655a0f7e1655691188f231fd1072bd0a465f345f2c958.png": {
+      "sha256": "9a1c4c8706b42a4cc2aae5e9863bdc9d581cf78ef92cae1edc5ee4bf5b006a08",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/345358dc205512a4522fbd9f5882d54ebde6a49dfb359db4a855071cf1cc87e7.png",
+      "input_sha256": "cedeac0284f0964d2d41ab836b6e6b65d128e798c2d1a924b532bf0cca242e72",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/638ad9fe8d00cc59e7f655a0f7e1655691188f231fd1072bd0a465f345f2c958.call.json",
+      "record_sha256": "556916960e665a116eca86c06ae83b3f787741b32d13b9e874b7c44bed31919b"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png": {
+      "sha256": "0dad891319963f217bc8f572380689d59a5e4c3a16af6d3a9f181c7399fef472",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.call.json",
+      "record_sha256": "2c5f5ecd1127666c720955004d80515ced8ce5b6f3ba54c91efbf6a8db46370b"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/d587b62c5a8856428510c2ede45ceb7afdcef1456b1e79409fde656df81eed1f.png": {
+      "sha256": "707a793e84d04d497c49a01a0a4c0e7c0a0b5680305a195e3400665104ceadcf",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png",
+      "input_sha256": "0dad891319963f217bc8f572380689d59a5e4c3a16af6d3a9f181c7399fef472",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/d587b62c5a8856428510c2ede45ceb7afdcef1456b1e79409fde656df81eed1f.call.json",
+      "record_sha256": "cb192ddc9390b133706f25ff694c703a9caa2babb7c23f27283ff76f2a098899"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.png": {
+      "sha256": "36e4aacca1f0e0f9d1f647dfc4f8b02e75f31fca083b8cfced9aff3ea0d67803",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.call.json",
+      "record_sha256": "a112a3833bab2566f966303502aa21a387de617fd503e892d9e2580ed3732488"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/02895bf7683e78987fbf26ea1d928d2286029f703eea07e0b8e6353d61094fa4.png": {
+      "sha256": "8efd3a564ce4382e9dfcc1cb143599dd29f2c83efdd8506a18517ac7d4a01a24",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.png",
+      "input_sha256": "36e4aacca1f0e0f9d1f647dfc4f8b02e75f31fca083b8cfced9aff3ea0d67803",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/02895bf7683e78987fbf26ea1d928d2286029f703eea07e0b8e6353d61094fa4.call.json",
+      "record_sha256": "9bf6d9653ab451f43914d9ec76c6a5ec29d44c7390088749e0f8945be862cb04"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png": {
+      "sha256": "c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.call.json",
+      "record_sha256": "e4335981b63047cef7419938c9c73694b65a2e0336c9497358c5baf32fcfab44"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/86563337655addccdfc721da2ae10e46cfaa6eeed99a1bf18e47f95ff99131ef.png": {
+      "sha256": "920dc7f39f176b2d99342c21aab87099667bd6ecdd50ad5d39702c1ba593f148",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png",
+      "input_sha256": "c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/86563337655addccdfc721da2ae10e46cfaa6eeed99a1bf18e47f95ff99131ef.call.json",
+      "record_sha256": "70fc4c1919fefa751e6aadb00862a5c502b6bcffccf3bbe75600c389ec6f3c48"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png": {
+      "sha256": "3014d2c1bde808ff66c027895de2e1ee37d9d75dd5307dce2d7ddfe17b9ab39f",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.call.json",
+      "record_sha256": "b2a868e36d9a55133245ebc757deaec578ecae85335a117eac74b16012b76ab3"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/5f17ea2fc06c1672cb9c4c20d533f88ef51361c6c19fb732c8b8d74dee9e4d82.png": {
+      "sha256": "13dffdd600c2ea4c556516227fcb0f9100c7f7ea4ceba1b79ea6b1816c7a8259",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png",
+      "input_sha256": "3014d2c1bde808ff66c027895de2e1ee37d9d75dd5307dce2d7ddfe17b9ab39f",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/5f17ea2fc06c1672cb9c4c20d533f88ef51361c6c19fb732c8b8d74dee9e4d82.call.json",
+      "record_sha256": "4092e1c68669b3316b6712236baf73e26a49ad489e0f9f47b8c9c11d674c3b6e"
+    },
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/1aa5a3ad21e5dc70f547b61a4673c7504390809a75fc929add21481a3f9fb8a6.png": {
+      "sha256": "7f3ceff51b82d4a7c37016121491e5ba2eb78bffb3641d70ab0086bef2bb7a15",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/1aa5a3ad21e5dc70f547b61a4673c7504390809a75fc929add21481a3f9fb8a6.call.json",
+      "record_sha256": "ec39b34061e80a6cee0ebddb27645762c79785ff9979ff9de50cd3292f612b26"
+    }
+  },
+  "source_files": {
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/calls.json": "f1fe73f61f421c7fc8deeb283224d4b147105c5a05b9d7d4e171a342e602ccb5",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/config.json": "93b6b331415040dec87fb940f3d982d7e7109e3563e2c2b3cf75b9241f8591cb",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/rebase-template.json": "1291669bf88e2f5563cd2e1ad7f6c9c1dc22948116b43f0ec3fb89c6ac4745d4",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/PROTOCOL.md": "36ac54e54a569b6abcdc3af409fb432a8c777d903c635626b3ca1fa7eb9117a2",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/run.py": "211749b49b7ed7d83428462c80b5e7c85308bc1e458a3bdb7201f3978dcdcf2a",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/report.py": "9a71b2528d0fda8499f3da87b2ca0666191c609bc15cace29c17bf8dd976f457"
+  },
+  "weight_sha256": {
+    "alexnet": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "lpips": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+  },
+  "human_evaluation": "not_collected",
+  "independent_agent_evaluation": "not_collected"
+}

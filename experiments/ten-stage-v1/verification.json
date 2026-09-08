@@ -1,0 +1,78 @@
+{
+  "experiment": "ten-stage-v1",
+  "person": "P01",
+  "runs": 1,
+  "verified": true,
+  "images": [
+    {
+      "stage": 1,
+      "input_sha256": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8",
+      "output_sha256": "3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 2,
+      "input_sha256": "3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043",
+      "output_sha256": "5edf621a615953f5454253bd0ea31f3c9b0a40ff0e037d0a27286c04e4a44a8e",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 3,
+      "input_sha256": "5edf621a615953f5454253bd0ea31f3c9b0a40ff0e037d0a27286c04e4a44a8e",
+      "output_sha256": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 4,
+      "input_sha256": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+      "output_sha256": "93069e877fb11f264f2f8af78ab9c008158be25cdafee7422470c38d49eec4a6",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 5,
+      "input_sha256": "93069e877fb11f264f2f8af78ab9c008158be25cdafee7422470c38d49eec4a6",
+      "output_sha256": "920021a6c61ee4781e4b3eea0c42cee999eaf258855b6ebe212f6f44d0b2f91e",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 6,
+      "input_sha256": "920021a6c61ee4781e4b3eea0c42cee999eaf258855b6ebe212f6f44d0b2f91e",
+      "output_sha256": "62722e56d65c4519472ba85f6cfbab205edb03e6362e434a6bc5f35b4d11ffe1",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 7,
+      "input_sha256": "62722e56d65c4519472ba85f6cfbab205edb03e6362e434a6bc5f35b4d11ffe1",
+      "output_sha256": "e8abd8ccfffaead18ab620feeda61f6b002ad1e270ead96393bb47f846a761b2",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 8,
+      "input_sha256": "e8abd8ccfffaead18ab620feeda61f6b002ad1e270ead96393bb47f846a761b2",
+      "output_sha256": "35960e73a70622c0624edddfc39de04be7967e1bd5d9672e4147f6e1e0995b7c",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 9,
+      "input_sha256": "35960e73a70622c0624edddfc39de04be7967e1bd5d9672e4147f6e1e0995b7c",
+      "output_sha256": "505b903a819d44a36f84d6ab48a08dfefe6a7013eecbb5bc1e95caca4ef634b4",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "stage": 10,
+      "input_sha256": "505b903a819d44a36f84d6ab48a08dfefe6a7013eecbb5bc1e95caca4ef634b4",
+      "output_sha256": "32b0ad2d4fc911e7770e34638dda335eb4fee8bb34eec41fd1a3384ffeb04d7d",
+      "width": 1024,
+      "height": 1536
+    }
+  ]
+}

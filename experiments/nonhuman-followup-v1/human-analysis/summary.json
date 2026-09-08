@@ -1,0 +1,91 @@
+{
+  "sessions": 1,
+  "ratings": 16,
+  "overall": {
+    "0": 3,
+    "1": 4,
+    "3": 9
+  },
+  "by_policy": {
+    "end_regeneration": {
+      "n": 5,
+      "severity_counts": {
+        "0": 2,
+        "1": 3
+      },
+      "clear_rate": 0.0,
+      "mean_severity": 0.6
+    },
+    "fixed_interval_3": {
+      "n": 1,
+      "severity_counts": {
+        "1": 1
+      },
+      "clear_rate": 0.0,
+      "mean_severity": 1.0
+    },
+    "sequential": {
+      "n": 7,
+      "severity_counts": {
+        "3": 7
+      },
+      "clear_rate": 1.0,
+      "mean_severity": 3.0
+    },
+    "shared_rebase_final": {
+      "n": 1,
+      "severity_counts": {
+        "0": 1
+      },
+      "clear_rate": 0.0,
+      "mean_severity": 0.0
+    },
+    "trigger_once": {
+      "n": 2,
+      "severity_counts": {
+        "3": 2
+      },
+      "clear_rate": 1.0,
+      "mean_severity": 3.0
+    }
+  },
+  "agent_agreement": {
+    "a": {
+      "n": 16,
+      "exact": 12,
+      "exact_rate": 0.75,
+      "clear_binary": 15,
+      "clear_binary_rate": 0.9375
+    },
+    "b": {
+      "n": 16,
+      "exact": 14,
+      "exact_rate": 0.875,
+      "clear_binary": 15,
+      "clear_binary_rate": 0.9375
+    }
+  },
+  "threshold_free": {
+    "fixed_mae_auc": 0.7936507936507936,
+    "fixed_mae_spearman": 0.4923460715486212,
+    "fixed_ssim_auc": 0.9523809523809523,
+    "fixed_ssim_spearman": 0.7171841108891582,
+    "fixed_lpips_auc": 0.9365079365079365,
+    "fixed_lpips_spearman": 0.6613848894469812,
+    "aligned_mae_auc": 0.7777777777777778,
+    "aligned_mae_spearman": 0.4939872251204499,
+    "aligned_ssim_auc": 0.9047619047619048,
+    "aligned_ssim_spearman": 0.7335956466074456,
+    "aligned_lpips_auc": 0.873015873015873,
+    "aligned_lpips_spearman": 0.6679495037342961,
+    "paired_sequential_vs_end_regeneration": {
+      "n": 7,
+      "fixed_mae_sequential_higher": 6,
+      "fixed_ssim_sequential_higher": 6,
+      "fixed_lpips_sequential_higher": 6,
+      "aligned_mae_sequential_higher": 7,
+      "aligned_ssim_sequential_higher": 7,
+      "aligned_lpips_sequential_higher": 7
+    }
+  }
+}

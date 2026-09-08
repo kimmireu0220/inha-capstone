@@ -1,0 +1,23 @@
+{
+  "id": "86563337655addccdfc721da2ae10e46cfaa6eeed99a1bf18e47f95ff99131ef",
+  "stage": 8,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png",
+  "input_sha256": "c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the blazer color from navy to charcoal grey. Retain the ivory crewneck shirt and the existing blue pin.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over an ivory crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over an ivory crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/86563337655addccdfc721da2ae10e46cfaa6eeed99a1bf18e47f95ff99131ef.png",
+  "policies": [
+    "triggered"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-a3a8a421-8176-40fc-9511-9d7dc15cab93.png",
+  "started": "2026-09-05T12:44:34.562Z",
+  "completed": "2026-09-05T12:47:21.619Z",
+  "attempt": 1
+}

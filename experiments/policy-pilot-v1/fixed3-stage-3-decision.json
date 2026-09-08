@@ -1,0 +1,17 @@
+{
+  "policy": "fixed3",
+  "stage": 3,
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+  "raw": {
+    "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png",
+    "record": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.call.json"
+  },
+  "metrics": {
+    "mae": 0.03271098807454109,
+    "ssim": 0.7871373295783997,
+    "lpips": 0.07703612744808197
+  },
+  "rebase": true,
+  "threshold": 0.0555075,
+  "recorded_at": "2026-09-05T12:30:02.757001+00:00"
+}

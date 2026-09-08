@@ -1,0 +1,258 @@
+{
+  "groups": [
+    {
+      "group": "run-1",
+      "ratings": [
+        {
+          "id": "b473965f6732",
+          "face_preservation": 2,
+          "naturalness": 2,
+          "uncertain": "특징 변화와 대비 증가의 기여를 정확히 분리할 수 없다. 인위적 선이 명백하나 심한 두 후보보다 약해 자연스러움 2.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "원본보다 눈동자가 황갈색으로 밝고 눈꺼풀/눈썹 대비가 강해졌다. 입술·코 주변 음영과 턱 질감도 더 거칠다. 기존 자연 주름과 별개로 볼·턱·목에 새 가는 곡선과 망상 피부 무늬가 보인다. 같은 그룹 최하위 두 후보보다 반사성 균열선은 약하지만 분명히 남는다.",
+          "other_changes": "균일한 회색 배경이 얼룩진 회색 질감으로 변하고 머리카락 결과 앞머리가 달라졌다. 목·손에도 추가 인위적 피부 무늬가 있다. 손 위치에 작은 차이가 있으나 정면 자세와 중립 표정은 대체로 유지. 조명 방향의 큰 변화보다는 피부 대비·광택 증가가 두드러진다."
+        },
+        {
+          "id": "d5e6c611d5bd",
+          "face_preservation": 2,
+          "naturalness": 3,
+          "uncertain": "d7a5bef0f738와 얼굴 crop의 차이를 신뢰성 있게 구분하기 어려워 동률 처리.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "원본보다 눈동자가 밝은 황갈색이고 눈·눈썹 경계 및 입 주변 음영이 강해졌다. 이마의 기존 주름 사이와 양 볼·턱·목에 밝은 균열 및 고리형 선이 광범위하게 추가됐다. 원래 수평 이마 주름 자체는 감점하지 않았다.",
+          "other_changes": "균일한 회색 배경이 얼룩진 회색 질감으로 변하고 머리카락 결과 앞머리가 달라졌다. 목·손에도 추가 인위적 피부 무늬가 있다. 손 위치에 작은 차이가 있으나 정면 자세와 중립 표정은 대체로 유지. 조명 방향의 큰 변화보다는 피부 대비·광택 증가가 두드러진다."
+        },
+        {
+          "id": "d7a5bef0f738",
+          "face_preservation": 2,
+          "naturalness": 3,
+          "uncertain": "d5e6c611d5bd와 얼굴 crop의 차이를 신뢰성 있게 구분하기 어려워 동률 처리.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "원본보다 눈동자가 밝은 황갈색이고 눈·눈썹 경계 및 입 주변 음영이 강해졌다. 이마의 기존 주름 사이와 양 볼·턱·목에 밝은 균열 및 고리형 선이 광범위하게 추가됐다. 원래 수평 이마 주름 자체는 감점하지 않았다.",
+          "other_changes": "균일한 회색 배경이 얼룩진 회색 질감으로 변하고 머리카락 결과 앞머리가 달라졌다. 목·손에도 추가 인위적 피부 무늬가 있다. 손 위치에 작은 차이가 있으나 정면 자세와 중립 표정은 대체로 유지. 조명 방향의 큰 변화보다는 피부 대비·광택 증가가 두드러진다."
+        },
+        {
+          "id": "e28775bcfbc4",
+          "face_preservation": 1,
+          "naturalness": 1,
+          "uncertain": "미세 선 일부는 표시 대비에 영향받을 수 있다. 상대 최선 판단은 명확하지만 완전 복원으로 단정하지 않는다.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "눈·코·입 배치와 얼굴 외곽, 중립 표정 및 원본의 이마 주름이 가깝게 유지됐다. 볼·턱·목에 가는 추가 선과 약간의 대비/질감 변화가 남아 완전 보존은 아니다. 같은 그룹 다른 후보보다 원본 얼굴에 가깝고 피부가 덜 인위적이다.",
+          "other_changes": "매끈한 회색 배경과 머리 모양, 손/팔 위치가 원본과 가깝다. 목 및 손 피부 질감에 미세한 변화. 요청된 옷/실루엣 변화는 감점하지 않았다."
+        }
+      ],
+      "best_face": [
+        "e28775bcfbc4"
+      ],
+      "usable": [
+        "e28775bcfbc4"
+      ],
+      "ranking": [
+        [
+          "e28775bcfbc4"
+        ],
+        [
+          "b473965f6732"
+        ],
+        [
+          "d5e6c611d5bd",
+          "d7a5bef0f738"
+        ]
+      ]
+    },
+    {
+      "group": "run-2",
+      "ratings": [
+        {
+          "id": "366df99ea83c",
+          "face_preservation": 2,
+          "naturalness": 2,
+          "uncertain": "형태 변화와 질감/대비 변화의 기여를 완전히 분리하기 어렵다. 심한 두 후보보다 추가 무늬가 약해 자연스러움 2.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "원본보다 눈동자가 황갈색으로 밝고 눈꺼풀/눈썹 대비가 강해졌다. 입술·코 주변 음영과 턱 질감도 더 거칠다. 기존 자연 주름과 별개로 볼·턱·목에 새 가는 곡선과 망상 피부 무늬가 보인다. 같은 그룹 최하위 두 후보보다 반사성 균열선은 약하지만 분명히 남는다. 이마와 뺨에는 잔선뿐 아니라 거친 얼룩형 질감도 남는다.",
+          "other_changes": "균일한 회색 배경이 얼룩진 회색 질감으로 변하고 머리카락 결과 앞머리가 달라졌다. 목·손에도 추가 인위적 피부 무늬가 있다. 손 위치에 작은 차이가 있으나 정면 자세와 중립 표정은 대체로 유지. 조명 방향의 큰 변화보다는 피부 대비·광택 증가가 두드러진다."
+        },
+        {
+          "id": "45bed52509d8",
+          "face_preservation": 1,
+          "naturalness": 1,
+          "uncertain": "미세 선 일부는 표시 대비에 영향받을 수 있다. 상대 최선 판단은 명확하지만 완전 복원으로 단정하지 않는다.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "눈·코·입 배치와 얼굴 외곽, 중립 표정 및 원본의 이마 주름이 가깝게 유지됐다. 볼·턱·목에 가는 추가 선과 약간의 대비/질감 변화가 남아 완전 보존은 아니다. 같은 그룹 다른 후보보다 원본 얼굴에 가깝고 피부가 덜 인위적이다.",
+          "other_changes": "매끈한 회색 배경과 머리 모양, 손/팔 위치가 원본과 가깝다. 목 및 손 피부 질감에 미세한 변화. 요청된 옷/실루엣 변화는 감점하지 않았다."
+        },
+        {
+          "id": "650350a4d713",
+          "face_preservation": 2,
+          "naturalness": 3,
+          "uncertain": "79f057623ba2와 얼굴 crop의 차이를 안정적으로 구별하기 어려워 동률.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "원본보다 눈동자가 밝은 황갈색이고 눈·눈썹 경계 및 입 주변 음영이 강해졌다. 이마의 기존 주름 사이와 양 볼·턱·목에 밝은 균열 및 고리형 선이 광범위하게 추가됐다. 원래 수평 이마 주름 자체는 감점하지 않았다.",
+          "other_changes": "균일한 회색 배경이 얼룩진 회색 질감으로 변하고 머리카락 결과 앞머리가 달라졌다. 목·손에도 추가 인위적 피부 무늬가 있다. 손 위치에 작은 차이가 있으나 정면 자세와 중립 표정은 대체로 유지. 조명 방향의 큰 변화보다는 피부 대비·광택 증가가 두드러진다."
+        },
+        {
+          "id": "79f057623ba2",
+          "face_preservation": 2,
+          "naturalness": 3,
+          "uncertain": "650350a4d713와 얼굴 crop의 차이를 안정적으로 구별하기 어려워 동률. 재킷 단추 잠김/허용 범위 내 액세서리 위치 차이는 감점하지 않았다.",
+          "requirements": {
+            "earrings": {
+              "status": "fulfilled",
+              "evidence": "Full에서 양쪽 귓불에 작은 은색 링이 각각 하나 보인다."
+            },
+            "necklace": {
+              "status": "fulfilled",
+              "evidence": "Full에서 가는 은색 체인과 가슴 중앙의 작은 원형 은색 펜던트 하나가 보인다."
+            },
+            "pin": {
+              "status": "fulfilled",
+              "evidence": "Full에서 화면 오른쪽(인물 왼쪽) 가슴에 버건디 원형 핀 한 개가 있고 반대편에는 없다."
+            },
+            "clothes": {
+              "status": "fulfilled",
+              "evidence": "Full에서 남색 라펠 재킷과 아이보리 라운드넥 이너가 모두 보인다."
+            }
+          },
+          "evidence": "원본보다 눈동자가 밝은 황갈색이고 눈·눈썹 경계 및 입 주변 음영이 강해졌다. 이마의 기존 주름 사이와 양 볼·턱·목에 밝은 균열 및 고리형 선이 광범위하게 추가됐다. 원래 수평 이마 주름 자체는 감점하지 않았다.",
+          "other_changes": "균일한 회색 배경이 얼룩진 회색 질감으로 변하고 머리카락 결과 앞머리가 달라졌다. 목·손에도 추가 인위적 피부 무늬가 있다. 손 위치에 작은 차이가 있으나 정면 자세와 중립 표정은 대체로 유지. 조명 방향의 큰 변화보다는 피부 대비·광택 증가가 두드러진다."
+        }
+      ],
+      "best_face": [
+        "45bed52509d8"
+      ],
+      "usable": [
+        "45bed52509d8"
+      ],
+      "ranking": [
+        [
+          "45bed52509d8"
+        ],
+        [
+          "366df99ea83c"
+        ],
+        [
+          "650350a4d713",
+          "79f057623ba2"
+        ]
+      ]
+    }
+  ]
+}

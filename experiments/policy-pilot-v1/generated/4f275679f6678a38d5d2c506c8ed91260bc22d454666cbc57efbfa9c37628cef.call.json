@@ -1,0 +1,23 @@
+{
+  "id": "4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef",
+  "stage": 4,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+  "input_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small round silver pendant.",
+    "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+  "policies": [
+    "fixed3",
+    "triggered"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-ce2b27aa-cd39-4d0c-9141-b0ba489b3fef.png",
+  "started": "2026-09-05T12:30:27.861Z",
+  "completed": "2026-09-05T12:31:11.444Z",
+  "attempt": 1
+}

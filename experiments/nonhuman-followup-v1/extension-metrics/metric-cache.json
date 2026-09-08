@@ -1,0 +1,2675 @@
+{
+  "formula_sha256": "94bcf468e0de64331332e598651702b4ae1ff574ca1884cff66f152a3e17e2fc",
+  "rows": {
+    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766": {
+      "sha256": "475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
+      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "roi": [
+        352,
+        64,
+        672,
+        424
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P03-r1-end-only",
+            "P03-r2-end-only"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -1,
+          "dy": 7,
+          "ncc": 0.7239517569541931,
+          "boundary": false
+        },
+        "3": {
+          "dx": -2,
+          "dy": 7,
+          "ncc": 0.7283728718757629,
+          "boundary": false
+        },
+        "6": {
+          "dx": -5,
+          "dy": 5,
+          "ncc": 0.7345216870307922,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 4,
+      "setting_sensitive": true,
+      "face": {
+        "fixed": {
+          "mae": 0.1474795937538147,
+          "ssim": 0.4508729875087738,
+          "lpips": 0.2523171007633209
+        },
+        "1": {
+          "mae": 0.12379182130098343,
+          "ssim": 0.5979663133621216,
+          "lpips": 0.20169299840927124
+        },
+        "3": {
+          "mae": 0.12637537717819214,
+          "ssim": 0.5641468167304993,
+          "lpips": 0.21022529900074005
+        },
+        "6": {
+          "mae": 0.1403309404850006,
+          "ssim": 0.4357074499130249,
+          "lpips": 0.24493439495563507
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:f8e725b368957ac229667fbb686d9d6b84e9f82a529f54543622ad7a52a24eec": {
+      "sha256": "f8e725b368957ac229667fbb686d9d6b84e9f82a529f54543622ad7a52a24eec",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1256d8a511946bcf06674cc377eeb81040b3421d88f9f31679292e004dd74279.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 6,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -2,
+          "dy": -2,
+          "ncc": 0.7721904516220093,
+          "boundary": false
+        },
+        "3": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.800666868686676,
+          "boundary": false
+        },
+        "6": {
+          "dx": -3,
+          "dy": -2,
+          "ncc": 0.8230750560760498,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.09789947420358658,
+          "ssim": 0.49220263957977295,
+          "lpips": 0.2700533866882324
+        },
+        "1": {
+          "mae": 0.09605361521244049,
+          "ssim": 0.5088167190551758,
+          "lpips": 0.26673710346221924
+        },
+        "3": {
+          "mae": 0.09636392444372177,
+          "ssim": 0.5017347931861877,
+          "lpips": 0.2679067552089691
+        },
+        "6": {
+          "mae": 0.09634993970394135,
+          "ssim": 0.5055878758430481,
+          "lpips": 0.27189940214157104
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:c1d79149c3ef063b0418b6e118302e18c4e0264b2fd4ad9d0cfa7f2a2122392a": {
+      "sha256": "c1d79149c3ef063b0418b6e118302e18c4e0264b2fd4ad9d0cfa7f2a2122392a",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1b8b4384bf4073dd36f5ca9a8df48a8b18372a9b38e41f4f86875e3e58cdc810.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 5,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -2,
+          "dy": -2,
+          "ncc": 0.7759038209915161,
+          "boundary": false
+        },
+        "3": {
+          "dx": -2,
+          "dy": -2,
+          "ncc": 0.8032968640327454,
+          "boundary": false
+        },
+        "6": {
+          "dx": -3,
+          "dy": -2,
+          "ncc": 0.8258230090141296,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.09202216565608978,
+          "ssim": 0.5110464692115784,
+          "lpips": 0.2531405985355377
+        },
+        "1": {
+          "mae": 0.09022839367389679,
+          "ssim": 0.5275871753692627,
+          "lpips": 0.2493366003036499
+        },
+        "3": {
+          "mae": 0.09022839367389679,
+          "ssim": 0.5275871753692627,
+          "lpips": 0.2493366003036499
+        },
+        "6": {
+          "mae": 0.09054777026176453,
+          "ssim": 0.5233373045921326,
+          "lpips": 0.25032347440719604
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:ed5e78de5dcf7289c86cdd3e73b39327a54a02042b580ad40ffc0f3bfe6c8dc2": {
+      "sha256": "ed5e78de5dcf7289c86cdd3e73b39327a54a02042b580ad40ffc0f3bfe6c8dc2",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1b96784128614c002ef05f87b2553f74e16f98ed55d98431059e48b2728b08be.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P04-once-triggered"
+          ],
+          "stage": 7,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8001782894134521,
+          "boundary": false
+        },
+        "3": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8277698755264282,
+          "boundary": false
+        },
+        "6": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8489070534706116,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.20389650762081146,
+          "ssim": 0.2701603174209595,
+          "lpips": 0.5141247510910034
+        },
+        "1": {
+          "mae": 0.10054251551628113,
+          "ssim": 0.5116844773292542,
+          "lpips": 0.19622603058815002
+        },
+        "3": {
+          "mae": 0.10054251551628113,
+          "ssim": 0.5116844773292542,
+          "lpips": 0.19622603058815002
+        },
+        "6": {
+          "mae": 0.10054251551628113,
+          "ssim": 0.5116844773292542,
+          "lpips": 0.19622603058815002
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.30279335603994484,
+          "ssim": 0.22088947094497352,
+          "highpass_mae": 0.02736241357510581,
+          "regions": {
+            "forehead": {
+              "mae": 0.3683215379714966,
+              "ssim": 0.2143198698759079,
+              "highpass_mae": 0.023930557072162628,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.25581926107406616,
+              "ssim": 0.20420002937316895,
+              "highpass_mae": 0.030330592766404152,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.16334520280361176,
+              "ssim": 0.26176443696022034,
+              "highpass_mae": 0.03409407660365105,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.049134756747414084,
+          "ssim": 0.646308675852825,
+          "highpass_mae": 0.01897688570048879,
+          "regions": {
+            "forehead": {
+              "mae": 0.04291519150137901,
+              "ssim": 0.6401706337928772,
+              "highpass_mae": 0.019067376852035522,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.05582529678940773,
+              "ssim": 0.6988019347190857,
+              "highpass_mae": 0.019958971068263054,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.05985936149954796,
+              "ssim": 0.6059373617172241,
+              "highpass_mae": 0.017606491222977638,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.049134756747414084,
+          "ssim": 0.646308675852825,
+          "highpass_mae": 0.01897688570048879,
+          "regions": {
+            "forehead": {
+              "mae": 0.04291519150137901,
+              "ssim": 0.6401706337928772,
+              "highpass_mae": 0.019067376852035522,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.05582529678940773,
+              "ssim": 0.6988019347190857,
+              "highpass_mae": 0.019958971068263054,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.05985936149954796,
+              "ssim": 0.6059373617172241,
+              "highpass_mae": 0.017606491222977638,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.049134756747414084,
+          "ssim": 0.646308675852825,
+          "highpass_mae": 0.01897688570048879,
+          "regions": {
+            "forehead": {
+              "mae": 0.04291519150137901,
+              "ssim": 0.6401706337928772,
+              "highpass_mae": 0.019067376852035522,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.05582529678940773,
+              "ssim": 0.6988019347190857,
+              "highpass_mae": 0.019958971068263054,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.05985936149954796,
+              "ssim": 0.6059373617172241,
+              "highpass_mae": 0.017606491222977638,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:f922f64d953aa9766f4765d55c48cb3a53bba14aff7eccbaec735fc117e5014e": {
+      "sha256": "f922f64d953aa9766f4765d55c48cb3a53bba14aff7eccbaec735fc117e5014e",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/1c8416f722796bf0c978ad0d7cd7d9b396e294e141f2c30bfc1ebdb0a899c4f9.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 7,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.7677673697471619,
+          "boundary": false
+        },
+        "3": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.7971889972686768,
+          "boundary": false
+        },
+        "6": {
+          "dx": -3,
+          "dy": -3,
+          "ncc": 0.8198897242546082,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.1041456013917923,
+          "ssim": 0.47104668617248535,
+          "lpips": 0.2874263525009155
+        },
+        "1": {
+          "mae": 0.10225149989128113,
+          "ssim": 0.4831174910068512,
+          "lpips": 0.2871895432472229
+        },
+        "3": {
+          "mae": 0.10225149989128113,
+          "ssim": 0.4831174910068512,
+          "lpips": 0.2871895432472229
+        },
+        "6": {
+          "mae": 0.10254041105508804,
+          "ssim": 0.48167726397514343,
+          "lpips": 0.28963083028793335
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:33c683caa4b3b3660f71706ebf964a3e8e55d576fb64733b37bf5e83f694b728": {
+      "sha256": "33c683caa4b3b3660f71706ebf964a3e8e55d576fb64733b37bf5e83f694b728",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2c33ab93b8dadc9e073ac39ace4aa4b22c4e1870c40c9c79e9cc1562e08d583f.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 8,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.7692650556564331,
+          "boundary": false
+        },
+        "3": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.8003242611885071,
+          "boundary": false
+        },
+        "6": {
+          "dx": -3,
+          "dy": -3,
+          "ncc": 0.8245161175727844,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.10720978677272797,
+          "ssim": 0.45228028297424316,
+          "lpips": 0.30472028255462646
+        },
+        "1": {
+          "mae": 0.10496645420789719,
+          "ssim": 0.46867790818214417,
+          "lpips": 0.3051166534423828
+        },
+        "3": {
+          "mae": 0.10496645420789719,
+          "ssim": 0.46867790818214417,
+          "lpips": 0.3051166534423828
+        },
+        "6": {
+          "mae": 0.10523197799921036,
+          "ssim": 0.46716704964637756,
+          "lpips": 0.3096729516983032
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:f7fe333332c317e33fec8664693bf0483d5d72c2ae7ee5f91e1cefe5ea954ef9": {
+      "sha256": "f7fe333332c317e33fec8664693bf0483d5d72c2ae7ee5f91e1cefe5ea954ef9",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/2f7d3b9077348addeae420472e6a36ef5d8cadfe3d79c15553fdaf373500cf11.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-once-triggered"
+          ],
+          "stage": 5,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 1,
+          "dy": 0,
+          "ncc": 0.8544564843177795,
+          "boundary": false
+        },
+        "3": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.8667096495628357,
+          "boundary": false
+        },
+        "6": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.8740196824073792,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.06353718787431717,
+          "ssim": 0.7343623042106628,
+          "lpips": 0.1327250897884369
+        },
+        "1": {
+          "mae": 0.06314191222190857,
+          "ssim": 0.738257884979248,
+          "lpips": 0.13195882737636566
+        },
+        "3": {
+          "mae": 0.0640193298459053,
+          "ssim": 0.7160318493843079,
+          "lpips": 0.13449569046497345
+        },
+        "6": {
+          "mae": 0.0640193298459053,
+          "ssim": 0.7160318493843079,
+          "lpips": 0.13449569046497345
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:5f419f8d53c08e70fb756981478357b09635e5714e02631deb506eff59e21f3d": {
+      "sha256": "5f419f8d53c08e70fb756981478357b09635e5714e02631deb506eff59e21f3d",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/34c9eac283afb01246cca9c2cf4a27b28ef3089eb3ede8c0ad94b6b8ddb8c3b7.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P04-always-original"
+          ],
+          "stage": 2,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9952771067619324,
+          "boundary": false
+        },
+        "3": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9980490803718567,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9988704919815063,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.02022259682416916,
+          "ssim": 0.8826797604560852,
+          "lpips": 0.032905057072639465
+        },
+        "1": {
+          "mae": 0.01968161202967167,
+          "ssim": 0.878314197063446,
+          "lpips": 0.03511684387922287
+        },
+        "3": {
+          "mae": 0.01968161202967167,
+          "ssim": 0.878314197063446,
+          "lpips": 0.03511684387922287
+        },
+        "6": {
+          "mae": 0.01968161202967167,
+          "ssim": 0.878314197063446,
+          "lpips": 0.03511684387922287
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.020310651226078762,
+          "ssim": 0.8440696006667109,
+          "highpass_mae": 0.012238770989591585,
+          "regions": {
+            "forehead": {
+              "mae": 0.021986572071909904,
+              "ssim": 0.8201720118522644,
+              "highpass_mae": 0.013117733411490917,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.020880451425909996,
+              "ssim": 0.8876597881317139,
+              "highpass_mae": 0.010937761515378952,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.014751596376299858,
+              "ssim": 0.8724105954170227,
+              "highpass_mae": 0.011123070493340492,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.020830258120070486,
+          "ssim": 0.8172705372798387,
+          "highpass_mae": 0.013786390080828877,
+          "regions": {
+            "forehead": {
+              "mae": 0.021286243572831154,
+              "ssim": 0.7911542057991028,
+              "highpass_mae": 0.014550880528986454,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.02335045114159584,
+              "ssim": 0.8732964396476746,
+              "highpass_mae": 0.012891719117760658,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.016656940802931786,
+              "ssim": 0.8385636210441589,
+              "highpass_mae": 0.012549479492008686,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.020830258120070486,
+          "ssim": 0.8172705372798387,
+          "highpass_mae": 0.013786390080828877,
+          "regions": {
+            "forehead": {
+              "mae": 0.021286243572831154,
+              "ssim": 0.7911542057991028,
+              "highpass_mae": 0.014550880528986454,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.02335045114159584,
+              "ssim": 0.8732964396476746,
+              "highpass_mae": 0.012891719117760658,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.016656940802931786,
+              "ssim": 0.8385636210441589,
+              "highpass_mae": 0.012549479492008686,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.020830258120070486,
+          "ssim": 0.8172705372798387,
+          "highpass_mae": 0.013786390080828877,
+          "regions": {
+            "forehead": {
+              "mae": 0.021286243572831154,
+              "ssim": 0.7911542057991028,
+              "highpass_mae": 0.014550880528986454,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.02335045114159584,
+              "ssim": 0.8732964396476746,
+              "highpass_mae": 0.012891719117760658,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.016656940802931786,
+              "ssim": 0.8385636210441589,
+              "highpass_mae": 0.012549479492008686,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:9f14b35795ca12fde1409c55896db6a39671951757892b3b49af5ca7acb579f8": {
+      "sha256": "9f14b35795ca12fde1409c55896db6a39671951757892b3b49af5ca7acb579f8",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/3ac4a141edceb3249ad25d6fd5a2f7fd6666ca0e78f2598c51a4323f523c30a9.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-once-triggered"
+          ],
+          "stage": 7,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.85428786277771,
+          "boundary": false
+        },
+        "3": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.8702293038368225,
+          "boundary": false
+        },
+        "6": {
+          "dx": 1,
+          "dy": -2,
+          "ncc": 0.8804140090942383,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.07781306654214859,
+          "ssim": 0.6688655018806458,
+          "lpips": 0.16179943084716797
+        },
+        "1": {
+          "mae": 0.07680107653141022,
+          "ssim": 0.6753848195075989,
+          "lpips": 0.16583387553691864
+        },
+        "3": {
+          "mae": 0.07680107653141022,
+          "ssim": 0.6753848195075989,
+          "lpips": 0.16583387553691864
+        },
+        "6": {
+          "mae": 0.07789456099271774,
+          "ssim": 0.657677948474884,
+          "lpips": 0.1623554527759552
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:dfa488159b0fac00006f32601cdf77fff1babb74cead1c45a69000ea12c8b78e": {
+      "sha256": "dfa488159b0fac00006f32601cdf77fff1babb74cead1c45a69000ea12c8b78e",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/591e44e949888b85f8f3e1f78bc319fff2981ff277e5ee7ac865a6a892b56040.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-once-triggered"
+          ],
+          "stage": 4,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -1,
+          "dy": -2,
+          "ncc": 0.9151374101638794,
+          "boundary": false
+        },
+        "3": {
+          "dx": -1,
+          "dy": -2,
+          "ncc": 0.9292093515396118,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": -4,
+          "ncc": 0.9379920959472656,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 2,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.04443921148777008,
+          "ssim": 0.7202920913696289,
+          "lpips": 0.1104809120297432
+        },
+        "1": {
+          "mae": 0.041033785790205,
+          "ssim": 0.7443738579750061,
+          "lpips": 0.10807456076145172
+        },
+        "3": {
+          "mae": 0.041033785790205,
+          "ssim": 0.7443738579750061,
+          "lpips": 0.10807456076145172
+        },
+        "6": {
+          "mae": 0.04694223031401634,
+          "ssim": 0.6784891486167908,
+          "lpips": 0.12104228138923645
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:b97c1d1ffa11687ed3c3f7f7a26a7c4540966b7adbf9b5ac185a42faf727d932": {
+      "sha256": "b97c1d1ffa11687ed3c3f7f7a26a7c4540966b7adbf9b5ac185a42faf727d932",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/640e4039ccd152214d33985ae60f0f3170a40ebe2098218d7adb5f2cf62c22ff.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P04-once-triggered"
+          ],
+          "stage": 9,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.7972665429115295,
+          "boundary": false
+        },
+        "3": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8263993263244629,
+          "boundary": false
+        },
+        "6": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8477210998535156,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.20779387652873993,
+          "ssim": 0.25389596819877625,
+          "lpips": 0.5253676772117615
+        },
+        "1": {
+          "mae": 0.10927293449640274,
+          "ssim": 0.4742738902568817,
+          "lpips": 0.2338399440050125
+        },
+        "3": {
+          "mae": 0.10927293449640274,
+          "ssim": 0.4742738902568817,
+          "lpips": 0.2338399440050125
+        },
+        "6": {
+          "mae": 0.10927293449640274,
+          "ssim": 0.4742738902568817,
+          "lpips": 0.2338399440050125
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.30795962677282446,
+          "ssim": 0.19978448011717953,
+          "highpass_mae": 0.028982259799890657,
+          "regions": {
+            "forehead": {
+              "mae": 0.3740825653076172,
+              "ssim": 0.19981734454631805,
+              "highpass_mae": 0.02527882717549801,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.265170156955719,
+              "ssim": 0.17643576860427856,
+              "highpass_mae": 0.03149599954485893,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.16205844283103943,
+              "ssim": 0.22661715745925903,
+              "highpass_mae": 0.03702211380004883,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.06466609346954262,
+          "ssim": 0.5944344307788687,
+          "highpass_mae": 0.02060754786738578,
+          "regions": {
+            "forehead": {
+              "mae": 0.05520589277148247,
+              "ssim": 0.593302309513092,
+              "highpass_mae": 0.020430611446499825,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.07400663942098618,
+              "ssim": 0.634797990322113,
+              "highpass_mae": 0.021818630397319794,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.08191916346549988,
+              "ssim": 0.5515864491462708,
+              "highpass_mae": 0.019764304161071777,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.06466609346954262,
+          "ssim": 0.5944344307788687,
+          "highpass_mae": 0.02060754786738578,
+          "regions": {
+            "forehead": {
+              "mae": 0.05520589277148247,
+              "ssim": 0.593302309513092,
+              "highpass_mae": 0.020430611446499825,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.07400663942098618,
+              "ssim": 0.634797990322113,
+              "highpass_mae": 0.021818630397319794,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.08191916346549988,
+              "ssim": 0.5515864491462708,
+              "highpass_mae": 0.019764304161071777,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.06466609346954262,
+          "ssim": 0.5944344307788687,
+          "highpass_mae": 0.02060754786738578,
+          "regions": {
+            "forehead": {
+              "mae": 0.05520589277148247,
+              "ssim": 0.593302309513092,
+              "highpass_mae": 0.020430611446499825,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.07400663942098618,
+              "ssim": 0.634797990322113,
+              "highpass_mae": 0.021818630397319794,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.08191916346549988,
+              "ssim": 0.5515864491462708,
+              "highpass_mae": 0.019764304161071777,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:8ff3acbcebe9ca09e08f71dbc90c18ce791396caa1f0922a1c847ad3a567251f": {
+      "sha256": "8ff3acbcebe9ca09e08f71dbc90c18ce791396caa1f0922a1c847ad3a567251f",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/968515bb0c769a4eb8cdfe313683dda18ae6e952a82b761c56f5edb94a6248e0.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 9,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.7643650770187378,
+          "boundary": false
+        },
+        "3": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.7947061061859131,
+          "boundary": false
+        },
+        "6": {
+          "dx": -2,
+          "dy": -3,
+          "ncc": 0.8182579874992371,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.11064629256725311,
+          "ssim": 0.4441892206668854,
+          "lpips": 0.3074617385864258
+        },
+        "1": {
+          "mae": 0.10796815156936646,
+          "ssim": 0.46200549602508545,
+          "lpips": 0.30606362223625183
+        },
+        "3": {
+          "mae": 0.10796815156936646,
+          "ssim": 0.46200549602508545,
+          "lpips": 0.30606362223625183
+        },
+        "6": {
+          "mae": 0.10796815156936646,
+          "ssim": 0.46200549602508545,
+          "lpips": 0.30606362223625183
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:07e5c8cfb13cdf99259683c4b5786bb84e44731afdee483cb6f2945b766d5696": {
+      "sha256": "07e5c8cfb13cdf99259683c4b5786bb84e44731afdee483cb6f2945b766d5696",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/9be1eb1b850deca7ad429188abd1b7ec5ca9d252b1c2c1f997074eb58700c572.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-once-triggered"
+          ],
+          "stage": 8,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.8575891256332397,
+          "boundary": false
+        },
+        "3": {
+          "dx": 2,
+          "dy": -1,
+          "ncc": 0.8767974376678467,
+          "boundary": false
+        },
+        "6": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.8880682587623596,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.08195889741182327,
+          "ssim": 0.6380129456520081,
+          "lpips": 0.1853266954421997
+        },
+        "1": {
+          "mae": 0.08059868961572647,
+          "ssim": 0.6566401124000549,
+          "lpips": 0.18475526571273804
+        },
+        "3": {
+          "mae": 0.08100602775812149,
+          "ssim": 0.655870258808136,
+          "lpips": 0.18559172749519348
+        },
+        "6": {
+          "mae": 0.08059868961572647,
+          "ssim": 0.6566401124000549,
+          "lpips": 0.18475526571273804
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074": {
+      "sha256": "2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/9f07dd1ff9f715e364bbfb6b8429a6bb85ffdb1a1dffbadc3606fa87133e26b0.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-end-only"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 8,
+          "dy": 1,
+          "ncc": 0.75376957654953,
+          "boundary": false
+        },
+        "3": {
+          "dx": 8,
+          "dy": 0,
+          "ncc": 0.7559201121330261,
+          "boundary": false
+        },
+        "6": {
+          "dx": 7,
+          "dy": -2,
+          "ncc": 0.7555328607559204,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 3,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.12653160095214844,
+          "ssim": 0.4720388948917389,
+          "lpips": 0.3100045621395111
+        },
+        "1": {
+          "mae": 0.10303274542093277,
+          "ssim": 0.6541406512260437,
+          "lpips": 0.241262748837471
+        },
+        "3": {
+          "mae": 0.10645657777786255,
+          "ssim": 0.6141180396080017,
+          "lpips": 0.24684754014015198
+        },
+        "6": {
+          "mae": 0.11447178572416306,
+          "ssim": 0.5273174047470093,
+          "lpips": 0.2629855275154114
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:ce8aef69f27f1412a382ef592c2a90f03f59e77557aa84b3e5ce87b17bff810d": {
+      "sha256": "ce8aef69f27f1412a382ef592c2a90f03f59e77557aa84b3e5ce87b17bff810d",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/a189cc1123c68e0a0497f1c420222f569c46f148b4a429e363d7a4dbdcfde2ad.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-once-triggered"
+          ],
+          "stage": 3,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": -1,
+          "dy": -1,
+          "ncc": 0.9886574149131775,
+          "boundary": false
+        },
+        "3": {
+          "dx": -1,
+          "dy": -1,
+          "ncc": 0.994615375995636,
+          "boundary": false
+        },
+        "6": {
+          "dx": -1,
+          "dy": 0,
+          "ncc": 0.9967542886734009,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.022932985797524452,
+          "ssim": 0.8179461359977722,
+          "lpips": 0.06708072125911713
+        },
+        "1": {
+          "mae": 0.021523045375943184,
+          "ssim": 0.8244522213935852,
+          "lpips": 0.0665690004825592
+        },
+        "3": {
+          "mae": 0.021523045375943184,
+          "ssim": 0.8244522213935852,
+          "lpips": 0.0665690004825592
+        },
+        "6": {
+          "mae": 0.02126418799161911,
+          "ssim": 0.8317219614982605,
+          "lpips": 0.0623440220952034
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:b6a2c4009c53b8aea88d7283cfd6016770b1b84e3a4fd98c5a025434d23c844d": {
+      "sha256": "b6a2c4009c53b8aea88d7283cfd6016770b1b84e3a4fd98c5a025434d23c844d",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/a79f43d43e541a45c9e2735d4ebb2e8997714570ca8d0cd122054521a8f6ebc7.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P04-once-triggered"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 18,
+          "dy": 38,
+          "ncc": 0.641435444355011,
+          "boundary": false
+        },
+        "3": {
+          "dx": 18,
+          "dy": 38,
+          "ncc": 0.6559235453605652,
+          "boundary": false
+        },
+        "6": {
+          "dx": 17,
+          "dy": 37,
+          "ncc": 0.6600435972213745,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.2465388923883438,
+          "ssim": 0.22978626191616058,
+          "lpips": 0.5694571733474731
+        },
+        "1": {
+          "mae": 0.17855381965637207,
+          "ssim": 0.3952031135559082,
+          "lpips": 0.3046590983867645
+        },
+        "3": {
+          "mae": 0.17855381965637207,
+          "ssim": 0.3952031135559082,
+          "lpips": 0.3046590983867645
+        },
+        "6": {
+          "mae": 0.1798938512802124,
+          "ssim": 0.38166841864585876,
+          "lpips": 0.3109320104122162
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.3184421395554262,
+          "ssim": 0.21099250077078444,
+          "highpass_mae": 0.027015146483831545,
+          "regions": {
+            "forehead": {
+              "mae": 0.3832421898841858,
+              "ssim": 0.21315370500087738,
+              "highpass_mae": 0.024114424362778664,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.28507280349731445,
+              "ssim": 0.18076616525650024,
+              "highpass_mae": 0.026442043483257294,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.16582535207271576,
+              "ssim": 0.23875738680362701,
+              "highpass_mae": 0.03617212548851967,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.08513341395293965,
+          "ssim": 0.5732005631530678,
+          "highpass_mae": 0.0208271203409223,
+          "regions": {
+            "forehead": {
+              "mae": 0.07041920721530914,
+              "ssim": 0.563530445098877,
+              "highpass_mae": 0.02063445933163166,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.12990714609622955,
+              "ssim": 0.5368438363075256,
+              "highpass_mae": 0.023724308237433434,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.07794215530157089,
+              "ssim": 0.6469711065292358,
+              "highpass_mae": 0.018133152276277542,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.08513341395293965,
+          "ssim": 0.5732005631530678,
+          "highpass_mae": 0.0208271203409223,
+          "regions": {
+            "forehead": {
+              "mae": 0.07041920721530914,
+              "ssim": 0.563530445098877,
+              "highpass_mae": 0.02063445933163166,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.12990714609622955,
+              "ssim": 0.5368438363075256,
+              "highpass_mae": 0.023724308237433434,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.07794215530157089,
+              "ssim": 0.6469711065292358,
+              "highpass_mae": 0.018133152276277542,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.08919376580154195,
+          "ssim": 0.5459976616422273,
+          "highpass_mae": 0.02169149057391812,
+          "regions": {
+            "forehead": {
+              "mae": 0.07769623398780823,
+              "ssim": 0.531642735004425,
+              "highpass_mae": 0.021340683102607727,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.1363004446029663,
+              "ssim": 0.5221478343009949,
+              "highpass_mae": 0.0242636539041996,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.0699385330080986,
+              "ssim": 0.6207529902458191,
+              "highpass_mae": 0.019827259704470634,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:70e04e439311151f50245d704a8e0e8dd91aecd49932a9396dda52603f31f77a": {
+      "sha256": "70e04e439311151f50245d704a8e0e8dd91aecd49932a9396dda52603f31f77a",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/b1c253901c302614e4d7d4b6bcec1c4603540d76dc332e5e08f13b7060f821e8.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 1,
+          "dy": 2,
+          "ncc": 0.6293599605560303,
+          "boundary": false
+        },
+        "3": {
+          "dx": 2,
+          "dy": 1,
+          "ncc": 0.6508458852767944,
+          "boundary": false
+        },
+        "6": {
+          "dx": 3,
+          "dy": 0,
+          "ncc": 0.6698800325393677,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 2,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.1730796843767166,
+          "ssim": 0.3262294828891754,
+          "lpips": 0.39165157079696655
+        },
+        "1": {
+          "mae": 0.17199775576591492,
+          "ssim": 0.32672572135925293,
+          "lpips": 0.392103910446167
+        },
+        "3": {
+          "mae": 0.17273461818695068,
+          "ssim": 0.3245706856250763,
+          "lpips": 0.38957276940345764
+        },
+        "6": {
+          "mae": 0.17395976185798645,
+          "ssim": 0.3198627829551697,
+          "lpips": 0.3954430818557739
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:66defbe52ef8d3c1bca9d90b40c30eb314733bc6787f804a4dc45fb4e386e6d8": {
+      "sha256": "66defbe52ef8d3c1bca9d90b40c30eb314733bc6787f804a4dc45fb4e386e6d8",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/b49c1cb78e70318e9e5814a7d5465b1f5a7f63db665aaa1f862092782c726349.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P04-once-triggered"
+          ],
+          "stage": 8,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8035431504249573,
+          "boundary": false
+        },
+        "3": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.831595242023468,
+          "boundary": false
+        },
+        "6": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8528836369514465,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.2052837610244751,
+          "ssim": 0.2629941403865814,
+          "lpips": 0.5179169774055481
+        },
+        "1": {
+          "mae": 0.10353370755910873,
+          "ssim": 0.49560561776161194,
+          "lpips": 0.2129833996295929
+        },
+        "3": {
+          "mae": 0.10353370755910873,
+          "ssim": 0.49560561776161194,
+          "lpips": 0.2129833996295929
+        },
+        "6": {
+          "mae": 0.10353370755910873,
+          "ssim": 0.49560561776161194,
+          "lpips": 0.2129833996295929
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.3033596506890129,
+          "ssim": 0.21498742327678896,
+          "highpass_mae": 0.028099617206436747,
+          "regions": {
+            "forehead": {
+              "mae": 0.3689608573913574,
+              "ssim": 0.21077828109264374,
+              "highpass_mae": 0.024641042575240135,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.2579044997692108,
+              "ssim": 0.19683276116847992,
+              "highpass_mae": 0.030828703194856644,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.16198839247226715,
+              "ssim": 0.24978570640087128,
+              "highpass_mae": 0.035178665071725845,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.05560380691114594,
+          "ssim": 0.623685631029647,
+          "highpass_mae": 0.01972659764920964,
+          "regions": {
+            "forehead": {
+              "mae": 0.04802960157394409,
+              "ssim": 0.6191226840019226,
+              "highpass_mae": 0.019718339666724205,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.06275288015604019,
+              "ssim": 0.6740593314170837,
+              "highpass_mae": 0.020607003942131996,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.06978778541088104,
+              "ssim": 0.5805769562721252,
+              "highpass_mae": 0.018760373815894127,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.05560380691114594,
+          "ssim": 0.623685631029647,
+          "highpass_mae": 0.01972659764920964,
+          "regions": {
+            "forehead": {
+              "mae": 0.04802960157394409,
+              "ssim": 0.6191226840019226,
+              "highpass_mae": 0.019718339666724205,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.06275288015604019,
+              "ssim": 0.6740593314170837,
+              "highpass_mae": 0.020607003942131996,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.06978778541088104,
+              "ssim": 0.5805769562721252,
+              "highpass_mae": 0.018760373815894127,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.05560380691114594,
+          "ssim": 0.623685631029647,
+          "highpass_mae": 0.01972659764920964,
+          "regions": {
+            "forehead": {
+              "mae": 0.04802960157394409,
+              "ssim": 0.6191226840019226,
+              "highpass_mae": 0.019718339666724205,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.06275288015604019,
+              "ssim": 0.6740593314170837,
+              "highpass_mae": 0.020607003942131996,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.06978778541088104,
+              "ssim": 0.5805769562721252,
+              "highpass_mae": 0.018760373815894127,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:5a8c2c6a931b2488dd8138369a9148577094a63951da8f646a2fba17dfbc7144": {
+      "sha256": "5a8c2c6a931b2488dd8138369a9148577094a63951da8f646a2fba17dfbc7144",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c01d8c9766811bf9cf5d8629bbfc08ea6560f2cd63ea1950370cf0316b2f77d1.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P04-always-original"
+          ],
+          "stage": 1,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": 0,
+          "ncc": 0.995107889175415,
+          "boundary": false
+        },
+        "3": {
+          "dx": 0,
+          "dy": 0,
+          "ncc": 0.9982907772064209,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": 0,
+          "ncc": 0.9992309212684631,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.0165006835013628,
+          "ssim": 0.8933680057525635,
+          "lpips": 0.03469075262546539
+        },
+        "1": {
+          "mae": 0.0165006835013628,
+          "ssim": 0.8933680057525635,
+          "lpips": 0.03469075262546539
+        },
+        "3": {
+          "mae": 0.0165006835013628,
+          "ssim": 0.8933680057525635,
+          "lpips": 0.03469075262546539
+        },
+        "6": {
+          "mae": 0.0165006835013628,
+          "ssim": 0.8933680057525635,
+          "lpips": 0.03469075262546539
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.01427720106261618,
+          "ssim": 0.8452429448603835,
+          "highpass_mae": 0.012000676846022115,
+          "regions": {
+            "forehead": {
+              "mae": 0.014597170986235142,
+              "ssim": 0.8226795196533203,
+              "highpass_mae": 0.012681222520768642,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.0142217380926013,
+              "ssim": 0.8871879577636719,
+              "highpass_mae": 0.011159935966134071,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.013400637544691563,
+              "ssim": 0.8710920214653015,
+              "highpass_mae": 0.010949432849884033,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.01427720106261618,
+          "ssim": 0.8452429448603835,
+          "highpass_mae": 0.012000676846022115,
+          "regions": {
+            "forehead": {
+              "mae": 0.014597170986235142,
+              "ssim": 0.8226795196533203,
+              "highpass_mae": 0.012681222520768642,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.0142217380926013,
+              "ssim": 0.8871879577636719,
+              "highpass_mae": 0.011159935966134071,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.013400637544691563,
+              "ssim": 0.8710920214653015,
+              "highpass_mae": 0.010949432849884033,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.01427720106261618,
+          "ssim": 0.8452429448603835,
+          "highpass_mae": 0.012000676846022115,
+          "regions": {
+            "forehead": {
+              "mae": 0.014597170986235142,
+              "ssim": 0.8226795196533203,
+              "highpass_mae": 0.012681222520768642,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.0142217380926013,
+              "ssim": 0.8871879577636719,
+              "highpass_mae": 0.011159935966134071,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.013400637544691563,
+              "ssim": 0.8710920214653015,
+              "highpass_mae": 0.010949432849884033,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.01427720106261618,
+          "ssim": 0.8452429448603835,
+          "highpass_mae": 0.012000676846022115,
+          "regions": {
+            "forehead": {
+              "mae": 0.014597170986235142,
+              "ssim": 0.8226795196533203,
+              "highpass_mae": 0.012681222520768642,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.0142217380926013,
+              "ssim": 0.8871879577636719,
+              "highpass_mae": 0.011159935966134071,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.013400637544691563,
+              "ssim": 0.8710920214653015,
+              "highpass_mae": 0.010949432849884033,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:2197ec4b57bfc80159ea1682b352432f948353c0fe358d40828b2d3b5ba0b9f1": {
+      "sha256": "2197ec4b57bfc80159ea1682b352432f948353c0fe358d40828b2d3b5ba0b9f1",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-end-only"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 37,
+          "dy": -1,
+          "ncc": 0.558026134967804,
+          "boundary": false
+        },
+        "3": {
+          "dx": 39,
+          "dy": -1,
+          "ncc": 0.5927703976631165,
+          "boundary": false
+        },
+        "6": {
+          "dx": 39,
+          "dy": -2,
+          "ncc": 0.635219395160675,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 2,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.15727263689041138,
+          "ssim": 0.5925163626670837,
+          "lpips": 0.23568332195281982
+        },
+        "1": {
+          "mae": 0.19887793064117432,
+          "ssim": 0.343243271112442,
+          "lpips": 0.5684999823570251
+        },
+        "3": {
+          "mae": 0.2006443738937378,
+          "ssim": 0.3427695333957672,
+          "lpips": 0.5772225260734558
+        },
+        "6": {
+          "mae": 0.2008897066116333,
+          "ssim": 0.34276315569877625,
+          "lpips": 0.5768853425979614
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:8538a060821cfbfea4934dfef600f2122aa31fc89e1b3477162e06fa1120abe8": {
+      "sha256": "8538a060821cfbfea4934dfef600f2122aa31fc89e1b3477162e06fa1120abe8",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/cae07b9439767a701294cf3efb354dbe831b96cc66c2a652c5d666cd154fbb26.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 4,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": -2,
+          "ncc": 0.9601980447769165,
+          "boundary": false
+        },
+        "3": {
+          "dx": 0,
+          "dy": -2,
+          "ncc": 0.9669723510742188,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": -3,
+          "ncc": 0.969547688961029,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.03808801621198654,
+          "ssim": 0.7457380294799805,
+          "lpips": 0.12130487710237503
+        },
+        "1": {
+          "mae": 0.03459229692816734,
+          "ssim": 0.7767667770385742,
+          "lpips": 0.11535049974918365
+        },
+        "3": {
+          "mae": 0.03459229692816734,
+          "ssim": 0.7767667770385742,
+          "lpips": 0.11535049974918365
+        },
+        "6": {
+          "mae": 0.03778259456157684,
+          "ssim": 0.733020007610321,
+          "lpips": 0.12402339279651642
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:b8b1bb1b9d2a9c16c29be3559b4bc159269b85927cc294b93059f8cbcbd1e3f3": {
+      "sha256": "b8b1bb1b9d2a9c16c29be3559b4bc159269b85927cc294b93059f8cbcbd1e3f3",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/d5a1b9fde2bb0c002b7fff15262856ad26e5c6621283c9884c67687c641e904e.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P06-once-triggered"
+          ],
+          "stage": 3,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9926390051841736,
+          "boundary": false
+        },
+        "3": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9959588050842285,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9970110654830933,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.023800665512681007,
+          "ssim": 0.8164615035057068,
+          "lpips": 0.07393765449523926
+        },
+        "1": {
+          "mae": 0.021220112219452858,
+          "ssim": 0.8393573760986328,
+          "lpips": 0.06642623245716095
+        },
+        "3": {
+          "mae": 0.021220112219452858,
+          "ssim": 0.8393573760986328,
+          "lpips": 0.06642623245716095
+        },
+        "6": {
+          "mae": 0.021220112219452858,
+          "ssim": 0.8393573760986328,
+          "lpips": 0.06642623245716095
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:f12c166e93b3d5cf51045d322c328520707b838c0796a3cc8cfe5d44115e9e72": {
+      "sha256": "f12c166e93b3d5cf51045d322c328520707b838c0796a3cc8cfe5d44115e9e72",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/e5073b92f75e95932443f154cd8cb562b9ef6978bff7c19ff67b30ac28add594.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P05-once-triggered"
+          ],
+          "stage": 6,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 1,
+          "dy": 0,
+          "ncc": 0.8507914543151855,
+          "boundary": false
+        },
+        "3": {
+          "dx": 1,
+          "dy": -1,
+          "ncc": 0.8656024932861328,
+          "boundary": false
+        },
+        "6": {
+          "dx": 1,
+          "dy": -2,
+          "ncc": 0.8743582963943481,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 2,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.06906642764806747,
+          "ssim": 0.6937413811683655,
+          "lpips": 0.1533958911895752
+        },
+        "1": {
+          "mae": 0.06799371540546417,
+          "ssim": 0.711096465587616,
+          "lpips": 0.15335479378700256
+        },
+        "3": {
+          "mae": 0.06837008148431778,
+          "ssim": 0.6954824328422546,
+          "lpips": 0.15473687648773193
+        },
+        "6": {
+          "mae": 0.07026434689760208,
+          "ssim": 0.6686513423919678,
+          "lpips": 0.15586556494235992
+        }
+      }
+    },
+    "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe": {
+      "sha256": "4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe",
+      "reference_sha256": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
+      "roi": [
+        352,
+        160,
+        672,
+        520
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P02-end-only"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.769260048866272,
+          "boundary": false
+        },
+        "3": {
+          "dx": -1,
+          "dy": -1,
+          "ncc": 0.7689005732536316,
+          "boundary": false
+        },
+        "6": {
+          "dx": -2,
+          "dy": -1,
+          "ncc": 0.7667439579963684,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 2,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.07742524147033691,
+          "ssim": 0.7169287800788879,
+          "lpips": 0.11530911177396774
+        },
+        "1": {
+          "mae": 0.07798106223344803,
+          "ssim": 0.7008340358734131,
+          "lpips": 0.11541267484426498
+        },
+        "3": {
+          "mae": 0.08077709376811981,
+          "ssim": 0.6549031138420105,
+          "lpips": 0.11723203212022781
+        },
+        "6": {
+          "mae": 0.08660459518432617,
+          "ssim": 0.5723446011543274,
+          "lpips": 0.12751592695713043
+        }
+      }
+    },
+    "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8:f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965": {
+      "sha256": "f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965",
+      "reference_sha256": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P01.png",
+      "roi": [
+        340,
+        120,
+        660,
+        480
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f7d3d61c9268e64cdc10e69fc83fa2fc13f9fa1ffa411135f7996d984320514a.png"
+      ],
+      "uses": [
+        {
+          "branches": [
+            "P01-end-only"
+          ],
+          "stage": 10,
+          "source": "new_first_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 12,
+          "dy": -1,
+          "ncc": 0.7238303422927856,
+          "boundary": false
+        },
+        "3": {
+          "dx": 11,
+          "dy": -2,
+          "ncc": 0.7253981232643127,
+          "boundary": false
+        },
+        "6": {
+          "dx": 9,
+          "dy": -3,
+          "ncc": 0.7278969287872314,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 3,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.16480223834514618,
+          "ssim": 0.42618611454963684,
+          "lpips": 0.2761557698249817
+        },
+        "1": {
+          "mae": 0.11869838833808899,
+          "ssim": 0.7145751118659973,
+          "lpips": 0.16221408545970917
+        },
+        "3": {
+          "mae": 0.1246144026517868,
+          "ssim": 0.6528502106666565,
+          "lpips": 0.17019937932491302
+        },
+        "6": {
+          "mae": 0.13526563346385956,
+          "ssim": 0.5517849326133728,
+          "lpips": 0.18635398149490356
+        }
+      }
+    },
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:12f69dd691ee7c2ae4b64a616545bc18362d0eb8cc80ccacdb36a988c5e1c18c": {
+      "sha256": "12f69dd691ee7c2ae4b64a616545bc18362d0eb8cc80ccacdb36a988c5e1c18c",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/bc01329be131e649185e1a3b5752a6610d827874dbc6442249ca13267fb6c576.png"
+      ],
+      "uses": [
+        {
+          "branch": "P04-once-triggered",
+          "stage": 6,
+          "source": "current_extension_reused_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 21,
+          "dy": 39,
+          "ncc": 0.802556037902832,
+          "boundary": false
+        },
+        "3": {
+          "dx": 21,
+          "dy": 39,
+          "ncc": 0.8304176330566406,
+          "boundary": false
+        },
+        "6": {
+          "dx": 21,
+          "dy": 38,
+          "ncc": 0.8521295785903931,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 1,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.20254626870155334,
+          "ssim": 0.2748970687389374,
+          "lpips": 0.5162861347198486
+        },
+        "1": {
+          "mae": 0.09671229869127274,
+          "ssim": 0.5216591954231262,
+          "lpips": 0.1869426816701889
+        },
+        "3": {
+          "mae": 0.09671229869127274,
+          "ssim": 0.5216591954231262,
+          "lpips": 0.1869426816701889
+        },
+        "6": {
+          "mae": 0.09701801091432571,
+          "ssim": 0.5206056237220764,
+          "lpips": 0.18448755145072937
+        }
+      },
+      "skin": {
+        "fixed": {
+          "mae": 0.3032695213135551,
+          "ssim": 0.2233128543691695,
+          "highpass_mae": 0.02732288645909113,
+          "regions": {
+            "forehead": {
+              "mae": 0.3708474338054657,
+              "ssim": 0.21519990265369415,
+              "highpass_mae": 0.023564089089632034,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.2509181499481201,
+              "ssim": 0.21118468046188354,
+              "highpass_mae": 0.031006760895252228,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.16385582089424133,
+              "ssim": 0.26400336623191833,
+              "highpass_mae": 0.03420880809426308,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "1": {
+          "mae": 0.04393194982234169,
+          "ssim": 0.6520256802463082,
+          "highpass_mae": 0.019477695518118492,
+          "regions": {
+            "forehead": {
+              "mae": 0.03777260705828667,
+              "ssim": 0.6470147967338562,
+              "highpass_mae": 0.019672229886054993,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.050418440252542496,
+              "ssim": 0.7059434056282043,
+              "highpass_mae": 0.020943375304341316,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.054709386080503464,
+              "ssim": 0.6063017249107361,
+              "highpass_mae": 0.017257940024137497,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "3": {
+          "mae": 0.04393194982234169,
+          "ssim": 0.6520256802463082,
+          "highpass_mae": 0.019477695518118492,
+          "regions": {
+            "forehead": {
+              "mae": 0.03777260705828667,
+              "ssim": 0.6470147967338562,
+              "highpass_mae": 0.019672229886054993,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.050418440252542496,
+              "ssim": 0.7059434056282043,
+              "highpass_mae": 0.020943375304341316,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.054709386080503464,
+              "ssim": 0.6063017249107361,
+              "highpass_mae": 0.017257940024137497,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        },
+        "6": {
+          "mae": 0.04449000402408488,
+          "ssim": 0.6517174740788326,
+          "highpass_mae": 0.019470642421613723,
+          "regions": {
+            "forehead": {
+              "mae": 0.04051227122545242,
+              "ssim": 0.6400385499000549,
+              "highpass_mae": 0.019770702347159386,
+              "pixel_count": 3944,
+              "ssim_valid_count": 3080
+            },
+            "cheek_viewer_left": {
+              "mae": 0.047639794647693634,
+              "ssim": 0.7214521765708923,
+              "highpass_mae": 0.020619142800569534,
+              "pixel_count": 1512,
+              "ssim_valid_count": 1080
+            },
+            "cheek_viewer_right": {
+              "mae": 0.052619241178035736,
+              "ssim": 0.6096850037574768,
+              "highpass_mae": 0.017298046499490738,
+              "pixel_count": 1344,
+              "ssim_valid_count": 936
+            }
+          }
+        }
+      }
+    },
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:9f6a838878b3f1decc1d3ca93b43e2c5ac6484f3d7ac4f2b87fc81e56182f099": {
+      "sha256": "9f6a838878b3f1decc1d3ca93b43e2c5ac6484f3d7ac4f2b87fc81e56182f099",
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/rebase.png"
+      ],
+      "uses": [
+        {
+          "branch": "P05-once-triggered",
+          "stage": 2,
+          "source": "current_extension_reused_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9926407933235168,
+          "boundary": false
+        },
+        "3": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9971680641174316,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9984912872314453,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.01782056875526905,
+          "ssim": 0.858210027217865,
+          "lpips": 0.04252468794584274
+        },
+        "1": {
+          "mae": 0.017842967063188553,
+          "ssim": 0.8493397235870361,
+          "lpips": 0.04483744874596596
+        },
+        "3": {
+          "mae": 0.017842967063188553,
+          "ssim": 0.8493397235870361,
+          "lpips": 0.04483744874596596
+        },
+        "6": {
+          "mae": 0.017842967063188553,
+          "ssim": 0.8493397235870361,
+          "lpips": 0.04483744874596596
+        }
+      }
+    },
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:e51eb26ebbe0008b244947de63478de76cd4f4808f10f5ec209aca392a190387": {
+      "sha256": "e51eb26ebbe0008b244947de63478de76cd4f4808f10f5ec209aca392a190387",
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/rebase.png"
+      ],
+      "uses": [
+        {
+          "branch": "P06-once-triggered",
+          "stage": 2,
+          "source": "current_extension_reused_output"
+        }
+      ],
+      "locations": {
+        "1": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9958841800689697,
+          "boundary": false
+        },
+        "3": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9983524084091187,
+          "boundary": false
+        },
+        "6": {
+          "dx": 0,
+          "dy": -1,
+          "ncc": 0.9989858269691467,
+          "boundary": false
+        }
+      },
+      "shift_spread_px": 0,
+      "setting_sensitive": false,
+      "face": {
+        "fixed": {
+          "mae": 0.01791081205010414,
+          "ssim": 0.8638374209403992,
+          "lpips": 0.04879290983080864
+        },
+        "1": {
+          "mae": 0.01767251268029213,
+          "ssim": 0.858565092086792,
+          "lpips": 0.04921363294124603
+        },
+        "3": {
+          "mae": 0.01767251268029213,
+          "ssim": 0.858565092086792,
+          "lpips": 0.04921363294124603
+        },
+        "6": {
+          "mae": 0.01767251268029213,
+          "ssim": 0.858565092086792,
+          "lpips": 0.04921363294124603
+        }
+      }
+    }
+  },
+  "lpips_state_dict_sha256": "dcac8b0995e729ecc254c2af1e343a61a512ebbac89acebaa0d2d43512f221b9"
+}

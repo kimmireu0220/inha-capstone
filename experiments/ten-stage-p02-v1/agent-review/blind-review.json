@@ -1,0 +1,18 @@
+{
+  "task_and_rubric_verbatim": "Independent visual review. Read ONLY /Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/metrics/blind-manifest.json and listed reference+10 candidate crops. No other files/mapping/metrics/protocol/history. Compare each opaque crop to reference: face_preservation 0 no noticeable unintended change,1 slight,2 clear,3 severe; naturalness 0 natural,1 slight artifact,2 clear artificial texture/distortion,3 severe. Uncertain allowed. Natural original wrinkles are not degradation; identify new repeated etched patterns/distortion. View all individual crops. Save task/rubric verbatim and ratings JSON ONLY under experiments/ten-stage-p02-v1/agent-review/. One agent run not human validation. Return opaque ratings, no stages guessed.",
+  "review_type": "one independent agent run; not human validation",
+  "reference_viewed": true,
+  "all_individual_candidates_viewed": true,
+  "ratings": [
+    {"id":"fbf6ad9b2bcf","face_preservation":1,"naturalness":1,"uncertain":false,"reason":"Facial proportions remain close. Slight extra pale contour lines on forehead and chin, with new earrings."},
+    {"id":"9f7e8123a146","face_preservation":3,"naturalness":3,"uncertain":false,"reason":"Dense new looping etched ridges across forehead, cheeks, eye surrounds and chin; lips and eyelids visibly distorted with a melted appearance."},
+    {"id":"e3217b4f9811","face_preservation":2,"naturalness":2,"uncertain":false,"reason":"New repeated pale contours across forehead, cheeks and chin; lip grooves and eye surrounds altered. Overall identity remains recognizable."},
+    {"id":"ddc08669601d","face_preservation":3,"naturalness":3,"uncertain":false,"reason":"Pervasive embossed loops and grooves, markedly deformed eye surrounds and lip contours, and unnatural shiny raised skin patterns."},
+    {"id":"f5e41b52a82b","face_preservation":1,"naturalness":2,"uncertain":true,"reason":"Face shape is close to reference, but added pale looping forehead lines and small repeated cheek/chin marks are clearly artificial. Naturalness is near the slight/clear boundary."},
+    {"id":"2cc2870df8a7","face_preservation":3,"naturalness":3,"uncertain":false,"reason":"Strongly changed eye surrounds, cheeks and lip contours; dense novel engraved patterns and spots across nearly all facial skin."},
+    {"id":"532103d1b8ad","face_preservation":3,"naturalness":3,"uncertain":false,"reason":"Extensive looping forehead ridges, pronounced artificial cheek and chin patterns, and changed eyelid and mouth contours."},
+    {"id":"0f9b3edf3ae4","face_preservation":3,"naturalness":3,"uncertain":false,"reason":"Severe repeated raised/etched texture over the whole face, with warped eye surrounds and densely grooved lips and chin."},
+    {"id":"d51045e5d905","face_preservation":2,"naturalness":3,"uncertain":false,"reason":"Recognizable face with clear changes around eyelids and lips; widespread synthetic looping ridges on forehead, cheeks and chin make skin severely unnatural."},
+    {"id":"42a6ae0dec1c","face_preservation":2,"naturalness":2,"uncertain":false,"reason":"Clear new pale looping grooves on forehead, cheeks and chin, with altered lip texture and under-eye contours; overall facial structure remains recognizable."}
+  ]
+}

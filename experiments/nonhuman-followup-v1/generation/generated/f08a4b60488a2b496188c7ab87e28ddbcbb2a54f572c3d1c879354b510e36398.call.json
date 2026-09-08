@@ -1,0 +1,25 @@
+{
+  "id": "f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398",
+  "stage": 10,
+  "kind": "rebase",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
+  "input_sha256": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A quiet library with wooden bookshelves; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+    "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398.png",
+  "branches": [
+    "P02-end-only"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a07237-bef7-75a1-91d9-71c79469df68/exec-6a51cf82-9f00-4b9a-b7be-50ed527789fd.png",
+  "started": "2026-09-05T15:40:15.872Z",
+  "completed": "2026-09-05T15:41:00.364Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe"
+}

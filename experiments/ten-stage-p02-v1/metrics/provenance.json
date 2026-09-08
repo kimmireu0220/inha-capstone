@@ -1,0 +1,41 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "config_sha256": "16cf59dd936b52b5ceecac7cb61700621b662836a6f24f9a8d67d61d591f8aa7",
+  "script_sha256": "ebcd58e3ad584a97c0c0d056161a53d3ac34b665cbe8a5d0abd64995db017ac7",
+  "algorithm_reference": "experiments/ten-stage-v1/metrics/compute.py",
+  "algorithm_reference_sha256": "b307f9aa15e99204632a2de5a0419bbad3299e893ebd694d2e40bbd15fd7e1c0",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "crop_sha256": {
+    "0f9b3edf3ae4.png": "53f6bd2c685ca3a4a54850ac948c9a39a0cb906c3db05ddf776e871099f21836",
+    "2cc2870df8a7.png": "26d11f14685dc17c264fe17eba6fb977883ec42d188e5496e909638cca504ad9",
+    "42a6ae0dec1c.png": "b1ef7033fd9b947a55ff9963c400c70fa0a8c875ee82579789923b68b152bc8d",
+    "532103d1b8ad.png": "8ecdb6f40e9f738d5706b9e4338b9b33301dd9b89926289da36b401b486128e1",
+    "9f7e8123a146.png": "b391070bc6bef39c7a895e51a14736b470f7fe6c72c9e46615c0342a760a3206",
+    "d51045e5d905.png": "0a7cbe6ac118000e98443ad870a4afc42c55cb2301dcfd297d2bdd2c79f8e542",
+    "ddc08669601d.png": "79014caf93d0d564fb7ee095fee8099f04850596b45236194ff664735fafdad8",
+    "e3217b4f9811.png": "00e974ed6100d5709ee4f6a55e3502c1c54dfd274899fd360c77b048cf6c954a",
+    "f5e41b52a82b.png": "57bbd7456efb70d5a377624dea36aea7d01bd951fbeb16c4cdd0ffa3c07fa0df",
+    "fbf6ad9b2bcf.png": "bc1069f9b212960bd41d1068c478574cded3cdd758b70a96d84ccf84436d13a4",
+    "reference.png": "4dfd1caf9ed5cfb4882c2db4472b8352b25d33f4fb30e0f14c8db0bda7efd258"
+  },
+  "blind_mapping_sha256": "9a87cc6b8db7ae98190d97443c4041d17657d6b30e38c2c98c71c8ad0e83f624"
+}

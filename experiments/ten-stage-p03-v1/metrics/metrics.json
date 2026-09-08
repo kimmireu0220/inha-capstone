@@ -1,0 +1,303 @@
+{
+  "config_sha256": "9af1e4f6f4d0c4e7e2d921de22a0c9a4301a421c6337efc38b5ce14ba0553995",
+  "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+  "thresholds": {
+    "mae_0_1_gte": 0.0288375,
+    "ssim_lte": 0.842874,
+    "lpips_alex_v0_1_gte": 0.0555075
+  },
+  "first_alarm_steps": {
+    "run-1": {
+      "mae": 3,
+      "ssim": 2,
+      "lpips": 2
+    },
+    "run-2": {
+      "mae": 3,
+      "ssim": 2,
+      "lpips": 2
+    }
+  },
+  "results": [
+    {
+      "run": 1,
+      "step": 1,
+      "source_sha256": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+      "mae_0_1": 0.016818616539239883,
+      "mae_0_255": 4.28874721750617,
+      "ssim": 0.8832266926765442,
+      "lpips_alex_v0_1": 0.0397653803229332,
+      "alarms": {
+        "mae": false,
+        "ssim": false,
+        "lpips": false
+      }
+    },
+    {
+      "run": 1,
+      "step": 2,
+      "source_sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "mae_0_1": 0.023919278755784035,
+      "mae_0_255": 6.099416082724929,
+      "ssim": 0.8415461182594299,
+      "lpips_alex_v0_1": 0.06436368077993393,
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 3,
+      "source_sha256": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+      "mae_0_1": 0.035219378769397736,
+      "mae_0_255": 8.980941586196423,
+      "ssim": 0.8154917359352112,
+      "lpips_alex_v0_1": 0.08458372950553894,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 4,
+      "source_sha256": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+      "mae_0_1": 0.04619228467345238,
+      "mae_0_255": 11.779032591730356,
+      "ssim": 0.7493398189544678,
+      "lpips_alex_v0_1": 0.1184653639793396,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 5,
+      "source_sha256": "fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
+      "mae_0_1": 0.12108762562274933,
+      "mae_0_255": 30.87734453380108,
+      "ssim": 0.4625864028930664,
+      "lpips_alex_v0_1": 0.24226857721805573,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 6,
+      "source_sha256": "66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
+      "mae_0_1": 0.12087925523519516,
+      "mae_0_255": 30.824210084974766,
+      "ssim": 0.45227834582328796,
+      "lpips_alex_v0_1": 0.25372883677482605,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 7,
+      "source_sha256": "323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
+      "mae_0_1": 0.12076550722122192,
+      "mae_0_255": 30.79520434141159,
+      "ssim": 0.4395838975906372,
+      "lpips_alex_v0_1": 0.2693564295768738,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 8,
+      "source_sha256": "8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
+      "mae_0_1": 0.12047415226697922,
+      "mae_0_255": 30.7209088280797,
+      "ssim": 0.4257400333881378,
+      "lpips_alex_v0_1": 0.2859041690826416,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 9,
+      "source_sha256": "881bf3b951c3b4b3d780c141076eda711630aec9335204d3a272da96de0e17a8",
+      "mae_0_1": 0.12004956603050232,
+      "mae_0_255": 30.61263933777809,
+      "ssim": 0.41830018162727356,
+      "lpips_alex_v0_1": 0.3002052307128906,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "step": 10,
+      "source_sha256": "9d09d3e04317802a77d780b988660e31ec308553621af352abcca712b85093a7",
+      "mae_0_1": 0.16486088931560516,
+      "mae_0_255": 42.03952677547932,
+      "ssim": 0.33274078369140625,
+      "lpips_alex_v0_1": 0.3637469410896301,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 1,
+      "source_sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
+      "mae_0_1": 0.016378622502088547,
+      "mae_0_255": 4.176548738032579,
+      "ssim": 0.8791654706001282,
+      "lpips_alex_v0_1": 0.04099458456039429,
+      "alarms": {
+        "mae": false,
+        "ssim": false,
+        "lpips": false
+      }
+    },
+    {
+      "run": 2,
+      "step": 2,
+      "source_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+      "mae_0_1": 0.023844851180911064,
+      "mae_0_255": 6.080437051132321,
+      "ssim": 0.8237112164497375,
+      "lpips_alex_v0_1": 0.0622045174241066,
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 3,
+      "source_sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
+      "mae_0_1": 0.03382294997572899,
+      "mae_0_255": 8.624852243810892,
+      "ssim": 0.771628201007843,
+      "lpips_alex_v0_1": 0.08722404390573502,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 4,
+      "source_sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
+      "mae_0_1": 0.04822344332933426,
+      "mae_0_255": 12.296978048980236,
+      "ssim": 0.7013835906982422,
+      "lpips_alex_v0_1": 0.13435223698616028,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 5,
+      "source_sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
+      "mae_0_1": 0.19147811830043793,
+      "mae_0_255": 48.82692016661167,
+      "ssim": 0.32670143246650696,
+      "lpips_alex_v0_1": 0.5045062303543091,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 6,
+      "source_sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
+      "mae_0_1": 0.19174440205097198,
+      "mae_0_255": 48.894822522997856,
+      "ssim": 0.32239654660224915,
+      "lpips_alex_v0_1": 0.505614161491394,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 7,
+      "source_sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
+      "mae_0_1": 0.19085060060024261,
+      "mae_0_255": 48.66690315306187,
+      "ssim": 0.3148510456085205,
+      "lpips_alex_v0_1": 0.5105254650115967,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 8,
+      "source_sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
+      "mae_0_1": 0.19178110361099243,
+      "mae_0_255": 48.90418142080307,
+      "ssim": 0.3048759996891022,
+      "lpips_alex_v0_1": 0.5150160789489746,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 9,
+      "source_sha256": "633a1dcd3e7d0d89831a1f76386b73ace48bd41e1e60119deea11bb307322534",
+      "mae_0_1": 0.1922491192817688,
+      "mae_0_255": 49.023525416851044,
+      "ssim": 0.30029189586639404,
+      "lpips_alex_v0_1": 0.5185359120368958,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "step": 10,
+      "source_sha256": "7e0283e28b91a20d948e30a69ace04edc1f9577dec735adccdeebf2bba3aa8f3",
+      "mae_0_1": 0.2422269731760025,
+      "mae_0_255": 61.76787815988064,
+      "ssim": 0.2078416794538498,
+      "lpips_alex_v0_1": 0.561481237411499,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    }
+  ]
+}

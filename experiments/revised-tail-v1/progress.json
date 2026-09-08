@@ -1,0 +1,668 @@
+{
+  "complete": true,
+  "human_evaluation": "not_collected",
+  "independent_agent_evaluation": "not_collected",
+  "branches": [
+    {
+      "name": "P01",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P01.png",
+      "roi": [
+        340,
+        120,
+        660,
+        480
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-v1/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c770278a2aa512cc0ba98d51e4482a2f034e87fafb628ac50b19e581e4b98d07.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c770278a2aa512cc0ba98d51e4482a2f034e87fafb628ac50b19e581e4b98d07.png",
+          "before": {
+            "mae": 0.07317664474248886,
+            "ssim": 0.6282134652137756,
+            "lpips": 0.20342886447906494
+          },
+          "after": {
+            "mae": 0.07317664474248886,
+            "ssim": 0.6282134652137756,
+            "lpips": 0.20342886447906494
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c770278a2aa512cc0ba98d51e4482a2f034e87fafb628ac50b19e581e4b98d07.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/7c8d0946616d761ad2d55ef859cbfacf70d0a8a0e113205fcd9874e489821ef7.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/7c8d0946616d761ad2d55ef859cbfacf70d0a8a0e113205fcd9874e489821ef7.png",
+          "before": {
+            "mae": 0.14570675790309906,
+            "ssim": 0.4989817440509796,
+            "lpips": 0.27048414945602417
+          },
+          "after": {
+            "mae": 0.14570675790309906,
+            "ssim": 0.4989817440509796,
+            "lpips": 0.27048414945602417
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P02",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
+      "roi": [
+        352,
+        160,
+        672,
+        520
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/cf272b209fce91dcbb34a793ef6b4828230a54d0ed473de855d7cce5a13af6de.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/cf272b209fce91dcbb34a793ef6b4828230a54d0ed473de855d7cce5a13af6de.png",
+          "before": {
+            "mae": 0.09657423198223114,
+            "ssim": 0.3798588216304779,
+            "lpips": 0.259820818901062
+          },
+          "after": {
+            "mae": 0.09657423198223114,
+            "ssim": 0.3798588216304779,
+            "lpips": 0.259820818901062
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/cf272b209fce91dcbb34a793ef6b4828230a54d0ed473de855d7cce5a13af6de.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/d420a5bf6e07cffe19c5db8e418c56b5ca39efb940549ee148cc5a155c9c573a.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/d420a5bf6e07cffe19c5db8e418c56b5ca39efb940549ee148cc5a155c9c573a.png",
+          "before": {
+            "mae": 0.1283421516418457,
+            "ssim": 0.36652669310569763,
+            "lpips": 0.26662883162498474
+          },
+          "after": {
+            "mae": 0.1283421516418457,
+            "ssim": 0.36652669310569763,
+            "lpips": 0.26662883162498474
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P03-r1",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "roi": [
+        352,
+        64,
+        672,
+        424
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
+          "before": {
+            "mae": 0.12254548072814941,
+            "ssim": 0.40891745686531067,
+            "lpips": 0.30787450075149536
+          },
+          "after": {
+            "mae": 0.12254548072814941,
+            "ssim": 0.40891745686531067,
+            "lpips": 0.30787450075149536
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
+          "before": {
+            "mae": 0.2008240669965744,
+            "ssim": 0.25522199273109436,
+            "lpips": 0.41561371088027954
+          },
+          "after": {
+            "mae": 0.2008240669965744,
+            "ssim": 0.25522199273109436,
+            "lpips": 0.41561371088027954
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P03-r2",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "roi": [
+        352,
+        64,
+        672,
+        424
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
+          "before": {
+            "mae": 0.19077569246292114,
+            "ssim": 0.29578396677970886,
+            "lpips": 0.5228796601295471
+          },
+          "after": {
+            "mae": 0.19077569246292114,
+            "ssim": 0.29578396677970886,
+            "lpips": 0.5228796601295471
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
+          "before": {
+            "mae": 0.25273093581199646,
+            "ssim": 0.17960941791534424,
+            "lpips": 0.5659546256065369
+          },
+          "after": {
+            "mae": 0.25273093581199646,
+            "ssim": 0.17960941791534424,
+            "lpips": 0.5659546256065369
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P04",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c39cf5cf388d11ff05256723aea92efedb1062f57f7dcb95a1a31d1e3f2d67b3.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c39cf5cf388d11ff05256723aea92efedb1062f57f7dcb95a1a31d1e3f2d67b3.png",
+          "before": {
+            "mae": 0.1399747133255005,
+            "ssim": 0.3754703104496002,
+            "lpips": 0.3721795082092285
+          },
+          "after": {
+            "mae": 0.1399747133255005,
+            "ssim": 0.3754703104496002,
+            "lpips": 0.3721795082092285
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/c39cf5cf388d11ff05256723aea92efedb1062f57f7dcb95a1a31d1e3f2d67b3.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/eda17b0b5f52c14a740cbb1d937d90e7bfd2ebb33fd7fe887d5bbb1b6d1c4987.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/eda17b0b5f52c14a740cbb1d937d90e7bfd2ebb33fd7fe887d5bbb1b6d1c4987.png",
+          "before": {
+            "mae": 0.2195051908493042,
+            "ssim": 0.24451230466365814,
+            "lpips": 0.45022645592689514
+          },
+          "after": {
+            "mae": 0.2195051908493042,
+            "ssim": 0.24451230466365814,
+            "lpips": 0.45022645592689514
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P05",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/9d5a2414af8ab26ea6b8232f73a50093c0f511d02bf8fa3ce7910213eeaa3323.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/9d5a2414af8ab26ea6b8232f73a50093c0f511d02bf8fa3ce7910213eeaa3323.png",
+          "before": {
+            "mae": 0.13451658189296722,
+            "ssim": 0.37728404998779297,
+            "lpips": 0.45400717854499817
+          },
+          "after": {
+            "mae": 0.13451658189296722,
+            "ssim": 0.37728404998779297,
+            "lpips": 0.45400717854499817
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/9d5a2414af8ab26ea6b8232f73a50093c0f511d02bf8fa3ce7910213eeaa3323.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/78f6bc399780d19df4f64cb8bbb4c0fcb6a48d10040828b34ff19058ab49f628.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/78f6bc399780d19df4f64cb8bbb4c0fcb6a48d10040828b34ff19058ab49f628.png",
+          "before": {
+            "mae": 0.24122847616672516,
+            "ssim": 0.24444396793842316,
+            "lpips": 0.5315648317337036
+          },
+          "after": {
+            "mae": 0.24122847616672516,
+            "ssim": 0.24444396793842316,
+            "lpips": 0.5315648317337036
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P06",
+      "policy": "sequential",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-8.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-3.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-4.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-5.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-6.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-7.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-8.png"
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-8.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f5056d73335a30e55762621567865688d01c6c2f09b94185f82ed8e93e706ae3.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f5056d73335a30e55762621567865688d01c6c2f09b94185f82ed8e93e706ae3.png",
+          "before": {
+            "mae": 0.06881317496299744,
+            "ssim": 0.5451095104217529,
+            "lpips": 0.2784115970134735
+          },
+          "after": {
+            "mae": 0.06881317496299744,
+            "ssim": 0.5451095104217529,
+            "lpips": 0.2784115970134735
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f5056d73335a30e55762621567865688d01c6c2f09b94185f82ed8e93e706ae3.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/608125c2cadb67320d528299817b86ec178b0aaca3d86bb2051578ea16482f21.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/608125c2cadb67320d528299817b86ec178b0aaca3d86bb2051578ea16482f21.png",
+          "before": {
+            "mae": 0.13443037867546082,
+            "ssim": 0.40591657161712646,
+            "lpips": 0.3830995559692383
+          },
+          "after": {
+            "mae": 0.13443037867546082,
+            "ssim": 0.40591657161712646,
+            "lpips": 0.3830995559692383
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P04-fixed3",
+      "policy": "fixed3",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/4f275679f6678a38d5d2c506c8ed91260bc22d454666cbc57efbfa9c37628cef.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/b803ae74e30482a33f416668e50ed07a97bfd5749db6ce2843938f3187b7d76f.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/87453d2c8b7c2e371f5979e7799c4c45598695a002163847fb305af98bb99d67.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png"
+      ],
+      "prefix_rebases": [
+        3,
+        6
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/05d80ee2ec8d2d9cf888d49d68d269264042d7ca740c44ecdac5fa37f68dfed6.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+          "before": {
+            "mae": 0.12360274791717529,
+            "ssim": 0.4432713985443115,
+            "lpips": 0.25422731041908264
+          },
+          "after": {
+            "mae": 0.07454399019479752,
+            "ssim": 0.6816647052764893,
+            "lpips": 0.12434537708759308
+          },
+          "rebased": true,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/5d85660ecc75942393f96d72b45086706c447162e07839726a5d771c522652a2.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/5d85660ecc75942393f96d72b45086706c447162e07839726a5d771c522652a2.png",
+          "before": {
+            "mae": 0.1456567794084549,
+            "ssim": 0.5448765754699707,
+            "lpips": 0.22375284135341644
+          },
+          "after": {
+            "mae": 0.1456567794084549,
+            "ssim": 0.5448765754699707,
+            "lpips": 0.22375284135341644
+          },
+          "rebased": false,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    },
+    {
+      "name": "P04-triggered",
+      "policy": "triggered",
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png",
+      "prefix_files": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-2.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/rebase.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/25809dde56339f14ebbd40b207bd75e1aa8d1753e7cc079d700ee78a713b1eab.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/6d0dc25e47b57d0e6b7e2d1872c6ad9509b0878a49f0c58056c79952ec258738.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/fa013c4b170116282444fc35e864d2b717569bc117772fb88e76eca3094c664c.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/2d8da2ce83523659bbf450e76d5f2b7acdc01e285c126c014e215a4aebf04539.png",
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png"
+      ],
+      "prefix_rebases": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "rows": [
+        {
+          "stage": 9,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/858005ac823d5e565b06a7e91b1b911a035a173a70322eb2b01bf3fe574fb592.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f403897337f6127a98b428975af6dc08f8564128ad441cb3158a4067e8d157f0.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+          "before": {
+            "mae": 0.0493779331445694,
+            "ssim": 0.7930142879486084,
+            "lpips": 0.0918399840593338
+          },
+          "after": {
+            "mae": 0.07454399019479752,
+            "ssim": 0.6816647052764893,
+            "lpips": 0.12434537708759308
+          },
+          "rebased": true,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A modern office background; original lighting on the person remains unchanged."
+          }
+        },
+        {
+          "stage": 10,
+          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/8e4540823f60b451d32d222b5342a725a7e4cd4abb1fd371c19e4255f3b35829.png",
+          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/5d85660ecc75942393f96d72b45086706c447162e07839726a5d771c522652a2.png",
+          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/0584df0f0264621e36baf9958de82a612b7952e9f8cec8396db470aafe1acf0f.png",
+          "before": {
+            "mae": 0.1456567794084549,
+            "ssim": 0.5448765754699707,
+            "lpips": 0.22375284135341644
+          },
+          "after": {
+            "mae": 0.14220327138900757,
+            "ssim": 0.694753885269165,
+            "lpips": 0.18617664277553558
+          },
+          "rebased": true,
+          "state": {
+            "earrings": "Small silver hoop earrings on both ears.",
+            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
+          }
+        }
+      ]
+    }
+  ],
+  "new_calls": 19
+}

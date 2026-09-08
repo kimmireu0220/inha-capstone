@@ -1,0 +1,25 @@
+{
+  "id": "640e4039ccd152214d33985ae60f0f3170a40ebe2098218d7adb5f2cf62c22ff",
+  "stage": 9,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/b49c1cb78e70318e9e5814a7d5465b1f5a7f63db665aaa1f862092782c726349.png",
+  "input_sha256": "66defbe52ef8d3c1bca9d90b40c30eb314733bc6787f804a4dc45fb4e386e6d8",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the crewneck shirt color from ivory to burgundy. Keep the charcoal grey blazer, blue pin, necklace, earrings and background unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/640e4039ccd152214d33985ae60f0f3170a40ebe2098218d7adb5f2cf62c22ff.png",
+  "branches": [
+    "P04-once-triggered"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-fd14c1e8-20d1-4280-8451-8c9dc2b9fbb0.png",
+  "started": "2026-09-05T15:52:54.244Z",
+  "completed": "2026-09-05T15:53:40.651Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "b97c1d1ffa11687ed3c3f7f7a26a7c4540966b7adbf9b5ac185a42faf727d932"
+}

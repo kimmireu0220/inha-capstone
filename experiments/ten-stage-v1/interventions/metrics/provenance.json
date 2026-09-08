@@ -1,0 +1,41 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "config_sha256": "60378f20bfabb30e2d755d98de50af0db4257e051ef9fe8ece1e9bb9fefa8474",
+  "original_config_sha256": "60378f20bfabb30e2d755d98de50af0db4257e051ef9fe8ece1e9bb9fefa8474",
+  "script_sha256": "28fa1bc074c5ec517d2bbc18389c304d09b0e28dfd28b80e5a1220d96d650ce8",
+  "imported_script_sha256": "b307f9aa15e99204632a2de5a0419bbad3299e893ebd694d2e40bbd15fd7e1c0",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "blind_files_sha256": {
+    "6fcf0aedfd2b.png": "7756759f79fa32901256e507950225ed493a684951642571ed69aff4078f99f2",
+    "75d91f3968e9.png": "c388ad18d2d3d3fa2f61dde72c91b9989492cfd57aaef069f0fa4b40bee68020",
+    "b3fb5899abab.png": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+    "e3e6c131b633.png": "9f165724757d5048a8a73129f9a46002062b146f0b47920df4abd81c6cdadca6",
+    "reference.png": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8"
+  },
+  "blind_mapping_sha256": "54a736371db86db5d76027da380b80993538c23ab8a6b4b746e1bbf59353087a",
+  "limitations": [
+    "Descriptive image differences, not a validated detector or identity/surgery measure.",
+    "No threshold fitting and no use of human ratings.",
+    "Fixed crops can conflate pose, texture, lighting, and displacement with edited facial content.",
+    "Single reference and ten dependent outputs do not establish generalization."
+  ]
+}

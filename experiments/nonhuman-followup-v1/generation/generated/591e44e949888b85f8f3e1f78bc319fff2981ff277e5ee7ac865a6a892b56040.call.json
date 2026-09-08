@@ -1,0 +1,24 @@
+{
+  "id": "591e44e949888b85f8f3e1f78bc319fff2981ff277e5ee7ac865a6a892b56040",
+  "stage": 4,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/a189cc1123c68e0a0497f1c420222f569c46f148b4a429e363d7a4dbdcfde2ad.png",
+  "input_sha256": "ce8aef69f27f1412a382ef592c2a90f03f59e77557aa84b3e5ce87b17bff810d",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small round silver pendant.",
+    "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+    "clothes": "A navy blazer over an ivory crewneck shirt."
+  },
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/591e44e949888b85f8f3e1f78bc319fff2981ff277e5ee7ac865a6a892b56040.png",
+  "branches": [
+    "P05-once-triggered"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-6e54bff2-f044-4c87-a3f7-de38cfb98c83.png",
+  "started": "2026-09-05T15:39:14.203Z",
+  "completed": "2026-09-05T15:41:16.173Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "dfa488159b0fac00006f32601cdf77fff1babb74cead1c45a69000ea12c8b78e"
+}

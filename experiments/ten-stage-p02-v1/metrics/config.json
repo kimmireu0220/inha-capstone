@@ -1,0 +1,16 @@
+{
+  "reference": "assets/people/P02.png",
+  "roi_xyxy": [352, 160, 672, 520],
+  "crop_size_wh": [320, 360],
+  "roi_policy": "Manually fixed using P02 original before any candidate inspection; Pillow exclusive right/bottom; identical coordinates for all images. Covers forehead through chin, eyes, nose, mouth and both cheeks.",
+  "image_processing": "Decode Pillow RGB, crop only. No resizing, registration, adaptive alignment, color correction, or normalization beyond stated metric ranges.",
+  "mae": "Mean absolute error over RGB channels and pixels, float32 RGB [0,1]; also reported in [0,255] units.",
+  "ssim": {"implementation": "skimage.metrics.structural_similarity", "channel_axis": 2, "data_range": 1.0, "win_size": 7, "gaussian_weights": false, "use_sample_covariance": true},
+  "lpips": {"network": "alex", "version": "0.1", "input_range": [-1, 1], "spatial": false, "device": "cpu", "eval": true},
+  "limits": [
+    "Descriptive image differences, not a validated detector or identity/surgery measure.",
+    "No threshold fitting and no use of human ratings.",
+    "Fixed crops can conflate pose, texture, lighting, and displacement with edited facial content.",
+    "Single reference and ten dependent outputs do not establish generalization."
+  ]
+}

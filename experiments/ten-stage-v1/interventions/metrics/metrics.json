@@ -1,0 +1,42 @@
+{
+  "config_sha256": "60378f20bfabb30e2d755d98de50af0db4257e051ef9fe8ece1e9bb9fefa8474",
+  "reference_sha256": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8",
+  "results": [
+    {
+      "candidate": "repair",
+      "source": "experiments/ten-stage-v1/interventions/repair.png",
+      "source_sha256": "7756759f79fa32901256e507950225ed493a684951642571ed69aff4078f99f2",
+      "mae_0_1": 0.042171627283096313,
+      "mae_0_255": 10.75376495718956,
+      "ssim": 0.7907223105430603,
+      "lpips_alex_v0_1": 0.077723428606987
+    },
+    {
+      "candidate": "rollback",
+      "source": "experiments/ten-stage-v1/interventions/rollback.png",
+      "source_sha256": "c388ad18d2d3d3fa2f61dde72c91b9989492cfd57aaef069f0fa4b40bee68020",
+      "mae_0_1": 0.032842967659235,
+      "mae_0_255": 8.374956753104925,
+      "ssim": 0.8252067565917969,
+      "lpips_alex_v0_1": 0.06695892661809921
+    },
+    {
+      "candidate": "rebase",
+      "source": "experiments/ten-stage-v1/interventions/rebase.png",
+      "source_sha256": "9f165724757d5048a8a73129f9a46002062b146f0b47920df4abd81c6cdadca6",
+      "mae_0_1": 0.016828976571559906,
+      "mae_0_255": 4.291389025747776,
+      "ssim": 0.8987658619880676,
+      "lpips_alex_v0_1": 0.03433912992477417
+    },
+    {
+      "candidate": "step-3-baseline",
+      "source": "experiments/ten-stage-v1/step-3.png",
+      "source_sha256": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+      "mae_0_1": 0.03235635906457901,
+      "mae_0_255": 8.250871561467648,
+      "ssim": 0.8246541023254395,
+      "lpips_alex_v0_1": 0.06535055488348007
+    }
+  ]
+}

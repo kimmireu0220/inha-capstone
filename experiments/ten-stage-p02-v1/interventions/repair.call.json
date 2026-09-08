@@ -1,0 +1,11 @@
+{
+  "id": "repair",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/step-2.png",
+  "prompt": "Use case: identity-preserve. Input image 1 is the edit target. Photorealistic portrait, requested size 1024x1536. Correct only the unnatural patterned, etched-looking texture on the face and neck, restoring plausible natural skin texture without beautification, de-aging or smoothing away normal skin detail. Preserve the person's identity, facial geometry, expression, hair, gaze, head and body pose, proportions, framing, camera, background, clothing and lighting. Preserve these current requirements:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\nNo text, logo or watermark.",
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-8d2fc152-c67b-4887-8b4c-1363199a5530.png",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p02-v1/interventions/repair.png",
+  "started": "2026-09-05T09:15:28.512Z",
+  "completed": "2026-09-05T09:17:40.470Z",
+  "attempt": 1,
+  "status": "success"
+}

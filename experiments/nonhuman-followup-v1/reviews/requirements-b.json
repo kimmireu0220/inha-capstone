@@ -1,0 +1,709 @@
+{
+  "reviewer": "blind_requirements_b",
+  "human": false,
+  "type": "AI_assistant_visual_observation",
+  "blinded_to": [
+    "method",
+    "stage",
+    "metrics",
+    "other_ratings"
+  ],
+  "items": [
+    {
+      "id": "b3f370e531cc",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귓불에 작은 은빛 링이 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은빛 체인에 작은 은색 물방울 펜던트 하나가 달려 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "짙은 차콜 회색 재킷을 입고 있다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "재킷 안에 버건디색 라운드넥 셔츠가 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책이 배치된 차분한 도서관 장면이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 장식 띠 외에 판독 가능한 글자나 로고, 워터마크가 보이지 않는다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본처럼 얼굴을 고르게 비추는 부드러운 앞쪽 조명과 코·턱의 그림자, 피부 밝기가 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 0,
+        "reason": "피부의 주름, 머리카락과 손 형태가 자연스럽고 뚜렷한 인위적 흔적은 보이지 않는다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "bb2c7b8a2c5e",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은색 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "얇은 은색 목걸이와 작은 물방울형 은색 펜던트 하나가 보인다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 옷깃 부근 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷의 색과 형태가 확인된다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 셔츠에 둥근 목선이 있다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장, 책과 독서등이 있는 차분한 도서관 배경이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흰 라벨은 흐려 글자가 판독되지 않으며 별도 로고나 워터마크도 없다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "앞쪽에서 비추는 방향은 비슷하지만 원본보다 피부가 붉고 광택과 국소 명암 대비가 강하다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴·목·손에 반짝이는 그물과 소용돌이 같은 선이 넓게 나타나고 눈 주변이 과도하게 매끈하다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "155d22026a52",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귓불에 작은 은빛 링이 명확하게 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 체인 끝에 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 작은 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "재킷이 짙은 차콜 회색이다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 라운드넥 셔츠가 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책, 책상과 의자가 있는 차분한 도서관이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등 라벨과 띠에서 판독 가능한 글자가 보이지 않으며 로고·워터마크도 없다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본의 부드러운 정면 조명, 코 아래와 턱 아래 그림자, 전체 피부 밝기와 따뜻한 색조가 대체로 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 2,
+        "reason": "이마·볼·목과 손에 자연 주름과 구별되는 잔잔한 곡선 무늬가 나타난다."
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "c0686c315980",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귓불 아래에 작은 은빛 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 줄에 속이 빈 작은 은색 물방울 모양 펜던트 하나가 달려 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 계열 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷을 입고 있다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "재킷 안의 셔츠가 버건디색이며 목선이 둥글다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책, 책상과 조명이 있는 차분한 도서관 장면이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 띠와 흐릿한 표식에서 글자는 판독되지 않고 별도 로고·워터마크도 없다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "얼굴 양쪽의 큰 밝기 관계는 비슷하지만 원본보다 피부가 주황빛이고 반사광과 음영이 강해졌다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴과 목 전반에 밝은 곡선 무늬와 플라스틱 같은 광택이 강하며 머리카락과 손에도 부자연스러운 선이 있다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "94a26a5b4671",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은색 링이 달려 있다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은빛 목걸이에 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴의 핀은 코발트 파란 원형 하나이다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷이 확인된다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "가슴 안쪽으로 버건디색 라운드넥 셔츠가 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장, 긴 책상과 창이 있는 차분한 도서관 배경이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흐릿한 라벨에서 글자가 읽히지 않고 로고나 워터마크도 보이지 않는다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "전체적인 앞쪽 조명은 비슷하지만 원본보다 얼굴과 손이 붉고 피부의 밝고 어두운 부분 대비가 커졌다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 2,
+        "reason": "이마·볼·목과 양손에 굴곡을 따라 이어지는 비정상적인 곡선 무늬와 광택이 뚜렷하다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "b2519d4912f9",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귓불에 작은 은빛 링이 하나씩 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 목걸이와 은색 물방울형 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 선명한 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "재킷은 차콜 회색이다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 셔츠의 둥근 목선이 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책, 독서용 책상이 있는 차분한 도서관이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 장식과 흐릿한 띠만 보이며 판독 가능한 글자·로고·워터마크는 없다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "원본의 앞쪽 광원 방향은 일부 유지되지만 피부가 더 붉고 번들거리며 얼굴·목의 그림자가 강해졌다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴·목·손 전체에 두드러진 망상 무늬와 광택이 있고 눈과 피부가 부자연스럽게 강조되어 있다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "4bfd2079d0ad",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은색 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은빛 체인과 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷이 확인된다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 라운드넥 셔츠가 재킷 안에 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책이 있는 차분한 도서관 배경이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "배경 책등은 흐려 판독 가능한 글자가 없고 로고·워터마크도 보이지 않는다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본과 비슷한 부드러운 앞쪽 조명으로 피부 밝기, 코 아래와 턱 아래의 음영이 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 0,
+        "reason": "피부와 손의 주름이 자연스럽고 장신구와 옷의 연결부에 뚜렷한 부자연스러움이 보이지 않는다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "a65cd2b2d783",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은빛 링이 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 줄에 작은 물방울형 은색 펜던트 하나가 달려 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷을 착용하고 있다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "안쪽 셔츠는 버건디색이며 목선이 둥글다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책상, 독서등이 있는 차분한 도서관이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흐릿한 선과 무늬 외에 읽히는 글자나 로고·워터마크는 없다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "앞쪽에서 비추는 큰 방향은 비슷하지만 원본보다 피부의 반짝임과 얼굴·목 그림자 대비가 강하고 색조도 더 붉다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴·목·손의 넓은 영역에 얽힌 곡선과 광택이 강하게 나타나고 머리카락에도 비정상적인 가는 선이 보인다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "059fe2aefa51",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은색 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 체인 아래 작은 은색 물방울 펜던트 하나가 보인다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷이 확인된다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 셔츠와 둥근 목선이 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책이 있는 차분한 도서관 배경이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 장식 띠와 핀의 작은 표식에서 글자나 로고를 판독할 수 없고 워터마크도 없다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본과 비슷한 피부 밝기와 따뜻한 색조이며 부드러운 앞쪽 조명과 코·턱 아래 그림자가 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 1,
+        "reason": "전체 형태는 자연스러우나 이마와 목 피부에 희미한 반복 곡선 질감이 보인다."
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "7098591a79e4",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귓불에 작은 은색 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은빛 목걸이에 작은 은색 물방울 펜던트 하나가 달려 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷이 보인다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "둥근 목선의 버건디색 셔츠를 입고 있다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책, 책상과 의자가 있는 차분한 도서관 장면이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등 라벨과 띠는 보이나 판독 가능한 글자·로고·워터마크는 없다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "원본의 큰 명암 방향은 남아 있지만 얼굴과 목이 더 붉고 짙어졌으며 작은 반사광과 그림자가 강해졌다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "원본의 자연 주름과 달리 얼굴·목·손에 반복되는 곡선과 작은 돌기 같은 질감이 넓게 나타나며 눈의 광택도 과도하다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "eb3182889c7d",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은빛 링이 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 체인에 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "재킷이 짙은 차콜 회색이다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "재킷 사이로 버건디색 라운드넥 셔츠가 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장이 이어지는 차분한 도서관 배경이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등은 흐릿해 글자가 판독되지 않으며 로고나 워터마크도 보이지 않는다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "화면 왼쪽에서 더 밝게 비추는 원본의 방향은 남아 있지만 얼굴과 손의 색이 붉고 밝은 무늬와 그림자의 대비가 크게 증가했다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴과 목에 넓은 융기와 소용돌이 같은 무늬가 강하고 손에도 비슷한 광택성 무늬가 있어 매우 인위적으로 보인다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "f8b314c1a1ac",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귓불에 작은 은색 링이 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "얇은 은색 목걸이와 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷을 입고 있다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 셔츠의 라운드넥이 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책상, 의자가 있는 차분한 도서관 장면이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흐릿한 띠 외에 판독 가능한 글자·로고·워터마크가 보이지 않는다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본처럼 화면 왼쪽 얼굴이 더 밝으며 코와 오른쪽 볼의 그림자, 피부 밝기와 색조가 대체로 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 0,
+        "reason": "피부 주름과 손, 머리카락이 자연스럽고 두드러지는 인위적 무늬나 형태 왜곡은 보이지 않는다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "12558593c454",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀 아래 작은 은색 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은빛 목걸이에 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷을 입고 있다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 라운드넥 셔츠가 안쪽에 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장, 책과 독서등이 있는 차분한 도서관이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흐릿한 무늬에서 글자는 읽히지 않으며 로고·워터마크도 없다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본과 비슷한 부드러운 앞쪽 조명이며 이마·볼의 밝기와 코 아래·목의 음영 및 피부 색조가 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 1,
+        "reason": "전체는 자연스러우나 이마와 턱 부근 피부에 약한 곡선성 표면 질감이 보인다."
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "47a88bcfbc20",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은빛 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "얇은 은색 줄에 속이 빈 은색 물방울 모양 펜던트 하나가 달려 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "짙은 차콜 회색 재킷이다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 셔츠에 둥근 목선이 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책, 독서등과 책상이 있는 차분한 도서관 배경이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등 라벨의 선은 보이지만 글자로 판독되지 않으며 별도 로고나 워터마크도 없다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "원본의 정면 조명은 일부 유지되지만 얼굴·목·손이 더 붉고 피부의 반사광과 어두운 음영이 강해졌다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴·목·손에 밀도 높은 소용돌이 무늬와 번들거림이 나타나며 눈과 머리카락 윤곽도 과장되어 보인다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "c517bc371306",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은색 링이 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은빛 목걸이에 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 계열 파란 원형 핀 하나가 보인다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "재킷이 차콜 회색이다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 라운드넥 셔츠가 확인된다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책이 있는 차분한 도서관 장면이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흐릿한 띠에서 글자가 읽히지 않고 로고·워터마크도 보이지 않는다."
+        },
+        "lighting": {
+          "score": 2,
+          "reason": "원본의 얼굴 양쪽 밝기 관계와 코·턱 아래 그림자, 부드러운 피부 밝기와 색조가 대체로 유지된다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 0,
+        "reason": "얼굴·손과 옷의 형태가 자연스럽고 시선을 끄는 인위적 무늬나 왜곡은 보이지 않는다."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "79c56808971b",
+      "criteria": {
+        "earrings": {
+          "score": 2,
+          "reason": "양쪽 귀에 작은 은빛 링 귀걸이가 보인다."
+        },
+        "necklace": {
+          "score": 2,
+          "reason": "가는 은색 줄 끝에 작은 은색 물방울 펜던트 하나가 있다."
+        },
+        "pin": {
+          "score": 2,
+          "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
+        },
+        "blazer": {
+          "score": 2,
+          "reason": "차콜 회색 재킷을 입고 있다."
+        },
+        "shirt": {
+          "score": 2,
+          "reason": "버건디색 셔츠에 둥근 목선이 보인다."
+        },
+        "background": {
+          "score": 2,
+          "reason": "나무 책장과 책, 독서용 책상과 조명이 있는 차분한 도서관이다."
+        },
+        "no_text": {
+          "score": 2,
+          "reason": "책등의 흐릿한 라벨과 띠 외에 판독 가능한 글자·로고·워터마크가 보이지 않는다."
+        },
+        "lighting": {
+          "score": 1,
+          "reason": "전체적인 앞쪽 조명 방향은 비슷하지만 원본보다 피부가 붉고 얼굴·목·손의 반사광과 음영 대비가 강하다."
+        }
+      },
+      "overall_artificiality": {
+        "severity": 3,
+        "reason": "얼굴·목·손에 넓게 겹친 곡선 무늬와 플라스틱 같은 광택이 강하고 눈의 윤곽도 부자연스럽다."
+      },
+      "confidence": "high"
+    }
+  ],
+  "viewed_files": [
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/82a74a29e174.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/b3f370e531cc.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/0336b6f8da2e.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/bb2c7b8a2c5e.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/d8a9932d5a5c.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/155d22026a52.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/f1d49ce131e3.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/c0686c315980.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/94a26a5b4671.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/b2519d4912f9.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/4bfd2079d0ad.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/a65cd2b2d783.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/059fe2aefa51.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/c85857919449.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/7098591a79e4.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/70d08b343b10.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/eb3182889c7d.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/f8b314c1a1ac.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/12558593c454.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/47a88bcfbc20.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/c517bc371306.png",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/79c56808971b.png"
+  ]
+}

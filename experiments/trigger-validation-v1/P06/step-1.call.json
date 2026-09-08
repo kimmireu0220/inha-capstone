@@ -1,0 +1,18 @@
+{
+  "id": "step-1",
+  "stage": 1,
+  "korean": "양쪽 귀에 작은 은색 링 귀걸이",
+  "change": "Add small silver hoop earrings to both ears.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears."
+  },
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/step-1.png",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nAdd small silver hoop earrings to both ears.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.",
+  "run": 1,
+  "person": "P06",
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-971a4f87-272a-471d-b094-9509b92b47e9.png",
+  "started": "2026-09-05T11:02:29.828Z",
+  "completed": "2026-09-05T11:04:36.371Z",
+  "attempt": 1
+}

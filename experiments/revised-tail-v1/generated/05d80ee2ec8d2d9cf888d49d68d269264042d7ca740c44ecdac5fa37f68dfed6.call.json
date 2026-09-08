@@ -1,0 +1,25 @@
+{
+  "id": "05d80ee2ec8d2d9cf888d49d68d269264042d7ca740c44ecdac5fa37f68dfed6",
+  "stage": 9,
+  "kind": "edit",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/generated/aeaa8b67ebb693f28286576e18fda6e34e66b7ad2355f074f11909475fcf55ec.png",
+  "input_sha256": "c7670b999d9252ef617d6cbbec3e54b1336560d72a7f72f15a8e106bb7c9d4db",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/05d80ee2ec8d2d9cf888d49d68d269264042d7ca740c44ecdac5fa37f68dfed6.png",
+  "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange only the crewneck shirt color from ivory to burgundy. Keep the charcoal grey blazer, blue pin, necklace, earrings and background unchanged.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small silver teardrop pendant.\n- Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).\n- A charcoal grey blazer over a burgundy crewneck shirt.\n- A modern office background; original lighting on the person remains unchanged.",
+  "state": {
+    "earrings": "Small silver hoop earrings on both ears.",
+    "necklace": "A thin silver necklace with one small silver teardrop pendant.",
+    "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
+    "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
+    "background": "A modern office background; original lighting on the person remains unchanged."
+  },
+  "branches": [
+    "P04-fixed3"
+  ],
+  "source": "/Users/kimmireu/.codex/generated_images/01a064da-c264-7e63-aaee-0389d9de0f7d/exec-6ad6d522-e8bd-4d95-ac83-17075c5ac938.png",
+  "started": "2026-09-05T14:55:27.698Z",
+  "completed": "2026-09-05T14:57:48.436Z",
+  "attempt": 1,
+  "tool": "image_gen.imagegen",
+  "output_sha256": "cf4919e0d91ea3821fc32695140d056cf328aca8fcbf9f214b55dffc3565eeb5"
+}

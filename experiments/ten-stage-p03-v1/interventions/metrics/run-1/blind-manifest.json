@@ -1,0 +1,27 @@
+{
+  "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-full/reference.png",
+  "reference_crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-crops/reference.png",
+  "candidates": [
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-full/10d6d2addd11.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-crops/10d6d2addd11.png"
+    },
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-full/46a0cda95c5d.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-crops/46a0cda95c5d.png"
+    },
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-full/822a130e3713.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-crops/822a130e3713.png"
+    },
+    {
+      "image": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-full/868fc8f0e20a.png",
+      "crop": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions/metrics/run-1/blind-crops/868fc8f0e20a.png"
+    }
+  ],
+  "requirements": [
+    "Small silver hoop earrings on both ears.",
+    "A thin silver necklace with one small round silver pendant."
+  ],
+  "instructions": "Compare each randomized candidate with reference. Use full images for requirements and fixed face crops for facial changes. Do not inspect mappings, metrics, generation prompts or other ratings before evaluation."
+}

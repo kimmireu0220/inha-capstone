@@ -1,0 +1,132 @@
+{
+  "config_sha256": "9af1e4f6f4d0c4e7e2d921de22a0c9a4301a421c6337efc38b5ce14ba0553995",
+  "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+  "thresholds": {
+    "mae_0_1_gte": 0.0288375,
+    "ssim_lte": 0.842874,
+    "lpips_alex_v0_1_gte": 0.0555075
+  },
+  "baseline_exact_match": true,
+  "results": [
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "baseline",
+      "source_sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "mae_0_1": 0.023919278755784035,
+      "mae_0_255": 6.099416082724929,
+      "ssim": 0.8415461182594299,
+      "lpips_alex_v0_1": 0.06436368077993393,
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "repair",
+      "source_sha256": "653acb9ccf2b4c530d55002204f183f4c88551ce50cf1a91036ea98d030f2c8b",
+      "mae_0_1": 0.03279692307114601,
+      "mae_0_255": 8.363215383142233,
+      "ssim": 0.8114121556282043,
+      "lpips_alex_v0_1": 0.07445558905601501,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "rollback",
+      "source_sha256": "6677734c41d78b9a97672ae78bcacff3aff75da89e16b80f912214fc44742b94",
+      "mae_0_1": 0.02245362102985382,
+      "mae_0_255": 5.725673362612724,
+      "ssim": 0.84107905626297,
+      "lpips_alex_v0_1": 0.06379694491624832,
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 1,
+      "stage": 2,
+      "method": "rebase",
+      "source_sha256": "f4b9e410aefb6239acc8833a6f70abed876c8c1be7bdefb118de4a2ff209f82f",
+      "mae_0_1": 0.017424756661057472,
+      "mae_0_255": 4.443312948569655,
+      "ssim": 0.8737666606903076,
+      "lpips_alex_v0_1": 0.03630276769399643,
+      "alarms": {
+        "mae": false,
+        "ssim": false,
+        "lpips": false
+      }
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "baseline",
+      "source_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
+      "mae_0_1": 0.023844851180911064,
+      "mae_0_255": 6.080437051132321,
+      "ssim": 0.8237112164497375,
+      "lpips_alex_v0_1": 0.0622045174241066,
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "repair",
+      "source_sha256": "32520ceea9f03a7e4d4d527cb3eef62e633b00008e5c635e08b93c4623a5e7ab",
+      "mae_0_1": 0.030765986070036888,
+      "mae_0_255": 7.8453264478594065,
+      "ssim": 0.7798371911048889,
+      "lpips_alex_v0_1": 0.08253387361764908,
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "rollback",
+      "source_sha256": "d0c920cf1e9537227ec870eea00efad48c67b11232d55d7cf209f172c7c05d1b",
+      "mae_0_1": 0.025355294346809387,
+      "mae_0_255": 6.465600058436394,
+      "ssim": 0.8265396952629089,
+      "lpips_alex_v0_1": 0.06063087657094002,
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "run": 2,
+      "stage": 2,
+      "method": "rebase",
+      "source_sha256": "0f4d1f27be874b933e77c9b024f0e683e1607cf5e5b8283bb5344f68d54ba537",
+      "mae_0_1": 0.01641547679901123,
+      "mae_0_255": 4.185946583747864,
+      "ssim": 0.8815225958824158,
+      "lpips_alex_v0_1": 0.03504520654678345,
+      "alarms": {
+        "mae": false,
+        "ssim": false,
+        "lpips": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "lpips": "0.1.4",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "scikit-image": "0.24.0",
+    "scipy": "1.17.1"
+  },
+  "config_sha256": "9af1e4f6f4d0c4e7e2d921de22a0c9a4301a421c6337efc38b5ce14ba0553995",
+  "script_sha256": "83177d634f541685ef61941ca344d9e6f04d09343ba837fbed71474f2bb4d815",
+  "prompts_sha256": "a11db676d12403af3fa6fca6440f95c6171c42bfd444a6320fd96e1b32209b64",
+  "sequential_metrics_sha256": "71a39cdd330f3ad7a1e3e6c88eb55181d039d6bf083b24652ed736591cf89bb2",
+  "protocol_sha256": "166ff16c446311d522c519933201b4c1c5bfb52cd972608c69d03f4c06ce665f",
+  "algorithm_reference": "experiments/ten-stage-p03-v1/metrics/compute.py",
+  "algorithm_reference_sha256": "0a03161acf68bab65bac7c47104dfe47e5e16b330c2a60e83d09508745640340",
+  "weights": [
+    {
+      "path": "/Users/kimmireu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    },
+    {
+      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
+      "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    }
+  ],
+  "blind_mapping_sha256": "933c1abcf2f1a0190f167ec35af4ccfa86d2ddf127f05ab74130cf62f85d5a89",
+  "blinded_image_sha256": {
+    "run-1": {
+      "blind-full/b473965f6732.png": "4638f4c9b3b176a209e969fbd57db010cfc5d6ccb96225c0393345c44b139775",
+      "blind-full/d5e6c611d5bd.png": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+      "blind-full/d7a5bef0f738.png": "9cf770710a417e8b0576a62a34628e8bf3ab973bbe66db2bcf5477dd1d3781ad",
+      "blind-full/e28775bcfbc4.png": "8034635aa214f6958849a8da298e4160a5ea7f0415502fd20baeac04acb8b742",
+      "blind-full/reference.png": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "blind-crops/b473965f6732.png": "05eef62ae74fa11d29e76986e7ca540e6f2a3b5f33f37810bc3dd49a1135ddf5",
+      "blind-crops/d5e6c611d5bd.png": "bb4539b2ea31f76c59189124b36a05fd7cc877bf379332a864b22f543496a845",
+      "blind-crops/d7a5bef0f738.png": "d1da3561a0f92458d38dbfbefc789d376819ee74c8402c8824bb5a50e1252920",
+      "blind-crops/e28775bcfbc4.png": "4b94db9c281a7fd8fb2577b34691bfeab49e516fbe18af4e0e7affabcb340342",
+      "blind-crops/reference.png": "905ed2ac3874257781177c3da7a0aed7f0bdedbe03f2757132a81108ca597a21"
+    },
+    "run-2": {
+      "blind-full/366df99ea83c.png": "c0983458bfb41c40ccfbc56d0c0ab343e97806707da46fa1f067bf1cda40a208",
+      "blind-full/45bed52509d8.png": "a726632235a1da9cbd04525de099026ae5541f01399a614890599a695aa7fbe3",
+      "blind-full/650350a4d713.png": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
+      "blind-full/79f057623ba2.png": "6ab5651c40b1739c741b85425191b60211b72d955ad31a7ed640b475defcb53e",
+      "blind-full/reference.png": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+      "blind-crops/366df99ea83c.png": "eceb7dcf33bd72aa1fe0f0d993264b96b47519e7dacbfd40ce15ee414f774a6a",
+      "blind-crops/45bed52509d8.png": "0efb523ffb3e0b94bb4ed6734e5504ebfc52a348c66ccad2a0f18b32a1969a38",
+      "blind-crops/650350a4d713.png": "d6ad4f6bcdf98e3d868b4d72e3de90ea01adff027552e64662daa54990c32f76",
+      "blind-crops/79f057623ba2.png": "7dcfded50ba68ba8d7a526b7c0a67d3fe7064304bd784876020611b6ad6d1ec6",
+      "blind-crops/reference.png": "905ed2ac3874257781177c3da7a0aed7f0bdedbe03f2757132a81108ca597a21"
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "person": "P04",
+  "roi_xyxy": [
+    352,
+    88,
+    672,
+    448
+  ],
+  "config_sha256": "93b6b331415040dec87fb940f3d982d7e7109e3563e2c2b3cf75b9241f8591cb",
+  "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "script_sha256": "9ec8a38c356aa8ad774104a65f4ed3d97dc877dd8d7946d00c948b068a7e6464",
+  "weight_sha256": {
+    "backbone": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+  },
+  "first_alarm_steps": {
+    "mae": 3,
+    "ssim": 2,
+    "lpips": 3
+  },
+  "results": [
+    {
+      "file": "step-1.png",
+      "stage": 1,
+      "mae": 0.01840371824800968,
+      "ssim": 0.8883209228515625,
+      "lpips": 0.031728047877550125,
+      "source_sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+      "measured_at": "2026-09-05T11:04:39.508349+00:00",
+      "alarms": {
+        "mae": false,
+        "ssim": false,
+        "lpips": false
+      }
+    },
+    {
+      "file": "step-2.png",
+      "stage": 2,
+      "mae": 0.025968050584197044,
+      "ssim": 0.8348621726036072,
+      "lpips": 0.05477737635374069,
+      "source_sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+      "measured_at": "2026-09-05T11:07:31.291697+00:00",
+      "alarms": {
+        "mae": false,
+        "ssim": true,
+        "lpips": false
+      }
+    },
+    {
+      "file": "step-3.png",
+      "stage": 3,
+      "mae": 0.03271098807454109,
+      "ssim": 0.7871373295783997,
+      "lpips": 0.07703612744808197,
+      "source_sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+      "measured_at": "2026-09-05T11:11:57.507548+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-4.png",
+      "stage": 4,
+      "mae": 0.05544218793511391,
+      "ssim": 0.71294766664505,
+      "lpips": 0.12006574869155884,
+      "source_sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+      "measured_at": "2026-09-05T11:15:17.521977+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-5.png",
+      "stage": 5,
+      "mae": 0.13240620493888855,
+      "ssim": 0.4151075780391693,
+      "lpips": 0.34183269739151,
+      "source_sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+      "measured_at": "2026-09-05T11:19:15.013837+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-6.png",
+      "stage": 6,
+      "mae": 0.13438569009304047,
+      "ssim": 0.4023829996585846,
+      "lpips": 0.3525209426879883,
+      "source_sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+      "measured_at": "2026-09-05T11:21:45.677345+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-7.png",
+      "stage": 7,
+      "mae": 0.13611829280853271,
+      "ssim": 0.4022347033023834,
+      "lpips": 0.3479330241680145,
+      "source_sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+      "measured_at": "2026-09-05T11:25:51.122291+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-8.png",
+      "stage": 8,
+      "mae": 0.13804741203784943,
+      "ssim": 0.3897973299026489,
+      "lpips": 0.3590282201766968,
+      "source_sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+      "measured_at": "2026-09-05T11:28:25.621270+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-9.png",
+      "stage": 9,
+      "mae": 0.1417878121137619,
+      "ssim": 0.3806942403316498,
+      "lpips": 0.372521311044693,
+      "source_sha256": "c03f7d6d03f5279c36f7419f54376895f6485fcd20aa0741cd3f166cac034c82",
+      "measured_at": "2026-09-05T11:33:59.407900+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "step-10.png",
+      "stage": 10,
+      "mae": 0.22973395884037018,
+      "ssim": 0.25780877470970154,
+      "lpips": 0.44460469484329224,
+      "source_sha256": "d69af00e4f1b60b0f645c61dd471fc978b2c97c06526eaef997f292ef7ba20ad",
+      "measured_at": "2026-09-05T11:38:05.660271+00:00",
+      "alarms": {
+        "mae": true,
+        "ssim": true,
+        "lpips": true
+      }
+    },
+    {
+      "file": "rebase.png",
+      "stage": null,
+      "mae": 0.018093613907694817,
+      "ssim": 0.8852024078369141,
+      "lpips": 0.033253010362386703,
+      "source_sha256": "fd9030e0ebd440bbeb4792bbf6b179300e8a955231e8966d01c9dc2613009445",
+      "measured_at": "2026-09-05T11:15:17.652937+00:00",
+      "alarms": {
+        "mae": false,
+        "ssim": false,
+        "lpips": false
+      }
+    }
+  ]
+}

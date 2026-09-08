@@ -1,0 +1,90 @@
+{
+  "planned_before_generation": "2026-09-05T10:31:43.474Z",
+  "selection": "Exploratory human-triggered follow-up: R01 rated step4 first clear in both runs. Not fixed-detector trigger validation. Step3 is human mild, not unchanged or no-alarm.",
+  "jobs": [
+    {
+      "run": 1,
+      "stage": 4,
+      "method": "repair",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small round silver pendant.",
+        "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+        "clothes": "A navy blazer over an ivory crewneck shirt."
+      },
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-1/repair.png",
+      "prompt": "Use case: identity-preserve. Input image 1 is the edit target. Photorealistic portrait, requested size 1024x1536. Correct only the unnatural patterned, etched-looking texture on the face and neck, restoring plausible natural skin texture without beautification, de-aging or smoothing away normal skin detail. Preserve the person's identity, facial geometry, expression, hair, gaze, head and body pose, proportions, framing, camera, background, clothing and lighting. Preserve these current requirements:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\nNo text, logo or watermark."
+    },
+    {
+      "run": 1,
+      "stage": 4,
+      "method": "rollback",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small round silver pendant.",
+        "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+        "clothes": "A navy blazer over an ivory crewneck shirt."
+      },
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-1/rollback.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt."
+    },
+    {
+      "run": 1,
+      "stage": 4,
+      "method": "rebase",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small round silver pendant.",
+        "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+        "clothes": "A navy blazer over an ivory crewneck shirt."
+      },
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-1/rebase.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt."
+    },
+    {
+      "run": 2,
+      "stage": 4,
+      "method": "repair",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small round silver pendant.",
+        "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+        "clothes": "A navy blazer over an ivory crewneck shirt."
+      },
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-2/repair.png",
+      "prompt": "Use case: identity-preserve. Input image 1 is the edit target. Photorealistic portrait, requested size 1024x1536. Correct only the unnatural patterned, etched-looking texture on the face and neck, restoring plausible natural skin texture without beautification, de-aging or smoothing away normal skin detail. Preserve the person's identity, facial geometry, expression, hair, gaze, head and body pose, proportions, framing, camera, background, clothing and lighting. Preserve these current requirements:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt.\nNo text, logo or watermark."
+    },
+    {
+      "run": 2,
+      "stage": 4,
+      "method": "rollback",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small round silver pendant.",
+        "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+        "clothes": "A navy blazer over an ivory crewneck shirt."
+      },
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-2/rollback.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nChange clothing to a navy blazer over an ivory crewneck shirt. Keep the pin on the blazer at viewer-right.\nComplete current requirements after this edit (supersede earlier versions):\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt."
+    },
+    {
+      "run": 2,
+      "stage": 4,
+      "method": "rebase",
+      "state": {
+        "earrings": "Small silver hoop earrings on both ears.",
+        "necklace": "A thin silver necklace with one small round silver pendant.",
+        "pin": "Exactly one small burgundy circular pin on the person's left chest (viewer-right).",
+        "clothes": "A navy blazer over an ivory crewneck shirt."
+      },
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/interventions-stage4/run-2/rebase.png",
+      "prompt": "Use case: identity-preserve. Photorealistic portrait, requested size 1024x1536. Input image 1 is the edit target. Preserve the person's facial identity, age, facial geometry, natural skin texture, expression, hairstyle, gaze, head and body pose, body proportions, framing, camera position and lighting on the person. Change only the requested non-face attribute. Retain all other current requirements. No text, logo or watermark.\nNew edit:\nApply all of the following current requirements together in this single edit.\nComplete current requirements after this edit:\n- Small silver hoop earrings on both ears.\n- A thin silver necklace with one small round silver pendant.\n- Exactly one small burgundy circular pin on the person's left chest (viewer-right).\n- A navy blazer over an ivory crewneck shirt."
+    }
+  ]
+}
