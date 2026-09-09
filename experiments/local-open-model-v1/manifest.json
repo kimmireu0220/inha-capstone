@@ -1,0 +1,42 @@
+{
+  "hardware": {
+    "chip": "Apple M1",
+    "unified_memory_bytes": 17179869184,
+    "os": "26.6.2"
+  },
+  "models": {
+    "Runpod--FLUX.2-klein-4B-mflux-4bit": {
+      "revision": "7ee1b3aa8178a1240050490072196a57da2bf2a9",
+      "cached_blob_bytes": 4619699496
+    },
+    "mlx-community--Qwen3-0.6B-4bit": {
+      "revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+      "cached_blob_bytes": 351386061
+    },
+    "mlx-community--Qwen3-4B-4bit": {
+      "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+      "cached_blob_bytes": 2278969756
+    }
+  },
+  "input": "experiments/trigger-validation-v1/P04/reference.png",
+  "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4",
+  "image_seed": 42,
+  "image_steps": 4,
+  "output_size": [
+    512,
+    768
+  ],
+  "quantization_bits": 4,
+  "output_sha256": "9be26984043134f9e3d20040efc852229ad020fe44ac4e6c4ac1e7852734d004",
+  "observed": {
+    "denoising_seconds": 173.25,
+    "cold_process_seconds_including_download": 278.88,
+    "download_seconds_approx": 91,
+    "mlx_peak_memory_gb_decimal": 6.15,
+    "process_peak_memory_footprint_bytes": 6743664320,
+    "prompt_revised_cases_passed": 3,
+    "prompt_revised_cases_total": 3,
+    "prompt_mlx_peak_memory_bytes": 2707751388
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "signature": {
+    "metric_source_sha256": "94bcf468e0de64331332e598651702b4ae1ff574ca1884cff66f152a3e17e2fc",
+    "analysis_sha256": "4572c7e9a4960e497f577b7b608ae54251b0c535ffbce289c068e53fd4eaab3a",
+    "plan_sha256": "c9da248bf829a7e54d590ed819d46e4085b58af53fdc9b2e2f4075dc9e542c8d",
+    "lpips_state_dict_sha256": "dcac8b0995e729ecc254c2af1e343a61a512ebbac89acebaa0d2d43512f221b9"
+  },
+  "files_sha256": {
+    "experiments/edit-replication-v1/generated/P06-batch-r1-s1.png": "897c04c77c274ad3f50ebe4c40e592a2ef7dda898ea8a518dd96185a8577b473",
+    "experiments/trigger-validation-v1/P06/reference.png": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+    "experiments/edit-replication-v1/generated/P06-batch-r1-s1.call.json": "793eb2e732f44d0729943d930647bed4ca925a2c56a455880da9250d66825ede",
+    "experiments/edit-replication-v1/generated/P06-SBP-r1-s1.png": "ba0d7db2cbfa35705a2b4f1f9f09cd1489c722b0ed98f1e3644c64f8ce6aca2e",
+    "experiments/edit-replication-v1/generated/P06-SBP-r1-s1.call.json": "98856af4f7b35d6060d907710b1825a38ce149891a1cba2ba726213fbd3879bd",
+    "experiments/edit-replication-v1/generated/P05-SBP-r1-s1.png": "89c5560e75fdfaf31dcd38c01d6bbe5e2aa5d39487bf880b69e0d9202a20002e",
+    "experiments/trigger-validation-v1/P05/reference.png": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+    "experiments/edit-replication-v1/generated/P05-SBP-r1-s1.call.json": "3f787e5a37c76e9c673539d823d067a13b1e383edb9c667c6f0521dfb69d2f1d",
+    "experiments/edit-replication-v1/generated/P05-batch-r1-s1.png": "67c291b55d2e6ab15d4169f672d9308ea29e9e1be84e8b1f1ed96a9412f5fb38",
+    "experiments/edit-replication-v1/generated/P05-batch-r1-s1.call.json": "ba5ea16f8a64216211b88e60731fe8202d115e1c4453fe7b5e377633df8d4d65",
+    "experiments/edit-replication-v1/generated/P06-SBP-r1-s2.png": "7b2ce3bd0e0f2842980f3837ca25640e8ddda3181cf8ae49f969d0988b0de850",
+    "experiments/edit-replication-v1/generated/P06-SBP-r1-s2.call.json": "7e8ae62972955b3f101dee9590cc0324903d5c9baea884061a0c3c084ac66ffc",
+    "experiments/edit-replication-v1/generated/P05-SBP-r1-s2.png": "1e88a04ddae5a766a4ab9902703be8e7f36605226035c9fca636d223e6b57cac",
+    "experiments/edit-replication-v1/generated/P05-SBP-r1-s2.call.json": "41e4d49d07050eba58a6715889202167f021c03e8ae116c3f021d67b75faa057",
+    "experiments/edit-replication-v1/generated/P06-SBP-r1-s3.png": "6cadb53b8fb7abd831e8ed5181203fa9c1abcc40348a16a0051e101b7da8e0be",
+    "experiments/edit-replication-v1/generated/P06-SBP-r1-s3.call.json": "86909ccb7199f81a70d539a4e96bedefc2ba0c204611d83ab9cb8fff9657c8f7",
+    "experiments/edit-replication-v1/generated/P05-SBP-r1-s3.png": "6e81fb60cc138bfa2a44ef8439b021e82737cda374069b0404745c2c5462b881",
+    "experiments/edit-replication-v1/generated/P05-SBP-r1-s3.call.json": "4827ccdb0b4f0a435f72559efe6874a811782cd0437acca3eb604fa91aae70fd",
+    "experiments/edit-replication-v1/generated/P05-batch-r2-s1.png": "9d9ed52aa110a323f89b5c12a2291a69d27243bc90d0584ab04d2f86dea92a46",
+    "experiments/edit-replication-v1/generated/P05-batch-r2-s1.call.json": "241ac952776863bf3557c1bce1f6fa222ba5724ab855796ceaede62441be63b6",
+    "experiments/edit-replication-v1/generated/P06-SBP-r2-s1.png": "4ad05713b3974e3d096cc0c43ee9424a8a0e6254580977423e096d532c495044",
+    "experiments/edit-replication-v1/generated/P06-SBP-r2-s1.call.json": "30893ddbf3e4a897e1bb1ac4266611e7933af962d144baecc166b710a0ce934c",
+    "experiments/edit-replication-v1/generated/P06-batch-r2-s1.png": "e3e7407ca810db032db21c2558d93b530e87b3879247fd50accbc8990d6535d6",
+    "experiments/edit-replication-v1/generated/P06-batch-r2-s1.call.json": "ef90d1d208d4e4bd9716d2e220d6c2afc1c3c53f408ba1b6d8f9697f5e6f1bc2",
+    "experiments/edit-replication-v1/generated/P05-SBP-r2-s1.png": "5cfbbbdf7ab261bfb84e1ab3b9c7dd3ac2b67b9f552ea876c8ad1231d465b40e",
+    "experiments/edit-replication-v1/generated/P05-SBP-r2-s1.call.json": "e4c1c086a7760a622017fa13ff274efbd346338a6ff787a14fa9bfd93aad41dd",
+    "experiments/edit-replication-v1/generated/P06-SBP-r2-s2.png": "eb8c8663ba6cb6a9ce14626eab9403931542273fcb28e534205fb32e05ab73d2",
+    "experiments/edit-replication-v1/generated/P06-SBP-r2-s2.call.json": "b8246eb90641cc096a0204f6f48c2237e7e7ced9c3632a44be78ba2b7d1c27db",
+    "experiments/edit-replication-v1/generated/P05-SBP-r2-s2.png": "6aef9859bf7109e8749c9dd5190a093736085014e060fa72779e1903898cd653",
+    "experiments/edit-replication-v1/generated/P05-SBP-r2-s2.call.json": "f23c3b19fdf7cf91364aefc9e87bfd019c5fa3c30d6e0347f020c2931a1f5d60",
+    "experiments/edit-replication-v1/generated/P06-SBP-r2-s3.png": "b6cb5c76602ee6fce3c9ebfefcfc3b8ed17018d8679ce746e3e876a9061a8a64",
+    "experiments/edit-replication-v1/generated/P06-SBP-r2-s3.call.json": "541742877afe9b479f8034b3e9d0f732a57828424b9d7fa5aede5a6d5cb713ec",
+    "experiments/edit-replication-v1/generated/P05-SBP-r2-s3.png": "8369fdb8681154c9524ce432fd24b309aa02cd5376607d1834e73bb1340ee690",
+    "experiments/edit-replication-v1/generated/P05-SBP-r2-s3.call.json": "8903e6ff9c7e8b13f89972aecb8cc6c225e539a87e8938951ab16bb6d290e079"
+  },
+  "people": {
+    "P05": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "skin_regions": {
+        "forehead": [
+          453,
+          142,
+          563,
+          174
+        ],
+        "cheek_viewer_left": [
+          407,
+          270,
+          439,
+          300
+        ],
+        "cheek_viewer_right": [
+          583,
+          270,
+          615,
+          300
+        ]
+      },
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2"
+    },
+    "P06": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          132,
+          552,
+          164
+        ],
+        "cheek_viewer_left": [
+          405,
+          264,
+          437,
+          296
+        ],
+        "cheek_viewer_right": [
+          569,
+          264,
+          601,
+          296
+        ]
+      },
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767"
+    }
+  },
+  "device": "cpu",
+  "threads": 2,
+  "packages": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "numpy": "1.26.4",
+    "lpips": "0.1.4",
+    "Pillow": "10.2.0",
+    "scipy": "1.17.1",
+    "scikit-image": "0.24.0"
+  },
+  "generation_model_version": "not_exposed",
+  "generation_seed": "not_exposed",
+  "generation_tool": "image_gen.imagegen",
+  "complete": true
+}

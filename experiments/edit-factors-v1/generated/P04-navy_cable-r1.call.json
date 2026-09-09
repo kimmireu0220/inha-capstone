@@ -1,0 +1,21 @@
+{
+  "id": "P04-navy_cable-r1",
+  "person": "P04",
+  "order": "navy_cable",
+  "repeat": 1,
+  "stage": 1,
+  "added": "navy_cable",
+  "completed_set": "navy_cable",
+  "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+  "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-navy_cable-r1.png",
+  "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content.",
+  "source": "/Users/kimmireu/.codex/generated_images/01a07b03-4847-7031-8e6b-36fb11e9393f/exec-a3be62ae-86a6-45d5-96c9-2eedc858aa57.png",
+  "started": "2026-09-09T06:35:35.365Z",
+  "completed": "2026-09-09T06:36:01.548Z",
+  "tool": "image_gen.imagegen",
+  "attempt": 1,
+  "status": "success",
+  "input_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "output_sha256": "ebd6ead472629edaa0593b707ed2a6f55e87796868fbfec096222cc8b92ec805",
+  "tool_output_hint": "Generated images are saved to /Users/kimmireu/.codex/generated_images/01a07b03-4847-7031-8e6b-36fb11e9393f as /Users/kimmireu/.codex/generated_images/01a07b03-4847-7031-8e6b-36fb11e9393f/exec-a3be62ae-86a6-45d5-96c9-2eedc858aa57.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

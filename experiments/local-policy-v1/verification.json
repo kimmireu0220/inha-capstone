@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "unique_outputs": 8,
+  "input_output_hashes_verified": true,
+  "final_prompts_equal": true,
+  "roi": [
+    176,
+    44,
+    336,
+    224
+  ],
+  "reference_control": {
+    "mae": 0.0,
+    "ssim": 1.0,
+    "lpips": 0.0
+  },
+  "lpips_state_dict_sha256": "dcac8b0995e729ecc254c2af1e343a61a512ebbac89acebaa0d2d43512f221b9",
+  "analysis_sha256": "b37f3c605dd7930c620898617f0f9bfd7251b089de56a9f0d35a344c7eff7f6a",
+  "plan_sha256": "6c5e65d5670e642674ed305e25109ccd89486c6f7e4828c6eb5429c855d46a50"
+}

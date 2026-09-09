@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_hashes_checked": 33,
+  "primary_csv_rows_checked": 112,
+  "independently_recomputed_metric_pairs": 28,
+  "fixed_max_absolute_error": {
+    "mae": 2.493799979019773e-08,
+    "ssim": 0.0
+  },
+  "same_lpips_weights_as_prior_analysis": true,
+  "identity_control": {
+    "mae": 0.0,
+    "ssim": 1.0,
+    "highpass_mae": 0.0
+  },
+  "generation_chains_and_first_attempts_checked_by": "analyze.py",
+  "unique_decoded_outputs": 14
+}

@@ -1,0 +1,88 @@
+{
+  "source": "experiments/trigger-validation-v1/P04/reference.png",
+  "source_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "reference_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+  "protocol_sha256": "2ef8db5a193730f1f8db5a5701cda15377238d6bc978c04b21d76418fc9520e7",
+  "jobs": [
+    {
+      "id": "batch-42-s1",
+      "seed": 42,
+      "arm": "batch",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/batch-42-s1.png",
+      "prompt_file": "batch-42-s1.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4"
+    },
+    {
+      "id": "sequential-42-s1",
+      "seed": 42,
+      "arm": "sequential",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/sequential-42-s1.png",
+      "prompt_file": "sequential-42-s1.txt",
+      "prompt_sha256": "e477705e8fdecf64249952d34aa5f778e337f7aed6f9ec62b153444087174c9f"
+    },
+    {
+      "id": "sequential-42-s2",
+      "seed": 42,
+      "arm": "sequential",
+      "stage": 2,
+      "input": "generated/sequential-42-s1.png",
+      "output": "generated/sequential-42-s2.png",
+      "prompt_file": "sequential-42-s2.txt",
+      "prompt_sha256": "25fd18a1b95695620377697a97f76150a8fbd479fd318b11360b950cef318218"
+    },
+    {
+      "id": "sequential-42-s3",
+      "seed": 42,
+      "arm": "sequential",
+      "stage": 3,
+      "input": "generated/sequential-42-s2.png",
+      "output": "generated/sequential-42-s3.png",
+      "prompt_file": "sequential-42-s3.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4"
+    },
+    {
+      "id": "sequential-314-s1",
+      "seed": 314,
+      "arm": "sequential",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/sequential-314-s1.png",
+      "prompt_file": "sequential-314-s1.txt",
+      "prompt_sha256": "e477705e8fdecf64249952d34aa5f778e337f7aed6f9ec62b153444087174c9f"
+    },
+    {
+      "id": "sequential-314-s2",
+      "seed": 314,
+      "arm": "sequential",
+      "stage": 2,
+      "input": "generated/sequential-314-s1.png",
+      "output": "generated/sequential-314-s2.png",
+      "prompt_file": "sequential-314-s2.txt",
+      "prompt_sha256": "25fd18a1b95695620377697a97f76150a8fbd479fd318b11360b950cef318218"
+    },
+    {
+      "id": "sequential-314-s3",
+      "seed": 314,
+      "arm": "sequential",
+      "stage": 3,
+      "input": "generated/sequential-314-s2.png",
+      "output": "generated/sequential-314-s3.png",
+      "prompt_file": "sequential-314-s3.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4"
+    },
+    {
+      "id": "batch-314-s1",
+      "seed": 314,
+      "arm": "batch",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/batch-314-s1.png",
+      "prompt_file": "batch-314-s1.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4"
+    }
+  ]
+}

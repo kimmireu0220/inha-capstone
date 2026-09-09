@@ -1,0 +1,134 @@
+{
+  "people": {
+    "P04": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          144,
+          568,
+          178
+        ],
+        "cheek_viewer_left": [
+          412,
+          264,
+          448,
+          306
+        ],
+        "cheek_viewer_right": [
+          572,
+          264,
+          604,
+          306
+        ]
+      }
+    }
+  },
+  "protocol_sha256": "51717c37bbff49effeadab9f3a868433eca1c669d0f089e6d83cfba8a37adb79",
+  "jobs": [
+    {
+      "id": "P04-no_change-r1-s4",
+      "person": "P04",
+      "order": "no_change",
+      "repeat": 1,
+      "stage": 4,
+      "added": "none",
+      "completed_set": "none",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s3.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r1-s4.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "P04-no_change-r2-s4",
+      "person": "P04",
+      "order": "no_change",
+      "repeat": 2,
+      "stage": 4,
+      "added": "none",
+      "completed_set": "none",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s3.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r2-s4.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "P04-no_change-r1-s5",
+      "person": "P04",
+      "order": "no_change",
+      "repeat": 1,
+      "stage": 5,
+      "added": "none",
+      "completed_set": "none",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r1-s4.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r1-s5.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "P04-no_change-r2-s5",
+      "person": "P04",
+      "order": "no_change",
+      "repeat": 2,
+      "stage": 5,
+      "added": "none",
+      "completed_set": "none",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r2-s4.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r2-s5.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "P04-no_change-r1-s6",
+      "person": "P04",
+      "order": "no_change",
+      "repeat": 1,
+      "stage": 6,
+      "added": "none",
+      "completed_set": "none",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r1-s5.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r1-s6.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "P04-no_change-r2-s6",
+      "person": "P04",
+      "order": "no_change",
+      "repeat": 2,
+      "stage": 6,
+      "added": "none",
+      "completed_set": "none",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r2-s5.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nochange-extension-v1/generated/P04-no_change-r2-s6.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    }
+  ],
+  "parents": [
+    {
+      "id": "P04-no_change-r1-s3",
+      "arm": "no_change",
+      "repeat": 1,
+      "stage": 3,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "P04-no_change-r2-s3",
+      "arm": "no_change",
+      "repeat": 2,
+      "stage": 3,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    }
+  ],
+  "prior_files_sha256": {
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/plan.json": "a3c9496bcf603965a0b13e8011a7a7486e68bea1b5315a2286477d0403a72587",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/results.json": "e5a06c7aef8f26c6d81e94c821f6e6d5735a446039a040e9e8a8bab89a1dbf15",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/skin-results.json": "879b43b5a605935c25ae7d34d8052ed3ac6f6366d5fce0c7ad34afac04ed5c9c"
+  }
+}

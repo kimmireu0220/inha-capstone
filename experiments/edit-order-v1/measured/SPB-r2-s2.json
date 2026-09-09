@@ -1,0 +1,337 @@
+{
+  "id": "SPB-r2-s2",
+  "order": "SPB",
+  "repeat": 2,
+  "stage": 2,
+  "added": "P",
+  "completed_set": "SP",
+  "signature": {
+    "metric_source_sha256": "94bcf468e0de64331332e598651702b4ae1ff574ca1884cff66f152a3e17e2fc",
+    "analysis_sha256": "f7c31d283451936ebe8bb50a4202a360d7b288f1ef3adc6f762b2552533be61b",
+    "plan_sha256": "aae1fef13b5e40aac204e5a12e34f7adc26fd65729b09175bc0f1079601e5e03",
+    "lpips_state_dict_sha256": "dcac8b0995e729ecc254c2af1e343a61a512ebbac89acebaa0d2d43512f221b9",
+    "input_sha256": "b0baffdb01f2a53c3eb818a26b1c6484e8ff65a8104bf1b52d9f544d955766fb",
+    "output_sha256": "c7fd03f4ff6d563ca97dbcebeb1ca6ace65a05890d2d88a3cd49c338fd95e176"
+  },
+  "pixel_sha256": "e17f3d2e15de1b21deb2cbecf17fbe03a251e3d27da72a66ae2b758c96a40f04",
+  "original": {
+    "locations": {
+      "1": {
+        "dx": 0,
+        "dy": -1,
+        "ncc": 0.9936517477035522,
+        "boundary": false
+      },
+      "3": {
+        "dx": 0,
+        "dy": -1,
+        "ncc": 0.9959556460380554,
+        "boundary": false
+      },
+      "6": {
+        "dx": 0,
+        "dy": -1,
+        "ncc": 0.9966135025024414,
+        "boundary": false
+      }
+    },
+    "shift_spread_px": 0,
+    "setting_sensitive": false,
+    "face": {
+      "fixed": {
+        "mae": 0.022939860820770264,
+        "ssim": 0.8677251935005188,
+        "lpips": 0.04376211762428284
+      },
+      "1": {
+        "mae": 0.02165263146162033,
+        "ssim": 0.8775447010993958,
+        "lpips": 0.04289387911558151
+      },
+      "3": {
+        "mae": 0.02165263146162033,
+        "ssim": 0.8775447010993958,
+        "lpips": 0.04289387911558151
+      },
+      "6": {
+        "mae": 0.02165263146162033,
+        "ssim": 0.8775447010993958,
+        "lpips": 0.04289387911558151
+      }
+    },
+    "skin": {
+      "fixed": {
+        "mae": 0.017246828567894067,
+        "ssim": 0.8388374806199006,
+        "highpass_mae": 0.011915576042716994,
+        "regions": {
+          "forehead": {
+            "mae": 0.016383619979023933,
+            "ssim": 0.818977415561676,
+            "highpass_mae": 0.01229273434728384,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.018871251493692398,
+            "ssim": 0.8678638935089111,
+            "highpass_mae": 0.01218457706272602,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.017952458932995796,
+            "ssim": 0.8706969618797302,
+            "highpass_mae": 0.010506169870495796,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      },
+      "1": {
+        "mae": 0.01797097250161802,
+        "ssim": 0.820381671424189,
+        "highpass_mae": 0.012993925165604143,
+        "regions": {
+          "forehead": {
+            "mae": 0.017872435972094536,
+            "ssim": 0.7938061356544495,
+            "highpass_mae": 0.013977846130728722,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.018521111458539963,
+            "ssim": 0.8696343898773193,
+            "highpass_mae": 0.01188567839562893,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.017641223967075348,
+            "ssim": 0.8510010242462158,
+            "highpass_mae": 0.011353363282978535,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      },
+      "3": {
+        "mae": 0.01797097250161802,
+        "ssim": 0.820381671424189,
+        "highpass_mae": 0.012993925165604143,
+        "regions": {
+          "forehead": {
+            "mae": 0.017872435972094536,
+            "ssim": 0.7938061356544495,
+            "highpass_mae": 0.013977846130728722,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.018521111458539963,
+            "ssim": 0.8696343898773193,
+            "highpass_mae": 0.01188567839562893,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.017641223967075348,
+            "ssim": 0.8510010242462158,
+            "highpass_mae": 0.011353363282978535,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      },
+      "6": {
+        "mae": 0.01797097250161802,
+        "ssim": 0.820381671424189,
+        "highpass_mae": 0.012993925165604143,
+        "regions": {
+          "forehead": {
+            "mae": 0.017872435972094536,
+            "ssim": 0.7938061356544495,
+            "highpass_mae": 0.013977846130728722,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.018521111458539963,
+            "ssim": 0.8696343898773193,
+            "highpass_mae": 0.01188567839562893,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.017641223967075348,
+            "ssim": 0.8510010242462158,
+            "highpass_mae": 0.011353363282978535,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      }
+    }
+  },
+  "previous": {
+    "locations": {
+      "1": {
+        "dx": 0,
+        "dy": 0,
+        "ncc": 0.9982917904853821,
+        "boundary": false
+      },
+      "3": {
+        "dx": 0,
+        "dy": 0,
+        "ncc": 0.999218761920929,
+        "boundary": false
+      },
+      "6": {
+        "dx": 0,
+        "dy": 0,
+        "ncc": 0.9995267987251282,
+        "boundary": false
+      }
+    },
+    "shift_spread_px": 0,
+    "setting_sensitive": false,
+    "face": {
+      "fixed": {
+        "mae": 0.011864821426570415,
+        "ssim": 0.9545295834541321,
+        "lpips": 0.012669013813138008
+      },
+      "1": {
+        "mae": 0.011864821426570415,
+        "ssim": 0.9545295834541321,
+        "lpips": 0.012669013813138008
+      },
+      "3": {
+        "mae": 0.011864821426570415,
+        "ssim": 0.9545295834541321,
+        "lpips": 0.012669013813138008
+      },
+      "6": {
+        "mae": 0.011864821426570415,
+        "ssim": 0.9545295834541321,
+        "lpips": 0.012669013813138008
+      }
+    },
+    "skin": {
+      "fixed": {
+        "mae": 0.009528258322354625,
+        "ssim": 0.9359891097437082,
+        "highpass_mae": 0.006859870302107404,
+        "regions": {
+          "forehead": {
+            "mae": 0.009635882452130318,
+            "ssim": 0.9210816025733948,
+            "highpass_mae": 0.007389422506093979,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.009241968393325806,
+            "ssim": 0.9584813117980957,
+            "highpass_mae": 0.006652443669736385,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.009534508921205997,
+            "ssim": 0.9590911865234375,
+            "highpass_mae": 0.005539241712540388,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      },
+      "1": {
+        "mae": 0.009528258322354625,
+        "ssim": 0.9359891097437082,
+        "highpass_mae": 0.006859870302107404,
+        "regions": {
+          "forehead": {
+            "mae": 0.009635882452130318,
+            "ssim": 0.9210816025733948,
+            "highpass_mae": 0.007389422506093979,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.009241968393325806,
+            "ssim": 0.9584813117980957,
+            "highpass_mae": 0.006652443669736385,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.009534508921205997,
+            "ssim": 0.9590911865234375,
+            "highpass_mae": 0.005539241712540388,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      },
+      "3": {
+        "mae": 0.009528258322354625,
+        "ssim": 0.9359891097437082,
+        "highpass_mae": 0.006859870302107404,
+        "regions": {
+          "forehead": {
+            "mae": 0.009635882452130318,
+            "ssim": 0.9210816025733948,
+            "highpass_mae": 0.007389422506093979,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.009241968393325806,
+            "ssim": 0.9584813117980957,
+            "highpass_mae": 0.006652443669736385,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.009534508921205997,
+            "ssim": 0.9590911865234375,
+            "highpass_mae": 0.005539241712540388,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      },
+      "6": {
+        "mae": 0.009528258322354625,
+        "ssim": 0.9359891097437082,
+        "highpass_mae": 0.006859870302107404,
+        "regions": {
+          "forehead": {
+            "mae": 0.009635882452130318,
+            "ssim": 0.9210816025733948,
+            "highpass_mae": 0.007389422506093979,
+            "pixel_count": 3944,
+            "ssim_valid_count": 3080
+          },
+          "cheek_viewer_left": {
+            "mae": 0.009241968393325806,
+            "ssim": 0.9584813117980957,
+            "highpass_mae": 0.006652443669736385,
+            "pixel_count": 1512,
+            "ssim_valid_count": 1080
+          },
+          "cheek_viewer_right": {
+            "mae": 0.009534508921205997,
+            "ssim": 0.9590911865234375,
+            "highpass_mae": 0.005539241712540388,
+            "pixel_count": 1344,
+            "ssim_valid_count": 936
+          }
+        }
+      }
+    }
+  }
+}

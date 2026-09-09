@@ -1,0 +1,2901 @@
+{
+  "coefficients_in_arm_order": {
+    "color_at_original": [
+      -1,
+      1,
+      0,
+      0
+    ],
+    "color_at_cable": [
+      0,
+      0,
+      -1,
+      1
+    ],
+    "material_at_gray": [
+      -1,
+      0,
+      1,
+      0
+    ],
+    "material_at_navy": [
+      0,
+      -1,
+      0,
+      1
+    ],
+    "interaction": [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "arm_order": [
+    "gray_original",
+    "navy_original",
+    "gray_cable",
+    "navy_cable"
+  ],
+  "results": {
+    "P04": {
+      "color_at_original": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0018429211340844631,
+            "block_differences": [
+              0.0035080453380942345,
+              0.00017779693007469177
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.005003988742828369,
+            "block_differences": [
+              -0.013975322246551514,
+              0.003967344760894775
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 4.1340477764606476e-05,
+            "block_differences": [
+              0.0019268393516540527,
+              -0.0018441583961248398
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.00040811249602805237,
+            "block_differences": [
+              0.0002114564969259141,
+              -0.0010276814889820188
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0042883726173141845,
+            "block_differences": [
+              -0.008454475709744447,
+              -0.00012226952488414433
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0003512887262246186,
+            "block_differences": [
+              0.0008413061510552378,
+              -0.0001387286986060006
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0004551055331224133
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.002322182524949312,
+            "block_differences": [
+              0.004039776511490345,
+              0.0006045885384082794
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.012737303972244263,
+            "block_differences": [
+              -0.023815810680389404,
+              -0.001658797264099121
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0006362311542034149,
+            "block_differences": [
+              0.0032842326909303665,
+              -0.0020117703825235367
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00025576789370354396,
+            "block_differences": [
+              0.0007902737980818048,
+              -0.0002787380106747152
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.02264750158206641,
+            "block_differences": [
+              -0.03405536802447573,
+              -0.011239635139656978
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0012000096211319464,
+            "block_differences": [
+              0.0018429598234155596,
+              0.0005570594188483331
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0011897277880381987
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.002322182524949312,
+            "block_differences": [
+              0.004039776511490345,
+              0.0006045885384082794
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.012737303972244263,
+            "block_differences": [
+              -0.023815810680389404,
+              -0.001658797264099121
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0006362311542034149,
+            "block_differences": [
+              0.0032842326909303665,
+              -0.0020117703825235367
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00025576789370354396,
+            "block_differences": [
+              0.0007902737980818048,
+              -0.0002787380106747152
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.02264750158206641,
+            "block_differences": [
+              -0.03405536802447573,
+              -0.011239635139656978
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0012000096211319464,
+            "block_differences": [
+              0.0018429598234155596,
+              0.0005570594188483331
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0011897277880381987
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.002322182524949312,
+            "block_differences": [
+              0.004039776511490345,
+              0.0006045885384082794
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.012737303972244263,
+            "block_differences": [
+              -0.023815810680389404,
+              -0.001658797264099121
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0006362311542034149,
+            "block_differences": [
+              0.0032842326909303665,
+              -0.0020117703825235367
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00025576789370354396,
+            "block_differences": [
+              0.0007902737980818048,
+              -0.0002787380106747152
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.02264750158206641,
+            "block_differences": [
+              -0.03405536802447573,
+              -0.011239635139656978
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0012000096211319464,
+            "block_differences": [
+              0.0018429598234155596,
+              0.0005570594188483331
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0011897277880381987
+          }
+        }
+      },
+      "color_at_cable": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0020875493064522743,
+            "block_differences": [
+              0.0011239666491746902,
+              0.0030511319637298584
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0005707144737243652,
+            "block_differences": [
+              0.0002576112747192383,
+              -0.0013990402221679688
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0027152858674526215,
+            "block_differences": [
+              0.0021290630102157593,
+              0.0033015087246894836
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0008621686620309058,
+            "block_differences": [
+              0.00045597846784135865,
+              0.0012683588562204529
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0010011825868436741,
+            "block_differences": [
+              0.005463893877655224,
+              -0.007466259051342461
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -6.917508647722413e-05,
+            "block_differences": [
+              -0.00025975489988923003,
+              0.0001214047269347835
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -6.616608647130179e-06
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.0015677530318498611,
+            "block_differences": [
+              0.0011239666491746902,
+              0.002011539414525032
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.004331827163696289,
+            "block_differences": [
+              0.0002576112747192383,
+              0.00840604305267334
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.002268197014927864,
+            "block_differences": [
+              0.0021290630102157593,
+              0.002407331019639969
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0008242025319486861,
+            "block_differences": [
+              0.00045597846784135865,
+              0.0011924265960560135
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.002635895036266267,
+            "block_differences": [
+              0.005463893877655224,
+              -0.00019210380512280079
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.00020494096693308983,
+            "block_differences": [
+              -0.00025975489988923003,
+              -0.0001501270339769479
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -8.613110160970994e-05
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.0015677530318498611,
+            "block_differences": [
+              0.0011239666491746902,
+              0.002011539414525032
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.004331827163696289,
+            "block_differences": [
+              0.0002576112747192383,
+              0.00840604305267334
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.002268197014927864,
+            "block_differences": [
+              0.0021290630102157593,
+              0.002407331019639969
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0008242025319486861,
+            "block_differences": [
+              0.00045597846784135865,
+              0.0011924265960560135
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.002635895036266267,
+            "block_differences": [
+              0.005463893877655224,
+              -0.00019210380512280079
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.00020494096693308983,
+            "block_differences": [
+              -0.00025975489988923003,
+              -0.0001501270339769479
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -8.613110160970994e-05
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.00370702613145113,
+            "block_differences": [
+              0.005402512848377228,
+              0.002011539414525032
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.018224209547042847,
+            "block_differences": [
+              -0.04485446214675903,
+              0.00840604305267334
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.00513437669724226,
+            "block_differences": [
+              0.007861422374844551,
+              0.002407331019639969
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.001603613965322867,
+            "block_differences": [
+              0.002014801334589719,
+              0.0011924265960560135
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.017336039191325425,
+            "block_differences": [
+              -0.03447997457752794,
+              -0.00019210380512280079
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0007004869838847828,
+            "block_differences": [
+              0.0015511010017465153,
+              -0.0001501270339769479
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0007653217752179552
+          }
+        }
+      },
+      "material_at_gray": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0007801386527717113,
+            "block_differences": [
+              0.0005633411929011345,
+              0.0009969361126422882
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0081900954246521,
+            "block_differences": [
+              -0.006169497966766357,
+              -0.010210692882537842
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0022591138258576393,
+            "block_differences": [
+              0.0013748686760663986,
+              0.00314335897564888
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00029575143064207964,
+            "block_differences": [
+              -0.0001332180662190225,
+              0.00072472092750318
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0009196832939817323,
+            "block_differences": [
+              -0.0030324942837330893,
+              0.0011931276957694026
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0002478136505712474,
+            "block_differences": [
+              0.0004094997179858815,
+              8.612758315661335e-05
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.00023741025040920592
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.0006276280619204044,
+            "block_differences": [
+              0.0005633411929011345,
+              0.0006919149309396744
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.005872219800949097,
+            "block_differences": [
+              -0.006169497966766357,
+              -0.005574941635131836
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0014370530843734741,
+            "block_differences": [
+              0.0013748686760663986,
+              0.0014992374926805496
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00021799299865960832,
+            "block_differences": [
+              -0.0001332180662190225,
+              0.0005692040635382409
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0028973626472886815,
+            "block_differences": [
+              -0.0030324942837330893,
+              -0.0027622310108441628
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00031789797577349774,
+            "block_differences": [
+              0.0004094997179858815,
+              0.00022629623356111052
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.00026315358328615757
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.0006276280619204044,
+            "block_differences": [
+              0.0005633411929011345,
+              0.0006919149309396744
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.005872219800949097,
+            "block_differences": [
+              -0.006169497966766357,
+              -0.005574941635131836
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0014370530843734741,
+            "block_differences": [
+              0.0013748686760663986,
+              0.0014992374926805496
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00021799299865960832,
+            "block_differences": [
+              -0.0001332180662190225,
+              0.0005692040635382409
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0028973626472886815,
+            "block_differences": [
+              -0.0030324942837330893,
+              -0.0027622310108441628
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00031789797577349774,
+            "block_differences": [
+              0.0004094997179858815,
+              0.00022629623356111052
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.00026315358328615757
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.0006276280619204044,
+            "block_differences": [
+              0.0005633411929011345,
+              0.0006919149309396744
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.005872219800949097,
+            "block_differences": [
+              -0.006169497966766357,
+              -0.005574941635131836
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0014370530843734741,
+            "block_differences": [
+              0.0013748686760663986,
+              0.0014992374926805496
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00021799299865960832,
+            "block_differences": [
+              -0.0001332180662190225,
+              0.0005692040635382409
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0028973626472886815,
+            "block_differences": [
+              -0.0030324942837330893,
+              -0.0027622310108441628
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00031789797577349774,
+            "block_differences": [
+              0.0004094997179858815,
+              0.00022629623356111052
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.00026315358328615757
+          }
+        }
+      },
+      "material_at_navy": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0010247668251395226,
+            "block_differences": [
+              -0.0018207374960184097,
+              0.003870271146297455
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0037568211555480957,
+            "block_differences": [
+              0.008063435554504395,
+              -0.015577077865600586
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.004933059215545654,
+            "block_differences": [
+              0.0015770923346281052,
+              0.008289026096463203
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0015660325887010378,
+            "block_differences": [
+              0.00011130390469642204,
+              0.0030207612727056517
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.002367506736488778,
+            "block_differences": [
+              0.010885875303666581,
+              -0.006150861830688914
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0001726501621305953,
+            "block_differences": [
+              -0.0006915613329585863,
+              0.00034626100869739745
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.00022431189136033758
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": -0.00012680143117904663,
+            "block_differences": [
+              -0.0023524686694145203,
+              0.002098865807056427
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.011196911334991455,
+            "block_differences": [
+              0.017903923988342285,
+              0.004489898681640625
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0030690189450979233,
+            "block_differences": [
+              0.00021969899535179138,
+              0.005918338894844055
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0007864276369047504,
+            "block_differences": [
+              -0.0004675133964594687,
+              0.0020403686702689695
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.022386033971043995,
+            "block_differences": [
+              0.036486767618397864,
+              0.008285300323690015
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0010870526122915385,
+            "block_differences": [
+              -0.0016932150053189082,
+              -0.0004808902192641705
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.001012705306361751
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": -0.00012680143117904663,
+            "block_differences": [
+              -0.0023524686694145203,
+              0.002098865807056427
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.011196911334991455,
+            "block_differences": [
+              0.017903923988342285,
+              0.004489898681640625
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0030690189450979233,
+            "block_differences": [
+              0.00021969899535179138,
+              0.005918338894844055
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0007864276369047504,
+            "block_differences": [
+              -0.0004675133964594687,
+              0.0020403686702689695
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.022386033971043995,
+            "block_differences": [
+              0.036486767618397864,
+              0.008285300323690015
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0010870526122915385,
+            "block_differences": [
+              -0.0016932150053189082,
+              -0.0004808902192641705
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.001012705306361751
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.002012471668422222,
+            "block_differences": [
+              0.0019260775297880173,
+              0.002098865807056427
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.01135912537574768,
+            "block_differences": [
+              -0.027208149433135986,
+              0.004489898681640625
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.005935198627412319,
+            "block_differences": [
+              0.005952058359980583,
+              0.005918338894844055
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0015658390702789314,
+            "block_differences": [
+              0.0010913094702888915,
+              0.0020403686702689695
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.0024140997434523026,
+            "block_differences": [
+              -0.0034571008367852984,
+              0.008285300323690015
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0001816246614736658,
+            "block_differences": [
+              0.00011764089631683718,
+              -0.0004808902192641705
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.000161252429534086
+          }
+        }
+      },
+      "interaction": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0002446281723678112,
+            "block_differences": [
+              -0.0023840786889195442,
+              0.0028733350336551666
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.004433274269104004,
+            "block_differences": [
+              0.014232933521270752,
+              -0.005366384983062744
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.002673945389688015,
+            "block_differences": [
+              0.00020222365856170654,
+              0.005145667120814323
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0012702811580589581,
+            "block_differences": [
+              0.00024452197091544454,
+              0.0022960403452024717
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.0032871900304705104,
+            "block_differences": [
+              0.01391836958739967,
+              -0.007343989526458317
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0004204638127018427,
+            "block_differences": [
+              -0.0011010610509444678,
+              0.0002601334255407841
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0004617221417695435
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": -0.0007544294930994511,
+            "block_differences": [
+              -0.0029158098623156548,
+              0.0014069508761167526
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.017069131135940552,
+            "block_differences": [
+              0.024073421955108643,
+              0.010064840316772461
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0016319658607244492,
+            "block_differences": [
+              -0.0011551696807146072,
+              0.0044191014021635056
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0005684346382451421,
+            "block_differences": [
+              -0.0003342953302404462,
+              0.0014711646067307287
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.025283396618332676,
+            "block_differences": [
+              0.03951926190213095,
+              0.011047531334534177
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0014049505880650362,
+            "block_differences": [
+              -0.0021027147233047896,
+              -0.000707186452825281
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0012758588896479087
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": -0.0007544294930994511,
+            "block_differences": [
+              -0.0029158098623156548,
+              0.0014069508761167526
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.017069131135940552,
+            "block_differences": [
+              0.024073421955108643,
+              0.010064840316772461
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0016319658607244492,
+            "block_differences": [
+              -0.0011551696807146072,
+              0.0044191014021635056
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0005684346382451421,
+            "block_differences": [
+              -0.0003342953302404462,
+              0.0014711646067307287
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.025283396618332676,
+            "block_differences": [
+              0.03951926190213095,
+              0.011047531334534177
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0014049505880650362,
+            "block_differences": [
+              -0.0021027147233047896,
+              -0.000707186452825281
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0012758588896479087
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.0013848436065018177,
+            "block_differences": [
+              0.0013627363368868828,
+              0.0014069508761167526
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.005486905574798584,
+            "block_differences": [
+              -0.02103865146636963,
+              0.010064840316772461
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.004498145543038845,
+            "block_differences": [
+              0.004577189683914185,
+              0.0044191014021635056
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.001347846071619323,
+            "block_differences": [
+              0.001224527536507914,
+              0.0014711646067307287
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.005311462390740984,
+            "block_differences": [
+              -0.0004246065530522092,
+              0.011047531334534177
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0004995226372471635,
+            "block_differences": [
+              -0.0002918588216690443,
+              -0.000707186452825281
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.00042440601282024357
+          }
+        }
+      }
+    },
+    "P05": {
+      "color_at_original": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.005745882634073496,
+            "block_differences": [
+              0.002714823931455612,
+              0.00877694133669138
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.017917633056640625,
+            "block_differences": [
+              -0.011369585990905762,
+              -0.02446568012237549
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.007721531204879284,
+            "block_differences": [
+              0.0043687112629413605,
+              0.011074351146817207
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00023248260292936702,
+            "block_differences": [
+              -0.0012437521534807532,
+              0.001708717359339489
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.0035752701131921416,
+            "block_differences": [
+              0.0001772736248216722,
+              -0.007327813851205955
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0003175953786601054,
+            "block_differences": [
+              0.00020706144106738718,
+              0.00042812931625282186
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0004766310096374418
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.005696702282875776,
+            "block_differences": [
+              0.0032324548810720444,
+              0.008160949684679508
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.028802990913391113,
+            "block_differences": [
+              -0.02852863073348999,
+              -0.029077351093292236
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.00752618070691824,
+            "block_differences": [
+              0.004897698760032654,
+              0.010154662653803825
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0014657826327225745,
+            "block_differences": [
+              9.347372414434708e-05,
+              0.002838091541300802
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.031248260485498447,
+            "block_differences": [
+              -0.03387086956124563,
+              -0.028625651409751485
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0017579487963196114,
+            "block_differences": [
+              0.001784276436356938,
+              0.0017316211562822849
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0017287732455441296
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.005696702282875776,
+            "block_differences": [
+              0.0032324548810720444,
+              0.008160949684679508
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.028802990913391113,
+            "block_differences": [
+              -0.02852863073348999,
+              -0.029077351093292236
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.00752618070691824,
+            "block_differences": [
+              0.004897698760032654,
+              0.010154662653803825
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0014657826327225745,
+            "block_differences": [
+              9.347372414434708e-05,
+              0.002838091541300802
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.031248260485498447,
+            "block_differences": [
+              -0.03387086956124563,
+              -0.028625651409751485
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0017579487963196114,
+            "block_differences": [
+              0.001784276436356938,
+              0.0017316211562822849
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0017287732455441296
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.010249670129269361,
+            "block_differences": [
+              0.007902087643742561,
+              0.012597252614796162
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.09007418155670166,
+            "block_differences": [
+              -0.09135258197784424,
+              -0.08879578113555908
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.017054024152457714,
+            "block_differences": [
+              0.01409398764371872,
+              0.02001406066119671
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.003926975351265249,
+            "block_differences": [
+              0.0025096126996419013,
+              0.0053443380028885944
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.08652707777525248,
+            "block_differences": [
+              -0.08697773908313955,
+              -0.08607641646736541
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0032861448331352548,
+            "block_differences": [
+              0.00320735398460837,
+              0.0033649356816621394
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.004240261430534836
+          }
+        }
+      },
+      "color_at_cable": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.006654088385403156,
+            "block_differences": [
+              0.006030227988958359,
+              0.007277948781847954
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.005445569753646851,
+            "block_differences": [
+              -0.0047719478607177734,
+              -0.006119191646575928
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.012121851556003094,
+            "block_differences": [
+              0.011034687981009483,
+              0.013209015130996704
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00023620778366046508,
+            "block_differences": [
+              0.00016796468373607085,
+              0.0003044508835848628
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.004666424111316125,
+            "block_differences": [
+              0.0030051281577662126,
+              0.006327720064865927
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0003630623824017881,
+            "block_differences": [
+              -0.00019648326013018032,
+              -0.0005296415046733959
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.00042558270442266156
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.0077762845903635025,
+            "block_differences": [
+              0.006980970501899719,
+              0.008571598678827286
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.028905034065246582,
+            "block_differences": [
+              -0.025774121284484863,
+              -0.0320359468460083
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.015764336101710796,
+            "block_differences": [
+              0.014113133773207664,
+              0.017415538430213928
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0018468864864724516,
+            "block_differences": [
+              0.0017358712742433814,
+              0.0019579016987015217
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.027218072037947794,
+            "block_differences": [
+              -0.026645086313548783,
+              -0.027791057762346805
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0013928232604966465,
+            "block_differences": [
+              0.0015020047259681375,
+              0.0012836417950251536
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0012463010512194957
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.009935731999576092,
+            "block_differences": [
+              0.006980970501899719,
+              0.012890493497252464
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.060137420892715454,
+            "block_differences": [
+              -0.025774121284484863,
+              -0.09450072050094604
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.018955194391310215,
+            "block_differences": [
+              0.014113133773207664,
+              0.023797255009412766
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0030406579265699653,
+            "block_differences": [
+              0.0017358712742433814,
+              0.004345444578896549
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.05786098775110737,
+            "block_differences": [
+              -0.026645086313548783,
+              -0.08907688918866608
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.002220460843733129,
+            "block_differences": [
+              0.0015020047259681375,
+              0.0029389169614981205
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.002572687161954754
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.017973081208765507,
+            "block_differences": [
+              0.017343126237392426,
+              0.018603036180138588
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.1687769889831543,
+            "block_differences": [
+              -0.16708385944366455,
+              -0.17047011852264404
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.03587511833757162,
+            "block_differences": [
+              0.03457586653530598,
+              0.037174370139837265
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.007429834729170099,
+            "block_differences": [
+              0.007438726175357313,
+              0.007420943282982883
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.14245585548250295,
+            "block_differences": [
+              -0.14506754749699646,
+              -0.13984416346800954
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0047277898034628705,
+            "block_differences": [
+              0.004919293884407072,
+              0.004536285722518669
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.007005309215224761
+          }
+        }
+      },
+      "material_at_gray": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0020920666866004467,
+            "block_differences": [
+              0.00013528205454349518,
+              0.004048851318657398
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0063852667808532715,
+            "block_differences": [
+              -0.004971742630004883,
+              -0.00779879093170166
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0009956993162631989,
+            "block_differences": [
+              -0.004539405927062035,
+              0.002548007294535637
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.00086637378177222,
+            "block_differences": [
+              -0.0024908689015051885,
+              0.0007581213379607484
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.00018942199255289616,
+            "block_differences": [
+              0.0013614265542281068,
+              -0.001740270539333899
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00024872922393328993,
+            "block_differences": [
+              0.0001810439588392481,
+              0.00031641448902733176
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 6.5002269878758e-05
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.0020920666866004467,
+            "block_differences": [
+              0.00013528205454349518,
+              0.004048851318657398
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0063852667808532715,
+            "block_differences": [
+              -0.004971742630004883,
+              -0.00779879093170166
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0009956993162631989,
+            "block_differences": [
+              -0.004539405927062035,
+              0.002548007294535637
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.00086637378177222,
+            "block_differences": [
+              -0.0024908689015051885,
+              0.0007581213379607484
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.00018942199255289616,
+            "block_differences": [
+              0.0013614265542281068,
+              -0.001740270539333899
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00024872922393328993,
+            "block_differences": [
+              0.0001810439588392481,
+              0.00031641448902733176
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 6.5002269878758e-05
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.0020920666866004467,
+            "block_differences": [
+              0.00013528205454349518,
+              0.004048851318657398
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0063852667808532715,
+            "block_differences": [
+              -0.004971742630004883,
+              -0.00779879093170166
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0009956993162631989,
+            "block_differences": [
+              -0.004539405927062035,
+              0.002548007294535637
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.00086637378177222,
+            "block_differences": [
+              -0.0024908689015051885,
+              0.0007581213379607484
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.00018942199255289616,
+            "block_differences": [
+              0.0013614265542281068,
+              -0.001740270539333899
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00024872922393328993,
+            "block_differences": [
+              0.0001810439588392481,
+              0.00031641448902733176
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 6.5002269878758e-05
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.0020920666866004467,
+            "block_differences": [
+              0.00013528205454349518,
+              0.004048851318657398
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0063852667808532715,
+            "block_differences": [
+              -0.004971742630004883,
+              -0.00779879093170166
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0009956993162631989,
+            "block_differences": [
+              -0.004539405927062035,
+              0.002548007294535637
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.00086637378177222,
+            "block_differences": [
+              -0.0024908689015051885,
+              0.0007581213379607484
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.00018942199255289616,
+            "block_differences": [
+              0.0013614265542281068,
+              -0.001740270539333899
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00024872922393328993,
+            "block_differences": [
+              0.0001810439588392481,
+              0.00031641448902733176
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 6.5002269878758e-05
+          }
+        }
+      },
+      "material_at_navy": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.003000272437930107,
+            "block_differences": [
+              0.0034506861120462418,
+              0.0025498587638139725
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.006086796522140503,
+            "block_differences": [
+              0.0016258955001831055,
+              0.0105476975440979
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.003404621034860611,
+            "block_differences": [
+              0.0021265707910060883,
+              0.004682671278715134
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.000862648601041122,
+            "block_differences": [
+              -0.0010791520642883645,
+              -0.0006461451377938777
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.00805227223195537,
+            "block_differences": [
+              0.004189281087172647,
+              0.011915263376737983
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0004319285371286036,
+            "block_differences": [
+              -0.0002225007423583194,
+              -0.000641356331898886
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0008372114441813454
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.004171648994088173,
+            "block_differences": [
+              0.00388379767537117,
+              0.004459500312805176
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.00648730993270874,
+            "block_differences": [
+              -0.002217233180999756,
+              -0.010757386684417725
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.007242456078529358,
+            "block_differences": [
+              0.004676029086112976,
+              0.00980888307094574
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.000485269928022343,
+            "block_differences": [
+              -0.0008484713514061541,
+              -0.00012206850463853183
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.003840766454997757,
+            "block_differences": [
+              0.008587209801924955,
+              -0.0009056768919292191
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.00011639631188967506,
+            "block_differences": [
+              -0.00010122775154955237,
+              -0.00013156487222979948
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0004174699244458759
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.006331096403300762,
+            "block_differences": [
+              0.00388379767537117,
+              0.008778395131230354
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.03771969676017761,
+            "block_differences": [
+              -0.002217233180999756,
+              -0.07322216033935547
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.010433314368128777,
+            "block_differences": [
+              0.004676029086112976,
+              0.016190599650144577
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0007085015120751707,
+            "block_differences": [
+              -0.0008484713514061541,
+              0.0022654743755564956
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.026802149258161823,
+            "block_differences": [
+              0.008587209801924955,
+              -0.06219150831824849
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0007112412713468075,
+            "block_differences": [
+              -0.00010122775154955237,
+              0.0015237102942431673
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0009089161862893824
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.009815477766096592,
+            "block_differences": [
+              0.00957632064819336,
+              0.010054634883999825
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.08508807420730591,
+            "block_differences": [
+              -0.0807030200958252,
+              -0.08947312831878662
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.017825394868850708,
+            "block_differences": [
+              0.015942472964525223,
+              0.019708316773176193
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0026364855961326303,
+            "block_differences": [
+              0.0024382445742102236,
+              0.002834726618055037
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.05611819969980336,
+            "block_differences": [
+              -0.05672838185962881,
+              -0.05550801753997803
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0016903741942609057,
+            "block_differences": [
+              0.0018929838586379498,
+              0.0014877645298838615
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0028300500545686835
+          }
+        }
+      },
+      "interaction": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.0009082057513296604,
+            "block_differences": [
+              0.0033154040575027466,
+              -0.0014989925548434258
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.012472063302993774,
+            "block_differences": [
+              0.006597638130187988,
+              0.01834648847579956
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.00440032035112381,
+            "block_differences": [
+              0.006665976718068123,
+              0.0021346639841794968
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 3.7251807310980517e-06,
+            "block_differences": [
+              0.001411716837216824,
+              -0.0014042664757546262
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.008241694224508267,
+            "block_differences": [
+              0.0028278545329445404,
+              0.013655533916071882
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0006806577610618935,
+            "block_differences": [
+              -0.0004035447011975675,
+              -0.0009577708209262178
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0009022137140601034
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.002079582307487726,
+            "block_differences": [
+              0.003748515620827675,
+              0.00041064899414777756
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.00010204315185546875,
+            "block_differences": [
+              0.002754509449005127,
+              -0.0029585957527160645
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.008238155394792557,
+            "block_differences": [
+              0.00921543501317501,
+              0.007260875776410103
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00038110385374987704,
+            "block_differences": [
+              0.0016423975500990343,
+              -0.0008801898425992803
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.004030188447550653,
+            "block_differences": [
+              0.007225783247696849,
+              0.00083459364740468
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.000365125535822965,
+            "block_differences": [
+              -0.0002822717103888005,
+              -0.00044797936125713124
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0004824721943246339
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.0042390297167003155,
+            "block_differences": [
+              0.003748515620827675,
+              0.004729543812572956
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.03133442997932434,
+            "block_differences": [
+              0.002754509449005127,
+              -0.06542336940765381
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.011429013684391975,
+            "block_differences": [
+              0.00921543501317501,
+              0.01364259235560894
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0015748752938473908,
+            "block_differences": [
+              0.0016423975500990343,
+              0.0015073530375957472
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.026612727265608926,
+            "block_differences": [
+              0.007225783247696849,
+              -0.06045123777891459
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00046251204741351755,
+            "block_differences": [
+              -0.0002822717103888005,
+              0.0012072958052158356
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0008439139164106244
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.007723411079496145,
+            "block_differences": [
+              0.009441038593649864,
+              0.006005783565342426
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.07870280742645264,
+            "block_differences": [
+              -0.07573127746582031,
+              -0.08167433738708496
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.018821094185113907,
+            "block_differences": [
+              0.020481878891587257,
+              0.017160309478640556
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0035028593779048503,
+            "block_differences": [
+              0.004929113475715412,
+              0.0020766052800942885
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.055928777707250465,
+            "block_differences": [
+              -0.058089808413856914,
+              -0.05376774700064413
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0014416449703276157,
+            "block_differences": [
+              0.0017119398997987017,
+              0.0011713500408565298
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0027650477846899255
+          }
+        }
+      }
+    },
+    "P06": {
+      "color_at_original": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.002006717026233673,
+            "block_differences": [
+              0.0031768567860126495,
+              0.0008365772664546967
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.006557732820510864,
+            "block_differences": [
+              -0.01714712381362915,
+              0.004031658172607422
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0017949752509593964,
+            "block_differences": [
+              0.0012314319610595703,
+              -0.004821382462978363
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00465723501927242,
+            "block_differences": [
+              0.006189720023696017,
+              0.003124750014848826
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.014124580442088974,
+            "block_differences": [
+              -0.024299760387368363,
+              -0.003949400496809474
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0005067567477320747,
+            "block_differences": [
+              0.0011475533019842162,
+              -0.00013403980652006674
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0010447584552329223
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.002390545792877674,
+            "block_differences": [
+              0.0035131555050611496,
+              0.0012679360806941986
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.01824125647544861,
+            "block_differences": [
+              -0.035967886447906494,
+              -0.0005146265029907227
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0005038809031248093,
+            "block_differences": [
+              0.0013052262365818024,
+              -0.002312988042831421
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0036208002214751615,
+            "block_differences": [
+              0.004130797324384133,
+              0.003110803118566187
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.03071570110647648,
+            "block_differences": [
+              -0.04842619863274977,
+              -0.013005203580203073
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0014224980117344271,
+            "block_differences": [
+              0.0023695987353964543,
+              0.00047539728807239993
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.001676349258324196
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.002390545792877674,
+            "block_differences": [
+              0.0035131555050611496,
+              0.0012679360806941986
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.01824125647544861,
+            "block_differences": [
+              -0.035967886447906494,
+              -0.0005146265029907227
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0005038809031248093,
+            "block_differences": [
+              0.0013052262365818024,
+              -0.002312988042831421
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0036208002214751615,
+            "block_differences": [
+              0.004130797324384133,
+              0.003110803118566187
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.03071570110647648,
+            "block_differences": [
+              -0.04842619863274977,
+              -0.013005203580203073
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0014224980117344271,
+            "block_differences": [
+              0.0023695987353964543,
+              0.00047539728807239993
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.001676349258324196
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.0019776402041316032,
+            "block_differences": [
+              0.0035131555050611496,
+              0.0004421249032020569
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.011950820684432983,
+            "block_differences": [
+              -0.035967886447906494,
+              0.012066245079040527
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0009568575769662857,
+            "block_differences": [
+              0.0013052262365818024,
+              -0.0032189413905143738
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0033563983104214455,
+            "block_differences": [
+              0.004130797324384133,
+              0.002581999296458755
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.021307499441381994,
+            "block_differences": [
+              -0.04842619863274977,
+              0.005811199749985785
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0011822052027394107,
+            "block_differences": [
+              0.0023695987353964543,
+              -5.1883299176293945e-06
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0013958992637226695
+          }
+        }
+      },
+      "color_at_cable": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": -0.0002124439924955368,
+            "block_differences": [
+              -0.0006744079291820526,
+              0.000249519944190979
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.006117492914199829,
+            "block_differences": [
+              0.016328036785125732,
+              -0.004093050956726074
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.00024178717285394669,
+            "block_differences": [
+              -0.0019159205257892609,
+              0.0023994948714971542
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0007702902232001457,
+            "block_differences": [
+              0.000954986390907589,
+              0.0005855940554927025
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.008647101790937639,
+            "block_differences": [
+              0.015874517290559553,
+              0.001419686291315836
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0003247267748342792,
+            "block_differences": [
+              -0.0005281051030246228,
+              -0.00012134844664393393
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.00012549333568761568
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": 0.0013127243146300316,
+            "block_differences": [
+              0.002375928685069084,
+              0.000249519944190979
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.009990900754928589,
+            "block_differences": [
+              -0.015888750553131104,
+              -0.004093050956726074
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0031023304909467697,
+            "block_differences": [
+              0.003805166110396385,
+              0.0023994948714971542
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0011658344485956026,
+            "block_differences": [
+              0.0017460748416984959,
+              0.0005855940554927025
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.011503045281318736,
+            "block_differences": [
+              -0.024425776853953307,
+              0.001419686291315836
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00032677530969788503,
+            "block_differences": [
+              0.0007748990660397023,
+              -0.00012134844664393393
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.000563204213730779
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.0026308707892894745,
+            "block_differences": [
+              0.002375928685069084,
+              0.002885812893509865
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0276014506816864,
+            "block_differences": [
+              -0.015888750553131104,
+              -0.0393141508102417
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0057390788570046425,
+            "block_differences": [
+              0.003805166110396385,
+              0.0076729916036129
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0016910271696382942,
+            "block_differences": [
+              0.0017460748416984959,
+              0.0016359794975780856
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.03556813687494342,
+            "block_differences": [
+              -0.024425776853953307,
+              -0.04671049689593376
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0013488271137381477,
+            "block_differences": [
+              0.0007748990660397023,
+              0.0019227551614365932
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0016038904899665172
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.0026308707892894745,
+            "block_differences": [
+              0.002375928685069084,
+              0.002885812893509865
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0276014506816864,
+            "block_differences": [
+              -0.015888750553131104,
+              -0.0393141508102417
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0057390788570046425,
+            "block_differences": [
+              0.003805166110396385,
+              0.0076729916036129
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.0016910271696382942,
+            "block_differences": [
+              0.0017460748416984959,
+              0.0016359794975780856
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.03556813687494342,
+            "block_differences": [
+              -0.024425776853953307,
+              -0.04671049689593376
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.0013488271137381477,
+            "block_differences": [
+              0.0007748990660397023,
+              0.0019227551614365932
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0016038904899665172
+          }
+        }
+      },
+      "material_at_gray": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": 0.000700077973306179,
+            "block_differences": [
+              0.0013886019587516785,
+              1.1553987860679626e-05
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.00509527325630188,
+            "block_differences": [
+              -0.02066826820373535,
+              0.010477721691131592
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0027263853698968887,
+            "block_differences": [
+              0.002072516828775406,
+              -0.007525287568569183
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 4.28411791600844e-05,
+            "block_differences": [
+              -0.00042767809113351124,
+              0.00051336044945368
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.008513755177798399,
+            "block_differences": [
+              -0.02191984735123098,
+              0.004892336995634294
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.00026599061107490315,
+            "block_differences": [
+              0.0008394710674155051,
+              -0.00030748984526570225
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.00031877936651939116
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": -0.0004551811143755913,
+            "block_differences": [
+              -0.00055747851729393,
+              -0.0003528837114572525
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.007693976163864136,
+            "block_differences": [
+              -0.005757272243499756,
+              0.021145224571228027
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.004109010100364685,
+            "block_differences": [
+              -0.00182376429438591,
+              -0.00639425590634346
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00020810858369237073,
+            "block_differences": [
+              -0.0003063748477072255,
+              0.0007225920150919669
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.0006748531779197098,
+            "block_differences": [
+              -0.012860192011480476,
+              0.014209898367320006
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 5.594225282349284e-05,
+            "block_differences": [
+              0.001059124768688911,
+              -0.000947240263041927
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 6.718714893985851e-05
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": -0.0004551811143755913,
+            "block_differences": [
+              -0.00055747851729393,
+              -0.0003528837114572525
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.007693976163864136,
+            "block_differences": [
+              -0.005757272243499756,
+              0.021145224571228027
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.004109010100364685,
+            "block_differences": [
+              -0.00182376429438591,
+              -0.00639425590634346
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": 0.00020810858369237073,
+            "block_differences": [
+              -0.0003063748477072255,
+              0.0007225920150919669
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.0006748531779197098,
+            "block_differences": [
+              -0.012860192011480476,
+              0.014209898367320006
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 5.594225282349284e-05,
+            "block_differences": [
+              0.001059124768688911,
+              -0.000947240263041927
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 6.718714893985851e-05
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": -0.0008680867031216621,
+            "block_differences": [
+              -0.00055747851729393,
+              -0.0011786948889493942
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.01398441195487976,
+            "block_differences": [
+              -0.005757272243499756,
+              0.03372609615325928
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0045619867742061615,
+            "block_differences": [
+              -0.00182376429438591,
+              -0.007300209254026413
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -5.629332736134529e-05,
+            "block_differences": [
+              -0.0003063748477072255,
+              0.0001937881929845349
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.010083054843014194,
+            "block_differences": [
+              -0.012860192011480476,
+              0.033026301697508864
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.00018435055617152356,
+            "block_differences": [
+              0.001059124768688911,
+              -0.0014278258810319563
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.00021326284566166795
+          }
+        }
+      },
+      "material_at_navy": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": -0.0015190830454230309,
+            "block_differences": [
+              -0.0024626627564430237,
+              -0.000575503334403038
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.0075799524784088135,
+            "block_differences": [
+              0.012806892395019531,
+              0.0023530125617980957
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0006896229460835457,
+            "block_differences": [
+              -0.0010748356580734253,
+              -0.0003044102340936661
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.0038441036169121895,
+            "block_differences": [
+              -0.005662411723921939,
+              -0.0020257955099024436
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.014257927055228214,
+            "block_differences": [
+              0.018254430326696935,
+              0.010261423783759605
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0005654929114914508,
+            "block_differences": [
+              -0.0008361873375933339,
+              -0.00029479848538956945
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0008514724244011469
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": -0.0015330025926232338,
+            "block_differences": [
+              -0.0016947053372859955,
+              -0.001371299847960472
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.015944331884384155,
+            "block_differences": [
+              0.014321863651275635,
+              0.017566800117492676
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": -0.0005027987062931061,
+            "block_differences": [
+              0.0006761755794286728,
+              -0.001681772992014885
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.002246857189187188,
+            "block_differences": [
+              -0.0026910973303928623,
+              -0.0018026170479815175
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.019887509003077453,
+            "block_differences": [
+              0.01114022976731599,
+              0.028634788238838915
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0010397804492130493,
+            "block_differences": [
+              -0.0005355749006678411,
+              -0.0015439859977582609
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.0010459578956535584
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": -0.0002148561179637909,
+            "block_differences": [
+              -0.0016947053372859955,
+              0.0012649931013584137
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0016662180423736572,
+            "block_differences": [
+              0.014321863651275635,
+              -0.01765429973602295
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0021339496597647667,
+            "block_differences": [
+              0.0006761755794286728,
+              0.0035917237401008606
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.0017216644681444966,
+            "block_differences": [
+              -0.0026910973303928623,
+              -0.0007522316058961344
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.004177582590547235,
+            "block_differences": [
+              0.01114022976731599,
+              -0.019495394948410683
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -1.7728645172786564e-05,
+            "block_differences": [
+              -0.0005355749006678411,
+              0.0005001176103222663
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -5.271619417820256e-06
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": -0.0002148561179637909,
+            "block_differences": [
+              -0.0016947053372859955,
+              0.0012649931013584137
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.0016662180423736572,
+            "block_differences": [
+              0.014321863651275635,
+              -0.01765429973602295
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.0021339496597647667,
+            "block_differences": [
+              0.0006761755794286728,
+              0.0035917237401008606
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.0017216644681444966,
+            "block_differences": [
+              -0.0026910973303928623,
+              -0.0007522316058961344
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.004177582590547235,
+            "block_differences": [
+              0.01114022976731599,
+              -0.019495394948410683
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -1.7728645172786564e-05,
+            "block_differences": [
+              -0.0005355749006678411,
+              0.0005001176103222663
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -5.271619417820256e-06
+          }
+        }
+      },
+      "interaction": {
+        "fixed": {
+          "face/mae": {
+            "mean_difference": -0.00221916101872921,
+            "block_differences": [
+              -0.003851264715194702,
+              -0.0005870573222637177
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.012675225734710693,
+            "block_differences": [
+              0.03347516059875488,
+              -0.008124709129333496
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.002036762423813343,
+            "block_differences": [
+              -0.003147352486848831,
+              0.007220877334475517
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.003886944796072274,
+            "block_differences": [
+              -0.005234733632788428,
+              -0.0025391559593561236
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.022771682233026613,
+            "block_differences": [
+              0.040174277677927916,
+              0.00536908678812531
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.000831483522566354,
+            "block_differences": [
+              -0.001675658405008839,
+              1.2691359876132804e-05
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.001170251790920538
+          }
+        },
+        "1": {
+          "face/mae": {
+            "mean_difference": -0.0010778214782476425,
+            "block_differences": [
+              -0.0011372268199920654,
+              -0.0010184161365032196
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": 0.00825035572052002,
+            "block_differences": [
+              0.02007913589477539,
+              -0.0035784244537353516
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.003606211394071579,
+            "block_differences": [
+              0.002499939873814583,
+              0.004712482914328575
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.002454965772879559,
+            "block_differences": [
+              -0.002384722482685637,
+              -0.0025252090630734844
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": 0.019212655825157743,
+            "block_differences": [
+              0.024000421778796466,
+              0.014424889871518909
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -0.0010957227020365421,
+            "block_differences": [
+              -0.001594699669356752,
+              -0.0005967457347163339
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -0.001113145044593417
+          }
+        },
+        "3": {
+          "face/mae": {
+            "mean_difference": 0.00024032499641180038,
+            "block_differences": [
+              -0.0011372268199920654,
+              0.0016178768128156662
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.009360194206237793,
+            "block_differences": [
+              0.02007913589477539,
+              -0.03879952430725098
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.006242959760129452,
+            "block_differences": [
+              0.002499939873814583,
+              0.00998597964644432
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.0019297730518368673,
+            "block_differences": [
+              -0.002384722482685637,
+              -0.0014748236209881013
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.004852435768466945,
+            "block_differences": [
+              0.024000421778796466,
+              -0.03370529331573069
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": -7.36708979962794e-05,
+            "block_differences": [
+              -0.001594699669356752,
+              0.0014473578733641933
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": -7.245876835767877e-05
+          }
+        },
+        "6": {
+          "face/mae": {
+            "mean_difference": 0.0006532305851578712,
+            "block_differences": [
+              -0.0011372268199920654,
+              0.002443687990307808
+            ]
+          },
+          "face/ssim": {
+            "mean_difference": -0.015650629997253418,
+            "block_differences": [
+              0.02007913589477539,
+              -0.05138039588928223
+            ]
+          },
+          "face/lpips": {
+            "mean_difference": 0.006695936433970928,
+            "block_differences": [
+              0.002499939873814583,
+              0.010891932994127274
+            ]
+          },
+          "skin/mae": {
+            "mean_difference": -0.0016653711407831513,
+            "block_differences": [
+              -0.002384722482685637,
+              -0.0009460197988806693
+            ]
+          },
+          "skin/ssim": {
+            "mean_difference": -0.01426063743356143,
+            "block_differences": [
+              0.024000421778796466,
+              -0.05252169664591955
+            ]
+          },
+          "skin/highpass_mae": {
+            "mean_difference": 0.000166621910998737,
+            "block_differences": [
+              -0.001594699669356752,
+              0.0019279434913542226
+            ]
+          },
+          "skin/color_residual_mae": {
+            "mean_difference": 0.0002079912262438477
+          }
+        }
+      }
+    }
+  },
+  "source_sha256": "a5c3a40ccba5576b76749d62b84052e00e613555e099ca9505de1a1dd9046648",
+  "block_average_check_passed": true,
+  "inference": "descriptive_only; blocks are not seed-matched pairs"
+}

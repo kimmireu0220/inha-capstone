@@ -1,0 +1,43 @@
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[1/38] BSP-r1-s1 LPIPS=0.082589
+[2/38] BPS-r1-s1 LPIPS=0.083606
+[3/38] PSB-r1-s1 LPIPS=0.020472
+[4/38] PBS-r1-s1 LPIPS=0.022572
+[5/38] SPB-r1-s1 LPIPS=0.023696
+[6/38] batch-r1-s1 LPIPS=0.077299
+[7/38] SBP-r1-s1 LPIPS=0.025356
+[8/38] BSP-r1-s2 LPIPS=0.101304
+[9/38] BPS-r1-s2 LPIPS=0.103352
+[10/38] PSB-r1-s2 LPIPS=0.039127
+[11/38] PBS-r1-s2 LPIPS=0.101804
+[12/38] SPB-r1-s2 LPIPS=0.042328
+[13/38] SBP-r1-s2 LPIPS=0.101900
+[14/38] BSP-r1-s3 LPIPS=0.118231
+[15/38] BPS-r1-s3 LPIPS=0.120192
+[16/38] PSB-r1-s3 LPIPS=0.112426
+[17/38] PBS-r1-s3 LPIPS=0.114201
+[18/38] SPB-r1-s3 LPIPS=0.116145
+[19/38] SBP-r1-s3 LPIPS=0.121002
+[20/38] PSB-r2-s1 LPIPS=0.022228
+[21/38] BPS-r2-s1 LPIPS=0.088873
+[22/38] batch-r2-s1 LPIPS=0.076301
+[23/38] SPB-r2-s1 LPIPS=0.025297
+[24/38] SBP-r2-s1 LPIPS=0.030730
+[25/38] PBS-r2-s1 LPIPS=0.020143
+[26/38] BSP-r2-s1 LPIPS=0.084306
+[27/38] PSB-r2-s2 LPIPS=0.043769
+[28/38] BPS-r2-s2 LPIPS=0.105377
+[29/38] SPB-r2-s2 LPIPS=0.043762
+[30/38] SBP-r2-s2 LPIPS=0.101216
+[31/38] PBS-r2-s2 LPIPS=0.099305
+[32/38] BSP-r2-s2 LPIPS=0.099007
+[33/38] PSB-r2-s3 LPIPS=0.114041
+[34/38] BPS-r2-s3 LPIPS=0.124252
+[35/38] SPB-r2-s3 LPIPS=0.106063
+[36/38] SBP-r2-s3 LPIPS=0.115161
+[37/38] PBS-r2-s3 LPIPS=0.116311
+[38/38] BSP-r2-s3 LPIPS=0.117245
+{"complete": true, "measured": 38, "unique_pixel_outputs": 38, "boundary_hits": {"original": 0, "previous": 0}}

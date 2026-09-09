@@ -1,0 +1,488 @@
+{
+  "people": {
+    "P05": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "skin_regions": {
+        "forehead": [
+          453,
+          142,
+          563,
+          174
+        ],
+        "cheek_viewer_left": [
+          407,
+          270,
+          439,
+          300
+        ],
+        "cheek_viewer_right": [
+          583,
+          270,
+          615,
+          300
+        ]
+      },
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2"
+    },
+    "P06": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          132,
+          552,
+          164
+        ],
+        "cheek_viewer_left": [
+          405,
+          264,
+          437,
+          296
+        ],
+        "cheek_viewer_right": [
+          569,
+          264,
+          601,
+          296
+        ]
+      },
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767"
+    },
+    "P04": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          144,
+          568,
+          178
+        ],
+        "cheek_viewer_left": [
+          412,
+          264,
+          448,
+          306
+        ],
+        "cheek_viewer_right": [
+          572,
+          264,
+          604,
+          306
+        ]
+      }
+    }
+  },
+  "protocol_sha256": "7b48542f3b724171d1ac9a22946d82481b331c899856a7927ec7cacf13969577",
+  "schedule_seed": 20260911,
+  "schedules": [
+    [
+      [
+        "P06",
+        "navy_cable"
+      ],
+      [
+        "P04",
+        "gray_cable"
+      ],
+      [
+        "P05",
+        "gray_cable"
+      ],
+      [
+        "P04",
+        "navy_cable"
+      ],
+      [
+        "P05",
+        "gray_original"
+      ],
+      [
+        "P06",
+        "gray_original"
+      ],
+      [
+        "P06",
+        "gray_cable"
+      ],
+      [
+        "P04",
+        "navy_original"
+      ],
+      [
+        "P05",
+        "navy_cable"
+      ],
+      [
+        "P04",
+        "gray_original"
+      ],
+      [
+        "P05",
+        "navy_original"
+      ],
+      [
+        "P06",
+        "navy_original"
+      ]
+    ],
+    [
+      [
+        "P06",
+        "gray_original"
+      ],
+      [
+        "P05",
+        "navy_cable"
+      ],
+      [
+        "P06",
+        "gray_cable"
+      ],
+      [
+        "P05",
+        "navy_original"
+      ],
+      [
+        "P04",
+        "gray_original"
+      ],
+      [
+        "P05",
+        "gray_cable"
+      ],
+      [
+        "P04",
+        "navy_cable"
+      ],
+      [
+        "P04",
+        "navy_original"
+      ],
+      [
+        "P06",
+        "navy_cable"
+      ],
+      [
+        "P06",
+        "navy_original"
+      ],
+      [
+        "P04",
+        "gray_cable"
+      ],
+      [
+        "P05",
+        "gray_original"
+      ]
+    ]
+  ],
+  "jobs": [
+    {
+      "id": "P06-navy_cable-r1",
+      "person": "P06",
+      "order": "navy_cable",
+      "repeat": 1,
+      "stage": 1,
+      "added": "navy_cable",
+      "completed_set": "navy_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-navy_cable-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-gray_cable-r1",
+      "person": "P04",
+      "order": "gray_cable",
+      "repeat": 1,
+      "stage": 1,
+      "added": "gray_cable",
+      "completed_set": "gray_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-gray_cable-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-gray_cable-r1",
+      "person": "P05",
+      "order": "gray_cable",
+      "repeat": 1,
+      "stage": 1,
+      "added": "gray_cable",
+      "completed_set": "gray_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-gray_cable-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-navy_cable-r1",
+      "person": "P04",
+      "order": "navy_cable",
+      "repeat": 1,
+      "stage": 1,
+      "added": "navy_cable",
+      "completed_set": "navy_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-navy_cable-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-gray_original-r1",
+      "person": "P05",
+      "order": "gray_original",
+      "repeat": 1,
+      "stage": 1,
+      "added": "gray_original",
+      "completed_set": "gray_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-gray_original-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Keep the existing shirt material and fabric texture exactly as in the input image. Make no other changes.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-gray_original-r1",
+      "person": "P06",
+      "order": "gray_original",
+      "repeat": 1,
+      "stage": 1,
+      "added": "gray_original",
+      "completed_set": "gray_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-gray_original-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Keep the existing shirt material and fabric texture exactly as in the input image. Make no other changes.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-gray_cable-r1",
+      "person": "P06",
+      "order": "gray_cable",
+      "repeat": 1,
+      "stage": 1,
+      "added": "gray_cable",
+      "completed_set": "gray_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-gray_cable-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-navy_original-r1",
+      "person": "P04",
+      "order": "navy_original",
+      "repeat": 1,
+      "stage": 1,
+      "added": "navy_original",
+      "completed_set": "navy_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-navy_original-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Keep the existing shirt material and fabric texture exactly as in the input image.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-navy_cable-r1",
+      "person": "P05",
+      "order": "navy_cable",
+      "repeat": 1,
+      "stage": 1,
+      "added": "navy_cable",
+      "completed_set": "navy_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-navy_cable-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-gray_original-r1",
+      "person": "P04",
+      "order": "gray_original",
+      "repeat": 1,
+      "stage": 1,
+      "added": "gray_original",
+      "completed_set": "gray_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-gray_original-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Keep the existing shirt material and fabric texture exactly as in the input image. Make no other changes.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-navy_original-r1",
+      "person": "P05",
+      "order": "navy_original",
+      "repeat": 1,
+      "stage": 1,
+      "added": "navy_original",
+      "completed_set": "navy_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-navy_original-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Keep the existing shirt material and fabric texture exactly as in the input image.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-navy_original-r1",
+      "person": "P06",
+      "order": "navy_original",
+      "repeat": 1,
+      "stage": 1,
+      "added": "navy_original",
+      "completed_set": "navy_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-navy_original-r1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Keep the existing shirt material and fabric texture exactly as in the input image.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-gray_original-r2",
+      "person": "P06",
+      "order": "gray_original",
+      "repeat": 2,
+      "stage": 1,
+      "added": "gray_original",
+      "completed_set": "gray_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-gray_original-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Keep the existing shirt material and fabric texture exactly as in the input image. Make no other changes.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-navy_cable-r2",
+      "person": "P05",
+      "order": "navy_cable",
+      "repeat": 2,
+      "stage": 1,
+      "added": "navy_cable",
+      "completed_set": "navy_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-navy_cable-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-gray_cable-r2",
+      "person": "P06",
+      "order": "gray_cable",
+      "repeat": 2,
+      "stage": 1,
+      "added": "gray_cable",
+      "completed_set": "gray_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-gray_cable-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-navy_original-r2",
+      "person": "P05",
+      "order": "navy_original",
+      "repeat": 2,
+      "stage": 1,
+      "added": "navy_original",
+      "completed_set": "navy_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-navy_original-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Keep the existing shirt material and fabric texture exactly as in the input image.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-gray_original-r2",
+      "person": "P04",
+      "order": "gray_original",
+      "repeat": 2,
+      "stage": 1,
+      "added": "gray_original",
+      "completed_set": "gray_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-gray_original-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Keep the existing shirt material and fabric texture exactly as in the input image. Make no other changes.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-gray_cable-r2",
+      "person": "P05",
+      "order": "gray_cable",
+      "repeat": 2,
+      "stage": 1,
+      "added": "gray_cable",
+      "completed_set": "gray_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-gray_cable-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-navy_cable-r2",
+      "person": "P04",
+      "order": "navy_cable",
+      "repeat": 2,
+      "stage": 1,
+      "added": "navy_cable",
+      "completed_set": "navy_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-navy_cable-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-navy_original-r2",
+      "person": "P04",
+      "order": "navy_original",
+      "repeat": 2,
+      "stage": 1,
+      "added": "navy_original",
+      "completed_set": "navy_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-navy_original-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Keep the existing shirt material and fabric texture exactly as in the input image.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-navy_cable-r2",
+      "person": "P06",
+      "order": "navy_cable",
+      "repeat": 2,
+      "stage": 1,
+      "added": "navy_cable",
+      "completed_set": "navy_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-navy_cable-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P06-navy_original-r2",
+      "person": "P06",
+      "order": "navy_original",
+      "repeat": 2,
+      "stage": 1,
+      "added": "navy_original",
+      "completed_set": "navy_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P06-navy_original-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Change the existing shirt color to navy blue.\n- Keep the existing shirt material and fabric texture exactly as in the input image.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P04-gray_cable-r2",
+      "person": "P04",
+      "order": "gray_cable",
+      "repeat": 2,
+      "stage": 1,
+      "added": "gray_cable",
+      "completed_set": "gray_cable",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P04-gray_cable-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Change only the shirt material to a chunky cable-knit wool texture, with clear raised vertical cable patterns.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    },
+    {
+      "id": "P05-gray_original-r2",
+      "person": "P05",
+      "order": "gray_original",
+      "repeat": 2,
+      "stage": 1,
+      "added": "gray_original",
+      "completed_set": "gray_original",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-factors-v1/generated/P05-gray_original-r2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply only these clothing requirements; keep the background unchanged:\n- Keep the existing shirt color exactly as in the input image.\n- Keep the existing shirt material and fabric texture exactly as in the input image. Make no other changes.\n- Preserve the shirt outline, crewneck shape, sleeve length and fit. Preserve all other content."
+    }
+  ]
+}

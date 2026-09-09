@@ -1,0 +1,167 @@
+{
+  "rows": [
+    {
+      "id": "batch-42-s1",
+      "seed": 42,
+      "arm": "batch",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/batch-42-s1.png",
+      "prompt_file": "batch-42-s1.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4",
+      "metrics": {
+        "mae": 0.1364022195339203,
+        "ssim": 0.8121077418327332,
+        "lpips": 0.10172107815742493
+      },
+      "call_seconds": 98.76049145800062,
+      "output_sha256": "42296155c9024bbbd6979bb1fb9f9c5ba5d4e57ba005849db53b3876f6ca8bcf"
+    },
+    {
+      "id": "sequential-42-s1",
+      "seed": 42,
+      "arm": "sequential",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/sequential-42-s1.png",
+      "prompt_file": "sequential-42-s1.txt",
+      "prompt_sha256": "e477705e8fdecf64249952d34aa5f778e337f7aed6f9ec62b153444087174c9f",
+      "metrics": {
+        "mae": 0.04249459505081177,
+        "ssim": 0.826481819152832,
+        "lpips": 0.07040678709745407
+      },
+      "call_seconds": 87.64071716599574,
+      "output_sha256": "521cfa30c06338a0a09119a908a660a30e8929c6dc03df4dd59cda148ea62aa4"
+    },
+    {
+      "id": "sequential-42-s2",
+      "seed": 42,
+      "arm": "sequential",
+      "stage": 2,
+      "input": "generated/sequential-42-s1.png",
+      "output": "generated/sequential-42-s2.png",
+      "prompt_file": "sequential-42-s2.txt",
+      "prompt_sha256": "25fd18a1b95695620377697a97f76150a8fbd479fd318b11360b950cef318218",
+      "metrics": {
+        "mae": 0.13848447799682617,
+        "ssim": 0.7381012439727783,
+        "lpips": 0.12672016024589539
+      },
+      "call_seconds": 88.67727733300126,
+      "output_sha256": "f6e292d547cac4e3a45e97283f629a38e1bc62b65a8d46b5ec15a6b91d2f0c6c"
+    },
+    {
+      "id": "sequential-42-s3",
+      "seed": 42,
+      "arm": "sequential",
+      "stage": 3,
+      "input": "generated/sequential-42-s2.png",
+      "output": "generated/sequential-42-s3.png",
+      "prompt_file": "sequential-42-s3.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4",
+      "metrics": {
+        "mae": 0.13772113621234894,
+        "ssim": 0.703039824962616,
+        "lpips": 0.13276304304599762
+      },
+      "call_seconds": 85.79542141700222,
+      "output_sha256": "77137eab5b7688c43b6f52de063fe387c4f3fa1544d1b426621ddb889c991307"
+    },
+    {
+      "id": "sequential-314-s1",
+      "seed": 314,
+      "arm": "sequential",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/sequential-314-s1.png",
+      "prompt_file": "sequential-314-s1.txt",
+      "prompt_sha256": "e477705e8fdecf64249952d34aa5f778e337f7aed6f9ec62b153444087174c9f",
+      "metrics": {
+        "mae": 0.055627405643463135,
+        "ssim": 0.8772635459899902,
+        "lpips": 0.03914004936814308
+      },
+      "call_seconds": 85.43297962499491,
+      "output_sha256": "9b60301a776c2698c6d969f301a9457d067116a65a236a6ae3e1bf61db5fbb18"
+    },
+    {
+      "id": "sequential-314-s2",
+      "seed": 314,
+      "arm": "sequential",
+      "stage": 2,
+      "input": "generated/sequential-314-s1.png",
+      "output": "generated/sequential-314-s2.png",
+      "prompt_file": "sequential-314-s2.txt",
+      "prompt_sha256": "25fd18a1b95695620377697a97f76150a8fbd479fd318b11360b950cef318218",
+      "metrics": {
+        "mae": 0.1349039226770401,
+        "ssim": 0.7792547345161438,
+        "lpips": 0.10589604079723358
+      },
+      "call_seconds": 84.59830962499836,
+      "output_sha256": "af43bce094e4cc1a4b1088577b13e1fa8eb5cdb0469302d3668accd05236ea8d"
+    },
+    {
+      "id": "sequential-314-s3",
+      "seed": 314,
+      "arm": "sequential",
+      "stage": 3,
+      "input": "generated/sequential-314-s2.png",
+      "output": "generated/sequential-314-s3.png",
+      "prompt_file": "sequential-314-s3.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4",
+      "metrics": {
+        "mae": 0.14263871312141418,
+        "ssim": 0.7312366366386414,
+        "lpips": 0.11614654213190079
+      },
+      "call_seconds": 90.24997095800063,
+      "output_sha256": "f4bb29c82bf5b015cbca543d8edea5f55e7dc05746cd13d63a7c4e69edf4448e"
+    },
+    {
+      "id": "batch-314-s1",
+      "seed": 314,
+      "arm": "batch",
+      "stage": 1,
+      "input": "reference.png",
+      "output": "generated/batch-314-s1.png",
+      "prompt_file": "batch-314-s1.txt",
+      "prompt_sha256": "c07a733ac19564a6aa6423371401a4673b30fa24072bdfb9a2a3807b05abdaa4",
+      "metrics": {
+        "mae": 0.13393068313598633,
+        "ssim": 0.8313220143318176,
+        "lpips": 0.08090410381555557
+      },
+      "call_seconds": 86.82812599999306,
+      "output_sha256": "ac8ba678e308b6db7fe8e817fe8f01e73c7ecaada5e99320d02f42b7d2f81ff2"
+    }
+  ],
+  "means": {
+    "batch": {
+      "mae": 0.1351664513349533,
+      "ssim": 0.8217148780822754,
+      "lpips": 0.09131259098649025
+    },
+    "sequential": {
+      "mae": 0.14017992466688156,
+      "ssim": 0.7171382308006287,
+      "lpips": 0.1244547925889492
+    }
+  },
+  "path_seconds": {
+    "42": {
+      "batch": 98.76049145800062,
+      "sequential": 262.1134159159992
+    },
+    "314": {
+      "batch": 86.82812599999306,
+      "sequential": 260.2812602079939
+    }
+  },
+  "control": {
+    "mae": 0.0,
+    "ssim": 1.0,
+    "lpips": 0.0
+  }
+}

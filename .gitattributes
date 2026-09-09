@@ -1,0 +1,3 @@
+# Preserve exported figure and execution-log bytes used by research hash inventories.
+experiments/**/*.svg -whitespace
+experiments/**/*.log -whitespace

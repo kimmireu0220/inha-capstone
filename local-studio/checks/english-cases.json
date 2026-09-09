@@ -1,0 +1,190 @@
+[
+  {
+    "id": "color",
+    "request": "Change the shirt to white.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "synonym",
+    "request": "Make only the top white.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "short",
+    "request": "Black shirt.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "black",
+      "background": "ocean",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "background",
+    "request": "Change only the background to a library.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "pin_add",
+    "request": "Add one gold circular pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    }
+  },
+  {
+    "id": "pin_remove",
+    "request": "Remove the pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    }
+  },
+  {
+    "id": "pin_paraphrase",
+    "request": "Erase the pin attached to the chest.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    }
+  },
+  {
+    "id": "keep",
+    "request": "Keep the shirt and background unchanged and remove only the pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    }
+  },
+  {
+    "id": "negative",
+    "request": "Do not remove the pin. Keep it as it is.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "correction",
+    "request": "Make the shirt white, not red.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "multiple",
+    "request": "Change the shirt to white and the pin to gold. Keep the background.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    }
+  },
+  {
+    "id": "reset",
+    "request": "Restore the shirt color to the original image.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "original",
+      "background": "ocean",
+      "pin": "silver"
+    }
+  },
+  {
+    "id": "ambiguous",
+    "request": "Make it like before.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null
+  },
+  {
+    "id": "unsupported",
+    "request": "Make the hair longer.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null
+  }
+]

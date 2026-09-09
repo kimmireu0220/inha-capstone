@@ -1,0 +1,232 @@
+[
+  {
+    "id": "color",
+    "request": "Change the shirt to white.",
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "synonym",
+    "request": "Make only the top white.",
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "short",
+    "request": "Black shirt.",
+    "expected": {
+      "shirt_color": "black",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": false
+  },
+  {
+    "id": "background",
+    "request": "Change only the background to a library.",
+    "expected": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "pin_add",
+    "request": "Add one gold circular pin.",
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "pin_remove",
+    "request": "Remove the pin.",
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "pin_paraphrase",
+    "request": "Erase the pin attached to the chest.",
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "keep",
+    "request": "Keep the shirt and background unchanged and remove only the pin.",
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "negative",
+    "request": "Do not remove the pin. Keep it as it is.",
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "correction",
+    "request": "Make the shirt white, not red.",
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "multiple",
+    "request": "Change the shirt to white and the pin to gold. Keep the background.",
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": true
+  },
+  {
+    "id": "reset",
+    "request": "Restore the shirt color to the original image.",
+    "expected": {
+      "shirt_color": "original",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": false
+  },
+  {
+    "id": "ambiguous",
+    "request": "Make it like before.",
+    "expected": null,
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "message": "설정을 반영했어요. 확인 후 생성해주세요.",
+    "passed": false
+  },
+  {
+    "id": "unsupported",
+    "request": "Make the hair longer.",
+    "expected": null,
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "error",
+    "message": "지원하는 편집은 셔츠 색, 배경, 원형 핀입니다. 원하는 변경을 구체적으로 적어주세요.",
+    "passed": true
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "id": "color",
+    "request": "셔츠를 흰색으로 바꿔줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "synonym",
+    "request": "상의 색만 하얗게 해줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "short",
+    "request": "셔츠는 검정으로.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "black",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "black",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "background",
+    "request": "배경만 도서관으로 바꿔줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "pin_add",
+    "request": "금색 원형 핀 하나 달아줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "pin_remove",
+    "request": "핀은 없애줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "pin_paraphrase",
+    "request": "가슴에 달린 핀을 지워줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "keep",
+    "request": "셔츠랑 배경은 그대로 두고 핀만 빼줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "negative",
+    "request": "핀은 빼지 말고 그대로 둬.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "correction",
+    "request": "셔츠는 빨간색 말고 흰색으로 해줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "multiple",
+    "request": "셔츠는 흰색으로, 핀은 금색으로 바꿔줘. 배경은 유지해.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "reset",
+    "request": "셔츠 색을 원본대로 돌려줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "original",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "original",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "ambiguous",
+    "request": "아까처럼 해줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null,
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "needs_input",
+    "passed": true
+  },
+  {
+    "id": "unsupported",
+    "request": "머리를 길게 바꿔줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null,
+    "language": "phrasing",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "needs_input",
+    "passed": true
+  },
+  {
+    "id": "color",
+    "request": "Change the shirt to white.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "synonym",
+    "request": "Make only the top white.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "short",
+    "request": "Black shirt.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "black",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "black",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "background",
+    "request": "Change only the background to a library.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "library",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "pin_add",
+    "request": "Add one gold circular pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "pin_remove",
+    "request": "Remove the pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "pin_paraphrase",
+    "request": "Erase the pin attached to the chest.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "keep",
+    "request": "Keep the shirt and background unchanged and remove only the pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "none"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "negative",
+    "request": "Do not remove the pin. Keep it as it is.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "correction",
+    "request": "Make the shirt white, not red.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "multiple",
+    "request": "Change the shirt to white and the pin to gold. Keep the background.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "white",
+      "background": "ocean",
+      "pin": "gold"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "reset",
+    "request": "Restore the shirt color to the original image.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "original",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "english",
+    "actual": {
+      "shirt_color": "original",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "ambiguous",
+    "request": "Make it like before.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null,
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "needs_input",
+    "passed": true
+  },
+  {
+    "id": "unsupported",
+    "request": "Make the hair longer.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null,
+    "language": "english",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "needs_input",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "Green shirt.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "green",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "additional",
+    "actual": {
+      "shirt_color": "green",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "배경을 정원으로.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "garden",
+      "pin": "silver"
+    },
+    "language": "additional",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "garden",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "Restore the background to original.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "original",
+      "pin": "silver"
+    },
+    "language": "additional",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "original",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "Do not delete the pin.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "additional",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "배경은 그대로 두고 셔츠는 회색으로.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "gray",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "language": "additional",
+    "actual": {
+      "shirt_color": "gray",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "핀은 원본대로.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "original"
+    },
+    "language": "additional",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "original"
+    },
+    "status": "done",
+    "passed": true
+  },
+  {
+    "id": "additional",
+    "request": "그거 취소해줘.",
+    "initial": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "expected": null,
+    "language": "additional",
+    "actual": {
+      "shirt_color": "navy",
+      "background": "ocean",
+      "pin": "silver"
+    },
+    "status": "needs_input",
+    "passed": true
+  }
+]

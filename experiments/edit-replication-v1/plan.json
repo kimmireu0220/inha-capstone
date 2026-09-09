@@ -1,0 +1,298 @@
+{
+  "people": {
+    "P05": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "skin_regions": {
+        "forehead": [
+          453,
+          142,
+          563,
+          174
+        ],
+        "cheek_viewer_left": [
+          407,
+          270,
+          439,
+          300
+        ],
+        "cheek_viewer_right": [
+          583,
+          270,
+          615,
+          300
+        ]
+      },
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2"
+    },
+    "P06": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          132,
+          552,
+          164
+        ],
+        "cheek_viewer_left": [
+          405,
+          264,
+          437,
+          296
+        ],
+        "cheek_viewer_right": [
+          569,
+          264,
+          601,
+          296
+        ]
+      },
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767"
+    }
+  },
+  "protocol_sha256": "3e28e4bcac19367863349aa84d0b0921e14ac9f9881884555e40ebfef4a48fe5",
+  "schedule_seed": 20260910,
+  "schedules": [
+    [
+      [
+        "P06",
+        "batch"
+      ],
+      [
+        "P06",
+        "SBP"
+      ],
+      [
+        "P05",
+        "SBP"
+      ],
+      [
+        "P05",
+        "batch"
+      ]
+    ],
+    [
+      [
+        "P05",
+        "batch"
+      ],
+      [
+        "P06",
+        "SBP"
+      ],
+      [
+        "P06",
+        "batch"
+      ],
+      [
+        "P05",
+        "SBP"
+      ]
+    ]
+  ],
+  "jobs": [
+    {
+      "id": "P06-batch-r1-s1",
+      "person": "P06",
+      "order": "batch",
+      "repeat": 1,
+      "stage": 1,
+      "added": "SBP",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-batch-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P06-SBP-r1-s1",
+      "person": "P06",
+      "order": "SBP",
+      "repeat": 1,
+      "stage": 1,
+      "added": "S",
+      "completed_set": "S",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture."
+    },
+    {
+      "id": "P05-SBP-r1-s1",
+      "person": "P05",
+      "order": "SBP",
+      "repeat": 1,
+      "stage": 1,
+      "added": "S",
+      "completed_set": "S",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture."
+    },
+    {
+      "id": "P05-batch-r1-s1",
+      "person": "P05",
+      "order": "batch",
+      "repeat": 1,
+      "stage": 1,
+      "added": "SBP",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-batch-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P06-SBP-r1-s2",
+      "person": "P06",
+      "order": "SBP",
+      "repeat": 1,
+      "stage": 2,
+      "added": "B",
+      "completed_set": "SB",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r1-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r1-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged."
+    },
+    {
+      "id": "P05-SBP-r1-s2",
+      "person": "P05",
+      "order": "SBP",
+      "repeat": 1,
+      "stage": 2,
+      "added": "B",
+      "completed_set": "SB",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r1-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r1-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged."
+    },
+    {
+      "id": "P06-SBP-r1-s3",
+      "person": "P06",
+      "order": "SBP",
+      "repeat": 1,
+      "stage": 3,
+      "added": "P",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r1-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r1-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P05-SBP-r1-s3",
+      "person": "P05",
+      "order": "SBP",
+      "repeat": 1,
+      "stage": 3,
+      "added": "P",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r1-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r1-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P05-batch-r2-s1",
+      "person": "P05",
+      "order": "batch",
+      "repeat": 2,
+      "stage": 1,
+      "added": "SBP",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-batch-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P06-SBP-r2-s1",
+      "person": "P06",
+      "order": "SBP",
+      "repeat": 2,
+      "stage": 1,
+      "added": "S",
+      "completed_set": "S",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture."
+    },
+    {
+      "id": "P06-batch-r2-s1",
+      "person": "P06",
+      "order": "batch",
+      "repeat": 2,
+      "stage": 1,
+      "added": "SBP",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-batch-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P05-SBP-r2-s1",
+      "person": "P05",
+      "order": "SBP",
+      "repeat": 2,
+      "stage": 1,
+      "added": "S",
+      "completed_set": "S",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture."
+    },
+    {
+      "id": "P06-SBP-r2-s2",
+      "person": "P06",
+      "order": "SBP",
+      "repeat": 2,
+      "stage": 2,
+      "added": "B",
+      "completed_set": "SB",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r2-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r2-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged."
+    },
+    {
+      "id": "P05-SBP-r2-s2",
+      "person": "P05",
+      "order": "SBP",
+      "repeat": 2,
+      "stage": 2,
+      "added": "B",
+      "completed_set": "SB",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r2-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r2-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged."
+    },
+    {
+      "id": "P06-SBP-r2-s3",
+      "person": "P06",
+      "order": "SBP",
+      "repeat": 2,
+      "stage": 3,
+      "added": "P",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r2-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P06-SBP-r2-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "P05-SBP-r2-s3",
+      "person": "P05",
+      "order": "SBP",
+      "repeat": 2,
+      "stage": 3,
+      "added": "P",
+      "completed_set": "SBP",
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r2-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-replication-v1/generated/P05-SBP-r2-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    }
+  ]
+}

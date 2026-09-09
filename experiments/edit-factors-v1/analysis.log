@@ -1,0 +1,29 @@
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[1/24] P06-navy_cable-r1 LPIPS=0.028754
+[2/24] P04-gray_cable-r1 LPIPS=0.022554
+[3/24] P05-gray_cable-r1 LPIPS=0.026788
+[4/24] P04-navy_cable-r1 LPIPS=0.024683
+[5/24] P05-gray_original-r1 LPIPS=0.031327
+[6/24] P06-gray_original-r1 LPIPS=0.028598
+[7/24] P06-gray_cable-r1 LPIPS=0.030670
+[8/24] P04-navy_original-r1 LPIPS=0.023106
+[9/24] P05-navy_cable-r1 LPIPS=0.037823
+[10/24] P04-gray_original-r1 LPIPS=0.021179
+[11/24] P05-navy_original-r1 LPIPS=0.035696
+[12/24] P06-navy_original-r1 LPIPS=0.029829
+[13/24] P06-gray_original-r2 LPIPS=0.033995
+[14/24] P05-navy_cable-r2 LPIPS=0.040074
+[15/24] P06-gray_cable-r2 LPIPS=0.026469
+[16/24] P05-navy_original-r2 LPIPS=0.035391
+[17/24] P04-gray_original-r2 LPIPS=0.024991
+[18/24] P05-gray_cable-r2 LPIPS=0.026865
+[19/24] P04-navy_cable-r2 LPIPS=0.031436
+[20/24] P04-navy_original-r2 LPIPS=0.023146
+[21/24] P06-navy_cable-r2 LPIPS=0.028869
+[22/24] P06-navy_original-r2 LPIPS=0.029173
+[23/24] P04-gray_cable-r2 LPIPS=0.028134
+[24/24] P05-gray_original-r2 LPIPS=0.024317
+{"complete": true, "measured": 24, "unique_pixel_outputs": 24, "boundary_hits": {"original": 0, "previous": 0}}

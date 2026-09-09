@@ -1,0 +1,21 @@
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[1/16] P06-batch-r1-s1 LPIPS=0.122778
+[2/16] P06-SBP-r1-s1 LPIPS=0.030128
+[3/16] P05-SBP-r1-s1 LPIPS=0.032255
+[4/16] P05-batch-r1-s1 LPIPS=0.105334
+[5/16] P06-SBP-r1-s2 LPIPS=0.143463
+[6/16] P05-SBP-r1-s2 LPIPS=0.125126
+[7/16] P06-SBP-r1-s3 LPIPS=0.161261
+[8/16] P05-SBP-r1-s3 LPIPS=0.149091
+[9/16] P05-batch-r2-s1 LPIPS=0.104098
+[10/16] P06-SBP-r2-s1 LPIPS=0.041990
+[11/16] P06-batch-r2-s1 LPIPS=0.115221
+[12/16] P05-SBP-r2-s1 LPIPS=0.032014
+[13/16] P06-SBP-r2-s2 LPIPS=0.152762
+[14/16] P05-SBP-r2-s2 LPIPS=0.129733
+[15/16] P06-SBP-r2-s3 LPIPS=0.170832
+[16/16] P05-SBP-r2-s3 LPIPS=0.149443
+{"complete": true, "measured": 16, "unique_pixel_outputs": 16, "boundary_hits": {"original": 0, "previous": 0}}

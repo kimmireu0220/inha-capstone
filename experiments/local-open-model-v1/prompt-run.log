@@ -1,0 +1,64 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 4543.11it/s]
+{
+  "model": "mlx-community/Qwen3-0.6B-4bit",
+  "load_seconds": 0.8249493330076803,
+  "mlx_peak_memory_bytes": 528597734,
+  "cases": [
+    {
+      "request": "셔츠를 남색으로 바꿔줘.",
+      "input_state": {
+        "shirt_color": "gray",
+        "background": "studio",
+        "pin": "none"
+      },
+      "raw": "```json\n{\"shirt_color\": \"gray\", \"background\": \"studio\", \"pin\": \"none\"}\n```",
+      "parsed": null,
+      "valid_json_schema": false,
+      "expected": {
+        "shirt_color": "navy",
+        "background": "studio",
+        "pin": "none"
+      },
+      "exact_expected": false,
+      "seconds": 1.354626708998694
+    },
+    {
+      "request": "배경은 옅은 파란색으로 하고 은색 핀 하나 달아줘.",
+      "input_state": {
+        "shirt_color": "gray",
+        "background": "studio",
+        "pin": "none"
+      },
+      "raw": "```json\n{\"shirt_color\": \"gray\", \"background\": \"none\", \"pin\": \"none\"}\n```",
+      "parsed": null,
+      "valid_json_schema": false,
+      "expected": {
+        "shirt_color": "navy",
+        "background": "pale blue",
+        "pin": "silver"
+      },
+      "exact_expected": false,
+      "seconds": 0.4425758750003297
+    },
+    {
+      "request": "셔츠는 흰색으로 바꾸고 핀은 빼줘. 배경은 그대로.",
+      "input_state": {
+        "shirt_color": "gray",
+        "background": "studio",
+        "pin": "none"
+      },
+      "raw": "```json\n{\"shirt_color\": \"gray\", \"background\": \"studio\", \"pin\": \"none\"}\n```",
+      "parsed": null,
+      "valid_json_schema": false,
+      "expected": {
+        "shirt_color": "white",
+        "background": "pale blue",
+        "pin": "none"
+      },
+      "exact_expected": false,
+      "seconds": 0.45746908299042843
+    }
+  ],
+  "passed": false,
+  "note": "Three fixed cases only, not general Korean instruction accuracy."
+}

@@ -1,0 +1,88 @@
+{
+  "images": 12,
+  "ai_sessions": 1,
+  "human_respondents": 1,
+  "ai_human_results_provided": false,
+  "ai_same_person_assessed": false,
+  "complete_pairs": 12,
+  "exact_agreement": 4,
+  "within_one_grade": 10,
+  "confusion_rows_human_columns_ai": [
+    [
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "groups": {
+    "batch": {
+      "ai": {
+        "1": 6
+      },
+      "human": {
+        "0": 2,
+        "1": 4
+      }
+    },
+    "SBP": {
+      "ai": {
+        "3": 4,
+        "2": 2
+      },
+      "human": {
+        "2": 2,
+        "1": 4
+      }
+    }
+  },
+  "spearman_ai": {
+    "face": 0.6390096504226938,
+    "face_mae_fixed": 0.3587890797245698,
+    "face_ssim_fixed": -0.6794091084146111,
+    "face_lpips_fixed": 0.5725357655179306,
+    "skin_mae_fixed": 0.3511552695176641,
+    "skin_ssim_fixed": -0.6794091084146111,
+    "skin_highpass_mae_fixed": 0.30535240827622967,
+    "face_mae_1": 0.3587890797245698,
+    "face_ssim_1": -0.6259724369662709,
+    "face_lpips_1": 0.5190990940695904,
+    "skin_mae_1": 0.2977185980693239,
+    "skin_ssim_1": -0.6794091084146111,
+    "skin_highpass_mae_1": 0.3587890797245698,
+    "face_mae_3": 0.3587890797245698,
+    "face_ssim_3": -0.26718335724170095,
+    "face_lpips_3": 0.30535240827622967,
+    "skin_mae_3": 0.2977185980693239,
+    "skin_ssim_3": -0.46566242262125024,
+    "skin_highpass_mae_3": 0.30535240827622967,
+    "face_mae_6": 0.3587890797245698,
+    "face_ssim_6": -0.1679438245519263,
+    "face_lpips_6": 0.3740567001383814,
+    "skin_mae_6": 0.2977185980693239,
+    "skin_ssim_6": -0.12214096331049186,
+    "skin_highpass_mae_6": -0.04580286124143444
+  },
+  "controls": {
+    "count": 3,
+    "zero_grade": 3
+  }
+}

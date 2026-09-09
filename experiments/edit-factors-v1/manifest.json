@@ -1,0 +1,168 @@
+{
+  "signature": {
+    "metric_source_sha256": "94bcf468e0de64331332e598651702b4ae1ff574ca1884cff66f152a3e17e2fc",
+    "analysis_sha256": "af3a87e0f56b01f76eea254cbe32c9bce4a10fe93e3e5dbd21eedef8df11a936",
+    "plan_sha256": "d09302a6c185cdc4be57413bfaedc4444f491e348c95d2877fdaba7a55481756",
+    "lpips_state_dict_sha256": "dcac8b0995e729ecc254c2af1e343a61a512ebbac89acebaa0d2d43512f221b9"
+  },
+  "files_sha256": {
+    "experiments/edit-factors-v1/generated/P06-navy_cable-r1.png": "ce9d5ba5caf5060872042cb6b8f6f26646952f4868893d0757b9a2686fedded3",
+    "experiments/trigger-validation-v1/P06/reference.png": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+    "experiments/edit-factors-v1/generated/P06-navy_cable-r1.call.json": "7b03b5b6b02da021f1d57af851ccc752eec342ee3a78655e88b2b17b63c0a7d6",
+    "experiments/edit-factors-v1/generated/P04-gray_cable-r1.png": "06665ad231e9414520a546af63eabe85a7f17c5e525f7e2fa1f49c825152872c",
+    "experiments/trigger-validation-v1/P04/reference.png": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+    "experiments/edit-factors-v1/generated/P04-gray_cable-r1.call.json": "75e2b0f06931571faf2a9bfafe44705ec641c064039523802bbf900d87c8ac6c",
+    "experiments/edit-factors-v1/generated/P05-gray_cable-r1.png": "e18433fb3db1c73f0e37faba8251b37bda6658a24957319e460d30e7d1c991d9",
+    "experiments/trigger-validation-v1/P05/reference.png": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+    "experiments/edit-factors-v1/generated/P05-gray_cable-r1.call.json": "e97c45b89b214fda641169a7cd3e082e23c2fc4c2ba7e42952150c9c80c19356",
+    "experiments/edit-factors-v1/generated/P04-navy_cable-r1.png": "ebd6ead472629edaa0593b707ed2a6f55e87796868fbfec096222cc8b92ec805",
+    "experiments/edit-factors-v1/generated/P04-navy_cable-r1.call.json": "d43fc599c801d49a0d44a32928f6bd5f181852d56f582e3fc0b8a4d2424153a5",
+    "experiments/edit-factors-v1/generated/P05-gray_original-r1.png": "0e4c1db5d821523c723ec9a876ed68d85dacb48eef9dafd8da7915806886e592",
+    "experiments/edit-factors-v1/generated/P05-gray_original-r1.call.json": "de95852730c00c43cf3b4c3d30ce4c6a32feba86b31d1bf02c93bb9fdbe9a310",
+    "experiments/edit-factors-v1/generated/P06-gray_original-r1.png": "c1eecbf8bac4f7cea9113145c871027fcdba2a62ea05ef61e726a9083c81091e",
+    "experiments/edit-factors-v1/generated/P06-gray_original-r1.call.json": "9e721690ef0ec60cf9107692d90091d2f166a45420d92800f771fd909a5f9480",
+    "experiments/edit-factors-v1/generated/P06-gray_cable-r1.png": "68342dca9a603edfbbc50d421140475c0f2303a4df3dc65f2459de86a4944054",
+    "experiments/edit-factors-v1/generated/P06-gray_cable-r1.call.json": "024c36a0afc33a5726f19481c1b9899f3d6426ad7df19b3528bd7b09f79a41dc",
+    "experiments/edit-factors-v1/generated/P04-navy_original-r1.png": "ee42a5f388c97098b6ecd1f3bf761889acd57d44bb4798e7cd5fd5ecc7e52d58",
+    "experiments/edit-factors-v1/generated/P04-navy_original-r1.call.json": "3c86452cd887045aea60be3ea17042badbdac53ebdc883f53c025392f0a16da5",
+    "experiments/edit-factors-v1/generated/P05-navy_cable-r1.png": "a4b2f908d5b478b2731a9291f17a97660b13ac8a9c473a19e5f3303ffd241c70",
+    "experiments/edit-factors-v1/generated/P05-navy_cable-r1.call.json": "06790d2dc99412331be9acb5ad3d2037be82272641ceef8a490e38d2cdd8ba7f",
+    "experiments/edit-factors-v1/generated/P04-gray_original-r1.png": "44f7762fa750b906a7850820efb9989be5e0ef1d0d0359f3dd621b563508ec27",
+    "experiments/edit-factors-v1/generated/P04-gray_original-r1.call.json": "06c57dc688f342db989aaf6b5e83dc5a6852663d441176cfdab588d05b25ed73",
+    "experiments/edit-factors-v1/generated/P05-navy_original-r1.png": "dfea56aaf5270b82d476e8d735d90a6f2a4b14855a37e1886a9f4b964a1b29ad",
+    "experiments/edit-factors-v1/generated/P05-navy_original-r1.call.json": "614891ff4fe10debabbe47e9e67fd54fb2c095d966f27a9c63ab102e8fd63622",
+    "experiments/edit-factors-v1/generated/P06-navy_original-r1.png": "ebb5fcc3f25fca01df3fdc4c878c005006ee80ec5f41c462d04122542295bae1",
+    "experiments/edit-factors-v1/generated/P06-navy_original-r1.call.json": "12435afe5b3403aed7f429e2ba34199b4e2421c927738101fa168b3de1506c89",
+    "experiments/edit-factors-v1/generated/P06-gray_original-r2.png": "16b80b181cd73cafa87186ca4dcdf8435bf74ac6991145830d4d52a285680f95",
+    "experiments/edit-factors-v1/generated/P06-gray_original-r2.call.json": "f5275d35674785460878a30846c1930c9ad85068bdbd2a2e1ec04f19b6fea1e2",
+    "experiments/edit-factors-v1/generated/P05-navy_cable-r2.png": "0b24dac4309eb70cd1284dc4d386f2e8a745a7ed4176052bd0c22035f30fa95e",
+    "experiments/edit-factors-v1/generated/P05-navy_cable-r2.call.json": "bc87f71bf9a0f9c26df68d57627147a94f6356289a62fe0f420705fc71c48d50",
+    "experiments/edit-factors-v1/generated/P06-gray_cable-r2.png": "f9b9adc11afa36e6b44110089a418641dc5080d2b214e74cbf5e68246e42f08f",
+    "experiments/edit-factors-v1/generated/P06-gray_cable-r2.call.json": "44430fe3477875e77b8b85f29907a68e7fa1dd8b61243db49863a05777ddf78b",
+    "experiments/edit-factors-v1/generated/P05-navy_original-r2.png": "84b30b5eb87c82498297b8f65885928a8dd5bbf2766498208df2bd4f7ca1e775",
+    "experiments/edit-factors-v1/generated/P05-navy_original-r2.call.json": "8b5813c2884b7b4b0298a2ba570631b1cf8153eb7bf5228842bd3ea3fb1183c5",
+    "experiments/edit-factors-v1/generated/P04-gray_original-r2.png": "d1c7870f550cb31f92d855ae8e5bf024661b4279780df9c2e9291d2ac1035c1c",
+    "experiments/edit-factors-v1/generated/P04-gray_original-r2.call.json": "7152549caff9d5a9b827ab54644d0aa47f0740273109a013c19dce72f2f63004",
+    "experiments/edit-factors-v1/generated/P05-gray_cable-r2.png": "df749edc5d21b8543ad83ca80f7daf9ce1bd246ccd24042b0da85ad5dffd57a4",
+    "experiments/edit-factors-v1/generated/P05-gray_cable-r2.call.json": "6ecddae1e1d5aa26d2fb14bc7b387b63eca908082415c7dca2e6141e4408000d",
+    "experiments/edit-factors-v1/generated/P04-navy_cable-r2.png": "6dbe61643b1715afbb276e305ec9f62abdcd8694695375e6746adb984dae170d",
+    "experiments/edit-factors-v1/generated/P04-navy_cable-r2.call.json": "421e6546ab21791e37c6f9c458044773507ec046af46cf778deaf2378553dc52",
+    "experiments/edit-factors-v1/generated/P04-navy_original-r2.png": "31cd8b039d0e96a41f629cfd39696f84a49b34bbbbfb33365d2950dd630c9c37",
+    "experiments/edit-factors-v1/generated/P04-navy_original-r2.call.json": "0a6aef54f36be5aa1a64353048d84b1b452f760f73d6263eaffc36a108d9cb27",
+    "experiments/edit-factors-v1/generated/P06-navy_cable-r2.png": "fc354cbda2a4188192a5825e68a64ed52f03b411ef58793ed62a1df0dd38187e",
+    "experiments/edit-factors-v1/generated/P06-navy_cable-r2.call.json": "7df57a62a2b4d36c99d11e262c343f3b7b408cbe12ae6347bde3d46ea5c83fd0",
+    "experiments/edit-factors-v1/generated/P06-navy_original-r2.png": "0ff6c97087679a9fadf0209ee62b427fd47be71f4564fc338cbb809e82c8bef1",
+    "experiments/edit-factors-v1/generated/P06-navy_original-r2.call.json": "aa021b324563eeca630fcaa1f61a4f36b19f318df126b9c2475575acdc002434",
+    "experiments/edit-factors-v1/generated/P04-gray_cable-r2.png": "ceec4f498bdeed6f4baf41963845597e703f9e364af7afd4f2e7b55988fb8a75",
+    "experiments/edit-factors-v1/generated/P04-gray_cable-r2.call.json": "aab7fed077c43b4a3ca9e1cf3c2f205cdf3a4d24d504dd86ef63f3a255b77a28",
+    "experiments/edit-factors-v1/generated/P05-gray_original-r2.png": "deac1324c9655e8da88b20a6ed615d77dd85ba6b31600585b77127a0c8f97d60",
+    "experiments/edit-factors-v1/generated/P05-gray_original-r2.call.json": "94ad136d80c75f5967cc713194c0619d40b66aaa600d781087058490c49843d2"
+  },
+  "people": {
+    "P05": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
+      "roi": [
+        352,
+        72,
+        672,
+        432
+      ],
+      "skin_regions": {
+        "forehead": [
+          453,
+          142,
+          563,
+          174
+        ],
+        "cheek_viewer_left": [
+          407,
+          270,
+          439,
+          300
+        ],
+        "cheek_viewer_right": [
+          583,
+          270,
+          615,
+          300
+        ]
+      },
+      "reference_sha256": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2"
+    },
+    "P06": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P06/reference.png",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          132,
+          552,
+          164
+        ],
+        "cheek_viewer_left": [
+          405,
+          264,
+          437,
+          296
+        ],
+        "cheek_viewer_right": [
+          569,
+          264,
+          601,
+          296
+        ]
+      },
+      "reference_sha256": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767"
+    },
+    "P04": {
+      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+      "roi": [
+        352,
+        88,
+        672,
+        448
+      ],
+      "skin_regions": {
+        "forehead": [
+          452,
+          144,
+          568,
+          178
+        ],
+        "cheek_viewer_left": [
+          412,
+          264,
+          448,
+          306
+        ],
+        "cheek_viewer_right": [
+          572,
+          264,
+          604,
+          306
+        ]
+      }
+    }
+  },
+  "device": "cpu",
+  "threads": 2,
+  "packages": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "numpy": "1.26.4",
+    "lpips": "0.1.4",
+    "Pillow": "10.2.0",
+    "scipy": "1.17.1",
+    "scikit-image": "0.24.0"
+  },
+  "generation_model_version": "not_exposed",
+  "generation_seed": "not_exposed",
+  "generation_tool": "image_gen.imagegen",
+  "complete": true
+}

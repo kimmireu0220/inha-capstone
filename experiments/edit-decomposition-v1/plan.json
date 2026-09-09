@@ -1,0 +1,139 @@
+{
+  "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+  "reference_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "roi": [
+    352,
+    88,
+    672,
+    448
+  ],
+  "protocol_sha256": "7ae73ccd8292af930625afed970b9b686bf6ecb43e54567fdc4025e081e68ce6",
+  "jobs": [
+    {
+      "id": "batch-r1-s1",
+      "arm": "batch",
+      "repeat": 1,
+      "stage": 1,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/batch-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "sequential-r1-s1",
+      "arm": "sequential",
+      "repeat": 1,
+      "stage": 1,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- Change only the existing long-sleeve crewneck shirt color to navy blue; keep its shape and fabric texture."
+    },
+    {
+      "id": "sequential-r1-s2",
+      "arm": "sequential",
+      "repeat": 1,
+      "stage": 2,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r1-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r1-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- Change the plain studio background to a uniform pale blue; keep lighting on the person unchanged."
+    },
+    {
+      "id": "sequential-r1-s3",
+      "arm": "sequential",
+      "repeat": 1,
+      "stage": 3,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r1-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r1-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "no_change-r1-s1",
+      "arm": "no_change",
+      "repeat": 1,
+      "stage": 1,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "no_change-r1-s2",
+      "arm": "no_change",
+      "repeat": 1,
+      "stage": 2,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "no_change-r1-s3",
+      "arm": "no_change",
+      "repeat": 1,
+      "stage": 3,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r1-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "batch-r2-s1",
+      "arm": "batch",
+      "repeat": 2,
+      "stage": 1,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/batch-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "sequential-r2-s1",
+      "arm": "sequential",
+      "repeat": 2,
+      "stage": 1,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- Change only the existing long-sleeve crewneck shirt color to navy blue; keep its shape and fabric texture."
+    },
+    {
+      "id": "sequential-r2-s2",
+      "arm": "sequential",
+      "repeat": 2,
+      "stage": 2,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r2-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r2-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- Change the plain studio background to a uniform pale blue; keep lighting on the person unchanged."
+    },
+    {
+      "id": "sequential-r2-s3",
+      "arm": "sequential",
+      "repeat": 2,
+      "stage": 3,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r2-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/sequential-r2-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side."
+    },
+    {
+      "id": "no_change-r2-s1",
+      "arm": "no_change",
+      "repeat": 2,
+      "stage": 1,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s1.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "no_change-r2-s2",
+      "arm": "no_change",
+      "repeat": 2,
+      "stage": 2,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s1.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s2.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    },
+    {
+      "id": "no_change-r2-s3",
+      "arm": "no_change",
+      "repeat": 2,
+      "stage": 3,
+      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s2.png",
+      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/edit-decomposition-v1/generated/no_change-r2-s3.png",
+      "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and exact 1024 x 1536 pixel dimensions. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Make no edits at all. Reproduce the supplied image as faithfully as possible, keeping all content, colors, textures and details unchanged. Do not add, remove or replace anything."
+    }
+  ]
+}

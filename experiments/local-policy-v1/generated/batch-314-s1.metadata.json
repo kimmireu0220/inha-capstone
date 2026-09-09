@@ -1,0 +1,29 @@
+{
+    "mflux_version": "0.19.1",
+    "model": "black-forest-labs/FLUX.2-klein-4B",
+    "base_model": "None",
+    "seed": 314,
+    "steps": 4,
+    "guidance": 1.0,
+    "height": 768,
+    "width": 512,
+    "precision": "mlx.core.bfloat16",
+    "quantize": 4,
+    "generation_time_seconds": 78.97,
+    "created_at": "2026-09-09T21:00:05.941268",
+    "lora_paths": null,
+    "lora_scales": null,
+    "image_path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/local-policy-v1/reference.png",
+    "image_paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/local-policy-v1/reference.png"
+    ],
+    "image_strength": null,
+    "controlnet_image_path": null,
+    "controlnet_strength": null,
+    "masked_image_path": null,
+    "depth_image_path": null,
+    "redux_image_paths": null,
+    "redux_image_strengths": null,
+    "prompt": "Edit only the supplied image. Return one photorealistic image, preserving the input framing and portrait aspect ratio. Preserve the face, facial features, natural wrinkles and pores, expression, gaze, hair, body, pose, hands, trousers and lighting on the person. Do not beautify, smooth, retouch, sharpen or restyle the face. No text, logos or watermarks. Apply the following complete current requirements; preserve everything else:\n- The existing long-sleeve crewneck shirt is navy blue; keep its shape and fabric texture.\n- The plain studio background is uniform pale blue; keep lighting on the person unchanged.\n- Add exactly one small silver circular pin on the chest on the viewer-right side.",
+    "negative_prompt": null
+}

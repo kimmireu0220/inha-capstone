@@ -1,0 +1,345 @@
+{
+  "respondents": 1,
+  "images": 12,
+  "effective_answers": 24,
+  "reassessed_answers": 2,
+  "changes": [
+    {
+      "person": "P04",
+      "arm": "batch",
+      "repeat": 1,
+      "old_face": 0,
+      "new_face": 1
+    },
+    {
+      "person": "P04",
+      "arm": "SBP",
+      "repeat": 1,
+      "old_face": 0,
+      "new_face": 1
+    }
+  ],
+  "groups": {
+    "batch": {
+      "face": {
+        "1": 4,
+        "0": 2
+      },
+      "preservation": {
+        "2": 6
+      }
+    },
+    "SBP": {
+      "face": {
+        "2": 2,
+        "1": 4
+      },
+      "preservation": {
+        "0": 5,
+        "2": 1
+      }
+    }
+  },
+  "paired_comparisons": {
+    "face": {
+      "tie": 2,
+      "batch_better": 4
+    },
+    "preservation": {
+      "tie": 1,
+      "batch_better": 5
+    }
+  },
+  "correlations": [
+    {
+      "human_item": "face",
+      "metric": "face/mae",
+      "mode": "fixed",
+      "spearman_rho": -0.1254363015010636
+    },
+    {
+      "human_item": "face",
+      "metric": "face/ssim",
+      "mode": "fixed",
+      "spearman_rho": -0.3344968040028363
+    },
+    {
+      "human_item": "face",
+      "metric": "face/lpips",
+      "mode": "fixed",
+      "spearman_rho": 0.5017452060042544
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/mae",
+      "mode": "fixed",
+      "spearman_rho": -0.3344968040028363
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/ssim",
+      "mode": "fixed",
+      "spearman_rho": -0.2508726030021272
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/highpass_mae",
+      "mode": "fixed",
+      "spearman_rho": -0.1254363015010636
+    },
+    {
+      "human_item": "face",
+      "metric": "face/mae",
+      "mode": "1",
+      "spearman_rho": -0.1254363015010636
+    },
+    {
+      "human_item": "face",
+      "metric": "face/ssim",
+      "mode": "1",
+      "spearman_rho": -0.543557306504609
+    },
+    {
+      "human_item": "face",
+      "metric": "face/lpips",
+      "mode": "1",
+      "spearman_rho": 0.45993310550389993
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/mae",
+      "mode": "1",
+      "spearman_rho": -0.3763089045031908
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/ssim",
+      "mode": "1",
+      "spearman_rho": -0.3344968040028363
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/highpass_mae",
+      "mode": "1",
+      "spearman_rho": 0.0
+    },
+    {
+      "human_item": "face",
+      "metric": "face/mae",
+      "mode": "3",
+      "spearman_rho": -0.08362420100070908
+    },
+    {
+      "human_item": "face",
+      "metric": "face/ssim",
+      "mode": "3",
+      "spearman_rho": -0.543557306504609
+    },
+    {
+      "human_item": "face",
+      "metric": "face/lpips",
+      "mode": "3",
+      "spearman_rho": 0.45993310550389993
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/mae",
+      "mode": "3",
+      "spearman_rho": -0.3763089045031908
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/ssim",
+      "mode": "3",
+      "spearman_rho": -0.3344968040028363
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/highpass_mae",
+      "mode": "3",
+      "spearman_rho": 0.16724840200141816
+    },
+    {
+      "human_item": "face",
+      "metric": "face/mae",
+      "mode": "6",
+      "spearman_rho": -0.04181210050035454
+    },
+    {
+      "human_item": "face",
+      "metric": "face/ssim",
+      "mode": "6",
+      "spearman_rho": -0.45993310550389993
+    },
+    {
+      "human_item": "face",
+      "metric": "face/lpips",
+      "mode": "6",
+      "spearman_rho": 0.6271815075053181
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/mae",
+      "mode": "6",
+      "spearman_rho": -0.3763089045031908
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/ssim",
+      "mode": "6",
+      "spearman_rho": -0.3763089045031908
+    },
+    {
+      "human_item": "face",
+      "metric": "skin/highpass_mae",
+      "mode": "6",
+      "spearman_rho": 0.1254363015010636
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/mae",
+      "mode": "fixed",
+      "spearman_rho": -0.4162052056699595
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/ssim",
+      "mode": "fixed",
+      "spearman_rho": 0.6610317972405239
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/lpips",
+      "mode": "fixed",
+      "spearman_rho": -0.7099971155546368
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/mae",
+      "mode": "fixed",
+      "spearman_rho": -0.4162052056699595
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/ssim",
+      "mode": "fixed",
+      "spearman_rho": 0.7099971155546368
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/highpass_mae",
+      "mode": "fixed",
+      "spearman_rho": -0.4162052056699595
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/mae",
+      "mode": "1",
+      "spearman_rho": -0.4162052056699595
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/ssim",
+      "mode": "1",
+      "spearman_rho": 0.8568930704969754
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/lpips",
+      "mode": "1",
+      "spearman_rho": -0.7589624338687496
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/mae",
+      "mode": "1",
+      "spearman_rho": -0.3672398873558466
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/ssim",
+      "mode": "1",
+      "spearman_rho": 0.7099971155546368
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/highpass_mae",
+      "mode": "1",
+      "spearman_rho": -0.4651705239840723
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/mae",
+      "mode": "3",
+      "spearman_rho": -0.4162052056699595
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/ssim",
+      "mode": "3",
+      "spearman_rho": 0.5141358422981853
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/lpips",
+      "mode": "3",
+      "spearman_rho": -0.6610317972405239
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/mae",
+      "mode": "3",
+      "spearman_rho": -0.3672398873558466
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/ssim",
+      "mode": "3",
+      "spearman_rho": 0.612066478926411
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/highpass_mae",
+      "mode": "3",
+      "spearman_rho": -0.4651705239840723
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/mae",
+      "mode": "6",
+      "spearman_rho": -0.4162052056699595
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/ssim",
+      "mode": "6",
+      "spearman_rho": 0.26930925072762085
+    },
+    {
+      "human_item": "preservation",
+      "metric": "face/lpips",
+      "mode": "6",
+      "spearman_rho": -0.612066478926411
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/mae",
+      "mode": "6",
+      "spearman_rho": -0.3672398873558466
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/ssim",
+      "mode": "6",
+      "spearman_rho": 0.3182745690417337
+    },
+    {
+      "human_item": "preservation",
+      "metric": "skin/highpass_mae",
+      "mode": "6",
+      "spearman_rho": -0.26930925072762085
+    }
+  ],
+  "recheck_answer_timestamp_gap_seconds": 3.94,
+  "note": "Same respondent reassessment after original results were discussed. Original answers retained; not new independent observations."
+}

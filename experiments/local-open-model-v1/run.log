@@ -1,0 +1,23 @@
+Downloading model from HuggingFace: Runpod/FLUX.2-klein-4B-mflux-4bit...
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:   9%|▉         | 1/11 [00:00<00:03,  2.91it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:  18%|█▊        | 2/11 [00:00<00:02,  3.82it/s]Fetching 11 files:  45%|████▌     | 5/11 [00:00<00:00,  7.74it/s]Fetching 11 files:  55%|█████▍    | 6/11 [00:02<00:02,  1.78it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:03<00:02,  1.41it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:49<00:39, 13.04s/it]Fetching 11 files:  82%|████████▏ | 9/11 [01:14<00:32, 16.44s/it]Fetching 11 files:  91%|█████████ | 10/11 [01:29<00:16, 16.19s/it]Fetching 11 files: 100%|██████████| 11/11 [01:31<00:00, 11.97s/it]Fetching 11 files: 100%|██████████| 11/11 [01:31<00:00,  8.32s/it]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:46<02:17, 46.00s/it] 50%|█████     | 2/4 [01:30<01:30, 45.36s/it] 75%|███████▌  | 3/4 [02:12<00:43, 43.55s/it]100%|██████████| 4/4 [02:53<00:00, 42.48s/it]100%|██████████| 4/4 [02:53<00:00, 43.29s/it]
+Peak MLX memory: 6.15 GB
+      278.88 real         9.00 user        29.72 sys
+          2744958976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              692683  page reclaims
+                5362  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                2501  messages sent
+              579523  messages received
+                   0  signals received
+                8902  voluntary context switches
+              474212  involuntary context switches
+        121892105576  instructions retired
+         94241100412  cycles elapsed
+          6743664320  peak memory footprint
