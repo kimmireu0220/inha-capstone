@@ -45,7 +45,7 @@ while i<len(lines):
   m=re.match(r'!\[(.*?)\]\((.*?)\)',line)
   d.add_picture(str(ROOT/m[2]),width=Cm(16.4));d.paragraphs[-1].paragraph_format.keep_with_next=True
   d.add_paragraph(m[1],'Caption')
- elif line.startswith('# '):d.add_paragraph(line[2:],'Title')
+ elif line.startswith('# '):d.add_paragraph(line[2:].replace('원본 기반 재생성 비교','\n원본 기반 재생성 비교'),'Title')
  elif line.startswith('### '):d.add_paragraph(line[4:],'Heading 2')
  elif line.startswith('## '):d.add_paragraph(line[3:],'Heading 1')
  else:d.add_paragraph(line)

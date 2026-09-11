@@ -1,6 +1,6 @@
-# 비얼굴 순차 이미지 편집에서 얼굴 변화와 원본 기반 재생성의 탐색적 비교
+# 반복 이미지 편집에서의 얼굴 보존과 원본 기반 재생성 비교
 
-An Exploratory Comparison of Facial Change and Original-Referenced Regeneration in Sequential Non-Facial Image Editing
+A Comparison of Facial Preservation and Original-Referenced Regeneration in Iterative Image Editing
 
 저자: 김미르, 장윤석 (________________, ________________)
 

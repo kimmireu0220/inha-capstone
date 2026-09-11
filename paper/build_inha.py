@@ -30,7 +30,7 @@ def center(text,style=None):
 def columns(num):
  sec=d.add_section(WD_SECTION_START.CONTINUOUS);cols=sec._sectPr.find(qn('w:cols'));cols.set(qn('w:num'),str(num));cols.set(qn('w:space'),'500');return sec
 
-center(s.splitlines()[0][2:].replace('원본 기반 재생성의 탐색적 비교','\n원본 기반 재생성의 탐색적 비교'),'Title').paragraph_format.line_spacing=Pt(24)
+center(s.splitlines()[0][2:].replace('원본 기반 재생성 비교','\n원본 기반 재생성 비교'),'Title').paragraph_format.line_spacing=Pt(24)
 center(s.splitlines()[2],'Subtitle').paragraph_format.line_spacing=Pt(18)
 center(auth['korean']).paragraph_format.space_before=Pt(12)
 center('('+auth['english']+')')
