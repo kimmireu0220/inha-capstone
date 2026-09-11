@@ -1,6 +1,8 @@
 # 논문 원고 — 2026-09-11
 
-현재 자료로 작성한 한국어 탐색적 실험 논문이다. 외부 제출이나 학술지 게재는 하지 않았다.
+현재 자료로 작성한 한국어 탐색적 실험 논문이다.
+
+**최신 편집본: [인하대 사례 형식 PDF](manuscript.inha.pdf) · [Word](manuscript.inha.docx)**. 사용자 제공 안남혁 교수 지도 논문 5편의 형식을 적용했다. 저자·지도교수 정보는 미확인 빈칸이다. [형식 근거](INHA_FORMAT.md). 외부 제출이나 학술지 게재는 하지 않았다.
 
 - [원고 Markdown](manuscript.ko.md)
 - [편집 가능한 Word](manuscript.ko.docx)
