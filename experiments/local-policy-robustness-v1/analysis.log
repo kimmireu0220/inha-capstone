@@ -1,0 +1,118 @@
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+{
+  "fixed": {
+    "batch": {
+      "face": {
+        "mae": 0.1351664513349533,
+        "ssim": 0.8217148780822754,
+        "lpips": 0.09131259098649025
+      },
+      "skin": {
+        "mae": 0.06314609686862312,
+        "ssim": 0.7893128203765896,
+        "highpass_mae": 0.011294682708514088,
+        "residual_mae": 0.02772068241789722
+      }
+    },
+    "sequential": {
+      "face": {
+        "mae": 0.14017992466688156,
+        "ssim": 0.7171382308006287,
+        "lpips": 0.1244547925889492
+      },
+      "skin": {
+        "mae": 0.06231910723759153,
+        "ssim": 0.6684367000536043,
+        "highpass_mae": 0.015116158094366686,
+        "residual_mae": 0.03989353097380295
+      }
+    }
+  },
+  "0.5": {
+    "batch": {
+      "face": {
+        "mae": 0.1351664513349533,
+        "ssim": 0.8217148780822754,
+        "lpips": 0.09131259098649025
+      },
+      "skin": {
+        "mae": 0.06314609686862312,
+        "ssim": 0.7893128203765896,
+        "highpass_mae": 0.011294682708514088,
+        "residual_mae": 0.02772068241789722
+      }
+    },
+    "sequential": {
+      "face": {
+        "mae": 0.13973844796419144,
+        "ssim": 0.7199950814247131,
+        "lpips": 0.12327765300869942
+      },
+      "skin": {
+        "mae": 0.06325182542985525,
+        "ssim": 0.6609359010205309,
+        "highpass_mae": 0.015449831092401462,
+        "residual_mae": 0.03978738326082344
+      }
+    }
+  },
+  "1.5": {
+    "batch": {
+      "face": {
+        "mae": 0.1351664513349533,
+        "ssim": 0.8217148780822754,
+        "lpips": 0.09131259098649025
+      },
+      "skin": {
+        "mae": 0.06314609686862312,
+        "ssim": 0.7893128203765896,
+        "highpass_mae": 0.011294682708514088,
+        "residual_mae": 0.02772068241789722
+      }
+    },
+    "sequential": {
+      "face": {
+        "mae": 0.13973844796419144,
+        "ssim": 0.7199950814247131,
+        "lpips": 0.12327765300869942
+      },
+      "skin": {
+        "mae": 0.06325182542985525,
+        "ssim": 0.6609359010205309,
+        "highpass_mae": 0.015449831092401462,
+        "residual_mae": 0.03978738326082344
+      }
+    }
+  },
+  "3": {
+    "batch": {
+      "face": {
+        "mae": 0.13930392265319824,
+        "ssim": 0.7807188332080841,
+        "lpips": 0.09503034874796867
+      },
+      "skin": {
+        "mae": 0.06498538947225932,
+        "ssim": 0.7632776480795747,
+        "highpass_mae": 0.012218061806634067,
+        "residual_mae": 0.027466893867045324
+      }
+    },
+    "sequential": {
+      "face": {
+        "mae": 0.14122049510478973,
+        "ssim": 0.6975324749946594,
+        "lpips": 0.1260233148932457
+      },
+      "skin": {
+        "mae": 0.06081161006015963,
+        "ssim": 0.6546031927076399,
+        "highpass_mae": 0.015548858537941294,
+        "residual_mae": 0.03818917888256104
+      }
+    }
+  }
+}

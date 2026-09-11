@@ -4,6 +4,11 @@
 
 **최신 범위·수치·구현 상태: [현재 상태](CURRENT_STATUS.md)**
 
+## 논문 원고
+
+- [현재 실험 기반 한국어 논문: Markdown·Word·PDF](paper/README.md)
+- [로컬 피부 영역·위치 보정 사후 분석](experiments/local-policy-robustness-v1/RESULTS.md)
+
 ## 발표 자료
 
 - [초기 연구 발표 자료 PowerPoint — 후속 실험 미반영](artifacts/팀_연구_진행상황_상세본_GitHub_v2.pptx)

@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-10",
+  "scope": "Numerical transcription checks and source hashes; not scientific external validation",
+  "passed": true,
+  "manuscript_sha256": "c8614fd26fdf59dfa642be4e1af03a386636eafa6bde07ae81736d0a4f0af1a7",
+  "sources": [
+    {
+      "sections": "3.1,4.1,4.3",
+      "path": "experiments/nonhuman-followup-v1/RESULTS.md",
+      "sha256": "5e46170704a0a45bd8142be3296250e7004c5efd3fa63f943c763261510d2be3"
+    },
+    {
+      "sections": "3.2,4.2",
+      "path": "experiments/autonomous-nonhuman-v1/RESULTS.md",
+      "sha256": "d748156b0766fd202072252532260ea4ec8a730f8bce0706995ed147b3f13a20"
+    },
+    {
+      "sections": "4.3 human",
+      "path": "experiments/followup-human-v1/RECHECKED_RESULTS.md",
+      "sha256": "1a2da89b0397cf52f59b2ed7b688c4091732819c7746c94cb6f07747599b5c4d"
+    },
+    {
+      "sections": "4.3 AI",
+      "path": "experiments/followup-ai-v1/summary.json",
+      "sha256": "cdccb03d6dc4de3575d09508c41a1024dd03d334d687fc964ecb8bb5e3d3e44b"
+    },
+    {
+      "sections": "4.4",
+      "path": "experiments/local-policy-v1/results.json",
+      "sha256": "241d466e6e663849547b722353b57774363475ca262baaca6702f2144ee92dcc"
+    },
+    {
+      "sections": "4.5",
+      "path": "experiments/local-policy-robustness-v1/results.json",
+      "sha256": "05189429f03a501329f02ed14393d97948a200ca8e9dde275e73c7f35a8779e6"
+    },
+    {
+      "sections": "5",
+      "path": "local-studio/checks/RECHECK.md",
+      "sha256": "5abd04f6b9b0af17a97b8a23ee31ab7ba23fa4cb9b6ea31c4eb074f6802546c9"
+    }
+  ],
+  "table6_checks": [
+    {
+      "table": 6,
+      "mode": "fixed",
+      "arm": "batch",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "fixed",
+      "arm": "sequential",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "0.5",
+      "arm": "batch",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "0.5",
+      "arm": "sequential",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "1.5",
+      "arm": "batch",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "1.5",
+      "arm": "sequential",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "3",
+      "arm": "batch",
+      "numeric_cells": 5,
+      "passed": true
+    },
+    {
+      "table": 6,
+      "mode": "3",
+      "arm": "sequential",
+      "numeric_cells": 5,
+      "passed": true
+    }
+  ],
+  "local_final_rows_checked": 4,
+  "followup_lpips_and_color_values_checked": 10,
+  "ai_counts_checked": true,
+  "posthoc_analysis_verified": true
+}
