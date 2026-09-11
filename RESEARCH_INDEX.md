@@ -11,6 +11,8 @@
 
 ## 발표 자료
 
+- [기존 Google Slides — 종합설계_9월](https://docs.google.com/presentation/d/1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8/edit)
+- [발표 자료 위치와 수정 기록](artifacts/README.md)
 - [초기 연구 발표 자료 PowerPoint — 후속 실험 미반영](artifacts/팀_연구_진행상황_상세본_GitHub_v2.pptx)
 - [실제 프롬프트와 단계별 상세 수치](artifacts/실험_프롬프트와_상세수치.md)
 - [연구 질문과 현재 범위](RESEARCH_DESIGN.md)
