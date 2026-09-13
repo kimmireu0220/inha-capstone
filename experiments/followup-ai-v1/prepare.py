@@ -8,8 +8,8 @@ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def save(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 def main():
     assert not (ROOT/'private/key.json').exists()
-    data=json.loads((REPO/'evaluation/app/followup-survey/data.json').read_text())
-    items=[dict(source_id=c['id'],reference=str(REPO/'evaluation/public'/c['reference'].lstrip('/')),path=str(REPO/'evaluation/public'/c['candidate'].lstrip('/')),roi=c['roi'],kind='candidate') for c in data]
+    data=json.loads((ROOT/'source-key.json').read_text())
+    items=[dict(source_id=c['source_id'],reference=str(REPO/c['reference']),path=str(REPO/c['path']),roi=c['roi'],kind='candidate') for c in data if c['kind']=='candidate']
     seen=set()
     for c in items.copy():
         h=sha(c['reference'])

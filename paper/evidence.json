@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-13",
   "scope": "Numerical transcription checks and source hashes; not scientific external validation",
   "passed": true,
-  "manuscript_sha256": "367ec50179d12c9c2d5bce9bce4293019ed036543a9fd454bb6c636f96435ca2",
+  "manuscript_sha256": "f431b73b523f27a904d64e7c63d177e02fd99b3abd9aed9a5c42f4678bda0bfa",
   "sources": [
     {
       "sections": "3.1,4.1,4.3",
       "path": "experiments/nonhuman-followup-v1/RESULTS.md",
-      "sha256": "5e46170704a0a45bd8142be3296250e7004c5efd3fa63f943c763261510d2be3"
+      "sha256": "11dad779324c37d5d97c97a40bc3d1178e3ba6b013d6f1faabedf8829f4af5e8"
     },
     {
       "sections": "3.2,4.2",
@@ -15,14 +15,9 @@
       "sha256": "d748156b0766fd202072252532260ea4ec8a730f8bce0706995ed147b3f13a20"
     },
     {
-      "sections": "4.3 human",
-      "path": "experiments/followup-human-v1/RECHECKED_RESULTS.md",
-      "sha256": "1a2da89b0397cf52f59b2ed7b688c4091732819c7746c94cb6f07747599b5c4d"
-    },
-    {
       "sections": "4.3 AI",
       "path": "experiments/followup-ai-v1/summary.json",
-      "sha256": "cdccb03d6dc4de3575d09508c41a1024dd03d334d687fc964ecb8bb5e3d3e44b"
+      "sha256": "b10ca8cae42c16a03bf5d88aab2cbdb684df46fad5b05977c84d2213457f22ee"
     },
     {
       "sections": "4.4",
@@ -38,6 +33,16 @@
       "sections": "5",
       "path": "local-studio/checks/RECHECK.md",
       "sha256": "5abd04f6b9b0af17a97b8a23ee31ab7ba23fa4cb9b6ea31c4eb074f6802546c9"
+    },
+    {
+      "sections": "5.1 actual generation",
+      "path": "local-studio/verification.json",
+      "sha256": "4859db2d599b70ada405601440e8901e8a269c3b7d5090f9e9ca6147b3100f37"
+    },
+    {
+      "sections": "5.1 UI",
+      "path": "local-studio/checks/ui-verification.json",
+      "sha256": "0c5ea98df1bc7f2cd0ccb79c3a656e744ef4689ca6a07fe5f4773ebbbc59f7e4"
     }
   ],
   "table6_checks": [

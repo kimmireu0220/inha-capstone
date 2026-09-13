@@ -11,18 +11,11 @@ node_modules/
 !.env.example
 
 # Private research inputs and local runtime state
-**/human-responses/
-**/human-review/submissions/
-**/human-review/*responses*.json
-**/human-review/*analysis*.json
-**/human-face-review/*.json
-experiments/nonhuman-followup-v1/private/
 *.tsbuildinfo
 *.sqlite
 *.sqlite3
 *.db
 
-experiments/followup-human-v1/private/
 
 experiments/followup-ai-v1/private/
 
@@ -31,3 +24,5 @@ experiments/followup-ai-v1/private/
 .venv-local-prompt/
 
 local-studio/data/
+
+experiments/nonhuman-followup-v1/private/

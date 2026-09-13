@@ -57,13 +57,6 @@ for run in [1,2]:
     comparisons[f'run-{run}'] = {'agent_first_clear':onset, 'fixed_first_alarms':metrics['first_alarm_steps'][f'run-{run}'], 'confusion_against_agent_not_human_truth':confusion}
 save(EXP/'agent-review/comparison.json', {'rows':joined, 'comparisons':comparisons, 'limitation':'One agent; one identity with two dependent trajectories. No human P03 ratings. Do not report general detector accuracy.'})
 
-human = EXP/'human-review'
-human.mkdir(exist_ok=True)
-for run in [1,2]:
-    lines = [f'# 얼굴 변화 확인 — {run}회차', '', '각 얼굴을 원본과 비교해주세요. 원래 있던 주름과 귀걸이는 제외하고, 새로 생긴 부자연스러운 피부 무늬나 변형을 판단해주세요.', '', '각 단계: 없음 / 약함 / 뚜렷함 / 심함 / 판단 어려움', '']
-    for m in sorted([m for m in mapping if m['run']==run],key=lambda m:m['step']):
-        lines += [f"## {m['step']}단계", '', '| 원본 | 비교 얼굴 |', '|---|---|', f"| ![원본]({EXP}/metrics/blind-crops/reference.png) | ![비교]({EXP}/metrics/blind-crops/{m['file']}) |", '', '응답: __________', '']
-    (human/f'face-run-{run}.md').write_text('\n'.join(lines))
 intervention_ratings = EXP/'interventions/agent-review/ratings.json'
 if intervention_ratings.exists():
     imap = read(EXP/'interventions/metrics/blind-mapping.json')
@@ -83,8 +76,4 @@ if intervention_ratings.exists():
             'baseline_naturalness_disagreement':{'sequential_face_agent':sequential_rating['naturalness'], 'intervention_agent':baseline['naturalness']}
         })
     save(EXP/'interventions/agent-review/decoded.json', {'groups':decoded,'note':'Derived only; source judgments unchanged. Different agents and presentation contexts. Not consensus or human truth.'})
-for sheet in human.glob('*.md'):
-    import re
-    for target in re.findall(r'\]\((/[^)]+)\)',sheet.read_text()):
-        assert Path(target).is_file(), (sheet,target)
-print(json.dumps({'audit':'26 image logs/source bytes and all human-sheet links verified', 'comparisons':comparisons},ensure_ascii=False,indent=2))
+print(json.dumps({'audit':'26 image logs/source bytes verified', 'comparisons':comparisons},ensure_ascii=False,indent=2))

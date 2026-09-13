@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-13",
+  "passed": true,
+  "scope": "Browser functional check by development agent, not a user study or blinded image-quality rating",
+  "request": "셔츠는 남색으로, 배경은 바다로 바꿔줘.",
+  "expected_and_observed_state": {
+    "shirt_color": "navy",
+    "background": "ocean",
+    "pin": "original"
+  },
+  "generation_seconds": 101.26495623588562,
+  "seed": 281843537,
+  "output_sha256": "b78f950c7913273f565478315ef601317674adb4ff787bd7beb361311fd765fc",
+  "browser_checks": [
+    "sample selected",
+    "Korean request applied",
+    "actual generation completed",
+    "original and output displayed",
+    "download link present",
+    "manual shirt change saved",
+    "version restored original image and settings",
+    "details collapsed; primary actions visible"
+  ],
+  "project_id": "5352b03302c14d04b501612bc002c8b0",
+  "version_id": "f3f3f85284c04f628cc760909c327751",
+  "files": {
+    "dist/index.html": "a8a430c894026ec87a0fd718893df623c58b691329e8df623cdf345ae375357c",
+    "dist/app.js": "8cede9fdca9958b8f12c3b10fd31f149181fadd985444ff1607f82f0eb51954c",
+    "dist/style.css": "4b1d0dfad15de56cc930dd814879d809025fc8b666eb41d4e5cd83c025d72079"
+  }
+}

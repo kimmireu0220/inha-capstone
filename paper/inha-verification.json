@@ -1,12 +1,14 @@
 {
+  "date": "2026-09-13",
   "passed": true,
-  "table_numeric_cells_preserved": true,
   "tables": 6,
   "figures": 1,
-  "visually_reviewed_pages": 6,
-  "author_metadata_pending": false,
-  "source_content_sha256": "367ec50179d12c9c2d5bce9bce4293019ed036543a9fd454bb6c636f96435ca2",
-  "author_english_names_pending": true,
-  "title_updated": true,
-  "pages_2_to_6_pixel_identical_to_reviewed_render": true
+  "visually_reviewed_pages": {
+    "inha": 6,
+    "ko": 10
+  },
+  "human_evaluation_removed": true,
+  "site_functional_results_included": true,
+  "source_content_sha256": "f431b73b523f27a904d64e7c63d177e02fd99b3abd9aed9a5c42f4678bda0bfa",
+  "author_english_names_pending": true
 }

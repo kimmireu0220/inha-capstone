@@ -15,8 +15,6 @@
 .venv-metrics/bin/python experiments/nonhuman-followup-v1/extension-metrics/report.py
 .venv-metrics/bin/python experiments/nonhuman-followup-v1/join_reviews.py
 .venv-metrics/bin/python experiments/nonhuman-followup-v1/figures.py
-.venv-metrics/bin/python experiments/nonhuman-followup-v1/analyze_human_final.py
-.venv-metrics/bin/python -m unittest experiments/nonhuman-followup-v1/human-analysis/test_analysis.py
 ```
 
 동일 해시의 생성 요청은 출력 공유 규칙에 따라 재사용한다. P05 once9단계 실패 요청은 failure 기록을 읽어 재시도하지 않는다. collection_complete=true는 수집 종료, full_design_complete=false는 계획 중 미실행이 남았음을 뜻한다.
@@ -36,7 +34,5 @@ metrics/, agent-agreement/, extension-metrics/에는 각 계산의 manifest·검
 - joined-reviews/: 고유 얼굴 111개·관측 단계 198개·고유 최종 요구 16개 결합 및 조건부 지표 진단.
 - figures/: 원본 차이와 피부 관찰의 불일치, P04 정책 곡선.
 - literature/: 일차 문헌·실험 대조·반대 관점 주장 검토.
-- human-responses/: 제출된 사람 평가 원문.
-- human-analysis/: 사람 평가 해독, 임계값 없는 ROC-AUC와 동일 인물 쌍 비교.
 
-기존 포켓스퀘어 실패 자료와 과거 사람 응답은 현재 새 9~10단계의 근거로 재사용하지 않는다. 배제한 원문을 삭제하거나 새로운 관측으로 덮어쓰지 않는다.
+기존 포켓스퀘어 조건의 출력은 현행 9~10단계 분석에서 제외한다. 사람 응답은 프로젝트에서 삭제했으며 재현 절차에 사용하지 않는다.

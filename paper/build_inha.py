@@ -8,7 +8,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 R=Path(__file__).resolve().parent
 s=(R/'manuscript.ko.md').read_text().split('## 부록 A.')[0].strip()
-abstract='Sequential image editing may change facial regions even when the requested modifications concern clothing, backgrounds, or accessories. We compare feeding previous outputs into subsequent edits with regenerating from the original image and accumulated requirements. The initial study includes six synthetic identities and seven sequential trajectories. Follow-up controls produced 98 outputs from three of these identities; 12 selected final images were assessed using automatic metrics, one human pilot rater, and a separate AI session without access to human ratings. Batch editing yielded lower mean facial LPIPS for all three identities. The human rater judged facial appearance preserved in all six batch outputs and one of six sequential outputs, while exact human–AI degradation agreement was only 4/12. In a separate FLUX.2 Klein 4B comparison with two seeds, mean facial LPIPS was 0.091313 for batch editing and 0.124455 for sequential editing. Post-hoc skin-region analysis, however, reversed the ranking under raw MAE in some settings. These exploratory findings support original-referenced generation as a promising workflow under the tested conditions, while distinguishing reference distance, skin degradation, appearance preservation, and instruction fulfillment. A local editor implements this workflow by storing the original image separately from accumulated editing requirements.'
+abstract='We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. Recorded checks covered real generation, state changes, version restoration and 35 known request regression cases. These exploratory results do not establish general perceptual quality or user satisfaction.'
 auth=json.loads((R/'authors.json').read_text()) if (R/'authors.json').exists() else {'korean':'________________','english':'________________','advisor_korean':'________________','advisor_english':'________________'}
 d=Document();sec=d.sections[0];sec.page_width=Cm(21);sec.page_height=Cm(29.7);sec.top_margin=Cm(2);sec.bottom_margin=Cm(2);sec.left_margin=Cm(2);sec.right_margin=Cm(2)
 for name in ['Normal','Title','Subtitle','Heading 1','Heading 2','Caption']:
@@ -42,7 +42,7 @@ for label,txt in [('요약: ',ko),('Abstract: ',abstract),('Keywords: ','Sequent
 columns(2)
 lines=s.split('## 1. 서론')[1];lines='## 1. 서론'+lines
 lines=lines.splitlines();i=0;tn=0;roman=['I','II','III','IV','V','VI','VII']
-caps=['실험과 평가 범위','P04 정책별 호출·LPIPS','인물별 평균 얼굴 LPIPS','후속 사람·AI 평가','로컬 최종 얼굴 지표','피부 영역·위치 보정 민감도']
+caps=['실험과 평가 범위','P04 정책별 호출·LPIPS','인물별 평균 얼굴 LPIPS','후속 AI 평가','로컬 최종 얼굴 지표','피부 영역·위치 보정 민감도']
 while i<len(lines):
  line=lines[i]
  if not line:i+=1;continue
