@@ -1,0 +1,243 @@
+{
+  "rows": [
+    {
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+      "version": "baff64394b804e49ab67b6f14dec2f1b",
+      "artifact_dir": "generated/sequential-42-s1",
+      "seconds": 114.42216610908508,
+      "metrics": {
+        "mae": 0.038129355758428574,
+        "ssim": 0.9187924265861511,
+        "lpips": 0.020852074027061462
+      },
+      "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+      "output_sha256": "76746b45070ba0df2510e069c24dbb6075b6c6edcc4772c117b666f769d5f692",
+      "prompt_sha256": "fcb994581b7af0133654f3ebc48e27e971698d20c2f5e69261d555356c26be71"
+    },
+    {
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+      "version": "f66291ca8680472f9f247ec91bf4f359",
+      "artifact_dir": "generated/sequential-42-s2",
+      "seconds": 113.05716514587402,
+      "metrics": {
+        "mae": 0.11566094309091568,
+        "ssim": 0.8400387763977051,
+        "lpips": 0.08948789536952972
+      },
+      "input_sha256": "76746b45070ba0df2510e069c24dbb6075b6c6edcc4772c117b666f769d5f692",
+      "output_sha256": "a220f4cb70ea87f040a2327f1b75f9eb95e6ddf8ecffc30cc44f051cda0a0c39",
+      "prompt_sha256": "acfe09c12d3a56e48cef39ba7ee357963d6d26609e2cc245e8580a21715cf4e1"
+    },
+    {
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+      "version": "dc83196dcd794bc5aa9c1c16d344d856",
+      "artifact_dir": "generated/sequential-42-s3",
+      "seconds": 107.18901085853577,
+      "metrics": {
+        "mae": 0.12305931746959686,
+        "ssim": 0.7907055020332336,
+        "lpips": 0.10220164060592651
+      },
+      "input_sha256": "a220f4cb70ea87f040a2327f1b75f9eb95e6ddf8ecffc30cc44f051cda0a0c39",
+      "output_sha256": "6e8943063756aee7f54641f3da3665d577abb5766a09b57374aa1efa009697f8",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    },
+    {
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+      "version": "1cc49260efd941ae9c15299a59ab5fd3",
+      "artifact_dir": "generated/regenerate-42-s3",
+      "seconds": 106.21220707893372,
+      "metrics": {
+        "mae": 0.12012936174869537,
+        "ssim": 0.8657094836235046,
+        "lpips": 0.08145420998334885
+      },
+      "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+      "output_sha256": "e262117ccc89e19f10e855dba3164785feb70c8253dcfd8b4ca93b4a7dcec61f",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    },
+    {
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "f7bcdb7c41d24d6ba607564c2a896296",
+      "version": "268afe68fd074d72bf3cb84557287729",
+      "artifact_dir": "generated/regenerate-314-s3",
+      "seconds": 123.9394543170929,
+      "metrics": {
+        "mae": 0.12784257531166077,
+        "ssim": 0.8569510579109192,
+        "lpips": 0.08073846995830536
+      },
+      "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+      "output_sha256": "93954189149661786186b5d96fc82704ce753bbcce7a54cced38a060e9386897",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    },
+    {
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "f7bcdb7c41d24d6ba607564c2a896296",
+      "version": "378dc693ef6d416fbecc6bcca6905d70",
+      "artifact_dir": "generated/sequential-314-s1",
+      "seconds": 137.82894682884216,
+      "metrics": {
+        "mae": 0.048043619841337204,
+        "ssim": 0.9157859683036804,
+        "lpips": 0.018816642463207245
+      },
+      "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+      "output_sha256": "018fa67a03a65f8c739a4c0fe77b293435bfa4c0ee7a7294f529bc3f827b2928",
+      "prompt_sha256": "fcb994581b7af0133654f3ebc48e27e971698d20c2f5e69261d555356c26be71"
+    },
+    {
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "f7bcdb7c41d24d6ba607564c2a896296",
+      "version": "4e6563318df8488e8f8c4b0cb993ad51",
+      "artifact_dir": "generated/sequential-314-s2",
+      "seconds": 135.96976518630981,
+      "metrics": {
+        "mae": 0.13073328137397766,
+        "ssim": 0.8220860362052917,
+        "lpips": 0.09222740679979324
+      },
+      "input_sha256": "018fa67a03a65f8c739a4c0fe77b293435bfa4c0ee7a7294f529bc3f827b2928",
+      "output_sha256": "499dc5fd686fe8d0ce31de4286c922967c9ee7779bcab0a3905a5f8c52ac2275",
+      "prompt_sha256": "acfe09c12d3a56e48cef39ba7ee357963d6d26609e2cc245e8580a21715cf4e1"
+    },
+    {
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "f7bcdb7c41d24d6ba607564c2a896296",
+      "version": "efd1133068844842b46c650927cff079",
+      "artifact_dir": "generated/sequential-314-s3",
+      "seconds": 138.35503888130188,
+      "metrics": {
+        "mae": 0.13976243138313293,
+        "ssim": 0.7729084491729736,
+        "lpips": 0.1048608124256134
+      },
+      "input_sha256": "499dc5fd686fe8d0ce31de4286c922967c9ee7779bcab0a3905a5f8c52ac2275",
+      "output_sha256": "694861f6b46929eec1901fa230554023bcbc74a65d0548645d177edc7e54672d",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    }
+  ],
+  "final": [
+    {
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+      "version": "dc83196dcd794bc5aa9c1c16d344d856",
+      "artifact_dir": "generated/sequential-42-s3",
+      "seconds": 107.18901085853577,
+      "metrics": {
+        "mae": 0.12305931746959686,
+        "ssim": 0.7907055020332336,
+        "lpips": 0.10220164060592651
+      },
+      "input_sha256": "a220f4cb70ea87f040a2327f1b75f9eb95e6ddf8ecffc30cc44f051cda0a0c39",
+      "output_sha256": "6e8943063756aee7f54641f3da3665d577abb5766a09b57374aa1efa009697f8",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    },
+    {
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+      "version": "1cc49260efd941ae9c15299a59ab5fd3",
+      "artifact_dir": "generated/regenerate-42-s3",
+      "seconds": 106.21220707893372,
+      "metrics": {
+        "mae": 0.12012936174869537,
+        "ssim": 0.8657094836235046,
+        "lpips": 0.08145420998334885
+      },
+      "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+      "output_sha256": "e262117ccc89e19f10e855dba3164785feb70c8253dcfd8b4ca93b4a7dcec61f",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    },
+    {
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "f7bcdb7c41d24d6ba607564c2a896296",
+      "version": "268afe68fd074d72bf3cb84557287729",
+      "artifact_dir": "generated/regenerate-314-s3",
+      "seconds": 123.9394543170929,
+      "metrics": {
+        "mae": 0.12784257531166077,
+        "ssim": 0.8569510579109192,
+        "lpips": 0.08073846995830536
+      },
+      "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+      "output_sha256": "93954189149661786186b5d96fc82704ce753bbcce7a54cced38a060e9386897",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    },
+    {
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "f7bcdb7c41d24d6ba607564c2a896296",
+      "version": "efd1133068844842b46c650927cff079",
+      "artifact_dir": "generated/sequential-314-s3",
+      "seconds": 138.35503888130188,
+      "metrics": {
+        "mae": 0.13976243138313293,
+        "ssim": 0.7729084491729736,
+        "lpips": 0.1048608124256134
+      },
+      "input_sha256": "499dc5fd686fe8d0ce31de4286c922967c9ee7779bcab0a3905a5f8c52ac2275",
+      "output_sha256": "694861f6b46929eec1901fa230554023bcbc74a65d0548645d177edc7e54672d",
+      "prompt_sha256": "1945f0dacb10cdabefbcfc2c996e4a0da72d8cff4310dd78e9547b854bcb4c57"
+    }
+  ],
+  "means": {
+    "regenerate": {
+      "mae": 0.12398596853017807,
+      "ssim": 0.8613302707672119,
+      "lpips": 0.0810963399708271
+    },
+    "sequential": {
+      "mae": 0.1314108744263649,
+      "ssim": 0.7818069756031036,
+      "lpips": 0.10353122651576996
+    }
+  },
+  "path_seconds": {
+    "42": {
+      "regenerate": 106.21220707893372,
+      "sequential": 334.6683421134949
+    },
+    "314": {
+      "regenerate": 123.9394543170929,
+      "sequential": 412.15375089645386
+    }
+  },
+  "roi": [
+    176,
+    44,
+    336,
+    224
+  ],
+  "control": {
+    "mae": 0.0,
+    "ssim": 1.0,
+    "lpips": 0.0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-14",
+  "url": "http://localhost:8770/",
+  "passed": true,
+  "browser": "Chrome",
+  "checks": {
+    "mode_selection_persisted": true,
+    "seed_saved_42_then_314": true,
+    "generate_disabled_for_unsaved_seed": true,
+    "mode_and_seed_restored_on_project_selection": true,
+    "default_comparison_final_sequential_vs_regenerate": true,
+    "comparison_both_images_loaded": true,
+    "changing_left_version_changed_image_source": true
+  },
+  "sample_project": "5ffb9f8bbe704328a4eb51de1b838aa5",
+  "screenshots": [
+    "modes-editor.png",
+    "modes-comparison.png"
+  ],
+  "actual_generation": "../../experiments/studio-policy-v1/verification.json",
+  "unit_checks": 6,
+  "scope": "UI controls inspected in browser; eight real generations driven through the same HTTP endpoints used by UI"
+}

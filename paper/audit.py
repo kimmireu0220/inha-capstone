@@ -10,7 +10,8 @@ sources={
 '4.5':'experiments/local-policy-robustness-v1/results.json',
 '5':'local-studio/checks/RECHECK.md',
 '5.1 actual generation':'local-studio/verification.json',
-'5.1 UI':'local-studio/checks/ui-verification.json'}
+'5.1 UI':'local-studio/checks/ui-verification.json',
+'5.2':'experiments/studio-policy-v1/results.json'}
 r=json.loads((R/sources['4.5']).read_text())
 checks=[]
 for mode,arms in r['summary'].items():
@@ -26,6 +27,10 @@ ai=json.loads((R/sources['4.3 AI']).read_text());assert ai['images']==12 and ai[
 for n in ['0.076800','0.118081','0.104716','0.149267','0.119000','0.166047','0.049207','0.014057','0.013909','0.106249']:
  assert n in md and n in (R/sources['3.2,4.2']).read_text(),n
 v=json.loads((R/'experiments/local-policy-robustness-v1/verification.json').read_text());assert v['passed']
-output={'date':'2026-09-13','scope':'Numerical transcription checks and source hashes; not scientific external validation','passed':True,'manuscript_sha256':hashlib.sha256(md.encode()).hexdigest(),'sources':[{ 'sections':k,'path':p,'sha256':hashlib.sha256((R/p).read_bytes()).hexdigest()} for k,p in sources.items()],'table6_checks':checks,'local_final_rows_checked':4,'followup_lpips_and_color_values_checked':10,'ai_counts_checked':True,'posthoc_analysis_verified':True}
+site=json.loads((R/sources['5.2']).read_text())
+for row in site['final']+[{'metrics':v} for v in site['means'].values()]:
+ assert ' | '.join(f'{row["metrics"][k]:.6f}' for k in ['mae','ssim','lpips']) in md
+assert json.loads((R/'experiments/studio-policy-v1/verification.json').read_text())['passed']
+output={'date':'2026-09-14','website_final_rows_checked':4,'website_mean_rows_checked':2,'scope':'Numerical transcription checks and source hashes; not scientific external validation','passed':True,'manuscript_sha256':hashlib.sha256(md.encode()).hexdigest(),'sources':[{ 'sections':k,'path':p,'sha256':hashlib.sha256((R/p).read_bytes()).hexdigest()} for k,p in sources.items()],'table6_checks':checks,'local_final_rows_checked':4,'followup_lpips_and_color_values_checked':10,'ai_counts_checked':True,'posthoc_analysis_verified':True}
 (R/'paper/evidence.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
 print('Paper numerical transcription and source checks passed')

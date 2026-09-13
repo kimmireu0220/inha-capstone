@@ -18,7 +18,7 @@ for name in ['Heading 1','Heading 2']:d.styles[name].paragraph_format.space_befo
 pf=sec.footer.paragraphs[0];pf.alignment=WD_ALIGN_PARAGRAPH.CENTER
 f=OxmlElement('w:fldSimple');f.set(qn('w:instr'),'PAGE');pf._p.append(f)
 lines=s.splitlines();i=0;tn=0
-captions=['실험 묶음과 평가 범위','P04 정책별 호출 수와 경로 평균 거리','후속 인물별 얼굴 LPIPS','후속 AI 평가 분포','로컬 모델 최종 얼굴 지표','로컬 영역·위치 보정 민감도']
+captions=['실험 묶음과 평가 범위','P04 정책별 호출 수와 경로 평균 거리','후속 인물별 얼굴 LPIPS','후속 AI 평가 분포','로컬 모델 최종 얼굴 지표','로컬 영역·위치 보정 민감도','웹 편집기 두 모드의 최종 얼굴 지표']
 while i<len(lines):
  line=lines[i]
  if not line:i+=1;continue

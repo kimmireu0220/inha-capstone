@@ -1,0 +1,37 @@
+{
+  "protocol_sha256": "7daee2a8756f9b374e48965fdaaae8c4d1f83391a06c1a6513ace735bd7607b0",
+  "server_sha256": "d753dea8b376c62545048b079377e2d4ef4b8b15662d9447e0a182f6aa34d745",
+  "source_sha256": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+  "seeds": [
+    42,
+    314
+  ],
+  "requests": [
+    "셔츠를 남색으로 바꿔줘.",
+    "배경을 옅은 파란색으로 바꿔줘.",
+    "은색 핀 하나 추가해줘."
+  ],
+  "states": [
+    {
+      "shirt_color": "navy",
+      "background": "original",
+      "pin": "original"
+    },
+    {
+      "shirt_color": "navy",
+      "background": "pale blue",
+      "pin": "original"
+    },
+    {
+      "shirt_color": "navy",
+      "background": "pale blue",
+      "pin": "silver"
+    }
+  ],
+  "roi": [
+    176,
+    44,
+    336,
+    224
+  ]
+}

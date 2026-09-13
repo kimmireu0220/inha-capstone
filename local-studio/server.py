@@ -1,5 +1,5 @@
 """Loopback-only image editor. File-backed state, one GPU job at a time."""
-import base64,copy,io,json,os,secrets,subprocess,threading,time,uuid
+import base64,copy,hashlib,io,json,os,secrets,shutil,subprocess,threading,time,uuid
 from pathlib import Path
 from http.server import ThreadingHTTPServer,BaseHTTPRequestHandler
 from PIL import Image,ImageOps,UnidentifiedImageError
@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parent; REPO=ROOT.parent; DATA=ROOT/'data';DATA.mk
 PORT=int(os.environ.get('STUDIO_PORT','8770'));TOKEN=secrets.token_urlsafe(32)
 LOCK=threading.RLock();GPU=threading.Lock();JOBS={}
 DEFAULT={'shirt_color':'original','background':'original','pin':'original'}
+MODES={'regenerate','sequential'}
 Image.MAX_IMAGE_PIXELS=24000000
 
 def uid():return uuid.uuid4().hex
@@ -33,7 +34,23 @@ def prompt_for(s):
  if s['pin']=='original':parts.append('Keep the original accessories unchanged.')
  elif s['pin']=='none':parts.append('There must be no pin on the shirt.')
  else:parts.append('Add exactly one small '+s['pin']+' circular pin on the viewer-right chest.')
- return 'Edit only the supplied original image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n'+'\n'.join('- '+x for x in parts)
+ return 'Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n'+'\n'.join('- '+x for x in parts)
+
+def generation_options(mode,seed):
+ if not isinstance(mode,str) or mode not in MODES:raise ValueError('생성 방식을 선택해주세요.')
+ if seed is not None and (type(seed) is not int or not 0<=seed<=2147483647):raise ValueError('시드는 0~2147483647 사이의 정수로 입력해주세요.')
+ return {'mode':mode,'seed':seed}
+
+def generation_input(d,mode):
+ """Resolve the selected version, including a restored branch, before generation."""
+ p=folder(d['id'])
+ if mode=='sequential' and d['current_version']:
+  v=next((v for v in d['versions'] if v['id']==d['current_version']),None)
+  if v is None:raise ValueError('입력 버전을 찾을 수 없습니다.')
+  source=(p/v['image']).resolve()
+  if not source.is_relative_to(p.resolve()) or source.suffix!='.png':raise ValueError('입력 이미지를 확인해주세요.')
+  return source,v['id']
+ return p/'reference.png',None
 
 def create_project(raw,name):
  with Image.open(io.BytesIO(raw)) as im:
@@ -53,13 +70,20 @@ def change(pid,revision,fn):
   if d['active_job']:raise ValueError('현재 작업이 끝난 뒤 변경할 수 있습니다.')
   fn(d);d['revision']+=1;save(folder(pid)/'project.json',d);return d
 
-def start_job(pid,revision,kind,request=''):
+def start_job(pid,revision,kind,request='',options=None):
  if not GPU.acquire(blocking=False):raise ValueError('다른 작업을 처리 중입니다. 완료 후 다시 시도해주세요.')
  try:
   with LOCK:
    d=read(pid)
    if d['revision']!=revision or d['active_job']:raise ValueError('설정이 변경됐거나 작업 중입니다. 새로고침해주세요.')
-   jid=uid();job={'id':jid,'project':pid,'kind':kind,'status':'running','started':time.time(),'message':'요청을 해석하고 있어요.' if kind=='chat' else '원본에서 새 이미지를 만들고 있어요.'}
+   if kind=='image':
+    options=options or generation_options(d.get('generation_mode','regenerate'),d.get('generation_seed'))
+    # Fail before persisting a running job if a selected version is missing.
+    source,input_version=generation_input(d,options['mode'])
+    if not source.is_file():raise ValueError('입력 이미지가 없습니다.')
+    d.update(generation_mode=options['mode'],generation_seed=options['seed'])
+   jid=uid();job={'id':jid,'project':pid,'kind':kind,'status':'running','started':time.time(),'message':'요청을 해석하고 있어요.' if kind=='chat' else '이미지를 만들고 있어요.'}
+   if kind=='image':job.update(mode=options['mode'],seed=options['seed'])
    JOBS[jid]=job;d['active_job']=jid;d['revision']+=1;save(folder(pid)/'project.json',d)
   threading.Thread(target=worker,args=(job,copy.deepcopy(d),request),daemon=True).start();return job
  except Exception:GPU.release();raise
@@ -80,12 +104,15 @@ def worker(job,d,request):
     return
    result=valid_state(parsed['state'])
   else:
-   prompt=prompt_for(d['state']);(jp/'prompt.txt').write_text(prompt);seed=secrets.randbelow(2147483647)
-   cmd=[str(REPO/'.venv-local-image/bin/mflux-generate-flux2-edit'),'--model','Runpod/FLUX.2-klein-4B-mflux-4bit','--base-model','flux2-klein-4b','--quantize','4','--low-ram','--image-paths',str(p/'reference.png'),'--prompt-file',str(jp/'prompt.txt'),'--width',str(d['size'][0]),'--height',str(d['size'][1]),'--steps','4','--seed',str(seed),'--metadata','--output',str(jp/'output.png')]
+   prompt=prompt_for(d['state']);(jp/'prompt.txt').write_text(prompt)
+   seed=job['seed'] if job['seed'] is not None else secrets.randbelow(2147483647)
+   source,input_version=generation_input(d,job['mode']);shutil.copyfile(source,jp/'input.png')
+   cmd=[str(REPO/'.venv-local-image/bin/mflux-generate-flux2-edit'),'--model','Runpod/FLUX.2-klein-4B-mflux-4bit','--base-model','flux2-klein-4b','--quantize','4','--low-ram','--image-paths',str(jp/'input.png'),'--prompt-file',str(jp/'prompt.txt'),'--width',str(d['size'][0]),'--height',str(d['size'][1]),'--steps','4','--seed',str(seed),'--metadata','--output',str(jp/'output.png')]
    with (jp/'model.log').open('w') as f:proc=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,timeout=900)
    if proc.returncode or not (jp/'output.png').exists():raise ValueError('이미지를 만들지 못했습니다. 기존 이미지와 설정은 보존됐습니다.')
    with Image.open(jp/'output.png') as im:im.verify()
-   result={'id':job['id'],'parent':d['current_version'],'state':d['state'],'image':job['id']+'/output.png','seed':seed,'prompt':prompt,'created':time.time(),'seconds':time.time()-job['started']}
+   result={'id':job['id'],'parent':d['current_version'],'state':d['state'],'image':job['id']+'/output.png','seed':seed,'prompt':prompt,'created':time.time(),'seconds':time.time()-job['started'],
+           'mode':job['mode'],'input_version':input_version,'input_image':job['id']+'/input.png','input_sha256':hashlib.sha256((jp/'input.png').read_bytes()).hexdigest(),'output_sha256':hashlib.sha256((jp/'output.png').read_bytes()).hexdigest()}
   with LOCK:
    latest=read(d['id'])
    if job['kind']=='chat':
@@ -128,12 +155,17 @@ class Handler(BaseHTTPRequestHandler):
    b=json.loads(self.rfile.read(length));path=self.path
    if path=='/api/create':
     raw=(REPO/'experiments/trigger-validation-v1/P04/reference.png').read_bytes() if b.get('sample') else base64.b64decode(b['image'],validate=True)
-    return self.reply(200,create_project(raw,'연구 샘플 P04' if b.get('sample') else str(b.get('name','새 작업'))))
+    return self.reply(200,create_project(raw,str(b.get('name','연구 샘플 P04' if b.get('sample') else '새 작업'))))
    pid=b['project'];rev=b['revision']
    if path=='/api/state':
     s=valid_state(b['state']);return self.reply(200,change(pid,rev,lambda d:d.update(state=s)))
+   if path=='/api/generation-settings':
+    options=generation_options(b.get('mode'),b.get('seed'))
+    return self.reply(200,change(pid,rev,lambda d:d.update(generation_mode=options['mode'],generation_seed=options['seed'])))
    if path=='/api/restore':
     def restore(d):
+     if b['version'] is None:
+      d.update(state=dict(DEFAULT),current_version=None);return
      v=next((v for v in d['versions'] if v['id']==b['version']),None)
      if v is None:raise ValueError('버전을 찾을 수 없습니다.')
      d.update(state=copy.deepcopy(v['state']),current_version=v['id'])
@@ -142,7 +174,9 @@ class Handler(BaseHTTPRequestHandler):
     request=b.get('request','').strip()
     if not request or len(request)>1000:raise ValueError('요청을 1~1000자로 입력해주세요.')
     return self.reply(202,start_job(pid,rev,'chat',request))
-   if path=='/api/generate':return self.reply(202,start_job(pid,rev,'image'))
+   if path=='/api/generate':
+    options=generation_options(b['mode'],b.get('seed')) if 'mode' in b else None
+    return self.reply(202,start_job(pid,rev,'image',options=options))
    self.reply(404,{'error':'없는 요청입니다.'})
   except (ValueError,KeyError,UnidentifiedImageError,FileNotFoundError) as e:self.reply(400,{'error':str(e)[:240]})
   except Exception:self.reply(500,{'error':'작업을 처리하지 못했습니다.'})

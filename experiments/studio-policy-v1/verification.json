@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "outputs": 8,
+  "final_outputs": 4,
+  "input_lineage_verified": true,
+  "final_prompts_equal": true,
+  "final_states_equal": true,
+  "protocol_sha256": "7daee2a8756f9b374e48965fdaaae8c4d1f83391a06c1a6513ace735bd7607b0",
+  "analysis_sha256": "e2a21a907366afe58225d745967fcfd24abbaae89ba3ba0e13e0ec34bb90877f",
+  "server_sha256": "d753dea8b376c62545048b079377e2d4ef4b8b15662d9447e0a182f6aa34d745",
+  "reference_control": {
+    "mae": 0.0,
+    "ssim": 1.0,
+    "lpips": 0.0
+  },
+  "source": "website HTTP endpoints used by the UI"
+}

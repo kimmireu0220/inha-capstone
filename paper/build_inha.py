@@ -8,7 +8,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 R=Path(__file__).resolve().parent
 s=(R/'manuscript.ko.md').read_text().split('## 부록 A.')[0].strip()
-abstract='We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. Recorded checks covered real generation, state changes, version restoration and 35 known request regression cases. The findings characterize the dependence of input-policy effects on measurement regions and support an editor that maintains accumulated editing requirements.'
+abstract='We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. Recorded checks covered real generation, state changes, version restoration and 35 known request regression cases. A separate website-path comparison yielded mean facial LPIPS of 0.081096 for batch and 0.103531 for sequential editing across two seeds. The findings characterize the dependence of input-policy effects on measurement regions and support an editor that maintains accumulated editing requirements.'
 auth=json.loads((R/'authors.json').read_text()) if (R/'authors.json').exists() else {'korean':'________________','english':'________________','advisor_korean':'________________','advisor_english':'________________'}
 d=Document();sec=d.sections[0];sec.page_width=Cm(21);sec.page_height=Cm(29.7);sec.top_margin=Cm(2);sec.bottom_margin=Cm(2);sec.left_margin=Cm(2);sec.right_margin=Cm(2)
 for name in ['Normal','Title','Subtitle','Heading 1','Heading 2','Caption']:
@@ -42,7 +42,7 @@ for label,txt in [('요약: ',ko),('Abstract: ',abstract),('Keywords: ','Sequent
 columns(2)
 lines=s.split('## 1. 서론')[1];lines='## 1. 서론'+lines
 lines=lines.splitlines();i=0;tn=0;roman=['I','II','III','IV','V','VI','VII']
-caps=['실험과 평가 범위','P04 정책별 호출·LPIPS','인물별 평균 얼굴 LPIPS','후속 AI 평가','로컬 최종 얼굴 지표','피부 영역·위치 보정 민감도']
+caps=['실험과 평가 범위','P04 정책별 호출·LPIPS','인물별 평균 얼굴 LPIPS','후속 AI 평가','로컬 최종 얼굴 지표','피부 영역·위치 보정 민감도','웹 편집기 두 모드의 최종 얼굴 지표']
 while i<len(lines):
  line=lines[i]
  if not line:i+=1;continue
@@ -57,7 +57,7 @@ while i<len(lines):
   p=d.add_paragraph(f'표 {tn}. {caps[tn-1]}','Caption');p.paragraph_format.keep_with_next=True;p.paragraph_format.first_line_indent=Pt(0);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
   if tn==2:rows[0]=['정책','호출','고정','보정']
   if tn==3:rows[0]=['인물','일괄','순차','반복']
-  if tn==5:rows[0]=['시드·방법','MAE','SSIM','LPIPS']
+  if tn in [5,7]:rows[0]=['시드·방법','MAE','SSIM','LPIPS']
   t=d.add_table(rows=0,cols=len(rows[0]));t.autofit=False
   width=17 if wide else 8.06
   for col in t.columns:col.width=Cm(width/len(rows[0]))
