@@ -1,30 +1,28 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-18",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "slides": 36,
-  "main_slides": 24,
-  "appendix_slides": 12,
+  "slides": 32,
+  "main_slides": 22,
+  "appendix_slides": 10,
   "human_evaluation_text_matches": 0,
   "site_link": "http://localhost:8770/",
   "site_link_slides": [
+    15,
     16,
+    17,
     18,
     19,
-    20,
-    21,
-    24
+    22
   ],
-  "test_summary_slide": 17,
-  "site_policy_metrics_slide": 22,
+  "site_policy_metrics_slide": 20,
   "paper_link": "https://github.com/kimmireu0220/inha-capstone/blob/main/paper/manuscript.inha.pdf",
   "drive_saved": true,
   "verified_via": [
-    "editable UI and Drive saved indicator",
-    "36 exported PDF pages rendered and montage reviewed",
-    "new photo pages individually reviewed; all 36 footer numbers checked",
-    "PDF link annotations checked"
+    "Google Slides saved UI",
+    "32-page PDF export: deleted sections, dates and footer numbering checked",
+    "changed slide layouts visually reviewed"
   ],
-  "export_sha256": "b85f8e9724287b04fa6c1fc2accb637953a140c962c51e0d8b686ceed084dfb2",
+  "export_sha256": "60fdeb5b13d710a3fff7135ce91b8dcf9b308fb51d588f161afb8932af0363cd",
   "titles": [
     "반복 이미지 편집에서의 얼굴 보존과 원본 기반 재생성 비교",
     "순차 편집과 원본 기반 재생성: 얼굴 비교",
@@ -39,10 +37,8 @@
     "반복 생성과 피부 색 이동을 분리해 확인",
     "로컬 모델: 일괄 생성과 순차 3회 비교",
     "후속 AI 평가: 일괄 6개와 순차 6개",
-    "중간 재생성 이후의 얼굴 변화",
     "연속 요청을 기억하고, 생성 입력은 모드로 선택",
     "웹 편집기: 순차 생성 · 일괄 재생성 선택",
-    "웹 편집기 검증: 요청 처리 · 입력 연결",
     "사이트 순차 생성 과정: 시드 42",
     "사이트 순차 생성 과정: 시드 314",
     "사이트 최종 결과 비교: 시드 42",
@@ -59,14 +55,12 @@
     "부록 7. P01 전신 결과: 1–5단계",
     "부록 8. P01 전신 결과: 6–10단계",
     "부록 9. 얼굴 영역과 위치 보정",
-    "부록 10. 인물별 변화 발생 시점",
-    "부록 11. 초기 AI 평가 절차와 일치도",
-    "부록 12. 단계별 입력 이미지"
+    "부록 10. AI 평가 방법"
   ],
   "site_photo_slides": [
+    16,
+    17,
     18,
-    19,
-    20,
-    21
+    19
   ]
 }
