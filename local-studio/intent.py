@@ -11,7 +11,7 @@ def resolve(request,state):
   return {'clarification':'어느 버전으로 돌아갈까요? 왼쪽 이전 버전에서 선택해주세요.'}
  if re.search(r'머리|헤어|\bhair\b|ignore.*instructions|지시.*무시',text):return {'clarification':'셔츠 색, 배경, 핀 중 어떤 항목을 바꿀까요?'}
  if not fields(text):return {'clarification':QUESTION}
- clauses=[c.strip() for c in re.split(r'[,.;\n]|\band\b|두고|하고',text) if c.strip()]
+ clauses=[c.strip() for c in re.split(r'[,.;\n]|\band\b|두고|하고|바꾸고',text) if c.strip()]
  operations=[];unresolved=[]
  for clause in clauses:
   keys=fields(clause)

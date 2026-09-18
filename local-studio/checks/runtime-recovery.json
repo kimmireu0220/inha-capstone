@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "project": "6d31d282b91e4e0e97037ab73c8beca7",
+  "version": "4e865168b9394ce78f71ffa88e531de1",
+  "state": {
+    "shirt_color": "navy",
+    "background": "pale blue",
+    "pin": "silver"
+  },
+  "generation_seconds": 332.2859740257263,
+  "checks": [
+    "real Korean chat",
+    "real original-based generation",
+    "PNG retrieval",
+    "manual state save",
+    "restore image and state",
+    "stale revision rejection"
+  ],
+  "date": "2026-09-18",
+  "purpose": "Runtime recovery verification; excluded from paper experiment results",
+  "runtime": "Python 3.12.14 in persistent user installation",
+  "model_cache_restored": true,
+  "generation_seconds_note": "Includes first-run model download; not a performance benchmark",
+  "prior_phrase_issue": "Korean compound clause using 바꾸고 returned needs_input; added explicit clause split and reran successfully"
+}
