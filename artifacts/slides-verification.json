@@ -1,94 +1,32 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "slides": 32,
-  "main_slides": 22,
+  "slides": 33,
+  "main_slides": 23,
   "appendix_slides": 10,
-  "human_evaluation_text_matches": 0,
-  "site_link": "http://localhost:8770/",
-  "site_link_slides": [
-    15
-  ],
-  "site_policy_metrics_slide": 20,
-  "paper_link": "https://github.com/kimmireu0220/inha-capstone/blob/main/paper/manuscript.inha.pdf",
-  "drive_saved": true,
-  "verified_via": [
-    "Google Slides saved UI",
-    "32-page PDF export: deleted sections, dates and footer numbering checked",
-    "changed slide layouts visually reviewed",
-    "Final PDF: links only on slides 1, 15, 22; body text and image counts preserved"
-  ],
-  "export_sha256": "c602d55c76314e1dcb5415d33cfa2cbdcffe390ddaa8705bd6ee6fed490bec16",
-  "titles": [
-    "반복 이미지 편집에서의 얼굴 보존과 원본 기반 재생성 비교",
-    "순차 편집과 원본 기반 재생성: 얼굴 비교",
-    "두 방식의 차이는 다음 생성에 넣는 이미지",
-    "실험 범위: 합성 인물 6명",
-    "얼굴 거리: MAE · SSIM · LPIPS",
-    "P01 얼굴 변화: 1–5단계",
-    "P01 얼굴 변화: 6–10단계",
-    "P01 단계별 얼굴 거리",
-    "7개 최종 대응 비교",
-    "후속 3인물: 일괄 편집의 얼굴 LPIPS 감소",
-    "반복 생성과 피부 색 이동을 분리해 확인",
-    "로컬 모델: 일괄 생성과 순차 3회 비교",
-    "후속 AI 평가: 일괄 6개와 순차 6개",
-    "연속 요청을 기억하고, 생성 입력은 모드로 선택",
-    "웹 편집기: 순차 생성 · 일괄 재생성 선택",
-    "사이트 순차 생성 과정: 시드 42",
-    "사이트 순차 생성 과정: 시드 314",
-    "사이트 최종 결과 비교: 시드 42",
-    "사이트 최종 결과 비교: 시드 314",
-    "사이트 두 모드 비교: 같은 요청 · 같은 시드",
-    "현재 결론과 다음 검증",
-    "자료 링크 · 상세 자료는 다음 부록",
-    "부록 1. 원본 생성 프롬프트",
-    "부록 2. 공통 얼굴 보존 요청",
-    "부록 3. 1–5단계 변경 요청",
-    "부록 4. 6–10단계 변경 요청",
-    "부록 5. 순차 편집 프롬프트 예시",
-    "부록 6. 원본 기반 재생성 프롬프트",
-    "부록 7. P01 전신 결과: 1–5단계",
-    "부록 8. P01 전신 결과: 6–10단계",
-    "부록 9. 얼굴 영역과 위치 보정",
-    "부록 10. AI 평가 방법"
-  ],
-  "site_photo_slides": [
-    16,
-    17,
-    18,
-    19
-  ],
-  "paper_link_slides": [
-    1
-  ],
-  "research_link_slides": [
-    22
-  ],
-  "link_cleanup": {
-    "complete": true,
-    "verified_by": "PDF URI annotations across all 32 slides",
-    "linked_slides": [
-      1,
-      15,
-      22
+  "page_number_errors": [],
+  "expanded_comparison_slide": 21,
+  "expanded_comparison_image": "experiments/studio-multiperson-v1/comparison-P03-314.png",
+  "links_by_slide": {
+    "1": [
+      "https://github.com/kimmireu0220/inha-capstone/blob/main/paper/manuscript.inha.pdf"
     ],
-    "unexpected_link_annotations": 0,
-    "visible_content_preserved": true,
-    "images_preserved": true,
-    "targets": {
-      "1": [
-        "https://github.com/kimmireu0220/inha-capstone/blob/main/paper/manuscript.inha.pdf"
-      ],
-      "15": [
-        "http://localhost:8770/"
-      ],
-      "22": [
-        "https://github.com/kimmireu0220/inha-capstone",
-        "https://github.com/kimmireu0220/inha-capstone/blob/main/RESEARCH_INDEX.md",
-        "https://github.com/kimmireu0220/inha-capstone/blob/main/artifacts/%EC%8B%A4%ED%97%98_%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%99%80_%EC%83%81%EC%84%B8%EC%88%98%EC%B9%98.md",
-        "https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/nonhuman-followup-v1/RESULTS.md"
-      ]
-    }
-  }
+    "15": [
+      "http://localhost:8770/"
+    ],
+    "21": [
+      "https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/studio-multiperson-v1/RESULTS.md"
+    ],
+    "23": [
+      "https://github.com/kimmireu0220/inha-capstone",
+      "https://github.com/kimmireu0220/inha-capstone/blob/main/RESEARCH_INDEX.md",
+      "https://github.com/kimmireu0220/inha-capstone/blob/main/artifacts/%EC%8B%A4%ED%97%98_%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%99%80_%EC%83%81%EC%84%B8%EC%88%98%EC%B9%98.md",
+      "https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/nonhuman-followup-v1/RESULTS.md"
+    ]
+  },
+  "verified_via": [
+    "Google Slides API page element and link inspection",
+    "Google Slides API thumbnails of slides 21, 22 and 33",
+    "Paper numerical source audit"
+  ]
 }
