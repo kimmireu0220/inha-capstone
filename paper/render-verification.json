@@ -1,16 +1,17 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "inha_pages": 6,
-  "readability_pages": 7,
+  "readability_pages": 10,
   "all_pages_visually_reviewed": true,
   "korean_glyphs_present": true,
   "table7_values_verified": true,
   "pdf_hashes": {
-    "manuscript.inha.pdf": "4a10548d67644bb164cf4837a5ad614727905ab0c9920df6df6bd446e2173b53",
-    "manuscript.ko.pdf": "9f407c96e34ffc81b9bd76f7ec02bb783fbd1f8b3fdfce99b3f3949da43fb44d"
+    "manuscript.inha.pdf": "b03b0be96cf24a10262a90c9322683b4186cace2927bb239b7181161fb1cbb1e",
+    "manuscript.ko.pdf": "8f2155acfb16260b2dac20dc4cfa4ae75409812d694396876a4e7c1f672a5429"
   },
   "renderers": {
     "inha": "bundled render_docx.py / LibreOffice",
-    "readability": "Microsoft Word local PDF export; bundled runtime became unavailable"
-  }
+    "readability": "bundled render_docx.py / LibreOffice"
+  },
+  "expanded_result_values_verified": true
 }

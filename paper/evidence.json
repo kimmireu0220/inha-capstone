@@ -2,9 +2,10 @@
   "date": "2026-09-18",
   "website_final_rows_checked": 4,
   "website_mean_rows_checked": 2,
+  "website_expanded_pairs_checked": 18,
   "scope": "Numerical transcription checks and source hashes; not scientific external validation",
   "passed": true,
-  "manuscript_sha256": "4210501ea6d1fafec9560fb33c62add8af3e7e3ebf8017d651c3fcfb22b7f38a",
+  "manuscript_sha256": "e751d98735ad46d98abb567a657dbd26e82675f15e780c67dfcfafad57867f40",
   "sources": [
     {
       "sections": "3.1,4.1,4.3",
@@ -35,6 +36,11 @@
       "sections": "5.1",
       "path": "experiments/studio-policy-v1/results.json",
       "sha256": "8f089c7cbb8ea746df83000bf7107d0742f16064385da34b2941c19612f7a9c3"
+    },
+    {
+      "sections": "5.1 expanded",
+      "path": "experiments/studio-multiperson-v1/results.json",
+      "sha256": "13aa514180c4fe861d17237786a317a7141a626d962b390884687d8305f03fe1"
     }
   ],
   "table6_checks": [

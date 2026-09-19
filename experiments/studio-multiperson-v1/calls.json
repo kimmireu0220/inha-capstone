@@ -1,0 +1,1986 @@
+{
+  "projects": {
+    "P01-42-sequential": "6edca751761b4d9ab618530ea9742367",
+    "P01-42-regenerate": "18ae65551e9e46139516dbd25fb24b78",
+    "P01-314-regenerate": "36af738a494d46108ce2f6b3c4c0e7b2",
+    "P01-314-sequential": "b7cf8133015a4948bc7a685da410aeb6",
+    "P01-2026-sequential": "d5dbe483ae7f465dacef05416698615b",
+    "P01-2026-regenerate": "4f65987655a44e23adc6f83698805e70",
+    "P02-42-regenerate": "b0a7318ebaf84d71b2afc713ed974236",
+    "P02-42-sequential": "d9b76c95f69d4de3851d6468e57c2b3e",
+    "P02-314-sequential": "f7553257688d438bb8d4722b10b5a32b",
+    "P02-314-regenerate": "0be449785d9d47aca76d56b95edc8896",
+    "P02-2026-regenerate": "aa185a946a864fd7944d5470f1489b38",
+    "P02-2026-sequential": "6615fcb9df2b493d9d2b1948a6ed6faa",
+    "P03-42-sequential": "aa1adcfb8806483fbc62660acd279b03",
+    "P03-42-regenerate": "ee06674335744a3aa20069c3f1e1980d",
+    "P03-314-regenerate": "cc32ba57d6de4ce882d16a2bb0e1080b",
+    "P03-314-sequential": "6ea671f96cfb4d199e0968cb890e738e",
+    "P03-2026-sequential": "47b070f200dd4c1ca8184b1b87b44c6c",
+    "P03-2026-regenerate": "72e329146e124337be527a05bd70c7b5",
+    "P04-42-regenerate": "1f9cddbe19c04e5495c2bb03c1ce0523",
+    "P04-42-sequential": "84dcd26bf0a64f7e9e0972f7dd884a0d",
+    "P04-314-sequential": "274a867b12384329ac0ae5e50f5434d4",
+    "P04-314-regenerate": "a0cafa9a28a14ed6850163d7ac673360",
+    "P04-2026-regenerate": "7a338a1fc5914a9991d072b97746fcdd",
+    "P04-2026-sequential": "ac29481b61f3496e94bc8d4b5a969b7c",
+    "P05-42-sequential": "d0104d59be7d47b095ec754acc919588",
+    "P05-42-regenerate": "7c7bce353f6e465eb90c78d9642b32d1",
+    "P05-314-regenerate": "44156312029141c2a75cc4bcb485acfb",
+    "P05-314-sequential": "db186ce454464b35a656816360ca863b",
+    "P05-2026-sequential": "c5c9be09dd5c43d6b90e37ec714a953e",
+    "P05-2026-regenerate": "5546dfac480542e886b134b908c161e9",
+    "P06-42-regenerate": "24449e90e7a043c09e2d80b4622cedae",
+    "P06-42-sequential": "5b84f62612514ef3a0b377a84473d296",
+    "P06-314-sequential": "59af3b16f2884b0bbfe8bb9c3872290a",
+    "P06-314-regenerate": "29ae88bc0d7b43aa99a2fb3d53057382",
+    "P06-2026-regenerate": "79ab95f059214ca0aaebd235fd6b8965",
+    "P06-2026-sequential": "d5010d5adca648bd832cc5b7862b8ecf"
+  },
+  "calls": [
+    {
+      "person": "P01",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "6edca751761b4d9ab618530ea9742367",
+      "version": {
+        "id": "1d6fbea3e54542019aa162f5204820f1",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "1d6fbea3e54542019aa162f5204820f1/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789708341.7411551,
+        "seconds": 145.36604022979736,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "1d6fbea3e54542019aa162f5204820f1/input.png",
+        "input_sha256": "4046e0bc77b996329e41888139325ec0ee10a3ef35ffc72494c124c23fefdc81",
+        "output_sha256": "887d0d062c7686fd8e2d26a5c55dae7be5cfc3714552d522f57cea6d4a50752d"
+      },
+      "artifact_dir": "generated/P01-42-sequential-s1"
+    },
+    {
+      "person": "P01",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "6edca751761b4d9ab618530ea9742367",
+      "version": {
+        "id": "98c119fcb431460382eabfe820e0188d",
+        "parent": "1d6fbea3e54542019aa162f5204820f1",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "98c119fcb431460382eabfe820e0188d/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789708477.753553,
+        "seconds": 132.54238080978394,
+        "mode": "sequential",
+        "input_version": "1d6fbea3e54542019aa162f5204820f1",
+        "input_image": "98c119fcb431460382eabfe820e0188d/input.png",
+        "input_sha256": "887d0d062c7686fd8e2d26a5c55dae7be5cfc3714552d522f57cea6d4a50752d",
+        "output_sha256": "e64b53154261760ef9d924b0de86b55b1d29630cb12b8b637498a064da717d49"
+      },
+      "artifact_dir": "generated/P01-42-sequential-s2"
+    },
+    {
+      "person": "P01",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "6edca751761b4d9ab618530ea9742367",
+      "version": {
+        "id": "5f6a011d50cf44b7828a27b7e8909ca4",
+        "parent": "98c119fcb431460382eabfe820e0188d",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "5f6a011d50cf44b7828a27b7e8909ca4/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789708612.7343612,
+        "seconds": 132.3567202091217,
+        "mode": "sequential",
+        "input_version": "98c119fcb431460382eabfe820e0188d",
+        "input_image": "5f6a011d50cf44b7828a27b7e8909ca4/input.png",
+        "input_sha256": "e64b53154261760ef9d924b0de86b55b1d29630cb12b8b637498a064da717d49",
+        "output_sha256": "41a61e5b1e0bb194ee62d189f8ea756b19599874813ccfedf858a0b4cee2f828"
+      },
+      "artifact_dir": "generated/P01-42-sequential-s3"
+    },
+    {
+      "person": "P01",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "18ae65551e9e46139516dbd25fb24b78",
+      "version": {
+        "id": "2f59a84235954cd88e658318d89ad2df",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "2f59a84235954cd88e658318d89ad2df/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789708746.185039,
+        "seconds": 124.98655819892883,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "2f59a84235954cd88e658318d89ad2df/input.png",
+        "input_sha256": "4046e0bc77b996329e41888139325ec0ee10a3ef35ffc72494c124c23fefdc81",
+        "output_sha256": "70ab3c7810eb77f60ddd83f6dab4f536ae560b934f9da06460e7589a2004d23e"
+      },
+      "artifact_dir": "generated/P01-42-regenerate-s3"
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "36af738a494d46108ce2f6b3c4c0e7b2",
+      "version": {
+        "id": "21a7180380164695b033d1c7e174edf1",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "21a7180380164695b033d1c7e174edf1/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789708870.5312011,
+        "seconds": 116.9499351978302,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "21a7180380164695b033d1c7e174edf1/input.png",
+        "input_sha256": "4046e0bc77b996329e41888139325ec0ee10a3ef35ffc72494c124c23fefdc81",
+        "output_sha256": "1159e3c02f478ff18d704a9bdce85d7d5430e24363e783d441997a14103c135b"
+      },
+      "artifact_dir": "generated/P01-314-regenerate-s3"
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "b7cf8133015a4948bc7a685da410aeb6",
+      "version": {
+        "id": "08fe7ccecb94455d91797fba52f4d540",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "08fe7ccecb94455d91797fba52f4d540/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789708981.179927,
+        "seconds": 106.71753597259521,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "08fe7ccecb94455d91797fba52f4d540/input.png",
+        "input_sha256": "4046e0bc77b996329e41888139325ec0ee10a3ef35ffc72494c124c23fefdc81",
+        "output_sha256": "14aee24ee818f7abe85eb1d42fa047ee006446e8c293c326d382dd3d0b9d69f7"
+      },
+      "artifact_dir": "generated/P01-314-sequential-s1"
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "b7cf8133015a4948bc7a685da410aeb6",
+      "version": {
+        "id": "42ea22da265446cd9ce735a92c1215e7",
+        "parent": "08fe7ccecb94455d91797fba52f4d540",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "42ea22da265446cd9ce735a92c1215e7/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789709078.859773,
+        "seconds": 95.26127171516418,
+        "mode": "sequential",
+        "input_version": "08fe7ccecb94455d91797fba52f4d540",
+        "input_image": "42ea22da265446cd9ce735a92c1215e7/input.png",
+        "input_sha256": "14aee24ee818f7abe85eb1d42fa047ee006446e8c293c326d382dd3d0b9d69f7",
+        "output_sha256": "66e7d746fabf38c63a64f3c7afd783577834ff991a9a822c35deb48f824bbdff"
+      },
+      "artifact_dir": "generated/P01-314-sequential-s2"
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "b7cf8133015a4948bc7a685da410aeb6",
+      "version": {
+        "id": "dfc4d33e2a5740d6a1dfe6e04ded622f",
+        "parent": "42ea22da265446cd9ce735a92c1215e7",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "dfc4d33e2a5740d6a1dfe6e04ded622f/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789709177.9406998,
+        "seconds": 95.70057082176208,
+        "mode": "sequential",
+        "input_version": "42ea22da265446cd9ce735a92c1215e7",
+        "input_image": "dfc4d33e2a5740d6a1dfe6e04ded622f/input.png",
+        "input_sha256": "66e7d746fabf38c63a64f3c7afd783577834ff991a9a822c35deb48f824bbdff",
+        "output_sha256": "11f8ca61def10036de483082e4fe75dcc5923a6b0f3b9e5a5574708d8b555c4a"
+      },
+      "artifact_dir": "generated/P01-314-sequential-s3"
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "d5dbe483ae7f465dacef05416698615b",
+      "version": {
+        "id": "e2f505381ba64fd089a65828592824f1",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "e2f505381ba64fd089a65828592824f1/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789709285.4579442,
+        "seconds": 103.49549126625061,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "e2f505381ba64fd089a65828592824f1/input.png",
+        "input_sha256": "4046e0bc77b996329e41888139325ec0ee10a3ef35ffc72494c124c23fefdc81",
+        "output_sha256": "20085bb7f5caf3421977d594771337860d72aaf4648506f5ca8d517e6c3413b0"
+      },
+      "artifact_dir": "generated/P01-2026-sequential-s1"
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "d5dbe483ae7f465dacef05416698615b",
+      "version": {
+        "id": "a6afa19223ce4b619208644eea6499dd",
+        "parent": "e2f505381ba64fd089a65828592824f1",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "a6afa19223ce4b619208644eea6499dd/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789709386.768408,
+        "seconds": 98.11550521850586,
+        "mode": "sequential",
+        "input_version": "e2f505381ba64fd089a65828592824f1",
+        "input_image": "a6afa19223ce4b619208644eea6499dd/input.png",
+        "input_sha256": "20085bb7f5caf3421977d594771337860d72aaf4648506f5ca8d517e6c3413b0",
+        "output_sha256": "9600fb80c2e7fb3e587b34e36706afe84263dd84283bc79c145154602245a6a0"
+      },
+      "artifact_dir": "generated/P01-2026-sequential-s2"
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "d5dbe483ae7f465dacef05416698615b",
+      "version": {
+        "id": "8c8f6344eca54825ba81c0db148ced02",
+        "parent": "a6afa19223ce4b619208644eea6499dd",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "8c8f6344eca54825ba81c0db148ced02/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789709484.21564,
+        "seconds": 94.86492013931274,
+        "mode": "sequential",
+        "input_version": "a6afa19223ce4b619208644eea6499dd",
+        "input_image": "8c8f6344eca54825ba81c0db148ced02/input.png",
+        "input_sha256": "9600fb80c2e7fb3e587b34e36706afe84263dd84283bc79c145154602245a6a0",
+        "output_sha256": "3209d7ed246dae17ccb108bba32b3b29c8584259a04a22eb7954644033a2bb38"
+      },
+      "artifact_dir": "generated/P01-2026-sequential-s3"
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "4f65987655a44e23adc6f83698805e70",
+      "version": {
+        "id": "77a4a5192b1848ecb01274338ae5a110",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "77a4a5192b1848ecb01274338ae5a110/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789709579.416327,
+        "seconds": 85.99088382720947,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "77a4a5192b1848ecb01274338ae5a110/input.png",
+        "input_sha256": "4046e0bc77b996329e41888139325ec0ee10a3ef35ffc72494c124c23fefdc81",
+        "output_sha256": "cec6bdc4a98fd3c9661658947dcbd16fca4e303807502beee34e6ec33b0809db"
+      },
+      "artifact_dir": "generated/P01-2026-regenerate-s3"
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "b0a7318ebaf84d71b2afc713ed974236",
+      "version": {
+        "id": "70982995fe334bcb94cffbc37a9e86a0",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "70982995fe334bcb94cffbc37a9e86a0/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789709695.254053,
+        "seconds": 108.17316222190857,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "70982995fe334bcb94cffbc37a9e86a0/input.png",
+        "input_sha256": "9306a158c8d91f59772514062367d302f720226b9b3cbd5a153507678d616ad7",
+        "output_sha256": "2f039de2bc9939577316abbb1b62ffeb4db05e2e306169d05f2203208c09f1c5"
+      },
+      "artifact_dir": "generated/P02-42-regenerate-s3"
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "d9b76c95f69d4de3851d6468e57c2b3e",
+      "version": {
+        "id": "9f48fc594d24432f82695a186dd677ff",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "9f48fc594d24432f82695a186dd677ff/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789709803.758691,
+        "seconds": 104.99656105041504,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "9f48fc594d24432f82695a186dd677ff/input.png",
+        "input_sha256": "9306a158c8d91f59772514062367d302f720226b9b3cbd5a153507678d616ad7",
+        "output_sha256": "5e2a2c5f1dfca505fd31c70a019574c06eead7a6d5f464385c4c9a7fb5c04509"
+      },
+      "artifact_dir": "generated/P02-42-sequential-s1"
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "d9b76c95f69d4de3851d6468e57c2b3e",
+      "version": {
+        "id": "15530994918440388bcd9f7a0bbc4164",
+        "parent": "9f48fc594d24432f82695a186dd677ff",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "15530994918440388bcd9f7a0bbc4164/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789709898.7502022,
+        "seconds": 91.03645896911621,
+        "mode": "sequential",
+        "input_version": "9f48fc594d24432f82695a186dd677ff",
+        "input_image": "15530994918440388bcd9f7a0bbc4164/input.png",
+        "input_sha256": "5e2a2c5f1dfca505fd31c70a019574c06eead7a6d5f464385c4c9a7fb5c04509",
+        "output_sha256": "547a1237a7b64c2dbd33a75c4bd2479dbf247664bc4e67ddf9b6c405d72c2ce9"
+      },
+      "artifact_dir": "generated/P02-42-sequential-s2"
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "d9b76c95f69d4de3851d6468e57c2b3e",
+      "version": {
+        "id": "ed8a49e0757e4688b3cfba13f2c8466a",
+        "parent": "15530994918440388bcd9f7a0bbc4164",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "ed8a49e0757e4688b3cfba13f2c8466a/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789709999.646666,
+        "seconds": 97.21094703674316,
+        "mode": "sequential",
+        "input_version": "15530994918440388bcd9f7a0bbc4164",
+        "input_image": "ed8a49e0757e4688b3cfba13f2c8466a/input.png",
+        "input_sha256": "547a1237a7b64c2dbd33a75c4bd2479dbf247664bc4e67ddf9b6c405d72c2ce9",
+        "output_sha256": "99f43342a578597ed0cf354ccb6d70c8ea4c3cd4876ecc8607124725480df414"
+      },
+      "artifact_dir": "generated/P02-42-sequential-s3"
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "f7553257688d438bb8d4722b10b5a32b",
+      "version": {
+        "id": "eb9276fee8b445a395ef7288e8b49644",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "eb9276fee8b445a395ef7288e8b49644/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789710103.839029,
+        "seconds": 99.66540908813477,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "eb9276fee8b445a395ef7288e8b49644/input.png",
+        "input_sha256": "9306a158c8d91f59772514062367d302f720226b9b3cbd5a153507678d616ad7",
+        "output_sha256": "3ee7b7505abfad96786cda9f1b305c557189536632d434d47dec42dc2b731a7c"
+      },
+      "artifact_dir": "generated/P02-314-sequential-s1"
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "f7553257688d438bb8d4722b10b5a32b",
+      "version": {
+        "id": "4176031e4ede48a7a320559f813b54ce",
+        "parent": "eb9276fee8b445a395ef7288e8b49644",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "4176031e4ede48a7a320559f813b54ce/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789710191.548629,
+        "seconds": 84.63900804519653,
+        "mode": "sequential",
+        "input_version": "eb9276fee8b445a395ef7288e8b49644",
+        "input_image": "4176031e4ede48a7a320559f813b54ce/input.png",
+        "input_sha256": "3ee7b7505abfad96786cda9f1b305c557189536632d434d47dec42dc2b731a7c",
+        "output_sha256": "ab2fd44872645191f5f0fed1ef909952e579cf76707545703e50607342a23866"
+      },
+      "artifact_dir": "generated/P02-314-sequential-s2"
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "f7553257688d438bb8d4722b10b5a32b",
+      "version": {
+        "id": "4ed6d3b6d8fe475dbee0edbed1e40733",
+        "parent": "4176031e4ede48a7a320559f813b54ce",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "4ed6d3b6d8fe475dbee0edbed1e40733/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789710294.538889,
+        "seconds": 99.07261896133423,
+        "mode": "sequential",
+        "input_version": "4176031e4ede48a7a320559f813b54ce",
+        "input_image": "4ed6d3b6d8fe475dbee0edbed1e40733/input.png",
+        "input_sha256": "ab2fd44872645191f5f0fed1ef909952e579cf76707545703e50607342a23866",
+        "output_sha256": "af4dae505073626eb6a70f8f7db0d3af0c6ae2deb7b4f0864beebc10463be645"
+      },
+      "artifact_dir": "generated/P02-314-sequential-s3"
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "0be449785d9d47aca76d56b95edc8896",
+      "version": {
+        "id": "3ca3154dfd1b462696262821e52b8a72",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "3ca3154dfd1b462696262821e52b8a72/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789719857.1418922,
+        "seconds": 100.04506421089172,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "3ca3154dfd1b462696262821e52b8a72/input.png",
+        "input_sha256": "9306a158c8d91f59772514062367d302f720226b9b3cbd5a153507678d616ad7",
+        "output_sha256": "2fd98a5fc496c8cb88d884af59abd84c4b94f06575299cc015dd8ba65041e12e"
+      },
+      "artifact_dir": "generated/P02-314-regenerate-s3"
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "aa185a946a864fd7944d5470f1489b38",
+      "version": {
+        "id": "3313d4cc87e34637b918b999b57a0413",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "3313d4cc87e34637b918b999b57a0413/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789720043.08577,
+        "seconds": 177.85379600524902,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "3313d4cc87e34637b918b999b57a0413/input.png",
+        "input_sha256": "9306a158c8d91f59772514062367d302f720226b9b3cbd5a153507678d616ad7",
+        "output_sha256": "46ad2bb2ff8635100a3249683195fd6366a1791c7986e36110e65cc9c9b3c50f"
+      },
+      "artifact_dir": "generated/P02-2026-regenerate-s3"
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "6615fcb9df2b493d9d2b1948a6ed6faa",
+      "version": {
+        "id": "10e2897c863f4c2c84235c30561cfa0f",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "10e2897c863f4c2c84235c30561cfa0f/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789720295.545755,
+        "seconds": 246.9445288181305,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "10e2897c863f4c2c84235c30561cfa0f/input.png",
+        "input_sha256": "9306a158c8d91f59772514062367d302f720226b9b3cbd5a153507678d616ad7",
+        "output_sha256": "f03f1a6adb7c95f6b026b0cb5f6a7e949dd0d888ac9da612c79b39927872aa81"
+      },
+      "artifact_dir": "generated/P02-2026-sequential-s1"
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "6615fcb9df2b493d9d2b1948a6ed6faa",
+      "version": {
+        "id": "de6bde6325d646c8bcb5a0611b8b14df",
+        "parent": "10e2897c863f4c2c84235c30561cfa0f",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "de6bde6325d646c8bcb5a0611b8b14df/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789720511.800736,
+        "seconds": 213.09575295448303,
+        "mode": "sequential",
+        "input_version": "10e2897c863f4c2c84235c30561cfa0f",
+        "input_image": "de6bde6325d646c8bcb5a0611b8b14df/input.png",
+        "input_sha256": "f03f1a6adb7c95f6b026b0cb5f6a7e949dd0d888ac9da612c79b39927872aa81",
+        "output_sha256": "3c056571d5624ffa3d18a5e9a4237db8fc1e8a8a762a58e11f57d0b69b48a587"
+      },
+      "artifact_dir": "generated/P02-2026-sequential-s2"
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "6615fcb9df2b493d9d2b1948a6ed6faa",
+      "version": {
+        "id": "762781bc8e5d48ae9ad06a2ee6ac423f",
+        "parent": "de6bde6325d646c8bcb5a0611b8b14df",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "762781bc8e5d48ae9ad06a2ee6ac423f/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789720769.7480981,
+        "seconds": 255.19818902015686,
+        "mode": "sequential",
+        "input_version": "de6bde6325d646c8bcb5a0611b8b14df",
+        "input_image": "762781bc8e5d48ae9ad06a2ee6ac423f/input.png",
+        "input_sha256": "3c056571d5624ffa3d18a5e9a4237db8fc1e8a8a762a58e11f57d0b69b48a587",
+        "output_sha256": "266c9e6eda98845b28d0d91430b984d1d3edd1bf08ca10e3be70873d296bfee2"
+      },
+      "artifact_dir": "generated/P02-2026-sequential-s3"
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "aa1adcfb8806483fbc62660acd279b03",
+      "version": {
+        "id": "e10ff40749114bf9b5d4377940d8b188",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "e10ff40749114bf9b5d4377940d8b188/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789720985.864021,
+        "seconds": 211.92721009254456,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "e10ff40749114bf9b5d4377940d8b188/input.png",
+        "input_sha256": "362a3f993a288bf166a9590daa215c92e39728d9792af45e96b0971d9f927e70",
+        "output_sha256": "5661e0aa6df876a7ef6ae366b8ab24174d56680cb6003e40ebc744cbb4966a62"
+      },
+      "artifact_dir": "generated/P03-42-sequential-s1"
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "aa1adcfb8806483fbc62660acd279b03",
+      "version": {
+        "id": "e8a4bf79c5694d428ba9338b6b75631a",
+        "parent": "e10ff40749114bf9b5d4377940d8b188",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "e8a4bf79c5694d428ba9338b6b75631a/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789721319.8361359,
+        "seconds": 330.221816778183,
+        "mode": "sequential",
+        "input_version": "e10ff40749114bf9b5d4377940d8b188",
+        "input_image": "e8a4bf79c5694d428ba9338b6b75631a/input.png",
+        "input_sha256": "5661e0aa6df876a7ef6ae366b8ab24174d56680cb6003e40ebc744cbb4966a62",
+        "output_sha256": "f8cb592255f499aae0930cac0dabf88f07739a925a1597f2935ab7aa4dc137d0"
+      },
+      "artifact_dir": "generated/P03-42-sequential-s2"
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "aa1adcfb8806483fbc62660acd279b03",
+      "version": {
+        "id": "ad307ca602654c33b3a5f8936d02dd72",
+        "parent": "e8a4bf79c5694d428ba9338b6b75631a",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "ad307ca602654c33b3a5f8936d02dd72/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789721687.4754822,
+        "seconds": 364.52299213409424,
+        "mode": "sequential",
+        "input_version": "e8a4bf79c5694d428ba9338b6b75631a",
+        "input_image": "ad307ca602654c33b3a5f8936d02dd72/input.png",
+        "input_sha256": "f8cb592255f499aae0930cac0dabf88f07739a925a1597f2935ab7aa4dc137d0",
+        "output_sha256": "0c93bba81d4ab75e9807456ca4f8e3b885c2b984bb8612351c9d00df50f4b3db"
+      },
+      "artifact_dir": "generated/P03-42-sequential-s3"
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "ee06674335744a3aa20069c3f1e1980d",
+      "version": {
+        "id": "09e64a4143ae43029ca4523fb71126b1",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "09e64a4143ae43029ca4523fb71126b1/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789721808.582453,
+        "seconds": 112.7176902294159,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "09e64a4143ae43029ca4523fb71126b1/input.png",
+        "input_sha256": "362a3f993a288bf166a9590daa215c92e39728d9792af45e96b0971d9f927e70",
+        "output_sha256": "9fe220c1d1ee2622d232b6db08555df4c40dfc0d83e10ac317f15ce4ed8d409a"
+      },
+      "artifact_dir": "generated/P03-42-regenerate-s3"
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "cc32ba57d6de4ce882d16a2bb0e1080b",
+      "version": {
+        "id": "1516e57fc0d9449a99550a8aea7ed29b",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "1516e57fc0d9449a99550a8aea7ed29b/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789722072.3176908,
+        "seconds": 254.3056287765503,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "1516e57fc0d9449a99550a8aea7ed29b/input.png",
+        "input_sha256": "362a3f993a288bf166a9590daa215c92e39728d9792af45e96b0971d9f927e70",
+        "output_sha256": "f4573fb3d1c5afacca813d04034b27fc9dd8b923c494505d8321383d1f3e03dc"
+      },
+      "artifact_dir": "generated/P03-314-regenerate-s3"
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "6ea671f96cfb4d199e0968cb890e738e",
+      "version": {
+        "id": "f297845290cd418eafebeefbc06d9ade",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "f297845290cd418eafebeefbc06d9ade/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789722325.8237922,
+        "seconds": 248.66952395439148,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "f297845290cd418eafebeefbc06d9ade/input.png",
+        "input_sha256": "362a3f993a288bf166a9590daa215c92e39728d9792af45e96b0971d9f927e70",
+        "output_sha256": "2ee98f44af31361cb78e19fabe756356a6f61db41fab50b6ab7ddf24ce142eec"
+      },
+      "artifact_dir": "generated/P03-314-sequential-s1"
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "6ea671f96cfb4d199e0968cb890e738e",
+      "version": {
+        "id": "8aa918c569b3401089d379f4fa4e823d",
+        "parent": "f297845290cd418eafebeefbc06d9ade",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "8aa918c569b3401089d379f4fa4e823d/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789722508.221725,
+        "seconds": 178.35195183753967,
+        "mode": "sequential",
+        "input_version": "f297845290cd418eafebeefbc06d9ade",
+        "input_image": "8aa918c569b3401089d379f4fa4e823d/input.png",
+        "input_sha256": "2ee98f44af31361cb78e19fabe756356a6f61db41fab50b6ab7ddf24ce142eec",
+        "output_sha256": "cbb9f1769d61a5b13cd49a4cce354e08578e79dd63731670efb469bc4a631582"
+      },
+      "artifact_dir": "generated/P03-314-sequential-s2"
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "6ea671f96cfb4d199e0968cb890e738e",
+      "version": {
+        "id": "a60f6edde019494bb1b2d4c33417cbf6",
+        "parent": "8aa918c569b3401089d379f4fa4e823d",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "a60f6edde019494bb1b2d4c33417cbf6/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789722644.065269,
+        "seconds": 132.92241883277893,
+        "mode": "sequential",
+        "input_version": "8aa918c569b3401089d379f4fa4e823d",
+        "input_image": "a60f6edde019494bb1b2d4c33417cbf6/input.png",
+        "input_sha256": "cbb9f1769d61a5b13cd49a4cce354e08578e79dd63731670efb469bc4a631582",
+        "output_sha256": "44d6e91a5e5904396ecbf8db0f65ba880d0d4a1a82de1a8ff822266774091f3f"
+      },
+      "artifact_dir": "generated/P03-314-sequential-s3"
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "47b070f200dd4c1ca8184b1b87b44c6c",
+      "version": {
+        "id": "115bc30eb1e6443ba91df9340dad4d4d",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "115bc30eb1e6443ba91df9340dad4d4d/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789722749.408504,
+        "seconds": 101.44937491416931,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "115bc30eb1e6443ba91df9340dad4d4d/input.png",
+        "input_sha256": "362a3f993a288bf166a9590daa215c92e39728d9792af45e96b0971d9f927e70",
+        "output_sha256": "8adc89858cc9f64b77d57e2b5c1afc88d197da1be3a0bf3717c8e9713fca2bc7"
+      },
+      "artifact_dir": "generated/P03-2026-sequential-s1"
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "47b070f200dd4c1ca8184b1b87b44c6c",
+      "version": {
+        "id": "04290d0e18cc47f98b1d30222bb2f3bd",
+        "parent": "115bc30eb1e6443ba91df9340dad4d4d",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "04290d0e18cc47f98b1d30222bb2f3bd/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789722848.262093,
+        "seconds": 95.03196811676025,
+        "mode": "sequential",
+        "input_version": "115bc30eb1e6443ba91df9340dad4d4d",
+        "input_image": "04290d0e18cc47f98b1d30222bb2f3bd/input.png",
+        "input_sha256": "8adc89858cc9f64b77d57e2b5c1afc88d197da1be3a0bf3717c8e9713fca2bc7",
+        "output_sha256": "18da96502e109a3a12582c728a19ba05f460e68937e46541b01e0609c127726a"
+      },
+      "artifact_dir": "generated/P03-2026-sequential-s2"
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "47b070f200dd4c1ca8184b1b87b44c6c",
+      "version": {
+        "id": "e4eb5c1745cd4d799d5c1d823709ddac",
+        "parent": "04290d0e18cc47f98b1d30222bb2f3bd",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "e4eb5c1745cd4d799d5c1d823709ddac/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789722943.9227111,
+        "seconds": 91.99059200286865,
+        "mode": "sequential",
+        "input_version": "04290d0e18cc47f98b1d30222bb2f3bd",
+        "input_image": "e4eb5c1745cd4d799d5c1d823709ddac/input.png",
+        "input_sha256": "18da96502e109a3a12582c728a19ba05f460e68937e46541b01e0609c127726a",
+        "output_sha256": "56a4dbeb1d0d01183faa96ce31b80e1847698bd11a1207bff966b24489c40c30"
+      },
+      "artifact_dir": "generated/P03-2026-sequential-s3"
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "72e329146e124337be527a05bd70c7b5",
+      "version": {
+        "id": "d353d99c9ca14229be9e6144bc85095d",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "d353d99c9ca14229be9e6144bc85095d/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789723046.555302,
+        "seconds": 94.81693291664124,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "d353d99c9ca14229be9e6144bc85095d/input.png",
+        "input_sha256": "362a3f993a288bf166a9590daa215c92e39728d9792af45e96b0971d9f927e70",
+        "output_sha256": "fce634852a3f7dad9cb11923e0771d987b2d5941a6985310ebad4f8aee3ae41f"
+      },
+      "artifact_dir": "generated/P03-2026-regenerate-s3"
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "1f9cddbe19c04e5495c2bb03c1ce0523",
+      "version": {
+        "id": "c7b0b08994234c60bc3203377b267672",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "c7b0b08994234c60bc3203377b267672/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789723152.822975,
+        "seconds": 97.17579126358032,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "c7b0b08994234c60bc3203377b267672/input.png",
+        "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+        "output_sha256": "6ee643f75fd51b3b751af395ad66865cc340a41b3f1fe09b5b3ec0a9babf8d18"
+      },
+      "artifact_dir": "generated/P04-42-regenerate-s3"
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "84dcd26bf0a64f7e9e0972f7dd884a0d",
+      "version": {
+        "id": "6f710aa1a0d74c47ab786275c23beb5d",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "6f710aa1a0d74c47ab786275c23beb5d/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789723529.050853,
+        "seconds": 370.4988582134247,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "6f710aa1a0d74c47ab786275c23beb5d/input.png",
+        "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+        "output_sha256": "b0b706562d4d996d57cfd3e4dadcd1b3f81ff737213dd9cf308e2d1a88bdad96"
+      },
+      "artifact_dir": "generated/P04-42-sequential-s1"
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "84dcd26bf0a64f7e9e0972f7dd884a0d",
+      "version": {
+        "id": "2a124ffe882c4011a4faf5a049ec9b11",
+        "parent": "6f710aa1a0d74c47ab786275c23beb5d",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "2a124ffe882c4011a4faf5a049ec9b11/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789723633.127181,
+        "seconds": 100.25313210487366,
+        "mode": "sequential",
+        "input_version": "6f710aa1a0d74c47ab786275c23beb5d",
+        "input_image": "2a124ffe882c4011a4faf5a049ec9b11/input.png",
+        "input_sha256": "b0b706562d4d996d57cfd3e4dadcd1b3f81ff737213dd9cf308e2d1a88bdad96",
+        "output_sha256": "58282f542390ba2f4dc25014c070357794db85940d1381e81fae50eb1c48909c"
+      },
+      "artifact_dir": "generated/P04-42-sequential-s2"
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "84dcd26bf0a64f7e9e0972f7dd884a0d",
+      "version": {
+        "id": "c9b3b827d51c4a939fa6dfeb1d4cc197",
+        "parent": "2a124ffe882c4011a4faf5a049ec9b11",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "c9b3b827d51c4a939fa6dfeb1d4cc197/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789723749.052563,
+        "seconds": 113.33021903038025,
+        "mode": "sequential",
+        "input_version": "2a124ffe882c4011a4faf5a049ec9b11",
+        "input_image": "c9b3b827d51c4a939fa6dfeb1d4cc197/input.png",
+        "input_sha256": "58282f542390ba2f4dc25014c070357794db85940d1381e81fae50eb1c48909c",
+        "output_sha256": "2c6fe491f5a56a7a9fc6be54714e7baf7b22f06c5b94c2b9229a82da8df6c276"
+      },
+      "artifact_dir": "generated/P04-42-sequential-s3"
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "274a867b12384329ac0ae5e50f5434d4",
+      "version": {
+        "id": "ff46e22ecc4648518618ff726da85e5c",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "ff46e22ecc4648518618ff726da85e5c/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789723850.365652,
+        "seconds": 96.23871803283691,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "ff46e22ecc4648518618ff726da85e5c/input.png",
+        "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+        "output_sha256": "2b73c810068c54a41721dedfffd8ce3efcd2021e24b60523440952e5ea38f104"
+      },
+      "artifact_dir": "generated/P04-314-sequential-s1"
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "274a867b12384329ac0ae5e50f5434d4",
+      "version": {
+        "id": "4aa82dbedcda4aa79c18d1e83c936e06",
+        "parent": "ff46e22ecc4648518618ff726da85e5c",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "4aa82dbedcda4aa79c18d1e83c936e06/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789723946.3379772,
+        "seconds": 93.4154863357544,
+        "mode": "sequential",
+        "input_version": "ff46e22ecc4648518618ff726da85e5c",
+        "input_image": "4aa82dbedcda4aa79c18d1e83c936e06/input.png",
+        "input_sha256": "2b73c810068c54a41721dedfffd8ce3efcd2021e24b60523440952e5ea38f104",
+        "output_sha256": "13f363c35d7b277744fdaf3cbd3608172e78ea6e0b33db37f2e2e32d1cb05fd6"
+      },
+      "artifact_dir": "generated/P04-314-sequential-s2"
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "274a867b12384329ac0ae5e50f5434d4",
+      "version": {
+        "id": "f67ccd2d25f34fa5ad3257a4a83eb803",
+        "parent": "4aa82dbedcda4aa79c18d1e83c936e06",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "f67ccd2d25f34fa5ad3257a4a83eb803/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789724037.3995452,
+        "seconds": 87.72820711135864,
+        "mode": "sequential",
+        "input_version": "4aa82dbedcda4aa79c18d1e83c936e06",
+        "input_image": "f67ccd2d25f34fa5ad3257a4a83eb803/input.png",
+        "input_sha256": "13f363c35d7b277744fdaf3cbd3608172e78ea6e0b33db37f2e2e32d1cb05fd6",
+        "output_sha256": "1b77ac5beaf043bab4a7485cc76e07070f8c7f60576068ed45e2dd53e577843a"
+      },
+      "artifact_dir": "generated/P04-314-sequential-s3"
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "a0cafa9a28a14ed6850163d7ac673360",
+      "version": {
+        "id": "4c63811d99fa433e96503e998ded96ce",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "4c63811d99fa433e96503e998ded96ce/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789724132.575029,
+        "seconds": 86.87556195259094,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "4c63811d99fa433e96503e998ded96ce/input.png",
+        "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+        "output_sha256": "3e91dd748e8a43cef29a6ecfc343ca54673f9fbadd2e0aa948c1f62e6428d2ff"
+      },
+      "artifact_dir": "generated/P04-314-regenerate-s3"
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "7a338a1fc5914a9991d072b97746fcdd",
+      "version": {
+        "id": "b6a286a8924144f18960e9d3e822ce3b",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "b6a286a8924144f18960e9d3e822ce3b/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789724237.4270458,
+        "seconds": 95.73594284057617,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "b6a286a8924144f18960e9d3e822ce3b/input.png",
+        "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+        "output_sha256": "59a8b8dc48c347000c89bb806bdd6d0592204526a57bfbcb8ebbdc77241bbbed"
+      },
+      "artifact_dir": "generated/P04-2026-regenerate-s3"
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "ac29481b61f3496e94bc8d4b5a969b7c",
+      "version": {
+        "id": "e3abc95669934efaa283fea1333cd3f9",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "e3abc95669934efaa283fea1333cd3f9/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789724335.464007,
+        "seconds": 93.0778157711029,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "e3abc95669934efaa283fea1333cd3f9/input.png",
+        "input_sha256": "fafe59d3bc43d706e9dc87fa0b5cfd42586834cc73f54c7f68e26ed832f1f7e6",
+        "output_sha256": "f6693f02d3062348c79bd4ef055f18232a1feaf41d81e04e0c47d42c8b20eb91"
+      },
+      "artifact_dir": "generated/P04-2026-sequential-s1"
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "ac29481b61f3496e94bc8d4b5a969b7c",
+      "version": {
+        "id": "075edbf115b74630a3a172ae6e0ccb8b",
+        "parent": "e3abc95669934efaa283fea1333cd3f9",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "075edbf115b74630a3a172ae6e0ccb8b/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789724436.099701,
+        "seconds": 96.83800196647644,
+        "mode": "sequential",
+        "input_version": "e3abc95669934efaa283fea1333cd3f9",
+        "input_image": "075edbf115b74630a3a172ae6e0ccb8b/input.png",
+        "input_sha256": "f6693f02d3062348c79bd4ef055f18232a1feaf41d81e04e0c47d42c8b20eb91",
+        "output_sha256": "f95c1ffd895676e8cc5eeb089f70710b8f2dad1b4c4a10db08ad3d137bb57e68"
+      },
+      "artifact_dir": "generated/P04-2026-sequential-s2"
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "ac29481b61f3496e94bc8d4b5a969b7c",
+      "version": {
+        "id": "87e87a191f60435b8273e937822c7b5e",
+        "parent": "075edbf115b74630a3a172ae6e0ccb8b",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "87e87a191f60435b8273e937822c7b5e/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789724556.159913,
+        "seconds": 117.43863201141357,
+        "mode": "sequential",
+        "input_version": "075edbf115b74630a3a172ae6e0ccb8b",
+        "input_image": "87e87a191f60435b8273e937822c7b5e/input.png",
+        "input_sha256": "f95c1ffd895676e8cc5eeb089f70710b8f2dad1b4c4a10db08ad3d137bb57e68",
+        "output_sha256": "089b9823fd3f52472d3f512cf7c26bb7c6b78e6c08c045ebfe2452fb2e4342cf"
+      },
+      "artifact_dir": "generated/P04-2026-sequential-s3"
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "d0104d59be7d47b095ec754acc919588",
+      "version": {
+        "id": "1f97399627dd486ca4e95b6eddc0489e",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "1f97399627dd486ca4e95b6eddc0489e/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789724667.4468281,
+        "seconds": 106.83978223800659,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "1f97399627dd486ca4e95b6eddc0489e/input.png",
+        "input_sha256": "7b06eb504dbba8b692587f1ff58dd16c447d1b44721aa776f08dd38937e9c609",
+        "output_sha256": "11f660f57a596d089306caa645106e0434a89fbb059694da25d1d11986686067"
+      },
+      "artifact_dir": "generated/P05-42-sequential-s1"
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "d0104d59be7d47b095ec754acc919588",
+      "version": {
+        "id": "ad0e0eed8b274c7bbf542a445fc154fd",
+        "parent": "1f97399627dd486ca4e95b6eddc0489e",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "ad0e0eed8b274c7bbf542a445fc154fd/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789724820.5697322,
+        "seconds": 151.03323602676392,
+        "mode": "sequential",
+        "input_version": "1f97399627dd486ca4e95b6eddc0489e",
+        "input_image": "ad0e0eed8b274c7bbf542a445fc154fd/input.png",
+        "input_sha256": "11f660f57a596d089306caa645106e0434a89fbb059694da25d1d11986686067",
+        "output_sha256": "1d12efb67f2e47091b3e828395a0a68a4174b476b1b65d92aac0ebbed66f0940"
+      },
+      "artifact_dir": "generated/P05-42-sequential-s2"
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "d0104d59be7d47b095ec754acc919588",
+      "version": {
+        "id": "a0bcdae6bfef4245bbf0d7b964339400",
+        "parent": "ad0e0eed8b274c7bbf542a445fc154fd",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "a0bcdae6bfef4245bbf0d7b964339400/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789724999.50103,
+        "seconds": 175.77632594108582,
+        "mode": "sequential",
+        "input_version": "ad0e0eed8b274c7bbf542a445fc154fd",
+        "input_image": "a0bcdae6bfef4245bbf0d7b964339400/input.png",
+        "input_sha256": "1d12efb67f2e47091b3e828395a0a68a4174b476b1b65d92aac0ebbed66f0940",
+        "output_sha256": "7cc441ce95b8a630eed6ec698463c829b12fafdc8e74164e391d3efa9543a680"
+      },
+      "artifact_dir": "generated/P05-42-sequential-s3"
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "7c7bce353f6e465eb90c78d9642b32d1",
+      "version": {
+        "id": "550713ff5cf8426e8de03b480e92d18f",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "550713ff5cf8426e8de03b480e92d18f/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789725197.157942,
+        "seconds": 186.59124398231506,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "550713ff5cf8426e8de03b480e92d18f/input.png",
+        "input_sha256": "7b06eb504dbba8b692587f1ff58dd16c447d1b44721aa776f08dd38937e9c609",
+        "output_sha256": "dc2685ac353918adafe16e58339e829ebc7646d51cc81db2b66fb98bd8c85957"
+      },
+      "artifact_dir": "generated/P05-42-regenerate-s3"
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "44156312029141c2a75cc4bcb485acfb",
+      "version": {
+        "id": "fac85761afe34c949f02109c724a814c",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "fac85761afe34c949f02109c724a814c/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789725375.505792,
+        "seconds": 170.7752251625061,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "fac85761afe34c949f02109c724a814c/input.png",
+        "input_sha256": "7b06eb504dbba8b692587f1ff58dd16c447d1b44721aa776f08dd38937e9c609",
+        "output_sha256": "3a3d42cd3bf0e791ff5e2a0483329bcb41b56d71fc76ea7ce69fcaa0b81f2aee"
+      },
+      "artifact_dir": "generated/P05-314-regenerate-s3"
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "db186ce454464b35a656816360ca863b",
+      "version": {
+        "id": "d3c8799c4dc9459ea147274b85fbe8d3",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "d3c8799c4dc9459ea147274b85fbe8d3/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789725498.245404,
+        "seconds": 118.64354491233826,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "d3c8799c4dc9459ea147274b85fbe8d3/input.png",
+        "input_sha256": "7b06eb504dbba8b692587f1ff58dd16c447d1b44721aa776f08dd38937e9c609",
+        "output_sha256": "b1d5776f129ab4a0766e01ac36c540eae89204b33bdc42bcb64dc84151b9f1d0"
+      },
+      "artifact_dir": "generated/P05-314-sequential-s1"
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "db186ce454464b35a656816360ca863b",
+      "version": {
+        "id": "669ab4e7d81945f78eb0e6703b1eef68",
+        "parent": "d3c8799c4dc9459ea147274b85fbe8d3",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "669ab4e7d81945f78eb0e6703b1eef68/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789725667.587316,
+        "seconds": 166.81463885307312,
+        "mode": "sequential",
+        "input_version": "d3c8799c4dc9459ea147274b85fbe8d3",
+        "input_image": "669ab4e7d81945f78eb0e6703b1eef68/input.png",
+        "input_sha256": "b1d5776f129ab4a0766e01ac36c540eae89204b33bdc42bcb64dc84151b9f1d0",
+        "output_sha256": "fa2fe16bfb5077a074e9f2eabc5219389e382289fc154b1e312d97bcb85a568c"
+      },
+      "artifact_dir": "generated/P05-314-sequential-s2"
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "db186ce454464b35a656816360ca863b",
+      "version": {
+        "id": "42a51fccc9f542e1b7e0b103c1d7c568",
+        "parent": "669ab4e7d81945f78eb0e6703b1eef68",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "42a51fccc9f542e1b7e0b103c1d7c568/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789725788.415576,
+        "seconds": 118.21204280853271,
+        "mode": "sequential",
+        "input_version": "669ab4e7d81945f78eb0e6703b1eef68",
+        "input_image": "42a51fccc9f542e1b7e0b103c1d7c568/input.png",
+        "input_sha256": "fa2fe16bfb5077a074e9f2eabc5219389e382289fc154b1e312d97bcb85a568c",
+        "output_sha256": "6ccdea5e7e26e9b9e1f75c82fce7343ea0b3865f8a5db65b9e7f353d46b4d611"
+      },
+      "artifact_dir": "generated/P05-314-sequential-s3"
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "c5c9be09dd5c43d6b90e37ec714a953e",
+      "version": {
+        "id": "4825dc35b9464775b82ca141b0f6d15c",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "4825dc35b9464775b82ca141b0f6d15c/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789725964.340636,
+        "seconds": 171.6525058746338,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "4825dc35b9464775b82ca141b0f6d15c/input.png",
+        "input_sha256": "7b06eb504dbba8b692587f1ff58dd16c447d1b44721aa776f08dd38937e9c609",
+        "output_sha256": "e0e100ebb1042a6a178423987fd030afc0ede0f1fc8198159d86fec3f7663b32"
+      },
+      "artifact_dir": "generated/P05-2026-sequential-s1"
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "c5c9be09dd5c43d6b90e37ec714a953e",
+      "version": {
+        "id": "d9d2bda081f349cb93bc69f79f1212f1",
+        "parent": "4825dc35b9464775b82ca141b0f6d15c",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "d9d2bda081f349cb93bc69f79f1212f1/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789726061.8417768,
+        "seconds": 95.09235262870789,
+        "mode": "sequential",
+        "input_version": "4825dc35b9464775b82ca141b0f6d15c",
+        "input_image": "d9d2bda081f349cb93bc69f79f1212f1/input.png",
+        "input_sha256": "e0e100ebb1042a6a178423987fd030afc0ede0f1fc8198159d86fec3f7663b32",
+        "output_sha256": "2451f206a0777ef9f2719a069a153e9b3727326dbf6bb2000104cfe5b565eff1"
+      },
+      "artifact_dir": "generated/P05-2026-sequential-s2"
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "c5c9be09dd5c43d6b90e37ec714a953e",
+      "version": {
+        "id": "0feead556932477391bbed9aabd5d952",
+        "parent": "d9d2bda081f349cb93bc69f79f1212f1",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "0feead556932477391bbed9aabd5d952/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789726213.129904,
+        "seconds": 149.0862979888916,
+        "mode": "sequential",
+        "input_version": "d9d2bda081f349cb93bc69f79f1212f1",
+        "input_image": "0feead556932477391bbed9aabd5d952/input.png",
+        "input_sha256": "2451f206a0777ef9f2719a069a153e9b3727326dbf6bb2000104cfe5b565eff1",
+        "output_sha256": "5a3654311e524db1fa4d83062897ae1f1dfd43edaf1b57e2ddfcc0ab46bbe7be"
+      },
+      "artifact_dir": "generated/P05-2026-sequential-s3"
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "5546dfac480542e886b134b908c161e9",
+      "version": {
+        "id": "6b3d90b22e664a49b8f3ff6fcfe3f32b",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "6b3d90b22e664a49b8f3ff6fcfe3f32b/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789726335.177779,
+        "seconds": 113.82651495933533,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "6b3d90b22e664a49b8f3ff6fcfe3f32b/input.png",
+        "input_sha256": "7b06eb504dbba8b692587f1ff58dd16c447d1b44721aa776f08dd38937e9c609",
+        "output_sha256": "962d3c7b5c3b949073ea777bcb8dab07abe07d6195778c29cd419716967d0c41"
+      },
+      "artifact_dir": "generated/P05-2026-regenerate-s3"
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "24449e90e7a043c09e2d80b4622cedae",
+      "version": {
+        "id": "03e0dd752dc94dd2816ce52f4dd0a655",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "03e0dd752dc94dd2816ce52f4dd0a655/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789726440.46402,
+        "seconds": 96.56956601142883,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "03e0dd752dc94dd2816ce52f4dd0a655/input.png",
+        "input_sha256": "ff142017bf14beda24103f76bac63a407b7088bb33d7f7ea424808cd61c8fbde",
+        "output_sha256": "d77952f035907b2850d6c16bb1cd976662fb42e05e52a4fd8dd3576eed4a9ff2"
+      },
+      "artifact_dir": "generated/P06-42-regenerate-s3"
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "5b84f62612514ef3a0b377a84473d296",
+      "version": {
+        "id": "902dfc453f02428eb0f6002623a379dc",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "902dfc453f02428eb0f6002623a379dc/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789726532.7481768,
+        "seconds": 88.80683088302612,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "902dfc453f02428eb0f6002623a379dc/input.png",
+        "input_sha256": "ff142017bf14beda24103f76bac63a407b7088bb33d7f7ea424808cd61c8fbde",
+        "output_sha256": "737be150020439ce2e4d1ccb6f8e5ff90c507ecbdc929c3756961fbff1cbcb56"
+      },
+      "artifact_dir": "generated/P06-42-sequential-s1"
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "5b84f62612514ef3a0b377a84473d296",
+      "version": {
+        "id": "7cc0841c759f467db17c562e779facfd",
+        "parent": "902dfc453f02428eb0f6002623a379dc",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "7cc0841c759f467db17c562e779facfd/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789726623.107693,
+        "seconds": 88.19910383224487,
+        "mode": "sequential",
+        "input_version": "902dfc453f02428eb0f6002623a379dc",
+        "input_image": "7cc0841c759f467db17c562e779facfd/input.png",
+        "input_sha256": "737be150020439ce2e4d1ccb6f8e5ff90c507ecbdc929c3756961fbff1cbcb56",
+        "output_sha256": "564e054a6df024b89326bb3cce04ba9c76c067194f36284fe65a128402d3ebc1"
+      },
+      "artifact_dir": "generated/P06-42-sequential-s2"
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "5b84f62612514ef3a0b377a84473d296",
+      "version": {
+        "id": "6f5bb522a08e4e1ba8658d11343e8c7e",
+        "parent": "7cc0841c759f467db17c562e779facfd",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "6f5bb522a08e4e1ba8658d11343e8c7e/output.png",
+        "seed": 42,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789726714.17371,
+        "seconds": 88.33085107803345,
+        "mode": "sequential",
+        "input_version": "7cc0841c759f467db17c562e779facfd",
+        "input_image": "6f5bb522a08e4e1ba8658d11343e8c7e/input.png",
+        "input_sha256": "564e054a6df024b89326bb3cce04ba9c76c067194f36284fe65a128402d3ebc1",
+        "output_sha256": "6b255ac61e1e3d5cec7cbd23f9ccd23f9c130e5852d8c642e79e196e9a06473c"
+      },
+      "artifact_dir": "generated/P06-42-sequential-s3"
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "59af3b16f2884b0bbfe8bb9c3872290a",
+      "version": {
+        "id": "4bc6dc4ff5d24d40bc97be6a6e0b5f0f",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "4bc6dc4ff5d24d40bc97be6a6e0b5f0f/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789726807.128939,
+        "seconds": 89.08255290985107,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "4bc6dc4ff5d24d40bc97be6a6e0b5f0f/input.png",
+        "input_sha256": "ff142017bf14beda24103f76bac63a407b7088bb33d7f7ea424808cd61c8fbde",
+        "output_sha256": "def9f14b797229a030568e6f7ad5a596d45e5cbefddcafdf8d3a85a79608de56"
+      },
+      "artifact_dir": "generated/P06-314-sequential-s1"
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "59af3b16f2884b0bbfe8bb9c3872290a",
+      "version": {
+        "id": "1a39d2faec7f4b04b4571921e310435e",
+        "parent": "4bc6dc4ff5d24d40bc97be6a6e0b5f0f",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "1a39d2faec7f4b04b4571921e310435e/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789726898.031281,
+        "seconds": 88.7252550125122,
+        "mode": "sequential",
+        "input_version": "4bc6dc4ff5d24d40bc97be6a6e0b5f0f",
+        "input_image": "1a39d2faec7f4b04b4571921e310435e/input.png",
+        "input_sha256": "def9f14b797229a030568e6f7ad5a596d45e5cbefddcafdf8d3a85a79608de56",
+        "output_sha256": "67b1b0c6fa773cc8a51da453c7b7d831b13a18b021648ee19e49a94e16f00f38"
+      },
+      "artifact_dir": "generated/P06-314-sequential-s2"
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "59af3b16f2884b0bbfe8bb9c3872290a",
+      "version": {
+        "id": "8d738be4f7f449cbae9ac6c823fff20c",
+        "parent": "1a39d2faec7f4b04b4571921e310435e",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "8d738be4f7f449cbae9ac6c823fff20c/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789726993.554995,
+        "seconds": 93.04781293869019,
+        "mode": "sequential",
+        "input_version": "1a39d2faec7f4b04b4571921e310435e",
+        "input_image": "8d738be4f7f449cbae9ac6c823fff20c/input.png",
+        "input_sha256": "67b1b0c6fa773cc8a51da453c7b7d831b13a18b021648ee19e49a94e16f00f38",
+        "output_sha256": "cfda83666711d9e2f3190e38569807f098bc10a1a1306ba99e4cdf9639100892"
+      },
+      "artifact_dir": "generated/P06-314-sequential-s3"
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "29ae88bc0d7b43aa99a2fb3d53057382",
+      "version": {
+        "id": "b447bc20ab71401b9e640bd9acd40652",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "b447bc20ab71401b9e640bd9acd40652/output.png",
+        "seed": 314,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789727093.425935,
+        "seconds": 90.87231302261353,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "b447bc20ab71401b9e640bd9acd40652/input.png",
+        "input_sha256": "ff142017bf14beda24103f76bac63a407b7088bb33d7f7ea424808cd61c8fbde",
+        "output_sha256": "4476dce17b4b1430856d5216ea80d8bad5304c8fe5b1b2ac289217a3c05c1647"
+      },
+      "artifact_dir": "generated/P06-314-regenerate-s3"
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "mode": "regenerate",
+      "stage": 3,
+      "project": "79ab95f059214ca0aaebd235fd6b8965",
+      "version": {
+        "id": "5bb794023cdb413bae17c2497c117981",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "5bb794023cdb413bae17c2497c117981/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789727192.603199,
+        "seconds": 92.03550791740417,
+        "mode": "regenerate",
+        "input_version": null,
+        "input_image": "5bb794023cdb413bae17c2497c117981/input.png",
+        "input_sha256": "ff142017bf14beda24103f76bac63a407b7088bb33d7f7ea424808cd61c8fbde",
+        "output_sha256": "9b42a4eb049c64a0220c78606f49432954b869c77a45f89082562fa1d9aff29f"
+      },
+      "artifact_dir": "generated/P06-2026-regenerate-s3"
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 1,
+      "project": "d5010d5adca648bd832cc5b7862b8ecf",
+      "version": {
+        "id": "c40c3668c9b94b269e5c0dc6352b5cce",
+        "parent": null,
+        "state": {
+          "shirt_color": "navy",
+          "background": "original",
+          "pin": "original"
+        },
+        "image": "c40c3668c9b94b269e5c0dc6352b5cce/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Keep the original background unchanged.\n- Keep the original accessories unchanged.",
+        "created": 1789727285.481877,
+        "seconds": 88.91094899177551,
+        "mode": "sequential",
+        "input_version": null,
+        "input_image": "c40c3668c9b94b269e5c0dc6352b5cce/input.png",
+        "input_sha256": "ff142017bf14beda24103f76bac63a407b7088bb33d7f7ea424808cd61c8fbde",
+        "output_sha256": "fd2af121adbcb27ffb81e54b79e00e4ed934fc67103f6f79086cda78c454b9e6"
+      },
+      "artifact_dir": "generated/P06-2026-sequential-s1"
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 2,
+      "project": "d5010d5adca648bd832cc5b7862b8ecf",
+      "version": {
+        "id": "836ac76fd5934026b249e575588ffe0d",
+        "parent": "c40c3668c9b94b269e5c0dc6352b5cce",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "original"
+        },
+        "image": "836ac76fd5934026b249e575588ffe0d/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Keep the original accessories unchanged.",
+        "created": 1789727378.609345,
+        "seconds": 89.0763680934906,
+        "mode": "sequential",
+        "input_version": "c40c3668c9b94b269e5c0dc6352b5cce",
+        "input_image": "836ac76fd5934026b249e575588ffe0d/input.png",
+        "input_sha256": "fd2af121adbcb27ffb81e54b79e00e4ed934fc67103f6f79086cda78c454b9e6",
+        "output_sha256": "ebfdb3a6d7d2bd3d0f9eccc96471b983b6d93d351c49bd48630d790999e2d7f1"
+      },
+      "artifact_dir": "generated/P06-2026-sequential-s2"
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "mode": "sequential",
+      "stage": 3,
+      "project": "d5010d5adca648bd832cc5b7862b8ecf",
+      "version": {
+        "id": "f530cfc943f44d808b269e9c1e8af809",
+        "parent": "836ac76fd5934026b249e575588ffe0d",
+        "state": {
+          "shirt_color": "navy",
+          "background": "pale blue",
+          "pin": "silver"
+        },
+        "image": "f530cfc943f44d808b269e9c1e8af809/output.png",
+        "seed": 2026,
+        "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+        "created": 1789727472.621737,
+        "seconds": 90.0536561012268,
+        "mode": "sequential",
+        "input_version": "836ac76fd5934026b249e575588ffe0d",
+        "input_image": "f530cfc943f44d808b269e9c1e8af809/input.png",
+        "input_sha256": "ebfdb3a6d7d2bd3d0f9eccc96471b983b6d93d351c49bd48630d790999e2d7f1",
+        "output_sha256": "91033f4721ef107de0750de03719a4fc3d500d76344818e59280ed661faa33c5"
+      },
+      "artifact_dir": "generated/P06-2026-sequential-s3"
+    }
+  ]
+}

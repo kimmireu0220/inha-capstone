@@ -7,13 +7,13 @@ A Comparison of Facial Preservation and Original-Referenced Regeneration in Iter
 지도교수: 안남혁
 
 ## 초록
-이미지 편집 시스템에서 앞선 생성물을 다음 입력으로 사용하면 요청하지 않은 얼굴 변화가 누적될 수 있다. 본 연구는 순차 편집과 최초 원본에 누적 요구사항을 적용하는 재생성을 비교한다. 초기 실험은 합성 인물 6명과 순차 7경로, 후속 통제 실험은 기존 3인물의 98개 출력을 포함한다. 얼굴 MAE·SSIM·LPIPS, 피부 내부 영역 및 별도 AI 등급으로 분석하였다. 세 인물의 후속 비교에서 일괄 편집의 평균 얼굴 LPIPS가 순차보다 낮았다. 별도 FLUX.2 Klein 4B 실험의 두 시드 평균 LPIPS는 일괄 0.091313, 순차 0.124455였으나 피부 원시 MAE는 일부 설정에서 반대 방향이었다. 최초 원본과 누적 요구를 분리하는 웹 편집기를 구현하였다. 웹 생성 경로의 두 시드 평균 얼굴 LPIPS는 일괄 0.081096, 순차 0.103531이었다. 실험 결과는 원본 기반 입력 정책의 효과가 측정 영역과 지표에 따라 달라짐을 보여주며, 누적 요구사항을 관리하는 편집기의 구현 근거를 제공한다.
+이미지 편집 시스템에서 앞선 생성물을 다음 입력으로 사용하면 요청하지 않은 얼굴 변화가 누적될 수 있다. 본 연구는 순차 편집과 최초 원본에 누적 요구사항을 적용하는 재생성을 비교한다. 초기 실험은 합성 인물 6명과 순차 7경로, 후속 통제 실험은 기존 3인물의 98개 출력을 포함한다. 얼굴 MAE·SSIM·LPIPS, 피부 내부 영역 및 별도 AI 등급으로 분석하였다. 세 인물의 후속 비교에서 일괄 편집의 평균 얼굴 LPIPS가 순차보다 낮았다. 별도 FLUX.2 Klein 4B 실험의 두 시드 평균 LPIPS는 일괄 0.091313, 순차 0.124455였으나 피부 원시 MAE는 일부 설정에서 반대 방향이었다. 최초 원본과 누적 요구를 분리하는 웹 편집기를 구현하였다. 웹 생성 경로를 합성 인물 6명·3시드로 확장한 18쌍에서 평균 얼굴 LPIPS는 일괄 0.087120, 순차 0.108710이었으며, 일괄 방식이 18쌍 모두 낮았다. 실험 결과는 원본 기반 입력 정책의 효과가 측정 영역과 지표에 따라 달라짐을 보여주며, 누적 요구사항을 관리하는 편집기의 구현 근거를 제공한다.
 
 주요어: 순차 이미지 편집, 얼굴 보존, 원본 기반 재생성, 지각 유사도, 탐색적 평가
 
 ## Abstract
 
-We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. A separate website-path comparison yielded mean facial LPIPS of 0.081096 for batch and 0.103531 for sequential editing across two seeds. The findings characterize the dependence of input-policy effects on measurement regions and support an editor that maintains accumulated editing requirements.
+We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. In a six-identity, three-seed website-path comparison, mean facial LPIPS was 0.087120 for batch and 0.108710 for sequential editing across 18 pairs. The findings characterize the dependence of input-policy effects on measurement regions and support an editor that maintains accumulated editing requirements.
 
 ## 1. 서론
 인물 이미지 편집에서는 셔츠, 배경, 장신구를 변경하면서 얼굴을 유지하는 것이 주요 요구사항이다. 생성형 편집 과정에서 얼굴의 색조, 질감, 윤곽과 세부가 함께 변할 수 있으므로 요청한 요소의 변경과 얼굴 보존을 각각 평가할 필요가 있다.
@@ -41,7 +41,7 @@ SSIM은 구조적 유사도를, LPIPS는 학습된 특징 공간의 지각적 �
 | 후속 편집 통제 | 기존 3인물, 예비 14개와 추가 84개, 총 98개 | 선정 최종 12개에 별도 AI 1세션 |
 | 로컬 FLUX 정책 비교 | P04, 2시드, 새 출력 8개·최종 4개 | 자동 지표 분석 |
 | 로컬 ROI 민감도 분석 | 위 8개 재분석, 최종 4개 별도 집계 | 기존 출력의 지표 재분석 |
-| 웹 편집기 정책 비교 | P04, 2시드, 새 출력 8개·최종 4개 | 자동 지표 분석 |
+| 웹 편집기 정책 비교 | P04 예비 2시드·8개 출력; 6인물 확장 3시드·72개 출력 | 자동 지표 분석 |
 
 초기 수치 분석은 확정 출력 111개와 개입 전 후보 2개를 포함하며, AI 평가는 확정 출력을 대상으로 하였다. 후속 AI 평가에는 98개 중 최종 출력 12개를 선정하였다. 원본 대조와 개발용 이미지는 검증용 자료로 별도 관리하였다. 초기 생성기는 도구 기반 이미지 생성 시스템이며 정확한 백엔드 모델 버전과 시드는 확보되지 않았다. 따라서 이 부분의 재현성은 보존된 입력·출력·프롬프트·분석 기록에 한정된다.
 
@@ -158,19 +158,21 @@ P04의 10단계 경로 평균 LPIPS와 논리적 생성 호출 수를 표 2에 �
 | 일괄 평균 | 0.123986 | 0.861330 | 0.081096 |
 | 순차 평균 | 0.131411 | 0.781807 | 0.103531 |
 
-두 시드 모두 일괄 방식의 MAE·LPIPS가 낮고 SSIM이 높았다. 평균 LPIPS는 일괄 0.081096, 순차 0.103531로 일괄이 21.7% 낮았다. 최종 네 이미지에서 남색 셔츠, 옅은 파란 배경과 핀 하나를 확인하였다. 모델 로딩과 저장을 포함한 평균 경로 처리 시간은 일괄 1회 115.1초, 순차 3회 합계 373.4초였다. 본 비교는 한 합성 인물·두 시드의 사이트 실행 결과이며 4.4절의 명령줄 실험과 별도로 집계하였다.
+두 시드 모두 일괄 방식의 MAE·LPIPS가 낮고 SSIM이 높았다. 평균 LPIPS는 일괄 0.081096, 순차 0.103531로 일괄이 21.7% 낮았다. 최종 네 이미지에서 남색 셔츠, 옅은 파란 배경과 핀 하나를 확인하였다. 모델 로딩과 저장을 포함한 평균 경로 처리 시간은 일괄 1회 115.1초, 순차 3회 합계 373.4초였다. 이 표는 한 합성 인물·두 시드의 예비 비교다.
+
+같은 웹 생성 경로를 P01–P06의 합성 인물 6명과 시드 42·314·2026으로 확장하였다. 인물·시드마다 순차 생성 3회와 원본 기반 일괄 재생성 1회를 실행해 72개 출력을 얻었다. 최종 18쌍에서 평균 얼굴 MAE는 일괄 0.134223·순차 0.138753, SSIM은 0.846176·0.768563, LPIPS는 0.087120·0.108710이었다. 일괄 방식의 평균 LPIPS는 순차보다 19.9% 낮았다. LPIPS와 SSIM은 18쌍 모두 일괄 방식에 유리했고 MAE는 14쌍에서 일괄 방식에 유리했다. 비교 이미지에서 남색 셔츠, 옅은 파란 배경과 작은 핀을 확인하였다. 일부 순차 출력은 소매 길이 등 요청하지 않은 옷 형태가 달라졌다. 인물별 얼굴 ROI는 기존 실험에서 고정한 좌표를 해상도에 맞춰 축소했고, 입력 이미지 계보와 최종 프롬프트 일치를 검증하였다. 세 시드는 인물 내 반복 관측이다. 얼굴 원본 거리의 우세를 요청 이행이나 전체 화질의 우세로 해석하지 않았다.
 
 ## 6. 논의와 한계
 원본 기반 생성은 여러 비교에서 순차 편집보다 낮은 얼굴 원본 거리를 보였다. 무변경 반복에서도 거리가 증가한 결과는 이전 생성물을 반복 입력하는 과정 자체가 변화 누적에 기여할 가능성을 시사한다. 이에 따라 연속 요청을 텍스트 상태로 관리하고 최초 원본에 적용하는 구조가 유효한 설계 방향으로 도출된다.
 
 측정 영역에 따라 효과의 해석은 달라진다. 얼굴 전체 LPIPS는 일괄 방식에 유리했으나 피부 원시 MAE는 일부 조건에서 순차 방식이 더 낮았다. 피부 MSE의 평균 색 성분과 잔차를 분리한 결과도 색 이동과 세부 구조를 함께 분석할 필요성을 뒷받침한다.
 
-자료는 합성 인물 6명에 집중되어 있으며 후속 비교는 3명, 로컬 모델 비교는 1명과 두 시드로 구성되었다. 동일 인물의 반복과 정책 간 공유 출력에 따른 종속성이 존재한다. 초기 생성기의 백엔드 버전·시드 불확실성과 사후에 설계한 ROI 민감도 분석도 일반화를 제한한다. AI 등급은 동일 기반 모델의 편향을 공유할 수 있으며, 웹 편집기 비교는 한 인물과 두 시드에 한정된다.
+자료는 합성 인물 6명에 집중되어 있으며 후속 비교는 3명, 웹 편집기 확대 비교는 기존 6명과 인물당 세 시드로 구성되었다. 동일 인물의 반복과 정책 간 공유 출력에 따른 종속성이 존재한다. 초기 생성기의 백엔드 버전·시드 불확실성과 사후에 설계한 ROI 민감도 분석도 일반화를 제한한다. AI 등급은 동일 기반 모델의 편향을 공유할 수 있다. 웹 편집기 확대 비교는 단일 모델과 동일한 세 편집 요청에 한정된다.
 
 후속 연구에서는 새 인물과 편집 요청을 대상으로 가설, ROI, 주 지표, 시드 및 제외 기준을 사전에 고정하고 인물·반복의 군집 구조를 반영하여 분석할 필요가 있다. 실제 사진, 표정·자세 변경, 직전 출력의 세부 유지와 같은 과제로 범위를 확장하고 지각적 품질 및 사용성을 추가 검증할 수 있다.
 
 ## 7. 결론
-본 연구는 반복 이미지 편집에서 직전 출력 기반 순차 방식과 최초 원본 기반 재생성을 비교하였다. 원본 기반 방식은 여러 조건에서 더 낮은 얼굴 거리를 보였으며, 무변경 반복에서도 원본과의 차이가 누적되었다. 피부 내부 지표의 비교 방향은 측정 조건에 따라 달라 원본 거리와 피부 세부 변화를 구분하는 분석이 필요하였다. 최초 원본과 누적 요구사항을 관리하는 웹 편집기를 구현하였다. 웹 편집기의 두 시드 비교에서도 일괄 방식은 순차보다 낮은 얼굴 MAE·LPIPS와 높은 SSIM을 보였다.
+본 연구는 반복 이미지 편집에서 직전 출력 기반 순차 방식과 최초 원본 기반 재생성을 비교하였다. 원본 기반 방식은 여러 조건에서 더 낮은 얼굴 거리를 보였으며, 무변경 반복에서도 원본과의 차이가 누적되었다. 피부 내부 지표의 비교 방향은 측정 조건에 따라 달라 원본 거리와 피부 세부 변화를 구분하는 분석이 필요하였다. 최초 원본과 누적 요구사항을 관리하는 웹 편집기를 구현하였다. 웹 편집기의 6인물·18쌍 비교에서 일괄 방식은 순차보다 평균 얼굴 MAE·LPIPS가 낮고 SSIM이 높았다. LPIPS와 SSIM은 모든 쌍에서 같은 방향이었다.
 
 ## 참고문헌
 [1] K. Zhang, L. Mo, W. Chen, H. Sun, and Y. Su. MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing. NeurIPS, 2023. https://arxiv.org/abs/2306.10012

@@ -1,0 +1,29 @@
+{
+    "mflux_version": "0.19.1",
+    "model": "black-forest-labs/FLUX.2-klein-4B",
+    "base_model": "None",
+    "seed": 2026,
+    "steps": 4,
+    "guidance": 1.0,
+    "height": 768,
+    "width": 512,
+    "precision": "mlx.core.bfloat16",
+    "quantize": 4,
+    "generation_time_seconds": 78.03,
+    "created_at": "2026-09-18T14:32:58.911199",
+    "lora_paths": null,
+    "lora_scales": null,
+    "image_path": "/Users/kimmireu/Desktop/Storage/inha-capstone/local-studio/data/4f65987655a44e23adc6f83698805e70/77a4a5192b1848ecb01274338ae5a110/input.png",
+    "image_paths": [
+        "/Users/kimmireu/Desktop/Storage/inha-capstone/local-studio/data/4f65987655a44e23adc6f83698805e70/77a4a5192b1848ecb01274338ae5a110/input.png"
+    ],
+    "image_strength": null,
+    "controlnet_image_path": null,
+    "controlnet_strength": null,
+    "masked_image_path": null,
+    "depth_image_path": null,
+    "redux_image_paths": null,
+    "redux_image_strengths": null,
+    "prompt": "Edit only the supplied image. Preserve face, facial features, expression, gaze, natural skin texture, hair, pose, framing and lighting on the person. Do not beautify or smooth the face. No text, logos or watermarks. Apply these complete current requirements; preserve everything else:\n- Set the existing shirt color to navy; preserve its shape and fabric.\n- Set the background to pale blue.\n- Add exactly one small silver circular pin on the viewer-right chest.",
+    "negative_prompt": null
+}
