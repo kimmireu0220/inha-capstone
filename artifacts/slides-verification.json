@@ -7,6 +7,12 @@
   "page_number_errors": [],
   "expanded_comparison_slide": 21,
   "expanded_comparison_image": "experiments/studio-multiperson-v1/comparison-P03-314.png",
+  "visual_audit": {
+    "slides_reviewed": 33,
+    "adjusted_slides": [21],
+    "adjustments": "슬라이드 21의 세 비교 이미지에 원본·일괄 재생성·순차 생성 표기를 크게 추가하고 결과표 링크 글자를 키움",
+    "post_edit_thumbnail_checked": true
+  },
   "links_by_slide": {
     "1": [
       "https://github.com/kimmireu0220/inha-capstone/blob/main/paper/manuscript.inha.pdf"
@@ -26,7 +32,7 @@
   },
   "verified_via": [
     "Google Slides API page element and link inspection",
-    "Google Slides API thumbnails of slides 21, 22 and 33",
+    "Google Slides API thumbnails of all 33 slides and post-edit slide 21",
     "Paper numerical source audit"
   ]
 }
