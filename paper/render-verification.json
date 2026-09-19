@@ -1,18 +1,19 @@
 {
   "date": "2026-09-19",
   "inha_pages": 6,
-  "readability_pages": 10,
+  "readability_pages": 9,
   "all_pages_visually_reviewed": true,
   "korean_glyphs_present": true,
   "table7_values_verified": true,
   "pdf_hashes": {
-    "manuscript.inha.pdf": "e716384f29e9a8211d55e0fc2a46d26c71689df47f1b7299c30de5db106ce7b9",
-    "manuscript.ko.pdf": "5064bfe607601ae19b41d7c5975ae1fd86b3ac1ebb32832cbf41cff8007c6948"
+    "manuscript.inha.pdf": "89338971ac5fd57e716325854811d65b91b403bc7bdaf71f4ccea5251d4df91f",
+    "manuscript.ko.pdf": "27b0f37c0822291aa808200be0483c3fec7efe45cb6a83856e2c7ca289915ef3"
   },
   "renderers": {
     "inha": "bundled render_docx.py / LibreOffice",
     "readability": "bundled render_docx.py / LibreOffice"
   },
   "expanded_result_values_verified": true,
-  "scope_statement_verified": true
+  "scope_statement_verified": true,
+  "prose_reviewed": true
 }
