@@ -18,7 +18,7 @@
 
 ## 실험 기록
 
-- [웹 편집기 다인물 확대 비교: 6명·3시드·72장](experiments/studio-multiperson-v1/README.md)
+- [웹 편집기 다인물 확대 비교: 6명·3회·72장, MAE·SSIM·LPIPS·ArcFace](experiments/studio-multiperson-v1/README.md)
 
 - [웹 편집기 순차 생성·일괄 재생성 비교: 두 시드·8장](experiments/studio-policy-v1/RESULTS.md)
 

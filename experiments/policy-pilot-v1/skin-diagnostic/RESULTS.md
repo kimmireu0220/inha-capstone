@@ -34,7 +34,7 @@ sigma1/3/6 사이 이동 추정의 축별 범위가 3px 초과인 이미지: 0/2
 
 ## 측정 영역
 
-![원본 영역](/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/skin-diagnostic/reference-regions.png)
+![원본 영역](reference-regions.png)
 
 29장 전체 영역 검토 시트는 areas-1.png~areas-5.png, 원시 수치는 results.json에 있다. sigma1/6은 민감도 보조 분석이며 좋은 결과를 보고 주 분석을 바꾸지 않는다.
 

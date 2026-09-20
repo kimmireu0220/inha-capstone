@@ -38,15 +38,15 @@ P04 한 인물의 동일한 10단계 요구에 대해 재생성 뒤에도 편집
 
 ### 순차 유지
 
-![순차 유지](/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/finals/sequential.png)
+![순차 유지](finals/sequential.png)
 
 ### 3단계마다 재생성
 
-![3단계마다 재생성](/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/finals/fixed3.png)
+![3단계마다 재생성](finals/fixed3.png)
 
 ### 경보 시 재생성
 
-![경보 시 재생성](/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/finals/triggered.png)
+![경보 시 재생성](finals/triggered.png)
 
 ## 다음 판단에 필요한 것
 

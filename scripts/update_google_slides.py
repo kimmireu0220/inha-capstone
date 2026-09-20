@@ -15,7 +15,7 @@ from googleapiclient.discovery import build
 
 
 PRESENTATION_ID = "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8"
-SLIDE_TITLE = "6인물·3시드 확대 비교"
+SLIDE_TITLE = "6인물·3회 확대 비교"
 IMAGE_ID = "capstone_comparison_p03_314"
 IMAGE_URL = (
     "https://raw.githubusercontent.com/kimmireu0220/inha-capstone/main/"

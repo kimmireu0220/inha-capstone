@@ -19,5 +19,5 @@ while True:
  time.sleep(15)
 subprocess.run([str(REPO/'.venv-metrics/bin/python'),str(R/'analyze.py')],cwd=REPO,check=True)
 result=json.loads((R/'results.json').read_text());assert result['complete']
-p=REPO/'RESEARCH_INDEX.md';s=p.read_text();s=s.replace('웹 편집기 다인물 확대 비교: 6명·3시드, 실행 중','웹 편집기 다인물 확대 비교: 6명·3시드·72장');p.write_text(s)
+p=REPO/'RESEARCH_INDEX.md';s=p.read_text();s=s.replace('웹 편집기 다인물 확대 비교: 6명·3회, 실행 중','웹 편집기 다인물 확대 비교: 6명·3회·72장');p.write_text(s)
 print('COMPLETE: 72 outputs, 18 verified pairs; results and comparison sheets saved.',flush=True)

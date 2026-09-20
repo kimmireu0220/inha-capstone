@@ -14,11 +14,11 @@
 
 ## 최종 얼굴: 위 고정 영역, 아래 이동 영역
 
-![최종 비교](/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/alignment-diagnostic/finals.png)
+![최종 비교](finals.png)
 
 ## 위치 보정으로 LPIPS가 가장 많이 변한 사례
 
-![위치 민감도](/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/alignment-diagnostic/largest-shift.png)
+![위치 민감도](largest-shift.png)
 
 사후 선택한 예시이며 전 이미지 결과는 results.json에 보존했다. 이동량과 NCC는 각 이미지 행에 있다. 사람·독립 에이전트 평가는 이번 진단에서 수집하지 않았다.
 

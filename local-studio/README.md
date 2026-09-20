@@ -28,4 +28,4 @@ M1·16GB에서 검증한 공개 모델을 연결한 로컬 전용 시제품. 인
 
 2026-09-13: 불필요한 설명을 줄이고 세부 설정을 접는 화면으로 변경했다. 브라우저에서 한국어 요청→실제 생성(101.26초)→수동 변경→버전 복원을 확인했다. [화면 기능 검증 기록](checks/ui-verification.json). 기존 [생성 검증](verification.json)의 95.28초와 서로 다른 단일 실행 기록이며 성능 평균이나 사용자 만족도 평가가 아니다.
 
-2026-09-14: 두 생성 모드·시드 저장·버전 비교를 구현했다. [실제 생성 비교](../experiments/studio-policy-v1/RESULTS.md)에서 8회 생성, 4개 최종 출력의 MAE·SSIM·LPIPS를 분석했다. [화면 검증](checks/modes-ui-verification.json).
+두 생성 모드·시드 저장·버전 비교를 구현했다. [6인물 확대 비교](../experiments/studio-multiperson-v1/RESULTS.md)에서 출력 72개와 최종 18쌍의 MAE·SSIM·LPIPS·ArcFace를 분석했다. P04·두 시드 [예비 비교](../experiments/studio-policy-v1/RESULTS.md)와 [화면 검증](checks/modes-ui-verification.json)은 별도로 보존한다.
