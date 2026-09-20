@@ -9,7 +9,8 @@ sources={
 '4.4':'experiments/local-policy-v1/results.json',
 '4.5':'experiments/local-policy-robustness-v1/results.json',
 '5.1':'experiments/studio-policy-v1/results.json',
-'5.1 expanded':'experiments/studio-multiperson-v1/results.json'}
+'5.1 expanded':'experiments/studio-multiperson-v1/results.json',
+'5.1 ArcFace':'experiments/studio-multiperson-v1/arcface-results.json'}
 r=json.loads((R/sources['4.5']).read_text())
 checks=[]
 for mode,arms in r['summary'].items():
@@ -36,6 +37,13 @@ for mode in ['regenerate','sequential']:
  for k in ['mae','ssim','lpips']:
   assert f"{expanded['means'][mode][k]:.6f}" in md
 assert json.loads((R/'experiments/studio-multiperson-v1/verification.json').read_text())['complete']
-output={'date':'2026-09-18','website_final_rows_checked':4,'website_mean_rows_checked':2,'website_expanded_pairs_checked':18,'scope':'Numerical transcription checks and source hashes; not scientific external validation','passed':True,'manuscript_sha256':hashlib.sha256(md.encode()).hexdigest(),'sources':[{ 'sections':k,'path':p,'sha256':hashlib.sha256((R/p).read_bytes()).hexdigest()} for k,p in sources.items()],'table6_checks':checks,'local_final_rows_checked':4,'followup_lpips_and_color_values_checked':10,'ai_counts_checked':True,'posthoc_analysis_verified':True}
+arc=json.loads((R/sources['5.1 ArcFace']).read_text())
+assert arc['paired_comparisons']==18 and arc['regenerate_wins']==18
+assert arc['images']==42 and arc['all_images_single_face']
+for mode in ['regenerate','sequential']:
+ assert f"{arc['means'][mode]:.6f}" in md
+assert f"{arc['mean_difference_regenerate_minus_sequential']:.6f}" in md
+assert json.loads((R/'experiments/studio-multiperson-v1/arcface-verification.json').read_text())['passed']
+output={'date':'2026-09-20','website_final_rows_checked':4,'website_mean_rows_checked':2,'website_expanded_pairs_checked':18,'website_arcface_pairs_checked':18,'scope':'Numerical transcription checks and source hashes; not scientific external validation','passed':True,'manuscript_sha256':hashlib.sha256(md.encode()).hexdigest(),'sources':[{ 'sections':k,'path':p,'sha256':hashlib.sha256((R/p).read_bytes()).hexdigest()} for k,p in sources.items()],'table6_checks':checks,'local_final_rows_checked':4,'followup_lpips_and_color_values_checked':10,'ai_counts_checked':True,'posthoc_analysis_verified':True,'arcface_checked':True}
 (R/'paper/evidence.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
 print('Paper numerical transcription and source checks passed')

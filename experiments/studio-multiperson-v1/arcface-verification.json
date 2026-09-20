@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "images_checked": 42,
+  "single_face_images": 42,
+  "paired_comparisons": 18,
+  "model_files": {
+    "detector": {
+      "path": "~/.insightface/models/buffalo_l/det_10g.onnx",
+      "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91"
+    },
+    "recognition": {
+      "path": "~/.insightface/models/buffalo_l/w600k_r50.onnx",
+      "sha256": "4c06341c33c2ca1f86781dab0e829f88ad5b64be9fba56e56bc9ebdefc619e43"
+    }
+  },
+  "analysis_sha256": "c8161394f06041346bfe9686bf6dca047d87e08e47d82d402a51010e57d78872",
+  "results_sha256": "4f2c229ac89cc49372145321241465d4f6ce8be5b5a906e00758b36019cd4712",
+  "csv_sha256": "4969b3050ea3fd9407a8e8b015d3e333705d9c3d2fdc0ea5d39f9f094998ac66"
+}

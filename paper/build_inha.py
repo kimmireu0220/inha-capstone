@@ -8,20 +8,20 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 R=Path(__file__).resolve().parent
 s=(R/'manuscript.ko.md').read_text().split('## 부록 A.')[0].strip()
-abstract='We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. In a six-identity, three-seed website-path comparison, mean facial LPIPS was 0.087120 for batch and 0.108710 for sequential editing across 18 pairs. '
+abstract='We compare sequential image editing with regeneration from the original image and accumulated requirements. Experiments include six synthetic identities, 98 follow-up outputs from three identities, automatic image metrics and separate AI ratings. Batch editing produced lower mean facial LPIPS in the tested follow-up comparisons. A local FLUX.2 Klein 4B comparison yielded mean LPIPS of 0.091313 for batch and 0.124455 for sequential editing, while raw skin MAE reversed the ranking in some settings. A web editor implemented the workflow. In a six-identity, three-seed website-path comparison, mean facial LPIPS was 0.087120 for batch and 0.108710 for sequential editing across 18 pairs. Mean ArcFace cosine similarity to the original was 0.922054 for regeneration and 0.713703 for sequential editing, with higher similarity for regeneration in all 18 pairs.'
 auth=json.loads((R/'authors.json').read_text()) if (R/'authors.json').exists() else {'korean':'________________','english':'________________','advisor_korean':'________________','advisor_english':'________________'}
 d=Document();sec=d.sections[0];sec.page_width=Cm(21);sec.page_height=Cm(29.7);sec.top_margin=Cm(2);sec.bottom_margin=Cm(2);sec.left_margin=Cm(2);sec.right_margin=Cm(2)
 for name in ['Normal','Title','Subtitle','Heading 1','Heading 2','Caption']:
- st=d.styles[name];st.font.name='Times New Roman';st.font.size=Pt(10);st.font.color.rgb=RGBColor(0,0,0);rf=st._element.get_or_add_rPr().rFonts;rf.set(qn('w:eastAsia'),'Noto Serif CJK KR')
+ st=d.styles[name];st.font.name='Times New Roman';st.font.size=Pt(10);st.font.color.rgb=RGBColor(0,0,0);rf=st._element.get_or_add_rPr().rFonts;rf.set(qn('w:eastAsia'),'KoPubWorldBatang')
  for k in list(rf.attrib):
   if 'Theme' in k:del rf.attrib[k]
  for el in list(st._element.iter(qn('w:pBdr'))):el.getparent().remove(el)
 n=d.styles['Normal'].paragraph_format;n.line_spacing=Pt(14);n.space_after=Pt(5);n.first_line_indent=Cm(.3);n.widow_control=True
 for name in ['Heading 1','Heading 2']:
- st=d.styles[name];st.font.name='Noto Sans CJK KR';st._element.rPr.rFonts.set(qn('w:eastAsia'),'Noto Sans CJK KR');st.font.bold=True;st.font.size=Pt(11 if name=='Heading 1' else 10);st.paragraph_format.first_line_indent=Pt(0);st.paragraph_format.space_before=Pt(10);st.paragraph_format.space_after=Pt(6)
+ st=d.styles[name];st.font.name='KoPubWorldDotum';st._element.rPr.rFonts.set(qn('w:eastAsia'),'KoPubWorldDotum');st.font.bold=True;st.font.size=Pt(11 if name=='Heading 1' else 10);st.paragraph_format.first_line_indent=Pt(0);st.paragraph_format.space_before=Pt(10);st.paragraph_format.space_after=Pt(6)
 d.styles['Heading 1'].paragraph_format.alignment=WD_ALIGN_PARAGRAPH.CENTER
 for name in ['Title','Subtitle']:d.styles[name].paragraph_format.first_line_indent=Pt(0)
-d.styles['Title'].font.size=Pt(17);d.styles['Title']._element.rPr.rFonts.set(qn('w:eastAsia'),'Noto Sans CJK KR');d.styles['Title'].font.bold=True
+d.styles['Title'].font.size=Pt(17);d.styles['Title']._element.rPr.rFonts.set(qn('w:eastAsia'),'KoPubWorldDotum');d.styles['Title'].font.bold=True
 d.styles['Subtitle'].font.italic=False;d.styles['Subtitle'].font.size=Pt(14);d.styles['Subtitle'].font.bold=True
 
 def center(text,style=None):

@@ -53,9 +53,9 @@ while i<len(lines):
 d.core_properties.title=s.splitlines()[0][2:];d.core_properties.subject='Exploratory empirical study';d.core_properties.author=''
 for style in d.styles:
  if style.type == 1:
-  style.font.name='Noto Sans CJK KR'
+  style.font.name='KoPubWorldDotum'
   rf=style._element.get_or_add_rPr().rFonts
-  for key in ['ascii','hAnsi','eastAsia','cs']:rf.set(qn('w:'+key),'Noto Sans CJK KR')
+  for key in ['ascii','hAnsi','eastAsia','cs']:rf.set(qn('w:'+key),'KoPubWorldDotum')
   for key in list(rf.attrib):
    if 'Theme' in key:del rf.attrib[key]
 for el in list(d._element.iter(qn('w:pBdr'))):el.getparent().remove(el)

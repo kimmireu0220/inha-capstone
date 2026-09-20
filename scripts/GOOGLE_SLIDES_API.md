@@ -11,4 +11,10 @@ Google Cloud 프로젝트 `Inha Capstone Slides` (`zeta-post-509112-u2`)에 Goog
 .venv-slides/bin/python scripts/update_google_slides.py --apply
 ```
 
+ArcFace 지표와 18쌍 결과, 발표자 노트를 다시 반영할 때는 다음 명령을 사용한다.
+
+```sh
+.venv-slides/bin/python scripts/update_arcface_google_slides.py
+```
+
 새 컴퓨터라면 Python 가상환경을 만들고 `google-api-python-client`, `google-auth-oauthlib`를 설치한다. `--apply` 없이 실행하면 대상 슬라이드만 확인한다.

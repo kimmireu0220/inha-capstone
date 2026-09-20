@@ -53,6 +53,19 @@
 
 인물별 3시드 평균 LPIPS도 6명 모두 원본 기반 재생성에 유리했다. 최종 비교 이미지 18개를 확인했고, 남색 셔츠·옅은 파란 배경·작은 핀이 관찰됐다. 일부 순차 출력에서는 소매 길이 등 요청하지 않은 옷 형태가 달라졌다. 이는 얼굴 거리 지표와 별개의 관찰이다.
 
+## ArcFace 얼굴 특징 유사도
+
+InsightFace `buffalo_l`의 얼굴 검출·정렬과 `w600k_r50` 512차원 임베딩을 동일하게 적용해 원본과 최종 출력의 코사인 유사도를 계산했다. 42개 입력에서 모두 얼굴 하나가 검출됐고 최저 검출 신뢰도는 0.849010이었다.
+
+| 모드 | 원본 대비 ArcFace 코사인 유사도 ↑ |
+| --- | ---: |
+| regenerate | 0.922054 |
+| sequential | 0.713703 |
+
+평균 차이는 0.208351이며 18/18쌍, 인물별 평균 6/6명에서 원본 기반 재생성이 높았다. 서로 다른 원본 인물 15쌍의 평균 유사도는 0.411874였다. ArcFace는 얼굴 정체성 특징의 보존을 측정하고, 요청 반영과 피부 표현은 비교 이미지와 다른 지표로 확인한다.
+
+[ArcFace 전체 수치](arcface-pairs.csv) · [ArcFace 결과 JSON](arcface-results.json) · [ArcFace 검증](arcface-verification.json) · [ArcFace 논문](https://openaccess.thecvf.com/content_CVPR_2019/html/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.html) · [InsightFace](https://github.com/deepinsight/insightface)
+
 각 인물의 세 시드는 반복 측정이다. 얼굴 지표는 원본과의 차이를 측정하며, 편집 요청 반영은 비교 이미지를 별도로 확인한다.
 
 | 인물 | 시드 | 일괄 1회(초) | 순차 3회 합계(초) |

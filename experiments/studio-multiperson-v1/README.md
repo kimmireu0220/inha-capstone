@@ -6,12 +6,14 @@
 - [진행 상태](running.json)
 - [결과](RESULTS.md)
 - [호출 기록](calls.json)
+- [ArcFace 실행 환경](arcface-requirements.txt)
 
 실행:
 
 ```sh
 .venv-metrics/bin/python -u experiments/studio-multiperson-v1/run.py
 .venv-metrics/bin/python experiments/studio-multiperson-v1/analyze.py
+.venv-metrics/bin/python experiments/studio-multiperson-v1/arcface_analyze.py
 ```
 
-사이트가 `http://localhost:8770`에서 실행 중이어야 한다. `finish.py`가 생성 완료 후 분석을 실행한다. 결과 파일의 `complete`는 참이며, 72개 생성과 18쌍의 검증이 끝났다. 생성 이미지는 사이트 작업 목록에서도 확인할 수 있다.
+사이트가 `http://localhost:8770`에서 실행 중이어야 한다. `finish.py`가 생성 완료 후 분석을 실행한다. 결과 파일의 `complete`는 참이며, 72개 생성과 18쌍의 검증이 끝났다. 생성 이미지는 사이트 작업 목록에서도 확인할 수 있다. ArcFace 분석은 InsightFace `buffalo_l`의 얼굴 검출·정렬과 `w600k_r50` 512차원 임베딩을 사용한다.

@@ -1,0 +1,1184 @@
+{
+  "method": {
+    "library": "insightface",
+    "library_version": "0.7.3",
+    "model_pack": "buffalo_l",
+    "recognition_model": "w600k_r50.onnx",
+    "embedding_dimensions": 512,
+    "detector": "det_10g.onnx",
+    "det_size": [
+      640,
+      640
+    ],
+    "det_thresh": 0.5,
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "model_files": {
+      "detector": {
+        "path": "~/.insightface/models/buffalo_l/det_10g.onnx",
+        "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91"
+      },
+      "recognition": {
+        "path": "~/.insightface/models/buffalo_l/w600k_r50.onnx",
+        "sha256": "4c06341c33c2ca1f86781dab0e829f88ad5b64be9fba56e56bc9ebdefc619e43"
+      }
+    },
+    "pretrained_model_license": "non-commercial research only"
+  },
+  "images": 42,
+  "references": 6,
+  "final_outputs": 36,
+  "paired_comparisons": 18,
+  "all_images_single_face": true,
+  "minimum_detection_score": 0.8490098118782043,
+  "means": {
+    "regenerate": 0.9220544892697854,
+    "sequential": 0.7137030312734529
+  },
+  "mean_difference_regenerate_minus_sequential": 0.20835145799633248,
+  "regenerate_wins": 18,
+  "sequential_wins": 0,
+  "per_person_means": {
+    "P01": {
+      "regenerate": 0.9191743511128139,
+      "sequential": 0.667152970170739
+    },
+    "P02": {
+      "regenerate": 0.9509457009744645,
+      "sequential": 0.8067641039430534
+    },
+    "P03": {
+      "regenerate": 0.9191027014696737,
+      "sequential": 0.699412181444021
+    },
+    "P04": {
+      "regenerate": 0.8988190454807395,
+      "sequential": 0.6516822806814916
+    },
+    "P05": {
+      "regenerate": 0.9110600204427017,
+      "sequential": 0.7198687152003425
+    },
+    "P06": {
+      "regenerate": 0.93322511613832,
+      "sequential": 0.7373379362010701
+    }
+  },
+  "per_person_regenerate_wins": 6,
+  "different_identity_reference_similarity": {
+    "pairs": 15,
+    "mean": 0.4118738009159308,
+    "maximum": 0.575347133353046
+  },
+  "rows": [
+    {
+      "person": "P01",
+      "seed": 42,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9203689027248623,
+      "cosine_distance": 0.07963109727513773,
+      "image": "generated/P01-42-regenerate-s3/output.png",
+      "bbox": [
+        190.7371826171875,
+        66.81256866455078,
+        304.3042907714844,
+        223.70645141601562
+      ],
+      "det_score": 0.878862738609314
+    },
+    {
+      "person": "P01",
+      "seed": 42,
+      "mode": "sequential",
+      "cosine_similarity": 0.6838863436317686,
+      "cosine_distance": 0.3161136563682314,
+      "image": "generated/P01-42-sequential-s3/output.png",
+      "bbox": [
+        191.12974548339844,
+        67.17414855957031,
+        304.6053161621094,
+        223.49659729003906
+      ],
+      "det_score": 0.8776770234107971
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9199390898580188,
+      "cosine_distance": 0.08006091014198125,
+      "image": "generated/P01-314-regenerate-s3/output.png",
+      "bbox": [
+        190.9400177001953,
+        66.95420837402344,
+        304.08563232421875,
+        223.74737548828125
+      ],
+      "det_score": 0.8788085579872131
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "mode": "sequential",
+      "cosine_similarity": 0.6489897544059138,
+      "cosine_distance": 0.3510102455940862,
+      "image": "generated/P01-314-sequential-s3/output.png",
+      "bbox": [
+        190.6463165283203,
+        67.4687271118164,
+        304.3175354003906,
+        223.87677001953125
+      ],
+      "det_score": 0.882043719291687
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9172150607555608,
+      "cosine_distance": 0.08278493924443919,
+      "image": "generated/P01-2026-regenerate-s3/output.png",
+      "bbox": [
+        191.10667419433594,
+        66.95023345947266,
+        304.1905822753906,
+        223.56991577148438
+      ],
+      "det_score": 0.8763364553451538
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "mode": "sequential",
+      "cosine_similarity": 0.6685828124745345,
+      "cosine_distance": 0.33141718752546545,
+      "image": "generated/P01-2026-sequential-s3/output.png",
+      "bbox": [
+        191.39059448242188,
+        67.4573745727539,
+        304.5041198730469,
+        223.1182098388672
+      ],
+      "det_score": 0.8742444515228271
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9512304740161756,
+      "cosine_distance": 0.04876952598382445,
+      "image": "generated/P02-42-regenerate-s3/output.png",
+      "bbox": [
+        194.47142028808594,
+        79.69147491455078,
+        318.12890625,
+        248.72422790527344
+      ],
+      "det_score": 0.854780375957489
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "mode": "sequential",
+      "cosine_similarity": 0.8088380527281529,
+      "cosine_distance": 0.1911619472718471,
+      "image": "generated/P02-42-sequential-s3/output.png",
+      "bbox": [
+        193.9845428466797,
+        78.98828887939453,
+        318.8312683105469,
+        248.91783142089844
+      ],
+      "det_score": 0.850325345993042
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9495661917393347,
+      "cosine_distance": 0.05043380826066535,
+      "image": "generated/P02-314-regenerate-s3/output.png",
+      "bbox": [
+        194.54615783691406,
+        79.29399108886719,
+        318.4809875488281,
+        249.0439910888672
+      ],
+      "det_score": 0.8516271710395813
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "mode": "sequential",
+      "cosine_similarity": 0.8039041075926372,
+      "cosine_distance": 0.1960958924073628,
+      "image": "generated/P02-314-sequential-s3/output.png",
+      "bbox": [
+        194.33526611328125,
+        79.25199127197266,
+        319.1270446777344,
+        249.091796875
+      ],
+      "det_score": 0.8493921756744385
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9520404371678832,
+      "cosine_distance": 0.047959562832116776,
+      "image": "generated/P02-2026-regenerate-s3/output.png",
+      "bbox": [
+        194.4562530517578,
+        78.83512878417969,
+        318.4046936035156,
+        248.75003051757812
+      ],
+      "det_score": 0.8490098118782043
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "mode": "sequential",
+      "cosine_similarity": 0.80755015150837,
+      "cosine_distance": 0.19244984849163005,
+      "image": "generated/P02-2026-sequential-s3/output.png",
+      "bbox": [
+        194.49612426757812,
+        79.60330963134766,
+        319.8326721191406,
+        249.05783081054688
+      ],
+      "det_score": 0.8504341244697571
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9206004533312502,
+      "cosine_distance": 0.07939954666874982,
+      "image": "generated/P03-42-regenerate-s3/output.png",
+      "bbox": [
+        199.03707885742188,
+        35.369083404541016,
+        305.1775207519531,
+        191.82345581054688
+      ],
+      "det_score": 0.9196582436561584
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "mode": "sequential",
+      "cosine_similarity": 0.676238385382339,
+      "cosine_distance": 0.32376161461766095,
+      "image": "generated/P03-42-sequential-s3/output.png",
+      "bbox": [
+        199.14169311523438,
+        35.718257904052734,
+        305.5718688964844,
+        191.57273864746094
+      ],
+      "det_score": 0.9166156053543091
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9183160897150404,
+      "cosine_distance": 0.08168391028495958,
+      "image": "generated/P03-314-regenerate-s3/output.png",
+      "bbox": [
+        199.03514099121094,
+        35.1218376159668,
+        305.3117980957031,
+        192.0384521484375
+      ],
+      "det_score": 0.9207874536514282
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "mode": "sequential",
+      "cosine_similarity": 0.7087703635864365,
+      "cosine_distance": 0.2912296364135635,
+      "image": "generated/P03-314-sequential-s3/output.png",
+      "bbox": [
+        198.86671447753906,
+        35.61323547363281,
+        305.6699523925781,
+        191.9585418701172
+      ],
+      "det_score": 0.918830156326294
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9183915613627305,
+      "cosine_distance": 0.08160843863726952,
+      "image": "generated/P03-2026-regenerate-s3/output.png",
+      "bbox": [
+        199.30776977539062,
+        35.169857025146484,
+        305.4819641113281,
+        191.5976104736328
+      ],
+      "det_score": 0.9182854890823364
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "mode": "sequential",
+      "cosine_similarity": 0.7132277953632875,
+      "cosine_distance": 0.2867722046367125,
+      "image": "generated/P03-2026-sequential-s3/output.png",
+      "bbox": [
+        199.3001708984375,
+        35.751827239990234,
+        305.7686462402344,
+        191.1887664794922
+      ],
+      "det_score": 0.9183545112609863
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "mode": "regenerate",
+      "cosine_similarity": 0.8964490421808147,
+      "cosine_distance": 0.10355095781918533,
+      "image": "generated/P04-42-regenerate-s3/output.png",
+      "bbox": [
+        203.79029846191406,
+        53.9286994934082,
+        307.112060546875,
+        197.87191772460938
+      ],
+      "det_score": 0.8631343245506287
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "mode": "sequential",
+      "cosine_similarity": 0.6409824365007438,
+      "cosine_distance": 0.3590175634992562,
+      "image": "generated/P04-42-sequential-s3/output.png",
+      "bbox": [
+        203.9607696533203,
+        54.20704650878906,
+        306.8414306640625,
+        197.5117950439453
+      ],
+      "det_score": 0.8624051809310913
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9008915474307229,
+      "cosine_distance": 0.09910845256927714,
+      "image": "generated/P04-314-regenerate-s3/output.png",
+      "bbox": [
+        203.8148193359375,
+        54.091434478759766,
+        307.159423828125,
+        197.45761108398438
+      ],
+      "det_score": 0.8619526624679565
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "mode": "sequential",
+      "cosine_similarity": 0.6645309426050142,
+      "cosine_distance": 0.3354690573949858,
+      "image": "generated/P04-314-sequential-s3/output.png",
+      "bbox": [
+        203.81834411621094,
+        54.9594841003418,
+        306.6705322265625,
+        197.11813354492188
+      ],
+      "det_score": 0.8622221350669861
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "mode": "regenerate",
+      "cosine_similarity": 0.899116546830681,
+      "cosine_distance": 0.10088345316931902,
+      "image": "generated/P04-2026-regenerate-s3/output.png",
+      "bbox": [
+        203.84164428710938,
+        54.279327392578125,
+        307.3525695800781,
+        197.5067901611328
+      ],
+      "det_score": 0.8582240343093872
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "mode": "sequential",
+      "cosine_similarity": 0.6495334629387166,
+      "cosine_distance": 0.3504665370612834,
+      "image": "generated/P04-2026-sequential-s3/output.png",
+      "bbox": [
+        204.1033477783203,
+        54.90087890625,
+        307.42584228515625,
+        197.30245971679688
+      ],
+      "det_score": 0.8583590388298035
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9045001759197144,
+      "cosine_distance": 0.09549982408028557,
+      "image": "generated/P05-42-regenerate-s3/output.png",
+      "bbox": [
+        198.49424743652344,
+        48.933414459228516,
+        303.3865966796875,
+        196.63502502441406
+      ],
+      "det_score": 0.8710904121398926
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "mode": "sequential",
+      "cosine_similarity": 0.7068059837343299,
+      "cosine_distance": 0.2931940162656701,
+      "image": "generated/P05-42-sequential-s3/output.png",
+      "bbox": [
+        198.6473388671875,
+        49.45515823364258,
+        303.6398010253906,
+        196.59814453125
+      ],
+      "det_score": 0.8681581020355225
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9148886956735103,
+      "cosine_distance": 0.08511130432648972,
+      "image": "generated/P05-314-regenerate-s3/output.png",
+      "bbox": [
+        198.792236328125,
+        49.053897857666016,
+        303.1880798339844,
+        196.72914123535156
+      ],
+      "det_score": 0.8720950484275818
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "mode": "sequential",
+      "cosine_similarity": 0.7236892814434941,
+      "cosine_distance": 0.2763107185565059,
+      "image": "generated/P05-314-sequential-s3/output.png",
+      "bbox": [
+        198.20611572265625,
+        48.05353546142578,
+        303.986328125,
+        196.4227752685547
+      ],
+      "det_score": 0.8775148391723633
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9137911897348807,
+      "cosine_distance": 0.08620881026511928,
+      "image": "generated/P05-2026-regenerate-s3/output.png",
+      "bbox": [
+        198.5652313232422,
+        48.307373046875,
+        303.7401428222656,
+        196.23255920410156
+      ],
+      "det_score": 0.8770670294761658
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "mode": "sequential",
+      "cosine_similarity": 0.7291108804232035,
+      "cosine_distance": 0.2708891195767965,
+      "image": "generated/P05-2026-sequential-s3/output.png",
+      "bbox": [
+        198.3637237548828,
+        48.32229995727539,
+        303.908935546875,
+        195.7001495361328
+      ],
+      "det_score": 0.8783504962921143
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9300482284142344,
+      "cosine_distance": 0.0699517715857656,
+      "image": "generated/P06-42-regenerate-s3/output.png",
+      "bbox": [
+        203.57986450195312,
+        52.94386672973633,
+        310.798095703125,
+        204.8165283203125
+      ],
+      "det_score": 0.8899886608123779
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "mode": "sequential",
+      "cosine_similarity": 0.7039070704493566,
+      "cosine_distance": 0.29609292955064337,
+      "image": "generated/P06-42-sequential-s3/output.png",
+      "bbox": [
+        203.98260498046875,
+        53.116973876953125,
+        310.78009033203125,
+        205.11050415039062
+      ],
+      "det_score": 0.8868403434753418
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9349854524538679,
+      "cosine_distance": 0.06501454754613212,
+      "image": "generated/P06-314-regenerate-s3/output.png",
+      "bbox": [
+        203.7466583251953,
+        53.62860107421875,
+        310.6297302246094,
+        204.64547729492188
+      ],
+      "det_score": 0.888401985168457
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "mode": "sequential",
+      "cosine_similarity": 0.732236339073459,
+      "cosine_distance": 0.267763660926541,
+      "image": "generated/P06-314-sequential-s3/output.png",
+      "bbox": [
+        203.89149475097656,
+        54.125732421875,
+        310.4821472167969,
+        204.30101013183594
+      ],
+      "det_score": 0.8846074342727661
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "mode": "regenerate",
+      "cosine_similarity": 0.9346416675468578,
+      "cosine_distance": 0.06535833245314215,
+      "image": "generated/P06-2026-regenerate-s3/output.png",
+      "bbox": [
+        203.7916717529297,
+        53.99871826171875,
+        310.830078125,
+        204.62945556640625
+      ],
+      "det_score": 0.8860061168670654
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "mode": "sequential",
+      "cosine_similarity": 0.7758703990803948,
+      "cosine_distance": 0.2241296009196052,
+      "image": "generated/P06-2026-sequential-s3/output.png",
+      "bbox": [
+        203.87548828125,
+        54.82242965698242,
+        311.16387939453125,
+        204.7327423095703
+      ],
+      "det_score": 0.8862864375114441
+    }
+  ],
+  "pairs": [
+    {
+      "person": "P01",
+      "seed": 42,
+      "regenerate_similarity": 0.9203689027248623,
+      "sequential_similarity": 0.6838863436317686,
+      "regenerate_minus_sequential": 0.23648255909309368,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P01",
+      "seed": 314,
+      "regenerate_similarity": 0.9199390898580188,
+      "sequential_similarity": 0.6489897544059138,
+      "regenerate_minus_sequential": 0.270949335452105,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P01",
+      "seed": 2026,
+      "regenerate_similarity": 0.9172150607555608,
+      "sequential_similarity": 0.6685828124745345,
+      "regenerate_minus_sequential": 0.24863224828102626,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P02",
+      "seed": 42,
+      "regenerate_similarity": 0.9512304740161756,
+      "sequential_similarity": 0.8088380527281529,
+      "regenerate_minus_sequential": 0.14239242128802265,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P02",
+      "seed": 314,
+      "regenerate_similarity": 0.9495661917393347,
+      "sequential_similarity": 0.8039041075926372,
+      "regenerate_minus_sequential": 0.14566208414669746,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P02",
+      "seed": 2026,
+      "regenerate_similarity": 0.9520404371678832,
+      "sequential_similarity": 0.80755015150837,
+      "regenerate_minus_sequential": 0.14449028565951327,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P03",
+      "seed": 42,
+      "regenerate_similarity": 0.9206004533312502,
+      "sequential_similarity": 0.676238385382339,
+      "regenerate_minus_sequential": 0.24436206794891113,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P03",
+      "seed": 314,
+      "regenerate_similarity": 0.9183160897150404,
+      "sequential_similarity": 0.7087703635864365,
+      "regenerate_minus_sequential": 0.2095457261286039,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P03",
+      "seed": 2026,
+      "regenerate_similarity": 0.9183915613627305,
+      "sequential_similarity": 0.7132277953632875,
+      "regenerate_minus_sequential": 0.20516376599944297,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P04",
+      "seed": 42,
+      "regenerate_similarity": 0.8964490421808147,
+      "sequential_similarity": 0.6409824365007438,
+      "regenerate_minus_sequential": 0.25546660568007085,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P04",
+      "seed": 314,
+      "regenerate_similarity": 0.9008915474307229,
+      "sequential_similarity": 0.6645309426050142,
+      "regenerate_minus_sequential": 0.23636060482570864,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P04",
+      "seed": 2026,
+      "regenerate_similarity": 0.899116546830681,
+      "sequential_similarity": 0.6495334629387166,
+      "regenerate_minus_sequential": 0.24958308389196437,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P05",
+      "seed": 42,
+      "regenerate_similarity": 0.9045001759197144,
+      "sequential_similarity": 0.7068059837343299,
+      "regenerate_minus_sequential": 0.19769419218538453,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P05",
+      "seed": 314,
+      "regenerate_similarity": 0.9148886956735103,
+      "sequential_similarity": 0.7236892814434941,
+      "regenerate_minus_sequential": 0.19119941423001618,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P05",
+      "seed": 2026,
+      "regenerate_similarity": 0.9137911897348807,
+      "sequential_similarity": 0.7291108804232035,
+      "regenerate_minus_sequential": 0.18468030931167723,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P06",
+      "seed": 42,
+      "regenerate_similarity": 0.9300482284142344,
+      "sequential_similarity": 0.7039070704493566,
+      "regenerate_minus_sequential": 0.22614115796487777,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P06",
+      "seed": 314,
+      "regenerate_similarity": 0.9349854524538679,
+      "sequential_similarity": 0.732236339073459,
+      "regenerate_minus_sequential": 0.2027491133804089,
+      "winner": "regenerate"
+    },
+    {
+      "person": "P06",
+      "seed": 2026,
+      "regenerate_similarity": 0.9346416675468578,
+      "sequential_similarity": 0.7758703990803948,
+      "regenerate_minus_sequential": 0.15877126846646306,
+      "winner": "regenerate"
+    }
+  ],
+  "detections": [
+    {
+      "image": "reference-P01.png",
+      "bbox": [
+        191.81114196777344,
+        66.1194076538086,
+        303.8135681152344,
+        224.29074096679688
+      ],
+      "det_score": 0.8793063163757324
+    },
+    {
+      "image": "reference-P02.png",
+      "bbox": [
+        195.0400848388672,
+        79.59343719482422,
+        317.9518737792969,
+        249.08712768554688
+      ],
+      "det_score": 0.853325366973877
+    },
+    {
+      "image": "reference-P03.png",
+      "bbox": [
+        199.61184692382812,
+        36.171871185302734,
+        304.5908203125,
+        192.16989135742188
+      ],
+      "det_score": 0.9153800010681152
+    },
+    {
+      "image": "reference-P04.png",
+      "bbox": [
+        203.90945434570312,
+        54.02604675292969,
+        307.0170593261719,
+        198.30906677246094
+      ],
+      "det_score": 0.8608951568603516
+    },
+    {
+      "image": "reference-P05.png",
+      "bbox": [
+        199.1847686767578,
+        49.89415740966797,
+        302.434326171875,
+        196.7930145263672
+      ],
+      "det_score": 0.8639059066772461
+    },
+    {
+      "image": "reference-P06.png",
+      "bbox": [
+        203.92262268066406,
+        54.132232666015625,
+        310.5517578125,
+        204.92288208007812
+      ],
+      "det_score": 0.8851293325424194
+    },
+    {
+      "image": "generated/P01-42-regenerate-s3/output.png",
+      "bbox": [
+        190.7371826171875,
+        66.81256866455078,
+        304.3042907714844,
+        223.70645141601562
+      ],
+      "det_score": 0.878862738609314
+    },
+    {
+      "image": "generated/P01-42-sequential-s3/output.png",
+      "bbox": [
+        191.12974548339844,
+        67.17414855957031,
+        304.6053161621094,
+        223.49659729003906
+      ],
+      "det_score": 0.8776770234107971
+    },
+    {
+      "image": "generated/P01-314-regenerate-s3/output.png",
+      "bbox": [
+        190.9400177001953,
+        66.95420837402344,
+        304.08563232421875,
+        223.74737548828125
+      ],
+      "det_score": 0.8788085579872131
+    },
+    {
+      "image": "generated/P01-314-sequential-s3/output.png",
+      "bbox": [
+        190.6463165283203,
+        67.4687271118164,
+        304.3175354003906,
+        223.87677001953125
+      ],
+      "det_score": 0.882043719291687
+    },
+    {
+      "image": "generated/P01-2026-regenerate-s3/output.png",
+      "bbox": [
+        191.10667419433594,
+        66.95023345947266,
+        304.1905822753906,
+        223.56991577148438
+      ],
+      "det_score": 0.8763364553451538
+    },
+    {
+      "image": "generated/P01-2026-sequential-s3/output.png",
+      "bbox": [
+        191.39059448242188,
+        67.4573745727539,
+        304.5041198730469,
+        223.1182098388672
+      ],
+      "det_score": 0.8742444515228271
+    },
+    {
+      "image": "generated/P02-42-regenerate-s3/output.png",
+      "bbox": [
+        194.47142028808594,
+        79.69147491455078,
+        318.12890625,
+        248.72422790527344
+      ],
+      "det_score": 0.854780375957489
+    },
+    {
+      "image": "generated/P02-42-sequential-s3/output.png",
+      "bbox": [
+        193.9845428466797,
+        78.98828887939453,
+        318.8312683105469,
+        248.91783142089844
+      ],
+      "det_score": 0.850325345993042
+    },
+    {
+      "image": "generated/P02-314-regenerate-s3/output.png",
+      "bbox": [
+        194.54615783691406,
+        79.29399108886719,
+        318.4809875488281,
+        249.0439910888672
+      ],
+      "det_score": 0.8516271710395813
+    },
+    {
+      "image": "generated/P02-314-sequential-s3/output.png",
+      "bbox": [
+        194.33526611328125,
+        79.25199127197266,
+        319.1270446777344,
+        249.091796875
+      ],
+      "det_score": 0.8493921756744385
+    },
+    {
+      "image": "generated/P02-2026-regenerate-s3/output.png",
+      "bbox": [
+        194.4562530517578,
+        78.83512878417969,
+        318.4046936035156,
+        248.75003051757812
+      ],
+      "det_score": 0.8490098118782043
+    },
+    {
+      "image": "generated/P02-2026-sequential-s3/output.png",
+      "bbox": [
+        194.49612426757812,
+        79.60330963134766,
+        319.8326721191406,
+        249.05783081054688
+      ],
+      "det_score": 0.8504341244697571
+    },
+    {
+      "image": "generated/P03-42-regenerate-s3/output.png",
+      "bbox": [
+        199.03707885742188,
+        35.369083404541016,
+        305.1775207519531,
+        191.82345581054688
+      ],
+      "det_score": 0.9196582436561584
+    },
+    {
+      "image": "generated/P03-42-sequential-s3/output.png",
+      "bbox": [
+        199.14169311523438,
+        35.718257904052734,
+        305.5718688964844,
+        191.57273864746094
+      ],
+      "det_score": 0.9166156053543091
+    },
+    {
+      "image": "generated/P03-314-regenerate-s3/output.png",
+      "bbox": [
+        199.03514099121094,
+        35.1218376159668,
+        305.3117980957031,
+        192.0384521484375
+      ],
+      "det_score": 0.9207874536514282
+    },
+    {
+      "image": "generated/P03-314-sequential-s3/output.png",
+      "bbox": [
+        198.86671447753906,
+        35.61323547363281,
+        305.6699523925781,
+        191.9585418701172
+      ],
+      "det_score": 0.918830156326294
+    },
+    {
+      "image": "generated/P03-2026-regenerate-s3/output.png",
+      "bbox": [
+        199.30776977539062,
+        35.169857025146484,
+        305.4819641113281,
+        191.5976104736328
+      ],
+      "det_score": 0.9182854890823364
+    },
+    {
+      "image": "generated/P03-2026-sequential-s3/output.png",
+      "bbox": [
+        199.3001708984375,
+        35.751827239990234,
+        305.7686462402344,
+        191.1887664794922
+      ],
+      "det_score": 0.9183545112609863
+    },
+    {
+      "image": "generated/P04-42-regenerate-s3/output.png",
+      "bbox": [
+        203.79029846191406,
+        53.9286994934082,
+        307.112060546875,
+        197.87191772460938
+      ],
+      "det_score": 0.8631343245506287
+    },
+    {
+      "image": "generated/P04-42-sequential-s3/output.png",
+      "bbox": [
+        203.9607696533203,
+        54.20704650878906,
+        306.8414306640625,
+        197.5117950439453
+      ],
+      "det_score": 0.8624051809310913
+    },
+    {
+      "image": "generated/P04-314-regenerate-s3/output.png",
+      "bbox": [
+        203.8148193359375,
+        54.091434478759766,
+        307.159423828125,
+        197.45761108398438
+      ],
+      "det_score": 0.8619526624679565
+    },
+    {
+      "image": "generated/P04-314-sequential-s3/output.png",
+      "bbox": [
+        203.81834411621094,
+        54.9594841003418,
+        306.6705322265625,
+        197.11813354492188
+      ],
+      "det_score": 0.8622221350669861
+    },
+    {
+      "image": "generated/P04-2026-regenerate-s3/output.png",
+      "bbox": [
+        203.84164428710938,
+        54.279327392578125,
+        307.3525695800781,
+        197.5067901611328
+      ],
+      "det_score": 0.8582240343093872
+    },
+    {
+      "image": "generated/P04-2026-sequential-s3/output.png",
+      "bbox": [
+        204.1033477783203,
+        54.90087890625,
+        307.42584228515625,
+        197.30245971679688
+      ],
+      "det_score": 0.8583590388298035
+    },
+    {
+      "image": "generated/P05-42-regenerate-s3/output.png",
+      "bbox": [
+        198.49424743652344,
+        48.933414459228516,
+        303.3865966796875,
+        196.63502502441406
+      ],
+      "det_score": 0.8710904121398926
+    },
+    {
+      "image": "generated/P05-42-sequential-s3/output.png",
+      "bbox": [
+        198.6473388671875,
+        49.45515823364258,
+        303.6398010253906,
+        196.59814453125
+      ],
+      "det_score": 0.8681581020355225
+    },
+    {
+      "image": "generated/P05-314-regenerate-s3/output.png",
+      "bbox": [
+        198.792236328125,
+        49.053897857666016,
+        303.1880798339844,
+        196.72914123535156
+      ],
+      "det_score": 0.8720950484275818
+    },
+    {
+      "image": "generated/P05-314-sequential-s3/output.png",
+      "bbox": [
+        198.20611572265625,
+        48.05353546142578,
+        303.986328125,
+        196.4227752685547
+      ],
+      "det_score": 0.8775148391723633
+    },
+    {
+      "image": "generated/P05-2026-regenerate-s3/output.png",
+      "bbox": [
+        198.5652313232422,
+        48.307373046875,
+        303.7401428222656,
+        196.23255920410156
+      ],
+      "det_score": 0.8770670294761658
+    },
+    {
+      "image": "generated/P05-2026-sequential-s3/output.png",
+      "bbox": [
+        198.3637237548828,
+        48.32229995727539,
+        303.908935546875,
+        195.7001495361328
+      ],
+      "det_score": 0.8783504962921143
+    },
+    {
+      "image": "generated/P06-42-regenerate-s3/output.png",
+      "bbox": [
+        203.57986450195312,
+        52.94386672973633,
+        310.798095703125,
+        204.8165283203125
+      ],
+      "det_score": 0.8899886608123779
+    },
+    {
+      "image": "generated/P06-42-sequential-s3/output.png",
+      "bbox": [
+        203.98260498046875,
+        53.116973876953125,
+        310.78009033203125,
+        205.11050415039062
+      ],
+      "det_score": 0.8868403434753418
+    },
+    {
+      "image": "generated/P06-314-regenerate-s3/output.png",
+      "bbox": [
+        203.7466583251953,
+        53.62860107421875,
+        310.6297302246094,
+        204.64547729492188
+      ],
+      "det_score": 0.888401985168457
+    },
+    {
+      "image": "generated/P06-314-sequential-s3/output.png",
+      "bbox": [
+        203.89149475097656,
+        54.125732421875,
+        310.4821472167969,
+        204.30101013183594
+      ],
+      "det_score": 0.8846074342727661
+    },
+    {
+      "image": "generated/P06-2026-regenerate-s3/output.png",
+      "bbox": [
+        203.7916717529297,
+        53.99871826171875,
+        310.830078125,
+        204.62945556640625
+      ],
+      "det_score": 0.8860061168670654
+    },
+    {
+      "image": "generated/P06-2026-sequential-s3/output.png",
+      "bbox": [
+        203.87548828125,
+        54.82242965698242,
+        311.16387939453125,
+        204.7327423095703
+      ],
+      "det_score": 0.8862864375114441
+    }
+  ]
+}

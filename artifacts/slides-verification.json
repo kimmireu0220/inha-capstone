@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-20",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
   "slides": 33,
   "speaker_notes": {
@@ -15,11 +15,11 @@
   "expanded_comparison_slide": 21,
   "expanded_comparison_image": "experiments/studio-multiperson-v1/comparison-P03-314.png",
   "conclusion_scope_slide": 22,
-  "conclusion_scope": "6명 × 3회 = 최종 18쌍; 얼굴 LPIPS 평균 19.9% 감소, SSIM 18/18쌍 일괄 유리",
+  "conclusion_scope": "6명 × 3회 = 최종 18쌍; 얼굴 LPIPS 평균 19.9% 감소, ArcFace 0.922/0.714, LPIPS·SSIM·ArcFace 18/18쌍 일괄 유리",
   "visual_audit": {
     "slides_reviewed": 33,
-    "adjusted_slides": [4, 12, 14, 16, 17, 18, 19, 20, 21, 22],
-    "adjustments": "비교 사례의 시드 번호를 발표용 표현으로 교체하고 슬라이드 21 이미지에 박힌 시드 표기를 가림. 슬라이드 21의 원본·일괄 재생성·순차 생성 표기를 크게 추가하고 결과표 링크 글자를 키움",
+    "adjusted_slides": [4, 5, 12, 14, 16, 17, 18, 19, 20, 21, 22],
+    "adjustments": "비교 사례의 시드 번호를 발표용 표현으로 교체하고 슬라이드 21 이미지에 박힌 시드 표기를 가림. 슬라이드 5에 ArcFace 지표 행을 추가하고 슬라이드 21·22에 18쌍 ArcFace 결과를 반영함",
     "post_edit_thumbnail_checked": true
   },
   "links_by_slide": {
@@ -41,7 +41,7 @@
   },
   "verified_via": [
     "Google Slides API page element and link inspection",
-    "Google Slides API thumbnails of all 33 slides and post-edit slide 21",
+    "Google Slides API thumbnails of all 33 slides and post-edit slides 5, 21, 22",
     "Paper numerical source audit"
   ]
 }

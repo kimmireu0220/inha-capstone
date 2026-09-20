@@ -1,11 +1,12 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-20",
   "website_final_rows_checked": 4,
   "website_mean_rows_checked": 2,
   "website_expanded_pairs_checked": 18,
+  "website_arcface_pairs_checked": 18,
   "scope": "Numerical transcription checks and source hashes; not scientific external validation",
   "passed": true,
-  "manuscript_sha256": "4fdd950facf143e212308c3705e1a3c33ff510d0921cf9f3bd34b9269404148a",
+  "manuscript_sha256": "784c140d348e1b8ab52e4f57f373fa796503249981c148d2c2fdf805f81fc4c7",
   "sources": [
     {
       "sections": "3.1,4.1,4.3",
@@ -41,6 +42,11 @@
       "sections": "5.1 expanded",
       "path": "experiments/studio-multiperson-v1/results.json",
       "sha256": "13aa514180c4fe861d17237786a317a7141a626d962b390884687d8305f03fe1"
+    },
+    {
+      "sections": "5.1 ArcFace",
+      "path": "experiments/studio-multiperson-v1/arcface-results.json",
+      "sha256": "4f2c229ac89cc49372145321241465d4f6ce8be5b5a906e00758b36019cd4712"
     }
   ],
   "table6_checks": [
@@ -104,5 +110,6 @@
   "local_final_rows_checked": 4,
   "followup_lpips_and_color_values_checked": 10,
   "ai_counts_checked": true,
-  "posthoc_analysis_verified": true
+  "posthoc_analysis_verified": true,
+  "arcface_checked": true
 }
