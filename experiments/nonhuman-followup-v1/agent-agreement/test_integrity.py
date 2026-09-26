@@ -83,11 +83,11 @@ class SavedIntegrity(unittest.TestCase):
         candidates = [r for r in self.key if 'control' not in r and 'duplicate_of_source' not in r]
         identity = [r for r in self.key if r.get('control') == 'identity']
         repeats = [r for r in self.key if 'duplicate_of_source' in r]
-        self.assertEqual([len(candidates), len(identity), len(repeats)], [83, 6, 8])
+        self.assertEqual([len(candidates), len(identity), len(repeats)], [73, 6, 6])
         self.assertEqual({r['id'] for r in candidates}, {r['id'] for r in self.unique})
         excluded = {r['id'] for r in identity+repeats}
         self.assertFalse(excluded & {r['id'] for r in self.stages})
-        self.assertEqual(self.m['rendered_pair_crop_bytes_match_sources'], 97)
+        self.assertEqual(self.m['rendered_pair_crop_bytes_match_sources'], 85)
 
     def test_reviews_join_exactly_without_adjudication(self):
         for reviewer in ('a', 'b'):
@@ -107,16 +107,16 @@ class SavedIntegrity(unittest.TestCase):
     def test_sequential_counts_person_dependence_and_frozen_scores(self):
         sequential = [r for r in self.stages if r['policy'] == 'sequential']
         heldout = [r for r in sequential if r['branch'] != 'P01']
-        self.assertEqual((len(sequential), len(heldout)), (70, 60))
+        self.assertEqual((len(sequential), len(heldout)), (60, 50))
         self.assertEqual((len({r['person'] for r in sequential}), len({r['person'] for r in heldout})), (6, 5))
-        self.assertEqual(len({r['branch'] for r in sequential}), 7)
+        self.assertEqual(len({r['branch'] for r in sequential}), 6)
         curves = {(r['branch'], r['stage']): r for r in calc.read(calc.CURRENT/'curves.json')}
         for r in self.stages:
             self.assertEqual(r['face']['fixed'], curves[(r['branch'], r['stage'])]['metrics'])
 
     def test_confusion_reconstructed_from_current_stage_rows(self):
-        for cohort, number in [('sequential70', 70), ('excluding_p01_60', 60)]:
-            rows = [r for r in self.stages if r['policy'] == 'sequential' and (number == 70 or r['branch'] != 'P01')]
+        for cohort, number in [('sequential60', 60), ('excluding_p01_50', 50)]:
+            rows = [r for r in self.stages if r['policy'] == 'sequential' and (number == 60 or r['branch'] != 'P01')]
             for reviewer, metrics in self.d['frozen_threshold_comparison'][cohort].items():
                 for metric, c in metrics.items():
                     pairs = [(calc.alarm(metric, r['face']['fixed'][metric]), r['ratings'][reviewer]['severity']) for r in rows]
@@ -127,9 +127,9 @@ class SavedIntegrity(unittest.TestCase):
                     self.assertEqual(sum(expected.values()), c['n_complete'])
 
     def test_saved_correlations_match_scipy(self):
-        cohorts = {'unique83': self.unique,
-                   'sequential70': [r for r in self.stages if r['policy'] == 'sequential'],
-                   'excluding_p01_60': [r for r in self.stages if r['policy'] == 'sequential' and r['branch'] != 'P01']}
+        cohorts = {'unique73': self.unique,
+                   'sequential60': [r for r in self.stages if r['policy'] == 'sequential'],
+                   'excluding_p01_50': [r for r in self.stages if r['policy'] == 'sequential' and r['branch'] != 'P01']}
         for name, rows in cohorts.items():
             for reviewer, metrics in self.d['rank_correlations_exploratory'][name].items():
                 for metric, values in metrics.items():

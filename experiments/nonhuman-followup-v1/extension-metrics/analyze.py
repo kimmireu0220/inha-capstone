@@ -205,7 +205,7 @@ def main(finalize=False):
             value['rows'] = copy.deepcopy(branch_rows[b['person']]['rows'][:9])+value['rows']
         value['reset_stages'] = [r['stage'] for r in value['rows'] if r['rebased']]
         branch_rows[b['name']] = value
-    assert len(branch_rows) == 20
+    assert len(branch_rows) == 18
     expected_cost = {'sequential':10, 'fixed3':13, 'triggered':18, 'once-triggered':11, 'always-original':10, 'end-only':11}
     summary, trajectories, recurrence, ledgers, extra_raw_hashes = {}, [], {}, {}, {}
     for name, b in branch_rows.items():
@@ -300,9 +300,8 @@ def main(finalize=False):
                    'face':{mode: summary[b['name']]['face'][mode]['final'] for mode in mm.MODES}, 'mean_over_ten_stages':None,
                    'same_output_as_end_workflow':b['name']}
                    for b in generation['branches'] if b['policy']=='end-only'}
-    assert single_shot['P03-r1']['final_id']==single_shot['P03-r2']['final_id']
     assert summary['P04-end-only']['final_id']==summary['P04-triggered']['final_id']==summary['P04-always-original']['final_id']
-    assert len(trajectories)==198
+    assert len(trajectories)==178
     for path,digest in {**sources,**image_hashes,**extra_raw_hashes}.items(): assert sha(path)==digest, path
     manifest = {'finalized_at_utc':datetime.now(timezone.utc).isoformat(), 'collection_complete':True,
                 'full_design_complete':False, 'new_calls':25,'new_failed_calls':1,'new_attempted_calls':26,

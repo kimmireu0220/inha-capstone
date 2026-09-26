@@ -1,6 +1,6 @@
 {
-  "unique_count": 16,
-  "branch_count": 19,
+  "unique_count": 15,
+  "branch_count": 17,
   "items": [
     {
       "id": "b3f370e531cc",
@@ -9,8 +9,7 @@
       "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
       "output_sha256": "475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
       "sources": [
-        "P03-r1-end-only",
-        "P03-r2-end-only"
+        "P03-end-only"
       ],
       "ratings": {
         "a": {
@@ -490,7 +489,7 @@
       "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
       "output_sha256": "521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
       "sources": [
-        "P03-r1"
+        "P03"
       ],
       "ratings": {
         "a": {
@@ -670,102 +669,6 @@
           "overall_artificiality": {
             "severity": 0,
             "reason": "피부와 손의 주름이 자연스럽고 장신구와 옷의 연결부에 뚜렷한 부자연스러움이 보이지 않는다."
-          },
-          "confidence": "high"
-        }
-      }
-    },
-    {
-      "id": "a65cd2b2d783",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "sources": [
-        "P03-r2"
-      ],
-      "ratings": {
-        "a": {
-          "id": "a65cd2b2d783",
-          "criteria": {
-            "earrings": {
-              "score": 2,
-              "reason": "양쪽 귀에 작은 은빛 링이 보인다."
-            },
-            "necklace": {
-              "score": 2,
-              "reason": "가는 은색 줄과 작은 물방울 모양 은색 펜던트 하나가 있다."
-            },
-            "pin": {
-              "score": 2,
-              "reason": "보는 사람 기준 오른쪽 가슴에 파란 원형 핀 하나가 있다."
-            },
-            "blazer": {
-              "score": 2,
-              "reason": "재킷의 바탕색이 짙은 차콜 회색이다."
-            },
-            "shirt": {
-              "score": 2,
-              "reason": "버건디색 셔츠의 둥근 목선이 보인다."
-            },
-            "background": {
-              "score": 2,
-              "reason": "나무 책장과 책상·램프가 있는 차분한 도서관이다."
-            },
-            "no_text": {
-              "score": 2,
-              "reason": "책등의 흐릿한 선과 띠 외에 읽을 수 있는 글자나 로고는 없다."
-            },
-            "lighting": {
-              "score": 1,
-              "reason": "원본과 정면 계열 조명은 비슷하나 피부가 더 붉고 얼굴·목·손의 밝고 어두운 국부 대비가 커졌다."
-            }
-          },
-          "overall_artificiality": {
-            "severity": 3,
-            "reason": "피부에 겹친 반짝이는 곡선과 조각 모양이 강하게 나타나며 머리와 바지에도 선 무늬가 반복된다."
-          },
-          "confidence": "high"
-        },
-        "b": {
-          "id": "a65cd2b2d783",
-          "criteria": {
-            "earrings": {
-              "score": 2,
-              "reason": "양쪽 귀에 작은 은빛 링이 보인다."
-            },
-            "necklace": {
-              "score": 2,
-              "reason": "가는 은색 줄에 작은 물방울형 은색 펜던트 하나가 달려 있다."
-            },
-            "pin": {
-              "score": 2,
-              "reason": "화면 오른쪽 가슴에 코발트 파란 원형 핀 하나가 있다."
-            },
-            "blazer": {
-              "score": 2,
-              "reason": "차콜 회색 재킷을 착용하고 있다."
-            },
-            "shirt": {
-              "score": 2,
-              "reason": "안쪽 셔츠는 버건디색이며 목선이 둥글다."
-            },
-            "background": {
-              "score": 2,
-              "reason": "나무 책장과 책상, 독서등이 있는 차분한 도서관이다."
-            },
-            "no_text": {
-              "score": 2,
-              "reason": "책등의 흐릿한 선과 무늬 외에 읽히는 글자나 로고·워터마크는 없다."
-            },
-            "lighting": {
-              "score": 1,
-              "reason": "앞쪽에서 비추는 큰 방향은 비슷하지만 원본보다 피부의 반짝임과 얼굴·목 그림자 대비가 강하고 색조도 더 붉다."
-            }
-          },
-          "overall_artificiality": {
-            "severity": 3,
-            "reason": "얼굴·목·손의 넓은 영역에 얽힌 곡선과 광택이 강하게 나타나고 머리카락에도 비정상적인 가는 선이 보인다."
           },
           "confidence": "high"
         }
@@ -1545,75 +1448,75 @@
   "criterion_distributions": {
     "a": {
       "earrings": {
-        "2": 16
+        "2": 15
       },
       "necklace": {
-        "2": 16
+        "2": 15
       },
       "pin": {
-        "2": 16
+        "2": 15
       },
       "blazer": {
-        "2": 16
+        "2": 15
       },
       "shirt": {
-        "2": 16
+        "2": 15
       },
       "background": {
-        "2": 16
+        "2": 15
       },
       "no_text": {
-        "2": 16
+        "2": 15
       },
       "lighting": {
         "2": 7,
-        "1": 9
+        "1": 8
       }
     },
     "b": {
       "earrings": {
-        "2": 16
+        "2": 15
       },
       "necklace": {
-        "2": 16
+        "2": 15
       },
       "pin": {
-        "2": 16
+        "2": 15
       },
       "blazer": {
-        "2": 16
+        "2": 15
       },
       "shirt": {
-        "2": 16
+        "2": 15
       },
       "background": {
-        "2": 16
+        "2": 15
       },
       "no_text": {
-        "2": 16
+        "2": 15
       },
       "lighting": {
         "2": 7,
-        "1": 9
+        "1": 8
       }
     }
   },
   "strict_all_fulfilled": {
     "a": {
-      "n": 16,
+      "n": 15,
       "all_eight_fulfilled": 7,
       "any_unknown": 0
     },
     "b": {
-      "n": 16,
+      "n": 15,
       "all_eight_fulfilled": 7,
       "any_unknown": 0
     }
   },
   "disagreements": [],
   "exact_agreement_including_unknown": {
-    "n": 128,
-    "equal": 128
+    "n": 120,
+    "equal": 120
   },
   "note": "Unknown is retained, not treated as failed; no consensus label."
 }

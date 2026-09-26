@@ -164,7 +164,7 @@ def catalog():
             add(name, r['raw'], {'branch': name, 'stage': r['stage'], 'role': 'raw'})
             stage_ids[(name, r['stage'])] = add(name, r['final'], {'branch': name, 'stage': r['stage'], 'role': 'final'})
             previous = r['final']
-    assert len(curves) == len(stage_ids) == 90
+    assert len(curves) == len(stage_ids) == 80
     assert len({(r['branch'], r['stage']) for r in curves}) == len(curves)
     for r in curves:
         key = stage_ids[(r['branch'], r['stage'])]

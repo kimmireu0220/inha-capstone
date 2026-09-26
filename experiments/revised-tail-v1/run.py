@@ -31,7 +31,7 @@ for stage in (9,10):
     steps.append(dict(stage=stage,state=state,prompt=prompt))
 save(ROOT/'prompts.json',steps)
 
-source_dirs = [('P01',EXP/'ten-stage-v1',[340,120,660,480]),('P02',EXP/'ten-stage-p02-v1',[352,160,672,520]),('P03-r1',EXP/'ten-stage-p03-v1/run-1',[352,64,672,424]),('P03-r2',EXP/'ten-stage-p03-v1/run-2',[352,64,672,424])]
+source_dirs = [('P01',EXP/'ten-stage-v1',[340,120,660,480]),('P02',EXP/'ten-stage-p02-v1',[352,160,672,520]),('P03',EXP/'ten-stage-p03-v1/run-1',[352,64,672,424])]
 cfg=read(EXP/'trigger-validation-v1/config.json')
 source_dirs += [(p,EXP/'trigger-validation-v1'/p,cfg['roi_xyxy'][p]) for p in ('P04','P05','P06')]
 branches=[]

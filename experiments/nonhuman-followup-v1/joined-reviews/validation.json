@@ -1,9 +1,9 @@
 {
   "passed": true,
   "face_packets": 3,
-  "face_observations_per_reviewer": 133,
-  "unique_faces": 111,
-  "observed_branch_stages": 198,
+  "face_observations_per_reviewer": 121,
+  "unique_faces": 101,
+  "observed_branch_stages": 178,
   "missing_final": [
     "P05-once-triggered"
   ],
@@ -21,11 +21,11 @@
     "requirements_schema_if_available"
   ],
   "source_hashes": {
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/private/face-key.json": "79f8e51586a754c4bf55f7924935a991020fdc7da72dfaac7f056bc542ec982f",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-face/items.json": "f578e3b39d7d789d90c0fbc583672794c2c7cc8fb03e8e58952a2f31adb3154b",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/face-a.json": "c8b312fabeeb2815d36ae440cb1a998c0d4b27b6f3d6c197bb024b9de912644a",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/face-b.json": "6c72e6f6da5cc34e932bbc6bec1b79f1b3449308e839a621fc7f119b9d8761d1",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/private/extension-face-key.json": "53bb9388e2cef041568954ff0cdd9870071f3307fa12be30c0fc5142484830e1",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/private/face-key.json": "681dd38baf6b6f071951fb1bd597f49cb6093887c34e257116f12bc92863dff1",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-face/items.json": "9561aa66a07d368c0fa64898999bfa89ac20394917f56c1c9d50e1e50c8dc81c",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/face-a.json": "589b5d43715822de58939a48d780fa74bad2d44481b02e04eef1eeb9af0ab836",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/face-b.json": "a2512d96f95583e6a345f6abb5ffe2ebce0a0f83bb388313945797ae35a4b860",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/private/extension-face-key.json": "6bf195a86ab2a2f8d60123e70f3fd8ca72c9e71bb80d4c69bb89e6635e4f9fe8",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-extension-face/items.json": "a7e68c1d5ea8933ea9ef499a4f5918be8fe18852116dbd9a9f21421615381799",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/extension-face-a.json": "190d5b19d825c9d1d9912bb2541342268c6871f2af1bb6c55ed0abb55ce2d5cd",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/extension-face-b.json": "148d73059634e96149eed6e18afc8935d981c5c1de8daa6f85ece2b5db88d7dc",
@@ -33,7 +33,7 @@
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-coverage-face/items.json": "39e732d607cbddae8176cd6d51ca89276b43d247101c83a60b624dff75d4db09",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/coverage-face-a.json": "c3d7e9282bc46234b0846a08d1d669d854630da79c69e776ea039c4688291f15",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/coverage-face-b.json": "5845896cf3ce24ce2f8d92dc3ad18ece73bd30be207818ab0a2f8a82b4f2bc57",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/extension-metrics/results.json": "c00a88a6ec8b3e258e2c69d871bc51bca4acd5c10c28629077c42df4e127738f",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/extension-metrics/results.json": "d46f8317a1532a1c587c0139cc15f6ab3820526d2e325c7a56f4bdd5afabaf59",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/b3f370e531cc.png": "475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/82a74a29e174.png": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/bb2c7b8a2c5e.png": "6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a",
@@ -45,7 +45,6 @@
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/94a26a5b4671.png": "b6a2c4009c53b8aea88d7283cfd6016770b1b84e3a4fd98c5a025434d23c844d",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/b2519d4912f9.png": "521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/4bfd2079d0ad.png": "2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/a65cd2b2d783.png": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/059fe2aefa51.png": "58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/7098591a79e4.png": "9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/c85857919449.png": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0",
@@ -56,15 +55,15 @@
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/47a88bcfbc20.png": "70e04e439311151f50245d704a8e0e8dd91aecd49932a9396dda52603f31f77a",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/c517bc371306.png": "f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/79c56808971b.png": "5aa04a5c54be19bcc2bb750402d42bffcc8fb6dd4fc1d7d85ded4388fe163b08",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/private/requirements-key.json": "becc3d0603d45504bfc4921df9699045ae8d80855e46019fa1182da019350bfe",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/private/requirements-key.json": "df98c43331ce716c10f149cefb9dd8c1dcb8634b94f9ad6a5aad782abb5b4625",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/INSTRUCTIONS.md": "8d348c7fa5b06fe3d2b2fd5007beb3feef1b6c3cd3068fb47d3284bdc84f7d50",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/items.json": "6f9a54a926699d8260dd118e3b74fd13f40155cc2122b0076fd0460b6cf47d13",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/requirements-a.json": "4f75331f6dadd421cca7e81296c24324b770fab0de9a968e38100e1bdf5c84d0",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/requirements-b.json": "3ed687bd1be603f3f26b3288c1af08e1f055785b064293da0d80eadcb510d2d6",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/progress.json": "0d67905b92a1e30802dc6d611abfad4217abcb8f02623a10c5080356b0bb0a1b",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/curves.json": "d0adabaef6510a8ff0c5d7285b50ed37d83ab13da6e0aba0c39cbc1fecd0c39b",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/progress.json": "905bf93765c94fb3962ef6acf177435fa586c34a21602eec8e3dc2f8f7b09da0",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/agent-agreement/analyze.py": "8e79456b5dc10301d9f71a24fa2dcad77ba05d8db334db0617115d47719b0de6",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/join_reviews.py": "f0b54d7472a06a6f37bf5dc4e30ec746ecfa8cf21e7e1302bbae2efebee4c3fd"
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/blind-requirements/items.json": "55ac25f9d8a4d5cc5119a1b9d70b1620a29498b356c5d22bb50b219e2293813b",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/requirements-a.json": "250975f8b41dddc34d3d4ae5b517a6b506aa56c404e7bbf2456d7965ab2275b0",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/reviews/requirements-b.json": "acbe42afaf936fa3c41e3d2d2a624de85edc18df85e7949e4b9fc9dbcfe26048",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/progress.json": "eb51f6190cc3e0cf2fa435d105de37c01fb5e8d6f10e3c9b2c830bea7c88fdb0",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/curves.json": "167b5aff42991a58ebae7b681fb6f71ccc9e7b618d924a3e03ba50f36e1b3a3f",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/progress.json": "9b20701328d235f06ff11177ceca2a92f34613519eccab74ebf8334fa06e965a",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/agent-agreement/analyze.py": "13d974ca01c523753360395bfdf86802f6034a796f09590771783d5b20153d81",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/join_reviews.py": "487f491f775ed30d68379004ee61a3edcc35d59610d4ab0e854108238cb4f399"
   }
 }

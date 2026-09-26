@@ -4,7 +4,7 @@
 
 ## 자료와 범위
 
-현행 이미지 목록은 `experiments/revised-tail-v1/inputs.json`, `progress.json`, `curves.json`만으로 결정한다. 9개 경로(P01, P02, P03-r1/r2, P04, P05, P06 순차 및 P04-fixed3/triggered)의 1–10단계 최종 이미지와 progress에 명시된 9–10단계 개입 전 raw 이미지를 포함한다. inputs의 prefix와 curves의 1–8단계, progress의 final과 curves의 9–10단계를 경로와 해시로 대조한다. 과거 pocket 9–10단계 출력, 과거 audit/progress/results의 이미지 목록, 사람·에이전트 평가·라벨은 읽지 않는다. 1–8단계에서 개입으로 폐기된 raw 이미지는 이 현행 목록에 없으므로 포함하지 않는다. 중복 이미지는 reference SHA256 + output SHA256으로 계산을 공유하고, 정책 평균은 10단계씩 계산한다.
+현행 이미지 목록은 `experiments/revised-tail-v1/inputs.json`, `progress.json`, `curves.json`만으로 결정한다. 8개 경로(P01~P06 순차 및 P04-fixed3/triggered)의 1–10단계 최종 이미지와 progress에 명시된 9–10단계 개입 전 raw 이미지를 포함한다. inputs의 prefix와 curves의 1–8단계, progress의 final과 curves의 9–10단계를 경로와 해시로 대조한다. 과거 pocket 9–10단계 출력, 과거 audit/progress/results의 이미지 목록, 사람·에이전트 평가·라벨은 읽지 않는다. 1–8단계에서 개입으로 폐기된 raw 이미지는 이 현행 목록에 없으므로 포함하지 않는다. 중복 이미지는 reference SHA256 + output SHA256으로 계산을 공유하고, 정책 평균은 10단계씩 계산한다.
 
 ## 지표와 정합
 

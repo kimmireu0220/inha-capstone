@@ -52,7 +52,7 @@ for person,alarm in [('P04',3),('P05',2),('P06',2)]:
         rows.append(dict(stage=step['stage'],input=previous,output=output,metrics=metric(person,output),rebased=False))
         previous=output
     results.append(dict(name=person+'-once-triggered',person=person,policy='once-triggered',alarm_stage=alarm,reference=base['reference'],roi=base['roi'],rows=rows,logical_calls=11))
-for person in ['P01','P02','P03-r1','P03-r2','P04','P05','P06']:
+for person in ['P01','P02','P03','P04','P05','P06']:
     base=cfg[person];out=lookup(person+'-end-only',10,'rebase',base['reference'],prefix+'\n'.join('- '+v for v in steps[-1]['state'].values()))
     rows=[] if out is None else [dict(stage=10,output=out,metrics=metric(person,out),rebased=True)]
     results.append(dict(name=person+'-end-only',person=person,policy='end-only',reference=base['reference'],roi=base['roi'],rows=rows,logical_calls=11,single_shot_calls=1))

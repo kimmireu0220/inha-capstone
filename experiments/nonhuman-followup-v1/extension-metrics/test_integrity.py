@@ -52,7 +52,7 @@ class Integrity(unittest.TestCase):
         self.assertFalse(Path(failure['output']).with_suffix('.call.json').exists())
 
     def test_metric_union_and_old_rows_unchanged(self):
-        self.assertEqual(len(self.rows),113)
+        self.assertEqual(len(self.rows),103)
         self.assertEqual(len(self.m['auxiliary_reused_ids']),3)
         self.assertEqual(set(self.rows),set(self.old['rows'])|set(self.m['new_output_ids'])|set(self.m['auxiliary_reused_ids']))
         for key,row in self.old['rows'].items(): self.assertEqual(self.rows[key],row)
@@ -77,11 +77,11 @@ class Integrity(unittest.TestCase):
             self.assertEqual(float(calc.mm.np.mean(calc.mm.np.abs(a-b))),r['face'][mode]['mae'])
             self.assertEqual(calc.mm.ssim(a,b),r['face'][mode]['ssim'])
 
-    def test_20_branches_with_only_198_observed_deliverables(self):
-        self.assertEqual(len(self.summary),20)
-        self.assertEqual(len(self.d['trajectories']),198)
-        self.assertEqual(sum(s['full_ten_stage_complete'] for s in self.summary.values()),19)
-        self.assertEqual(len({(r['branch'],r['stage']) for r in self.d['trajectories']}),198)
+    def test_18_branches_with_only_178_observed_deliverables(self):
+        self.assertEqual(len(self.summary),18)
+        self.assertEqual(len(self.d['trajectories']),178)
+        self.assertEqual(sum(s['full_ten_stage_complete'] for s in self.summary.values()),17)
+        self.assertEqual(len({(r['branch'],r['stage']) for r in self.d['trajectories']}),178)
         self.assertEqual([r['stage'] for r in self.d['trajectories'] if r['branch']=='P05-once-triggered'],list(range(1,9)))
 
     def test_missing_p05_endpoint_is_not_imputed(self):
@@ -138,7 +138,6 @@ class Integrity(unittest.TestCase):
                     self.assertLess(abs(self.rows[key]['face']['fixed'][k]-r['metrics'][k]),1e-6)
 
     def test_shared_outputs_not_independent_runs(self):
-        self.assertEqual(self.d['direct_one_shot']['P03-r1']['final_id'],self.d['direct_one_shot']['P03-r2']['final_id'])
         key=self.summary['P04-triggered']['final_id']
         self.assertEqual(self.summary['P04-end-only']['final_id'],key)
         self.assertEqual(self.summary['P04-always-original']['final_id'],key)

@@ -19,7 +19,7 @@
 
 동일 해시의 생성 요청은 출력 공유 규칙에 따라 재사용한다. P05 once9단계 실패 요청은 failure 기록을 읽어 재시도하지 않는다. collection_complete=true는 수집 종료, full_design_complete=false는 계획 중 미실행이 남았음을 뜻한다.
 
-metrics/, agent-agreement/, extension-metrics/에는 각 계산의 manifest·검사·가중치·버전 기록이 있다. join_reviews.py는 세 얼굴 패킷의 133개 항목을 각 평가자 원문과 연결하고, 비교 PNG의 원본/후보 crop이 저장된 이미지 픽셀과 정확히 같은지 검사한다. 원본 대조 10개와 숨긴 반복 12개는 고유 111개 표본에서 제외한다. 요구 조건 평가는 별도 새 세션의 16개 고유 후보를 연결한다.
+metrics/, agent-agreement/, extension-metrics/에는 각 계산의 manifest·검사·가중치·버전 기록이 있다. join_reviews.py는 세 얼굴 패킷의 121개 항목을 각 평가자 원문과 연결하고, 비교 PNG의 원본/후보 crop이 저장된 이미지 픽셀과 정확히 같은지 검사한다. 원본 대조 10개와 숨긴 반복 10개는 고유 101개 표본에서 제외한다. 요구 조건 평가는 별도 새 세션의 15개 고유 후보를 연결한다.
 
 평가 프롬프트는 최초 PROTOCOL.md, EXTENSION_EVALUATION.md와 blind-requirements/INSTRUCTIONS.md에 기록했다. face-a/b는 같은 기반 모델의 독립 얼굴 평가 세션, requirements-a/b는 별도 새 세션의 전체 요구 평가다. 서로의 결과·방법·단계·지표를 전달하지 않았으며 원문 JSON을 수정하거나 합의 라벨로 합치지 않았다.
 
@@ -31,7 +31,7 @@ metrics/, agent-agreement/, extension-metrics/에는 각 계산의 manifest·검
 - generation/{progress.json,generated/,failures/}: 입력 연결·성공 출력·실패 원문.
 - reviews/: 독립 AI 평가 원문. 인간 응답이 아님.
 - private/: 익명 ID와 원본·출력·경로 해독표. 평가자에게 전달하지 않음.
-- joined-reviews/: 고유 얼굴 111개·관측 단계 198개·고유 최종 요구 16개 결합 및 조건부 지표 진단.
+- joined-reviews/: 고유 얼굴 101개·관측 단계 178개·고유 최종 요구 15개 결합 및 조건부 지표 진단.
 - figures/: 원본 차이와 피부 관찰의 불일치, P04 정책 곡선.
 - literature/: 일차 문헌·실험 대조·반대 관점 주장 검토.
 

@@ -1,5 +1,5 @@
 {
-  "formula_sha256": "94bcf468e0de64331332e598651702b4ae1ff574ca1884cff66f152a3e17e2fc",
+  "formula_sha256": "ebfc2d862d9ddd3c6ec670fd8168ddbf6ae4a9644ce150244f7c25de44b0f6d9",
   "rows": {
     "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766": {
       "sha256": "475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
@@ -17,8 +17,7 @@
       "uses": [
         {
           "branches": [
-            "P03-r1-end-only",
-            "P03-r2-end-only"
+            "P03-end-only"
           ],
           "stage": 10,
           "source": "new_first_output"

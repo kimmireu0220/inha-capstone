@@ -43,9 +43,9 @@ class Integrity(unittest.TestCase):
         actual = {path for r in self.rows.values() for path in r['paths']}
         self.assertEqual(actual, expected)
         self.assertEqual({r['sha256'] for r in self.rows.values()}, {sha(path) for path in expected})
-        self.assertEqual(len(self.stage_ids), 90)
-        self.assertEqual(len(self.manifest['branches']), 9)
-        self.assertEqual(self.manifest['unique_final_outputs'], 83)
+        self.assertEqual(len(self.stage_ids), 80)
+        self.assertEqual(len(self.manifest['branches']), 8)
+        self.assertEqual(self.manifest['unique_final_outputs'], 73)
 
     def test_curve_hashes_and_fixed_metric_reproduction(self):
         for curve in self.curves:

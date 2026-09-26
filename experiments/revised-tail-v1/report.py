@@ -44,10 +44,10 @@ lines += ['', '## P04 정책 비교', '', '| 정책 | 평균 LPIPS ↓ | 최종 
 for s in summary:
     if s['branch'] in ('P04','P04-fixed3','P04-triggered'):
         lines.append(f"| {s['branch']} | {s['mean']['lpips']:.6f} | {s['final']['lpips']:.6f} | {len(s['rebase_stages'])} | {s['logical_calls']} |")
-lines += ['',f"신규 실제 생성: {len(records)}장. 순차 7경로의 9~10단계 14장과 정책 비교를 위한 추가 생성이다. 공유 결과는 별도 반복 표본으로 세지 않는다.", '', '## 해석 제한', '', '- 요청 오류 관찰 후 항목을 교체한 탐색적 수정이며 독립 본 실험이 아니다.', '- 기존 9~10단계와 이를 포함한 전체 요약·평가를 새 결과에 합치지 않는다.', '- 고정 얼굴 영역은 위치·조명 변화에도 반응한다. 재생성 정책을 선택하는 LPIPS만으로 정책 우월성을 확정하지 않는다.', '- 피부/정렬 진단의 기존 9~10단계 수치는 폐기 대상이다. 새 결과의 해당 진단은 아직 수행하지 않았다.', '- 사람 평가와 독립 에이전트 평가를 새로 수집하기 전에는 요구 전체 충족률·사용 가능률을 주장하지 않는다.', '']
+lines += ['',f"신규 실제 생성: {len(records)}장. 순차 6경로의 9~10단계 12장과 정책 비교를 위한 추가 생성이다. 공유 결과는 별도 표본으로 세지 않는다.", '', '## 해석 제한', '', '- 요청 오류 관찰 후 항목을 교체한 탐색적 수정이며 독립 본 실험이 아니다.', '- 기존 9~10단계와 이를 포함한 전체 요약·평가를 새 결과에 합치지 않는다.', '- 고정 얼굴 영역은 위치·조명 변화에도 반응한다. 재생성 정책을 선택하는 LPIPS만으로 정책 우월성을 확정하지 않는다.', '- 피부/정렬 진단의 기존 9~10단계 수치는 폐기 대상이다. 새 결과의 해당 진단은 아직 수행하지 않았다.', '- 사람 평가와 독립 에이전트 평가를 새로 수집하기 전에는 요구 전체 충족률·사용 가능률을 주장하지 않는다.', '']
 save(ROOT/'curves.json',curves)
 save(ROOT/'summary.json',summary)
 (ROOT/'RESULTS.md').write_text('\n'.join(lines))
 (ROOT/'GALLERY.md').write_text('\n'.join(gallery))
-save(ROOT/'audit.json',dict(passed=True,new_images=len(records),branches=len(summary),sequential_branches=7,identities=6,current_policy_stage_rows=len(curves),preserved_prefix_hashes_verified=True,source_copies_verified=True,no_pocket_in_new_prompts=True,new_ratings_imported=False,scripts={str(p):sha(p) for p in [ROOT/'run.py',ROOT/'report.py',ROOT/'PROTOCOL.md']}))
+save(ROOT/'audit.json',dict(passed=True,new_images=len(records),branches=len(summary),sequential_branches=6,identities=6,current_policy_stage_rows=len(curves),preserved_prefix_hashes_verified=True,source_copies_verified=True,no_pocket_in_new_prompts=True,new_ratings_imported=False,scripts={str(p):sha(p) for p in [ROOT/'run.py',ROOT/'report.py',ROOT/'PROTOCOL.md']}))
 print(json.dumps(dict(audit='passed',new_images=len(records),summary=summary),ensure_ascii=False))

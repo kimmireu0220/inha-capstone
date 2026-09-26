@@ -9,10 +9,9 @@
     1024,
     1536
   ],
-  "branch_count": 11,
+  "branch_count": 10,
   "generated_by_branch": {
-    "P03-r1-end-only": 1,
-    "P03-r2-end-only": 1,
+    "P03-end-only": 1,
     "P06-once-triggered": 8,
     "P04-once-triggered": 4,
     "P05-once-triggered": 6,
@@ -36,14 +35,13 @@
     "once_only_reset",
     "continuation_input_link",
     "original_input_for_end_and_always",
-    "P03_shared_end",
     "P04_shared_end_and_always"
   ],
   "note": "Failure/retry counts describe retained call records; no model-version or seed reproducibility is asserted.",
   "hashes": {
-    "generation/progress.json": "0d67905b92a1e30802dc6d611abfad4217abcb8f02623a10c5080356b0bb0a1b",
+    "generation/progress.json": "eb51f6190cc3e0cf2fa435d105de37c01fb5e8d6f10e3c9b2c830bea7c88fdb0",
     "generation/pending.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "PROTOCOL.md": "a844bc38a89ce76c49fe8548763127eb53a52ee65aca34ea13e192546e6006fd",
+    "PROTOCOL.md": "1602a08057e516c12c30fb957a9468bcb85298121f617d80743e1f0ecb7782d6",
     "EXTENSION_EVALUATION.md": "1c9b5e1ec154a73b7e977c675de5e1ab6677dd5d094c0a4eb5ddeb62fb1a520a"
   }
 }

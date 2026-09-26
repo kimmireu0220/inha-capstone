@@ -419,34 +419,8 @@
       "single_shot_calls": 1
     },
     {
-      "name": "P03-r1-end-only",
-      "person": "P03-r1",
-      "policy": "end-only",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "rows": [
-        {
-          "stage": 10,
-          "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
-          "metrics": {
-            "mae": 0.1474795937538147,
-            "ssim": 0.4508729875087738,
-            "lpips": 0.2523171007633209
-          },
-          "rebased": true
-        }
-      ],
-      "logical_calls": 11,
-      "single_shot_calls": 1
-    },
-    {
-      "name": "P03-r2-end-only",
-      "person": "P03-r2",
+      "name": "P03-end-only",
+      "person": "P03",
       "policy": "end-only",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
       "roi": [

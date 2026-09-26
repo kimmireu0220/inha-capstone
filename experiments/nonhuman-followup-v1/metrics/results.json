@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "932779165ceaccc6348229ba00fb9d5e68b76c3fdd973e0a594457f23dc947df",
+  "manifest_sha256": "6048d6b8f1deafacde53809ce23f7b98607e425e44dc6cc98c21a677b064472b",
   "rows": {
     "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8:3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043": {
       "sha256": "3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043",
@@ -1476,7 +1476,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 1,
           "role": "final"
         }
@@ -1548,7 +1548,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 2,
           "role": "final"
         }
@@ -1620,7 +1620,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 3,
           "role": "final"
         }
@@ -1692,7 +1692,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 4,
           "role": "final"
         }
@@ -1764,7 +1764,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 5,
           "role": "final"
         }
@@ -1836,7 +1836,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 6,
           "role": "final"
         }
@@ -1908,7 +1908,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 7,
           "role": "final"
         }
@@ -1980,7 +1980,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 8,
           "role": "final"
         }
@@ -2052,12 +2052,12 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 9,
           "role": "raw"
         },
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 9,
           "role": "final"
         }
@@ -2129,12 +2129,12 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 10,
           "role": "raw"
         },
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 10,
           "role": "final"
         }
@@ -2188,736 +2188,6 @@
           "mae": 0.1771048605442047,
           "ssim": 0.37525853514671326,
           "lpips": 0.3529857099056244
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1": {
-      "sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 1,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 0,
-          "dy": 0,
-          "ncc": 0.9957783818244934,
-          "boundary": false
-        },
-        "3": {
-          "dx": 0,
-          "dy": 0,
-          "ncc": 0.9981615543365479,
-          "boundary": false
-        },
-        "6": {
-          "dx": 0,
-          "dy": 0,
-          "ncc": 0.9988256096839905,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 0,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        },
-        "1": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        },
-        "3": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        },
-        "6": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5": {
-      "sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 2,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.023844851180911064,
-          "ssim": 0.8237112164497375,
-          "lpips": 0.0622045174241066
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9924187064170837,
-          "boundary": false
-        },
-        "3": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9959381818771362,
-          "boundary": false
-        },
-        "6": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9970628023147583,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 0,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.023844851180911064,
-          "ssim": 0.8237112164497375,
-          "lpips": 0.0622045174241066
-        },
-        "1": {
-          "mae": 0.022477546706795692,
-          "ssim": 0.8252103924751282,
-          "lpips": 0.06073300167918205
-        },
-        "3": {
-          "mae": 0.022477546706795692,
-          "ssim": 0.8252103924751282,
-          "lpips": 0.06073300167918205
-        },
-        "6": {
-          "mae": 0.022477546706795692,
-          "ssim": 0.8252103924751282,
-          "lpips": 0.06073300167918205
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992": {
-      "sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 3,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.03382294997572899,
-          "ssim": 0.771628201007843,
-          "lpips": 0.08722404390573502
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9872785806655884,
-          "boundary": false
-        },
-        "3": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9915415644645691,
-          "boundary": false
-        },
-        "6": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9929721355438232,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 0,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.03382294997572899,
-          "ssim": 0.771628201007843,
-          "lpips": 0.08722404390573502
-        },
-        "1": {
-          "mae": 0.030294276773929596,
-          "ssim": 0.8011799454689026,
-          "lpips": 0.08367697894573212
-        },
-        "3": {
-          "mae": 0.030294276773929596,
-          "ssim": 0.8011799454689026,
-          "lpips": 0.08367697894573212
-        },
-        "6": {
-          "mae": 0.030294276773929596,
-          "ssim": 0.8011799454689026,
-          "lpips": 0.08367697894573212
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb": {
-      "sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 4,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.04822344332933426,
-          "ssim": 0.7013835906982422,
-          "lpips": 0.13435223698616028
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": -1,
-          "dy": -2,
-          "ncc": 0.941688060760498,
-          "boundary": false
-        },
-        "3": {
-          "dx": -1,
-          "dy": -2,
-          "ncc": 0.9500769972801208,
-          "boundary": false
-        },
-        "6": {
-          "dx": -2,
-          "dy": -3,
-          "ncc": 0.9536702632904053,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 1,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.04822344332933426,
-          "ssim": 0.7013835906982422,
-          "lpips": 0.13435223698616028
-        },
-        "1": {
-          "mae": 0.04394420608878136,
-          "ssim": 0.7408286929130554,
-          "lpips": 0.1290566772222519
-        },
-        "3": {
-          "mae": 0.04394420608878136,
-          "ssim": 0.7408286929130554,
-          "lpips": 0.1290566772222519
-        },
-        "6": {
-          "mae": 0.04753692448139191,
-          "ssim": 0.6957626938819885,
-          "lpips": 0.13600340485572815
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb": {
-      "sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 5,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19147811830043793,
-          "ssim": 0.32670143246650696,
-          "lpips": 0.5045062303543091
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6529903411865234,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 40,
-          "ncc": 0.6882773637771606,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7236490249633789,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 1,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19147811830043793,
-          "ssim": 0.32670143246650696,
-          "lpips": 0.5045062303543091
-        },
-        "1": {
-          "mae": 0.1231522187590599,
-          "ssim": 0.42453134059906006,
-          "lpips": 0.3006705343723297
-        },
-        "3": {
-          "mae": 0.12375611811876297,
-          "ssim": 0.4236760139465332,
-          "lpips": 0.30190327763557434
-        },
-        "6": {
-          "mae": 0.12370765954256058,
-          "ssim": 0.42980870604515076,
-          "lpips": 0.3054148256778717
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6": {
-      "sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 6,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19174440205097198,
-          "ssim": 0.32239654660224915,
-          "lpips": 0.505614161491394
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 8,
-          "dy": 39,
-          "ncc": 0.6515951752662659,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6879391670227051,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7235873341560364,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19174440205097198,
-          "ssim": 0.32239654660224915,
-          "lpips": 0.505614161491394
-        },
-        "1": {
-          "mae": 0.12430159002542496,
-          "ssim": 0.4194035828113556,
-          "lpips": 0.31006914377212524
-        },
-        "3": {
-          "mae": 0.12411917001008987,
-          "ssim": 0.4156179428100586,
-          "lpips": 0.31191298365592957
-        },
-        "6": {
-          "mae": 0.12471112608909607,
-          "ssim": 0.421176940202713,
-          "lpips": 0.3152867555618286
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af": {
-      "sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 7,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19085060060024261,
-          "ssim": 0.3148510456085205,
-          "lpips": 0.5105254650115967
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 8,
-          "dy": 38,
-          "ncc": 0.6500161290168762,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6874657869338989,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7238985300064087,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19085060060024261,
-          "ssim": 0.3148510456085205,
-          "lpips": 0.5105254650115967
-        },
-        "1": {
-          "mae": 0.12462322413921356,
-          "ssim": 0.41204747557640076,
-          "lpips": 0.32216551899909973
-        },
-        "3": {
-          "mae": 0.12486621737480164,
-          "ssim": 0.40218472480773926,
-          "lpips": 0.3260265290737152
-        },
-        "6": {
-          "mae": 0.12538765370845795,
-          "ssim": 0.40761494636535645,
-          "lpips": 0.33243393898010254
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff": {
-      "sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 8,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19178110361099243,
-          "ssim": 0.3048759996891022,
-          "lpips": 0.5150160789489746
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6605772376060486,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6997062563896179,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 41,
-          "ncc": 0.7380127310752869,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19178110361099243,
-          "ssim": 0.3048759996891022,
-          "lpips": 0.5150160789489746
-        },
-        "1": {
-          "mae": 0.12381888926029205,
-          "ssim": 0.39208880066871643,
-          "lpips": 0.32382121682167053
-        },
-        "3": {
-          "mae": 0.12381888926029205,
-          "ssim": 0.39208880066871643,
-          "lpips": 0.32382121682167053
-        },
-        "6": {
-          "mae": 0.12510772049427032,
-          "ssim": 0.38908037543296814,
-          "lpips": 0.3365640342235565
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba": {
-      "sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 9,
-          "role": "raw"
-        },
-        {
-          "branch": "P03-r2",
-          "stage": 9,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19077569246292114,
-          "ssim": 0.29578396677970886,
-          "lpips": 0.5228796601295471
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 8,
-          "dy": 38,
-          "ncc": 0.6564611196517944,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.697264552116394,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7365911602973938,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19077569246292114,
-          "ssim": 0.29578396677970886,
-          "lpips": 0.5228796601295471
-        },
-        "1": {
-          "mae": 0.12438034266233444,
-          "ssim": 0.3863759934902191,
-          "lpips": 0.3425869643688202
-        },
-        "3": {
-          "mae": 0.12464924156665802,
-          "ssim": 0.37647131085395813,
-          "lpips": 0.34759026765823364
-        },
-        "6": {
-          "mae": 0.12509161233901978,
-          "ssim": 0.3795047104358673,
-          "lpips": 0.3542275130748749
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf": {
-      "sha256": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 10,
-          "role": "raw"
-        },
-        {
-          "branch": "P03-r2",
-          "stage": 10,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.25273093581199646,
-          "ssim": 0.17960941791534424,
-          "lpips": 0.5659546256065369
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 4,
-          "dy": 38,
-          "ncc": 0.6424297094345093,
-          "boundary": false
-        },
-        "3": {
-          "dx": 4,
-          "dy": 37,
-          "ncc": 0.6686065196990967,
-          "boundary": false
-        },
-        "6": {
-          "dx": 2,
-          "dy": 37,
-          "ncc": 0.6925996541976929,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.25273093581199646,
-          "ssim": 0.17960941791534424,
-          "lpips": 0.5659546256065369
-        },
-        "1": {
-          "mae": 0.2021111398935318,
-          "ssim": 0.2506495714187622,
-          "lpips": 0.39228272438049316
-        },
-        "3": {
-          "mae": 0.20252104103565216,
-          "ssim": 0.24914735555648804,
-          "lpips": 0.39421382546424866
-        },
-        "6": {
-          "mae": 0.20354695618152618,
-          "ssim": 0.24581241607666016,
-          "lpips": 0.39887022972106934
         }
       }
     },
@@ -9210,104 +8480,54 @@
       "id": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 1,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 2,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 3,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 4,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 5,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 6,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 7,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 8,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 9,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465"
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 10,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 1,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 2,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 3,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 4,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 5,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 6,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 7,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 8,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 9,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba"
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 10,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf"
     },
     {
       "branch": "P04",
@@ -9669,7 +8889,7 @@
         }
       }
     },
-    "P03-r1": {
+    "P03": {
       "policy": "sequential",
       "stages": 10,
       "face": {
@@ -9719,60 +8939,6 @@
             "mae": 0.1771048605442047,
             "ssim": 0.37525853514671326,
             "lpips": 0.3529857099056244
-          }
-        }
-      }
-    },
-    "P03-r2": {
-      "policy": "sequential",
-      "stages": 10,
-      "face": {
-        "fixed": {
-          "mean": {
-            "mae": 0.13316307198256255,
-            "ssim": 0.49201068878173826,
-            "lpips": 0.34492716044187544
-          },
-          "final": {
-            "mae": 0.25273093581199646,
-            "ssim": 0.17960941791534424,
-            "lpips": 0.5659546256065369
-          }
-        },
-        "1": {
-          "mean": {
-            "mae": 0.09354820568114519,
-            "ssim": 0.5531481266021728,
-            "lpips": 0.2306057345122099
-          },
-          "final": {
-            "mae": 0.2021111398935318,
-            "ssim": 0.2506495714187622,
-            "lpips": 0.39228272438049316
-          }
-        },
-        "3": {
-          "mean": {
-            "mae": 0.09368253294378519,
-            "ssim": 0.5505570650100708,
-            "lpips": 0.23199293427169324
-          },
-          "final": {
-            "mae": 0.20252104103565216,
-            "ssim": 0.24914735555648804,
-            "lpips": 0.39421382546424866
-          }
-        },
-        "6": {
-          "mean": {
-            "mae": 0.09442400988191366,
-            "ssim": 0.5474316596984863,
-            "lpips": 0.23642052672803401
-          },
-          "final": {
-            "mae": 0.20354695618152618,
-            "ssim": 0.24581241607666016,
-            "lpips": 0.39887022972106934
           }
         }
       }
@@ -14535,7 +13701,7 @@
     "ssim": 0.0,
     "lpips": 0.0
   },
-  "unique_outputs": 85,
+  "unique_outputs": 75,
   "unique_p04_outputs": 25,
   "boundary_hits": {
     "1": 0,

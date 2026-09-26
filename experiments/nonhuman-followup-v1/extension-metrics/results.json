@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "18ed805b063abe8e37daf1dfa59bacfc1ca43cb7663c4f43570bf2013648ef2c",
+  "manifest_sha256": "af2d92406e168e9e6c96a48bf36005daf6dc33fbe86076e974d542e54ca0fcd3",
   "analysis_complete": true,
   "collection_complete": true,
   "full_design_complete": false,
@@ -1479,7 +1479,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 1,
           "role": "final"
         }
@@ -1551,7 +1551,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 2,
           "role": "final"
         }
@@ -1623,7 +1623,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 3,
           "role": "final"
         }
@@ -1695,7 +1695,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 4,
           "role": "final"
         }
@@ -1767,7 +1767,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 5,
           "role": "final"
         }
@@ -1839,7 +1839,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 6,
           "role": "final"
         }
@@ -1911,7 +1911,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 7,
           "role": "final"
         }
@@ -1983,7 +1983,7 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 8,
           "role": "final"
         }
@@ -2055,12 +2055,12 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 9,
           "role": "raw"
         },
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 9,
           "role": "final"
         }
@@ -2132,12 +2132,12 @@
       ],
       "uses": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 10,
           "role": "raw"
         },
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 10,
           "role": "final"
         }
@@ -2191,736 +2191,6 @@
           "mae": 0.1771048605442047,
           "ssim": 0.37525853514671326,
           "lpips": 0.3529857099056244
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1": {
-      "sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 1,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 0,
-          "dy": 0,
-          "ncc": 0.9957783818244934,
-          "boundary": false
-        },
-        "3": {
-          "dx": 0,
-          "dy": 0,
-          "ncc": 0.9981615543365479,
-          "boundary": false
-        },
-        "6": {
-          "dx": 0,
-          "dy": 0,
-          "ncc": 0.9988256096839905,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 0,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        },
-        "1": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        },
-        "3": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        },
-        "6": {
-          "mae": 0.016378622502088547,
-          "ssim": 0.8791654706001282,
-          "lpips": 0.04099458456039429
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5": {
-      "sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 2,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.023844851180911064,
-          "ssim": 0.8237112164497375,
-          "lpips": 0.0622045174241066
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9924187064170837,
-          "boundary": false
-        },
-        "3": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9959381818771362,
-          "boundary": false
-        },
-        "6": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9970628023147583,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 0,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.023844851180911064,
-          "ssim": 0.8237112164497375,
-          "lpips": 0.0622045174241066
-        },
-        "1": {
-          "mae": 0.022477546706795692,
-          "ssim": 0.8252103924751282,
-          "lpips": 0.06073300167918205
-        },
-        "3": {
-          "mae": 0.022477546706795692,
-          "ssim": 0.8252103924751282,
-          "lpips": 0.06073300167918205
-        },
-        "6": {
-          "mae": 0.022477546706795692,
-          "ssim": 0.8252103924751282,
-          "lpips": 0.06073300167918205
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992": {
-      "sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 3,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.03382294997572899,
-          "ssim": 0.771628201007843,
-          "lpips": 0.08722404390573502
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9872785806655884,
-          "boundary": false
-        },
-        "3": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9915415644645691,
-          "boundary": false
-        },
-        "6": {
-          "dx": -1,
-          "dy": -1,
-          "ncc": 0.9929721355438232,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 0,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.03382294997572899,
-          "ssim": 0.771628201007843,
-          "lpips": 0.08722404390573502
-        },
-        "1": {
-          "mae": 0.030294276773929596,
-          "ssim": 0.8011799454689026,
-          "lpips": 0.08367697894573212
-        },
-        "3": {
-          "mae": 0.030294276773929596,
-          "ssim": 0.8011799454689026,
-          "lpips": 0.08367697894573212
-        },
-        "6": {
-          "mae": 0.030294276773929596,
-          "ssim": 0.8011799454689026,
-          "lpips": 0.08367697894573212
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb": {
-      "sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 4,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.04822344332933426,
-          "ssim": 0.7013835906982422,
-          "lpips": 0.13435223698616028
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": -1,
-          "dy": -2,
-          "ncc": 0.941688060760498,
-          "boundary": false
-        },
-        "3": {
-          "dx": -1,
-          "dy": -2,
-          "ncc": 0.9500769972801208,
-          "boundary": false
-        },
-        "6": {
-          "dx": -2,
-          "dy": -3,
-          "ncc": 0.9536702632904053,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 1,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.04822344332933426,
-          "ssim": 0.7013835906982422,
-          "lpips": 0.13435223698616028
-        },
-        "1": {
-          "mae": 0.04394420608878136,
-          "ssim": 0.7408286929130554,
-          "lpips": 0.1290566772222519
-        },
-        "3": {
-          "mae": 0.04394420608878136,
-          "ssim": 0.7408286929130554,
-          "lpips": 0.1290566772222519
-        },
-        "6": {
-          "mae": 0.04753692448139191,
-          "ssim": 0.6957626938819885,
-          "lpips": 0.13600340485572815
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb": {
-      "sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 5,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19147811830043793,
-          "ssim": 0.32670143246650696,
-          "lpips": 0.5045062303543091
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6529903411865234,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 40,
-          "ncc": 0.6882773637771606,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7236490249633789,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 1,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19147811830043793,
-          "ssim": 0.32670143246650696,
-          "lpips": 0.5045062303543091
-        },
-        "1": {
-          "mae": 0.1231522187590599,
-          "ssim": 0.42453134059906006,
-          "lpips": 0.3006705343723297
-        },
-        "3": {
-          "mae": 0.12375611811876297,
-          "ssim": 0.4236760139465332,
-          "lpips": 0.30190327763557434
-        },
-        "6": {
-          "mae": 0.12370765954256058,
-          "ssim": 0.42980870604515076,
-          "lpips": 0.3054148256778717
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6": {
-      "sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 6,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19174440205097198,
-          "ssim": 0.32239654660224915,
-          "lpips": 0.505614161491394
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 8,
-          "dy": 39,
-          "ncc": 0.6515951752662659,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6879391670227051,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7235873341560364,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19174440205097198,
-          "ssim": 0.32239654660224915,
-          "lpips": 0.505614161491394
-        },
-        "1": {
-          "mae": 0.12430159002542496,
-          "ssim": 0.4194035828113556,
-          "lpips": 0.31006914377212524
-        },
-        "3": {
-          "mae": 0.12411917001008987,
-          "ssim": 0.4156179428100586,
-          "lpips": 0.31191298365592957
-        },
-        "6": {
-          "mae": 0.12471112608909607,
-          "ssim": 0.421176940202713,
-          "lpips": 0.3152867555618286
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af": {
-      "sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 7,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19085060060024261,
-          "ssim": 0.3148510456085205,
-          "lpips": 0.5105254650115967
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 8,
-          "dy": 38,
-          "ncc": 0.6500161290168762,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6874657869338989,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7238985300064087,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19085060060024261,
-          "ssim": 0.3148510456085205,
-          "lpips": 0.5105254650115967
-        },
-        "1": {
-          "mae": 0.12462322413921356,
-          "ssim": 0.41204747557640076,
-          "lpips": 0.32216551899909973
-        },
-        "3": {
-          "mae": 0.12486621737480164,
-          "ssim": 0.40218472480773926,
-          "lpips": 0.3260265290737152
-        },
-        "6": {
-          "mae": 0.12538765370845795,
-          "ssim": 0.40761494636535645,
-          "lpips": 0.33243393898010254
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff": {
-      "sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 8,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19178110361099243,
-          "ssim": 0.3048759996891022,
-          "lpips": 0.5150160789489746
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6605772376060486,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.6997062563896179,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 41,
-          "ncc": 0.7380127310752869,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19178110361099243,
-          "ssim": 0.3048759996891022,
-          "lpips": 0.5150160789489746
-        },
-        "1": {
-          "mae": 0.12381888926029205,
-          "ssim": 0.39208880066871643,
-          "lpips": 0.32382121682167053
-        },
-        "3": {
-          "mae": 0.12381888926029205,
-          "ssim": 0.39208880066871643,
-          "lpips": 0.32382121682167053
-        },
-        "6": {
-          "mae": 0.12510772049427032,
-          "ssim": 0.38908037543296814,
-          "lpips": 0.3365640342235565
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba": {
-      "sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 9,
-          "role": "raw"
-        },
-        {
-          "branch": "P03-r2",
-          "stage": 9,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.19077569246292114,
-          "ssim": 0.29578396677970886,
-          "lpips": 0.5228796601295471
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 8,
-          "dy": 38,
-          "ncc": 0.6564611196517944,
-          "boundary": false
-        },
-        "3": {
-          "dx": 9,
-          "dy": 39,
-          "ncc": 0.697264552116394,
-          "boundary": false
-        },
-        "6": {
-          "dx": 10,
-          "dy": 40,
-          "ncc": 0.7365911602973938,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.19077569246292114,
-          "ssim": 0.29578396677970886,
-          "lpips": 0.5228796601295471
-        },
-        "1": {
-          "mae": 0.12438034266233444,
-          "ssim": 0.3863759934902191,
-          "lpips": 0.3425869643688202
-        },
-        "3": {
-          "mae": 0.12464924156665802,
-          "ssim": 0.37647131085395813,
-          "lpips": 0.34759026765823364
-        },
-        "6": {
-          "mae": 0.12509161233901978,
-          "ssim": 0.3795047104358673,
-          "lpips": 0.3542275130748749
-        }
-      }
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf": {
-      "sha256": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "paths": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png"
-      ],
-      "uses": [
-        {
-          "branch": "P03-r2",
-          "stage": 10,
-          "role": "raw"
-        },
-        {
-          "branch": "P03-r2",
-          "stage": 10,
-          "role": "final"
-        }
-      ],
-      "recorded_fixed": [
-        {
-          "mae": 0.25273093581199646,
-          "ssim": 0.17960941791534424,
-          "lpips": 0.5659546256065369
-        }
-      ],
-      "locations": {
-        "1": {
-          "dx": 4,
-          "dy": 38,
-          "ncc": 0.6424297094345093,
-          "boundary": false
-        },
-        "3": {
-          "dx": 4,
-          "dy": 37,
-          "ncc": 0.6686065196990967,
-          "boundary": false
-        },
-        "6": {
-          "dx": 2,
-          "dy": 37,
-          "ncc": 0.6925996541976929,
-          "boundary": false
-        }
-      },
-      "shift_spread_px": 2,
-      "setting_sensitive": false,
-      "face": {
-        "fixed": {
-          "mae": 0.25273093581199646,
-          "ssim": 0.17960941791534424,
-          "lpips": 0.5659546256065369
-        },
-        "1": {
-          "mae": 0.2021111398935318,
-          "ssim": 0.2506495714187622,
-          "lpips": 0.39228272438049316
-        },
-        "3": {
-          "mae": 0.20252104103565216,
-          "ssim": 0.24914735555648804,
-          "lpips": 0.39421382546424866
-        },
-        "6": {
-          "mae": 0.20354695618152618,
-          "ssim": 0.24581241607666016,
-          "lpips": 0.39887022972106934
         }
       }
     },
@@ -9126,8 +8396,7 @@
       "uses": [
         {
           "branches": [
-            "P03-r1-end-only",
-            "P03-r2-end-only"
+            "P03-end-only"
           ],
           "stage": 10,
           "source": "new_first_output"
@@ -11982,7 +11251,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 1,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-1.png",
@@ -11992,7 +11261,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 2,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-2.png",
@@ -12002,7 +11271,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 3,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
@@ -12012,7 +11281,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 4,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
@@ -12022,7 +11291,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 5,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-5.png",
@@ -12032,7 +11301,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 6,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-6.png",
@@ -12042,7 +11311,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 7,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-7.png",
@@ -12052,7 +11321,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 8,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-8.png",
@@ -12062,7 +11331,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 9,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
@@ -12072,113 +11341,13 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1",
+      "branch": "P03",
       "stage": 10,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
       "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
       "raw_fixed_lpips": 0.41561371088027954,
       "final_fixed_lpips": 0.41561371088027954,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 1,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "raw_fixed_lpips": 0.04099458456039429,
-      "final_fixed_lpips": 0.04099458456039429,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 2,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "raw_fixed_lpips": 0.0622045174241066,
-      "final_fixed_lpips": 0.0622045174241066,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 3,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "raw_fixed_lpips": 0.08722404390573502,
-      "final_fixed_lpips": 0.08722404390573502,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 4,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "raw_fixed_lpips": 0.13435223698616028,
-      "final_fixed_lpips": 0.13435223698616028,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 5,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "raw_fixed_lpips": 0.5045062303543091,
-      "final_fixed_lpips": 0.5045062303543091,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 6,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "raw_fixed_lpips": 0.505614161491394,
-      "final_fixed_lpips": 0.505614161491394,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 7,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "raw_fixed_lpips": 0.5105254650115967,
-      "final_fixed_lpips": 0.5105254650115967,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 8,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "raw_fixed_lpips": 0.5150160789489746,
-      "final_fixed_lpips": 0.5150160789489746,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 9,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "raw_fixed_lpips": 0.5228796601295471,
-      "final_fixed_lpips": 0.5228796601295471,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2",
-      "stage": 10,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-      "raw_fixed_lpips": 0.5659546256065369,
-      "final_fixed_lpips": 0.5659546256065369,
       "rebased": false
     },
     {
@@ -13162,7 +12331,7 @@
       "rebased": true
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 1,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-1.png",
@@ -13172,7 +12341,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 2,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-2.png",
@@ -13182,7 +12351,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 3,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-3.png",
@@ -13192,7 +12361,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 4,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-4.png",
@@ -13202,7 +12371,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 5,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-5.png",
@@ -13212,7 +12381,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 6,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-6.png",
@@ -13222,7 +12391,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 7,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-7.png",
@@ -13232,7 +12401,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 8,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-1/step-8.png",
@@ -13242,7 +12411,7 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 9,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
@@ -13252,112 +12421,12 @@
       "rebased": false
     },
     {
-      "branch": "P03-r1-end-only",
+      "branch": "P03-end-only",
       "stage": 10,
       "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
       "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
       "raw_fixed_lpips": 0.41561371088027954,
-      "final_fixed_lpips": 0.2523171007633209,
-      "rebased": true
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 1,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "raw_fixed_lpips": 0.04099458456039429,
-      "final_fixed_lpips": 0.04099458456039429,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 2,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "raw_fixed_lpips": 0.0622045174241066,
-      "final_fixed_lpips": 0.0622045174241066,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 3,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "raw_fixed_lpips": 0.08722404390573502,
-      "final_fixed_lpips": 0.08722404390573502,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 4,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "raw_fixed_lpips": 0.13435223698616028,
-      "final_fixed_lpips": 0.13435223698616028,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 5,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "raw_fixed_lpips": 0.5045062303543091,
-      "final_fixed_lpips": 0.5045062303543091,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 6,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "raw_fixed_lpips": 0.505614161491394,
-      "final_fixed_lpips": 0.505614161491394,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 7,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "raw_fixed_lpips": 0.5105254650115967,
-      "final_fixed_lpips": 0.5105254650115967,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 8,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "raw_fixed_lpips": 0.5150160789489746,
-      "final_fixed_lpips": 0.5150160789489746,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 9,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "raw_fixed_lpips": 0.5228796601295471,
-      "final_fixed_lpips": 0.5228796601295471,
-      "rebased": false
-    },
-    {
-      "branch": "P03-r2-end-only",
-      "stage": 10,
-      "id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
-      "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-      "raw_fixed_lpips": 0.5659546256065369,
       "final_fixed_lpips": 0.2523171007633209,
       "rebased": true
     },
@@ -14013,8 +13082,8 @@
       },
       "fixed_lpips_alarm_stages_observed": 9
     },
-    "P03-r1": {
-      "person": "P03-r1",
+    "P03": {
+      "person": "P03",
       "policy": "sequential",
       "logical_calls": 10,
       "planned_logical_calls": 10,
@@ -14133,131 +13202,6 @@
             "mae": 0.1771048605442047,
             "ssim": 0.37525853514671326,
             "lpips": 0.3529857099056244
-          }
-        }
-      },
-      "fixed_lpips_alarm_stages_observed": 9
-    },
-    "P03-r2": {
-      "person": "P03-r2",
-      "policy": "sequential",
-      "logical_calls": 10,
-      "planned_logical_calls": 10,
-      "observed_successful_calls": 10,
-      "observed_attempted_calls": 10,
-      "deliverable_stages": 10,
-      "full_ten_stage_complete": true,
-      "reset_stages": [],
-      "final_id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "last_observed_id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "last_observed_stage": 10,
-      "face": {
-        "fixed": {
-          "mean": {
-            "mae": 0.13316307198256255,
-            "ssim": 0.49201068878173826,
-            "lpips": 0.34492716044187544
-          },
-          "final": {
-            "mae": 0.25273093581199646,
-            "ssim": 0.17960941791534424,
-            "lpips": 0.5659546256065369
-          },
-          "observed_mean": {
-            "mae": 0.13316307198256255,
-            "ssim": 0.49201068878173826,
-            "lpips": 0.34492716044187544
-          },
-          "last_observed": {
-            "mae": 0.25273093581199646,
-            "ssim": 0.17960941791534424,
-            "lpips": 0.5659546256065369
-          },
-          "observed_worst": {
-            "mae": 0.25273093581199646,
-            "ssim": 0.17960941791534424,
-            "lpips": 0.5659546256065369
-          }
-        },
-        "1": {
-          "mean": {
-            "mae": 0.09354820568114519,
-            "ssim": 0.5531481266021728,
-            "lpips": 0.2306057345122099
-          },
-          "final": {
-            "mae": 0.2021111398935318,
-            "ssim": 0.2506495714187622,
-            "lpips": 0.39228272438049316
-          },
-          "observed_mean": {
-            "mae": 0.09354820568114519,
-            "ssim": 0.5531481266021728,
-            "lpips": 0.2306057345122099
-          },
-          "last_observed": {
-            "mae": 0.2021111398935318,
-            "ssim": 0.2506495714187622,
-            "lpips": 0.39228272438049316
-          },
-          "observed_worst": {
-            "mae": 0.2021111398935318,
-            "ssim": 0.2506495714187622,
-            "lpips": 0.39228272438049316
-          }
-        },
-        "3": {
-          "mean": {
-            "mae": 0.09368253294378519,
-            "ssim": 0.5505570650100708,
-            "lpips": 0.23199293427169324
-          },
-          "final": {
-            "mae": 0.20252104103565216,
-            "ssim": 0.24914735555648804,
-            "lpips": 0.39421382546424866
-          },
-          "observed_mean": {
-            "mae": 0.09368253294378519,
-            "ssim": 0.5505570650100708,
-            "lpips": 0.23199293427169324
-          },
-          "last_observed": {
-            "mae": 0.20252104103565216,
-            "ssim": 0.24914735555648804,
-            "lpips": 0.39421382546424866
-          },
-          "observed_worst": {
-            "mae": 0.20252104103565216,
-            "ssim": 0.24914735555648804,
-            "lpips": 0.39421382546424866
-          }
-        },
-        "6": {
-          "mean": {
-            "mae": 0.09442400988191366,
-            "ssim": 0.5474316596984863,
-            "lpips": 0.23642052672803401
-          },
-          "final": {
-            "mae": 0.20354695618152618,
-            "ssim": 0.24581241607666016,
-            "lpips": 0.39887022972106934
-          },
-          "observed_mean": {
-            "mae": 0.09442400988191366,
-            "ssim": 0.5474316596984863,
-            "lpips": 0.23642052672803401
-          },
-          "last_observed": {
-            "mae": 0.20354695618152618,
-            "ssim": 0.24581241607666016,
-            "lpips": 0.39887022972106934
-          },
-          "observed_worst": {
-            "mae": 0.20354695618152618,
-            "ssim": 0.24581241607666016,
-            "lpips": 0.39887022972106934
           }
         }
       },
@@ -16552,8 +15496,8 @@
       },
       "fixed_lpips_alarm_stages_observed": 9
     },
-    "P03-r1-end-only": {
-      "person": "P03-r1",
+    "P03-end-only": {
+      "person": "P03",
       "policy": "end-only",
       "logical_calls": 11,
       "planned_logical_calls": 11,
@@ -16674,133 +15618,6 @@
             "mae": 0.1403309404850006,
             "ssim": 0.4357074499130249,
             "lpips": 0.272597074508667
-          }
-        }
-      },
-      "fixed_lpips_alarm_stages_observed": 9
-    },
-    "P03-r2-end-only": {
-      "person": "P03-r2",
-      "policy": "end-only",
-      "logical_calls": 11,
-      "planned_logical_calls": 11,
-      "observed_successful_calls": 11,
-      "observed_attempted_calls": 11,
-      "deliverable_stages": 10,
-      "full_ten_stage_complete": true,
-      "reset_stages": [
-        10
-      ],
-      "final_id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
-      "last_observed_id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
-      "last_observed_stage": 10,
-      "face": {
-        "fixed": {
-          "mean": {
-            "mae": 0.12263793777674437,
-            "ssim": 0.5191370457410812,
-            "lpips": 0.3135634079575539
-          },
-          "final": {
-            "mae": 0.1474795937538147,
-            "ssim": 0.4508729875087738,
-            "lpips": 0.2523171007633209
-          },
-          "observed_mean": {
-            "mae": 0.12263793777674437,
-            "ssim": 0.5191370457410812,
-            "lpips": 0.3135634079575539
-          },
-          "last_observed": {
-            "mae": 0.1474795937538147,
-            "ssim": 0.4508729875087738,
-            "lpips": 0.2523171007633209
-          },
-          "observed_worst": {
-            "mae": 0.19178110361099243,
-            "ssim": 0.29578396677970886,
-            "lpips": 0.5228796601295471
-          }
-        },
-        "1": {
-          "mean": {
-            "mae": 0.08571627382189036,
-            "ssim": 0.5878798007965088,
-            "lpips": 0.2115467619150877
-          },
-          "final": {
-            "mae": 0.12379182130098343,
-            "ssim": 0.5979663133621216,
-            "lpips": 0.20169299840927124
-          },
-          "observed_mean": {
-            "mae": 0.08571627382189036,
-            "ssim": 0.5878798007965088,
-            "lpips": 0.2115467619150877
-          },
-          "last_observed": {
-            "mae": 0.12379182130098343,
-            "ssim": 0.5979663133621216,
-            "lpips": 0.20169299840927124
-          },
-          "observed_worst": {
-            "mae": 0.12462322413921356,
-            "ssim": 0.3863759934902191,
-            "lpips": 0.3425869643688202
-          }
-        },
-        "3": {
-          "mean": {
-            "mae": 0.0860679665580392,
-            "ssim": 0.5820570111274719,
-            "lpips": 0.21359408162534238
-          },
-          "final": {
-            "mae": 0.12637537717819214,
-            "ssim": 0.5641468167304993,
-            "lpips": 0.21022529900074005
-          },
-          "observed_mean": {
-            "mae": 0.0860679665580392,
-            "ssim": 0.5820570111274719,
-            "lpips": 0.21359408162534238
-          },
-          "last_observed": {
-            "mae": 0.12637537717819214,
-            "ssim": 0.5641468167304993,
-            "lpips": 0.21022529900074005
-          },
-          "observed_worst": {
-            "mae": 0.12637537717819214,
-            "ssim": 0.37647131085395813,
-            "lpips": 0.34759026765823364
-          }
-        },
-        "6": {
-          "mean": {
-            "mae": 0.0881024083122611,
-            "ssim": 0.5664211630821228,
-            "lpips": 0.22102694325149058
-          },
-          "final": {
-            "mae": 0.1403309404850006,
-            "ssim": 0.4357074499130249,
-            "lpips": 0.24493439495563507
-          },
-          "observed_mean": {
-            "mae": 0.0881024083122611,
-            "ssim": 0.5664211630821228,
-            "lpips": 0.22102694325149058
-          },
-          "last_observed": {
-            "mae": 0.1403309404850006,
-            "ssim": 0.4357074499130249,
-            "lpips": 0.24493439495563507
-          },
-          "observed_worst": {
-            "mae": 0.1403309404850006,
-            "ssim": 0.3795047104358673,
-            "lpips": 0.3542275130748749
           }
         }
       },
@@ -17907,7 +16724,7 @@
       "mean_over_ten_stages": null,
       "same_output_as_end_workflow": "P02-end-only"
     },
-    "P03-r1": {
+    "P03": {
       "final_id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
       "logical_calls": 1,
       "observed_outputs": 1,
@@ -17934,36 +16751,7 @@
         }
       },
       "mean_over_ten_stages": null,
-      "same_output_as_end_workflow": "P03-r1-end-only"
-    },
-    "P03-r2": {
-      "final_id": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
-      "logical_calls": 1,
-      "observed_outputs": 1,
-      "face": {
-        "fixed": {
-          "mae": 0.1474795937538147,
-          "ssim": 0.4508729875087738,
-          "lpips": 0.2523171007633209
-        },
-        "1": {
-          "mae": 0.12379182130098343,
-          "ssim": 0.5979663133621216,
-          "lpips": 0.20169299840927124
-        },
-        "3": {
-          "mae": 0.12637537717819214,
-          "ssim": 0.5641468167304993,
-          "lpips": 0.21022529900074005
-        },
-        "6": {
-          "mae": 0.1403309404850006,
-          "ssim": 0.4357074499130249,
-          "lpips": 0.24493439495563507
-        }
-      },
-      "mean_over_ten_stages": null,
-      "same_output_as_end_workflow": "P03-r2-end-only"
+      "same_output_as_end_workflow": "P03-end-only"
     },
     "P04": {
       "final_id": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf",
@@ -18124,17 +16912,7 @@
       "later_stages_observed": 0,
       "status": "no_later_stage"
     },
-    "P03-r1-end-only": {
-      "reset_stage": 10,
-      "reset_final_fixed_lpips": 0.2523171007633209,
-      "reset_below_frozen_threshold": false,
-      "first_later_raw_alarm_stage": null,
-      "edits_after_reset_until_first_alarm": null,
-      "first_later_raw_alarm_lpips": null,
-      "later_stages_observed": 0,
-      "status": "no_later_stage"
-    },
-    "P03-r2-end-only": {
+    "P03-end-only": {
       "reset_stage": 10,
       "reset_final_fixed_lpips": 0.2523171007633209,
       "reset_below_frozen_threshold": false,
@@ -18298,7 +17076,7 @@
       ],
       "unique_call_records_within_branch": 10
     },
-    "P03-r1": {
+    "P03": {
       "logical_calls_verified": 10,
       "observed_successful_calls": 10,
       "observed_attempted_calls": 10,
@@ -18355,67 +17133,6 @@
           "stage": 10,
           "role": "delivered",
           "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.call.json"
-        }
-      ],
-      "unique_call_records_within_branch": 10
-    },
-    "P03-r2": {
-      "logical_calls_verified": 10,
-      "observed_successful_calls": 10,
-      "observed_attempted_calls": 10,
-      "planned_logical_calls": 10,
-      "failed_call_records": [],
-      "reset_stages": [],
-      "calls": [
-        {
-          "stage": 1,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.call.json"
-        },
-        {
-          "stage": 2,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.call.json"
-        },
-        {
-          "stage": 3,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.call.json"
-        },
-        {
-          "stage": 4,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.call.json"
-        },
-        {
-          "stage": 5,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.call.json"
-        },
-        {
-          "stage": 6,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.call.json"
-        },
-        {
-          "stage": 7,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.call.json"
-        },
-        {
-          "stage": 8,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.call.json"
-        },
-        {
-          "stage": 9,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.call.json"
-        },
-        {
-          "stage": 10,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.call.json"
         }
       ],
       "unique_call_records_within_branch": 10
@@ -19129,7 +17846,7 @@
       ],
       "unique_call_records_within_branch": 11
     },
-    "P03-r1-end-only": {
+    "P03-end-only": {
       "logical_calls_verified": 11,
       "observed_successful_calls": 11,
       "observed_attempted_calls": 11,
@@ -19188,74 +17905,6 @@
           "stage": 10,
           "role": "raw_before_reset",
           "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.call.json"
-        },
-        {
-          "stage": 10,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.call.json"
-        }
-      ],
-      "unique_call_records_within_branch": 11
-    },
-    "P03-r2-end-only": {
-      "logical_calls_verified": 11,
-      "observed_successful_calls": 11,
-      "observed_attempted_calls": 11,
-      "planned_logical_calls": 11,
-      "failed_call_records": [],
-      "reset_stages": [
-        10
-      ],
-      "calls": [
-        {
-          "stage": 1,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.call.json"
-        },
-        {
-          "stage": 2,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.call.json"
-        },
-        {
-          "stage": 3,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.call.json"
-        },
-        {
-          "stage": 4,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.call.json"
-        },
-        {
-          "stage": 5,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.call.json"
-        },
-        {
-          "stage": 6,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.call.json"
-        },
-        {
-          "stage": 7,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.call.json"
-        },
-        {
-          "stage": 8,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.call.json"
-        },
-        {
-          "stage": 9,
-          "role": "delivered",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.call.json"
-        },
-        {
-          "stage": 10,
-          "role": "raw_before_reset",
-          "call": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.call.json"
         },
         {
           "stage": 10,
@@ -20093,106 +18742,6 @@
       "kind_checked": "edit",
       "attempt": 1
     },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "input_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "request_key": "297ffed61f50016d00fe42c459bb85f7e76fee8dbe1c029f4b2538b6814c9bb6",
-      "stage": 1,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "input_sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "output_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "request_key": "ee4564cfc3abde8a3f4d0fc2d7562a673df32f06fe310179c8c808b957bde3b8",
-      "stage": 2,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "input_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "output_sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "request_key": "f65b656481ef4008431b649efe1883041b9ec43ef48bc7ff4f3049d75629ef18",
-      "stage": 3,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "input_sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "output_sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "request_key": "9b06a81da0c70295701bba75d1b73c418468587aea354174abd50db57e9f434e",
-      "stage": 4,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "input_sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "output_sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "request_key": "72afd753ef1f7580d2c0faee4c72377485e0fe0a36ab03cb4c7bceff5c10041c",
-      "stage": 5,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "input_sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "output_sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "request_key": "a77255758d9fb1dcba1bcbe9e5dd865dc87e398de562f2dc4d48016a423b9e40",
-      "stage": 6,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "input_sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "output_sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "request_key": "6e097663017cab65c7ccb02111f8c62d2efb868e5e73ffc7eb1a29a48a6384ea",
-      "stage": 7,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "input_sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "output_sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "request_key": "618ec2063432b4872fbdcdc4ec336071d7437831085fb54dbbce6efe885025e5",
-      "stage": 8,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "input_sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "output_sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "request_key": "11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725",
-      "stage": 9,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.call.json": {
-      "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-      "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "input_sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "output_sha256": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "request_key": "82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9",
-      "stage": 10,
-      "kind_checked": "edit",
-      "attempt": 1
-    },
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.call.json": {
       "output": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/step-1.png",
       "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
@@ -20704,29 +19253,24 @@
       "attempt": 1
     }
   },
-  "unique_call_records_across_workflows": 116,
+  "unique_call_records_across_workflows": 106,
   "shared_final_outputs": {
-    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:d9f6bb7cb333570fa80e508e444b49db0e1cde91640e19f363e7c17b18ebc3f1": [
-      "P05"
-    ],
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc": [
-      "P03-r1"
-    ],
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766": [
-      "P03-r1-end-only",
-      "P03-r2-end-only"
-    ],
-    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074": [
-      "P06-end-only"
-    ],
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf": [
-      "P03-r2"
+    "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8:f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965": [
+      "P01-end-only"
     ],
     "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:5aa04a5c54be19bcc2bb750402d42bffcc8fb6dd4fc1d7d85ded4388fe163b08": [
       "P04"
     ],
-    "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe": [
-      "P02-end-only"
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074": [
+      "P06-end-only"
+    ],
+    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf": [
+      "P04-triggered",
+      "P04-end-only",
+      "P04-always-original"
+    ],
+    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a": [
+      "P06"
     ],
     "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8:7b8d398a7ebb4855be7f8667f496e49f6da50d799b6d50b41b51c9887772a2f7": [
       "P01"
@@ -20734,28 +19278,29 @@
     "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:95baf932315b5b66c219615243b71698caa3712c3a211d894c8e981a14e2def0": [
       "P04-fixed3"
     ],
-    "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf": [
-      "P04-triggered",
-      "P04-end-only",
-      "P04-always-original"
-    ],
     "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:2197ec4b57bfc80159ea1682b352432f948353c0fe358d40828b2d3b5ba0b9f1": [
       "P05-end-only"
     ],
-    "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a": [
-      "P06"
+    "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe": [
+      "P02-end-only"
+    ],
+    "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43": [
+      "P02"
+    ],
+    "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:d9f6bb7cb333570fa80e508e444b49db0e1cde91640e19f363e7c17b18ebc3f1": [
+      "P05"
+    ],
+    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc": [
+      "P03"
+    ],
+    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766": [
+      "P03-end-only"
     ],
     "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:70e04e439311151f50245d704a8e0e8dd91aecd49932a9396dda52603f31f77a": [
       "P06-once-triggered"
     ],
     "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:b6a2c4009c53b8aea88d7283cfd6016770b1b84e3a4fd98c5a025434d23c844d": [
       "P04-once-triggered"
-    ],
-    "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8:f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965": [
-      "P01-end-only"
-    ],
-    "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43": [
-      "P02"
     ]
   },
   "new_output_registration": {

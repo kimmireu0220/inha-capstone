@@ -1,10 +1,10 @@
 {
-  "unique_count": 111,
+  "unique_count": 101,
   "packet_stats": {
     "face": {
       "agreement": {
-        "n_total": 83,
-        "n_complete": 83,
+        "n_total": 73,
+        "n_complete": 73,
         "null_excluded": 0,
         "a_null": 0,
         "b_null": 0,
@@ -17,51 +17,51 @@
           ],
           [
             1,
-            8,
+            7,
             3,
             0
           ],
           [
             0,
-            1,
+            0,
             21,
-            2
+            1
           ],
           [
             0,
             0,
             0,
-            39
+            32
           ]
         ],
-        "ordinal_exact_count": 75,
-        "ordinal_exact_agreement": 0.9036144578313253,
+        "ordinal_exact_count": 67,
+        "ordinal_exact_agreement": 0.9178082191780822,
         "linear_weighted_kappa": {
-          "value": 0.9061616732617298,
+          "value": 0.9220640569395018,
           "reason": null,
-          "n": 83,
-          "observed_weighted_disagreement_sum": 2.6666666666666665,
-          "expected_weighted_disagreement_sum": 28.417670682730925
+          "n": 73,
+          "observed_weighted_disagreement_sum": 2.0,
+          "expected_weighted_disagreement_sum": 25.662100456621005
         },
         "quadratic_weighted_kappa": {
-          "value": 0.9506246281975015,
+          "value": 0.9591189098375956,
           "reason": null,
-          "n": 83,
-          "observed_weighted_disagreement_sum": 0.8888888888888888,
-          "expected_weighted_disagreement_sum": 18.002677376171352
+          "n": 73,
+          "observed_weighted_disagreement_sum": 0.6666666666666666,
+          "expected_weighted_disagreement_sum": 16.30745814307458
         },
         "binary_matrix_rows_a_columns_b": [
           [
-            17,
+            16,
             3
           ],
           [
-            1,
-            62
+            0,
+            54
           ]
         ],
-        "binary_agreement_count": 79,
-        "binary_agreement": 0.9518072289156626
+        "binary_agreement_count": 70,
+        "binary_agreement": 0.958904109589041
       },
       "controls": {
         "a": {
@@ -89,8 +89,8 @@
       },
       "repeats": {
         "a": {
-          "n_total": 8,
-          "n_complete": 8,
+          "n_total": 6,
+          "n_complete": 6,
           "null_excluded": 0,
           "a_null": 0,
           "b_null": 0,
@@ -117,24 +117,24 @@
               0,
               0,
               0,
-              5
+              3
             ]
           ],
-          "ordinal_exact_count": 7,
-          "ordinal_exact_agreement": 0.875,
+          "ordinal_exact_count": 5,
+          "ordinal_exact_agreement": 0.8333333333333334,
           "linear_weighted_kappa": {
-            "value": 0.9090909090909091,
+            "value": 0.8888888888888888,
             "reason": null,
-            "n": 8,
+            "n": 6,
             "observed_weighted_disagreement_sum": 0.3333333333333333,
-            "expected_weighted_disagreement_sum": 3.6666666666666665
+            "expected_weighted_disagreement_sum": 3.0
           },
           "quadratic_weighted_kappa": {
-            "value": 0.967741935483871,
+            "value": 0.96,
             "reason": null,
-            "n": 8,
+            "n": 6,
             "observed_weighted_disagreement_sum": 0.1111111111111111,
-            "expected_weighted_disagreement_sum": 3.4444444444444446
+            "expected_weighted_disagreement_sum": 2.7777777777777777
           },
           "binary_matrix_rows_a_columns_b": [
             [
@@ -143,15 +143,15 @@
             ],
             [
               0,
-              5
+              3
             ]
           ],
-          "binary_agreement_count": 8,
+          "binary_agreement_count": 6,
           "binary_agreement": 1.0
         },
         "b": {
-          "n_total": 8,
-          "n_complete": 8,
+          "n_total": 6,
+          "n_complete": 6,
           "null_excluded": 0,
           "a_null": 0,
           "b_null": 0,
@@ -178,24 +178,24 @@
               0,
               0,
               0,
-              5
+              3
             ]
           ],
-          "ordinal_exact_count": 8,
+          "ordinal_exact_count": 6,
           "ordinal_exact_agreement": 1.0,
           "linear_weighted_kappa": {
             "value": 1.0,
             "reason": null,
-            "n": 8,
+            "n": 6,
             "observed_weighted_disagreement_sum": 0.0,
-            "expected_weighted_disagreement_sum": 3.75
+            "expected_weighted_disagreement_sum": 3.0
           },
           "quadratic_weighted_kappa": {
             "value": 1.0,
             "reason": null,
-            "n": 8,
+            "n": 6,
             "observed_weighted_disagreement_sum": 0.0,
-            "expected_weighted_disagreement_sum": 3.75
+            "expected_weighted_disagreement_sum": 3.0
           },
           "binary_matrix_rows_a_columns_b": [
             [
@@ -204,10 +204,10 @@
             ],
             [
               0,
-              5
+              3
             ]
           ],
-          "binary_agreement_count": 8,
+          "binary_agreement_count": 6,
           "binary_agreement": 1.0
         }
       }
@@ -610,8 +610,8 @@
     }
   },
   "overall_agreement": {
-    "n_total": 111,
-    "n_complete": 111,
+    "n_total": 101,
+    "n_complete": 101,
     "null_excluded": 0,
     "a_null": 0,
     "b_null": 0,
@@ -624,51 +624,51 @@
       ],
       [
         2,
-        15,
+        14,
         3,
         0
       ],
       [
         0,
-        1,
-        27,
-        4
-      ],
-      [
         0,
-        0,
-        1,
-        48
-      ]
-    ],
-    "ordinal_exact_count": 99,
-    "ordinal_exact_agreement": 0.8918918918918919,
-    "linear_weighted_kappa": {
-      "value": 0.8974121996303143,
-      "reason": null,
-      "n": 111,
-      "observed_weighted_disagreement_sum": 4.0,
-      "expected_weighted_disagreement_sum": 38.99099099099099
-    },
-    "quadratic_weighted_kappa": {
-      "value": 0.9454277286135693,
-      "reason": null,
-      "n": 111,
-      "observed_weighted_disagreement_sum": 1.3333333333333333,
-      "expected_weighted_disagreement_sum": 24.43243243243243
-    },
-    "binary_matrix_rows_a_columns_b": [
-      [
         27,
         3
       ],
       [
+        0,
+        0,
         1,
-        80
+        41
       ]
     ],
-    "binary_agreement_count": 107,
-    "binary_agreement": 0.963963963963964
+    "ordinal_exact_count": 91,
+    "ordinal_exact_agreement": 0.900990099009901,
+    "linear_weighted_kappa": {
+      "value": 0.9076613640519291,
+      "reason": null,
+      "n": 101,
+      "observed_weighted_disagreement_sum": 3.333333333333333,
+      "expected_weighted_disagreement_sum": 36.0990099009901
+    },
+    "quadratic_weighted_kappa": {
+      "value": 0.9508802645657037,
+      "reason": null,
+      "n": 101,
+      "observed_weighted_disagreement_sum": 1.1111111111111112,
+      "expected_weighted_disagreement_sum": 22.620462046204622
+    },
+    "binary_matrix_rows_a_columns_b": [
+      [
+        26,
+        3
+      ],
+      [
+        0,
+        72
+      ]
+    ],
+    "binary_agreement_count": 98,
+    "binary_agreement": 0.9702970297029703
   },
   "unique_outputs": {
     "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767:b84bcc00604b0f5d45b0383d3fee5eb80b760ac6cce6f75ba3b8dfbdfe20fd14": {
@@ -721,7 +721,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 8
         }
       ],
@@ -835,7 +835,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 4
         }
       ],
@@ -1029,7 +1029,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 10
         }
       ],
@@ -1109,7 +1109,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 7
         }
       ],
@@ -1325,44 +1325,6 @@
       },
       "packet": "face"
     },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1": {
-      "id": "6774ea0f59",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 1
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-      "ratings": {
-        "a": {
-          "id": "6774ea0f59",
-          "severity": 1,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "medium",
-          "reason": "전체 형태는 자연스럽지만 턱과 볼 일부에 원본보다 가늘고 굽은 인위적인 선이 약하게 보인다."
-        },
-        "b": {
-          "id": "6774ea0f59",
-          "severity": 1,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "medium",
-          "reason": "이마와 눈밑에 얇은 판상 선이 조금 추가되어 약한 인위성이 있으나 광범위하지 않다."
-        }
-      },
-      "packet": "face"
-    },
     "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea": {
       "id": "7a3d696871",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
@@ -1421,7 +1383,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 1
         }
       ],
@@ -1561,44 +1523,6 @@
       },
       "packet": "face"
     },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5": {
-      "id": "7e07f4cfea",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 2
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-      "ratings": {
-        "a": {
-          "id": "7e07f4cfea",
-          "severity": 2,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마와 볼에 새 굽은 선이 반복되고 턱에는 불규칙한 곡선 무늬가 나타난다."
-        },
-        "b": {
-          "id": "7e07f4cfea",
-          "severity": 1,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "medium",
-          "reason": "이마와 눈밑에 약한 판상 선이 보이고 턱의 결이 조금 물결치지만 변형 범위는 작다."
-        }
-      },
-      "packet": "face"
-    },
     "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2:5952565501716b3ad06bbbd5e9d307c65ce548f0ed2c5e3aae046a7912bc4f37": {
       "id": "720b46fba1",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P05/reference.png",
@@ -1725,7 +1649,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 6
         }
       ],
@@ -1861,44 +1785,6 @@
           "appearance_shift": true,
           "confidence": "high",
           "reason": "이마의 소용돌이·함몰과 볼·턱의 겹친 선이 촘촘하고 피부 표면이 크게 일그러진다."
-        }
-      },
-      "packet": "face"
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af": {
-      "id": "40d3f5f6e4",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 7
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-      "ratings": {
-        "a": {
-          "id": "40d3f5f6e4",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마의 겹친 곡선과 볼의 두꺼운 구불선, 턱의 뭉친 무늬가 강하게 보인다."
-        },
-        "b": {
-          "id": "40d3f5f6e4",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·볼·턱을 덮는 판상 굴곡과 물결무늬가 강하고 입가가 녹은 듯 보인다."
         }
       },
       "packet": "face"
@@ -2169,120 +2055,6 @@
       },
       "packet": "face"
     },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6": {
-      "id": "6b6822b7c0",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 6
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-      "ratings": {
-        "a": {
-          "id": "6b6822b7c0",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마의 겹친 곡선과 볼·턱의 굵게 녹아 흐르는 듯한 피부무늬가 심하다."
-        },
-        "b": {
-          "id": "6b6822b7c0",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·볼·입가·턱에 겹친 굴곡이 넓게 생기며 피부가 녹은 듯한 질감으로 변했다."
-        }
-      },
-      "packet": "face"
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992": {
-      "id": "fecbbdacf5",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 3
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-      "ratings": {
-        "a": {
-          "id": "fecbbdacf5",
-          "severity": 2,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·볼·턱에 새 구불선이 반복되고 피부가 부분적으로 매끈하게 뭉개져 보인다."
-        },
-        "b": {
-          "id": "fecbbdacf5",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마의 판상 무늬와 양 볼의 굽은 선이 강하며 턱까지 반복 굴곡이 이어진다."
-        }
-      },
-      "packet": "face"
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb": {
-      "id": "a804cb4c70",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 4
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-      "ratings": {
-        "a": {
-          "id": "a804cb4c70",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·눈가·볼·턱의 구불거리는 선이 넓게 반복되고 입 주변 피부가 녹아 보인다."
-        },
-        "b": {
-          "id": "a804cb4c70",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마와 양 볼에 넓고 반복적인 곡선 굴곡이 생기며 턱까지 인위적인 선이 이어진다."
-        }
-      },
-      "packet": "face"
-    },
     "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0:6422f8b64f6844af7ea0f0e89708fb3d74ee0a666f76ec2348b819285fa81386": {
       "id": "f6dfb6e61d",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P02.png",
@@ -2359,44 +2131,6 @@
       },
       "packet": "face"
     },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf": {
-      "id": "2652bb4928",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 10
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-      "ratings": {
-        "a": {
-          "id": "2652bb4928",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마부터 턱까지 촘촘한 반복 선이 생기고 볼과 입가 피부가 강하게 뒤틀려 보인다."
-        },
-        "b": {
-          "id": "2652bb4928",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마와 볼의 깊은 반복 곡선, 턱의 겹친 고리무늬로 피부 변형이 심하다."
-        }
-      },
-      "packet": "face"
-    },
     "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8:62722e56d65c4519472ba85f6cfbab205edb03e6362e434a6bc5f35b4d11ffe1": {
       "id": "b389155808",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P01.png",
@@ -2431,44 +2165,6 @@
           "appearance_shift": true,
           "confidence": "high",
           "reason": "미간과 이마의 잎 모양 선이 뚜렷하고 볼·턱에도 얇은 반복 물결이 보인다."
-        }
-      },
-      "packet": "face"
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba": {
-      "id": "3f9e727788",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 9
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-      "ratings": {
-        "a": {
-          "id": "3f9e727788",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·눈가·볼·턱에 겹친 곡선과 뭉친 피부무늬가 강하고 입 주변도 녹은 듯하다."
-        },
-        "b": {
-          "id": "3f9e727788",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·눈가·볼·턱에 굵은 반복 굴곡과 비늘 같은 피부 조각이 넓게 나타난다."
         }
       },
       "packet": "face"
@@ -2755,7 +2451,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 5
         }
       ],
@@ -3207,82 +2903,6 @@
       },
       "packet": "face"
     },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff": {
-      "id": "52b780756e",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 8
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-      "ratings": {
-        "a": {
-          "id": "52b780756e",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마의 격자 같은 곡선과 볼·입가·턱의 굵고 뒤엉킨 무늬가 심하다."
-        },
-        "b": {
-          "id": "52b780756e",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마와 볼의 깊은 잎맥형 선, 입가·턱의 판상 굴곡이 얼굴 전반에 나타난다."
-        }
-      },
-      "packet": "face"
-    },
-    "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb": {
-      "id": "d1ca9f1f9b",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "path": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "sources": [
-        {
-          "branch": "P03-r2",
-          "stage": 5
-        }
-      ],
-      "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
-      "output_sha256": "9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-      "ratings": {
-        "a": {
-          "id": "d1ca9f1f9b",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·볼·턱의 반복 곡선과 뭉친 피부무늬가 심하고 입가 피부가 녹은 듯 보인다."
-        },
-        "b": {
-          "id": "d1ca9f1f9b",
-          "severity": 3,
-          "same_person": "not_assessed",
-          "appearance_shift": true,
-          "confidence": "high",
-          "reason": "이마·볼·턱의 반복 판상 굴곡과 고리무늬가 강하며 피부가 녹은 듯 보인다."
-        }
-      },
-      "packet": "face"
-    },
     "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:c232ff01835bf0e4dfecaa22e4fd006c07f29a84ce13ce0da227edc4f3ff397f": {
       "id": "a3aee00b03",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/trigger-validation-v1/P04/reference.png",
@@ -3447,7 +3067,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 2
         }
       ],
@@ -3599,7 +3219,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 9
         }
       ],
@@ -3637,7 +3257,7 @@
       ],
       "sources": [
         {
-          "branch": "P03-r1",
+          "branch": "P03",
           "stage": 3
         }
       ],
@@ -4551,11 +4171,7 @@
       "reference_sha256": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
       "sources": [
         {
-          "branch": "P03-r1-end-only",
-          "stage": 10
-        },
-        {
-          "branch": "P03-r2-end-only",
+          "branch": "P03-end-only",
           "stage": 10
         }
       ],
@@ -5107,7 +4723,7 @@
         }
       }
     ],
-    "P03-r1": [
+    "P03": [
       {
         "stage": 1,
         "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
@@ -5193,98 +4809,6 @@
         "stage": 10,
         "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
         "id": "9cbcce1660",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      }
-    ],
-    "P03-r2": [
-      {
-        "stage": 1,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-        "id": "6774ea0f59",
-        "grades": {
-          "a": 1,
-          "b": 1
-        }
-      },
-      {
-        "stage": 2,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-        "id": "7e07f4cfea",
-        "grades": {
-          "a": 2,
-          "b": 1
-        }
-      },
-      {
-        "stage": 3,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-        "id": "fecbbdacf5",
-        "grades": {
-          "a": 2,
-          "b": 3
-        }
-      },
-      {
-        "stage": 4,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-        "id": "a804cb4c70",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 5,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-        "id": "d1ca9f1f9b",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 6,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-        "id": "6b6822b7c0",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 7,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-        "id": "40d3f5f6e4",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 8,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-        "id": "52b780756e",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 9,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-        "id": "3f9e727788",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 10,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:4644830c95bc1b8959e2d4711513626bd0d7cc65d2af078554327e59605833cf",
-        "id": "2652bb4928",
         "grades": {
           "a": 3,
           "b": 3
@@ -6193,7 +5717,7 @@
         }
       }
     ],
-    "P03-r1-end-only": [
+    "P03-end-only": [
       {
         "stage": 1,
         "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
@@ -6270,98 +5794,6 @@
         "stage": 9,
         "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465",
         "id": "71c7084573",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 10,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
-        "id": "e34e83e8f8e9",
-        "grades": {
-          "a": 1,
-          "b": 1
-        }
-      }
-    ],
-    "P03-r2-end-only": [
-      {
-        "stage": 1,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:83a0968adc231d874fc2556bdabd5b9bf9adbe88ca5c76af495cefc9bfbb86d1",
-        "id": "6774ea0f59",
-        "grades": {
-          "a": 1,
-          "b": 1
-        }
-      },
-      {
-        "stage": 2,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b44087f603522f878f472ee1c640e161f009c524ee8886847714006e31b9d1b5",
-        "id": "7e07f4cfea",
-        "grades": {
-          "a": 2,
-          "b": 1
-        }
-      },
-      {
-        "stage": 3,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:d90788b37afb43c0e8ef24de52a22cbb864047436c0882bd063bc3220c4e2992",
-        "id": "fecbbdacf5",
-        "grades": {
-          "a": 2,
-          "b": 3
-        }
-      },
-      {
-        "stage": 4,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:b4b6120c7e95f6eb6c8c98973c96aadfb701032ad3b32beaacd7137055c234fb",
-        "id": "a804cb4c70",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 5,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:9a9d737d3bae43a46d9ef381cbe50c7cb1d55bc56926f187774110ac286f8cdb",
-        "id": "d1ca9f1f9b",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 6,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ddfb55bb6a6b9a1951a269da1808a46f9cd502b531a0a1228a1da18619a3d6c6",
-        "id": "6b6822b7c0",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 7,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:ccde15a1bc297801fedd9ac3bb092b8fe458fe908f6f4457ac951be56d7219af",
-        "id": "40d3f5f6e4",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 8,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:66ac9dbeb63fd504dbbaa0624aa44abcd752e6c83dd26657ab21545472f9e7ff",
-        "id": "52b780756e",
-        "grades": {
-          "a": 3,
-          "b": 3
-        }
-      },
-      {
-        "stage": 9,
-        "key": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d:f349713b58fab37e07f2a4bb7605bf96090781563faa4878b872a8816f7d29ba",
-        "id": "3f9e727788",
         "grades": {
           "a": 3,
           "b": 3
@@ -6806,7 +6238,7 @@
         }
       }
     },
-    "P03-r1": {
+    "P03": {
       "n_observed": 10,
       "complete": true,
       "policy": "sequential",
@@ -6829,34 +6261,6 @@
             "1": 2,
             "2": 2,
             "3": 6
-          },
-          "clear_count": 8,
-          "n_valid": 10,
-          "first_clear_stage": 3
-        }
-      }
-    },
-    "P03-r2": {
-      "n_observed": 10,
-      "complete": true,
-      "policy": "sequential",
-      "reviewers": {
-        "a": {
-          "final_severity": 3,
-          "observed_histogram": {
-            "1": 1,
-            "2": 2,
-            "3": 7
-          },
-          "clear_count": 9,
-          "n_valid": 10,
-          "first_clear_stage": 2
-        },
-        "b": {
-          "final_severity": 3,
-          "observed_histogram": {
-            "1": 2,
-            "3": 8
           },
           "clear_count": 8,
           "n_valid": 10,
@@ -7155,7 +6559,7 @@
         }
       }
     },
-    "P03-r1-end-only": {
+    "P03-end-only": {
       "n_observed": 10,
       "complete": true,
       "policy": "end-only",
@@ -7178,34 +6582,6 @@
             "1": 3,
             "2": 2,
             "3": 5
-          },
-          "clear_count": 7,
-          "n_valid": 10,
-          "first_clear_stage": 3
-        }
-      }
-    },
-    "P03-r2-end-only": {
-      "n_observed": 10,
-      "complete": true,
-      "policy": "end-only",
-      "reviewers": {
-        "a": {
-          "final_severity": 1,
-          "observed_histogram": {
-            "1": 2,
-            "2": 2,
-            "3": 6
-          },
-          "clear_count": 8,
-          "n_valid": 10,
-          "first_clear_stage": 2
-        },
-        "b": {
-          "final_severity": 1,
-          "observed_histogram": {
-            "1": 3,
-            "3": 7
           },
           "clear_count": 7,
           "n_valid": 10,

@@ -148,7 +148,7 @@
       ]
     },
     {
-      "name": "P03-r1",
+      "name": "P03",
       "policy": "sequential",
       "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
       "roi": [
@@ -207,78 +207,6 @@
             "mae": 0.2008240669965744,
             "ssim": 0.25522199273109436,
             "lpips": 0.41561371088027954
-          },
-          "rebased": false,
-          "state": {
-            "earrings": "Small silver hoop earrings on both ears.",
-            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
-            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
-            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
-            "background": "A quiet library with wooden bookshelves; original lighting on the person remains unchanged."
-          }
-        }
-      ]
-    },
-    {
-      "name": "P03-r2",
-      "policy": "sequential",
-      "reference": "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P03.png",
-      "roi": [
-        352,
-        64,
-        672,
-        424
-      ],
-      "initial": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-      "prefix_files": [
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-1.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-2.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-3.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-4.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-5.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-6.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-7.png",
-        "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png"
-      ],
-      "rows": [
-        {
-          "stage": 9,
-          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/ten-stage-p03-v1/run-2/step-8.png",
-          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-          "before": {
-            "mae": 0.19077569246292114,
-            "ssim": 0.29578396677970886,
-            "lpips": 0.5228796601295471
-          },
-          "after": {
-            "mae": 0.19077569246292114,
-            "ssim": 0.29578396677970886,
-            "lpips": 0.5228796601295471
-          },
-          "rebased": false,
-          "state": {
-            "earrings": "Small silver hoop earrings on both ears.",
-            "necklace": "A thin silver necklace with one small silver teardrop pendant.",
-            "pin": "Exactly one small cobalt blue circular pin on the person's left chest (viewer-right).",
-            "clothes": "A charcoal grey blazer over a burgundy crewneck shirt.",
-            "background": "A modern office background; original lighting on the person remains unchanged."
-          }
-        },
-        {
-          "stage": 10,
-          "input": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/11b01072579661ae5f88e527b005d876a297f79fb6de538fec01967d057a8725.png",
-          "raw": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-          "final": "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/generated/82d78c218f6883efeb153031b95956db2fc637897a1dc4ae83342035b10930e9.png",
-          "before": {
-            "mae": 0.25273093581199646,
-            "ssim": 0.17960941791534424,
-            "lpips": 0.5659546256065369
-          },
-          "after": {
-            "mae": 0.25273093581199646,
-            "ssim": 0.17960941791534424,
-            "lpips": 0.5659546256065369
           },
           "rebased": false,
           "state": {
@@ -664,5 +592,5 @@
       ]
     }
   ],
-  "new_calls": 19
+  "new_calls": 17
 }

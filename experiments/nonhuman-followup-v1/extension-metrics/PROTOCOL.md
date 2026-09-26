@@ -2,7 +2,7 @@
 
 2026-09-06 작성. 신규 생성이 저장되는 동안 계산 규칙을 고정한다. 최초 계획은 신규27개이며, 수집 종료를 root가 알리고 generation/progress.json의 종료 상태가 확인되기 전에는 부분 cache만 기록한다. 사람·AI 평가 원문 및 라벨은 이번 분석에서 읽지 않는다. 모든 쓰기는 extension-metrics/ 내부다.
 
-수집 종료 규칙 변경: P05 once-triggered stage9가 moderation_blocked로 실패하여 재시도하지 않았고, stage10은 입력 부재로 미실행이다. 실제 신규25성공+1실패=26시도, 남은1단계 미실행으로 확정한다. collection_complete=true/full_design_complete=false를 최종 조건으로 쓴다. P05 once는8개 deliverable, 성공호출9/총시도10, 계획호출11이다. stage10 최종값과10단계평균은 null, 관측8단계평균은 별도 보조값이다. 20경로 중19개10단계완결, 총198개 관측 deliverable이다. 실패 원문의 해시와 상태를 보존하고 실패 이유를 추가 추정하지 않는다.
+수집 종료 규칙 변경: P05 once-triggered stage9가 moderation_blocked로 실패하여 재시도하지 않았고, stage10은 입력 부재로 미실행이다. 실제 신규25성공+1실패=26시도, 남은1단계 미실행으로 확정한다. collection_complete=true/full_design_complete=false를 최종 조건으로 쓴다. P05 once는8개 deliverable, 성공호출9/총시도10, 계획호출11이다. stage10 최종값과10단계평균은 null, 관측8단계평균은 별도 보조값이다. 18경로 중17개10단계완결, 총178개 관측 deliverable이다. 실패 원문의 해시와 상태를 보존하고 실패 이유를 추가 추정하지 않는다.
 
 ## 출력과 재현
 
@@ -14,7 +14,7 @@ metrics/analyze.py를 순수 모듈로 import하여 image/measure 함수를 그�
 
 ## 경로와 비용
 
-현행 revised-tail-v1 inputs/progress/curves의 9경로를 보존하고, 종료된 generation/progress의 once3경로·end7경로·P04 always-original1경로를 더해 20경로의 deliverable 곡선을 만든다. P05 once의 실패9단계와미실행10단계는 채우지 않아198개 관측 단계다. end-only deliverable은 순차1–9단계와 재생성된10단계다. 원래 순차10단계의 호출도 workflow에서는 실제 소비되므로 비용11회이고, 그 출력은 end-only의 최종 deliverable 평균에는 넣지 않는다. 원본에 최종 요구를 직접 적용하는 direct-one-shot은 같은 최종 출력 한 장/비용1회이며 중간 단계 평균을 만들지 않는다.
+현행 revised-tail-v1 inputs/progress/curves의 8경로를 보존하고, 종료된 generation/progress의 once3경로·end6경로·P04 always-original1경로를 더해 18경로의 deliverable 곡선을 만든다. P05 once의 실패9단계와미실행10단계는 채우지 않아178개 관측 단계다. end-only deliverable은 순차1–9단계와 재생성된10단계다. 원래 순차10단계의 호출도 workflow에서는 실제 소비되므로 비용11회이고, 그 출력은 end-only의 최종 deliverable 평균에는 넣지 않는다. 원본에 최종 요구를 직접 적용하는 direct-one-shot은 같은 최종 출력 한 장/비용1회이며 중간 단계 평균을 만들지 않는다.
 
 논리 비용: sequential10, once-triggered11, fixed3 13, P04 every-triggered18, always-original10, end-only workflow11, direct-one-shot1. 같은 입력바이트+프롬프트의 공유 출력은 물리 호출 수로 중복 계산하지 않는다. P03 두 end 경로가 같은 최종 출력인 점과 P04 end/always-original/every-triggered 최종 공유를 명시한다. 비용은 운영상 요구되는 논리 호출 수이며 현재 추가 실험에서 발생한 새 호출27개와 구분한다.
 
@@ -24,4 +24,4 @@ metrics/analyze.py를 순수 모듈로 import하여 image/measure 함수를 그�
 
 각 경로의 고정/정합 얼굴 MAE·SSIM·LPIPS 평균/최종/최대와 P04 피부 합계·각 ROI 평균/최종을 보존한다. 신규27개의 정합 이동·NCC·경계·sigma 민감도를 전부 보존한다. 최초 reset 뒤 이어진 raw 편집에서 고정 LPIPS≥0.0555075가 처음 재등장한 단계, reset 후 편집 횟수, reset 직후 점수를 기록한다. 이후 단계가 없거나 항상 원본처럼 reset 이미지를 다시 편집하지 않으면 해당 없음으로 남긴다. 재경보는 피부 열화의 사람 정답 시점이 아니다.
 
-새 데이터·기존 cache·전달 파일의 해시와 버전을 기록하고 실행 전후 불변을 검사한다. 27개 완결성, 20경로 구성, end 평균의1–9+10 정의, 논리 호출 ledger, 공유 출력 의존성, 고정 지표 재현, 0분모/미관측 재경보 처리 등을 테스트한다. 수치상 더 낮은 원본 차이를 요구 충족·피부 자연스러움·지각 우월성으로 해석하지 않는다. 6인물, P03 두 반복과 정책별 공유 출력·종속단계라는 한계를 유지한다. 최종 요구만 아는 direct-one-shot은 실제 순차 수정 workflow의 대체 비용1회라고 주장하지 않는다.
+새 데이터·기존 cache·전달 파일의 해시와 버전을 기록하고 실행 전후 불변을 검사한다. 27개 완결성, 18경로 구성, end 평균의1–9+10 정의, 논리 호출 ledger, 공유 출력 의존성, 고정 지표 재현, 0분모/미관측 재경보 처리 등을 테스트한다. 수치상 더 낮은 원본 차이를 요구 충족·피부 자연스러움·지각 우월성으로 해석하지 않는다. 6인물, 정책별 공유 출력·종속단계라는 한계를 유지한다. 최종 요구만 아는 direct-one-shot은 실제 순차 수정 workflow의 대체 비용1회라고 주장하지 않는다.

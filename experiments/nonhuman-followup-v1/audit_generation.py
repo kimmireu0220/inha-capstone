@@ -44,13 +44,12 @@ def main():
         for r in rows:
             c=lookup.get(sha(r['output']))
             if c and b['policy']!='once-triggered':assert c['input_sha256']==sha(b['reference'])
-    assert sha(branches['P03-r1-end-only']['rows'][0]['output'])==sha(branches['P03-r2-end-only']['rows'][0]['output'])
     end=branches['P04-end-only']['rows'][0]['output']
     assert sha(end)==sha(branches['P04-always-original']['rows'][-1]['output'])
     actual_by_branch={}
     for r in records:
         for name in r['branches']:actual_by_branch[name]=actual_by_branch.get(name,0)+1
-    result=dict(passed=True,new_successful_unique_calls=25,failed_calls_recorded=1,new_attempts=26,unexecuted_planned_calls=1,retries_recorded=0,dimensions=[1024,1536],branch_count=len(branches),generated_by_branch=actual_by_branch,checks=['collection_terminated_and_no_pending','25_unique_records_and_outputs','failed_stage_and_input','input_and_output_hashes','input_prompt_digest','first_attempt','no_discarded_pocket_prompt','requested_dimensions','stage_coverage_or_explicit_failure','original_reference_and_roi','once_only_reset','continuation_input_link','original_input_for_end_and_always','P03_shared_end','P04_shared_end_and_always'],note='Failure/retry counts describe retained call records; no model-version or seed reproducibility is asserted.',hashes={str(f.relative_to(ROOT)):sha(f) for f in [g/'progress.json',g/'pending.json',ROOT/'PROTOCOL.md',ROOT/'EXTENSION_EVALUATION.md']})
+    result=dict(passed=True,new_successful_unique_calls=25,failed_calls_recorded=1,new_attempts=26,unexecuted_planned_calls=1,retries_recorded=0,dimensions=[1024,1536],branch_count=len(branches),generated_by_branch=actual_by_branch,checks=['collection_terminated_and_no_pending','25_unique_records_and_outputs','failed_stage_and_input','input_and_output_hashes','input_prompt_digest','first_attempt','no_discarded_pocket_prompt','requested_dimensions','stage_coverage_or_explicit_failure','original_reference_and_roi','once_only_reset','continuation_input_link','original_input_for_end_and_always','P04_shared_end_and_always'],note='Failure/retry counts describe retained call records; no model-version or seed reproducibility is asserted.',hashes={str(f.relative_to(ROOT)):sha(f) for f in [g/'progress.json',g/'pending.json',ROOT/'PROTOCOL.md',ROOT/'EXTENSION_EVALUATION.md']})
     (ROOT/'generation-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(result,ensure_ascii=False))
 if __name__=='__main__':main()

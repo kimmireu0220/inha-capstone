@@ -143,15 +143,15 @@ def main():
                CURRENT/'inputs.json', CURRENT/'progress.json', CURRENT/'curves.json',
                CURRENT.parent/'trigger-validation-v1/config.json']
     source_hashes = {str(p): sha(p) for p in sources}
-    assert len(key) == len({r['id'] for r in key}) == 97
+    assert len(key) == len({r['id'] for r in key}) == 85
     ids = {r['id'] for r in key}
     public_paths = {r['id']: r['image'] for r in public}
-    assert len(public) == len(public_paths) == 97 and set(public_paths) == ids
+    assert len(public) == len(public_paths) == 85 and set(public_paths) == ids
     indexed_reviews = {}
     for reviewer, doc in reviews.items():
         assert doc['human'] is False
         items = doc['items']
-        assert len(items) == len({r['id'] for r in items}) == 97
+        assert len(items) == len({r['id'] for r in items}) == 85
         assert {r['id'] for r in items} == ids
         assert all(valid_severity(r['severity']) for r in items)
         assert all(r['same_person'] == 'not_assessed' for r in items)
@@ -159,9 +159,9 @@ def main():
     unique = [r for r in key if 'control' not in r and 'duplicate_of_source' not in r]
     controls = [r for r in key if r.get('control') == 'identity']
     repeats = [r for r in key if 'duplicate_of_source' in r]
-    assert (len(unique), len(controls), len(repeats)) == (83, 6, 8)
+    assert (len(unique), len(controls), len(repeats)) == (73, 6, 6)
     by_digest = {r['reference_sha256']+':'+r['output_sha256']: r for r in unique}
-    assert len(by_digest) == 83
+    assert len(by_digest) == 73
     branches = {b['name']: b for b in current_inputs}
     assert set(branches) == {b['name'] for b in current_progress['branches']}
     assert {(b['reference_sha256'], r['sha256']) for r in curves for b in [branches[r['branch']]]} == {
@@ -187,7 +187,7 @@ def main():
     manifest = {'started_at_utc': datetime.now(timezone.utc).isoformat(), 'source_hashes': source_hashes,
                 'image_hashes': image_hashes, 'thresholds_frozen': THRESHOLDS, 'binary_ai_clear': 'severity >= 2',
                 'versions': {k: importlib.metadata.version(k) for k in ('numpy', 'scipy', 'Pillow')},
-                'rendered_pair_crop_bytes_match_sources': 97,
+                'rendered_pair_crop_bytes_match_sources': 85,
                 'python': platform.python_version(), 'human_evaluation': 'not_collected',
                 'reviewers': 'two independent sessions of the same base AI model',
                 'null_policy': 'pairwise complete-case; every denominator retained', 'new_detector_training': False,
@@ -230,7 +230,7 @@ def main():
         stages.append(dict(row, branch=curve['branch'], stage=curve['stage'], policy=b['policy']))
     sequential = [r for r in stages if r['policy'] == 'sequential']
     heldout = [r for r in sequential if r['branch'] != 'P01']
-    assert len(sequential) == 70 and len(heldout) == 60
+    assert len(sequential) == 60 and len(heldout) == 50
     assert len({r['person'] for r in sequential}) == 6 and len({r['person'] for r in heldout}) == 5
     timing = []
     for name, b in branches.items():
@@ -246,12 +246,12 @@ def main():
                            'alarm_minus_ai_clear_stages': {metric: alarms[metric]-first_clear if alarms[metric] is not None and first_clear is not None else None for metric in METRICS},
                            'null_rating_stages': [r['stage'] for r in branch_rows if r['ratings'][reviewer]['severity'] is None]})
     result = {'manifest_sha256': sha(ROOT/'manifest.json'),
-              'catalog': {'unique_candidates': 83, 'identity_controls': 6, 'hidden_repeats': 8, 'total': 97,
-                          'current_final_stage_records': 90, 'sequential_stage_records': 70, 'excluding_p01_stage_records': 60},
+              'catalog': {'unique_candidates': 73, 'identity_controls': 6, 'hidden_repeats': 6, 'total': 85,
+                          'current_final_stage_records': 80, 'sequential_stage_records': 60, 'excluding_p01_stage_records': 50},
               'inter_rater_unique': inter_rater, 'within_rater_hidden_repeats': repeat_results,
               'identity_false_positive': identity_results,
-              'frozen_threshold_comparison': {'sequential70': compare_rows(sequential), 'excluding_p01_60': compare_rows(heldout)},
-              'rank_correlations_exploratory': {'unique83': correlate_rows(joined), 'sequential70': correlate_rows(sequential), 'excluding_p01_60': correlate_rows(heldout)},
+              'frozen_threshold_comparison': {'sequential60': compare_rows(sequential), 'excluding_p01_50': compare_rows(heldout)},
+              'rank_correlations_exploratory': {'unique73': correlate_rows(joined), 'sequential60': correlate_rows(sequential), 'excluding_p01_50': correlate_rows(heldout)},
               'branch_rank_correlations_exploratory': {name: correlate_rows([r for r in sequential if r['branch'] == name]) for name,b in branches.items() if b['policy'] == 'sequential'},
               'first_observed_stages': timing, 'joined_unique': joined, 'joined_stages': stages,
               'rating_distributions_unique': {reviewer: dict(Counter(str(r['ratings'][reviewer]['severity']) for r in joined)) for reviewer in ('a', 'b')},

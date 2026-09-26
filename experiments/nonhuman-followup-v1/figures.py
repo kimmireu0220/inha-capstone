@@ -11,7 +11,7 @@ plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':
 signal=read('joined-reviews/signal-transfer.json')['groups']
 fig,axes=plt.subplots(1,2,figsize=(10,4.3),sharex=True,sharey=True,layout='constrained')
 for ax,reviewer in zip(axes,'ab'):
-    for group,label,color,marker in [('sequential_final_7','Sequential finals (7 paths)','#ba422f','o'),('original_based_final_unique_6','Original-based finals (6 unique)','#225ec4','s')]:
+    for group,label,color,marker in [('sequential_final_6','Sequential finals (6 people)','#ba422f','o'),('original_based_final_unique_6','Original-based finals (6 people)','#225ec4','s')]:
         rows=signal[group]['observations'];ax.scatter([x['fixed']['lpips'] for x in rows],[x['grades'][reviewer] for x in rows],label=label,c=color,marker=marker,s=48,alpha=.85,edgecolors='white',linewidths=.6,zorder=3)
     ax.axvline(.0555075,color='#444444',ls='--',lw=1,label='Frozen LPIPS alarm')
     ax.axhline(1.5,color='#bbbbbb',ls=':',lw=1)
