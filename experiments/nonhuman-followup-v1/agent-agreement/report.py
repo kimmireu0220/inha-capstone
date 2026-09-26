@@ -32,7 +32,7 @@ def main():
     inter = d['inter_rater_unique']
     lines = [
         '# 초기 6인물 AI 평가 일치도', '',
-        '합성 인물 6명의 순차 편집 6경로와 P04 정책 경로를 대상으로, 같은 기반 모델의 독립 두 세션이 인위적 얼굴 변화를 0~3등급으로 평가했다. 두 세션은 사람 평가나 서로 다른 모델의 합의를 뜻하지 않는다.', '',
+        '합성 인물 6명의 순차 편집 6경로와 P04 정책 경로를 대상으로, 같은 기반 모델의 두 독립 세션이 인위적 얼굴 변화를 0~3등급으로 평가했다.', '',
         '## 평가 자료', '',
         f'- 고유 출력 {c["unique_candidates"]}개, 원본 대조 {c["identity_controls"]}개, 숨긴 반복 {c["hidden_repeats"]}개를 포함해 세션당 {c["total"]}개를 평가했다.',
         f'- 초기 순차 경로는 6개이며 단계 기록은 {c["sequential_stage_records"]}개다. P01을 제외한 보조 분석은 {c["excluding_p01_stage_records"]}개다.',
@@ -43,7 +43,7 @@ def main():
         f'| 선형 가중 Cohen κ | {dec(inter["linear_weighted_kappa"]["value"])} |',
         f'| severity≥2 이진 일치 | {inter["binary_agreement_count"]}/{inter["n_complete"]} = {pct(inter["binary_agreement"])} |', '',
         '## 동결 지표와 AI 등급 비교', '',
-        '양성은 AI severity≥2이며 기존 MAE·SSIM·LPIPS 임계값을 변경하지 않았다. 아래 값은 AI 관찰과의 일치도이며 사람 정답 기준 감지 정확도가 아니다.', '',
+        '양성은 AI severity≥2다. 초기 탐색 실험의 MAE·SSIM·LPIPS 임계값과 AI 등급 사이의 일치도를 계산했다.', '',
         '| 자료 | AI | 지표 | Precision | Recall | Specificity |',
         '|---|---|---|---:|---:|---:|'
     ]
@@ -61,10 +61,10 @@ def main():
         alarm = a['first_frozen_alarm_stage']
         lines.append(f'| {branch} | {alarm["mae"]} | {alarm["ssim"]} | {alarm["lpips"]} | {a["first_ai_clear_stage"]} | {b["first_ai_clear_stage"]} |')
 
-    lines += ['', '## 해석 제한', '',
-              '- 동일 인물의 단계는 서로 독립된 표본이 아니다.',
+    lines += ['', '## 분석 범위', '',
+              '- 동일 인물의 단계는 종속된 관측값이다.',
               '- 얼굴 영역에는 피부 외 구조와 위치 변화가 함께 반영된다.',
-              '- 높은 세션 간 일치도는 사람 판단이나 외부 모델 일반화를 보장하지 않는다.', '',
+              '- 세션 간 일치도는 동일 모델의 평가 일관성을 나타낸다.', '',
               '## 재현 파일', '',
               '- `results.json`: 연결된 지표, 등급, 일치도와 경로별 최초 단계',
               '- `joined-stages.csv`: 단계별 지표와 두 AI 등급',

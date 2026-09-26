@@ -44,7 +44,7 @@
 - [지표 계산 영역과 구현 조건](experiments/nonhuman-followup-v1/metrics/PROTOCOL.md)
 - [단계별 AI 평가](experiments/nonhuman-followup-v1/agent-agreement/joined-stages.csv)
 
-기존 종합 결과의 원본은 생성 인물 6명이며 반복 편집은 인물별 1회, 총 6경로입니다. 방법 간 공유 출력은 독립 표본으로 중복 계산하지 않습니다.
+기존 종합 결과의 원본은 생성 인물 6명이며 반복 편집은 인물별 1회, 총 6경로입니다. 방법 간 공유 출력은 동일한 표본으로 집계합니다.
 
 이 저장소는 논문, Google Slides 링크, 실험 기록·분석 코드·이미지와 로컬 편집기 소스를 포함합니다. 실행 환경·모델 가중치는 별도로 준비해야 합니다.
 
