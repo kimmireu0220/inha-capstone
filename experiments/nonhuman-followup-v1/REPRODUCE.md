@@ -30,7 +30,7 @@ metrics/, agent-agreement/, extension-metrics/에는 각 계산의 manifest·검
 - RESULTS.md: 통합 해석과 논문에 남길 주장.
 - generation/{progress.json,generated/,failures/}: 입력 연결·성공 출력·실패 원문.
 - reviews/: 독립 AI 평가 원문. 인간 응답이 아님.
-- private/: 익명 ID와 원본·출력·경로 해독표. 평가자에게 전달하지 않음.
+- private/: 익명 ID와 원본·출력·편집 과정 해독표. 평가자에게 전달하지 않음.
 - joined-reviews/: 고유 얼굴 101개·관측 단계 178개·고유 최종 요구 15개 결합 및 조건부 지표 진단.
 - figures/: 원본 차이와 피부 관찰의 불일치, P04 정책 곡선.
 - literature/: 일차 문헌·실험 대조·반대 관점 주장 검토.

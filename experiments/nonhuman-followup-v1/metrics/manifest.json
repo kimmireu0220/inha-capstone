@@ -9,12 +9,12 @@
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/inputs.json": "c3249de5a082e533cdbff36ea61d1c5bbdc700b64ca45e25f4d845d5ffa4eef7",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/progress.json": "9b20701328d235f06ff11177ceca2a92f34613519eccab74ebf8334fa06e965a",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/curves.json": "167b5aff42991a58ebae7b681fb6f71ccc9e7b618d924a3e03ba50f36e1b3a3f",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/PROTOCOL.md": "61f2f6ed1d2164789f3b9a847119f2d033e6f4ce1e5e963dd2b4a4be45ba9b1c",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/PROTOCOL.md": "e07f4fc36217fd04013164fe16841ee0afc9f83c2bec985c189b6c01413f1e07",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/analyze.py": "ebfc2d862d9ddd3c6ec670fd8168ddbf6ae4a9644ce150244f7c25de44b0f6d9",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/run.py": "211749b49b7ed7d83428462c80b5e7c85308bc1e458a3bdb7201f3978dcdcf2a",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/alignment-diagnostic/analyze.py": "99a750af9708f6afd351a075331beef93ba006bc39ccb73c747d242faec1eb6e",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/skin-diagnostic/analyze.py": "122fde2d5ca96a756c74aa0a76fa04630c3d47186cdb3dd4d0bcd78ba8a1d80c",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/skin-diagnostic/PROTOCOL.md": "a2b1ed48d277709b0defbeacebf398b361ec55a21de88ee97f7279ac505fdca6"
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/policy-pilot-v1/skin-diagnostic/PROTOCOL.md": "ccd1ce5761ca7e8413a9832dfb6192e572f1dd158f4124ebeaa214e790d44cd0"
   },
   "image_hashes": {
     "/Users/kimmireu/Desktop/Storage/inha-capstone/assets/people/P01.png": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8",
@@ -157,5 +157,19 @@
   "independent_agent_evaluation": "not_collected",
   "lpips_state_dict_sha256": "dcac8b0995e729ecc254c2af1e343a61a512ebbac89acebaa0d2d43512f221b9",
   "lpips_weights_file": "/Users/kimmireu/Desktop/Storage/inha-capstone/.venv-metrics/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth",
-  "lpips_weights_file_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+  "lpips_weights_file_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+  "terminology_update": {
+    "date": "2026-09-28",
+    "reason": "실험 설명 용어 정리 및 현행 6인물 범위 명시. 이미지·프롬프트·평가 원문·계산 수치 유지.",
+    "updated_sources": {
+      "experiments/nonhuman-followup-v1/metrics/PROTOCOL.md": {
+        "previous_sha256": "61f2f6ed1d2164789f3b9a847119f2d033e6f4ce1e5e963dd2b4a4be45ba9b1c",
+        "current_sha256": "e07f4fc36217fd04013164fe16841ee0afc9f83c2bec985c189b6c01413f1e07"
+      },
+      "experiments/policy-pilot-v1/skin-diagnostic/PROTOCOL.md": {
+        "previous_sha256": "a2b1ed48d277709b0defbeacebf398b361ec55a21de88ee97f7279ac505fdca6",
+        "current_sha256": "ccd1ce5761ca7e8413a9832dfb6192e572f1dd158f4124ebeaa214e790d44cd0"
+      }
+    }
+  }
 }

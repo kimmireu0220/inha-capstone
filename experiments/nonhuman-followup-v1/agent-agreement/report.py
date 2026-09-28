@@ -32,10 +32,10 @@ def main():
     inter = d['inter_rater_unique']
     lines = [
         '# 초기 6인물 AI 평가 일치도', '',
-        '합성 인물 6명의 순차 편집 6경로와 P04 정책 경로를 대상으로, 같은 기반 모델의 두 독립 세션이 인위적 얼굴 변화를 0~3등급으로 평가했다.', '',
+        '합성 인물 6명의 10단계 순차 편집 결과와 P04의 방식별 편집 결과를 대상으로, 같은 기반 모델의 두 독립 세션이 인위적 얼굴 변화를 0~3등급으로 평가했다.', '',
         '## 평가 자료', '',
         f'- 고유 출력 {c["unique_candidates"]}개, 원본 대조 {c["identity_controls"]}개, 숨긴 반복 {c["hidden_repeats"]}개를 포함해 세션당 {c["total"]}개를 평가했다.',
-        f'- 초기 순차 경로는 6개이며 단계 기록은 {c["sequential_stage_records"]}개다. P01을 제외한 보조 분석은 {c["excluding_p01_stage_records"]}개다.',
+        f'- 초기 실험은 인물 6명에게 각각 10단계 순차 편집을 진행했으며 단계 기록은 {c["sequential_stage_records"]}개다. P01을 제외한 보조 분석은 {c["excluding_p01_stage_records"]}개다.',
         f'- 전체 현행 정책 단계 기록은 {c["current_final_stage_records"]}개다.', '',
         '## 세션 간 일치', '',
         '| 항목 | 결과 |', '|---|---:|',
@@ -52,8 +52,8 @@ def main():
             for metric, values in metrics.items():
                 lines.append(f'| {cohort} | {reviewer.upper()} | {metric} | {pct(values["precision"])} | {pct(values["recall"])} | {pct(values["specificity"])} |')
 
-    lines += ['', '## 경로별 최초 관측 단계', '',
-              '| 경로 | 첫 MAE 경보 | 첫 SSIM 경보 | 첫 LPIPS 경보 | 첫 AI A clear | 첫 AI B clear |',
+    lines += ['', '## 편집 과정별 최초 관측 단계', '',
+              '| 편집 과정 | 첫 MAE 경보 | 첫 SSIM 경보 | 첫 LPIPS 경보 | 첫 AI A clear | 첫 AI B clear |',
               '|---|---:|---:|---:|---:|---:|']
     timing = {(r['branch'], r['reviewer']): r for r in d['first_observed_stages']}
     for branch in dict.fromkeys(r['branch'] for r in d['first_observed_stages']):
@@ -66,7 +66,7 @@ def main():
               '- 얼굴 영역에는 피부 외 구조와 위치 변화가 함께 반영된다.',
               '- 세션 간 일치도는 동일 모델의 평가 일관성을 나타낸다.', '',
               '## 재현 파일', '',
-              '- `results.json`: 연결된 지표, 등급, 일치도와 경로별 최초 단계',
+              '- `results.json`: 연결된 지표, 등급, 일치도와 편집 과정별 최초 단계',
               '- `joined-stages.csv`: 단계별 지표와 두 AI 등급',
               '- `manifest.json`: 입력과 이미지 해시',
               '- `validation.json`: 무결성 검사 결과', '']

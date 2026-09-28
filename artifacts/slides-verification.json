@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
   "slides": 33,
   "speaker_notes": {
@@ -19,7 +19,7 @@
   "visual_audit": {
     "slides_reviewed": 33,
     "adjusted_slides": [4, 5, 9, 12, 14, 16, 17, 18, 19, 20, 21, 22, 33],
-    "adjustments": "비교 사례의 시드 번호를 발표용 표현으로 교체하고 슬라이드 21 이미지에 박힌 시드 표기를 가림. 슬라이드 5에 ArcFace 지표 행을 추가하고 슬라이드 21·22에 18쌍 ArcFace 결과를 반영함. 초기 실험에서 P03 반복 경로를 제외해 슬라이드 4·9·33과 발표자 노트를 6경로, 최종 6쌍, AI 고유 101개 기준으로 갱신함",
+    "adjustments": "비교 사례의 시드 번호를 발표용 표현으로 교체하고 슬라이드 21 이미지에 박힌 시드 표기를 가림. 슬라이드 5에 ArcFace 지표 행을 추가하고 슬라이드 21·22에 18쌍 ArcFace 결과를 반영함. 초기 실험에서 P03 반복 실행을 제외해 슬라이드 4·9·33과 발표자 노트를 6명에게 각각 10단계 편집, 최종 6쌍, AI 고유 101개 기준으로 갱신함",
     "post_edit_thumbnail_checked": true
   },
   "links_by_slide": {
@@ -46,6 +46,15 @@
     "text_replacements": 4,
     "post_edit_thumbnails_reviewed": true,
     "recorded_prompts_preserved": true
+  },
+  "terminology_cleanup": {
+    "date": "2026-09-28",
+    "text_and_notes_reviewed": 33,
+    "edited_slides": [4, 10, 11, 20],
+    "text_replacements": 4,
+    "post_edit_thumbnails_reviewed": [10, 11, 20],
+    "initial_experiment_description": "합성 인물 6명에게 각각 10단계 순차 편집을 한 번씩 진행",
+    "ambiguous_path_terms_remaining": 0
   },
   "verified_via": [
     "Google Slides API page element and link inspection",

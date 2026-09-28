@@ -9,10 +9,10 @@
   "not_attempted_dependency_stages": 1,
   "source_hashes": {
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/extension-metrics/analyze.py": "290b13830ec38fd15803240e30db236a830fc881d852eb86ab397a8f8fe305d7",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/extension-metrics/PROTOCOL.md": "7a4bec0c08cf0e6361348a7ae80bacc9856a214158a87eb3683f4e4c8d8172e2",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/extension-metrics/PROTOCOL.md": "04f431ef63c70334ca565d1691bbbc0af4dc3b106ad10e9322fe504661b92cca",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/analyze.py": "ebfc2d862d9ddd3c6ec670fd8168ddbf6ae4a9644ce150244f7c25de44b0f6d9",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/results.json": "47a5b95d90257e32a56367f50e18af94cc896e5d037a0c22415ebcd09edb27b2",
-    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/manifest.json": "6048d6b8f1deafacde53809ce23f7b98607e425e44dc6cc98c21a677b064472b",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/results.json": "8af044ab3033a06e200638b6f619edd5f3d51bf02b5ffeeea28a38e6dd4ce208",
+    "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/nonhuman-followup-v1/metrics/manifest.json": "a45218ddaee060f15ee5f7179c0e8c9a34e9bce31dc23440900c8ce5f42145a8",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/inputs.json": "c3249de5a082e533cdbff36ea61d1c5bbdc700b64ca45e25f4d845d5ffa4eef7",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/progress.json": "9b20701328d235f06ff11177ceca2a92f34613519eccab74ebf8334fa06e965a",
     "/Users/kimmireu/Desktop/Storage/inha-capstone/experiments/revised-tail-v1/curves.json": "167b5aff42991a58ebae7b681fb6f71ccc9e7b618d924a3e03ba50f36e1b3a3f",
@@ -297,5 +297,23 @@
     "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180:12f69dd691ee7c2ae4b64a616545bc18362d0eb8cc80ccacdb36a988c5e1c18c"
   ],
   "human_evaluation": "not_read_or_collected",
-  "independent_agent_evaluation": "not_read_or_collected"
+  "independent_agent_evaluation": "not_read_or_collected",
+  "terminology_update": {
+    "date": "2026-09-28",
+    "reason": "실험 설명 용어 정리 및 현행 6인물 범위 명시. 이미지·프롬프트·평가 원문·계산 수치 유지.",
+    "updated_sources": {
+      "experiments/nonhuman-followup-v1/extension-metrics/PROTOCOL.md": {
+        "previous_sha256": "7a4bec0c08cf0e6361348a7ae80bacc9856a214158a87eb3683f4e4c8d8172e2",
+        "current_sha256": "04f431ef63c70334ca565d1691bbbc0af4dc3b106ad10e9322fe504661b92cca"
+      },
+      "experiments/nonhuman-followup-v1/metrics/results.json": {
+        "previous_sha256": "47a5b95d90257e32a56367f50e18af94cc896e5d037a0c22415ebcd09edb27b2",
+        "current_sha256": "8af044ab3033a06e200638b6f619edd5f3d51bf02b5ffeeea28a38e6dd4ce208"
+      },
+      "experiments/nonhuman-followup-v1/metrics/manifest.json": {
+        "previous_sha256": "6048d6b8f1deafacde53809ce23f7b98607e425e44dc6cc98c21a677b064472b",
+        "current_sha256": "a45218ddaee060f15ee5f7179c0e8c9a34e9bce31dc23440900c8ce5f42145a8"
+      }
+    }
+  }
 }

@@ -46,12 +46,12 @@ for seed in plan['seeds']:
  for i,(label,p) in enumerate([('ORIGINAL',R/f'reference-{seed}.png'),('REGENERATE',R/a['artifact_dir']/'output.png'),('SEQUENTIAL',R/b['artifact_dir']/'output.png')]):
   draw.text((i*512+8,9),label,fill='black');sheet.paste(Image.open(p).convert('RGB'),(i*512,34))
  sheet.save(R/f'comparison-{seed}.png')
-lines=['# 사이트 생성 경로의 두 모드 비교','','2026-09-14. 같은 원본 P04·시드 42/314·최종 요구를 사용해 사이트의 순차 생성 3회와 일괄 재생성 1회를 비교했다. 총 8개 새 출력이다.','','## 고정 얼굴 영역 지표','','ROI [176,44,336,224]. MAE·LPIPS는 낮을수록, SSIM은 높을수록 원본에 가깝다.','','| 시드 | 모드 | MAE ↓ | SSIM ↑ | LPIPS ↓ |','| --- | --- | ---: | ---: | ---: |']
+lines=['# 웹 편집기 실험의 두 모드 비교','','2026-09-14. 같은 원본 P04·시드 42/314·최종 요구를 사용해 사이트의 순차 생성 3회와 일괄 재생성 1회를 비교했다. 총 8개 새 출력이다.','','## 고정 얼굴 영역 지표','','ROI [176,44,336,224]. MAE·LPIPS는 낮을수록, SSIM은 높을수록 원본에 가깝다.','','| 시드 | 모드 | MAE ↓ | SSIM ↑ | LPIPS ↓ |','| --- | --- | ---: | ---: | ---: |']
 for r in final:
  m=r['metrics'];lines.append(f"| {r['seed']} | {r['mode']} | {m['mae']:.6f} | {m['ssim']:.6f} | {m['lpips']:.6f} |")
 for mode,m in means.items():lines.append(f"| 평균 | {mode} | {m['mae']:.6f} | {m['ssim']:.6f} | {m['lpips']:.6f} |")
-lines+=['','## 경로 전체 시간','','| 시드 | 일괄 1회(초) | 순차 3회 합계(초) |','| --- | ---: | ---: |']
+lines+=['','## 전체 편집 시간','','| 시드 | 일괄 1회(초) | 순차 3회 합계(초) |','| --- | ---: | ---: |']
 for seed,v in path_seconds.items():lines.append(f"| {seed} | {v['regenerate']:.2f} | {v['sequential']:.2f} |")
-lines+=['','## 입력 검증','','일괄 입력은 최초 원본, 순차 2·3단계 입력은 직전 출력과 해시가 일치했다. 최종 프롬프트와 상태가 방법 간 같고, 8개 출력이 모두 고유함을 확인했다. 원본 대조 MAE=0, SSIM=1, LPIPS≈0을 확인했다.','','## 범위','','한 합성 인물과 두 시드의 사이트 생성 경로 비교다. 2026-09-09 CLI 비교와 별도 결과로 관리한다. 생성 기록은 API 경로에서 수집하고 모드 선택·시드 저장·결과 비교 화면은 브라우저에서 검수한다. 시간은 모델 로딩과 저장을 포함한 생성 요청 처리 시간이다.','','[시드 42 이미지](comparison-42.png) · [시드 314 이미지](comparison-314.png) · [전체 수치](results.json) · [검증](verification.json) · [계획](PROTOCOL.md)']
+lines+=['','## 입력 검증','','일괄 입력은 최초 원본, 순차 2·3단계 입력은 직전 출력과 해시가 일치했다. 최종 프롬프트와 상태가 방법 간 같고, 8개 출력이 모두 고유함을 확인했다. 원본 대조 MAE=0, SSIM=1, LPIPS≈0을 확인했다.','','## 범위','','웹 편집기에서 한 합성 인물과 두 시드를 비교한 실험이다. 2026-09-09 CLI 비교와 별도 결과로 관리한다. 생성 기록은 API 경로에서 수집하고 모드 선택·시드 저장·결과 비교 화면은 브라우저에서 검수한다. 시간은 모델 로딩과 저장을 포함한 생성 요청 처리 시간이다.','','[시드 42 이미지](comparison-42.png) · [시드 314 이미지](comparison-314.png) · [전체 수치](results.json) · [검증](verification.json) · [계획](PROTOCOL.md)']
 (R/'RESULTS.md').write_text('\n'.join(lines)+'\n')
 print(json.dumps({'means':means,'path_seconds':path_seconds},indent=2))
