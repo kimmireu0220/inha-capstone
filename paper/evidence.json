@@ -1,115 +1,79 @@
 {
-  "date": "2026-09-27",
-  "website_final_rows_checked": 4,
-  "website_mean_rows_checked": 2,
-  "website_expanded_pairs_checked": 18,
-  "website_arcface_pairs_checked": 18,
-  "scope": "Numerical transcription checks and source hashes; not scientific external validation",
+  "date": "2026-09-30",
   "passed": true,
-  "manuscript_sha256": "d06c737f21548d9a0d7ee54643693a9e18221e562eae99838f7f39c344ea10ab",
+  "scope": "Numeric transcription and source-hash checks, not independent scientific validation",
+  "manuscript_sha256": "641bade45de210f2f778381d90c4a120692456bc157d9d8001bc272647a21d75",
+  "checked_values": [
+    "0.087120",
+    "0.846176",
+    "0.922054",
+    "0.108710",
+    "0.768563",
+    "0.713703",
+    "0.555040",
+    "0.842260",
+    "0.740218",
+    "0.943947",
+    "96",
+    "0.732527",
+    "35",
+    "27",
+    "34",
+    "168",
+    "0.585017",
+    "70",
+    "60",
+    "38",
+    "199",
+    "0.734518",
+    "68",
+    "60",
+    "71",
+    "19/36",
+    "0.387",
+    "28/36",
+    "0.366",
+    "18/36",
+    "0.885",
+    "27/36",
+    "0.692",
+    "17/36",
+    "0.833",
+    "29/36",
+    "0.715",
+    "16/36",
+    "0.521",
+    "28/36",
+    "0.392",
+    "13/36",
+    "0.897",
+    "27/36",
+    "0.743",
+    "13/36",
+    "0.872",
+    "29/36",
+    "0.602"
+  ],
   "sources": [
     {
-      "sections": "3.1,4.1,4.3",
-      "path": "experiments/nonhuman-followup-v1/RESULTS.md",
-      "sha256": "eccec9217ef89a5f647e73b375ecb589c00579d683426f8ac13b716bee8d9ac5"
-    },
-    {
-      "sections": "3.2,4.2",
-      "path": "experiments/autonomous-nonhuman-v1/RESULTS.md",
-      "sha256": "8c567738699bf792e8802e1702ddf25f78419369751f79b10e5296ce7c8f5353"
-    },
-    {
-      "sections": "4.3 AI",
-      "path": "experiments/followup-ai-v1/summary.json",
-      "sha256": "b10ca8cae42c16a03bf5d88aab2cbdb684df46fad5b05977c84d2213457f22ee"
-    },
-    {
-      "sections": "4.4",
-      "path": "experiments/local-policy-v1/results.json",
-      "sha256": "241d466e6e663849547b722353b57774363475ca262baaca6702f2144ee92dcc"
-    },
-    {
-      "sections": "4.5",
-      "path": "experiments/local-policy-robustness-v1/results.json",
-      "sha256": "05189429f03a501329f02ed14393d97948a200ca8e9dde275e73c7f35a8779e6"
-    },
-    {
-      "sections": "5.1",
-      "path": "experiments/studio-policy-v1/results.json",
-      "sha256": "8f089c7cbb8ea746df83000bf7107d0742f16064385da34b2941c19612f7a9c3"
-    },
-    {
-      "sections": "5.1 expanded",
+      "name": "synthetic_policy",
       "path": "experiments/studio-multiperson-v1/results.json",
       "sha256": "13aa514180c4fe861d17237786a317a7141a626d962b390884687d8305f03fe1"
     },
     {
-      "sections": "5.1 ArcFace",
+      "name": "synthetic_arcface",
       "path": "experiments/studio-multiperson-v1/arcface-results.json",
       "sha256": "4f2c229ac89cc49372145321241465d4f6ce8be5b5a906e00758b36019cd4712"
+    },
+    {
+      "name": "real_policy_pilot",
+      "path": "experiments/real-people-v1/results.json",
+      "sha256": "7cca685fec182811d49be4f8e54b1ecc677bffc51041bd5d380cbe4a58fe68b2"
+    },
+    {
+      "name": "prompt_synthesis",
+      "path": "experiments/prompt-synthesis-expanded-v1/summary.json",
+      "sha256": "494b3c327f35366a0af200049a4f2bdf7384338dba0005669e8bc60573c96bd2"
     }
-  ],
-  "table6_checks": [
-    {
-      "table": 6,
-      "mode": "fixed",
-      "arm": "batch",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "fixed",
-      "arm": "sequential",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "0.5",
-      "arm": "batch",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "0.5",
-      "arm": "sequential",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "1.5",
-      "arm": "batch",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "1.5",
-      "arm": "sequential",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "3",
-      "arm": "batch",
-      "numeric_cells": 5,
-      "passed": true
-    },
-    {
-      "table": 6,
-      "mode": "3",
-      "arm": "sequential",
-      "numeric_cells": 5,
-      "passed": true
-    }
-  ],
-  "local_final_rows_checked": 4,
-  "followup_lpips_and_color_values_checked": 10,
-  "ai_counts_checked": true,
-  "posthoc_analysis_verified": true,
-  "arcface_checked": true
+  ]
 }

@@ -1,49 +1,69 @@
+"""Check manuscript values against the three experiments cited in the paper."""
+
 from pathlib import Path
-import json,hashlib
-R=Path(__file__).resolve().parent.parent
-md=(R/'paper/manuscript.ko.md').read_text()
-sources={
-'3.1,4.1,4.3':'experiments/nonhuman-followup-v1/RESULTS.md',
-'3.2,4.2':'experiments/autonomous-nonhuman-v1/RESULTS.md',
-'4.3 AI':'experiments/followup-ai-v1/summary.json',
-'4.4':'experiments/local-policy-v1/results.json',
-'4.5':'experiments/local-policy-robustness-v1/results.json',
-'5.1':'experiments/studio-policy-v1/results.json',
-'5.1 expanded':'experiments/studio-multiperson-v1/results.json',
-'5.1 ArcFace':'experiments/studio-multiperson-v1/arcface-results.json'}
-r=json.loads((R/sources['4.5']).read_text())
-checks=[]
-for mode,arms in r['summary'].items():
- for arm,v in arms.items():
-  vals=[v['face']['lpips']]+[v['skin'][k] for k in ['mae','ssim','highpass_mae','residual_mae']]
-  needle=' | '.join(f'{v:.6f}' for v in vals)
-  assert needle in md,(mode,arm,needle)
-  checks.append({'table':6,'mode':mode,'arm':arm,'numeric_cells':5,'passed':True})
-for row in r['rows']:
- if row['arm']=='batch' or row['stage']==3:
-  v=row['modes']['fixed']['face'];needle=' | '.join(f'{v[k]:.6f}' for k in ['mae','ssim','lpips']);assert needle in md
-ai=json.loads((R/sources['4.3 AI']).read_text());assert ai['images']==12 and ai['groups']['batch']=={'1':6} and ai['groups']['SBP']=={'2':2,'3':4}
-for n in ['0.076800','0.118081','0.104716','0.149267','0.119000','0.166047','0.049207','0.014057','0.013909','0.106249']:
- assert n in md and n in (R/sources['3.2,4.2']).read_text(),n
-v=json.loads((R/'experiments/local-policy-robustness-v1/verification.json').read_text());assert v['passed']
-site=json.loads((R/sources['5.1']).read_text())
-for row in site['final']+[{'metrics':v} for v in site['means'].values()]:
- assert ' | '.join(f'{row["metrics"][k]:.6f}' for k in ['mae','ssim','lpips']) in md
-assert json.loads((R/'experiments/studio-policy-v1/verification.json').read_text())['passed']
-expanded=json.loads((R/sources['5.1 expanded']).read_text())
-assert expanded['complete'] and expanded['outputs']==72 and expanded['paired_comparisons']==18
-assert expanded['regenerate_wins']=={'mae':14,'ssim':18,'lpips':18}
-for mode in ['regenerate','sequential']:
- for k in ['mae','ssim','lpips']:
-  assert f"{expanded['means'][mode][k]:.6f}" in md
-assert json.loads((R/'experiments/studio-multiperson-v1/verification.json').read_text())['complete']
-arc=json.loads((R/sources['5.1 ArcFace']).read_text())
-assert arc['paired_comparisons']==18 and arc['regenerate_wins']==18
-assert arc['images']==42 and arc['all_images_single_face']
-for mode in ['regenerate','sequential']:
- assert f"{arc['means'][mode]:.6f}" in md
-assert f"{arc['mean_difference_regenerate_minus_sequential']:.6f}" in md
-assert json.loads((R/'experiments/studio-multiperson-v1/arcface-verification.json').read_text())['passed']
-output={'date':'2026-09-27','website_final_rows_checked':4,'website_mean_rows_checked':2,'website_expanded_pairs_checked':18,'website_arcface_pairs_checked':18,'scope':'Numerical transcription checks and source hashes; not scientific external validation','passed':True,'manuscript_sha256':hashlib.sha256(md.encode()).hexdigest(),'sources':[{ 'sections':k,'path':p,'sha256':hashlib.sha256((R/p).read_bytes()).hexdigest()} for k,p in sources.items()],'table6_checks':checks,'local_final_rows_checked':4,'followup_lpips_and_color_values_checked':10,'ai_counts_checked':True,'posthoc_analysis_verified':True,'arcface_checked':True}
-(R/'paper/evidence.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
-print('Paper numerical transcription and source checks passed')
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parent.parent
+PAPER = ROOT / "paper"
+manuscript = (PAPER / "manuscript.ko.md").read_text()
+sources = {
+    "synthetic_policy": "experiments/studio-multiperson-v1/results.json",
+    "synthetic_arcface": "experiments/studio-multiperson-v1/arcface-results.json",
+    "real_policy_pilot": "experiments/real-people-v1/results.json",
+    "prompt_synthesis": "experiments/prompt-synthesis-expanded-v1/summary.json",
+}
+data = {key: json.loads((ROOT / path).read_text()) for key, path in sources.items()}
+checked = []
+
+
+def expect(value, precision=6):
+    token = f"{value:.{precision}f}" if isinstance(value, float) else str(value)
+    assert token in manuscript, f"Manuscript missing {token}"
+    checked.append(token)
+
+
+policy = data["synthetic_policy"]
+face = data["synthetic_arcface"]
+assert policy["complete"] and policy["paired_comparisons"] == 18
+assert face["paired_comparisons"] == 18 and face["regenerate_wins"] == 18
+for mode in ("regenerate", "sequential"):
+    for metric in ("lpips", "ssim"):
+        expect(policy["means"][mode][metric])
+    expect(face["means"][mode])
+
+real = data["real_policy_pilot"]
+assert real["complete"] and real["paired_comparisons"] == 2
+for row in real["rows"]:
+    if row["stage"] == 3:
+        expect(row["identity_similarity"])
+
+prompt = data["prompt_synthesis"]
+assert prompt["outputs"] == 108 and prompt["independent_people"] == 6
+for mode in ("history", "agent", "state"):
+    row = prompt["by_mode"][mode]
+    expect(row["achieved"])
+    expect(row["identity_mean"])
+    for history in ("H1", "H2", "H3"):
+        expect(prompt["by_history"][history][mode]["achieved"])
+for person in prompt["by_person"].values():
+    assert person["agent"]["achieved"] > person["history"]["achieved"]
+    assert person["agent"]["identity_mean"] < person["history"]["identity_mean"]
+    assert person["agent"]["identity_mean"] < person["state"]["identity_mean"]
+    for mode in ("history", "agent"):
+        expect(f'{person[mode]["achieved"]}/36')
+        expect(person[mode]["identity_mean"], 3)
+
+evidence = {
+    "date": "2026-09-30",
+    "passed": True,
+    "scope": "Numeric transcription and source-hash checks, not independent scientific validation",
+    "manuscript_sha256": hashlib.sha256(manuscript.encode()).hexdigest(),
+    "checked_values": checked,
+    "sources": [
+        {"name": name, "path": path, "sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest()}
+        for name, path in sources.items()
+    ],
+}
+(PAPER / "evidence.json").write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + "\n")
+print(f"Paper audit passed: {len(checked)} values and 4 source files")

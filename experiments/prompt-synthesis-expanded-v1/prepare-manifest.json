@@ -1,0 +1,89 @@
+{
+  "people": {
+    "R01": {
+      "source": "experiments/real-people-v1/reference-R01.png",
+      "source_sha256": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+      "reference_sha256": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+      "size": [
+        512,
+        336
+      ]
+    },
+    "R02": {
+      "source": "experiments/real-people-v1/reference-R02.png",
+      "source_sha256": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+      "reference_sha256": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+      "size": [
+        512,
+        768
+      ]
+    },
+    "R03": {
+      "source": "assets/people/real/pexels-17858295.jpg",
+      "source_sha256": "e68c6c3c4fe9c9ad4dd6177c24fd39cecdff8f7fdec29d5f2c0c02b33c72f6b7",
+      "reference_sha256": "8c023850033a9cfb17ac700809c328469a45187d68a86148057ff885afe06336",
+      "size": [
+        512,
+        752
+      ]
+    },
+    "R04": {
+      "source": "assets/people/real/pexels-6311615.jpg",
+      "source_sha256": "8f7dccddfa3cf0c00a617660904912d5b248b897ec0eeb7f260a675eca92215a",
+      "reference_sha256": "004dab134961d6b3963bc21d7ade1196dfec38fe22b38645fc9061b680767ffa",
+      "size": [
+        512,
+        336
+      ]
+    },
+    "R05": {
+      "source": "assets/people/real/pexels-4461037.jpg",
+      "source_sha256": "51232dbb1336cf1fc778c54d56933ce745126f4f328e6f4002d2dbe6d8f6adf9",
+      "reference_sha256": "4ec5397e5c9144908d38e7a68f7f49b1fa05f0fa54b54ed31ac187f2ac8743fa",
+      "size": [
+        512,
+        768
+      ]
+    },
+    "R06": {
+      "source": "assets/people/real/pexels-4970991.jpg",
+      "source_sha256": "ec2130d857d8b53d639bef63045917bc6d8995ce485f0bf61c07806fbda32e97",
+      "reference_sha256": "c879e0d07fe0b3b34889fcbcc678ceebe2ffde424d884d5f206d8f8fddcec278",
+      "size": [
+        512,
+        768
+      ]
+    }
+  },
+  "histories": {
+    "H1": {
+      "history_sha256": "ef491a00df26f3797272bf56c384bbde207f33633a3200771ad7ccf0fab2a718",
+      "final_state_sha256": "bd8b2b7e04cd5aa8950eaca0040019abe6c289cf7b74eff0722029e7ff35d9e3",
+      "prompts": {
+        "history": "f7bf8b1d773a1295c179af39fac650cf1b57b49fe6fa954e77772cf46e1b89d8",
+        "state": "d30880e18157ba44cc5bff24733720d5e89f34f41d6572c380ab5fbff62522d9",
+        "agent": "184b7e13d75e2c41317ef12bb04d9e5c242bad648905a6024951e87d77165c58"
+      }
+    },
+    "H2": {
+      "history_sha256": "540ab7577d7ec93851d4b7b072e68aa649cec7e85fd27da9c7427295b7cbfc84",
+      "final_state_sha256": "bae37b1c8ab5916a2d21f2d68faba3356fdcf85a080e216fcbe5e4794bd917c7",
+      "prompts": {
+        "history": "8cf0c9e4fe2d59cf851340d103f5428f6387ef3df5d05594a6a235c884df17d6",
+        "state": "f0b3f490852c5444eb3fa1a5ce239f2ba60ec5c497b8d81af38d44e43f4cabc8",
+        "agent": "835936ba15aaece3f0e0ba382f7e862f65d786ab5606979f51b011afbab5f2c2"
+      }
+    },
+    "H3": {
+      "history_sha256": "e56b69d7cb6fc5d4f9b748d42f9b1513eb8a00ef838ba4f7fea643dafd43e896",
+      "final_state_sha256": "78bbec68bed084cc039ab597cd800cb8163edc1db2c92e4f1167c8342439481e",
+      "prompts": {
+        "history": "fb567f3710e0c55f07adc09045178befa8905053a7a1947b550356bbb6189c3e",
+        "state": "7b1e4e2be2f2f8bdd2f82fbf5af386e9c96428d666f64977736c130018b73576",
+        "agent": "8ce4f752454f375addec952a841a94ca98834cbec6f4fb632ff113b3c28e9f5c"
+      }
+    }
+  },
+  "base_experiment": "experiments/prompt-synthesis-v1",
+  "prepare_code_sha256": "a73c19c70c2ac60477a1efb8b9188d17b7ac6b2871ec5b2715374919913b809a"
+}

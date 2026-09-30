@@ -1,16 +1,15 @@
 # 논문 원고
 
-[인하대 형식 PDF](manuscript.inha.pdf) · [Word](manuscript.inha.docx) · [원고](manuscript.ko.md)
+[최종 PDF](manuscript.inha.pdf) · [편집 가능한 Word](manuscript.inha.docx) · [한국어 원본](manuscript.ko.md) · [국문·영문 초록 포함 Markdown](manuscript.inha.md)
 
-저자 김미르·장윤석, 지도교수 안남혁. 순차 이미지 편집과 원본 기반 재생성의 얼굴 보존을 비교하고 웹 편집기에 적용한다.
+저자 김미르·장윤석, 지도교수 안남혁. 영문 저자명은 확인되지 않아 원고에서 생략했다. 학교의 공식 빈 양식은 확보하지 못했으므로 현재 Word/PDF는 검토용 A4 단일 단 원고다. 제출 전 학과 양식 및 영문 저자명을 확인해야 한다.
 
-본문은 자동 지표, AI 평가, 웹 편집기의 순차 생성·일괄 재생성 비교를 다룬다. 웹 편집기 실험의 최종 18쌍에는 ArcFace 얼굴 특징 유사도를 함께 보고한다. 실험별 세부 기록은 저장소에 있다.
+논문은 두 비교를 분리해 보고한다. 합성 인물 6명·최종 18쌍의 순차 편집/원본 기반 재생성, 실제 인물 6명·편집 이력 3종·2시드·세 프롬프트 방법의 최종 요구 종합 108장이다. 실제 인물 2명의 정책 비교는 별도 예비 결과다. 두 실험의 수치를 합산하지 않는다.
 
-- [본문 수치 검산](evidence.json)
-- [사이트 6인물·18쌍 입력 정책 비교](../experiments/studio-multiperson-v1/RESULTS.md)
-- [사이트 P04 예비 비교](../experiments/studio-policy-v1/RESULTS.md)
-- [인하대 형식 근거](INHA_FORMAT.md)
+- [합성 인물 입력 정책 원자료](../experiments/studio-multiperson-v1/RESULTS.md)
+- [실제 인물 최종 요구 종합 원자료](../experiments/prompt-synthesis-expanded-v1/RESULTS.md)
+- [실제 인물 정책 예비 비교](../experiments/real-people-v1/RESULTS.md)
+- [본문 수치 대조 기록](evidence.json)
+- [문서 렌더링 검증 기록](render-verification.json)
 
-`build.py`, `build_inha.py`로 Word를 생성하고 PDF를 렌더링해 확인한다. `audit.py`는 본문 수치와 근거 파일을 검산한다. 인하대 형식은 6쪽, 읽기용 PDF는 10쪽이다.
-
-Word는 KoPubWorld바탕체·돋움체를 사용한다. 두 PDF는 번들 LibreOffice로 렌더링하고 전체 페이지에서 한글 표시와 배치를 확인했다.
+재생성: 번들 Python으로 `python paper/audit.py`와 `python paper/build_inha.py`를 실행하고, 번들 `render_docx.py`로 Word를 PDF와 페이지 이미지로 렌더링한다. 한글 글꼴이 렌더러의 임시 HOME에서 검색되는지 확인해야 한다. 전체 페이지를 눈으로 확인한 뒤 PDF를 교체한다. 원본 이미지와 생성 기록은 독립 검증을 위해 실험 폴더에 보존한다.

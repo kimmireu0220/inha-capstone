@@ -1,0 +1,294 @@
+{
+  "rater": "single visual inspection by experiment operator",
+  "rated_before_opening_blinding_map_or_similarity_results": true,
+  "ratings": {
+    "R01-H1-42": {
+      "scores": {
+        "A": [1, 1, 0, 0, 1, 1],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A has a necklace and a round pin; B is tightly cropped; C has a rectangular bar rather than a square pin."
+    },
+    "R01-H1-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "C has a navy blazer section, round pin, and necklace. A is more tightly cropped than the original."
+    },
+    "R01-H2-42": {
+      "scores": {
+        "A": [0, 1, 0, 0, 1, 1],
+        "B": [1, 1, 0, 1, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A keeps a navy half-blazer and necklace. B places the red triangular detail on the viewer-right side. One output in this set was opened before blinding; see DEVIATIONS.md."
+    },
+    "R01-H2-314": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [1, 1, 0, 1, 1, 1],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "All three red pin details appear on the viewer-right side; C also keeps a navy half-blazer and a necklace."
+    },
+    "R01-H3-42": {
+      "scores": {
+        "A": [0, 0, 0, 1, 1, null],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "A and C retain a navy jacket and pin. A's plant pot is cropped out, so potted status is uncertain. B removes both jacket and pin."
+    },
+    "R01-H3-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 0, 0, 1, 1, 1],
+        "C": [0, 0, 0, 1, 1, 1]
+      },
+      "note": "B and C retain navy jackets and round pins. A meets the six visible final targets."
+    },
+    "R02-H1-42": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "C retains a navy jacket panel, round pin, and necklace. B's crop and face differ more from the original."
+    },
+    "R02-H1-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 1, 0, 0, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "B retains a navy jacket panel, round pin, and necklace. A is much more tightly cropped."
+    },
+    "R02-H2-42": {
+      "scores": {
+        "A": [0, 1, 0, 0, 0, 1],
+        "B": [1, 1, 0, 1, 1, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A retains navy cloth and necklace and is in a covered atrium. B/C put the red detail on the viewer-right lapel, not the specified viewer-left."
+    },
+    "R02-H2-314": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [1, 1, 0, 1, 1, 1],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "All pin details are on the viewer-right. C also retains navy cloth and a necklace."
+    },
+    "R02-H3-42": {
+      "scores": {
+        "A": [0, 1, 0, 1, 0, 1],
+        "B": [0, 1, 0, 1, 0, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A/B retain navy jackets and round pins, with office space still visible in the backdrop. C shows the gray sweater without jacket or pin against a continuous blue background."
+    },
+    "R02-H3-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [0, 1, 0, 1, 1, 1]
+      },
+      "note": "B/C retain navy jackets and pins. B shows office furniture and a teardrop-looking pendant rather than a clear round pendant."
+    },
+    "R03-H1-42": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 1, 0, 0, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "B retains a navy jacket section, extra round pin, and necklace. C makes a much tighter crop and changes facial appearance."
+    },
+    "R03-H1-314": {
+      "scores": {
+        "A": [1, 1, 0, 0, 1, 1],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A has a round pin and a necklace. C makes a much tighter crop than the original."
+    },
+    "R03-H2-42": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 0],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "Red pin details are on viewer-right in all images; A appears to show two separate stone benches. B retains navy cloth and necklace in a covered space."
+    },
+    "R03-H2-314": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A places a red triangle on the viewer-left but also adds a second red pin on the other lapel. B retains navy cloth and a necklace in an office-like space. C places its red triangle on viewer-right. The bench sections can be one bench occluded by the subject."
+    },
+    "R03-H3-42": {
+      "scores": {
+        "A": [0, 1, 0, 1, 1, 0],
+        "B": [0, 1, 0, 1, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A/B retain navy jackets and round pins. A has two potted plants rather than one. C removes the superseded accessories."
+    },
+    "R03-H3-314": {
+      "scores": {
+        "A": [0, 1, 0, 1, 0, 1],
+        "B": [0, 1, 0, 1, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A/B retain navy jackets and round pins. A also shows part of the old office. C removes the superseded accessories."
+    },
+    "R04-H1-42": {
+      "scores": {
+        "A": [0, 1, 0, 0, 1, 0],
+        "B": [1, 1, 1, 1, 1, 0],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A retains navy cloth, a round pin, and a necklace. A/B show more than one warm lamp; C shows one. C greatly enlarges the face."
+    },
+    "R04-H1-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 1, 0, 0, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "B retains navy cloth, round pin, and necklace. C enlarges the face relative to the original."
+    },
+    "R04-H2-42": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A/C put red pins on viewer-right; the bench is partly occluded by the subject. B retains navy cloth and necklace in a covered space."
+    },
+    "R04-H2-314": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A/C put red pins on viewer-right. B retains navy cloth and a necklace beside an indoor wall."
+    },
+    "R04-H3-42": {
+      "scores": {
+        "A": [0, 1, 0, 1, 0, 1],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [0, 1, 0, 1, 1, null]
+      },
+      "note": "A/C retain navy jackets and round pins; A shows an office fragment, while C's plant pot is cropped off. B shows the final sweater without jacket or pin."
+    },
+    "R04-H3-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 1, 0, 1, 0, 1],
+        "C": [0, 1, 0, 1, 1, 1]
+      },
+      "note": "B/C retain navy jackets and pins. B also includes an office area in the backdrop. A shows the final no-jacket composition."
+    },
+    "R05-H1-42": {
+      "scores": {
+        "A": [0, 1, 1, 0, 1, 0],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A retains navy jacket cloth and a necklace and has two visible warm lamps. B/C show charcoal blazers with one gold square pin and no necklace."
+    },
+    "R05-H1-314": {
+      "scores": {
+        "A": [0, 1, 0, 0, 1, 0],
+        "B": [1, 1, 1, 1, 1, 0],
+        "C": [1, 1, 1, 1, 1, 0]
+      },
+      "note": "A retains navy cloth, a round pin, and a necklace, with multiple lamps. B has multiple visible lamps; C has no clearly visible lamp despite warm lighting."
+    },
+    "R05-H2-42": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A/C have green jackets but put the red pin on viewer-right. B retains navy cloth and necklace and shows a covered atrium."
+    },
+    "R05-H2-314": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [1, 1, 0, 1, 1, 1],
+        "C": [0, 1, 0, 0, 0, 1]
+      },
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth, a necklace, and a round red pin in a covered space."
+    },
+    "R05-H3-42": {
+      "scores": {
+        "A": [0, 1, 0, 1, 0, 1],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [0, 1, 0, 1, 1, 1]
+      },
+      "note": "A/C retain navy jackets and round pins. A shows office furniture. B removes both and keeps the gold pendant and potted plant."
+    },
+    "R05-H3-314": {
+      "scores": {
+        "A": [0, 1, 0, 0, 1, 0],
+        "B": [0, 1, 0, 0, 0, 0],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A/B retain navy jackets and pins, have teardrop-looking rather than round pendants, and show two plants. B also shows office furniture. C follows the final no-jacket state."
+    },
+    "R06-H1-42": {
+      "scores": {
+        "A": [0, 1, 0, 0, 1, 0],
+        "B": [1, 1, 1, 1, 1, 1],
+        "C": [1, 1, 1, 1, 1, 1]
+      },
+      "note": "A retains navy cloth, a round pin, a necklace, and multiple lamps. B is much more tightly cropped than the original."
+    },
+    "R06-H1-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 0],
+        "B": [1, 1, 1, 1, 1, 0],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "A/B have two visible warm lamps; A also enlarges and changes the face. C retains navy cloth, a round pin, and necklace."
+    },
+    "R06-H2-42": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [1, 1, 0, 1, 1, 1]
+      },
+      "note": "A/C put red triangular pins on viewer-right. B retains navy cloth and necklace and is under a substantial roof rather than in an open garden."
+    },
+    "R06-H2-314": {
+      "scores": {
+        "A": [1, 1, 0, 1, 1, 1],
+        "B": [1, 1, 0, 1, 1, 1],
+        "C": [0, 1, 0, 0, 0, 1]
+      },
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth and a necklace beneath a roof."
+    },
+    "R06-H3-42": {
+      "scores": {
+        "A": [1, 1, 1, 1, 1, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [0, 1, 0, 0, 1, 1]
+      },
+      "note": "B/C retain navy jackets and round pins; their gold pendants appear teardrop-shaped. B also keeps office furniture. A follows the no-jacket final state."
+    },
+    "R06-H3-314": {
+      "scores": {
+        "A": [1, 1, 1, 1, 0, 1],
+        "B": [0, 1, 0, 0, 0, 1],
+        "C": [0, 1, 1, 1, 1, 1]
+      },
+      "note": "A removes jacket and pin but exposes an office doorway. B retains a jacket and pin plus an extra necklace. C retains a jacket but the white circle near its lower front is a button, not a lapel pin."
+    }
+  }
+}

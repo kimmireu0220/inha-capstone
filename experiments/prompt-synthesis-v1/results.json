@@ -1,0 +1,160 @@
+{
+  "complete": true,
+  "outputs": 12,
+  "comparison_sets": 4,
+  "independent_people": 2,
+  "rows": [
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "history",
+      "face_count": 1,
+      "detection_score": 0.8854030966758728,
+      "identity_similarity": 0.25423474970737187,
+      "output_sha256": "203fa379f4612542b1a65e6a818feb6e890ab9aa3e5b78c12895b302da06d2d7",
+      "folder": "generated/R01-42-history"
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "state",
+      "face_count": 1,
+      "detection_score": 0.8813214302062988,
+      "identity_similarity": 0.21578104606085133,
+      "output_sha256": "263bd097e86234d3cae873ffc2f339ff9e3380ac79e681eaaafbc7c7259df263",
+      "folder": "generated/R01-42-state"
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "agent",
+      "face_count": 1,
+      "detection_score": 0.8422680497169495,
+      "identity_similarity": 0.3379616808073726,
+      "output_sha256": "3b05e1f05e61fc2e089a94b9eb96a1c1a27726416cada957def20c3c6da793f9",
+      "folder": "generated/R01-42-agent"
+    },
+    {
+      "person": "R01",
+      "seed": 314,
+      "mode": "state",
+      "face_count": 1,
+      "detection_score": 0.8966844081878662,
+      "identity_similarity": 0.2861680931947831,
+      "output_sha256": "aee5a6e37783778e217977de50e9608902e20d63d980aa3b1d516c26f4c44688",
+      "folder": "generated/R01-314-state"
+    },
+    {
+      "person": "R01",
+      "seed": 314,
+      "mode": "agent",
+      "face_count": 1,
+      "detection_score": 0.8689295053482056,
+      "identity_similarity": 0.2355002222667591,
+      "output_sha256": "d9c3d9e3c37aed48ce36ad8549ac031c45efeda3048950aea11e1319d27634be",
+      "folder": "generated/R01-314-agent"
+    },
+    {
+      "person": "R01",
+      "seed": 314,
+      "mode": "history",
+      "face_count": 1,
+      "detection_score": 0.8801518082618713,
+      "identity_similarity": 0.3415609704442366,
+      "output_sha256": "4b846ece3a1293fcfcb12773556a5949ae54bb5e565b60f7ce7fcceaa5743bfc",
+      "folder": "generated/R01-314-history"
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "state",
+      "face_count": 1,
+      "detection_score": 0.7783429622650146,
+      "identity_similarity": 0.7375722674120349,
+      "output_sha256": "1bac4680b0f97d19e550c7753632d41c121899c7ce12ab0a224968f19a3abfa8",
+      "folder": "generated/R02-42-state"
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "agent",
+      "face_count": 1,
+      "detection_score": 0.877471387386322,
+      "identity_similarity": 0.555879506584701,
+      "output_sha256": "17c60010e890e67e4897e124bac08b04c36a9bd12ed016b896e5a6558be6b10c",
+      "folder": "generated/R02-42-agent"
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "history",
+      "face_count": 1,
+      "detection_score": 0.7982195615768433,
+      "identity_similarity": 0.8487038359540392,
+      "output_sha256": "ec584cead915ffc1c6fec11eeb7071928516d14740804195e830f11d5b26cdb6",
+      "folder": "generated/R02-42-history"
+    },
+    {
+      "person": "R02",
+      "seed": 314,
+      "mode": "agent",
+      "face_count": 1,
+      "detection_score": 0.8304551839828491,
+      "identity_similarity": 0.4914671785653135,
+      "output_sha256": "e05e5b4cb9ac251812d6dde239ebdf1cbd4175878979333a3803b1c9bb6afb8e",
+      "folder": "generated/R02-314-agent"
+    },
+    {
+      "person": "R02",
+      "seed": 314,
+      "mode": "history",
+      "face_count": 1,
+      "detection_score": 0.7963937520980835,
+      "identity_similarity": 0.9014660271129455,
+      "output_sha256": "0b2f8b4a005e3a4fa1fade82e0fb3d7f50bd6625b2dc3eea61b67dab459c8b99",
+      "folder": "generated/R02-314-history"
+    },
+    {
+      "person": "R02",
+      "seed": 314,
+      "mode": "state",
+      "face_count": 1,
+      "detection_score": 0.7988019585609436,
+      "identity_similarity": 0.8844739506893946,
+      "output_sha256": "8852c4e39c1ca50326e8d7dd5eed5200d4f3139420b3c1e172a38490a9d949ba",
+      "folder": "generated/R02-314-state"
+    }
+  ],
+  "per_person": {
+    "R01": {
+      "history": 0.2978978600758042,
+      "state": 0.2509745696278172,
+      "agent": 0.28673095153706585
+    },
+    "R02": {
+      "history": 0.8750849315334923,
+      "state": 0.8110231090507147,
+      "agent": 0.5236733425750073
+    }
+  },
+  "references": {
+    "R01": {
+      "face_count": 1,
+      "score": 0.9135704040527344
+    },
+    "R02": {
+      "face_count": 1,
+      "score": 0.8060586452484131
+    }
+  },
+  "method": {
+    "model": "InsightFace buffalo_l/w600k_r50",
+    "detector": "det_10g",
+    "det_size": [
+      640,
+      640
+    ],
+    "det_thresh": 0.5,
+    "metric": "original-to-output cosine similarity"
+  }
+}

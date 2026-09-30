@@ -1,0 +1,24 @@
+{
+  "timing": "after all nine prompts were frozen and before expanded image generation",
+  "histories": {
+    "H1": {
+      "final_targets": ["charcoal blazer", "ivory crew shirt", "one gold square pin on viewer-right lapel", "no necklace", "library with wooden bookshelves", "one warm lamp"],
+      "history": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 4},
+      "state": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 0},
+      "agent": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 0}
+    },
+    "H2": {
+      "final_targets": ["forest-green blazer", "ivory crew shirt", "one red triangular pin on viewer-left lapel", "no necklace", "outdoor garden with leafy hedge", "one stone bench"],
+      "history": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 4},
+      "state": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 0},
+      "agent": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 0}
+    },
+    "H3": {
+      "final_targets": ["no blazer", "light-gray crew sweater", "no pin", "gold necklace with round pendant", "pale-blue studio", "one green potted plant"],
+      "history": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 4},
+      "state": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 0},
+      "agent": {"final_targets_present": 6, "superseded_conditions_still_mentioned": 3, "note": "The agent includes final removals/replacements but also affirmatively describes the superseded navy blazer, silver pin, and silver necklace in the first sentence. The old office is only mentioned as something to replace."}
+    }
+  },
+  "interpretation": "Superseded mentions in history are intentional input. In state prompts, old items mentioned only in an explicit removal clause are not counted as retained requirements. This is a text audit, not an image score."
+}

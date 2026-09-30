@@ -1,0 +1,13 @@
+{
+  "preserve": "Keep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+  "turns": [
+    {"request": "Change the casual top to a dark navy blazer over an ivory crew-neck shirt.", "updates": {"blazer": "dark navy", "inner_shirt": "ivory crew-neck"}},
+    {"request": "Put the person in a modern office background.", "updates": {"background": "modern office"}},
+    {"request": "Add exactly one small circular silver pin on the lapel at the viewer's right.", "updates": {"pin": "one small circular silver pin on the viewer-right lapel"}},
+    {"request": "Add one thin silver necklace with a small teardrop pendant over the shirt.", "updates": {"necklace": "one thin silver necklace with a small teardrop pendant"}},
+    {"request": "Replace the office with a pale-blue studio background and exactly one green potted plant.", "updates": {"background": "pale-blue studio with one green potted plant"}},
+    {"request": "Remove the lapel pin completely; there should be no pin anywhere.", "updates": {"pin": "none"}},
+    {"request": "Remove the blazer and replace the top with a plain light-gray crew-neck sweater. Do not keep a jacket or shirt underneath visible.", "updates": {"blazer": "none", "inner_shirt": "plain light-gray crew-neck sweater"}},
+    {"request": "Replace the silver teardrop necklace with one thin gold necklace and one small round gold pendant. Keep the other latest choices.", "updates": {"necklace": "one thin gold necklace with one small round gold pendant"}}
+  ]
+}

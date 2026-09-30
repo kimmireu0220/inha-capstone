@@ -1,0 +1,2164 @@
+{
+  "rows": [
+    {
+      "person": "R01",
+      "history": "H1",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.25423474970737187,
+      "face_count": 1,
+      "note": "A has a necklace and a round pin; B is tightly cropped; C has a rectangular bar rather than a square pin."
+    },
+    {
+      "person": "R01",
+      "history": "H1",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.3379616808073726,
+      "face_count": 1,
+      "note": "A has a necklace and a round pin; B is tightly cropped; C has a rectangular bar rather than a square pin."
+    },
+    {
+      "person": "R01",
+      "history": "H1",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.21578104606085133,
+      "face_count": 1,
+      "note": "A has a necklace and a round pin; B is tightly cropped; C has a rectangular bar rather than a square pin."
+    },
+    {
+      "person": "R01",
+      "history": "H1",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.2355002222667591,
+      "face_count": 1,
+      "note": "C has a navy blazer section, round pin, and necklace. A is more tightly cropped than the original."
+    },
+    {
+      "person": "R01",
+      "history": "H1",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.2861680931947831,
+      "face_count": 1,
+      "note": "C has a navy blazer section, round pin, and necklace. A is more tightly cropped than the original."
+    },
+    {
+      "person": "R01",
+      "history": "H1",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.3415609704442366,
+      "face_count": 1,
+      "note": "C has a navy blazer section, round pin, and necklace. A is more tightly cropped than the original."
+    },
+    {
+      "person": "R01",
+      "history": "H2",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.3712945010805736,
+      "face_count": 1,
+      "note": "A keeps a navy half-blazer and necklace. B places the red triangular detail on the viewer-right side. One output in this set was opened before blinding; see DEVIATIONS.md."
+    },
+    {
+      "person": "R01",
+      "history": "H2",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.4122710852339156,
+      "face_count": 1,
+      "note": "A keeps a navy half-blazer and necklace. B places the red triangular detail on the viewer-right side. One output in this set was opened before blinding; see DEVIATIONS.md."
+    },
+    {
+      "person": "R01",
+      "history": "H2",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.4138055525261734,
+      "face_count": 1,
+      "note": "A keeps a navy half-blazer and necklace. B places the red triangular detail on the viewer-right side. One output in this set was opened before blinding; see DEVIATIONS.md."
+    },
+    {
+      "person": "R01",
+      "history": "H2",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.4278541583168108,
+      "face_count": 1,
+      "note": "All three red pin details appear on the viewer-right side; C also keeps a navy half-blazer and a necklace."
+    },
+    {
+      "person": "R01",
+      "history": "H2",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.3424024514987968,
+      "face_count": 1,
+      "note": "All three red pin details appear on the viewer-right side; C also keeps a navy half-blazer and a necklace."
+    },
+    {
+      "person": "R01",
+      "history": "H2",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.39775533319293327,
+      "face_count": 1,
+      "note": "All three red pin details appear on the viewer-right side; C also keeps a navy half-blazer and a necklace."
+    },
+    {
+      "person": "R01",
+      "history": "H3",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        null
+      ],
+      "achieved": 2,
+      "judged": 5,
+      "identity_similarity": 0.40225906787874,
+      "face_count": 1,
+      "note": "A and C retain a navy jacket and pin. A's plant pot is cropped out, so potted status is uncertain. B removes both jacket and pin."
+    },
+    {
+      "person": "R01",
+      "history": "H3",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7575174553018438,
+      "face_count": 1,
+      "note": "A and C retain a navy jacket and pin. A's plant pot is cropped out, so potted status is uncertain. B removes both jacket and pin."
+    },
+    {
+      "person": "R01",
+      "history": "H3",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.41276283879052283,
+      "face_count": 1,
+      "note": "A and C retain a navy jacket and pin. A's plant pot is cropped out, so potted status is uncertain. B removes both jacket and pin."
+    },
+    {
+      "person": "R01",
+      "history": "H3",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7408482577609667,
+      "face_count": 1,
+      "note": "B and C retain navy jackets and round pins. A meets the six visible final targets."
+    },
+    {
+      "person": "R01",
+      "history": "H3",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.46624072261432337,
+      "face_count": 1,
+      "note": "B and C retain navy jackets and round pins. A meets the six visible final targets."
+    },
+    {
+      "person": "R01",
+      "history": "H3",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.5473493696910656,
+      "face_count": 1,
+      "note": "B and C retain navy jackets and round pins. A meets the six visible final targets."
+    },
+    {
+      "person": "R02",
+      "history": "H1",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7375722674120349,
+      "face_count": 1,
+      "note": "C retains a navy jacket panel, round pin, and necklace. B's crop and face differ more from the original."
+    },
+    {
+      "person": "R02",
+      "history": "H1",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.555879506584701,
+      "face_count": 1,
+      "note": "C retains a navy jacket panel, round pin, and necklace. B's crop and face differ more from the original."
+    },
+    {
+      "person": "R02",
+      "history": "H1",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.8487038359540392,
+      "face_count": 1,
+      "note": "C retains a navy jacket panel, round pin, and necklace. B's crop and face differ more from the original."
+    },
+    {
+      "person": "R02",
+      "history": "H1",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.4914671785653135,
+      "face_count": 1,
+      "note": "B retains a navy jacket panel, round pin, and necklace. A is much more tightly cropped."
+    },
+    {
+      "person": "R02",
+      "history": "H1",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.9014660271129455,
+      "face_count": 1,
+      "note": "B retains a navy jacket panel, round pin, and necklace. A is much more tightly cropped."
+    },
+    {
+      "person": "R02",
+      "history": "H1",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.8844739506893946,
+      "face_count": 1,
+      "note": "B retains a navy jacket panel, round pin, and necklace. A is much more tightly cropped."
+    },
+    {
+      "person": "R02",
+      "history": "H2",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.7918315446045809,
+      "face_count": 1,
+      "note": "A retains navy cloth and necklace and is in a covered atrium. B/C put the red detail on the viewer-right lapel, not the specified viewer-left."
+    },
+    {
+      "person": "R02",
+      "history": "H2",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.6882289990065071,
+      "face_count": 1,
+      "note": "A retains navy cloth and necklace and is in a covered atrium. B/C put the red detail on the viewer-right lapel, not the specified viewer-left."
+    },
+    {
+      "person": "R02",
+      "history": "H2",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.7172989650783901,
+      "face_count": 1,
+      "note": "A retains navy cloth and necklace and is in a covered atrium. B/C put the red detail on the viewer-right lapel, not the specified viewer-left."
+    },
+    {
+      "person": "R02",
+      "history": "H2",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.7207080403779723,
+      "face_count": 1,
+      "note": "All pin details are on the viewer-right. C also retains navy cloth and a necklace."
+    },
+    {
+      "person": "R02",
+      "history": "H2",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.8627420572491137,
+      "face_count": 1,
+      "note": "All pin details are on the viewer-right. C also retains navy cloth and a necklace."
+    },
+    {
+      "person": "R02",
+      "history": "H2",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.903827891698622,
+      "face_count": 1,
+      "note": "All pin details are on the viewer-right. C also retains navy cloth and a necklace."
+    },
+    {
+      "person": "R02",
+      "history": "H3",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.7959977280836723,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins, with office space still visible in the backdrop. C shows the gray sweater without jacket or pin against a continuous blue background."
+    },
+    {
+      "person": "R02",
+      "history": "H3",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.9315503869949313,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins, with office space still visible in the backdrop. C shows the gray sweater without jacket or pin against a continuous blue background."
+    },
+    {
+      "person": "R02",
+      "history": "H3",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9353557272372937,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins, with office space still visible in the backdrop. C shows the gray sweater without jacket or pin against a continuous blue background."
+    },
+    {
+      "person": "R02",
+      "history": "H3",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9389007823604395,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and pins. B shows office furniture and a teardrop-looking pendant rather than a clear round pendant."
+    },
+    {
+      "person": "R02",
+      "history": "H3",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.9012207110583152,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and pins. B shows office furniture and a teardrop-looking pendant rather than a clear round pendant."
+    },
+    {
+      "person": "R02",
+      "history": "H3",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.9312685930328672,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and pins. B shows office furniture and a teardrop-looking pendant rather than a clear round pendant."
+    },
+    {
+      "person": "R03",
+      "history": "H1",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7913774076542417,
+      "face_count": 1,
+      "note": "B retains a navy jacket section, extra round pin, and necklace. C makes a much tighter crop and changes facial appearance."
+    },
+    {
+      "person": "R03",
+      "history": "H1",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.8516778114956187,
+      "face_count": 1,
+      "note": "B retains a navy jacket section, extra round pin, and necklace. C makes a much tighter crop and changes facial appearance."
+    },
+    {
+      "person": "R03",
+      "history": "H1",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.6157397229819295,
+      "face_count": 1,
+      "note": "B retains a navy jacket section, extra round pin, and necklace. C makes a much tighter crop and changes facial appearance."
+    },
+    {
+      "person": "R03",
+      "history": "H1",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.7648724544603408,
+      "face_count": 1,
+      "note": "A has a round pin and a necklace. C makes a much tighter crop than the original."
+    },
+    {
+      "person": "R03",
+      "history": "H1",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7175794913961653,
+      "face_count": 1,
+      "note": "A has a round pin and a necklace. C makes a much tighter crop than the original."
+    },
+    {
+      "person": "R03",
+      "history": "H1",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.6078473180061214,
+      "face_count": 1,
+      "note": "A has a round pin and a necklace. C makes a much tighter crop than the original."
+    },
+    {
+      "person": "R03",
+      "history": "H2",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.5866153668095155,
+      "face_count": 1,
+      "note": "Red pin details are on viewer-right in all images; A appears to show two separate stone benches. B retains navy cloth and necklace in a covered space."
+    },
+    {
+      "person": "R03",
+      "history": "H2",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8329794209251677,
+      "face_count": 1,
+      "note": "Red pin details are on viewer-right in all images; A appears to show two separate stone benches. B retains navy cloth and necklace in a covered space."
+    },
+    {
+      "person": "R03",
+      "history": "H2",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.7654314382925447,
+      "face_count": 1,
+      "note": "Red pin details are on viewer-right in all images; A appears to show two separate stone benches. B retains navy cloth and necklace in a covered space."
+    },
+    {
+      "person": "R03",
+      "history": "H2",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.7106151851798761,
+      "face_count": 1,
+      "note": "A places a red triangle on the viewer-left but also adds a second red pin on the other lapel. B retains navy cloth and a necklace in an office-like space. C places its red triangle on viewer-right. The bench sections can be one bench occluded by the subject."
+    },
+    {
+      "person": "R03",
+      "history": "H2",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.802874268833146,
+      "face_count": 1,
+      "note": "A places a red triangle on the viewer-left but also adds a second red pin on the other lapel. B retains navy cloth and a necklace in an office-like space. C places its red triangle on viewer-right. The bench sections can be one bench occluded by the subject."
+    },
+    {
+      "person": "R03",
+      "history": "H2",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.8310270483709857,
+      "face_count": 1,
+      "note": "A places a red triangle on the viewer-left but also adds a second red pin on the other lapel. B retains navy cloth and a necklace in an office-like space. C places its red triangle on viewer-right. The bench sections can be one bench occluded by the subject."
+    },
+    {
+      "person": "R03",
+      "history": "H3",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.8978373442256955,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins. A has two potted plants rather than one. C removes the superseded accessories."
+    },
+    {
+      "person": "R03",
+      "history": "H3",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.8957673748724537,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins. A has two potted plants rather than one. C removes the superseded accessories."
+    },
+    {
+      "person": "R03",
+      "history": "H3",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9156661251213497,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins. A has two potted plants rather than one. C removes the superseded accessories."
+    },
+    {
+      "person": "R03",
+      "history": "H3",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.8490969194235114,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins. A also shows part of the old office. C removes the superseded accessories."
+    },
+    {
+      "person": "R03",
+      "history": "H3",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.8714745735270417,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins. A also shows part of the old office. C removes the superseded accessories."
+    },
+    {
+      "person": "R03",
+      "history": "H3",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9267169327063451,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and round pins. A also shows part of the old office. C removes the superseded accessories."
+    },
+    {
+      "person": "R04",
+      "history": "H1",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.3736746743774688,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, and a necklace. A/B show more than one warm lamp; C shows one. C greatly enlarges the face."
+    },
+    {
+      "person": "R04",
+      "history": "H1",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.39146777450380166,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, and a necklace. A/B show more than one warm lamp; C shows one. C greatly enlarges the face."
+    },
+    {
+      "person": "R04",
+      "history": "H1",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.262331038915096,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, and a necklace. A/B show more than one warm lamp; C shows one. C greatly enlarges the face."
+    },
+    {
+      "person": "R04",
+      "history": "H1",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.4245628048113448,
+      "face_count": 1,
+      "note": "B retains navy cloth, round pin, and necklace. C enlarges the face relative to the original."
+    },
+    {
+      "person": "R04",
+      "history": "H1",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.49311540587609776,
+      "face_count": 1,
+      "note": "B retains navy cloth, round pin, and necklace. C enlarges the face relative to the original."
+    },
+    {
+      "person": "R04",
+      "history": "H1",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.2294858800309953,
+      "face_count": 1,
+      "note": "B retains navy cloth, round pin, and necklace. C enlarges the face relative to the original."
+    },
+    {
+      "person": "R04",
+      "history": "H2",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.540880879832027,
+      "face_count": 1,
+      "note": "A/C put red pins on viewer-right; the bench is partly occluded by the subject. B retains navy cloth and necklace in a covered space."
+    },
+    {
+      "person": "R04",
+      "history": "H2",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.47026848269810867,
+      "face_count": 1,
+      "note": "A/C put red pins on viewer-right; the bench is partly occluded by the subject. B retains navy cloth and necklace in a covered space."
+    },
+    {
+      "person": "R04",
+      "history": "H2",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.45678791403983027,
+      "face_count": 1,
+      "note": "A/C put red pins on viewer-right; the bench is partly occluded by the subject. B retains navy cloth and necklace in a covered space."
+    },
+    {
+      "person": "R04",
+      "history": "H2",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.6011876998535671,
+      "face_count": 1,
+      "note": "A/C put red pins on viewer-right. B retains navy cloth and a necklace beside an indoor wall."
+    },
+    {
+      "person": "R04",
+      "history": "H2",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.6250311684554124,
+      "face_count": 1,
+      "note": "A/C put red pins on viewer-right. B retains navy cloth and a necklace beside an indoor wall."
+    },
+    {
+      "person": "R04",
+      "history": "H2",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.479846161820544,
+      "face_count": 1,
+      "note": "A/C put red pins on viewer-right. B retains navy cloth and a necklace beside an indoor wall."
+    },
+    {
+      "person": "R04",
+      "history": "H3",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.479396481557155,
+      "face_count": 1,
+      "note": "A/C retain navy jackets and round pins; A shows an office fragment, while C's plant pot is cropped off. B shows the final sweater without jacket or pin."
+    },
+    {
+      "person": "R04",
+      "history": "H3",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7170562425763118,
+      "face_count": 1,
+      "note": "A/C retain navy jackets and round pins; A shows an office fragment, while C's plant pot is cropped off. B shows the final sweater without jacket or pin."
+    },
+    {
+      "person": "R04",
+      "history": "H3",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        null
+      ],
+      "achieved": 3,
+      "judged": 5,
+      "identity_similarity": 0.43549179147637546,
+      "face_count": 1,
+      "note": "A/C retain navy jackets and round pins; A shows an office fragment, while C's plant pot is cropped off. B shows the final sweater without jacket or pin."
+    },
+    {
+      "person": "R04",
+      "history": "H3",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7992207115118333,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and pins. B also includes an office area in the backdrop. A shows the final no-jacket composition."
+    },
+    {
+      "person": "R04",
+      "history": "H3",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.48744976323321954,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and pins. B also includes an office area in the backdrop. A shows the final no-jacket composition."
+    },
+    {
+      "person": "R04",
+      "history": "H3",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.6815237649596271,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and pins. B also includes an office area in the backdrop. A shows the final no-jacket composition."
+    },
+    {
+      "person": "R05",
+      "history": "H1",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.9032958094730157,
+      "face_count": 1,
+      "note": "A retains navy jacket cloth and a necklace and has two visible warm lamps. B/C show charcoal blazers with one gold square pin and no necklace."
+    },
+    {
+      "person": "R05",
+      "history": "H1",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.8888169606647194,
+      "face_count": 1,
+      "note": "A retains navy jacket cloth and a necklace and has two visible warm lamps. B/C show charcoal blazers with one gold square pin and no necklace."
+    },
+    {
+      "person": "R05",
+      "history": "H1",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7750212072054311,
+      "face_count": 1,
+      "note": "A retains navy jacket cloth and a necklace and has two visible warm lamps. B/C show charcoal blazers with one gold square pin and no necklace."
+    },
+    {
+      "person": "R05",
+      "history": "H1",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8689628191767698,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, and a necklace, with multiple lamps. B has multiple visible lamps; C has no clearly visible lamp despite warm lighting."
+    },
+    {
+      "person": "R05",
+      "history": "H1",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.86940825543361,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, and a necklace, with multiple lamps. B has multiple visible lamps; C has no clearly visible lamp despite warm lighting."
+    },
+    {
+      "person": "R05",
+      "history": "H1",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.5563073462539998,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, and a necklace, with multiple lamps. B has multiple visible lamps; C has no clearly visible lamp despite warm lighting."
+    },
+    {
+      "person": "R05",
+      "history": "H2",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.748788036291862,
+      "face_count": 1,
+      "note": "A/C have green jackets but put the red pin on viewer-right. B retains navy cloth and necklace and shows a covered atrium."
+    },
+    {
+      "person": "R05",
+      "history": "H2",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.9258752857980375,
+      "face_count": 1,
+      "note": "A/C have green jackets but put the red pin on viewer-right. B retains navy cloth and necklace and shows a covered atrium."
+    },
+    {
+      "person": "R05",
+      "history": "H2",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.8516384672216997,
+      "face_count": 1,
+      "note": "A/C have green jackets but put the red pin on viewer-right. B retains navy cloth and necklace and shows a covered atrium."
+    },
+    {
+      "person": "R05",
+      "history": "H2",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.7847027587289983,
+      "face_count": 1,
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth, a necklace, and a round red pin in a covered space."
+    },
+    {
+      "person": "R05",
+      "history": "H2",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.5780009239304988,
+      "face_count": 1,
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth, a necklace, and a round red pin in a covered space."
+    },
+    {
+      "person": "R05",
+      "history": "H2",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8725331244449157,
+      "face_count": 1,
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth, a necklace, and a round red pin in a covered space."
+    },
+    {
+      "person": "R05",
+      "history": "H3",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.9198752152567149,
+      "face_count": 1,
+      "note": "A/C retain navy jackets and round pins. A shows office furniture. B removes both and keeps the gold pendant and potted plant."
+    },
+    {
+      "person": "R05",
+      "history": "H3",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9218882891966773,
+      "face_count": 1,
+      "note": "A/C retain navy jackets and round pins. A shows office furniture. B removes both and keeps the gold pendant and potted plant."
+    },
+    {
+      "person": "R05",
+      "history": "H3",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 4,
+      "judged": 6,
+      "identity_similarity": 0.9101705430689386,
+      "face_count": 1,
+      "note": "A/C retain navy jackets and round pins. A shows office furniture. B removes both and keeps the gold pendant and potted plant."
+    },
+    {
+      "person": "R05",
+      "history": "H3",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8880810081954145,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and pins, have teardrop-looking rather than round pendants, and show two plants. B also shows office furniture. C follows the final no-jacket state."
+    },
+    {
+      "person": "R05",
+      "history": "H3",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "achieved": 1,
+      "judged": 6,
+      "identity_similarity": 0.8938409405811565,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and pins, have teardrop-looking rather than round pendants, and show two plants. B also shows office furniture. C follows the final no-jacket state."
+    },
+    {
+      "person": "R05",
+      "history": "H3",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9149758305189755,
+      "face_count": 1,
+      "note": "A/B retain navy jackets and pins, have teardrop-looking rather than round pendants, and show two plants. B also shows office furniture. C follows the final no-jacket state."
+    },
+    {
+      "person": "R06",
+      "history": "H1",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "A",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8214588448613692,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, a necklace, and multiple lamps. B is much more tightly cropped than the original."
+    },
+    {
+      "person": "R06",
+      "history": "H1",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.3388397962674863,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, a necklace, and multiple lamps. B is much more tightly cropped than the original."
+    },
+    {
+      "person": "R06",
+      "history": "H1",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.7184604682269621,
+      "face_count": 1,
+      "note": "A retains navy cloth, a round pin, a necklace, and multiple lamps. B is much more tightly cropped than the original."
+    },
+    {
+      "person": "R06",
+      "history": "H1",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.455135463281645,
+      "face_count": 1,
+      "note": "A/B have two visible warm lamps; A also enlarges and changes the face. C retains navy cloth, a round pin, and necklace."
+    },
+    {
+      "person": "R06",
+      "history": "H1",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.798544362910398,
+      "face_count": 1,
+      "note": "A/B have two visible warm lamps; A also enlarges and changes the face. C retains navy cloth, a round pin, and necklace."
+    },
+    {
+      "person": "R06",
+      "history": "H1",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.8355157021199395,
+      "face_count": 1,
+      "note": "A/B have two visible warm lamps; A also enlarges and changes the face. C retains navy cloth, a round pin, and necklace."
+    },
+    {
+      "person": "R06",
+      "history": "H2",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.4612660818824319,
+      "face_count": 1,
+      "note": "A/C put red triangular pins on viewer-right. B retains navy cloth and necklace and is under a substantial roof rather than in an open garden."
+    },
+    {
+      "person": "R06",
+      "history": "H2",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8860388563043692,
+      "face_count": 1,
+      "note": "A/C put red triangular pins on viewer-right. B retains navy cloth and necklace and is under a substantial roof rather than in an open garden."
+    },
+    {
+      "person": "R06",
+      "history": "H2",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "C",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.6686628155809762,
+      "face_count": 1,
+      "note": "A/C put red triangular pins on viewer-right. B retains navy cloth and necklace and is under a substantial roof rather than in an open garden."
+    },
+    {
+      "person": "R06",
+      "history": "H2",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.6087741850563426,
+      "face_count": 1,
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth and a necklace beneath a roof."
+    },
+    {
+      "person": "R06",
+      "history": "H2",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "B",
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.8188924367575341,
+      "face_count": 1,
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth and a necklace beneath a roof."
+    },
+    {
+      "person": "R06",
+      "history": "H2",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.8760171243405879,
+      "face_count": 1,
+      "note": "A/B put red triangles on viewer-right. C retains navy cloth and a necklace beneath a roof."
+    },
+    {
+      "person": "R06",
+      "history": "H3",
+      "seed": 42,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 6,
+      "judged": 6,
+      "identity_similarity": 0.9399843902706825,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and round pins; their gold pendants appear teardrop-shaped. B also keeps office furniture. A follows the no-jacket final state."
+    },
+    {
+      "person": "R06",
+      "history": "H3",
+      "seed": 42,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.907415177058275,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and round pins; their gold pendants appear teardrop-shaped. B also keeps office furniture. A follows the no-jacket final state."
+    },
+    {
+      "person": "R06",
+      "history": "H3",
+      "seed": 42,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "achieved": 3,
+      "judged": 6,
+      "identity_similarity": 0.8280661051847347,
+      "face_count": 1,
+      "note": "B/C retain navy jackets and round pins; their gold pendants appear teardrop-shaped. B also keeps office furniture. A follows the no-jacket final state."
+    },
+    {
+      "person": "R06",
+      "history": "H3",
+      "seed": 314,
+      "mode": "state",
+      "blind_label": "A",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.9277152156080536,
+      "face_count": 1,
+      "note": "A removes jacket and pin but exposes an office doorway. B retains a jacket and pin plus an extra necklace. C retains a jacket but the white circle near its lower front is a button, not a lapel pin."
+    },
+    {
+      "person": "R06",
+      "history": "H3",
+      "seed": 314,
+      "mode": "history",
+      "blind_label": "B",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "achieved": 2,
+      "judged": 6,
+      "identity_similarity": 0.9042001412158037,
+      "face_count": 1,
+      "note": "A removes jacket and pin but exposes an office doorway. B retains a jacket and pin plus an extra necklace. C retains a jacket but the white circle near its lower front is a button, not a lapel pin."
+    },
+    {
+      "person": "R06",
+      "history": "H3",
+      "seed": 314,
+      "mode": "agent",
+      "blind_label": "C",
+      "scores": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "achieved": 5,
+      "judged": 6,
+      "identity_similarity": 0.9210545465051219,
+      "face_count": 1,
+      "note": "A removes jacket and pin but exposes an office doorway. B retains a jacket and pin plus an extra necklace. C retains a jacket but the white circle near its lower front is a button, not a lapel pin."
+    }
+  ]
+}

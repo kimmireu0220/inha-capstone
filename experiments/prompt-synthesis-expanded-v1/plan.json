@@ -1,0 +1,55 @@
+{
+  "people": {
+    "R01": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+    "R02": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+    "R03": "8c023850033a9cfb17ac700809c328469a45187d68a86148057ff885afe06336",
+    "R04": "004dab134961d6b3963bc21d7ade1196dfec38fe22b38645fc9061b680767ffa",
+    "R05": "4ec5397e5c9144908d38e7a68f7f49b1fa05f0fa54b54ed31ac187f2ac8743fa",
+    "R06": "c879e0d07fe0b3b34889fcbcc678ceebe2ffde424d884d5f206d8f8fddcec278"
+  },
+  "prompts": {
+    "H1-history": "f7bf8b1d773a1295c179af39fac650cf1b57b49fe6fa954e77772cf46e1b89d8",
+    "H1-state": "d30880e18157ba44cc5bff24733720d5e89f34f41d6572c380ab5fbff62522d9",
+    "H1-agent": "184b7e13d75e2c41317ef12bb04d9e5c242bad648905a6024951e87d77165c58",
+    "H2-history": "8cf0c9e4fe2d59cf851340d103f5428f6387ef3df5d05594a6a235c884df17d6",
+    "H2-state": "f0b3f490852c5444eb3fa1a5ce239f2ba60ec5c497b8d81af38d44e43f4cabc8",
+    "H2-agent": "835936ba15aaece3f0e0ba382f7e862f65d786ab5606979f51b011afbab5f2c2",
+    "H3-history": "fb567f3710e0c55f07adc09045178befa8905053a7a1947b550356bbb6189c3e",
+    "H3-state": "7b1e4e2be2f2f8bdd2f82fbf5af386e9c96428d666f64977736c130018b73576",
+    "H3-agent": "8ce4f752454f375addec952a841a94ca98834cbec6f4fb632ff113b3c28e9f5c"
+  },
+  "histories": {
+    "H1": "ef491a00df26f3797272bf56c384bbde207f33633a3200771ad7ccf0fab2a718",
+    "H2": "540ab7577d7ec93851d4b7b072e68aa649cec7e85fd27da9c7427295b7cbfc84",
+    "H3": "e56b69d7cb6fc5d4f9b748d42f9b1513eb8a00ef838ba4f7fea643dafd43e896"
+  },
+  "protocol_sha256": "15e617a9887f99756f04e445efb366a128a5c17e8ec839cd206cea47eefad70a",
+  "prompt_audit_sha256": "82b395172f94fffe5d0a85072e5835fad77e0ca81e09fc54047554d6f6275ece",
+  "prepare_manifest_sha256": "049b1acf53b2d197ab91b62734aca17c17c8ae037d0c56ee404a93db61fdac47",
+  "people_order": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06"
+  ],
+  "history_order": [
+    "H1",
+    "H2",
+    "H3"
+  ],
+  "seeds": [
+    42,
+    314
+  ],
+  "modes": [
+    "history",
+    "state",
+    "agent"
+  ],
+  "model": "Runpod/FLUX.2-klein-4B-mflux-4bit",
+  "steps": 4,
+  "expected_outputs": 108,
+  "reused_outputs": 12
+}

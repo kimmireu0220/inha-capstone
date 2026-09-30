@@ -1,0 +1,33 @@
+{
+  "people": {
+    "R01": {
+      "path": "experiments/real-people-v1/reference-R01.png",
+      "sha256": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2"
+    },
+    "R02": {
+      "path": "experiments/real-people-v1/reference-R02.png",
+      "sha256": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9"
+    }
+  },
+  "seeds": [
+    42,
+    314
+  ],
+  "modes": [
+    "history",
+    "state",
+    "agent"
+  ],
+  "prompt_sha256": {
+    "history": "f7bf8b1d773a1295c179af39fac650cf1b57b49fe6fa954e77772cf46e1b89d8",
+    "state": "d30880e18157ba44cc5bff24733720d5e89f34f41d6572c380ab5fbff62522d9",
+    "agent": "184b7e13d75e2c41317ef12bb04d9e5c242bad648905a6024951e87d77165c58"
+  },
+  "history_sha256": "ef491a00df26f3797272bf56c384bbde207f33633a3200771ad7ccf0fab2a718",
+  "prompt_audit_sha256": "24fa98f6968d41f54b73b3567c15cb7b8e44cc1e172e71e3952e802c108cbf32",
+  "protocol_sha256": "e74ebadceaa8e961e32a0fc707951506a788ee057a0fed3644885e46ba0ea36b",
+  "prepare_code_sha256": "6f2ec9bc2625f5bec207b0b4441eaaa8c593bf6e7ed411f5eb57974efadc1522",
+  "model": "Runpod/FLUX.2-klein-4B-mflux-4bit",
+  "steps": 4,
+  "expected_outputs": 12
+}

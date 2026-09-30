@@ -1,0 +1,32 @@
+{
+  "timing": "after prompts were frozen and before any image generation",
+  "final_targets": [
+    "charcoal gray blazer",
+    "ivory crew-neck shirt",
+    "exactly one small gold square pin on viewer-right lapel",
+    "no necklace or pendant",
+    "quiet library with wooden bookshelves",
+    "one warm lamp in background"
+  ],
+  "superseded_conditions": [
+    "navy blazer",
+    "modern office",
+    "silver circular pin",
+    "silver teardrop necklace"
+  ],
+  "history": {
+    "final_targets_present": 6,
+    "superseded_conditions_present": 4,
+    "note": "All eight chronological requests are present; the model must apply the stated latest-wins rule."
+  },
+  "state": {
+    "final_targets_present": 6,
+    "superseded_conditions_present": 0,
+    "note": "Structured updates were applied in order and rendered into the final-only prompt."
+  },
+  "agent": {
+    "final_targets_present": 6,
+    "superseded_conditions_present": 0,
+    "note": "Agent final prompt contains the current choices and no superseded choices. A singular gold square pin is specified; no gender assumption remained."
+  }
+}

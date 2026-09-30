@@ -1,20 +1,14 @@
 {
-  "date": "2026-09-28",
-  "inha_pages": 6,
-  "readability_pages": 10,
+  "date": "2026-09-30",
+  "document": "manuscript.inha.docx",
+  "pdf": "manuscript.inha.pdf",
+  "pages": 4,
   "all_pages_visually_reviewed": true,
   "korean_glyphs_present": true,
-  "table7_values_verified": true,
-  "pdf_hashes": {
-    "manuscript.inha.pdf": "d50cac5590bf998132d4e61606914905dd1a93dfeade504aed0ba1089a18f647",
-    "manuscript.ko.pdf": "b1f7653bd64fe6f348e77a99753c1734412b9808e6933fbfbf6602653bcec3e6"
-  },
-  "renderers": {
-    "inha": "bundled render_docx.py / LibreOffice",
-    "readability": "bundled render_docx.py / LibreOffice"
-  },
-  "expanded_result_values_verified": true,
-  "arcface_values_verified": true,
-  "scope_statement_verified": true,
-  "prose_reviewed": true
+  "tables_readable": true,
+  "conclusion_and_references_complete": true,
+  "pdf_sha256": "7cc17b0cc237ac8d80dc8e268f79a96cde6a904ea9d44bd9f0bc24f0e5488492",
+  "docx_sha256": "afc776d6de89afc412e2974e9d53dafc3515c97a24fbd68179fdeff7ebb3e8ab",
+  "renderer": "bundled render_docx.py and LibreOffice with user Korean fonts exposed through Fontconfig",
+  "scope": "visual and text-presence QA; not institutional format approval"
 }

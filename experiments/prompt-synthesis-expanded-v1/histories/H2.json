@@ -1,0 +1,13 @@
+{
+  "preserve": "Keep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+  "turns": [
+    {"request": "Change the casual top to a dark navy blazer over an ivory crew-neck shirt.", "updates": {"blazer": "dark navy", "inner_shirt": "ivory crew-neck"}},
+    {"request": "Put the person in a modern office background.", "updates": {"background": "modern office"}},
+    {"request": "Add exactly one small circular silver pin on the lapel at the viewer's right.", "updates": {"pin": "one small circular silver pin on the viewer-right lapel"}},
+    {"request": "Add one thin silver necklace with a small teardrop pendant over the shirt.", "updates": {"necklace": "one thin silver necklace with a small teardrop pendant"}},
+    {"request": "Replace the office with an outdoor garden background: a leafy hedge and exactly one stone bench.", "updates": {"background": "outdoor garden with a leafy hedge and one stone bench"}},
+    {"request": "Remove the necklace completely; there should be no necklace or pendant.", "updates": {"necklace": "none"}},
+    {"request": "Replace the navy blazer with a forest-green blazer, keeping the ivory crew-neck shirt.", "updates": {"blazer": "forest green", "inner_shirt": "ivory crew-neck"}},
+    {"request": "Replace the silver circular pin with exactly one small red triangular pin on the lapel at the viewer's left. Keep the other latest choices.", "updates": {"pin": "one small red triangular pin on the viewer-left lapel"}}
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "complete": true,
+  "people": 2,
+  "seeds_per_person": 2,
+  "outputs": 12,
+  "final_goal_items_per_output": 6,
+  "goal_totals_out_of_24": {
+    "history": 13,
+    "state": 23,
+    "agent": 24
+  },
+  "per_person": {
+    "R01": {
+      "history": {
+        "goal_score": 7,
+        "mean_identity_similarity": 0.2978978600758042
+      },
+      "state": {
+        "goal_score": 11,
+        "mean_identity_similarity": 0.2509745696278172
+      },
+      "agent": {
+        "goal_score": 12,
+        "mean_identity_similarity": 0.28673095153706585
+      }
+    },
+    "R02": {
+      "history": {
+        "goal_score": 6,
+        "mean_identity_similarity": 0.8750849315334923
+      },
+      "state": {
+        "goal_score": 12,
+        "mean_identity_similarity": 0.8110231090507147
+      },
+      "agent": {
+        "goal_score": 12,
+        "mean_identity_similarity": 0.5236733425750073
+      }
+    }
+  },
+  "rows": [
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "history",
+      "goal_score": 4,
+      "uncertain_items": 0,
+      "identity_similarity": 0.25423474970737187,
+      "blind_note": "Image A retains a necklace and has a round-looking pin. Image B is a much tighter crop than the original. Image C has an elongated pin rather than a clear square."
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "agent",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.3379616808073726,
+      "blind_note": "Image A retains a necklace and has a round-looking pin. Image B is a much tighter crop than the original. Image C has an elongated pin rather than a clear square."
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "state",
+      "goal_score": 5,
+      "uncertain_items": 0,
+      "identity_similarity": 0.21578104606085133,
+      "blind_note": "Image A retains a necklace and has a round-looking pin. Image B is a much tighter crop than the original. Image C has an elongated pin rather than a clear square."
+    },
+    {
+      "person": "R01",
+      "seed": 314,
+      "mode": "agent",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.2355002222667591,
+      "blind_note": "Image C retains a pendant and a round pin, with substantial navy color on the blazer. All outputs change the original framing and face appearance."
+    },
+    {
+      "person": "R01",
+      "seed": 314,
+      "mode": "state",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.2861680931947831,
+      "blind_note": "Image C retains a pendant and a round pin, with substantial navy color on the blazer. All outputs change the original framing and face appearance."
+    },
+    {
+      "person": "R01",
+      "seed": 314,
+      "mode": "history",
+      "goal_score": 3,
+      "uncertain_items": 0,
+      "identity_similarity": 0.3415609704442366,
+      "blind_note": "Image C retains a pendant and a round pin, with substantial navy color on the blazer. All outputs change the original framing and face appearance."
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "history",
+      "goal_score": 3,
+      "uncertain_items": 0,
+      "identity_similarity": 0.8487038359540392,
+      "blind_note": "Image A keeps a necklace and round pin and a navy section on the blazer. Image C changes face appearance and framing markedly."
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "state",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.7375722674120349,
+      "blind_note": "Image A keeps a necklace and round pin and a navy section on the blazer. Image C changes face appearance and framing markedly."
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "agent",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.555879506584701,
+      "blind_note": "Image A keeps a necklace and round pin and a navy section on the blazer. Image C changes face appearance and framing markedly."
+    },
+    {
+      "person": "R02",
+      "seed": 314,
+      "mode": "state",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.8844739506893946,
+      "blind_note": "Image C retains a pendant and round pin with a navy section on the blazer. Image B changes face appearance and framing markedly."
+    },
+    {
+      "person": "R02",
+      "seed": 314,
+      "mode": "agent",
+      "goal_score": 6,
+      "uncertain_items": 0,
+      "identity_similarity": 0.4914671785653135,
+      "blind_note": "Image C retains a pendant and round pin with a navy section on the blazer. Image B changes face appearance and framing markedly."
+    },
+    {
+      "person": "R02",
+      "seed": 314,
+      "mode": "history",
+      "goal_score": 3,
+      "uncertain_items": 0,
+      "identity_similarity": 0.9014660271129455,
+      "blind_note": "Image C retains a pendant and round pin with a navy section on the blazer. Image B changes face appearance and framing markedly."
+    }
+  ],
+  "prompt_audit": {
+    "timing": "after prompts were frozen and before any image generation",
+    "final_targets": [
+      "charcoal gray blazer",
+      "ivory crew-neck shirt",
+      "exactly one small gold square pin on viewer-right lapel",
+      "no necklace or pendant",
+      "quiet library with wooden bookshelves",
+      "one warm lamp in background"
+    ],
+    "superseded_conditions": [
+      "navy blazer",
+      "modern office",
+      "silver circular pin",
+      "silver teardrop necklace"
+    ],
+    "history": {
+      "final_targets_present": 6,
+      "superseded_conditions_present": 4,
+      "note": "All eight chronological requests are present; the model must apply the stated latest-wins rule."
+    },
+    "state": {
+      "final_targets_present": 6,
+      "superseded_conditions_present": 0,
+      "note": "Structured updates were applied in order and rendered into the final-only prompt."
+    },
+    "agent": {
+      "final_targets_present": 6,
+      "superseded_conditions_present": 0,
+      "note": "Agent final prompt contains the current choices and no superseded choices. A singular gold square pin is specified; no gender assumption remained."
+    }
+  },
+  "blinded_evaluation": "single operator; method labels hidden until ratings saved"
+}

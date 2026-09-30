@@ -1,0 +1,306 @@
+{
+  "independent_people": 6,
+  "repeated_observations_per_person": 18,
+  "outputs": 108,
+  "by_mode": {
+    "history": {
+      "images": 36,
+      "achieved": 96,
+      "judged": 216,
+      "target_total": 216,
+      "identity_mean": 0.7325273133395276,
+      "face_detected": 36
+    },
+    "state": {
+      "images": 36,
+      "achieved": 199,
+      "judged": 216,
+      "target_total": 216,
+      "identity_mean": 0.7345180181568234,
+      "face_detected": 36
+    },
+    "agent": {
+      "images": 36,
+      "achieved": 168,
+      "judged": 214,
+      "target_total": 216,
+      "identity_mean": 0.5850174776468209,
+      "face_detected": 36
+    }
+  },
+  "by_history": {
+    "H1": {
+      "history": {
+        "achieved": 35,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.6882115920882678
+      },
+      "state": {
+        "achieved": 68,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.6436844069131923
+      },
+      "agent": {
+        "achieved": 70,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.4551263634305709
+      }
+    },
+    "H2": {
+      "history": {
+        "achieved": 27,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.7296939168647046
+      },
+      "state": {
+        "achieved": 60,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.6902158175430468
+      },
+      "agent": {
+        "achieved": 60,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.566319908201696
+      }
+    },
+    "H3": {
+      "history": {
+        "achieved": 34,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.7796764310656106
+      },
+      "state": {
+        "achieved": 71,
+        "judged": 72,
+        "target_total": 72,
+        "identity_mean": 0.869653830014231
+      },
+      "agent": {
+        "achieved": 38,
+        "judged": 70,
+        "target_total": 72,
+        "identity_mean": 0.733606161308196
+      }
+    }
+  },
+  "by_person": {
+    "R01": {
+      "history": {
+        "achieved": 19,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.38749296048445064
+      },
+      "state": {
+        "achieved": 33,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.4734066826448619
+      },
+      "agent": {
+        "achieved": 28,
+        "judged": 35,
+        "target_total": 36,
+        "identity_mean": 0.3663616162653609
+      }
+    },
+    "R02": {
+      "history": {
+        "achieved": 18,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.8847747132329977
+      },
+      "state": {
+        "achieved": 34,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.846057291671111
+      },
+      "agent": {
+        "achieved": 27,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.6922503606127469
+      }
+    },
+    "R03": {
+      "history": {
+        "achieved": 17,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.83322303656058
+      },
+      "state": {
+        "achieved": 34,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.8246330739236054
+      },
+      "agent": {
+        "achieved": 29,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.7146765902294896
+      }
+    },
+    "R04": {
+      "history": {
+        "achieved": 16,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.5205016629873116
+      },
+      "state": {
+        "achieved": 33,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.5790626855148143
+      },
+      "agent": {
+        "achieved": 28,
+        "judged": 35,
+        "target_total": 36,
+        "identity_mean": 0.3918987582526768
+      }
+    },
+    "R05": {
+      "history": {
+        "achieved": 13,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.8973971991217683
+      },
+      "state": {
+        "achieved": 33,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.8719050936274467
+      },
+      "agent": {
+        "achieved": 27,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.7427281774910242
+      }
+    },
+    "R06": {
+      "history": {
+        "achieved": 13,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.8717743076500574
+      },
+      "state": {
+        "achieved": 32,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.8120432815591011
+      },
+      "agent": {
+        "achieved": 29,
+        "judged": 36,
+        "target_total": 36,
+        "identity_mean": 0.602189363029627
+      }
+    }
+  },
+  "paired": {
+    "agent_minus_history": {
+      "person_goal_differences": [
+        9,
+        9,
+        12,
+        12,
+        14,
+        16
+      ],
+      "goal_positive": 6,
+      "goal_tied": 0,
+      "goal_negative": 0,
+      "person_face_differences": [
+        -0.021131344219089743,
+        -0.1925243526202508,
+        -0.11854644633109046,
+        -0.12860290473463482,
+        -0.15466902163074414,
+        -0.26958494462043037
+      ],
+      "face_positive": 0,
+      "face_negative": 6
+    },
+    "agent_minus_state": {
+      "person_goal_differences": [
+        -5,
+        -7,
+        -5,
+        -5,
+        -6,
+        -3
+      ],
+      "goal_positive": 0,
+      "goal_tied": 0,
+      "goal_negative": 6,
+      "person_face_differences": [
+        -0.10704506637950101,
+        -0.15380693105836407,
+        -0.10995648369411581,
+        -0.18716392726213754,
+        -0.12917691613642257,
+        -0.2098539185294741
+      ],
+      "face_positive": 0,
+      "face_negative": 6
+    },
+    "state_minus_history": {
+      "person_goal_differences": [
+        14,
+        16,
+        17,
+        17,
+        20,
+        19
+      ],
+      "goal_positive": 6,
+      "goal_tied": 0,
+      "goal_negative": 0,
+      "person_face_differences": [
+        0.08591372216041127,
+        -0.03871742156188673,
+        -0.008589962636974646,
+        0.058561022527502726,
+        -0.02549210549432157,
+        -0.05973102609095626
+      ],
+      "face_positive": 2,
+      "face_negative": 4
+    }
+  },
+  "excluding_unblinded_set": {
+    "history": {
+      "images": 35,
+      "achieved": 93,
+      "judged": 210,
+      "target_total": 210
+    },
+    "state": {
+      "images": 35,
+      "achieved": 194,
+      "judged": 210,
+      "target_total": 210
+    },
+    "agent": {
+      "images": 35,
+      "achieved": 162,
+      "judged": 208,
+      "target_total": 210
+    }
+  }
+}
