@@ -1,0 +1,42 @@
+{
+  "people": {
+    "R01": {
+      "source": "assets/people/real/pexels-6311573.jpg",
+      "source_sha256": "b261133c9428b5ecb3a21f26e4ac06e4c40efeeec1a34de5263ff27e05ba6525"
+    },
+    "R02": {
+      "source": "assets/people/real/pexels-6311581.jpg",
+      "source_sha256": "913a78f7105d8eae6e5008b4cc0f183461de3f4c28148557b489f184191be0d7"
+    }
+  },
+  "seed": 42,
+  "requests": [
+    "셔츠를 남색으로 바꿔줘.",
+    "배경을 옅은 파란색으로 바꿔줘.",
+    "은색 핀 하나 추가해줘."
+  ],
+  "states": [
+    {
+      "shirt_color": "navy",
+      "background": "original",
+      "pin": "original"
+    },
+    {
+      "shirt_color": "navy",
+      "background": "pale blue",
+      "pin": "original"
+    },
+    {
+      "shirt_color": "navy",
+      "background": "pale blue",
+      "pin": "silver"
+    }
+  ],
+  "expected_outputs": 8,
+  "protocol_sha256": "901daccd0d5139151fd9eb96fe28e9b76606cdfb8a2167ed19cf10117ba4be42",
+  "code_sha256": {
+    "server.py": "d753dea8b376c62545048b079377e2d4ef4b8b15662d9447e0a182f6aa34d745",
+    "intent.py": "aa8581c0987c8f490dc3c03a9e1b1f2eda516088502f9122f5937781e9f98413",
+    "state_model.py": "e20100f944c3f1a83cca5408f784d33491042a5074bb0e47a1ef9afad24dd191"
+  }
+}

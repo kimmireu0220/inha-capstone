@@ -1,0 +1,146 @@
+{
+  "complete": true,
+  "outputs": 8,
+  "paired_comparisons": 2,
+  "independent_people": 2,
+  "references": {
+    "R01": {
+      "face_count": 1,
+      "score": 0.9135704040527344,
+      "bbox": [
+        152.56631469726562,
+        27.121429443359375,
+        199.06173706054688,
+        88.7923583984375
+      ]
+    },
+    "R02": {
+      "face_count": 1,
+      "score": 0.8060586452484131,
+      "bbox": [
+        191.55714416503906,
+        89.83728790283203,
+        280.9054260253906,
+        223.03221130371094
+      ]
+    }
+  },
+  "rows": [
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "artifact_dir": "generated/R01-42-sequential-s1",
+      "output_sha256": "c7f503b7bf4b353898e9dbaf7d38c90018fd56451c9beae32af4fa002193fef7",
+      "face_count": 1,
+      "detection_score": 0.9127508997917175,
+      "identity_similarity": 0.8771507920295822
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "artifact_dir": "generated/R01-42-sequential-s2",
+      "output_sha256": "17269a658a15cc5e5c59158fbcf451136cb85b1acc45cc44da8f38d58c74e002",
+      "face_count": 1,
+      "detection_score": 0.9143106937408447,
+      "identity_similarity": 0.7045866698064709
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "artifact_dir": "generated/R01-42-sequential-s3",
+      "output_sha256": "9b1f996e829aaf3e0a12540398070cbe3c433e55b315aa272505cdb93995327a",
+      "face_count": 1,
+      "detection_score": 0.9137459993362427,
+      "identity_similarity": 0.555040396077837
+    },
+    {
+      "person": "R01",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "artifact_dir": "generated/R01-42-regenerate-s3",
+      "output_sha256": "d91c68b1335c2d7917c5e0ecf3ba6de644a5ae5a6994616b01bda800b763223b",
+      "face_count": 1,
+      "detection_score": 0.9134026765823364,
+      "identity_similarity": 0.8422603253508524
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 1,
+      "artifact_dir": "generated/R02-42-sequential-s1",
+      "output_sha256": "a6514b3cbeb2f92964d150e66cc7336ebe2c232396dcb2da2ff4dee38196287d",
+      "face_count": 1,
+      "detection_score": 0.8088990449905396,
+      "identity_similarity": 0.945666644148285
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 2,
+      "artifact_dir": "generated/R02-42-sequential-s2",
+      "output_sha256": "4c6cedf2dcce387d4fcaf9d875ce5143486bb054106105f497b21da6d05121c0",
+      "face_count": 1,
+      "detection_score": 0.7942510843276978,
+      "identity_similarity": 0.8604172280479216
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "sequential",
+      "stage": 3,
+      "artifact_dir": "generated/R02-42-sequential-s3",
+      "output_sha256": "15f91bb8fd4c01890d4aa822b14495745bfdc50b4b1ced8cd45e4a28ddedc7c0",
+      "face_count": 1,
+      "detection_score": 0.808741569519043,
+      "identity_similarity": 0.7402184426124576
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "mode": "regenerate",
+      "stage": 3,
+      "artifact_dir": "generated/R02-42-regenerate-s3",
+      "output_sha256": "66f8ecfad9b962b988342d8c242d5b524cc6dfce6e2a739aa3e461047acd0d15",
+      "face_count": 1,
+      "detection_score": 0.7996197938919067,
+      "identity_similarity": 0.9439473716183601
+    }
+  ],
+  "pairs": [
+    {
+      "person": "R01",
+      "seed": 42,
+      "regenerate_similarity": 0.8422603253508524,
+      "sequential_similarity": 0.555040396077837,
+      "difference": 0.28721992927301543,
+      "final_prompts_equal": true
+    },
+    {
+      "person": "R02",
+      "seed": 42,
+      "regenerate_similarity": 0.9439473716183601,
+      "sequential_similarity": 0.7402184426124576,
+      "difference": 0.20372892900590245,
+      "final_prompts_equal": true
+    }
+  ],
+  "method": {
+    "model": "InsightFace buffalo_l/w600k_r50",
+    "detector": "det_10g",
+    "det_size": [
+      640,
+      640
+    ],
+    "det_thresh": 0.5,
+    "metric": "original-to-output cosine similarity"
+  }
+}
