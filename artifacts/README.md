@@ -8,4 +8,4 @@
 
 슬라이드의 비교 사례는 발표용 명칭으로 표시하고 시드 번호는 원자료에 보존한다.
 
-[현재 슬라이드 검증 기록](slides-verification.json) · [논문과 실험 범위](../CURRENT_STATUS.md)
+[면담용 슬라이드 검증 기록](slides-verification.json) · [현재 논문과 실험 범위](../CURRENT_STATUS.md)

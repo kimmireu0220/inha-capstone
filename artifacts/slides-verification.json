@@ -1,5 +1,6 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-09-29",
+  "scope": "이 기록은 2026-09-29 면담용 33장 발표본의 검증 결과다. 2026-09-30 논문의 실제 인물 6명·108장 최종 요구 종합 결과는 슬라이드에 반영되지 않았다.",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
   "slides": 33,
   "speaker_notes": {
@@ -55,6 +56,21 @@
     "post_edit_thumbnails_reviewed": [10, 11, 20],
     "initial_experiment_description": "합성 인물 6명에게 각각 10단계 순차 편집을 한 번씩 진행",
     "ambiguous_path_terms_remaining": 0
+  },
+  "readability_cleanup": {
+    "date": "2026-09-29",
+    "before_and_after_slides_visually_reviewed": 33,
+    "native_metric_tables_on_slides": [10, 12, 20],
+    "title_font_pt": 28,
+    "main_body_font_pt": [22, 24, 26],
+    "changes": "긴 제목과 반복 설명을 줄이고 어려운 표현을 쉬운 한국어로 변경. 수치는 소수점 네 자리 표로 정리. 긴 영문 프롬프트는 한국어 조건 요약으로 바꾸고 실제 원문과 정밀 수치를 발표자 노트에 보존. 본문·표·설명 간격과 표 열 너비를 조정하고 겹침을 재검사함.",
+    "original_comparison_images_preserved": true,
+    "recorded_prompts_and_full_precision_preserved_in_notes": true,
+    "experiment_scope_and_results_unchanged": true,
+    "all_slide_links_preserved": true,
+    "all_33_speaker_notes_preserved": true,
+    "final_layout_repairs_reviewed": [7, 10, 11, 20, 24, 26, 27, 28, 29, 31],
+    "visible_text_overlaps_found_after_final_review": 0
   },
   "verified_via": [
     "Google Slides API page element and link inspection",
