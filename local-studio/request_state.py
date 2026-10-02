@@ -4,6 +4,7 @@ This research pipeline has a bounded six-slot vocabulary. The model never writes
 the full state; the reducer owns retention, removal, and the update ledger.
 """
 import json
+import re
 from copy import deepcopy
 
 MODEL = 'mlx-community/Qwen3-4B-4bit'
@@ -21,21 +22,48 @@ PRESERVE = ("Keep the person's face, facial features, expression, gaze, natural 
             "texture, hair, pose, body proportions, lighting on the person, and "
             "camera framing. Do not beautify or smooth the face. No text, logos, "
             "or watermarks.")
-SYSTEM = '''Extract operations from ONE new image-edit request. Return JSON only:
-{"operations":[{"field":"slot name","op":"set|remove|keep|reset","value":"allowed code for set","evidence":"exact substring of the new request"}]}.
-Allowed slot values: SCHEMA
-Return only explicitly requested changes. Retain unmentioned fields by returning
-no operation for them. keep means retain the current value; remove means none;
-reset means the original photograph. Never copy the full current state.
-Respect negation: "do not remove" means keep, not remove. "replace X with Y"
-means set Y. Several named items in one request require separate operations.
-Viewer-left and viewer-right refer to the displayed image. A crew-neck shirt and
-a crew-neck sweater are distinct. Background location and its prop are separate.
-When a background request explicitly removes props, prop becomes none.
-Use evidence exactly copied from the NEW request. Do not invent requirements.
-If a requested value is outside the schema or ambiguous, return
-{"clarification":"reason"}; do not partially update the state.'''.replace(
+SYSTEM = '''Convert this ONE new image-edit request into a JSON patch.
+Return a flat JSON object containing ONLY mentioned slots and their new codes.
+Allowed codes by slot: SCHEMA
+Additional codes: keep (retain previous value), original (restore original).
+Removal uses none. Unmentioned slots MUST be omitted. Never guess or copy old
+requirements. Viewer-left/right is the displayed image. Shirt and sweater differ.
+Separate background place from its prop. In replacement, output the NEW choice.
+"Do not remove" means keep. If unsupported or ambiguous return
+{"clarification":"reason"}. Output JSON only, no explanation.'''.replace(
     'SCHEMA', json.dumps(VALUES))
+EXAMPLES = [
+    ('Put a navy blazer over a white crew-neck shirt.',
+     {'jacket': 'navy', 'top': 'white_crewneck'}),
+    ('Remove the pin but do not remove the necklace.',
+     {'pin': 'none', 'necklace': 'keep'}),
+    ('Replace the red triangular pin with a gold square pin on the viewer-right lapel.',
+     {'pin': 'gold_square_right'}),
+    ('Take off the jacket and wear a light-gray crew-neck sweater.',
+     {'jacket': 'none', 'top': 'gray_sweater'}),
+    ('Switch the office and plant to a library with one warm floor lamp.',
+     {'background': 'library', 'prop': 'lamp'}),
+    ('Keep the green blazer. Remove the necklace and pendant.',
+     {'jacket': 'keep', 'necklace': 'none'}),
+    ('Use a red-brick studio with no plants, lamps or benches.',
+     {'background': 'brick_studio', 'prop': 'none'}),
+]
+MENTIONS = {
+    'jacket': r'\b(?:jacket|blazer|coat)\b',
+    'top': r'\b(?:shirt|sweater|top)\b',
+    'pin': r'\bpin\b', 'necklace': r'\b(?:necklace|pendant)\b',
+    'background': r'\b(?:background|backdrop|office|studio|garden|library)\b',
+    'prop': r'\b(?:plants?|lamps?|benches|bench)\b',
+}
+
+
+def unique_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError('Duplicate JSON key')
+        result[key] = value
+    return result
 
 
 def apply_operations(state, operations, request):
@@ -79,35 +107,46 @@ class StateExtractor:
         from mlx_lm import load
         self.model, self.tokenizer = load(MODEL)
 
-    def ask(self, system, user, max_tokens=550):
+    def ask(self, system, user, max_tokens=550, examples=None):
         from mlx_lm import generate
         from mlx_lm.sample_utils import make_sampler
-        prompt = self.tokenizer.apply_chat_template([
-            {'role': 'system', 'content': system},
-            {'role': 'user', 'content': user}], tokenize=False,
+        messages = [{'role': 'system', 'content': system}]
+        for request, patch in examples or []:
+            messages.extend([{'role': 'user', 'content': request},
+                             {'role': 'assistant', 'content': json.dumps(patch)}])
+        messages.append({'role': 'user', 'content': user})
+        prompt = self.tokenizer.apply_chat_template(messages, tokenize=False,
             add_generation_prompt=True, enable_thinking=False)
         return generate(self.model, self.tokenizer, prompt=prompt,
             max_tokens=max_tokens, sampler=make_sampler(temp=0), verbose=False).strip()
 
     def update(self, state, request):
-        user = 'Current state: ' + json.dumps(state) + '\nNEW request: ' + request
+        # The model sees no old state and cannot copy old conditions into its patch.
+        user = request
         attempts = []
         for attempt in range(2):
-            raw = self.ask(SYSTEM, user)
+            raw = self.ask(SYSTEM, user, max_tokens=260, examples=EXAMPLES)
             record = {'response': raw}
             attempts.append(record)
             try:
-                parsed = json.loads(raw[raw.find('{'):raw.rfind('}') + 1])
+                parsed = json.loads(raw[raw.find('{'):raw.rfind('}') + 1],
+                                    object_pairs_hook=unique_object)
                 if parsed.get('clarification'):
                     raise ValueError(str(parsed['clarification']))
-                operations = parsed['operations']
+                operations = []
+                for field, value in parsed.items():
+                    if field not in MENTIONS or not re.search(MENTIONS[field], request, re.I):
+                        raise ValueError('Patch slot is not mentioned in the new request')
+                    action = 'keep' if value == 'keep' else 'reset' if value == 'original' else 'set'
+                    operations.append({'field': field, 'op': action, 'value': value,
+                                       'evidence': request})
                 updated = apply_operations(state, operations, request)
                 return {'state': updated, 'operations': operations, 'attempts': attempts}
             except (ValueError, KeyError, TypeError) as error:
                 record['error'] = str(error)
-                user = ('Current state: ' + json.dumps(state) + '\nNEW request: ' + request
-                    + '\nYour invalid response: ' + raw + '\nValidation error: ' + str(error)
-                    + '\nCorrect the JSON operations. Use only this request as evidence.')
+                user = (request + '\nPrevious invalid patch: ' + raw
+                    + '\nValidation error: ' + str(error)
+                    + '\nReturn a corrected flat JSON patch for this request only.')
         raise ValueError(json.dumps({'request': request, 'attempts': attempts}))
 
     def replay(self, requests):

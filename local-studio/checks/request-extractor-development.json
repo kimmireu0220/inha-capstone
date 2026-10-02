@@ -1,0 +1,1351 @@
+{
+  "scope": "development checks, not held-out evaluation",
+  "method_sha256": "8994dedd77e7e906eb4aa4072a8700b6a1c39caa81a0f2b985aeda401ef5c359",
+  "histories": {
+    "T1": {
+      "ledger": [
+        {
+          "turn": 1,
+          "request": "Dress the person in a dark navy blazer over an ivory crew-neck shirt.",
+          "before": {
+            "jacket": "original",
+            "top": "original",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "navy",
+              "evidence": "Dress the person in a dark navy blazer over an ivory crew-neck shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "ivory_crewneck",
+              "evidence": "Dress the person in a dark navy blazer over an ivory crew-neck shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"navy\", \"top\": \"ivory_crewneck\"}"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "request": "Use a modern office background without plants, lamps or benches.",
+          "before": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "office",
+            "prop": "none"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "office",
+              "evidence": "Use a modern office background without plants, lamps or benches."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "none",
+              "evidence": "Use a modern office background without plants, lamps or benches."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"office\", \"prop\": \"none\"}"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "request": "Attach one small circular silver pin to the viewer-right lapel.",
+          "before": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "office",
+            "prop": "none"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "silver_circle_right",
+            "necklace": "original",
+            "background": "office",
+            "prop": "none"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "silver_circle_right",
+              "evidence": "Attach one small circular silver pin to the viewer-right lapel."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"silver_circle_right\"}"
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "request": "Add one thin silver necklace with a small teardrop pendant.",
+          "before": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "silver_circle_right",
+            "necklace": "original",
+            "background": "office",
+            "prop": "none"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "silver_circle_right",
+            "necklace": "silver_teardrop",
+            "background": "office",
+            "prop": "none"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "silver_teardrop",
+              "evidence": "Add one thin silver necklace with a small teardrop pendant."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"silver_teardrop\"}"
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "request": "Switch the office to a pale-blue studio and include one green potted plant.",
+          "before": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "silver_circle_right",
+            "necklace": "silver_teardrop",
+            "background": "office",
+            "prop": "none"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "silver_circle_right",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "blue_studio",
+              "evidence": "Switch the office to a pale-blue studio and include one green potted plant."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "plant",
+              "evidence": "Switch the office to a pale-blue studio and include one green potted plant."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"blue_studio\", \"prop\": \"plant\"}"
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "request": "Take off the pin entirely. Leave the necklace in place for now.",
+          "before": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "silver_circle_right",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "none",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "none",
+              "evidence": "Take off the pin entirely. Leave the necklace in place for now."
+            },
+            {
+              "field": "necklace",
+              "op": "keep",
+              "value": "keep",
+              "evidence": "Take off the pin entirely. Leave the necklace in place for now."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"none\", \"necklace\": \"keep\"}"
+            }
+          ]
+        },
+        {
+          "turn": 7,
+          "request": "Take off the blazer and wear a plain light-gray crew-neck sweater instead.",
+          "before": {
+            "jacket": "navy",
+            "top": "ivory_crewneck",
+            "pin": "none",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "none",
+            "top": "gray_sweater",
+            "pin": "none",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "none",
+              "evidence": "Take off the blazer and wear a plain light-gray crew-neck sweater instead."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "gray_sweater",
+              "evidence": "Take off the blazer and wear a plain light-gray crew-neck sweater instead."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"none\", \"top\": \"gray_sweater\"}"
+            }
+          ]
+        },
+        {
+          "turn": 8,
+          "request": "Remove the necklace too. Keep the sweater and the latest background.",
+          "before": {
+            "jacket": "none",
+            "top": "gray_sweater",
+            "pin": "none",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "state": {
+            "jacket": "none",
+            "top": "gray_sweater",
+            "pin": "none",
+            "necklace": "silver_teardrop",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [],
+          "accepted": false,
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"none\", \"background\": \"keep\", \"prop\": \"keep\"}",
+              "error": "Patch slot is not mentioned in the new request"
+            },
+            {
+              "response": "{\"background\": \"brick_studio\", \"prop\": \"none\", \"top\": \"gray_sweater\"}",
+              "error": "Patch slot is not mentioned in the new request"
+            }
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "turn": 8,
+          "wrong": {
+            "necklace": {
+              "expected": "none",
+              "actual": "silver_teardrop"
+            }
+          }
+        }
+      ],
+      "final_correct": false,
+      "expected": {
+        "jacket": "none",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "none",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    "T2": {
+      "ledger": [
+        {
+          "turn": 1,
+          "request": "Use a forest-green blazer over an ivory crew-neck shirt.",
+          "before": {
+            "jacket": "original",
+            "top": "original",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "green",
+              "evidence": "Use a forest-green blazer over an ivory crew-neck shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "ivory_crewneck",
+              "evidence": "Use a forest-green blazer over an ivory crew-neck shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"green\", \"top\": \"ivory_crewneck\"}"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "request": "Set the background to a library with wooden bookshelves and one warm floor lamp.",
+          "before": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "library",
+              "evidence": "Set the background to a library with wooden bookshelves and one warm floor lamp."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "lamp",
+              "evidence": "Set the background to a library with wooden bookshelves and one warm floor lamp."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"library\", \"prop\": \"lamp\"}"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "request": "Place one small square gold pin on the viewer-right lapel.",
+          "before": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "original",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "gold_square_right",
+              "evidence": "Place one small square gold pin on the viewer-right lapel."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"gold_square_right\"}"
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "request": "Add one thin gold necklace with a small round gold pendant.",
+          "before": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "original",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "gold_round",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "gold_round",
+              "evidence": "Add one thin gold necklace with a small round gold pendant."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"gold_round\"}"
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "request": "Change only the blazer to dark gray, keeping the ivory shirt.",
+          "before": {
+            "jacket": "green",
+            "top": "ivory_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "gold_round",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "gold_round",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "gray",
+              "evidence": "Change only the blazer to dark gray, keeping the ivory shirt."
+            },
+            {
+              "field": "top",
+              "op": "keep",
+              "value": "keep",
+              "evidence": "Change only the blazer to dark gray, keeping the ivory shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"gray\", \"top\": \"keep\"}"
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "request": "Swap the gold pin for one small red triangular pin on the viewer-left lapel.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "gold_round",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "gold_round",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "red_triangle_left",
+              "evidence": "Swap the gold pin for one small red triangular pin on the viewer-left lapel."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"red_triangle_left\"}"
+            }
+          ]
+        },
+        {
+          "turn": 7,
+          "request": "Remove the necklace and its pendant completely.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "gold_round",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "none",
+              "evidence": "Remove the necklace and its pendant completely."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"none\"}"
+            }
+          ]
+        },
+        {
+          "turn": 8,
+          "request": "Replace the library and its lamp with an outdoor garden, a leafy hedge and one stone bench.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "garden",
+              "evidence": "Replace the library and its lamp with an outdoor garden, a leafy hedge and one stone bench."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "bench",
+              "evidence": "Replace the library and its lamp with an outdoor garden, a leafy hedge and one stone bench."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"garden\", \"prop\": \"bench\"}"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "final_correct": true,
+      "expected": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "none",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "none",
+        "background": "garden",
+        "prop": "bench"
+      }
+    },
+    "T3": {
+      "ledger": [
+        {
+          "turn": 1,
+          "request": "Start with a dark-gray blazer and an ivory crew-neck shirt.",
+          "before": {
+            "jacket": "original",
+            "top": "original",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "gray",
+              "evidence": "Start with a dark-gray blazer and an ivory crew-neck shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "ivory_crewneck",
+              "evidence": "Start with a dark-gray blazer and an ivory crew-neck shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"gray\", \"top\": \"ivory_crewneck\"}"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "request": "Use a pale-blue studio background with one green potted plant.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "blue_studio",
+              "evidence": "Use a pale-blue studio background with one green potted plant."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "plant",
+              "evidence": "Use a pale-blue studio background with one green potted plant."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"blue_studio\", \"prop\": \"plant\"}"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "request": "Add one thin gold necklace with a small round gold pendant.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "gold_round",
+              "evidence": "Add one thin gold necklace with a small round gold pendant."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"gold_round\"}"
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "request": "Add one small triangular red pin to the viewer-left lapel.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "original",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "red_triangle_left",
+              "evidence": "Add one small triangular red pin to the viewer-left lapel."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"red_triangle_left\"}"
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "request": "Remove the blazer and replace the ivory shirt with a plain white crew-neck shirt.",
+          "before": {
+            "jacket": "gray",
+            "top": "ivory_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "none",
+            "top": "white_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "none",
+              "evidence": "Remove the blazer and replace the ivory shirt with a plain white crew-neck shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "white_crewneck",
+              "evidence": "Remove the blazer and replace the ivory shirt with a plain white crew-neck shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"none\", \"top\": \"white_crewneck\"}"
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "request": "Remove the necklace and pendant; keep the red pin unchanged.",
+          "before": {
+            "jacket": "none",
+            "top": "white_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "none",
+            "top": "white_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "none",
+              "evidence": "Remove the necklace and pendant; keep the red pin unchanged."
+            },
+            {
+              "field": "pin",
+              "op": "keep",
+              "value": "keep",
+              "evidence": "Remove the necklace and pendant; keep the red pin unchanged."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"none\", \"prop\": \"keep\"}",
+              "error": "Patch slot is not mentioned in the new request"
+            },
+            {
+              "response": "{\"necklace\": \"none\", \"pin\": \"keep\"}"
+            }
+          ]
+        },
+        {
+          "turn": 7,
+          "request": "Put a beige blazer back on over the current white shirt.",
+          "before": {
+            "jacket": "none",
+            "top": "white_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "beige",
+            "top": "white_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "beige",
+              "evidence": "Put a beige blazer back on over the current white shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "white_crewneck",
+              "evidence": "Put a beige blazer back on over the current white shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"beige\", \"top\": \"white_crewneck\"}"
+            }
+          ]
+        },
+        {
+          "turn": 8,
+          "request": "Replace the red pin with one small square gold pin on the viewer-right lapel. Replace the studio and plant with a library and one warm floor lamp.",
+          "before": {
+            "jacket": "beige",
+            "top": "white_crewneck",
+            "pin": "red_triangle_left",
+            "necklace": "none",
+            "background": "blue_studio",
+            "prop": "plant"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "beige",
+            "top": "white_crewneck",
+            "pin": "gold_square_right",
+            "necklace": "none",
+            "background": "library",
+            "prop": "lamp"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "gold_square_right",
+              "evidence": "Replace the red pin with one small square gold pin on the viewer-right lapel. Replace the studio and plant with a library and one warm floor lamp."
+            },
+            {
+              "field": "background",
+              "op": "set",
+              "value": "library",
+              "evidence": "Replace the red pin with one small square gold pin on the viewer-right lapel. Replace the studio and plant with a library and one warm floor lamp."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "lamp",
+              "evidence": "Replace the red pin with one small square gold pin on the viewer-right lapel. Replace the studio and plant with a library and one warm floor lamp."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"gold_square_right\", \"background\": \"library\", \"prop\": \"lamp\"}"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "final_correct": true,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "none",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "none",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    "T4": {
+      "ledger": [
+        {
+          "turn": 1,
+          "request": "Wear a dark navy blazer over a plain white crew-neck shirt.",
+          "before": {
+            "jacket": "original",
+            "top": "original",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "navy",
+              "evidence": "Wear a dark navy blazer over a plain white crew-neck shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "white_crewneck",
+              "evidence": "Wear a dark navy blazer over a plain white crew-neck shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"navy\", \"top\": \"white_crewneck\"}"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "request": "Use an outdoor garden background with a leafy hedge and one stone bench.",
+          "before": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "original",
+            "prop": "original"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "garden",
+              "evidence": "Use an outdoor garden background with a leafy hedge and one stone bench."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "bench",
+              "evidence": "Use an outdoor garden background with a leafy hedge and one stone bench."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"garden\", \"prop\": \"bench\"}"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "request": "Add one small circular blue pin to the viewer-left lapel.",
+          "before": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "original",
+            "necklace": "original",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "blue_circle_left",
+            "necklace": "original",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "operations": [
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "blue_circle_left",
+              "evidence": "Add one small circular blue pin to the viewer-left lapel."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"pin\": \"blue_circle_left\"}"
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "request": "Add one thin gold necklace with a small round gold pendant.",
+          "before": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "blue_circle_left",
+            "necklace": "original",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "blue_circle_left",
+            "necklace": "gold_round",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "gold_round",
+              "evidence": "Add one thin gold necklace with a small round gold pendant."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"gold_round\"}"
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "request": "Do not remove the necklace. Remove only the lapel pin.",
+          "before": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "blue_circle_left",
+            "necklace": "gold_round",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "none",
+            "necklace": "gold_round",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "keep",
+              "value": "keep",
+              "evidence": "Do not remove the necklace. Remove only the lapel pin."
+            },
+            {
+              "field": "pin",
+              "op": "set",
+              "value": "none",
+              "evidence": "Do not remove the necklace. Remove only the lapel pin."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"necklace\": \"keep\", \"pin\": \"none\"}"
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "request": "Make the blazer forest green and leave the white shirt as it is.",
+          "before": {
+            "jacket": "navy",
+            "top": "white_crewneck",
+            "pin": "none",
+            "necklace": "gold_round",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "green",
+            "top": "white_crewneck",
+            "pin": "none",
+            "necklace": "gold_round",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "green",
+              "evidence": "Make the blazer forest green and leave the white shirt as it is."
+            },
+            {
+              "field": "top",
+              "op": "keep",
+              "value": "keep",
+              "evidence": "Make the blazer forest green and leave the white shirt as it is."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"green\", \"top\": \"keep\"}"
+            }
+          ]
+        },
+        {
+          "turn": 7,
+          "request": "Replace the garden and bench with a studio having a plain red-brick wall and no plants, lamps or benches.",
+          "before": {
+            "jacket": "green",
+            "top": "white_crewneck",
+            "pin": "none",
+            "necklace": "gold_round",
+            "background": "garden",
+            "prop": "bench"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "green",
+            "top": "white_crewneck",
+            "pin": "none",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "none"
+          },
+          "operations": [
+            {
+              "field": "background",
+              "op": "set",
+              "value": "blue_studio",
+              "evidence": "Replace the garden and bench with a studio having a plain red-brick wall and no plants, lamps or benches."
+            },
+            {
+              "field": "prop",
+              "op": "set",
+              "value": "none",
+              "evidence": "Replace the garden and bench with a studio having a plain red-brick wall and no plants, lamps or benches."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"background\": \"blue_studio\", \"prop\": \"none\"}"
+            }
+          ]
+        },
+        {
+          "turn": 8,
+          "request": "Now remove both the necklace and the blazer. Wear a plain dark-navy crew-neck sweater instead of the shirt.",
+          "before": {
+            "jacket": "green",
+            "top": "white_crewneck",
+            "pin": "none",
+            "necklace": "gold_round",
+            "background": "blue_studio",
+            "prop": "none"
+          },
+          "accepted": true,
+          "state": {
+            "jacket": "none",
+            "top": "navy_sweater",
+            "pin": "none",
+            "necklace": "none",
+            "background": "blue_studio",
+            "prop": "none"
+          },
+          "operations": [
+            {
+              "field": "jacket",
+              "op": "set",
+              "value": "none",
+              "evidence": "Now remove both the necklace and the blazer. Wear a plain dark-navy crew-neck sweater instead of the shirt."
+            },
+            {
+              "field": "top",
+              "op": "set",
+              "value": "navy_sweater",
+              "evidence": "Now remove both the necklace and the blazer. Wear a plain dark-navy crew-neck sweater instead of the shirt."
+            },
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "none",
+              "evidence": "Now remove both the necklace and the blazer. Wear a plain dark-navy crew-neck sweater instead of the shirt."
+            }
+          ],
+          "attempts": [
+            {
+              "response": "{\"jacket\": \"none\", \"top\": \"navy_sweater\", \"necklace\": \"none\"}"
+            }
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "turn": 7,
+          "wrong": {
+            "background": {
+              "expected": "brick_studio",
+              "actual": "blue_studio"
+            }
+          }
+        },
+        {
+          "turn": 8,
+          "wrong": {
+            "background": {
+              "expected": "brick_studio",
+              "actual": "blue_studio"
+            }
+          }
+        }
+      ],
+      "final_correct": false,
+      "expected": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    }
+  }
+}
