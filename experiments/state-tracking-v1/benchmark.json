@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-03",
+  "authorship": "Fixed synthetic evaluation dialogues authored by the experiment developer before prompt and image generation; separate from prior H1-H3, not external user data",
+  "histories": {
+    "T1": {
+      "focus": "remove three previously added items",
+      "turns": [
+        {"request": "Dress the person in a dark navy blazer over an ivory crew-neck shirt.", "updates": {"jacket": "navy", "top": "ivory_crewneck"}},
+        {"request": "Use a modern office background without plants, lamps or benches.", "updates": {"background": "office", "prop": "none"}},
+        {"request": "Attach one small circular silver pin to the viewer-right lapel.", "updates": {"pin": "silver_circle_right"}},
+        {"request": "Add one thin silver necklace with a small teardrop pendant.", "updates": {"necklace": "silver_teardrop"}},
+        {"request": "Switch the office to a pale-blue studio and include one green potted plant.", "updates": {"background": "blue_studio", "prop": "plant"}},
+        {"request": "Take off the pin entirely. Leave the necklace in place for now.", "updates": {"pin": "none"}},
+        {"request": "Take off the blazer and wear a plain light-gray crew-neck sweater instead.", "updates": {"jacket": "none", "top": "gray_sweater"}},
+        {"request": "Remove the necklace too. Keep the sweater and the latest background.", "updates": {"necklace": "none"}}
+      ]
+    },
+    "T2": {
+      "focus": "replace colors, shapes, position and background",
+      "turns": [
+        {"request": "Use a forest-green blazer over an ivory crew-neck shirt.", "updates": {"jacket": "green", "top": "ivory_crewneck"}},
+        {"request": "Set the background to a library with wooden bookshelves and one warm floor lamp.", "updates": {"background": "library", "prop": "lamp"}},
+        {"request": "Place one small square gold pin on the viewer-right lapel.", "updates": {"pin": "gold_square_right"}},
+        {"request": "Add one thin gold necklace with a small round gold pendant.", "updates": {"necklace": "gold_round"}},
+        {"request": "Change only the blazer to dark gray, keeping the ivory shirt.", "updates": {"jacket": "gray"}},
+        {"request": "Swap the gold pin for one small red triangular pin on the viewer-left lapel.", "updates": {"pin": "red_triangle_left"}},
+        {"request": "Remove the necklace and its pendant completely.", "updates": {"necklace": "none"}},
+        {"request": "Replace the library and its lamp with an outdoor garden, a leafy hedge and one stone bench.", "updates": {"background": "garden", "prop": "bench"}}
+      ]
+    },
+    "T3": {
+      "focus": "remove and re-add an item with different properties",
+      "turns": [
+        {"request": "Start with a dark-gray blazer and an ivory crew-neck shirt.", "updates": {"jacket": "gray", "top": "ivory_crewneck"}},
+        {"request": "Use a pale-blue studio background with one green potted plant.", "updates": {"background": "blue_studio", "prop": "plant"}},
+        {"request": "Add one thin gold necklace with a small round gold pendant.", "updates": {"necklace": "gold_round"}},
+        {"request": "Add one small triangular red pin to the viewer-left lapel.", "updates": {"pin": "red_triangle_left"}},
+        {"request": "Remove the blazer and replace the ivory shirt with a plain white crew-neck shirt.", "updates": {"jacket": "none", "top": "white_crewneck"}},
+        {"request": "Remove the necklace and pendant; keep the red pin unchanged.", "updates": {"necklace": "none"}},
+        {"request": "Put a beige blazer back on over the current white shirt.", "updates": {"jacket": "beige"}},
+        {"request": "Replace the red pin with one small square gold pin on the viewer-right lapel. Replace the studio and plant with a library and one warm floor lamp.", "updates": {"pin": "gold_square_right", "background": "library", "prop": "lamp"}}
+      ]
+    },
+    "T4": {
+      "focus": "negated removal, subsequent cancellation and no background props",
+      "turns": [
+        {"request": "Wear a dark navy blazer over a plain white crew-neck shirt.", "updates": {"jacket": "navy", "top": "white_crewneck"}},
+        {"request": "Use an outdoor garden background with a leafy hedge and one stone bench.", "updates": {"background": "garden", "prop": "bench"}},
+        {"request": "Add one small circular blue pin to the viewer-left lapel.", "updates": {"pin": "blue_circle_left"}},
+        {"request": "Add one thin gold necklace with a small round gold pendant.", "updates": {"necklace": "gold_round"}},
+        {"request": "Do not remove the necklace. Remove only the lapel pin.", "updates": {"pin": "none"}},
+        {"request": "Make the blazer forest green and leave the white shirt as it is.", "updates": {"jacket": "green"}},
+        {"request": "Replace the garden and bench with a studio having a plain red-brick wall and no plants, lamps or benches.", "updates": {"background": "brick_studio", "prop": "none"}},
+        {"request": "Now remove both the necklace and the blazer. Wear a plain dark-navy crew-neck sweater instead of the shirt.", "updates": {"necklace": "none", "jacket": "none", "top": "navy_sweater"}}
+      ]
+    }
+  }
+}
