@@ -1,80 +1,33 @@
 {
-  "date": "2026-09-29",
-  "scope": "이 기록은 2026-09-29 면담용 33장 발표본의 검증 결과다. 2026-09-30 논문의 실제 인물 6명·108장 최종 요구 종합 결과는 슬라이드에 반영되지 않았다.",
+  "date": "2026-10-02",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "slides": 33,
-  "speaker_notes": {
-    "slides_with_explanations": 33,
-    "source_links_present": 33,
-    "formal_korean_verified": true,
-    "editing_run_explained_on_slide": 4,
-    "final_comparison_title_updated_on_slide": 9
-  },
-  "main_slides": 23,
+  "slides": 36,
+  "main_slides": 26,
   "appendix_slides": 10,
-  "page_number_errors": [],
-  "expanded_comparison_slide": 21,
-  "expanded_comparison_image": "experiments/studio-multiperson-v1/comparison-P03-314.png",
-  "conclusion_scope_slide": 22,
-  "conclusion_scope": "6명 × 3회 = 최종 18쌍; 얼굴 LPIPS 평균 19.9% 감소, ArcFace 0.922/0.714, LPIPS·SSIM·ArcFace 18/18쌍 일괄 유리",
-  "visual_audit": {
-    "slides_reviewed": 33,
-    "adjusted_slides": [4, 5, 9, 12, 14, 16, 17, 18, 19, 20, 21, 22, 33],
-    "adjustments": "비교 사례의 시드 번호를 발표용 표현으로 교체하고 슬라이드 21 이미지에 박힌 시드 표기를 가림. 슬라이드 5에 ArcFace 지표 행을 추가하고 슬라이드 21·22에 18쌍 ArcFace 결과를 반영함. 초기 실험에서 P03 반복 실행을 제외해 슬라이드 4·9·33과 발표자 노트를 6명에게 각각 10단계 편집, 최종 6쌍, AI 고유 101개 기준으로 갱신함",
-    "post_edit_thumbnail_checked": true
+  "sections": {
+    "initial_10_step_synthetic_experiment": "slides 2-9; six people, one 10-step run each, six final pairs",
+    "separate_3_step_synthetic_experiment": "slide 21; six people, three repetitions each, 18 final pairs",
+    "real_person_prompt_comparison": "slides 22-24; six people, three eight-turn histories, two seeds, three prompt methods, 108 images",
+    "integrated_conclusion": "slide 25"
   },
-  "links_by_slide": {
-    "1": [
-      "https://github.com/kimmireu0220/inha-capstone/blob/main/paper/manuscript.inha.pdf"
-    ],
-    "15": [
-      "http://localhost:8770/"
-    ],
-    "21": [
-      "https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/studio-multiperson-v1/RESULTS.md"
-    ],
-    "23": [
-      "https://github.com/kimmireu0220/inha-capstone",
-      "https://github.com/kimmireu0220/inha-capstone/blob/main/RESEARCH_INDEX.md",
-      "https://github.com/kimmireu0220/inha-capstone/blob/main/artifacts/%EC%8B%A4%ED%97%98_%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%99%80_%EC%83%81%EC%84%B8%EC%88%98%EC%B9%98.md",
-      "https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/nonhuman-followup-v1/RESULTS.md"
-    ]
+  "paper_alignment": {
+    "synthetic_arcface": [0.922054, 0.713703],
+    "synthetic_face_lpips": [0.087120, 0.108710],
+    "synthetic_paired_comparisons": 18,
+    "real_person_goal_scores": [96, 168, 199],
+    "real_person_goal_denominator_per_method": 216,
+    "real_person_arcface": [0.732527, 0.585017, 0.734518],
+    "caveats_present": ["different synthetic generation counts", "structured final state is an upper-bound reference", "six independent people", "one evaluator", "one generation model"]
   },
-  "prose_cleanup": {
-    "date": "2026-09-27",
-    "text_and_notes_reviewed": 33,
-    "edited_slides": [4, 29, 32],
-    "text_replacements": 4,
-    "post_edit_thumbnails_reviewed": true,
-    "recorded_prompts_preserved": true
+  "speaker_notes": {
+    "slides_with_explanations_and_source_links": 36,
+    "new_or_revised_slides": [1, 21, 22, 23, 24, 25]
   },
-  "terminology_cleanup": {
-    "date": "2026-09-28",
-    "text_and_notes_reviewed": 33,
-    "edited_slides": [4, 10, 11, 20],
-    "text_replacements": 4,
-    "post_edit_thumbnails_reviewed": [10, 11, 20],
-    "initial_experiment_description": "합성 인물 6명에게 각각 10단계 순차 편집을 한 번씩 진행",
-    "ambiguous_path_terms_remaining": 0
+  "page_numbers": "1-36, verified after insertion",
+  "visual_check": {
+    "new_or_revised_slides_reviewed": [1, 22, 23, 24, 25],
+    "visible_text_overlap_found": false,
+    "method": "Google Slides API thumbnails at 1600 x 900"
   },
-  "readability_cleanup": {
-    "date": "2026-09-29",
-    "before_and_after_slides_visually_reviewed": 33,
-    "native_metric_tables_on_slides": [10, 12, 20],
-    "title_font_pt": 28,
-    "main_body_font_pt": [22, 24, 26],
-    "changes": "긴 제목과 반복 설명을 줄이고 어려운 표현을 쉬운 한국어로 변경. 수치는 소수점 네 자리 표로 정리. 긴 영문 프롬프트는 한국어 조건 요약으로 바꾸고 실제 원문과 정밀 수치를 발표자 노트에 보존. 본문·표·설명 간격과 표 열 너비를 조정하고 겹침을 재검사함.",
-    "original_comparison_images_preserved": true,
-    "recorded_prompts_and_full_precision_preserved_in_notes": true,
-    "experiment_scope_and_results_unchanged": true,
-    "all_slide_links_preserved": true,
-    "all_33_speaker_notes_preserved": true,
-    "final_layout_repairs_reviewed": [7, 10, 11, 20, 24, 26, 27, 28, 29, 31],
-    "visible_text_overlaps_found_after_final_review": 0
-  },
-  "verified_via": [
-    "Google Slides API page element and link inspection",
-    "Google Slides API thumbnails of all 33 slides and post-edit slides 4, 5, 9, 21, 22, 33",
-    "Paper numerical source audit"
-  ]
+  "prior_review": "The original 33-slide version was visually reviewed on 2026-09-29; unchanged slides retain that review."
 }
