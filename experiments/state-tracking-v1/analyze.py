@@ -22,7 +22,10 @@ def face(app, path):
     return (len(faces), faces[0].normed_embedding.astype(np.float64) if len(faces) == 1 else None)
 
 
-def main():
+def main(root=None):
+    global ROOT
+    if root is not None:
+        ROOT = Path(root)
     plan = json.loads((ROOT / 'plan.json').read_text())
     calls = json.loads((ROOT / 'calls.json').read_text())['calls']
     assert len(calls) == plan['expected_outputs'] == 96

@@ -55,6 +55,46 @@ MENTIONS = {
     'background': r'\b(?:background|backdrop|office|studio|garden|library)\b',
     'prop': r'\b(?:plants?|lamps?|benches|bench)\b',
 }
+VALUE_WORDS = {
+    'jacket': {'navy': [r'navy'], 'gray': [r'gr[ae]y'],
+               'green': [r'green'], 'beige': [r'beige']},
+    'top': {'ivory_crewneck': [r'ivory', r'shirt'],
+            'white_crewneck': [r'white', r'shirt'],
+            'gray_sweater': [r'gr[ae]y', r'sweater'],
+            'navy_sweater': [r'navy', r'sweater']},
+    'pin': {'silver_circle_right': [r'silver', r'circul|round', r'right'],
+            'gold_square_right': [r'gold', r'square', r'right'],
+            'red_triangle_left': [r'red', r'triang', r'left'],
+            'blue_circle_left': [r'blue', r'circul|round', r'left']},
+    'necklace': {'silver_teardrop': [r'silver', r'teardrop'],
+                 'gold_round': [r'gold', r'round']},
+    'background': {'office': [r'office'], 'library': [r'library'],
+                   'garden': [r'garden'], 'blue_studio': [r'blue', r'studio'],
+                   'brick_studio': [r'brick', r'studio']},
+    'prop': {'plant': [r'plant'], 'lamp': [r'lamp'], 'bench': [r'bench']},
+}
+
+
+def patch_operations(patch, request):
+    """Discard harmless keeps; reject changed values without lexical support."""
+    operations = []
+    for field, value in patch.items():
+        if field not in MENTIONS:
+            raise ValueError('Unknown patch slot')
+        if value == 'keep':
+            # Keeping an unmentioned slot has no effect and needs no retry.
+            continue
+        if not re.search(MENTIONS[field], request, re.I):
+            raise ValueError('Changed slot is not mentioned in the request')
+        if value not in VALUES[field] and value != 'original':
+            raise ValueError('Unsupported slot value')
+        if value not in ['none', 'original']:
+            for pattern in VALUE_WORDS[field][value]:
+                if not re.search(pattern, request, re.I):
+                    raise ValueError(f'{field}={value} has no lexical support in the request')
+        action = 'reset' if value == 'original' else 'set'
+        operations.append({'field': field, 'op': action, 'value': value, 'evidence': request})
+    return operations
 
 
 def unique_object(pairs):
@@ -133,13 +173,7 @@ class StateExtractor:
                                     object_pairs_hook=unique_object)
                 if parsed.get('clarification'):
                     raise ValueError(str(parsed['clarification']))
-                operations = []
-                for field, value in parsed.items():
-                    if field not in MENTIONS or not re.search(MENTIONS[field], request, re.I):
-                        raise ValueError('Patch slot is not mentioned in the new request')
-                    action = 'keep' if value == 'keep' else 'reset' if value == 'original' else 'set'
-                    operations.append({'field': field, 'op': action, 'value': value,
-                                       'evidence': request})
+                operations = patch_operations(parsed, request)
                 updated = apply_operations(state, operations, request)
                 return {'state': updated, 'operations': operations, 'attempts': attempts}
             except (ValueError, KeyError, TypeError) as error:

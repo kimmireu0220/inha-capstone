@@ -9,7 +9,10 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parent
 
 
-def main():
+def main(root=None):
+    global ROOT
+    if root is not None:
+        ROOT = Path(root)
     calls = json.loads((ROOT / 'calls.json').read_text())['calls']
     groups = {}
     for call in calls:

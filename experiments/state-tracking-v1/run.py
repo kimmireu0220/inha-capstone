@@ -27,7 +27,11 @@ def save(path, value):
     tmp.replace(path)
 
 
-def main():
+def main(root=None):
+    global ROOT, HISTORIES
+    if root is not None:
+        ROOT = Path(root)
+    HISTORIES = list(json.loads((ROOT / 'benchmark.json').read_text())['histories'])
     manifest = json.loads((ROOT / 'prepare-manifest.json').read_text())
     assert sha(ROOT / 'PROTOCOL.md') == manifest['inputs']['protocol']
     assert sha(ROOT / 'benchmark.json') == manifest['inputs']['benchmark']

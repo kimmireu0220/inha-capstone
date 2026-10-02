@@ -26,13 +26,20 @@ def save(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
 
 
-def main():
+def main(root=None):
+    global ROOT
+    if root is not None:
+        ROOT = Path(root)
     benchmark = json.loads((ROOT / 'benchmark.json').read_text())
     inputs = {'protocol': sha(ROOT / 'PROTOCOL.md'),
               'benchmark': sha(ROOT / 'benchmark.json'),
               'method': sha(REPO / 'local-studio/request_state.py'),
               'prepare': sha(Path(__file__)),
               'prior_prepare': sha(REPO / 'experiments/prompt-synthesis-expanded-v1/prepare.py')}
+    if root is not None:
+        inputs['entrypoint'] = sha(ROOT / 'prepare.py')
+        inputs['runner'] = sha(ROOT / 'run.py')
+        inputs['shared_runner'] = sha(Path(__file__).parent / 'run.py')
     frozen = ROOT / 'prepare-inputs.json'
     if frozen.exists():
         assert json.loads(frozen.read_text()) == inputs, 'Preparation inputs changed'

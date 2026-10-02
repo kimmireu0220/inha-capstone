@@ -1,6 +1,6 @@
 {
   "scope": "development checks, not held-out evaluation",
-  "method_sha256": "8994dedd77e7e906eb4aa4072a8700b6a1c39caa81a0f2b985aeda401ef5c359",
+  "method_sha256": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
   "histories": {
     "T1": {
       "ledger": [
@@ -218,12 +218,6 @@
               "op": "set",
               "value": "none",
               "evidence": "Take off the pin entirely. Leave the necklace in place for now."
-            },
-            {
-              "field": "necklace",
-              "op": "keep",
-              "value": "keep",
-              "evidence": "Take off the pin entirely. Leave the necklace in place for now."
             }
           ],
           "attempts": [
@@ -283,40 +277,32 @@
             "background": "blue_studio",
             "prop": "plant"
           },
+          "accepted": true,
           "state": {
             "jacket": "none",
             "top": "gray_sweater",
             "pin": "none",
-            "necklace": "silver_teardrop",
+            "necklace": "none",
             "background": "blue_studio",
             "prop": "plant"
           },
-          "operations": [],
-          "accepted": false,
+          "operations": [
+            {
+              "field": "necklace",
+              "op": "set",
+              "value": "none",
+              "evidence": "Remove the necklace too. Keep the sweater and the latest background."
+            }
+          ],
           "attempts": [
             {
-              "response": "{\"necklace\": \"none\", \"background\": \"keep\", \"prop\": \"keep\"}",
-              "error": "Patch slot is not mentioned in the new request"
-            },
-            {
-              "response": "{\"background\": \"brick_studio\", \"prop\": \"none\", \"top\": \"gray_sweater\"}",
-              "error": "Patch slot is not mentioned in the new request"
+              "response": "{\"necklace\": \"none\", \"background\": \"keep\", \"prop\": \"keep\"}"
             }
           ]
         }
       ],
-      "errors": [
-        {
-          "turn": 8,
-          "wrong": {
-            "necklace": {
-              "expected": "none",
-              "actual": "silver_teardrop"
-            }
-          }
-        }
-      ],
-      "final_correct": false,
+      "errors": [],
+      "final_correct": true,
       "expected": {
         "jacket": "none",
         "top": "gray_sweater",
@@ -329,7 +315,7 @@
         "jacket": "none",
         "top": "gray_sweater",
         "pin": "none",
-        "necklace": "silver_teardrop",
+        "necklace": "none",
         "background": "blue_studio",
         "prop": "plant"
       }
@@ -509,12 +495,6 @@
               "field": "jacket",
               "op": "set",
               "value": "gray",
-              "evidence": "Change only the blazer to dark gray, keeping the ivory shirt."
-            },
-            {
-              "field": "top",
-              "op": "keep",
-              "value": "keep",
               "evidence": "Change only the blazer to dark gray, keeping the ivory shirt."
             }
           ],
@@ -868,21 +848,11 @@
               "op": "set",
               "value": "none",
               "evidence": "Remove the necklace and pendant; keep the red pin unchanged."
-            },
-            {
-              "field": "pin",
-              "op": "keep",
-              "value": "keep",
-              "evidence": "Remove the necklace and pendant; keep the red pin unchanged."
             }
           ],
           "attempts": [
             {
-              "response": "{\"necklace\": \"none\", \"prop\": \"keep\"}",
-              "error": "Patch slot is not mentioned in the new request"
-            },
-            {
-              "response": "{\"necklace\": \"none\", \"pin\": \"keep\"}"
+              "response": "{\"necklace\": \"none\", \"prop\": \"keep\"}"
             }
           ]
         },
@@ -1164,12 +1134,6 @@
           },
           "operations": [
             {
-              "field": "necklace",
-              "op": "keep",
-              "value": "keep",
-              "evidence": "Do not remove the necklace. Remove only the lapel pin."
-            },
-            {
               "field": "pin",
               "op": "set",
               "value": "none",
@@ -1208,12 +1172,6 @@
               "op": "set",
               "value": "green",
               "evidence": "Make the blazer forest green and leave the white shirt as it is."
-            },
-            {
-              "field": "top",
-              "op": "keep",
-              "value": "keep",
-              "evidence": "Make the blazer forest green and leave the white shirt as it is."
             }
           ],
           "attempts": [
@@ -1239,14 +1197,14 @@
             "top": "white_crewneck",
             "pin": "none",
             "necklace": "gold_round",
-            "background": "blue_studio",
+            "background": "brick_studio",
             "prop": "none"
           },
           "operations": [
             {
               "field": "background",
               "op": "set",
-              "value": "blue_studio",
+              "value": "brick_studio",
               "evidence": "Replace the garden and bench with a studio having a plain red-brick wall and no plants, lamps or benches."
             },
             {
@@ -1258,7 +1216,11 @@
           ],
           "attempts": [
             {
-              "response": "{\"background\": \"blue_studio\", \"prop\": \"none\"}"
+              "response": "{\"background\": \"blue_studio\", \"prop\": \"none\"}",
+              "error": "background=blue_studio has no lexical support in the request"
+            },
+            {
+              "response": "{\"background\": \"brick_studio\", \"prop\": \"none\"}"
             }
           ]
         },
@@ -1270,7 +1232,7 @@
             "top": "white_crewneck",
             "pin": "none",
             "necklace": "gold_round",
-            "background": "blue_studio",
+            "background": "brick_studio",
             "prop": "none"
           },
           "accepted": true,
@@ -1279,7 +1241,7 @@
             "top": "navy_sweater",
             "pin": "none",
             "necklace": "none",
-            "background": "blue_studio",
+            "background": "brick_studio",
             "prop": "none"
           },
           "operations": [
@@ -1309,27 +1271,8 @@
           ]
         }
       ],
-      "errors": [
-        {
-          "turn": 7,
-          "wrong": {
-            "background": {
-              "expected": "brick_studio",
-              "actual": "blue_studio"
-            }
-          }
-        },
-        {
-          "turn": 8,
-          "wrong": {
-            "background": {
-              "expected": "brick_studio",
-              "actual": "blue_studio"
-            }
-          }
-        }
-      ],
-      "final_correct": false,
+      "errors": [],
+      "final_correct": true,
       "expected": {
         "jacket": "none",
         "top": "navy_sweater",
@@ -1343,7 +1286,7 @@
         "top": "navy_sweater",
         "pin": "none",
         "necklace": "none",
-        "background": "blue_studio",
+        "background": "brick_studio",
         "prop": "none"
       }
     }

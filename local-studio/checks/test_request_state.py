@@ -3,7 +3,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from request_state import INITIAL, apply_operations, render_prompt
+from request_state import INITIAL, apply_operations, patch_operations, render_prompt
 
 
 class StateTests(unittest.TestCase):
@@ -48,6 +48,16 @@ class StateTests(unittest.TestCase):
             {'field': 'jacket', 'op': 'reset', 'evidence': 'original jacket'}],
             'Restore the original jacket')
         self.assertEqual(result['jacket'], 'original')
+
+    def test_unmentioned_keep_has_no_effect(self):
+        operations = patch_operations({'necklace': 'none', 'prop': 'keep'}, 'Remove the necklace')
+        self.assertEqual([row['field'] for row in operations], ['necklace'])
+
+    def test_wrong_supported_color_is_rejected(self):
+        with self.assertRaises(ValueError):
+            patch_operations({'background': 'blue_studio'}, 'Use a red-brick studio')
+        self.assertEqual(patch_operations({'background': 'brick_studio'},
+            'Use a red-brick studio')[0]['value'], 'brick_studio')
 
 
 if __name__ == '__main__':
