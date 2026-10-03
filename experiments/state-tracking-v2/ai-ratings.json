@@ -1,0 +1,32 @@
+{
+  "rater_type": "AI",
+  "rater": "Codex visual inspection",
+  "method_masked": true,
+  "scoring": "Six goals in EVALUATION.md order; 1 satisfied, 0 violated, null uncertain. No face metrics or method mapping consulted before ratings.",
+  "ratings": {
+    "R03-U1-314": {
+      "scores": {"A": [1, 1, 1, 1, 0, 1], "B": [0, 0, 0, 0, 0, 1]},
+      "note": "A has the correct navy sweater and no jacket/pin/necklace, but bookshelves remain, so the blue studio goal fails. B retains blazer, white shirt, pin, gold necklace and shelves. Each output has one plant."
+    },
+    "R03-U1-42": {
+      "scores": {"A": [1, 1, 1, 1, 0, 1], "B": [0, 0, 0, 0, 0, 1]},
+      "note": "A has the navy sweater and no jacket, pin or necklace, but visible wooden shelving/books violate the studio background goal. B retains a blazer, white shirt, circular pin, gold pendant and library shelves. Both have one potted plant."
+    },
+    "R02-U1-314": {
+      "scores": {"A": [0, 0, 0, 0, 0, 1], "B": [1, 1, 1, 1, 1, 1]},
+      "note": "A retains a green blazer, white shirt, circular pin, gold necklace and library shelving despite a blue backdrop. B satisfies the final navy sweater, no jacket/pin/necklace and blue studio with one plant."
+    },
+    "R02-U1-42": {
+      "scores": {"A": [0, 0, 0, 0, 0, 1], "B": [1, 1, 1, 1, 1, 1]},
+      "note": "A retains a blazer, white shirt, circular pin, gold pendant and bookshelves, with one plant. B has a navy crew-neck sweater, no jacket or visible accessories, a pale blue studio background and one green potted plant."
+    },
+    "R01-U1-314": {
+      "scores": {"A": [0, 0, 0, 0, 0, 1], "B": [1, 1, 1, 1, 1, 1]},
+      "note": "A retains a blazer, white shirt, circular lapel pin, gold pendant and bookshelves; one plant is present. B shows a navy crew-neck sweater, no jacket or accessories, and a blue studio with one plant."
+    },
+    "R01-U1-42": {
+      "scores": {"A": [1, 1, 1, 1, 1, 1], "B": [0, 0, 1, 0, 0, 1]},
+      "note": "A wears a navy crew-neck sweater with no visible jacket, pin, or necklace, in a blue studio with one plant. B retains a blazer, white top and gold pendant; bookshelves remain in the blue background. The white strip on B is a pocket square, not a lapel pin."
+    }
+  }
+}
