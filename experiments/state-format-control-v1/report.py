@@ -81,7 +81,7 @@ def main():
                'duplicate_control_pixel_groups': [keys for keys in pixel_hashes.values() if len(keys) > 1],
                'uniqueness_note': 'Counts distinguish identical output file bytes, not independent people or trials.',
                'pixel_uniqueness_note': 'RGB pixel hashes include dimensions and ignore PNG metadata. Repeated content is not an independent replicate.',
-               'independent_human_rating_complete': False,
+               'rater_type': 'AI',
                'design_note': 'Post-hoc diagnostic on reused histories; not a new held-out generalization test.',
                'control_prompt_cost': {'model_calls': sum(r['model_calls'] for r in transcripts),
                                        'seconds': sum(r['seconds'] for r in transcripts)},

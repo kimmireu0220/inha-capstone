@@ -61,7 +61,7 @@
   ],
   "uniqueness_note": "Counts distinguish identical output file bytes, not independent people or trials.",
   "pixel_uniqueness_note": "RGB pixel hashes include dimensions and ignore PNG metadata. Repeated content is not an independent replicate.",
-  "independent_human_rating_complete": false,
+  "rater_type": "AI",
   "design_note": "Post-hoc diagnostic on reused histories; not a new held-out generalization test.",
   "control_prompt_cost": {
     "model_calls": 8,

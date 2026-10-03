@@ -65,7 +65,7 @@ def main():
             'seconds': sum(r['seconds'] for r in transcripts),
             'final_characters': {h: len((ROOT / 'prompts' / f'{h}-{mode}.txt').read_text()) for h in histories}}
     summary = {'complete': True, 'outputs': 96, 'pairs': 48, 'independent_people': 6,
-        'rater_type': 'AI', 'independent_human_rating_complete': False,
+        'rater_type': 'AI',
         'primary_ai_version_note': ratings.get('rater_version_note'),
         'primary_ai_corrections_before_unmasking': ratings.get('corrections_before_unmasking', []),
         'by_mode': by_mode, 'by_person': by_person, 'by_history': by_history,
@@ -101,7 +101,7 @@ def main():
                          for m in MODES} for p in people},
         'agreement': {'same': agreement, 'comparable': comparable, 'unavailable': unavailable,
                       'by_goal': agreement_by_goal,
-                      'scope': 'Descriptive AI agreement, not independent human validation'},
+                      'scope': 'Descriptive agreement between two AI evaluators'},
         'parse_failures': sum(r['parse_error'] is not None for r in secondary['ratings'].values()),
         'diagnostic': notes.get('secondary_ai_diagnostic')}
     summary['cost_scope'] = notes['preparation_interruption']['cost_scope']

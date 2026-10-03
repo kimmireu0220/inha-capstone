@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "1wnmjHcnFjmjSQ",
+  "revision_id": "_ATM81TrlpEyOg",
   "slides": 40,
   "main_slides": 30,
   "appendix_slides": 10,
@@ -33,18 +33,18 @@
       0.846995
     ],
     "independent_people": 6,
-    "independent_human_evaluation": false
+    "evaluation": "AI goal judgments and ArcFace face similarity"
   },
   "visual_check": {
     "all_slides_reviewed": true,
     "visible_overlap_or_clipping_found": false,
-    "method": "Full-deck browser exportGsuite PDF rendered with bundled Poppler at 100dpi; all 40 PNGs inspected",
-    "pdf_sha256": "31ad4a93d34137b416eac4cba7de27833f39dc4a384679f284da1e9a5e499201",
+    "method": "Full-deck browser exportGsuite PDF rendered with bundled Poppler at 100dpi; changed slides 27 and 29 visually inspected, other 38 PNGs byte-identical to previously inspected render",
+    "pdf_sha256": "fa4da3bbb9608b9439d9ad10844e45903e49c93542c98c2d7967e07e10be0815",
     "native_export_fallback_reason": "Drive PDF helper did not materialize its reference-backed PDF; browser export succeeded"
   },
   "structural_issue_checker": {
     "total_issues": 0,
-    "raw_snapshot_sha256": "b75c2e09d3b33b3d5ca21c2ef4295665fb3ee52f60ebc04167aead74edf6219a"
+    "raw_snapshot_sha256": "9dc4ff776d735732d4a216a0030d6a86dd30bbb82f655284291773750e0722e8"
   },
   "scope": "Presentation fidelity and source alignment, not independent validation of AI ratings"
 }

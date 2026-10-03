@@ -1,5 +1,4 @@
-"""Prepare method-masked pairs and an empty independent-human rating form."""
-import csv
+"""Prepare method-masked image pairs for AI evaluation."""
 import hashlib
 import json
 import random
@@ -48,21 +47,7 @@ def main(root=None):
             draw.line((boundary, 0, boundary, 805), fill='#555555', width=2)
         canvas.save(folder / f'{key}.png')
     map_path.write_text(json.dumps(mapping, indent=2) + '\n')
-    form = ROOT / 'human-ratings.csv'
-    # Preserve any ratings already entered by a human.
-    existing = {}
-    if form.exists():
-        with form.open(newline='') as handle:
-            existing = {(r['comparison'], r['label']): r for r in csv.DictReader(handle)}
-    columns = ['comparison', 'label', 'goal_1', 'goal_2', 'goal_3', 'goal_4',
-               'goal_5', 'goal_6', 'note', 'rater_id']
-    with form.open('w', newline='') as handle:
-        writer = csv.DictWriter(handle, fieldnames=columns)
-        writer.writeheader()
-        for key in sorted(mapping):
-            for label in 'AB':
-                writer.writerow(existing.get((key, label), {'comparison': key, 'label': label}))
-    print(f'Prepared {len(mapping)} masked pairs. Human form contains no automated scores.')
+    print(f'Prepared {len(mapping)} masked pairs for AI evaluation.')
 
 
 if __name__ == '__main__':

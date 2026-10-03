@@ -7,13 +7,13 @@ Original-Referenced Regeneration and Final-Request Synthesis for Iterative Portr
 지도교수: 안남혁
 
 ## 초록
-반복 인물 이미지 편집에서는 생성물의 변형 누적과 대화의 최종 요구 추출 오류를 구분해야 한다. 합성 인물 6명의 최종 출력 18쌍에서 원본 기반 재생성의 평균 ArcFace는 0.922로 순차 편집의 0.714보다 높았다. 별도의 실제 인물 6명·8턴 대화 3종·두 시드 비교에서는 자연어 에이전트 종합이 전체 대화 전달보다 목표 충족을 높였지만(168/216 대 96/216) 얼굴 유사도는 낮았다(0.585 대 0.733). 취소 요청 처리의 후속 실험에서는 새 대화 4종으로 96장을 생성하고, 새 요청의 변경 항목을 추출해 코드로 갱신하는 방법을 평가했다. 1차 AI 목표 충족은 자연어 종합 194/288에서 상태 갱신 240/288로, 평균 ArcFace는 0.586에서 0.675로 높아졌다. 다만 한 대화에서는 배경·소품 교체를 놓쳐 상태 갱신의 목표 점수가 더 낮았다. 2차 AI는 257/288과 261/288로 작은 차이를 보였으며, 두 AI의 핀 항목 일치는 34/96에 그쳤다. 전체 대화 상태 추출의 추가 48개 조건에서는 1차·2차 목표 충족이 127/288·142/288로 낮았지만 ArcFace는 0.847로 높았다. 형식 오류로 편집을 수행하지 않은 출력도 포함되어 얼굴 유사도만으로 성공을 판단할 수 없었다. 결과는 최종 요구 관리와 이미지 생성 제어, 평가 신뢰도를 함께 검토할 필요성을 보여 준다. 단일 생성 모델과 소수 인물, 개발자 작성 대화에 한정된 탐색적 연구이며 독립 인간 평가는 확보하지 않았다.
+반복 인물 이미지 편집에서는 생성물의 변형 누적과 대화의 최종 요구 추출 오류를 구분해야 한다. 합성 인물 6명의 최종 출력 18쌍에서 원본 기반 재생성의 평균 ArcFace는 0.922로 순차 편집의 0.714보다 높았다. 별도의 실제 인물 6명·8턴 대화 3종·두 시드 비교에서는 자연어 에이전트 종합이 전체 대화 전달보다 목표 충족을 높였지만(168/216 대 96/216) 얼굴 유사도는 낮았다(0.585 대 0.733). 취소 요청 처리의 후속 실험에서는 새 대화 4종으로 96장을 생성하고, 새 요청의 변경 항목을 추출해 코드로 갱신하는 방법을 평가했다. 1차 AI 목표 충족은 자연어 종합 194/288에서 상태 갱신 240/288로, 평균 ArcFace는 0.586에서 0.675로 높아졌다. 다만 한 대화에서는 배경·소품 교체를 놓쳐 상태 갱신의 목표 점수가 더 낮았다. 2차 AI는 257/288과 261/288로 작은 차이를 보였으며, 두 AI의 핀 항목 일치는 34/96에 그쳤다. 전체 대화 상태 추출의 추가 48개 조건에서는 1차·2차 목표 충족이 127/288·142/288로 낮았지만 ArcFace는 0.847로 높았다. 형식 오류로 편집을 수행하지 않은 출력도 포함되어 얼굴 유사도만으로 성공을 판단할 수 없었다. 결과는 최종 요구 관리와 이미지 생성 제어, 평가 신뢰도를 함께 검토할 필요성을 보여 준다. 단일 생성 모델과 소수 인물, 개발자 작성 대화에 한정된 탐색적 연구다.
 
 주요어: 반복 이미지 편집, 얼굴 보존, 원본 기반 재생성, 최종 요구 종합, 프롬프트
 
 ## Abstract
 
-Iterative portrait editing requires separating accumulated image changes from errors in extracting the final request. Across 18 final-output pairs from six synthetic identities, original-referenced regeneration achieved higher mean ArcFace similarity than sequential editing (0.922 versus 0.714). With six real-person photos, three eight-turn dialogues and two seeds, natural-language agent synthesis improved goal fulfillment over full-history prompting (168/216 versus 96/216), but reduced facial similarity (0.585 versus 0.733). A follow-up comparison generated 96 images using four new dialogues and the same photos. Extracting changes from each new request and applying them to a stored six-slot state increased primary AI goal ratings from 194/288 to 240/288 and mean ArcFace from 0.586 to 0.675. However, missed background and prop replacements worsened one dialogue. A second AI showed a smaller difference, 257/288 versus 261/288; agreement on pin judgments was only 34/96. A post-hoc whole-history structured extraction control suffered JSON format failures and achieved 127/288 and 142/288 goals under the two AI evaluators despite higher ArcFace (0.847). Its 48 conditions contained 36 distinct RGB images. These exploratory findings support joint assessment of request management, facial preservation and attribute fulfillment. Different instructions, call counts and evaluation phases prevent isolating a causal state-management effect. The study uses one image model, six real-person photos and developer-written dialogues, without independent human evaluation.
+Iterative portrait editing requires separating accumulated image changes from errors in extracting the final request. Across 18 final-output pairs from six synthetic identities, original-referenced regeneration achieved higher mean ArcFace similarity than sequential editing (0.922 versus 0.714). With six real-person photos, three eight-turn dialogues and two seeds, natural-language agent synthesis improved goal fulfillment over full-history prompting (168/216 versus 96/216), but reduced facial similarity (0.585 versus 0.733). A follow-up comparison generated 96 images using four new dialogues and the same photos. Extracting changes from each new request and applying them to a stored six-slot state increased primary AI goal ratings from 194/288 to 240/288 and mean ArcFace from 0.586 to 0.675. However, missed background and prop replacements worsened one dialogue. A second AI showed a smaller difference, 257/288 versus 261/288; agreement on pin judgments was only 34/96. A post-hoc whole-history structured extraction control suffered JSON format failures and achieved 127/288 and 142/288 goals under the two AI evaluators despite higher ArcFace (0.847). Its 48 conditions contained 36 distinct RGB images. These exploratory findings support joint assessment of request management, facial preservation and attribute fulfillment. Different instructions, call counts and evaluation phases prevent isolating a causal state-management effect. The study uses one image model, six real-person photos and developer-written dialogues.
 
 ## 1. 서론
 사용자는 인물 사진에서 의상, 장신구, 배경을 차례로 바꾸고 이전 요청을 수정하거나 취소할 수 있다. 편집기는 현재 이미지를 다시 입력하거나 최초 사진에서 최신 요구를 한 번에 생성할 수 있다. 전자는 이전 생성물의 변화가 다음 생성으로 전달되고, 후자는 대화의 최종 상태를 정확히 정리해야 한다. 얼굴 보존과 목표 반영은 서로 다른 성능 축이다.
@@ -40,7 +40,7 @@ Huang 등의 T2I-CompBench는 색·형태·질감의 속성 결합과 공간 관
 
 대화 전체 전달은 모든 요청과 최신 요청 우선 규칙을 이미지 모델에 준다. 에이전트 종합은 로컬 Qwen3 4B가 자연어 이력을 읽어 초안 작성과 원문 대조를 거쳐 최종 프롬프트를 만든다. 정확한 상태 제공은 사람이 미리 구조화한 변경을 순서대로 적용한 최종 상태만 이미지 모델에 준다. 정확한 상태는 올바른 상태 추출을 이미 가정한 상한 기준이며 나머지 방법과 같은 자동화 비용이 아니다. 세 방법 모두 동일한 최초 사진을 입력하고 로컬 FLUX.2 Klein 4B 4비트 모델, 4스텝, 대응 시드를 사용했다. 출력 확인 후 프롬프트를 수정하지 않았다.
 
-방법명을 가린 비교판에서 최종 목표 6항목을 각 이미지에 대해 충족(1), 미충족(0), 판단 어려움으로 채점했다. 판단 어려움은 성공으로 계산하지 않았다. 얼굴은 InsightFace buffalo_l로 검출·정렬한 뒤 원본–출력 ArcFace 코사인 유사도를 구했다. 108장 모두 한 얼굴이 검출되었다. 평가 원기록은 운영자의 단일 시각 판정으로 되어 있으며, 독립 인간 평가를 확인할 자료는 없다. R01–H2–시드42의 한 세트는 가림 전 이미지가 노출된 예외가 있다. 분석의 독립 단위는 6명이고 이력·시드는 인물 내 반복이다.
+방법명을 가린 비교판에서 최종 목표 6항목을 각 이미지에 대해 충족(1), 미충족(0), 판단 어려움으로 채점했다. 판단 어려움은 성공으로 계산하지 않았다. 얼굴은 InsightFace buffalo_l로 검출·정렬한 뒤 원본–출력 ArcFace 코사인 유사도를 구했다. 108장 모두 한 얼굴이 검출되었다. 평가 원기록은 운영자의 단일 시각 판정으로 되어 있다. R01–H2–시드42의 한 세트는 가림 전 이미지가 노출된 예외가 있다. 분석의 독립 단위는 6명이고 이력·시드는 인물 내 반복이다.
 
 ### 3.3 자동 요구 상태 갱신의 후속 비교
 기존 H1–H3에서 확인한 취소 처리 문제를 검증하기 위해 새 대화 U1–U4를 고정했다. 각 대화는 8턴이며 재킷, 상의, 핀, 목걸이, 배경, 배경 소품의 여섯 항목을 다룬다. 삭제, 교체, 재추가와 ‘제거하지 말라’는 요청을 포함한다. 개발 중 사용한 T1–T4와는 별도이지만 같은 개발자가 제한 어휘로 작성한 대화이므로 독립적으로 수집한 사용자 자료는 아니다.
@@ -51,7 +51,7 @@ Huang 등의 T2I-CompBench는 색·형태·질감의 속성 결합과 공간 관
 
 비교 대상은 기존의 전체 대화 초안 작성·대조 2회 방식이다. 실제 인물 R01–R06, 대화 4종, 시드 42·314, 두 방법으로 96개 조건과 최종 48쌍을 설계했다. 최초 원본, 이미지 모델과 생성 스텝은 이전 실제 인물 실험과 같다. 자동 프롬프트를 모두 고정한 뒤 정답 상태와 비교하며, 오류가 있는 프롬프트도 그대로 생성에 사용한다. 두 방법은 언어 모델 호출 수가 달라 시스템 전체의 비교로 해석하고 호출 수와 처리 시간을 함께 기록한다.
 
-최종 이미지의 여섯 목표는 방법명을 가린 Codex 시각 판정과 별도 로컬 Qwen2.5-VL 3B 판정으로 평가한다. 두 판정의 점수와 일치율을 각각 보고하고, 판단 불가 항목은 성공으로 계산하지 않는다. 두 평가 모두 AI 평가이며 독립 인간 평가는 확보하지 않았다. 얼굴 유사도는 모든 시각 점수를 기록한 뒤 결합한다. 반복 관측의 독립 단위는 인물 6명이며, 대화 수가 4종이라는 한계도 함께 고려한다.
+최종 이미지의 여섯 목표는 방법명을 가린 Codex 시각 판정과 별도 로컬 Qwen2.5-VL 3B 판정으로 평가한다. 두 판정의 점수와 일치율을 각각 보고하고, 판단 불가 항목은 성공으로 계산하지 않는다. 두 평가 모두 AI 평가다. 얼굴 유사도는 모든 시각 점수를 기록한 뒤 결합한다. 반복 관측의 독립 단위는 인물 6명이며, 대화 수가 4종이라는 한계도 함께 고려한다.
 
 ### 3.4 전체 대화에서 상태를 추출하는 추가 대조
 자동 상태 갱신과 자연어 종합의 차이에는 누적 상태 관리뿐 아니라 출력 형식, 지시문, 호출 수의 차이도 포함된다. 이를 더 구체적으로 해석하기 위해 전체 대화에서 최종 여섯 항목을 한 번에 추출하는 대조를 설계했다. 같은 Qwen3 4B가 첫 호출에서 최종 JSON 상태를 작성하고, 두 번째 호출에서 원래 대화와 대조한다. 두 호출 모두 온도 0, 최대 700토큰이며 예시 정답은 제공하지 않는다. 두 번째 출력이 형식상 유효하면 사용하고, 그렇지 않으면 첫 번째 유효 출력으로 되돌린다. 둘 다 실패하면 모든 항목을 원본 유지로 설정하고 실패를 기록한다. 최종 상태를 이미지 프롬프트로 바꾸는 코드는 자동 상태 갱신과 같다.
@@ -105,7 +105,7 @@ Huang 등의 T2I-CompBench는 색·형태·질감의 속성 결합과 공간 관
 H2의 화면 기준 왼쪽 옷깃에 빨간 삼각 핀 하나를 놓는 항목은 대화 전체 0/12, 에이전트 1/12, 정확한 상태 0/12였다. 이는 최종 상태를 정확히 전달해도 생성 모델의 세부 위치 제어가 실패할 수 있음을 보여 준다. 판단 어려움 두 항목을 성공으로 세지 않았고, 가림 예외 세트 한 개를 제외해도 방법 순서는 대화 전체 93/210, 에이전트 162/210, 정확한 상태 194/210으로 같았다.
 
 ### 4.3 자동 상태 갱신의 효과와 실패
-U1–U4의 48쌍에서 1차 AI 평가의 목표 충족은 자연어 에이전트 종합 194/288(67.4%), 자동 상태 갱신 240/288(83.3%)이었다. 원본 대비 평균 ArcFace는 각각 0.585593과 0.675335였다. 취소된 항목만 보면 각각 26/72와 72/72였다. 취소 항목의 개선은 전체 목표의 완전한 달성과는 다르다. 이 점수는 방법명을 가린 AI 판정이며 인간 평가 결과가 아니다.
+U1–U4의 48쌍에서 1차 AI 평가의 목표 충족은 자연어 에이전트 종합 194/288(67.4%), 자동 상태 갱신 240/288(83.3%)이었다. 원본 대비 평균 ArcFace는 각각 0.585593과 0.675335였다. 취소된 항목만 보면 각각 26/72와 72/72였다. 취소 항목의 개선은 전체 목표의 완전한 달성과는 다르다. 이 점수는 방법명을 가린 AI 판정이다.
 
 | 방법 | 1차 AI 목표 | 2차 AI 목표 | 1차 AI 취소 목표 | ArcFace ↑ |
 | --- | ---: | ---: | ---: | ---: |
@@ -153,9 +153,9 @@ U2의 배열에는 요구된 값과 원본 유지 값이 함께 있었고, U3에
 
 후속 비교에서는 새 요청에서 변경 항목을 추출하고 코드로 상태를 갱신하는 방법을 실제로 평가했다. 1차 AI 기준 목표 충족과 ArcFace 평균은 개선되었고 취소 항목의 실패가 줄었다. 반면 U4에서는 배경·소품 변경을 놓쳐 목표 점수가 낮아졌으며, 2차 AI는 큰 목표 점수 차이를 재현하지 못했다. 이 결과는 제한 어휘의 상태 갱신이 유용할 가능성과 함께, 상태 추출 오류 및 평가자 의존성을 보여 준다. 상태 관리의 도입만으로 모든 편집 실패를 해결했다고 주장하지 않는다.
 
-구현된 로컬 편집기는 최초 원본, 현재 요구 상태, 출력 버전을 분리해 저장하고 순차 생성과 원본 기반 재생성을 제공한다. 연구용 여섯 항목 상태 갱신 CLI는 기존 웹 편집기와 별도이며, 연구 결과가 웹 UI 전체의 기능 검증을 뜻하지 않는다. 후속 개선 과제는 생성 전에 최종 상태의 근거 요청을 확인하고, 생성 후에는 속성 반영과 얼굴 유사도를 함께 검증하는 것이다. 특히 핀의 좌우·형태처럼 AI 평가자 간 차이가 큰 항목에는 독립 인간 판정이 필요하다.
+구현된 로컬 편집기는 최초 원본, 현재 요구 상태, 출력 버전을 분리해 저장하고 순차 생성과 원본 기반 재생성을 제공한다. 연구용 여섯 항목 상태 갱신 CLI는 기존 웹 편집기와 별도이며, 연구 결과가 웹 UI 전체의 기능 검증을 뜻하지 않는다. 후속 개선 과제는 생성 전에 최종 상태의 근거 요청을 확인하고, 생성 후에는 속성 반영과 얼굴 유사도를 함께 검증하는 것이다. 핀의 좌우·형태처럼 AI 평가자 간 차이가 큰 항목은 평가 모델과 문항에 따른 변동을 함께 보고한다.
 
-정책 비교와 프롬프트 비교의 인물 유형·편집 과제가 달라 두 요소의 상호작용을 추정할 수 없다. 합성 인물 실험의 방법별 생성 횟수도 다르다. 실제 인물 실험은 공개 사진 6명, 개발자가 작성한 H1–H3 및 U1–U4, 두 시드, 하나의 로컬 이미지 모델에 한정된다. 초기 H1–H3 점수는 독립 인간 평가를 확인할 수 없는 단일 시각 판정 기록이고, 두 항목의 판단 어려움과 한 세트의 사전 노출 예외가 있다. U1–U4의 두 평가는 모두 AI이며 1차 모델 설정 변경과 채점 수정 이력, 2차 설명–점수 모순을 공개했다. 두 AI의 일치가 곧 정확성을 의미하지 않는다. ArcFace는 얼굴 정체성의 대리 지표로 자세·구도·조명 영향에서 완전히 자유롭지 않다. 108장 또는 96장을 각각 독립 표본으로 취급한 유의성 검정이나 모집단 일반화는 하지 않았다. 프롬프트 준비 시간은 중단된 작업을 제외한 기록값이며 다른 프로세스의 영향을 받을 수 있어 표준화된 속도 벤치마크로 해석하지 않는다.
+정책 비교와 프롬프트 비교의 인물 유형·편집 과제가 달라 두 요소의 상호작용을 추정할 수 없다. 합성 인물 실험의 방법별 생성 횟수도 다르다. 실제 인물 실험은 공개 사진 6명, 개발자가 작성한 H1–H3 및 U1–U4, 두 시드, 하나의 로컬 이미지 모델에 한정된다. 초기 H1–H3 점수는 단일 시각 판정 기록이고, 두 항목의 판단 어려움과 한 세트의 사전 노출 예외가 있다. U1–U4의 두 평가는 모두 AI이며 1차 모델 설정 변경과 채점 수정 이력, 2차 설명–점수 모순을 공개했다. 두 AI의 일치가 곧 정확성을 의미하지 않는다. ArcFace는 얼굴 정체성의 대리 지표로 자세·구도·조명 영향에서 완전히 자유롭지 않다. 108장 또는 96장을 각각 독립 표본으로 취급한 유의성 검정이나 모집단 일반화는 하지 않았다. 프롬프트 준비 시간은 중단된 작업을 제외한 기록값이며 다른 프로세스의 영향을 받을 수 있어 표준화된 속도 벤치마크로 해석하지 않는다.
 
 전체 대화 상태 추출 대조에서는 형식 오류로 원본 유지 처리가 적용돼 목표 반영이 낮아졌다. 이때 얼굴 유사도가 높았다는 점은 얼굴 보존과 편집 수행을 함께 평가해야 한다는 해석을 뒷받침한다. 다만 대조는 같은 대화를 재사용한 후속 진단이고 추출 지시·예시·호출 수가 다르며 1차 채점 시점도 달라, 상태 관리만의 인과 효과를 분리한 비교는 아니다.
 

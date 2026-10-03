@@ -4,7 +4,6 @@
   "pairs": 48,
   "independent_people": 6,
   "rater_type": "AI",
-  "independent_human_rating_complete": false,
   "primary_ai_version_note": "The conversation model setting changed after the first six comparisons were recorded. Exact backend revision is not pinned. This is a method-masked Codex session evaluation; the separate local VLM evaluation has a recorded model revision.",
   "primary_ai_corrections_before_unmasking": [
     {
@@ -1319,7 +1318,7 @@
           "unavailable": 0
         }
       ],
-      "scope": "Descriptive AI agreement, not independent human validation"
+      "scope": "Descriptive agreement between two AI evaluators"
     },
     "parse_failures": 0,
     "diagnostic": {

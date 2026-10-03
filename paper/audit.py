@@ -69,7 +69,7 @@ for name, digest in automatic['source_sha256'].items():
         f'Automatic-state summary is stale: {name}'
 assert automatic['complete'] and automatic['outputs'] == 96 and automatic['pairs'] == 48
 assert automatic['independent_people'] == 6
-assert automatic['rater_type'] == 'AI' and automatic['independent_human_rating_complete'] is False
+assert automatic['rater_type'] == 'AI'
 for mode, label in [('agent', '에이전트 종합'), ('tracked', '자동 상태 갱신')]:
     primary = automatic['by_mode'][mode]
     secondary = automatic['second_ai']['by_mode'][mode]
@@ -94,7 +94,7 @@ control = data['structured_control']
 assert control['complete'] and control['conditions'] == 144
 assert control['independent_people'] == 6 and control['new_control_conditions'] == 48
 assert control['control_reused_images'] + control['control_new_images'] == 48
-assert control['independent_human_rating_complete'] is False
+assert control['rater_type'] == 'AI'
 for name, digest in control['source_sha256'].items():
     assert hashlib.sha256((ROOT / 'experiments' / name).read_bytes()).hexdigest() == digest, \
         f'Structured-control summary is stale: {name}'

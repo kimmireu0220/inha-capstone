@@ -2,8 +2,8 @@
   "date": "2026-10-03",
   "passed": true,
   "scope": "Numeric transcription and source-hash checks, not independent scientific validation",
-  "manuscript_sha256": "d9eb875bcff038aea8aabf9b76a04b5215223ee28d94259e7e4626d8a3fd4686",
-  "english_abstract_sha256": "9ae0f5bb73794eedf993aada909abbe8fa64b4e4bf68e27e6bec792415f8e317",
+  "manuscript_sha256": "ce2fc1308fbe4cf06f65f2fe3845c7ce00524b998b1d3e086675b66aed722a36",
+  "english_abstract_sha256": "0e083ff1feda9bd898ca8adb937fd6d0b9a499630e2c3dae6a25c73fe016655a",
   "checked_values": [
     "0.087120",
     "0.846176",
@@ -100,12 +100,12 @@
     {
       "name": "automatic_state",
       "path": "experiments/state-tracking-v2/summary.json",
-      "sha256": "4181be2dc09f2674fef743a469e8c1c2a7e1de09e318bf589924df44adb585ca"
+      "sha256": "a36dfb4af1e9315c1fb0a45edfa7e33d8ca4678aab5d2445e6e2cfa09837d41b"
     },
     {
       "name": "structured_control",
       "path": "experiments/state-format-control-v1/summary.json",
-      "sha256": "03e79def136de11a4eacf242d715ad8ef73d6cbcc0915165a8c022e4c3526c42"
+      "sha256": "2ad1fd939ecffc118bbfdaf53b6737ef89c787799fe6b923f1c39ae4bc357647"
     }
   ]
 }
