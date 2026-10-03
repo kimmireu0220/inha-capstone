@@ -11,6 +11,12 @@ def mean(values):
     return sum(values) / len(values) if values else None
 
 
+def validate_scores(scores):
+    assert isinstance(scores, list) and len(scores) == 6, 'Exactly six scores required'
+    assert all(v is None or type(v) is int and v in (0, 1) for v in scores), 'Invalid score'
+    return scores
+
+
 def summarize(rows):
     values = [r['identity_similarity'] for r in rows if r['identity_similarity'] is not None]
     return {'images': len(rows), 'achieved': sum(sum(v == 1 for v in r['scores']) for r in rows),
@@ -33,8 +39,7 @@ def main():
         person, history, seed = key.split('-')
         assert set(values['scores']) == {'A', 'B'}
         for letter in 'AB':
-            scores = values['scores'][letter]
-            assert len(scores) == 6 and all(v in [0, 1, None] for v in scores)
+            scores = validate_scores(values['scores'][letter])
             mode = mapping[key][letter]
             row = metrics[(person, history, int(seed), mode)]
             rows.append({**row, 'scores': scores, 'blind_label': letter, 'note': values.get('note', '')})
@@ -69,7 +74,7 @@ def main():
     secondary_rows = []
     for row in rows:
         key = f"{row['person']}-{row['history']}-{row['seed']}/{row['blind_label']}"
-        scores = secondary['ratings'][key]['scores']
+        scores = validate_scores(secondary['ratings'][key]['scores'])
         for primary, other in zip(row['scores'], scores):
             if primary is None or other is None:
                 unavailable += 1

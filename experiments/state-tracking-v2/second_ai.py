@@ -1,5 +1,6 @@
 """One fixed, independent local VLM pass over method-masked images."""
 import importlib.metadata
+import hashlib
 import json
 import time
 from pathlib import Path
@@ -25,6 +26,11 @@ GOALS = {
 
 
 def main():
+    plates = sorted((ROOT / 'blind').glob('*.png'))
+    expected = {f'R{p:02d}-{h}-{s}' for p in range(1, 7) for h in GOALS for s in [42, 314]}
+    assert {p.stem for p in plates} == expected, 'Finish all 48 masked pairs first'
+    inputs = {'evaluator_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+              'plates_sha256': {p.stem: hashlib.sha256(p.read_bytes()).hexdigest() for p in plates}}
     path = snapshot_download(MODEL, revision=REVISION)
     model, processor = load(path)
     config = load_config(path)
@@ -32,10 +38,12 @@ def main():
     result = json.loads(output.read_text()) if output.exists() else {
         'rater_type': 'AI', 'method_masked': True, 'model': MODEL,
         'revision': Path(path).name, 'temperature': 0,
+        'inputs': inputs,
         'versions': {p: importlib.metadata.version(p) for p in ['mlx-vlm', 'mlx', 'transformers']},
         'ratings': {}}
     assert result['revision'] == Path(path).name
-    for plate in sorted((ROOT / 'blind').glob('*.png')):
+    assert result['model'] == MODEL and result['inputs'] == inputs, 'Evaluator inputs changed'
+    for plate in plates:
         key = plate.stem
         history = key.split('-')[1]
         for index, label in enumerate('AB', 1):
