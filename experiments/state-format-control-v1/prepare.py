@@ -1,5 +1,6 @@
 """Freeze a two-call full-history state control before reading annotations."""
 import hashlib
+import importlib.metadata
 import json
 import sys
 import time
@@ -10,6 +11,16 @@ REPO = ROOT.parents[1]
 SOURCE = ROOT.parent / 'state-tracking-v2'
 sys.path.insert(0, str(REPO / 'local-studio'))
 from request_state import INITIAL, MODEL, VALUES, StateExtractor, render_prompt, unique_object
+
+REVISION = '4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25'
+
+
+class FrozenStateExtractor(StateExtractor):
+    def __init__(self):
+        from huggingface_hub import snapshot_download
+        from mlx_lm import load
+        path = snapshot_download(MODEL, revision=REVISION)
+        self.model, self.tokenizer = load(path)
 
 SCHEMA = json.dumps({key: values + ['original'] for key, values in VALUES.items()})
 FIRST = '''Read all chronological image-edit requests and return the FINAL state.
@@ -60,6 +71,8 @@ def choose_state(outputs):
 
 
 def main():
+    source_revision = json.loads((SOURCE / 'run_notes.json').read_text())['cached_model_revisions'][MODEL]
+    assert source_revision == REVISION, 'Control must use the recorded source-model revision'
     inputs = {str(path.relative_to(REPO)): sha(path) for path in [
         ROOT / 'PROTOCOL.md', Path(__file__), SOURCE / 'benchmark.json',
         REPO / 'local-studio/request_state.py']}
@@ -78,7 +91,7 @@ def main():
             record = json.loads(target.read_text())
         else:
             if extractor is None:
-                extractor = StateExtractor()
+                extractor = FrozenStateExtractor()
             chronology = '\n'.join(f'{i}. {turn["request"]}'
                                     for i, turn in enumerate(history['turns'], 1))
             user = 'Chronological requests:\n' + chronology
@@ -88,7 +101,9 @@ def main():
                                    max_tokens=700)
             seconds = time.monotonic() - start
             state, selected, errors = choose_state([first, second])
-            record = {'model': MODEL, 'temperature': 0, 'max_tokens_per_call': 700,
+            record = {'model': MODEL, 'revision': REVISION,
+                      'versions': {p: importlib.metadata.version(p) for p in ['mlx-lm', 'mlx', 'transformers']},
+                      'temperature': 0, 'max_tokens_per_call': 700,
                       'model_calls': 2, 'seconds': seconds,
                       'system_prompts': [FIRST, SECOND], 'user': user,
                       'responses': [first, second], 'validation_errors': errors,
