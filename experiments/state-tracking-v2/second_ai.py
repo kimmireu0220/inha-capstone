@@ -25,6 +25,14 @@ GOALS = {
 }
 
 
+def build_prompt(history):
+    return ('Assess this image against six goals. Score 1 if visibly satisfied, 0 if visibly '
+            'violated, and null if not possible to judge. Viewer-left means the left side '
+            'of the displayed image. Inspect small accessories carefully. Return only '
+            'JSON with keys scores (six values in order) and reason (brief explanation).\n' +
+            '\n'.join(f'{i}. {g}' for i, g in enumerate(GOALS[history], 1)))
+
+
 def main():
     plates = sorted((ROOT / 'blind').glob('*.png'))
     expected = {f'R{p:02d}-{h}-{s}' for p in range(1, 7) for h in GOALS for s in [42, 314]}
@@ -50,11 +58,7 @@ def main():
             rating_key = key + '/' + label
             if rating_key in result['ratings']:
                 continue
-            prompt = ('Assess this image against six goals. Score 1 if visibly satisfied, 0 if visibly '
-                      'violated, and null if not possible to judge. Viewer-left means the left side '
-                      'of the displayed image. Inspect small accessories carefully. Return only '
-                      'JSON with keys scores (six values in order) and reason (brief explanation).\n' +
-                      '\n'.join(f'{i}. {g}' for i, g in enumerate(GOALS[history], 1)))
+            prompt = build_prompt(history)
             formatted = apply_chat_template(processor, config, prompt, num_images=1)
             with Image.open(plate) as image:
                 crop = image.crop((index * 512, 38, (index + 1) * 512, 806)).convert('RGB')
