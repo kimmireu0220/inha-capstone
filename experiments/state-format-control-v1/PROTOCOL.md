@@ -21,3 +21,17 @@ R01–R06, U1–U4, 시드 42·314의 48개 조건 전부를 평가한다. 원�
 기존과 같은 여섯 목표, 원본 대비 ArcFace, 모델 호출 수·시간·프롬프트 길이를 보고한다. 재사용된 이미지에는 기존 점수를 연결하고, 새 이미지는 방법명과 기존 점수를 가린 상태에서 Codex와 같은 고정 버전의 Qwen2.5-VL로 평가한다. 알려진 기존 비교와 연결되는 재사용 조건이 있어 완전한 새로운 가림 실험으로 주장하지 않는다. 평가자는 모두 AI이며 독립 인간 평가는 별도 과제로 남는다.
 
 모든 결과를 포함한다. 전체 대화 상태 추출이 더 정확하거나 저렴하면 그 결과를 결론에 반영한다. 새 대화 상태 갱신이 더 유리하면 이 범위에서의 장점과 비용을 함께 보고한다. 기존 96장 결과의 프로토콜·프롬프트·점수는 이 대조에 맞춰 변경하지 않는다.
+
+## 재현 실행 순서
+
+본 비교의 생성과 두 AI 평가를 먼저 완료한다. 아래 경로는 저장소 루트 기준이며, GPU를 사용하는 준비·생성·보조 평가는 동시에 실행하지 않는다.
+
+1. `.venv-local-prompt/bin/python experiments/state-format-control-v1/prepare.py`: 본 비교에 기록된 동일 Qwen3 가중치 버전을 고정해 네 대화의 프롬프트를 만든다.
+2. `.venv-local-image/bin/python experiments/state-format-control-v1/run.py`: 48개 조건의 정확한 재사용 여부를 검사하고 필요한 이미지만 생성한다.
+3. `.venv-metrics/bin/python experiments/state-format-control-v1/make_blind.py`: 세 방법의 순서를 가린 비교판과 신규 채점 목록을 만든다. 기존 본 비교의 48쌍 1차 채점이 끝나야 실행할 수 있다.
+4. `pending-ratings.json`의 비교·라벨만 새로 확인하고 `ai-ratings.json`에 AI 평가임을 명시해 기록한다. 기존 점수와 방법명은 신규 점수 기록 전에 열지 않는다. 연결된 기존 점수는 재채점하지 않는다.
+5. `.venv-local-eval/bin/python experiments/state-format-control-v1/second_ai.py`: 같은 모델 버전·패키지·문구로 신규 이미지만 보조 평가한다.
+6. `.venv-metrics/bin/python experiments/state-format-control-v1/analyze.py`: 출처 해시와 재사용 조건을 검증하고 신규 이미지의 얼굴 유사도를 측정한다.
+7. `.venv-metrics/bin/python experiments/state-format-control-v1/report.py`: 세 방법의 결과를 연결해 `summary.json`을 만든다. 재사용 결과는 본 비교의 결과와 같아야 하며 논문 검산에서도 이를 확인한다.
+
+준비·재사용 조건·집계 테스트는 `.venv-local-image/bin/python -m unittest discover -s experiments/state-format-control-v1 -p 'test_*.py'`로 실행한다. 집계 테스트의 가상 데이터는 임시 디렉터리 안에서만 사용하며 연구 결과 폴더에 저장하지 않는다.
