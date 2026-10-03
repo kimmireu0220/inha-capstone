@@ -19,6 +19,10 @@
 
 ## 재현 자료와 구현
 
+현재 평가는 AI 판정과 계산 지표로 수행한다. 사람에게 요청할 평가 작업은 없다. 이전 실험 파일의 평가 미수집 표시는 당시 기록이며 현재의 미완료 과제가 아니다. 기존 관찰·응답의 출처는 바꾸지 않고 보존한다.
+
+정합성 확인: `python paper/audit.py`로 본문 수치를 검산하고 `python scripts/check_consistency.py`로 원자료·산출물 해시, 슬라이드 집계, 문서 링크와 평가 설정을 확인한다.
+
 - [합성 인물 정책 비교](experiments/studio-multiperson-v1/RESULTS.md)
 - [실제 인물 최종 요구 종합](experiments/prompt-synthesis-expanded-v1/RESULTS.md)
 - [동일 조건 12장 재사용의 출처가 된 예비 실험](experiments/prompt-synthesis-v1/RESULTS.md)
