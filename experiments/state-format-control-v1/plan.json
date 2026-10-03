@@ -1,0 +1,10 @@
+{
+  "source_plan_sha256": "7de3e4aa84207c343df59836d91b2421465dd54c8d6ae97b5fbe84387f517a04",
+  "source_calls_sha256": "6ee8c529292b77bd4cb200066b457652abeef5f92e5d67c6ce60975afae0d4ba",
+  "prepare_manifest_sha256": "a61b9ce51fe178959a01e30c1355ef6c5a0321dc484139068681afcb48a41c6e",
+  "runner_sha256": "80d4a20f4a0c9bbdd10b541eaf99ddf26a7570078660fcd87b5ddea8939276ad",
+  "model": "Runpod/FLUX.2-klein-4B-mflux-4bit",
+  "steps": 4,
+  "expected_outputs": 48,
+  "reuse_rule": "Exact input, prompt, model, steps, width, height, seed; no score selection"
+}
