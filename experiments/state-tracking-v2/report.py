@@ -27,6 +27,10 @@ def summarize(rows):
 
 
 def main():
+    verification = json.loads((ROOT / 'verification.json').read_text())
+    assert verification['complete'] is True and verification['outputs'] == 96
+    assert verification['frozen_inputs_prompts_and_output_hashes_verified'] is True
+    notes = json.loads((ROOT / 'run_notes.json').read_text())
     ratings = json.loads((ROOT / 'ai-ratings.json').read_text())
     assert ratings['rater_type'] == 'AI' and ratings['method_masked'] is True
     mapping = json.loads((ROOT / 'blinding-map.json').read_text())
@@ -71,31 +75,43 @@ def main():
     assert secondary['rater_type'] == 'AI' and secondary['method_masked'] is True
     assert set(secondary['ratings']) == {key + '/' + label for key in mapping for label in 'AB'}
     agreement, comparable, unavailable = 0, 0, 0
+    agreement_by_goal = [{'slot': slot, 'same': 0, 'comparable': 0,
+                          'primary_only_success': 0, 'secondary_only_success': 0,
+                          'unavailable': 0}
+                         for slot in ['jacket', 'top', 'pin', 'necklace', 'background', 'prop']]
     secondary_rows = []
     for row in rows:
         key = f"{row['person']}-{row['history']}-{row['seed']}/{row['blind_label']}"
         scores = validate_scores(secondary['ratings'][key]['scores'])
-        for primary, other in zip(row['scores'], scores):
+        for goal, primary, other in zip(agreement_by_goal, row['scores'], scores):
             if primary is None or other is None:
                 unavailable += 1
+                goal['unavailable'] += 1
             else:
                 comparable += 1
                 agreement += primary == other
+                goal['comparable'] += 1
+                goal['same'] += primary == other
+                goal['primary_only_success'] += primary == 1 and other == 0
+                goal['secondary_only_success'] += primary == 0 and other == 1
         secondary_rows.append({**row, 'scores': scores})
     summary['second_ai'] = {'model': secondary['model'], 'revision': secondary['revision'],
         'by_mode': {mode: summarize([r for r in secondary_rows if r['mode'] == mode]) for mode in MODES},
         'by_person': {p: {m: summarize([r for r in secondary_rows if r['person'] == p and r['mode'] == m])
                          for m in MODES} for p in people},
         'agreement': {'same': agreement, 'comparable': comparable, 'unavailable': unavailable,
+                      'by_goal': agreement_by_goal,
                       'scope': 'Descriptive AI agreement, not independent human validation'},
-        'parse_failures': sum(r['parse_error'] is not None for r in secondary['ratings'].values())}
+        'parse_failures': sum(r['parse_error'] is not None for r in secondary['ratings'].values()),
+        'diagnostic': notes.get('secondary_ai_diagnostic')}
+    summary['cost_scope'] = notes['preparation_interruption']['cost_scope']
     state = summary['state_extraction']
     state['joint_correct_turns'] = sum(r['correct_slots'] == 6 for r in state['turns'])
     state['total_turns'] = len(state['turns'])
     state['joint_correct_final_dialogues'] = sum(r['correct_slots'] == 6 for r in state['turns'] if r['turn'] == 8)
     state['total_dialogues'] = len(histories)
     inputs = ['ai-ratings.json', 'second-ai-ratings.json', 'face-results.json',
-              'state-scores.json', 'blinding-map.json', 'plan.json', 'verification.json']
+              'state-scores.json', 'blinding-map.json', 'plan.json', 'verification.json', 'run_notes.json']
     inputs += [f'prompts/{h}-transcript.json' for h in histories]
     summary['source_sha256'] = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
                                for name in inputs}
