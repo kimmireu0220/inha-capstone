@@ -65,8 +65,11 @@ def main():
     transcripts = [read(ROOT / 'prompts', h + '-transcript.json') for h in histories]
     control = [r for r in rows if r['mode'] == 'structured']
     control_hashes = {}
+    pixel_hashes = {}
     for row in control:
         control_hashes.setdefault(row['output_sha256'], []).append(
+            f"{row['person']}-{row['history']}-{row['seed']}")
+        pixel_hashes.setdefault(row['rgb_pixel_sha256'], []).append(
             f"{row['person']}-{row['history']}-{row['seed']}")
     summary = {'complete': True, 'conditions': 144, 'independent_people': 6,
                'new_control_conditions': 48, 'control_reused_images': sum(r['reused'] for r in control),
@@ -74,7 +77,10 @@ def main():
                'control_unique_output_hashes': len(control_hashes),
                'all_unique_output_hashes': len({r['output_sha256'] for r in rows}),
                'duplicate_control_output_groups': [keys for keys in control_hashes.values() if len(keys) > 1],
+               'control_unique_rgb_pixels': len(pixel_hashes),
+               'duplicate_control_pixel_groups': [keys for keys in pixel_hashes.values() if len(keys) > 1],
                'uniqueness_note': 'Counts distinguish identical output file bytes, not independent people or trials.',
+               'pixel_uniqueness_note': 'RGB pixel hashes include dimensions and ignore PNG metadata. Repeated content is not an independent replicate.',
                'independent_human_rating_complete': False,
                'design_note': 'Post-hoc diagnostic on reused histories; not a new held-out generalization test.',
                'control_prompt_cost': {'model_calls': sum(r['model_calls'] for r in transcripts),

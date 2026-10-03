@@ -1,7 +1,9 @@
 """Verify all control outputs and measure only previously unseen face images."""
 import importlib.util
+import hashlib
 import json
 from pathlib import Path
+from PIL import Image
 from prepare import ROOT, REPO, SOURCE, save, sha
 from run import signature, verify_files
 
@@ -55,7 +57,13 @@ def main():
                 assert references[person] is not None
             count, embedding = common.face(app, ROOT / row['folder'] / 'output.png')
             similarity = float(common.np.dot(references[person], embedding)) if embedding is not None else None
-        rows.append({**row, 'face_count': count, 'identity_similarity': similarity})
+        with Image.open(ROOT / row['folder'] / 'output.png') as image:
+            rgb = image.convert('RGB')
+            # Include shape and mode so differently shaped rasters cannot collide by concatenation.
+            pixel_hash = hashlib.sha256(
+                f'RGB:{rgb.width}x{rgb.height}:'.encode() + rgb.tobytes()).hexdigest()
+        rows.append({**row, 'face_count': count, 'identity_similarity': similarity,
+                     'rgb_pixel_sha256': pixel_hash})
     save(ROOT / 'face-results.json', {'rows': rows,
          'metric': 'InsightFace buffalo_l original-to-output cosine similarity',
          'source_face_results_sha256': sha(SOURCE / 'face-results.json')})

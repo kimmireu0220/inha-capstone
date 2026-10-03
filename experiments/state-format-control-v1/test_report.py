@@ -36,7 +36,8 @@ class ReportIntegrationTest(unittest.TestCase):
                             row = {'person': f'R{p:02d}', 'history': f'U{h}', 'seed': seed, 'mode': mode,
                                    'output_sha256': digest, 'face_count': 1, 'identity_similarity': 0.8}
                             if mode == 'structured':
-                                control.append({**row, 'reused': True, 'seconds': 0})
+                                control.append({**row, 'reused': True, 'seconds': 0,
+                                                'rgb_pixel_sha256': 'state-pixels'})
                             else:
                                 base.append(row)
             pending, new_primary, new_secondary = {}, {}, {}
@@ -45,7 +46,8 @@ class ReportIntegrationTest(unittest.TestCase):
                 del linked[key]
                 pending[key] = {'output_sha256': 'new-image'}
                 control[0].update({'reused': False, 'seconds': 12,
-                                  'output_sha256': 'wrong' if mismatched_hash else 'new-image'})
+                                  'output_sha256': 'wrong' if mismatched_hash else 'new-image',
+                                  'rgb_pixel_sha256': 'new-pixels'})
                 new_primary[key] = {'scores': [1, 0, None, 1, 0, 1]}
                 new_secondary[key] = {'scores': [1, 1, 0, 1, 0, 1]}
                 write(root, 'ai-ratings.json', {'rater_type': 'AI', 'method_masked': True,
@@ -77,6 +79,7 @@ class ReportIntegrationTest(unittest.TestCase):
         self.assertEqual(result['control_new_images'], 0)
         self.assertEqual(result['control_unique_output_hashes'], 1)
         self.assertEqual(result['all_unique_output_hashes'], 2)
+        self.assertEqual(result['control_unique_rgb_pixels'], 1)
         self.assertEqual(len(result['duplicate_control_output_groups'][0]), 48)
         self.assertEqual(result['control_prompt_cost']['model_calls'], 8)
         self.assertEqual(result['primary_ai']['by_mode']['structured']['achieved'], 288)
@@ -89,6 +92,7 @@ class ReportIntegrationTest(unittest.TestCase):
         self.assertEqual(result['control_new_images'], 1)
         self.assertEqual(result['control_unique_output_hashes'], 2)
         self.assertEqual(result['all_unique_output_hashes'], 3)
+        self.assertEqual(result['control_unique_rgb_pixels'], 2)
         self.assertEqual(len(result['duplicate_control_output_groups'][0]), 47)
         self.assertEqual(result['control_generation_seconds'], 12)
         primary = result['primary_ai']['by_mode']
