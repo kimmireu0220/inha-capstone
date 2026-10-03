@@ -13,6 +13,7 @@ sources = {
     "real_policy_pilot": "experiments/real-people-v1/results.json",
     "prompt_synthesis": "experiments/prompt-synthesis-expanded-v1/summary.json",
     "automatic_state": "experiments/state-tracking-v2/summary.json",
+    "structured_control": "experiments/state-format-control-v1/summary.json",
 }
 data = {key: json.loads((ROOT / path).read_text()) for key, path in sources.items()}
 checked = []
@@ -87,6 +88,27 @@ for numerator, denominator in [('correct_slots', 'total_slots'), ('changed_corre
     expect(f'{state[numerator]}/{state[denominator]}')
 agreement = automatic['second_ai']['agreement']
 expect(f"{agreement['same']}/{agreement['comparable']}")
+
+control = data['structured_control']
+assert control['complete'] and control['conditions'] == 144
+assert control['independent_people'] == 6 and control['new_control_conditions'] == 48
+assert control['control_reused_images'] + control['control_new_images'] == 48
+assert control['independent_human_rating_complete'] is False
+for name, digest in control['source_sha256'].items():
+    assert hashlib.sha256((ROOT / 'experiments' / name).read_bytes()).hexdigest() == digest, \
+        f'Structured-control summary is stale: {name}'
+for mode, label in [('agent', '에이전트 종합'), ('tracked', '자동 상태 갱신'),
+                    ('structured', '전체 대화 상태 추출')]:
+    primary = control['primary_ai']['by_mode'][mode]
+    secondary = control['secondary_ai']['by_mode'][mode]
+    assert primary['images'] == secondary['images'] == 48
+    assert primary['target_total'] == secondary['target_total'] == 288
+    if mode != 'structured':
+        assert primary == automatic['by_mode'][mode], 'Reused primary results changed'
+        assert secondary == automatic['second_ai']['by_mode'][mode], 'Reused secondary results changed'
+    expect_row([label, f"{primary['achieved']}/288", f"{secondary['achieved']}/288",
+                f"{primary['identity_mean']:.6f}"])
+expect(f"{control['state_extraction']['correct_slots']}/{control['state_extraction']['total_slots']}")
 
 evidence = {
     "date": "2026-10-03",
