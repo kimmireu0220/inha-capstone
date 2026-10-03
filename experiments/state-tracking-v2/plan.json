@@ -1,0 +1,50 @@
+{
+  "people": {
+    "R01": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+    "R02": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+    "R03": "8c023850033a9cfb17ac700809c328469a45187d68a86148057ff885afe06336",
+    "R04": "004dab134961d6b3963bc21d7ade1196dfec38fe22b38645fc9061b680767ffa",
+    "R05": "4ec5397e5c9144908d38e7a68f7f49b1fa05f0fa54b54ed31ac187f2ac8743fa",
+    "R06": "c879e0d07fe0b3b34889fcbcc678ceebe2ffde424d884d5f206d8f8fddcec278"
+  },
+  "prompts": {
+    "U1-agent": "66a0733dc36d9bd42ed85e209e97ba04e73e9d3ef5efe8637f027a8e67f8f575",
+    "U1-tracked": "7ce0eb254fd5b61e884861cedf9c590b5760d195a8f5af88a2629d32b9144a16",
+    "U2-agent": "0e895d8eb289e6eb497f0d5b4f60704b0374a81d9a8f3f66e9baade6321a06a8",
+    "U2-tracked": "75ec4a2617e1dba8dd3477a2be5a4d738ec5d175182adde9df3a94e444db227a",
+    "U3-agent": "f4e8f9e89b4117c06c3ab8c7f86007120fbac6662028215a82b6419abda3a25c",
+    "U3-tracked": "53ab8ecbd34573b049026066a8614f88646cb9bf4954543656e939b0cf7e4d48",
+    "U4-agent": "64eb67d443ea1d99e8393b521057dcc970de5c1a45d444e8819f4892e33418c0",
+    "U4-tracked": "3c6966fb62780902e5d71c404a90796f5f76020edabbdb2bdc03f9083435dda1"
+  },
+  "prepare_manifest_sha256": "6abd1c277befbb9c44aca266ae30b0038de03dc1cc85a979c92871150fe35c7f",
+  "protocol_sha256": "2fd8ec155195ff422dcb0bb56271fbd5f6923323227ff69fca5a53030f897a63",
+  "benchmark_sha256": "49940830ed0802726e08244fed192172fa42df8b740698f3137dbe589b702aef",
+  "method_sha256": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+  "runner_sha256": "862ca75233f713483487342900242f9007e69df94515b5f97f58461020203b6c",
+  "people_order": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06"
+  ],
+  "histories": [
+    "U1",
+    "U2",
+    "U3",
+    "U4"
+  ],
+  "seeds": [
+    42,
+    314
+  ],
+  "modes": [
+    "agent",
+    "tracked"
+  ],
+  "model": "Runpod/FLUX.2-klein-4B-mflux-4bit",
+  "steps": 4,
+  "expected_outputs": 96
+}

@@ -58,6 +58,28 @@ def main():
         'by_mode': by_mode, 'by_person': by_person, 'by_history': by_history,
         'tracked_minus_agent_by_person': differences, 'prompt_cost': prompt_cost,
         'state_extraction': json.loads((ROOT / 'state-scores.json').read_text())}
+    secondary = json.loads((ROOT / 'second-ai-ratings.json').read_text())
+    assert secondary['rater_type'] == 'AI' and secondary['method_masked'] is True
+    assert set(secondary['ratings']) == {key + '/' + label for key in mapping for label in 'AB'}
+    agreement, comparable, unavailable = 0, 0, 0
+    secondary_rows = []
+    for row in rows:
+        key = f"{row['person']}-{row['history']}-{row['seed']}/{row['blind_label']}"
+        scores = secondary['ratings'][key]['scores']
+        for primary, other in zip(row['scores'], scores):
+            if primary is None or other is None:
+                unavailable += 1
+            else:
+                comparable += 1
+                agreement += primary == other
+        secondary_rows.append({**row, 'scores': scores})
+    summary['second_ai'] = {'model': secondary['model'], 'revision': secondary['revision'],
+        'by_mode': {mode: summarize([r for r in secondary_rows if r['mode'] == mode]) for mode in MODES},
+        'by_person': {p: {m: summarize([r for r in secondary_rows if r['person'] == p and r['mode'] == m])
+                         for m in MODES} for p in people},
+        'agreement': {'same': agreement, 'comparable': comparable, 'unavailable': unavailable,
+                      'scope': 'Descriptive AI agreement, not independent human validation'},
+        'parse_failures': sum(r['parse_error'] is not None for r in secondary['ratings'].values())}
     (ROOT / 'joined-results.json').write_text(json.dumps({'rows': rows}, indent=2) + '\n')
     (ROOT / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     print(json.dumps({'by_mode': by_mode, 'person_differences': differences}, indent=2))

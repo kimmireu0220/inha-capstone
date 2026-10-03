@@ -1,0 +1,784 @@
+{
+  "turns": [
+    {
+      "history": "U1",
+      "turn": 1,
+      "expected": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 2,
+      "expected": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 3,
+      "expected": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 4,
+      "expected": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 5,
+      "expected": {
+        "jacket": "green",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 6,
+      "expected": {
+        "jacket": "green",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "white_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 7,
+      "expected": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "gold_round",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U1",
+      "turn": 8,
+      "expected": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 1,
+      "expected": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "observed": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 2,
+      "expected": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 3,
+      "expected": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 4,
+      "expected": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "navy",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 5,
+      "expected": {
+        "jacket": "none",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "none",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 3,
+      "changed_total": 3,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 6,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 7,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U2",
+      "turn": 8,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "none",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "none",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 1,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 2,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 3,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 4,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 5,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 6,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "none"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 7,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "none"
+      },
+      "correct_slots": 6,
+      "changed_correct": 0,
+      "changed_total": 0,
+      "accepted": true
+    },
+    {
+      "history": "U3",
+      "turn": 8,
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 1,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 2,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 3,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 4,
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 5,
+      "expected": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 6,
+      "changed_correct": 3,
+      "changed_total": 3,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 6,
+      "expected": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 4,
+      "changed_correct": 0,
+      "changed_total": 2,
+      "accepted": false
+    },
+    {
+      "history": "U4",
+      "turn": 7,
+      "expected": {
+        "jacket": "gray",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "gray_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 4,
+      "changed_correct": 1,
+      "changed_total": 1,
+      "accepted": true
+    },
+    {
+      "history": "U4",
+      "turn": 8,
+      "expected": {
+        "jacket": "gray",
+        "top": "gray_sweater",
+        "pin": "red_triangle_left",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "gray_sweater",
+        "pin": "red_triangle_left",
+        "necklace": "none",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "correct_slots": 4,
+      "changed_correct": 2,
+      "changed_total": 2,
+      "accepted": true
+    }
+  ],
+  "correct_slots": 186,
+  "total_slots": 192,
+  "changed_correct": 50,
+  "changed_total": 52,
+  "final_correct_slots": 22,
+  "final_total_slots": 24,
+  "oracle_prompt_matches": {
+    "U1": true,
+    "U2": true,
+    "U3": true,
+    "U4": false
+  }
+}
