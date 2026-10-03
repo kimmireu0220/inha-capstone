@@ -38,7 +38,7 @@ for label,txt in [('요약: ',ko),('Abstract: ',abstract),('Keywords: ','Iterati
  p=d.add_paragraph();p.paragraph_format.first_line_indent=Pt(0);p.add_run(label).bold=True;p.add_run(txt)
 lines=s.split('## 1. 서론')[1];lines='## 1. 서론'+lines
 lines=lines.splitlines();i=0;tn=0;roman=['I','II','III','IV','V','VI','VII']
-caps=['합성 인물의 입력 정책 비교','실제 인물의 최종 목표와 얼굴 유사도','인물별 목표와 얼굴 유사도','편집 이력별 목표 충족']
+caps=['합성 인물의 입력 정책 비교','실제 인물의 최종 목표와 얼굴 유사도','인물별 목표와 얼굴 유사도','편집 이력별 목표 충족','자동 상태 갱신의 목표 충족과 얼굴 유사도','새 대화의 인물별 비교']
 while i<len(lines):
  line=lines[i]
  if not line:i+=1;continue

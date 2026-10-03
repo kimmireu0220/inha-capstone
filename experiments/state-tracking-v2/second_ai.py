@@ -11,6 +11,7 @@ from mlx_vlm.utils import load_config
 
 ROOT = Path(__file__).resolve().parent
 MODEL = 'mlx-community/Qwen2.5-VL-3B-Instruct-4bit'
+REVISION = '46d4cf06a06ffc1a766c214174f9cbed2f45bcab'
 GOALS = {
     'U1': ['No blazer or jacket', 'A navy blue crew-neck sweater', 'No lapel pin',
            'No necklace chain or pendant', 'Pale blue studio background', 'One green potted plant in the background'],
@@ -24,7 +25,7 @@ GOALS = {
 
 
 def main():
-    path = snapshot_download(MODEL)
+    path = snapshot_download(MODEL, revision=REVISION)
     model, processor = load(path)
     config = load_config(path)
     output = ROOT / 'second-ai-ratings.json'
@@ -62,7 +63,9 @@ def main():
                 scores, error = [None] * 6, repr(exc)
             result['ratings'][rating_key] = {'scores': scores, 'raw': raw,
                 'seconds': time.monotonic() - start, 'parse_error': error}
-            output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+            temporary = output.with_suffix('.json.tmp')
+            temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+            temporary.replace(output)
             print(rating_key, scores, flush=True)
 
 

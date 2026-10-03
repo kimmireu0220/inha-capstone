@@ -1,4 +1,5 @@
 """Join completed AI ratings with masked methods and face measurements."""
+import hashlib
 import json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
@@ -26,6 +27,7 @@ def main():
     assert len(mapping) == 48 and set(ratings['ratings']) == set(mapping)
     measurements = json.loads((ROOT / 'face-results.json').read_text())['rows']
     metrics = {(r['person'], r['history'], r['seed'], r['mode']): r for r in measurements}
+    assert len(measurements) == len(metrics) == 96
     rows = []
     for key, values in ratings['ratings'].items():
         person, history, seed = key.split('-')
@@ -87,6 +89,11 @@ def main():
     state['total_turns'] = len(state['turns'])
     state['joint_correct_final_dialogues'] = sum(r['correct_slots'] == 6 for r in state['turns'] if r['turn'] == 8)
     state['total_dialogues'] = len(histories)
+    inputs = ['ai-ratings.json', 'second-ai-ratings.json', 'face-results.json',
+              'state-scores.json', 'blinding-map.json', 'plan.json', 'verification.json']
+    inputs += [f'prompts/{h}-transcript.json' for h in histories]
+    summary['source_sha256'] = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+                               for name in inputs}
     (ROOT / 'joined-results.json').write_text(json.dumps({'rows': rows}, indent=2) + '\n')
     (ROOT / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     print(json.dumps({'by_mode': by_mode, 'person_differences': differences}, indent=2))
