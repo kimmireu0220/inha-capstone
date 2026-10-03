@@ -80,6 +80,11 @@ def main():
         'agreement': {'same': agreement, 'comparable': comparable, 'unavailable': unavailable,
                       'scope': 'Descriptive AI agreement, not independent human validation'},
         'parse_failures': sum(r['parse_error'] is not None for r in secondary['ratings'].values())}
+    state = summary['state_extraction']
+    state['joint_correct_turns'] = sum(r['correct_slots'] == 6 for r in state['turns'])
+    state['total_turns'] = len(state['turns'])
+    state['joint_correct_final_dialogues'] = sum(r['correct_slots'] == 6 for r in state['turns'] if r['turn'] == 8)
+    state['total_dialogues'] = len(histories)
     (ROOT / 'joined-results.json').write_text(json.dumps({'rows': rows}, indent=2) + '\n')
     (ROOT / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     print(json.dumps({'by_mode': by_mode, 'person_differences': differences}, indent=2))

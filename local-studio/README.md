@@ -29,3 +29,11 @@ M1·16GB에서 검증한 공개 모델을 연결한 로컬 전용 시제품. 인
 2026-09-13: 불필요한 설명을 줄이고 세부 설정을 접는 화면으로 변경했다. 브라우저에서 한국어 요청→실제 생성(101.26초)→수동 변경→버전 복원을 확인했다. [화면 기능 검증 기록](checks/ui-verification.json). 기존 [생성 검증](verification.json)의 95.28초와 서로 다른 단일 실행 기록이며 성능 평균이나 사용자 만족도 평가가 아니다.
 
 두 생성 모드·시드 저장·버전 비교를 구현했다. [6인물 확대 비교](../experiments/studio-multiperson-v1/RESULTS.md)에서 출력 72개와 최종 18쌍의 MAE·SSIM·LPIPS·ArcFace를 분석했다. P04·두 시드 [예비 비교](../experiments/studio-policy-v1/RESULTS.md)와 [화면 검증](checks/modes-ui-verification.json)은 별도로 보존한다.
+
+## 연구용 6항목 상태 갱신
+
+`request_state.py`는 새 요청 하나에서 재킷·상의·핀·목걸이·배경·소품의 변경을 추출하고, 코드가 이전 상태와 삭제값을 유지한다. `track_requests.py`에 `{"requests":["요청 1", "요청 2"]}`를 표준 입력으로 주면 최종 상태·프롬프트·갱신 기록을 반환한다. 실행 환경은 `.venv-local-prompt/bin/python`이다.
+
+이 기능은 위의 3항목 웹 화면과 분리된 연구용 CLI다. 지원 값은 코드의 제한된 어휘를 따르며, 범용 요구 해석을 보장하지 않는다. 개발용 대화 4종은 모든 턴에서 정답 상태와 일치했다. 별도로 고정한 새 대화 4종에서는 턴별 186/192항목, 최종 22/24항목이 맞았고 마지막 대화의 배경·소품 교체는 틀렸다. [새 이미지 비교 실험](../experiments/state-tracking-v2/README.md)에서 오류를 포함한 상태를 그대로 사용한다.
+
+검사: `.venv-local-prompt/bin/python local-studio/checks/test_request_state.py`는 모델 없이 7개 상태 갱신 검사를 실행한다. `check_request_extractor.py`는 실제 모델을 사용하는 개발용 점검이다.
