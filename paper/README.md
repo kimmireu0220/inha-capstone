@@ -18,4 +18,6 @@
 - [본문 수치 대조 기록](evidence.json)
 - [문서 렌더링 검증 기록](render-verification.json)
 
-재생성: 번들 Python으로 `python paper/audit.py`와 `python paper/build_inha.py`를 실행하고, 번들 `render_docx.py`로 Word를 PDF와 페이지 이미지로 렌더링한다. 한글 글꼴이 렌더러의 임시 HOME에서 검색되는지 확인해야 한다. 전체 페이지를 눈으로 확인한 뒤 PDF를 교체한다. 원본 이미지와 생성 기록은 독립 검증을 위해 실험 폴더에 보존한다.
+재생성: 번들 Python으로 `python paper/audit.py`와 `python paper/build_inha.py`를 실행한다. 초안 검토는 `build_inha.py --output-dir .codex-build/paper-draft`로 최종 산출물을 덮어쓰지 않고 할 수 있다.
+
+`python paper/render_inha.py --runtime-root <의존성 로더가 반환한 dependencies 경로> --renderer <문서 스킬의 render_docx.py 경로> --output-dir .codex-build/paper-render`로 번들 렌더러를 실행한다. 이 보조 스크립트는 설치된 사용자·시스템 글꼴을 Fontconfig에 명시해 임시 렌더링 환경에서 한글이 사라지는 문제를 방지한다. 글꼴 경로가 다른 환경에서는 `--font-dir`를 지정한다. 전체 페이지의 한글과 표·그림 배치를 눈으로 확인한 뒤 PDF를 교체한다. 원본 이미지와 생성 기록은 독립 검증을 위해 실험 폴더에 보존한다.

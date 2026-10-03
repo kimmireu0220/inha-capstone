@@ -1,11 +1,16 @@
 from pathlib import Path
-import re,json
+import argparse,re,json
 from docx import Document
 from docx.shared import Pt,Cm,RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 R=Path(__file__).resolve().parent
+parser=argparse.ArgumentParser(description='Build the paper using the established Inha review layout.')
+parser.add_argument('--output-dir',type=Path,default=R,
+                    help='Use a private directory for draft layout review; defaults to paper/.')
+OUT=parser.parse_args().output_dir.resolve()
+OUT.mkdir(parents=True,exist_ok=True)
 s=(R/'manuscript.ko.md').read_text().strip()
 abstract='Iterative portrait editing requires distinguishing accumulated image changes from errors in extracting the final request. Across 18 final-output pairs from six synthetic identities, original-referenced regeneration achieved higher mean ArcFace similarity than sequential editing (0.922 versus 0.714). In a separate comparison using six real-person photos, three eight-turn dialogues and two seeds, natural-language agent synthesis improved goal fulfillment over full-history prompting (168/216 versus 96/216), but reduced facial similarity (0.585 versus 0.733). A follow-up study generated 96 images from four new dialogues to evaluate extracting changes from each new request and applying them to a stored six-slot state. Primary AI ratings increased from 194/288 goals for natural-language synthesis to 240/288 for state updating, while mean ArcFace increased from 0.586 to 0.675. State updating nevertheless performed worse on one dialogue after missing background and prop replacements. A second AI showed a smaller difference, 257/288 versus 261/288, and the two evaluators agreed on only 34/96 pin judgments. The findings motivate joint examination of final-request management, image-model control and evaluation reliability. This exploratory study is limited to one image model, a small number of people and developer-written dialogues, without independent human evaluation.'
 auth=json.loads((R/'authors.json').read_text()) if (R/'authors.json').exists() else {'korean':'________________','english':'________________','advisor_korean':'________________','advisor_english':'________________'}
@@ -78,9 +83,9 @@ for sec in d.sections:
  if not f._p.find(qn('w:fldSimple')) is not None:
   e=OxmlElement('w:fldSimple');e.set(qn('w:instr'),'PAGE');f._p.append(e)
 d.core_properties.title=s.splitlines()[0][2:];d.core_properties.author='' if '_' in auth['korean'] else auth['korean']
-d.save(R/'manuscript.inha.docx')
+d.save(OUT/'manuscript.inha.docx')
 author_line='저자: '+auth['korean']
 if auth['english'].strip('_ ,'):
  author_line+=' ('+auth['english']+')'
-(R/'manuscript.inha.md').write_text(s.replace('## 초록',author_line+'\n\n지도교수: '+auth['advisor_korean']+'\n\n## 초록').replace('## 1. 서론','## Abstract\n\n'+abstract+'\n\n## 1. 서론')+'\n')
+(OUT/'manuscript.inha.md').write_text(s.replace('## 초록',author_line+'\n\n지도교수: '+auth['advisor_korean']+'\n\n## 초록').replace('## 1. 서론','## Abstract\n\n'+abstract+'\n\n## 1. 서론')+'\n')
 print('Built Inha reference format')
