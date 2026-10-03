@@ -1,33 +1,50 @@
 {
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "slides": 36,
-  "main_slides": 26,
+  "revision_id": "1wnmjHcnFjmjSQ",
+  "slides": 40,
+  "main_slides": 30,
   "appendix_slides": 10,
+  "page_numbers": "1-40",
   "sections": {
-    "initial_10_step_synthetic_experiment": "slides 2-9; six people, one 10-step run each, six final pairs",
-    "separate_3_step_synthetic_experiment": "slide 21; six people, three repetitions each, 18 final pairs",
-    "real_person_prompt_comparison": "slides 22-24; six people, three eight-turn histories, two seeds, three prompt methods, 108 images",
-    "integrated_conclusion": "slide 25"
+    "initial_10_step": "2-9; six people, six final pairs",
+    "synthetic_3_step": "21; six people, three repetitions, 18 final pairs",
+    "real_prompt": "22-24; 108 images",
+    "state_update": "25-27; 96 images",
+    "full_history_control": "28; 48 conditions, 36 distinct RGB images",
+    "conclusion": "29",
+    "resources": "30"
   },
   "paper_alignment": {
-    "synthetic_arcface": [0.922054, 0.713703],
-    "synthetic_face_lpips": [0.087120, 0.108710],
-    "synthetic_paired_comparisons": 18,
-    "real_person_goal_scores": [96, 168, 199],
-    "real_person_goal_denominator_per_method": 216,
-    "real_person_arcface": [0.732527, 0.585017, 0.734518],
-    "caveats_present": ["different synthetic generation counts", "structured final state is an upper-bound reference", "six independent people", "one evaluator", "one generation model"]
+    "primary_goals": [
+      194,
+      240,
+      127
+    ],
+    "secondary_goals": [
+      257,
+      261,
+      142
+    ],
+    "goal_denominator_per_method": 288,
+    "arcface": [
+      0.585593,
+      0.675335,
+      0.846995
+    ],
+    "independent_people": 6,
+    "independent_human_evaluation": false
   },
-  "speaker_notes": {
-    "slides_with_explanations_and_source_links": 36,
-    "new_or_revised_slides": [1, 21, 22, 23, 24, 25]
-  },
-  "page_numbers": "1-36, verified after insertion",
   "visual_check": {
-    "new_or_revised_slides_reviewed": [1, 22, 23, 24, 25],
-    "visible_text_overlap_found": false,
-    "method": "Google Slides API thumbnails at 1600 x 900"
+    "all_slides_reviewed": true,
+    "visible_overlap_or_clipping_found": false,
+    "method": "Full-deck browser exportGsuite PDF rendered with bundled Poppler at 100dpi; all 40 PNGs inspected",
+    "pdf_sha256": "31ad4a93d34137b416eac4cba7de27833f39dc4a384679f284da1e9a5e499201",
+    "native_export_fallback_reason": "Drive PDF helper did not materialize its reference-backed PDF; browser export succeeded"
   },
-  "prior_review": "The original 33-slide version was visually reviewed on 2026-09-29; unchanged slides retain that review."
+  "structural_issue_checker": {
+    "total_issues": 0,
+    "raw_snapshot_sha256": "b75c2e09d3b33b3d5ca21c2ef4295665fb3ee52f60ebc04167aead74edf6219a"
+  },
+  "scope": "Presentation fidelity and source alignment, not independent validation of AI ratings"
 }

@@ -1,0 +1,911 @@
+{
+  "complete": true,
+  "conditions": 144,
+  "independent_people": 6,
+  "new_control_conditions": 48,
+  "control_reused_images": 0,
+  "control_new_images": 48,
+  "control_unique_output_hashes": 48,
+  "all_unique_output_hashes": 144,
+  "duplicate_control_output_groups": [],
+  "control_unique_rgb_pixels": 36,
+  "duplicate_control_pixel_groups": [
+    [
+      "R01-U2-314",
+      "R01-U3-314"
+    ],
+    [
+      "R01-U2-42",
+      "R01-U3-42"
+    ],
+    [
+      "R02-U2-314",
+      "R02-U3-314"
+    ],
+    [
+      "R02-U2-42",
+      "R02-U3-42"
+    ],
+    [
+      "R03-U2-314",
+      "R03-U3-314"
+    ],
+    [
+      "R03-U2-42",
+      "R03-U3-42"
+    ],
+    [
+      "R04-U2-314",
+      "R04-U3-314"
+    ],
+    [
+      "R04-U2-42",
+      "R04-U3-42"
+    ],
+    [
+      "R05-U2-314",
+      "R05-U3-314"
+    ],
+    [
+      "R05-U2-42",
+      "R05-U3-42"
+    ],
+    [
+      "R06-U2-314",
+      "R06-U3-314"
+    ],
+    [
+      "R06-U2-42",
+      "R06-U3-42"
+    ]
+  ],
+  "uniqueness_note": "Counts distinguish identical output file bytes, not independent people or trials.",
+  "pixel_uniqueness_note": "RGB pixel hashes include dimensions and ignore PNG metadata. Repeated content is not an independent replicate.",
+  "independent_human_rating_complete": false,
+  "design_note": "Post-hoc diagnostic on reused histories; not a new held-out generalization test.",
+  "control_prompt_cost": {
+    "model_calls": 8,
+    "seconds": 61.386839834995044
+  },
+  "control_generation_seconds": 5428.718178621995,
+  "state_extraction": {
+    "histories": [
+      {
+        "history": "U1",
+        "expected": {
+          "jacket": "none",
+          "top": "navy_sweater",
+          "pin": "none",
+          "necklace": "none",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "navy_sweater",
+          "pin": "none",
+          "necklace": "none",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 5
+      },
+      {
+        "history": "U2",
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "none",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "original",
+          "top": "original",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "correct_slots": 0
+      },
+      {
+        "history": "U3",
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "original",
+          "top": "original",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "correct_slots": 0
+      },
+      {
+        "history": "U4",
+        "expected": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "none",
+          "background": "brick_studio",
+          "prop": "none"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "none",
+          "background": "blue_studio",
+          "prop": "none"
+        },
+        "correct_slots": 5
+      }
+    ],
+    "total_slots": 24,
+    "correct_slots": 10,
+    "exact_histories": 0
+  },
+  "primary_ai": {
+    "by_mode": {
+      "agent": {
+        "images": 48,
+        "achieved": 194,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.5855931299203728,
+        "single_face": 48,
+        "cancelled_achieved": 26,
+        "cancelled_total": 72
+      },
+      "tracked": {
+        "images": 48,
+        "achieved": 240,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.6753352801475635,
+        "single_face": 48,
+        "cancelled_achieved": 72,
+        "cancelled_total": 72
+      },
+      "structured": {
+        "images": 48,
+        "achieved": 127,
+        "target_total": 288,
+        "uncertain": 1,
+        "identity_mean": 0.8469947261947549,
+        "single_face": 48,
+        "cancelled_achieved": 48,
+        "cancelled_total": 72
+      }
+    },
+    "by_person": {
+      "R01": {
+        "agent": {
+          "images": 8,
+          "achieved": 33,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.3520326511348709,
+          "single_face": 8,
+          "cancelled_achieved": 5,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 40,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.3766104830359361,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 20,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6694807231433645,
+          "single_face": 8,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        }
+      },
+      "R02": {
+        "agent": {
+          "images": 8,
+          "achieved": 33,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7076592026350363,
+          "single_face": 8,
+          "cancelled_achieved": 5,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 40,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.8054153121708371,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 23,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9042665942556039,
+          "single_face": 8,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        }
+      },
+      "R03": {
+        "agent": {
+          "images": 8,
+          "achieved": 32,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6656994504595368,
+          "single_face": 8,
+          "cancelled_achieved": 4,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 40,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.765156367483079,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 22,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9226853214092979,
+          "single_face": 8,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        }
+      },
+      "R04": {
+        "agent": {
+          "images": 8,
+          "achieved": 32,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.37369773115311383,
+          "single_face": 8,
+          "cancelled_achieved": 4,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 40,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.5059339968159838,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 20,
+          "target_total": 48,
+          "uncertain": 1,
+          "identity_mean": 0.7179672884191961,
+          "single_face": 8,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        }
+      },
+      "R05": {
+        "agent": {
+          "images": 8,
+          "achieved": 32,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7739519723858771,
+          "single_face": 8,
+          "cancelled_achieved": 4,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 40,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.838471498194301,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 20,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9338727920724356,
+          "single_face": 8,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        }
+      },
+      "R06": {
+        "agent": {
+          "images": 8,
+          "achieved": 32,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6405177717538015,
+          "single_face": 8,
+          "cancelled_achieved": 4,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 40,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7604240231852445,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 22,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9336956378686313,
+          "single_face": 8,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        }
+      }
+    },
+    "by_history": {
+      "U1": {
+        "agent": {
+          "images": 12,
+          "achieved": 13,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.7436556331209064,
+          "single_face": 12,
+          "cancelled_achieved": 1,
+          "cancelled_total": 36
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 72,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.8169683208953895,
+          "single_face": 12,
+          "cancelled_achieved": 36,
+          "cancelled_total": 36
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 60,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.7613237151797247,
+          "single_face": 12,
+          "cancelled_achieved": 24,
+          "cancelled_total": 36
+        }
+      },
+      "U2": {
+        "agent": {
+          "images": 12,
+          "achieved": 60,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.4907636787206113,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 60,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6242256278248224,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 6,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.9190901682685025,
+          "single_face": 12,
+          "cancelled_achieved": 0,
+          "cancelled_total": 12
+        }
+      },
+      "U3": {
+        "agent": {
+          "images": 12,
+          "achieved": 62,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.48178106657524866,
+          "single_face": 12,
+          "cancelled_achieved": 2,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 72,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6257342719998945,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 12,
+          "target_total": 72,
+          "uncertain": 1,
+          "identity_mean": 0.9190901682685025,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      },
+      "U4": {
+        "agent": {
+          "images": 12,
+          "achieved": 59,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6261721412647246,
+          "single_face": 12,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 36,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6344128998701478,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 49,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.7884748530622897,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      }
+    }
+  },
+  "secondary_ai": {
+    "by_mode": {
+      "agent": {
+        "images": 48,
+        "achieved": 257,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.5855931299203728,
+        "single_face": 48,
+        "cancelled_achieved": 52,
+        "cancelled_total": 72
+      },
+      "tracked": {
+        "images": 48,
+        "achieved": 261,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.6753352801475635,
+        "single_face": 48,
+        "cancelled_achieved": 70,
+        "cancelled_total": 72
+      },
+      "structured": {
+        "images": 48,
+        "achieved": 142,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.8469947261947549,
+        "single_face": 48,
+        "cancelled_achieved": 60,
+        "cancelled_total": 72
+      }
+    },
+    "by_person": {
+      "R01": {
+        "agent": {
+          "images": 8,
+          "achieved": 43,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.3520326511348709,
+          "single_face": 8,
+          "cancelled_achieved": 9,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.3766104830359361,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 23,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6694807231433645,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      },
+      "R02": {
+        "agent": {
+          "images": 8,
+          "achieved": 47,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7076592026350363,
+          "single_face": 8,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 41,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.8054153121708371,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 24,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9042665942556039,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      },
+      "R03": {
+        "agent": {
+          "images": 8,
+          "achieved": 48,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6656994504595368,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.765156367483079,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 23,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9226853214092979,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      },
+      "R04": {
+        "agent": {
+          "images": 8,
+          "achieved": 36,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.37369773115311383,
+          "single_face": 8,
+          "cancelled_achieved": 4,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.5059339968159838,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 23,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7179672884191961,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      },
+      "R05": {
+        "agent": {
+          "images": 8,
+          "achieved": 47,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7739519723858771,
+          "single_face": 8,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.838471498194301,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 24,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9338727920724356,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      },
+      "R06": {
+        "agent": {
+          "images": 8,
+          "achieved": 36,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6405177717538015,
+          "single_face": 8,
+          "cancelled_achieved": 5,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7604240231852445,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 8,
+          "achieved": 25,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.9336956378686313,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      }
+    },
+    "by_history": {
+      "U1": {
+        "agent": {
+          "images": 12,
+          "achieved": 48,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.7436556331209064,
+          "single_face": 12,
+          "cancelled_achieved": 22,
+          "cancelled_total": 36
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 72,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.8169683208953895,
+          "single_face": 12,
+          "cancelled_achieved": 36,
+          "cancelled_total": 36
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 72,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.7613237151797247,
+          "single_face": 12,
+          "cancelled_achieved": 36,
+          "cancelled_total": 36
+        }
+      },
+      "U2": {
+        "agent": {
+          "images": 12,
+          "achieved": 71,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.4907636787206113,
+          "single_face": 12,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 69,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6242256278248224,
+          "single_face": 12,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 17,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.9190901682685025,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      },
+      "U3": {
+        "agent": {
+          "images": 12,
+          "achieved": 68,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.48178106657524866,
+          "single_face": 12,
+          "cancelled_achieved": 8,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 72,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6257342719998945,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 5,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.9190901682685025,
+          "single_face": 12,
+          "cancelled_achieved": 0,
+          "cancelled_total": 12
+        }
+      },
+      "U4": {
+        "agent": {
+          "images": 12,
+          "achieved": 70,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6261721412647246,
+          "single_face": 12,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 12,
+          "achieved": 48,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.6344128998701478,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "structured": {
+          "images": 12,
+          "achieved": 48,
+          "target_total": 72,
+          "uncertain": 0,
+          "identity_mean": 0.7884748530622897,
+          "single_face": 12,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      }
+    }
+  },
+  "descriptive_ai_agreement_including_reuse": {
+    "same": 693,
+    "comparable": 863,
+    "unavailable": 1
+  },
+  "diagnostic_notes": {
+    "date": "2026-10-03",
+    "secondary_ai_diagnostic": {
+      "finding": "Valid JSON can contradict the requested goal in its own explanation.",
+      "example_key": "R01-U1-314/C",
+      "goal": "No jacket or blazer",
+      "score": 1,
+      "reason": "The person is wearing a blazer.",
+      "action": "Retain raw response and original scores; do not rescore to match primary AI. This is not reliable independent validation."
+    },
+    "primary_evaluation_scope": "48 new pending labels were rated using masked panels. Existing linked scores and method assignments were not opened before completion. Prior image exposure and separate evaluation phases limit masking and cross-method comparisons.",
+    "duplicate_accounting": "All 48 conditions were generated, but 12 U2/U3 pairs have identical RGB pixels despite different PNG metadata. There are 36 distinct control RGB images."
+  },
+  "source_sha256": {
+    "state-format-control-v1/blinding-map.json": "b8fc6ce1b5d1534a68d635264b9a2ec07c39b978d7cab0bbd61bf6e52acfd991",
+    "state-format-control-v1/linked-ratings.json": "6f82b241f364b4d5cc8c68fb49122a8bf8819ab902076b9d284fd9a3f949962f",
+    "state-format-control-v1/pending-ratings.json": "c97bad8c8b0b416ab4a08c4d395e8c139bcbf82922cf6483b9cb506b7cf3de08",
+    "state-format-control-v1/second-ai-ratings.json": "316a834bd4f106d7e6d1ddf1d196ffba1a00810a6e26a3e7e4ef12500e291ee4",
+    "state-format-control-v1/face-results.json": "25b57852acfcb5df69a9be06907cf016451fde51e7267ccfdb5f87412e59caed",
+    "state-format-control-v1/verification.json": "cbf6156d919d548b974a1a5bb13cfc3942ff73bff4673d17de92b8a304985d6f",
+    "state-format-control-v1/plan.json": "acaa480578f05d3787fd8b0af1bdb07e210b4884a3bebfbb33768b53d21f184a",
+    "state-format-control-v1/state-scores.json": "96ed104737b6134e42f58db6a4da0d186c500390ca3d2d6db404a46eb559298a",
+    "state-tracking-v2/ai-ratings.json": "cac1a2696619cf320f0025de29ac9d8c392f747ec0d07d0abe9c5a3737e91e9f",
+    "state-tracking-v2/second-ai-ratings.json": "a834499d7b96ae739dde7d3851347b23497f81f5d7616857fafaec7a61a70cd4",
+    "state-tracking-v2/face-results.json": "5f5686471e7da95a32703d7aac067178b8f45875495428b59b07132ee39f72e3",
+    "state-format-control-v1/prompts/U1-transcript.json": "92f65e2ca74f7f3122127ac7a51f295ca43fa017115a98c09a7409ed8e3f851f",
+    "state-format-control-v1/prompts/U2-transcript.json": "d85b6e5eac0599929a396af133ed522c6be1e7e3e19797704c96cbbef3842f9d",
+    "state-format-control-v1/prompts/U3-transcript.json": "5f9ecc4c64d33b3ba8adc6750acf525ec7d71e7445decfc8917a70aae7d86419",
+    "state-format-control-v1/prompts/U4-transcript.json": "04ace51570da54d674d9e13c84881adeb2f857b8a110ed6cc0af118020baa87e",
+    "state-format-control-v1/ai-ratings.json": "54282c8ff10189d836e1bc0ab001429e9d616a22d5b7403e02303f193a00bbbb",
+    "state-format-control-v1/run_notes.json": "ce58a6518979a797e14f56975c25d7f5f13bd009fedc476fdb1e97cf1339d711"
+  }
+}

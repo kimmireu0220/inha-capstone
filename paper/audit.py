@@ -7,6 +7,7 @@ import json
 ROOT = Path(__file__).resolve().parent.parent
 PAPER = ROOT / "paper"
 manuscript = (PAPER / "manuscript.ko.md").read_text()
+english_abstract = (PAPER / 'abstract.en.txt').read_text().strip()
 sources = {
     "synthetic_policy": "experiments/studio-multiperson-v1/results.json",
     "synthetic_arcface": "experiments/studio-multiperson-v1/arcface-results.json",
@@ -109,12 +110,25 @@ for mode, label in [('agent', '에이전트 종합'), ('tracked', '자동 상태
     expect_row([label, f"{primary['achieved']}/288", f"{secondary['achieved']}/288",
                 f"{primary['identity_mean']:.6f}"])
 expect(f"{control['state_extraction']['correct_slots']}/{control['state_extraction']['total_slots']}")
+assert control['control_unique_rgb_pixels'] == 36
+assert len(control['duplicate_control_pixel_groups']) == 12
+assert all(len(group) == 2 for group in control['duplicate_control_pixel_groups'])
+expect(f"{control['control_prompt_cost']['seconds']:.1f}")
+expect(f"{control['control_generation_seconds']:,.1f}")
+control_agreement = control['descriptive_ai_agreement_including_reuse']
+expect(f"{control_agreement['same']}/{control_agreement['comparable']}")
+for mode in ['agent', 'tracked', 'structured']:
+    for evaluator in ['primary_ai', 'secondary_ai']:
+        row = control[evaluator]['by_mode'][mode]
+        assert f"{row['achieved']}/{row['target_total']}" in english_abstract
+    assert f"{control['primary_ai']['by_mode'][mode]['identity_mean']:.3f}" in english_abstract
 
 evidence = {
     "date": "2026-10-03",
     "passed": True,
     "scope": "Numeric transcription and source-hash checks, not independent scientific validation",
     "manuscript_sha256": hashlib.sha256(manuscript.encode()).hexdigest(),
+    "english_abstract_sha256": hashlib.sha256(english_abstract.encode()).hexdigest(),
     "checked_values": checked,
     "sources": [
         {"name": name, "path": path, "sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest()}
