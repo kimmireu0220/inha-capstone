@@ -1,0 +1,87 @@
+{
+  "histories": [
+    {
+      "history": "U1",
+      "expected": {
+        "jacket": "none",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "correct_slots": 5
+    },
+    {
+      "history": "U2",
+      "expected": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "none",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "observed": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "correct_slots": 0
+    },
+    {
+      "history": "U3",
+      "expected": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "observed": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "original"
+      },
+      "correct_slots": 0
+    },
+    {
+      "history": "U4",
+      "expected": {
+        "jacket": "gray",
+        "top": "gray_sweater",
+        "pin": "red_triangle_left",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "observed": {
+        "jacket": "gray",
+        "top": "gray_sweater",
+        "pin": "red_triangle_left",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "none"
+      },
+      "correct_slots": 5
+    }
+  ],
+  "total_slots": 24,
+  "correct_slots": 10,
+  "exact_histories": 0
+}

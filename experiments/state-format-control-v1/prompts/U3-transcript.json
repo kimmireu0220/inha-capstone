@@ -1,0 +1,36 @@
+{
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "versions": {
+    "mlx-lm": "0.31.3",
+    "mlx": "0.32.2",
+    "transformers": "5.16.1"
+  },
+  "temperature": 0,
+  "max_tokens_per_call": 700,
+  "model_calls": 2,
+  "seconds": 14.5466282089983,
+  "system_prompts": [
+    "Read all chronological image-edit requests and return the FINAL state.\nReturn one JSON object containing exactly the six slots in this schema: {\"jacket\": [\"none\", \"navy\", \"gray\", \"green\", \"beige\", \"original\"], \"top\": [\"ivory_crewneck\", \"white_crewneck\", \"gray_sweater\", \"navy_sweater\", \"original\"], \"pin\": [\"none\", \"silver_circle_right\", \"gold_square_right\", \"red_triangle_left\", \"blue_circle_left\", \"original\"], \"necklace\": [\"none\", \"silver_teardrop\", \"gold_round\", \"original\"], \"background\": [\"office\", \"library\", \"garden\", \"blue_studio\", \"brick_studio\", \"original\"], \"prop\": [\"none\", \"plant\", \"lamp\", \"bench\", \"original\"]}\nLater requests supersede earlier requests for the same slot. Keep other slots.\nRemoval means none; original means restore the source image or never edited.\nDo not return the history, an image prompt, explanations, or extra keys.\nViewer-left/right means the displayed image. Separate background from prop.",
+    "Audit the proposed final state against ALL original chronological requests.\nReturn a corrected complete final JSON state with exactly these six slots: {\"jacket\": [\"none\", \"navy\", \"gray\", \"green\", \"beige\", \"original\"], \"top\": [\"ivory_crewneck\", \"white_crewneck\", \"gray_sweater\", \"navy_sweater\", \"original\"], \"pin\": [\"none\", \"silver_circle_right\", \"gold_square_right\", \"red_triangle_left\", \"blue_circle_left\", \"original\"], \"necklace\": [\"none\", \"silver_teardrop\", \"gold_round\", \"original\"], \"background\": [\"office\", \"library\", \"garden\", \"blue_studio\", \"brick_studio\", \"original\"], \"prop\": [\"none\", \"plant\", \"lamp\", \"bench\", \"original\"]}\nCheck latest replacements, removals, re-additions and unchanged slots.\nRemoval means none; original means restore the source image or never edited.\nViewer-left/right means the displayed image. Separate background from prop.\nReturn JSON only, including all six slots, whether or not corrections are needed."
+  ],
+  "user": "Chronological requests:\n1. Dress the person in a forest-green blazer and an ivory crew-neck shirt.\n2. Use a garden backdrop with a leafy hedge and a single stone bench.\n3. Put one small circular silver pin on the viewer-right lapel.\n4. Add one thin silver necklace with one small teardrop pendant.\n5. Remove the pin, but do not take off the necklace or its pendant.\n6. Switch from the garden and bench to a modern office with no plants, lamps or benches.\n7. Keep the forest-green blazer and the ivory shirt exactly as they are.\n8. Instead of the office, use a library with wooden bookshelves and one warm floor lamp. Keep the necklace unchanged.",
+  "responses": [
+    "{\n  \"jacket\": [\"original\"],\n  \"top\": [\"ivory_crewneck\"],\n  \"pin\": [\"none\"],\n  \"necklace\": [\"silver_teardrop\"],\n  \"background\": [\"library\"],\n  \"prop\": [\"lamp\"]\n}",
+    "{\n  \"jacket\": [\"original\"],\n  \"top\": [\"ivory_crewneck\"],\n  \"pin\": [\"none\"],\n  \"necklace\": [\"silver_teardrop\"],\n  \"background\": [\"library\"],\n  \"prop\": [\"lamp\"]\n}"
+  ],
+  "validation_errors": [
+    "Unsupported value for jacket",
+    "Unsupported value for jacket"
+  ],
+  "selected_response_index": null,
+  "final_state": {
+    "jacket": "original",
+    "top": "original",
+    "pin": "original",
+    "necklace": "original",
+    "background": "original",
+    "prop": "original"
+  },
+  "final": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Keep the original background unchanged.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks."
+}

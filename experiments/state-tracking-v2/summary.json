@@ -1,0 +1,1350 @@
+{
+  "complete": true,
+  "outputs": 96,
+  "pairs": 48,
+  "independent_people": 6,
+  "rater_type": "AI",
+  "independent_human_rating_complete": false,
+  "primary_ai_version_note": "The conversation model setting changed after the first six comparisons were recorded. Exact backend revision is not pinned. This is a method-masked Codex session evaluation; the separate local VLM evaluation has a recorded model revision.",
+  "primary_ai_corrections_before_unmasking": [
+    {
+      "comparison": "R03-U1-42",
+      "label": "A",
+      "goal": 5,
+      "before": 0,
+      "after": 1,
+      "reason": "After adding panel separators, the bookshelves were confirmed to belong exclusively to neighboring panel B."
+    },
+    {
+      "comparison": "R03-U1-314",
+      "label": "A",
+      "goal": 5,
+      "before": 0,
+      "after": 1,
+      "reason": "After adding panel separators, the bookshelves were confirmed to belong exclusively to neighboring panel B."
+    }
+  ],
+  "by_mode": {
+    "agent": {
+      "images": 48,
+      "achieved": 194,
+      "target_total": 288,
+      "uncertain": 0,
+      "identity_mean": 0.5855931299203728,
+      "single_face": 48,
+      "cancelled_achieved": 26,
+      "cancelled_total": 72
+    },
+    "tracked": {
+      "images": 48,
+      "achieved": 240,
+      "target_total": 288,
+      "uncertain": 0,
+      "identity_mean": 0.6753352801475635,
+      "single_face": 48,
+      "cancelled_achieved": 72,
+      "cancelled_total": 72
+    }
+  },
+  "by_person": {
+    "R01": {
+      "agent": {
+        "images": 8,
+        "achieved": 33,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.3520326511348709,
+        "single_face": 8,
+        "cancelled_achieved": 5,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 8,
+        "achieved": 40,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.3766104830359361,
+        "single_face": 8,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "R02": {
+      "agent": {
+        "images": 8,
+        "achieved": 33,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.7076592026350363,
+        "single_face": 8,
+        "cancelled_achieved": 5,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 8,
+        "achieved": 40,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.8054153121708371,
+        "single_face": 8,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "R03": {
+      "agent": {
+        "images": 8,
+        "achieved": 32,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.6656994504595368,
+        "single_face": 8,
+        "cancelled_achieved": 4,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 8,
+        "achieved": 40,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.765156367483079,
+        "single_face": 8,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "R04": {
+      "agent": {
+        "images": 8,
+        "achieved": 32,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.37369773115311383,
+        "single_face": 8,
+        "cancelled_achieved": 4,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 8,
+        "achieved": 40,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.5059339968159838,
+        "single_face": 8,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "R05": {
+      "agent": {
+        "images": 8,
+        "achieved": 32,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.7739519723858771,
+        "single_face": 8,
+        "cancelled_achieved": 4,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 8,
+        "achieved": 40,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.838471498194301,
+        "single_face": 8,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "R06": {
+      "agent": {
+        "images": 8,
+        "achieved": 32,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.6405177717538015,
+        "single_face": 8,
+        "cancelled_achieved": 4,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 8,
+        "achieved": 40,
+        "target_total": 48,
+        "uncertain": 0,
+        "identity_mean": 0.7604240231852445,
+        "single_face": 8,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    }
+  },
+  "by_history": {
+    "U1": {
+      "agent": {
+        "images": 12,
+        "achieved": 13,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.7436556331209064,
+        "single_face": 12,
+        "cancelled_achieved": 1,
+        "cancelled_total": 36
+      },
+      "tracked": {
+        "images": 12,
+        "achieved": 72,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.8169683208953895,
+        "single_face": 12,
+        "cancelled_achieved": 36,
+        "cancelled_total": 36
+      }
+    },
+    "U2": {
+      "agent": {
+        "images": 12,
+        "achieved": 60,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.4907636787206113,
+        "single_face": 12,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 12,
+        "achieved": 60,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.6242256278248224,
+        "single_face": 12,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "U3": {
+      "agent": {
+        "images": 12,
+        "achieved": 62,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.48178106657524866,
+        "single_face": 12,
+        "cancelled_achieved": 2,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 12,
+        "achieved": 72,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.6257342719998945,
+        "single_face": 12,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    },
+    "U4": {
+      "agent": {
+        "images": 12,
+        "achieved": 59,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.6261721412647246,
+        "single_face": 12,
+        "cancelled_achieved": 11,
+        "cancelled_total": 12
+      },
+      "tracked": {
+        "images": 12,
+        "achieved": 36,
+        "target_total": 72,
+        "uncertain": 0,
+        "identity_mean": 0.6344128998701478,
+        "single_face": 12,
+        "cancelled_achieved": 12,
+        "cancelled_total": 12
+      }
+    }
+  },
+  "tracked_minus_agent_by_person": {
+    "R01": {
+      "goals": 7,
+      "identity": 0.02457783190106516
+    },
+    "R02": {
+      "goals": 7,
+      "identity": 0.09775610953580072
+    },
+    "R03": {
+      "goals": 8,
+      "identity": 0.0994569170235422
+    },
+    "R04": {
+      "goals": 8,
+      "identity": 0.13223626566287
+    },
+    "R05": {
+      "goals": 8,
+      "identity": 0.0645195258084239
+    },
+    "R06": {
+      "goals": 8,
+      "identity": 0.11990625143144296
+    }
+  },
+  "prompt_cost": {
+    "agent": {
+      "model_calls": 8,
+      "seconds": 106.2209801669774,
+      "final_characters": {
+        "U1": 687,
+        "U2": 439,
+        "U3": 505,
+        "U4": 395
+      }
+    },
+    "tracked": {
+      "model_calls": 33,
+      "seconds": 242.27098616602075,
+      "final_characters": {
+        "U1": 609,
+        "U2": 607,
+        "U3": 607,
+        "U4": 620
+      }
+    }
+  },
+  "state_extraction": {
+    "turns": [
+      {
+        "history": "U1",
+        "turn": 1,
+        "expected": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 2,
+        "expected": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 3,
+        "expected": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 4,
+        "expected": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 5,
+        "expected": {
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 6,
+        "expected": {
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 7,
+        "expected": {
+          "jacket": "none",
+          "top": "navy_sweater",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "none",
+          "top": "navy_sweater",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U1",
+        "turn": 8,
+        "expected": {
+          "jacket": "none",
+          "top": "navy_sweater",
+          "pin": "none",
+          "necklace": "none",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "none",
+          "top": "navy_sweater",
+          "pin": "none",
+          "necklace": "none",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 1,
+        "expected": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "observed": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 2,
+        "expected": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 3,
+        "expected": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "original",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "original",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 4,
+        "expected": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 5,
+        "expected": {
+          "jacket": "none",
+          "top": "white_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "none",
+          "top": "white_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 3,
+        "changed_total": 3,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 6,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 7,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U2",
+        "turn": 8,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "none",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "none",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 1,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 2,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 3,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "original",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "original",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 4,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 5,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 6,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "office",
+          "prop": "none"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "office",
+          "prop": "none"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 7,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "office",
+          "prop": "none"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "office",
+          "prop": "none"
+        },
+        "correct_slots": 6,
+        "changed_correct": 0,
+        "changed_total": 0,
+        "accepted": true
+      },
+      {
+        "history": "U3",
+        "turn": 8,
+        "expected": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "none",
+          "necklace": "silver_teardrop",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 1,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "original",
+          "prop": "original"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 2,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "original",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 3,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "original",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 4,
+        "expected": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 5,
+        "expected": {
+          "jacket": "navy",
+          "top": "gray_sweater",
+          "pin": "none",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "observed": {
+          "jacket": "navy",
+          "top": "gray_sweater",
+          "pin": "none",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 6,
+        "changed_correct": 3,
+        "changed_total": 3,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 6,
+        "expected": {
+          "jacket": "navy",
+          "top": "gray_sweater",
+          "pin": "none",
+          "necklace": "gold_round",
+          "background": "brick_studio",
+          "prop": "none"
+        },
+        "observed": {
+          "jacket": "navy",
+          "top": "gray_sweater",
+          "pin": "none",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 4,
+        "changed_correct": 0,
+        "changed_total": 2,
+        "accepted": false
+      },
+      {
+        "history": "U4",
+        "turn": 7,
+        "expected": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "none",
+          "necklace": "gold_round",
+          "background": "brick_studio",
+          "prop": "none"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "none",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 4,
+        "changed_correct": 1,
+        "changed_total": 1,
+        "accepted": true
+      },
+      {
+        "history": "U4",
+        "turn": 8,
+        "expected": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "none",
+          "background": "brick_studio",
+          "prop": "none"
+        },
+        "observed": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "none",
+          "background": "library",
+          "prop": "lamp"
+        },
+        "correct_slots": 4,
+        "changed_correct": 2,
+        "changed_total": 2,
+        "accepted": true
+      }
+    ],
+    "correct_slots": 186,
+    "total_slots": 192,
+    "changed_correct": 50,
+    "changed_total": 52,
+    "final_correct_slots": 22,
+    "final_total_slots": 24,
+    "oracle_prompt_matches": {
+      "U1": true,
+      "U2": true,
+      "U3": true,
+      "U4": false
+    },
+    "joint_correct_turns": 29,
+    "total_turns": 32,
+    "joint_correct_final_dialogues": 3,
+    "total_dialogues": 4
+  },
+  "second_ai": {
+    "model": "mlx-community/Qwen2.5-VL-3B-Instruct-4bit",
+    "revision": "46d4cf06a06ffc1a766c214174f9cbed2f45bcab",
+    "by_mode": {
+      "agent": {
+        "images": 48,
+        "achieved": 257,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.5855931299203728,
+        "single_face": 48,
+        "cancelled_achieved": 52,
+        "cancelled_total": 72
+      },
+      "tracked": {
+        "images": 48,
+        "achieved": 261,
+        "target_total": 288,
+        "uncertain": 0,
+        "identity_mean": 0.6753352801475635,
+        "single_face": 48,
+        "cancelled_achieved": 70,
+        "cancelled_total": 72
+      }
+    },
+    "by_person": {
+      "R01": {
+        "agent": {
+          "images": 8,
+          "achieved": 43,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.3520326511348709,
+          "single_face": 8,
+          "cancelled_achieved": 9,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.3766104830359361,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      },
+      "R02": {
+        "agent": {
+          "images": 8,
+          "achieved": 47,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7076592026350363,
+          "single_face": 8,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 41,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.8054153121708371,
+          "single_face": 8,
+          "cancelled_achieved": 10,
+          "cancelled_total": 12
+        }
+      },
+      "R03": {
+        "agent": {
+          "images": 8,
+          "achieved": 48,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6656994504595368,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.765156367483079,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      },
+      "R04": {
+        "agent": {
+          "images": 8,
+          "achieved": 36,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.37369773115311383,
+          "single_face": 8,
+          "cancelled_achieved": 4,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.5059339968159838,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      },
+      "R05": {
+        "agent": {
+          "images": 8,
+          "achieved": 47,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7739519723858771,
+          "single_face": 8,
+          "cancelled_achieved": 11,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.838471498194301,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      },
+      "R06": {
+        "agent": {
+          "images": 8,
+          "achieved": 36,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.6405177717538015,
+          "single_face": 8,
+          "cancelled_achieved": 5,
+          "cancelled_total": 12
+        },
+        "tracked": {
+          "images": 8,
+          "achieved": 44,
+          "target_total": 48,
+          "uncertain": 0,
+          "identity_mean": 0.7604240231852445,
+          "single_face": 8,
+          "cancelled_achieved": 12,
+          "cancelled_total": 12
+        }
+      }
+    },
+    "agreement": {
+      "same": 470,
+      "comparable": 576,
+      "unavailable": 0,
+      "by_goal": [
+        {
+          "slot": "jacket",
+          "same": 88,
+          "comparable": 96,
+          "primary_only_success": 0,
+          "secondary_only_success": 8,
+          "unavailable": 0
+        },
+        {
+          "slot": "top",
+          "same": 89,
+          "comparable": 96,
+          "primary_only_success": 0,
+          "secondary_only_success": 7,
+          "unavailable": 0
+        },
+        {
+          "slot": "pin",
+          "same": 34,
+          "comparable": 96,
+          "primary_only_success": 1,
+          "secondary_only_success": 61,
+          "unavailable": 0
+        },
+        {
+          "slot": "necklace",
+          "same": 86,
+          "comparable": 96,
+          "primary_only_success": 3,
+          "secondary_only_success": 7,
+          "unavailable": 0
+        },
+        {
+          "slot": "background",
+          "same": 84,
+          "comparable": 96,
+          "primary_only_success": 0,
+          "secondary_only_success": 12,
+          "unavailable": 0
+        },
+        {
+          "slot": "prop",
+          "same": 89,
+          "comparable": 96,
+          "primary_only_success": 7,
+          "secondary_only_success": 0,
+          "unavailable": 0
+        }
+      ],
+      "scope": "Descriptive AI agreement, not independent human validation"
+    },
+    "parse_failures": 0,
+    "diagnostic": {
+      "observed_during_fixed_pass": true,
+      "examples": [
+        "R01-U1-314/A",
+        "R03-U1-42/B"
+      ],
+      "finding": "The fixed VLM sometimes describes a visible blazer or lapel pin while assigning score 1 to the goals requiring their absence. Its explanations and binary scores can contradict each other.",
+      "handling": "Preserve raw responses and scores. Do not tune prompts or rescore to agree with the primary evaluator. Report secondary scores separately as a limited AI sensitivity check, not independent human validation or proof of correctness."
+    }
+  },
+  "cost_scope": "Transcript processing times and model_calls count completed recorded preparations only; unrecorded interrupted U2 work is excluded. They are not total wall time or total session compute.",
+  "source_sha256": {
+    "ai-ratings.json": "cac1a2696619cf320f0025de29ac9d8c392f747ec0d07d0abe9c5a3737e91e9f",
+    "second-ai-ratings.json": "a834499d7b96ae739dde7d3851347b23497f81f5d7616857fafaec7a61a70cd4",
+    "face-results.json": "5f5686471e7da95a32703d7aac067178b8f45875495428b59b07132ee39f72e3",
+    "state-scores.json": "536df54e92eba58685a20ab88df4eb966250e0a65a6d179e2de1442297299582",
+    "blinding-map.json": "820733ee73c524da16227d8d8a982f8a6dcdf78723d00784a08d9a5e003ba461",
+    "plan.json": "7de3e4aa84207c343df59836d91b2421465dd54c8d6ae97b5fbe84387f517a04",
+    "verification.json": "782419298280296c6c03bba23a446cbc829d72137a61929d03c9a85e3af1d2b4",
+    "run_notes.json": "ee5c6b5f9e57c45ad2a088fb8cff459b19b5e6cd14afd74d7a2af285d2a1dad3",
+    "prompts/U1-transcript.json": "a36fc161ad88caabc3fb3ee6d9d57b563583a63a46b4527acb9f06a3dff22010",
+    "prompts/U2-transcript.json": "13099af4b54f1cfa935a0adc1a65010a6f05f3cd71581518ecb339d9d1759d0c",
+    "prompts/U3-transcript.json": "8af710653f19c0247b4efda5b8375ca39eac91c905dd5cf64db79321f21c42f3",
+    "prompts/U4-transcript.json": "bd6e8d55acd96a362b4d5135177790e2f9b8c9e4bfbd491da41c76c9faf549fa"
+  }
+}

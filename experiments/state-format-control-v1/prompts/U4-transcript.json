@@ -1,0 +1,36 @@
+{
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "versions": {
+    "mlx-lm": "0.31.3",
+    "mlx": "0.32.2",
+    "transformers": "5.16.1"
+  },
+  "temperature": 0,
+  "max_tokens_per_call": 700,
+  "model_calls": 2,
+  "seconds": 14.535457917001622,
+  "system_prompts": [
+    "Read all chronological image-edit requests and return the FINAL state.\nReturn one JSON object containing exactly the six slots in this schema: {\"jacket\": [\"none\", \"navy\", \"gray\", \"green\", \"beige\", \"original\"], \"top\": [\"ivory_crewneck\", \"white_crewneck\", \"gray_sweater\", \"navy_sweater\", \"original\"], \"pin\": [\"none\", \"silver_circle_right\", \"gold_square_right\", \"red_triangle_left\", \"blue_circle_left\", \"original\"], \"necklace\": [\"none\", \"silver_teardrop\", \"gold_round\", \"original\"], \"background\": [\"office\", \"library\", \"garden\", \"blue_studio\", \"brick_studio\", \"original\"], \"prop\": [\"none\", \"plant\", \"lamp\", \"bench\", \"original\"]}\nLater requests supersede earlier requests for the same slot. Keep other slots.\nRemoval means none; original means restore the source image or never edited.\nDo not return the history, an image prompt, explanations, or extra keys.\nViewer-left/right means the displayed image. Separate background from prop.",
+    "Audit the proposed final state against ALL original chronological requests.\nReturn a corrected complete final JSON state with exactly these six slots: {\"jacket\": [\"none\", \"navy\", \"gray\", \"green\", \"beige\", \"original\"], \"top\": [\"ivory_crewneck\", \"white_crewneck\", \"gray_sweater\", \"navy_sweater\", \"original\"], \"pin\": [\"none\", \"silver_circle_right\", \"gold_square_right\", \"red_triangle_left\", \"blue_circle_left\", \"original\"], \"necklace\": [\"none\", \"silver_teardrop\", \"gold_round\", \"original\"], \"background\": [\"office\", \"library\", \"garden\", \"blue_studio\", \"brick_studio\", \"original\"], \"prop\": [\"none\", \"plant\", \"lamp\", \"bench\", \"original\"]}\nCheck latest replacements, removals, re-additions and unchanged slots.\nRemoval means none; original means restore the source image or never edited.\nViewer-left/right means the displayed image. Separate background from prop.\nReturn JSON only, including all six slots, whether or not corrections are needed."
+  ],
+  "user": "Chronological requests:\n1. Start with a beige blazer over a plain white crew-neck shirt.\n2. Set the background to a library with wooden shelves and one warm floor lamp.\n3. Add one small triangular red pin on the lapel at the viewer's left.\n4. Use one thin gold necklace with a small round gold pendant.\n5. Remove the pin. Replace the beige blazer with a dark navy one and the white shirt with a light-gray crew-neck sweater.\n6. Exchange the library and lamp for a studio with a plain red-brick wall, without any plants, lamps or benches.\n7. Change the navy blazer to dark gray; keep the gray sweater beneath it.\n8. Put the small red triangular pin back on the viewer-left lapel. Take off the gold necklace and pendant.",
+  "responses": [
+    "{\n  \"jacket\": \"gray\",\n  \"top\": \"gray_sweater\",\n  \"pin\": \"red_triangle_left\",\n  \"necklace\": \"none\",\n  \"background\": \"blue_studio\",\n  \"prop\": \"none\"\n}",
+    "{\n  \"jacket\": \"gray\",\n  \"top\": \"gray_sweater\",\n  \"pin\": \"red_triangle_left\",\n  \"necklace\": \"none\",\n  \"background\": \"blue_studio\",\n  \"prop\": \"none\"\n}"
+  ],
+  "validation_errors": [
+    null,
+    null
+  ],
+  "selected_response_index": 1,
+  "final_state": {
+    "jacket": "gray",
+    "top": "gray_sweater",
+    "pin": "red_triangle_left",
+    "necklace": "none",
+    "background": "blue_studio",
+    "prop": "none"
+  },
+  "final": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- There must be no necklace or pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks."
+}
