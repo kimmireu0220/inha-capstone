@@ -17,6 +17,10 @@ MagicBrush는 단일·다중 턴 지시 편집 자료를 제공한다[1]. LPIPS�
 
 대화 상태 추적에서는 변경할 항목을 선택하고 나머지 값을 이전 턴에서 유지하는 접근이 연구되었다. Guo 등은 갱신 대상 선택과 값 생성을 나누고, 선택되지 않은 항목의 이전 값을 유지했다[4]. 본 연구의 자동 상태 갱신은 이와 관련된 상태 관리 원리를 제한된 인물 편집 항목에 적용한다. 항목별 상태 관리 자체를 새로운 알고리즘으로 주장하기보다, 최종 프롬프트 종합 및 이미지 생성과 연결했을 때의 효과와 오류를 평가한다.
 
+Hao 등의 Promptist는 사용자 입력을 이미지 모델에 적합한 프롬프트로 바꾸기 위해 지도 학습과 강화 학습을 사용하고, 사용자 의도를 유지하면서 이미지의 미적 품질을 높이는 목적을 다뤘다[5]. 본 연구는 모델을 추가 학습하지 않고 고정된 언어 모델로 수정·취소 이력의 최종 상태를 추출한다. 프롬프트 문장의 품질과 대화의 최신 요구를 유지하는 능력을 구분해 평가한다.
+
+Huang 등의 T2I-CompBench는 색·형태·질감의 속성 결합과 공간 관계, 복합 구성을 별도 과제로 평가했다[6]. 이 구분은 핀의 색·형태·좌우를 한꺼번에 충족해야 하는 본 연구의 항목과 관련된다. 얼굴 유사도나 전체적인 이미지 인상만으로 해당 목표의 달성을 판단하기 어려워 목표 항목별 점수를 함께 보고한다. 본 연구의 대화와 이미지는 별도로 작성·생성한 자료이며 해당 벤치마크의 점수와 직접 비교하지 않는다.
+
 ## 3. 연구 방법
 ### 3.1 합성 인물의 입력 정책 비교
 합성 인물 P01–P06을 대상으로 남색 셔츠, 옅은 파란 배경, 은색 핀의 세 편집을 적용했다. 순차 방식은 매 단계 직전 출력을 입력으로 사용하여 세 번 생성한다. 원본 기반 방식은 세 요구를 모은 최종 프롬프트와 최초 원본으로 한 번 생성한다. 각 인물에 시드 42, 314, 2026을 적용하여 최종 출력 36장, 대응 비교 18쌍을 얻었다. 중간 순차 출력까지 포함한 전체 생성물은 72장이다. 같은 쌍의 최종 상태와 프롬프트, 원본·중간 출력의 입력 계보를 해시로 검증했다. 인물별 세 회는 반복 관측이다.
@@ -142,6 +146,10 @@ U2의 배열에는 요구된 값과 원본 유지 값이 함께 있었고, U3에
 [3] J. Deng et al., “ArcFace: Additive Angular Margin Loss for Deep Face Recognition,” CVPR, 2019. https://arxiv.org/abs/1801.07698v3
 
 [4] J. Guo, K. Shuang, J. Li, and Z. Wang, “Dual Slot Selector via Local Reliability Verification for Dialogue State Tracking,” ACL-IJCNLP, pp. 139–151, 2021. https://aclanthology.org/2021.acl-long.12/
+
+[5] Y. Hao, Z. Chi, L. Dong, and F. Wei, “Optimizing Prompts for Text-to-Image Generation,” NeurIPS, 2023. https://arxiv.org/abs/2212.09611v2
+
+[6] K. Huang, K. Sun, E. Xie, Z. Li, and X. Liu, “T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation,” NeurIPS Datasets and Benchmarks, 2023. https://papers.nips.cc/paper/2023/file/f8ad010cdd9143dbb0e9308c093aff24-Paper-Datasets_and_Benchmarks.pdf
 
 ## 부록 A. 재현 자료
 합성 인물 정책 비교의 설정·출력·지표·검증은 `experiments/studio-multiperson-v1/`에 있다. 실제 인물 H1–H3의 자료는 `experiments/prompt-synthesis-expanded-v1/`, U1–U4의 자동 상태 갱신 자료는 `experiments/state-tracking-v2/`, 전체 대화 상태 추출의 추가 대조는 `experiments/state-format-control-v1/`에 있다. 프롬프트, 모델 원응답, 평가 원문과 수정 이력, 실패 처리, 출력 해시 및 집계 출처를 보존한다. 상태 추출의 초기 실패는 `experiments/state-tracking-v1/`에 남긴다. 실제 인물 2명의 정책 예비 비교는 `experiments/real-people-v1/`에 별도로 보존한다. 사진 출처는 `assets/people/real/README.md`에, 본문 수치의 원자료 대조는 `paper/evidence.json`에 기록한다. 모델 가중치와 실행 환경은 별도 준비가 필요하다.
