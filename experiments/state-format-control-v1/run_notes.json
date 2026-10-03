@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-03",
+  "secondary_ai_diagnostic": {
+    "finding": "Valid JSON can contradict the requested goal in its own explanation.",
+    "example_key": "R01-U1-314/C",
+    "goal": "No jacket or blazer",
+    "score": 1,
+    "reason": "The person is wearing a blazer.",
+    "action": "Retain raw response and original scores; do not rescore to match primary AI. This is not reliable independent validation."
+  },
+  "primary_evaluation_scope": "48 new pending labels were rated using masked panels. Existing linked scores and method assignments were not opened before completion. Prior image exposure and separate evaluation phases limit masking and cross-method comparisons.",
+  "duplicate_accounting": "All 48 conditions were generated, but 12 U2/U3 pairs have identical RGB pixels despite different PNG metadata. There are 36 distinct control RGB images."
+}

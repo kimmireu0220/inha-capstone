@@ -94,12 +94,17 @@ def main():
             'by_history': {h: {m: shared.summarize([r for r in values if r['history'] == h and r['mode'] == m])
                                for m in modes} for h in histories}}
     summary['descriptive_ai_agreement_including_reuse'] = agreement
+    notes = ROOT / 'run_notes.json'
+    if notes.exists():
+        summary['diagnostic_notes'] = read(ROOT, 'run_notes.json')
     sources = [(ROOT, name) for name in ['blinding-map.json', 'linked-ratings.json', 'pending-ratings.json',
                'second-ai-ratings.json', 'face-results.json', 'verification.json', 'plan.json', 'state-scores.json']]
     sources += [(SOURCE, name) for name in ['ai-ratings.json', 'second-ai-ratings.json', 'face-results.json']]
     sources += [(ROOT / 'prompts', h + '-transcript.json') for h in histories]
     if pending:
         sources.append((ROOT, 'ai-ratings.json'))
+    if notes.exists():
+        sources.append((ROOT, 'run_notes.json'))
     summary['source_sha256'] = {str((root / name).relative_to(ROOT.parent)): sha(root / name) for root, name in sources}
     save(ROOT / 'joined-results.json', {'rows': rows})
     save(ROOT / 'summary.json', summary)
