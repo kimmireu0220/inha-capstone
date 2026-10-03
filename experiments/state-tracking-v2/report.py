@@ -55,6 +55,8 @@ def main():
             'final_characters': {h: len((ROOT / 'prompts' / f'{h}-{mode}.txt').read_text()) for h in histories}}
     summary = {'complete': True, 'outputs': 96, 'pairs': 48, 'independent_people': 6,
         'rater_type': 'AI', 'independent_human_rating_complete': False,
+        'primary_ai_version_note': ratings.get('rater_version_note'),
+        'primary_ai_corrections_before_unmasking': ratings.get('corrections_before_unmasking', []),
         'by_mode': by_mode, 'by_person': by_person, 'by_history': by_history,
         'tracked_minus_agent_by_person': differences, 'prompt_cost': prompt_cost,
         'state_extraction': json.loads((ROOT / 'state-scores.json').read_text())}

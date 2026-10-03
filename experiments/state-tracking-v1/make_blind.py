@@ -42,6 +42,10 @@ def main(root=None):
             canvas.paste(image, (index * 512 + (512 - image.width) // 2,
                                 38 + (768 - image.height) // 2))
             draw.text((index * 512 + 12, 12), f'{key} / {letter}', fill='black')
+        # Panel boundaries prevent a neighboring result's background from being
+        # mistaken for part of the image being rated.
+        for boundary in (512, 1024):
+            draw.line((boundary, 0, boundary, 805), fill='#555555', width=2)
         canvas.save(folder / f'{key}.png')
     map_path.write_text(json.dumps(mapping, indent=2) + '\n')
     form = ROOT / 'human-ratings.csv'

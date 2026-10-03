@@ -10,6 +10,12 @@
     "generation": "Local sequential CLI calls; separate unrelated GPU work on the same computer may affect elapsed time.",
     "evaluation": "No independent human scores are available. The human form is left blank; both automated evaluations are labelled AI."
   },
+  "visual_rating_correction": {
+    "before_unmasking": true,
+    "change": "Added vertical boundaries to masked comparison plates to distinguish adjacent backgrounds. Original outputs and A/B assignments are unchanged.",
+    "corrected_items": 2,
+    "detail": "R03 U1 A background ratings at both seeds were corrected from 0 to 1 because the bookshelves belonged to neighboring panel B. Previous values and reasons remain in ai-ratings.json."
+  },
   "cached_model_revisions": {
     "Runpod/FLUX.2-klein-4B-mflux-4bit": "7ee1b3aa8178a1240050490072196a57da2bf2a9",
     "mlx-community/Qwen3-4B-4bit": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",

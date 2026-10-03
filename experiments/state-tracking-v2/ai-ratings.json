@@ -1,16 +1,30 @@
 {
   "rater_type": "AI",
   "rater": "Codex visual inspection",
+  "rater_version_note": "The conversation model setting changed after the first six comparisons were recorded. Exact backend revision is not pinned. This is a method-masked Codex session evaluation; the separate local VLM evaluation has a recorded model revision.",
+  "comparisons_before_model_setting_change": ["R01-U1-42", "R01-U1-314", "R02-U1-42", "R02-U1-314", "R03-U1-42", "R03-U1-314"],
+  "corrections_before_unmasking": [
+    {"comparison": "R03-U1-42", "label": "A", "goal": 5, "before": 0, "after": 1, "reason": "After adding panel separators, the bookshelves were confirmed to belong exclusively to neighboring panel B."},
+    {"comparison": "R03-U1-314", "label": "A", "goal": 5, "before": 0, "after": 1, "reason": "After adding panel separators, the bookshelves were confirmed to belong exclusively to neighboring panel B."}
+  ],
   "method_masked": true,
   "scoring": "Six goals in EVALUATION.md order; 1 satisfied, 0 violated, null uncertain. No face metrics or method mapping consulted before ratings.",
   "ratings": {
+    "R04-U1-314": {
+      "scores": {"A": [1, 1, 1, 1, 1, 1], "B": [0, 0, 0, 0, 0, 1]},
+      "note": "A has a navy crew-neck sweater, no jacket/pin/necklace, a pale-blue studio and one plant. B retains a green blazer, white shirt, pin, gold necklace and bookshelves, with one plant."
+    },
+    "R04-U1-42": {
+      "scores": {"A": [1, 1, 1, 1, 1, 1], "B": [0, 0, 0, 0, 0, 1]},
+      "note": "A shows a navy crew-neck sweater without a jacket, pin or necklace, a plain pale-blue studio, and one green potted plant. B retains a blazer, white top, circular pin, gold necklace and bookshelves; one plant is present."
+    },
     "R03-U1-314": {
-      "scores": {"A": [1, 1, 1, 1, 0, 1], "B": [0, 0, 0, 0, 0, 1]},
-      "note": "A has the correct navy sweater and no jacket/pin/necklace, but bookshelves remain, so the blue studio goal fails. B retains blazer, white shirt, pin, gold necklace and shelves. Each output has one plant."
+      "scores": {"A": [1, 1, 1, 1, 1, 1], "B": [0, 0, 0, 0, 0, 1]},
+      "note": "A satisfies the navy sweater, no jacket/pin/necklace, blue studio and one plant. B retains blazer, white shirt, pin, gold necklace and shelves. A's background rating was corrected before unmasking after checking panel boundaries."
     },
     "R03-U1-42": {
-      "scores": {"A": [1, 1, 1, 1, 0, 1], "B": [0, 0, 0, 0, 0, 1]},
-      "note": "A has the navy sweater and no jacket, pin or necklace, but visible wooden shelving/books violate the studio background goal. B retains a blazer, white shirt, circular pin, gold pendant and library shelves. Both have one potted plant."
+      "scores": {"A": [1, 1, 1, 1, 1, 1], "B": [0, 0, 0, 0, 0, 1]},
+      "note": "A satisfies the navy sweater, no jacket/pin/necklace, blue studio and one plant. B retains a blazer, white shirt, circular pin, gold pendant and library shelves. A's background rating was corrected before unmasking after checking panel boundaries."
     },
     "R02-U1-314": {
       "scores": {"A": [0, 0, 0, 0, 0, 1], "B": [1, 1, 1, 1, 1, 1]},
