@@ -1,0 +1,26 @@
+{
+  "model": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
+  "revision": "fdcc572e8b05ba9daeaf71be8c9e4267c826ff9b",
+  "temperature": 0,
+  "max_tokens": 400,
+  "versions": {
+    "mlx-vlm": "0.7.4",
+    "mlx": "0.32.3",
+    "transformers": "5.18.0"
+  },
+  "post_hoc": true,
+  "unique_evaluation_inputs": 68,
+  "sha256": {
+    "experiments/contract-image-review-v1/run.py": "e271f712d85ff1f6ffe2ee0532a758d42e4f4cf32128e4146d97040c8192663c",
+    "experiments/contract-image-review-v1/PROTOCOL.md": "77b8200387f7aab84565de452ed522b3cf7e84828de78c33969a3efbc20e48f5",
+    "experiments/contract-image-review-v1/test_run.py": "ac13a72288a6c936d47c9d0c2e302abc47f37f50e8bc8397c887882805dd743d",
+    "experiments/contract-image-v3/evaluation-plan.json": "978310a66374bdaf7f545528ce772ae0f16f1a53a820ad4b770a43b839e7ce40",
+    "experiments/contract-image-v3/ai-ratings.json": "91074a029c2e5c1a7e718e0b00499c011a18885db915cf5271d128fbbf789c40",
+    "experiments/contract-image-v3/summary.json": "064a6a39031886bd0cd157cc728249848b34357f5b12ac835442dd191f95356c",
+    "experiments/contract-image-v3/verification.json": "57bdef6cfe0c76577b56152295bc461f9c8f61804fb731c2f50d99106be53371",
+    "experiments/action-image-v1/evaluate.py": "8e516a987103e0b88a2534131dbb5f1f5c602582030f6f434a361eb4b39bc01d",
+    "experiments/action-image-v1/goals.py": "ded2fa3f4defafef64d512a6caf8b0c7f3a904be9427db7fff182647702dbcd8",
+    "experiments/action-image-v1/summarize.py": "b1f6c1e1ad55394f1041e183d4bee64402900d62985956acff738de3741d47b8",
+    "experiments/action-image-v1/analyze_pairs.py": "e794d8f9ad24554d1d7b3d819d09d16cf1842f9e6d66e1acd54b67528f2b1d0b"
+  }
+}

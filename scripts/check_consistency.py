@@ -112,12 +112,13 @@ def check():
         assert digest(ROOT / name) == expected, name
     assert len(prepared['conditions']) == prepared['condition_count'] == 48
     assert len({row['job'] for row in prepared['conditions']}) == prepared['unique_prompt_reference_jobs']
-    native = ROOT / 'experiments/keep-image-v1'
-    verified = json.loads((native / 'verification.json').read_text())
-    assert verified['passed'] and verified['conditions'] == 128 and verified['unique_jobs'] == 68
-    for name, expected in verified['sha256'].items():
-        assert digest(native / name) == expected, name
-    assert digest(ROOT / 'experiments/action-image-v1/verify_native.py') == verified['verifier_sha256']
+    for study, jobs in [('keep-image-v1', 68), ('contract-image-v3', 66)]:
+        native = ROOT / 'experiments' / study
+        verified = json.loads((native / 'verification.json').read_text())
+        assert verified['passed'] and verified['conditions'] == 128 and verified['unique_jobs'] == jobs
+        for name, expected in verified['sha256'].items():
+            assert digest(native / name) == expected, name
+        assert digest(ROOT / 'experiments/action-image-v1/verify_native.py') == verified['verifier_sha256']
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, 40-slide manifest, '
           f'AI evaluation setup and {len(verified_studies)} verified text studies; '
