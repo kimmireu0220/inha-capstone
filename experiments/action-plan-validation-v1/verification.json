@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "advance_to_images": true,
+  "operation_scores": {
+    "first_only": {
+      "set": {
+        "correct": 49,
+        "total": 50
+      },
+      "remove": {
+        "correct": 9,
+        "total": 10
+      },
+      "reset": {
+        "correct": 10,
+        "total": 12
+      },
+      "unchanged": {
+        "correct": 72,
+        "total": 72
+      }
+    },
+    "generic": {
+      "set": {
+        "correct": 49,
+        "total": 50
+      },
+      "remove": {
+        "correct": 9,
+        "total": 10
+      },
+      "reset": {
+        "correct": 10,
+        "total": 12
+      },
+      "unchanged": {
+        "correct": 72,
+        "total": 72
+      }
+    },
+    "generic_noop": {
+      "set": {
+        "correct": 49,
+        "total": 50
+      },
+      "remove": {
+        "correct": 9,
+        "total": 10
+      },
+      "reset": {
+        "correct": 10,
+        "total": 12
+      },
+      "unchanged": {
+        "correct": 72,
+        "total": 72
+      }
+    },
+    "action": {
+      "set": {
+        "correct": 50,
+        "total": 50
+      },
+      "remove": {
+        "correct": 10,
+        "total": 10
+      },
+      "reset": {
+        "correct": 10,
+        "total": 12
+      },
+      "unchanged": {
+        "correct": 72,
+        "total": 72
+      }
+    },
+    "action_atomic": {
+      "set": {
+        "correct": 40,
+        "total": 50
+      },
+      "remove": {
+        "correct": 9,
+        "total": 10
+      },
+      "reset": {
+        "correct": 5,
+        "total": 12
+      },
+      "unchanged": {
+        "correct": 67,
+        "total": 72
+      }
+    }
+  },
+  "sha256": {
+    "frozen.json": "aa673c67bc04102b775b89bed50c9d27a613d704a726f61771601b828e93cf49",
+    "transcripts.json": "05b6a101850824a8fb1576fa0632cf801d8c7d556a126bf5b1c57c535daba085",
+    "results.json": "fb104e17b00e5e3eb79977469f6b392ec58325290e5a65ad414eabcdc9f57086",
+    "report.py": "9bbfc2782d630aea127a897e7c51916b1c10dd69dcbd0a5ac629626c20fda6e7"
+  }
+}

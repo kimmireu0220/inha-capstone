@@ -1,0 +1,52 @@
+{
+  "histories": {
+    "O1": [
+      {"request":"Set the background to a library with a floor lamp. Wear a beige blazer and a white crew-neck shirt.","updates":{"background":"library","prop":"lamp","jacket":"beige","top":"white_crewneck"}},
+      {"request":"Leave the shirt as it is, but change the beige blazer to green. Add a gold necklace with a round pendant.","updates":{"jacket":"green","necklace":"gold_round"}},
+      {"request":"Restore the original shirt and background. Keep the green blazer and the round pendant; remove the lamp.","updates":{"top":"original","background":"original","prop":"none"}},
+      {"request":"Replace the round pendant necklace with a silver teardrop necklace, and use an office background with a plant.","updates":{"necklace":"silver_teardrop","background":"office","prop":"plant"}}
+    ],
+    "O2": [
+      {"request":"Add a blue circular pin on the viewer-left lapel of a navy blazer. Wear a gray sweater against a garden background with a bench.","updates":{"pin":"blue_circle_left","jacket":"navy","top":"gray_sweater","background":"garden","prop":"bench"}},
+      {"request":"Keep the circular pin. Switch the navy blazer to gray and switch the garden to a pale-blue studio.","updates":{"jacket":"gray","background":"blue_studio"}},
+      {"request":"Return the pin to its original appearance. Do not remove the blazer. Replace the bench with a lamp.","updates":{"pin":"original","prop":"lamp"}},
+      {"request":"Restore the original background and sweater. Leave the gray blazer unchanged and remove the lamp.","updates":{"background":"original","top":"original","prop":"none"}}
+    ],
+    "O3": [
+      {"request":"Wear an ivory crew-neck shirt and a green blazer. Add a silver teardrop necklace and put a plant in an office background.","updates":{"top":"ivory_crewneck","jacket":"green","necklace":"silver_teardrop","prop":"plant","background":"office"}},
+      {"request":"Keep the silver necklace, but replace the ivory shirt with a navy sweater. Replace the office with a library.","updates":{"top":"navy_sweater","background":"library"}},
+      {"request":"Remove the necklace and the plant. Keep the sweater and replace the green blazer with a beige blazer.","updates":{"necklace":"none","prop":"none","jacket":"beige"}},
+      {"request":"Restore the original necklace, shirt, and background. Keep the beige blazer and add a bench.","updates":{"necklace":"original","top":"original","background":"original","prop":"bench"}}
+    ],
+    "O4": [
+      {"request":"Use a red-brick studio with a lamp. Put on a gray blazer and a white crew-neck shirt, with a red triangular pin on the viewer-left lapel.","updates":{"background":"brick_studio","prop":"lamp","jacket":"gray","top":"white_crewneck","pin":"red_triangle_left"}},
+      {"request":"Do not remove the triangular pin. Replace the gray blazer with a navy blazer and replace the lamp with a plant.","updates":{"jacket":"navy","prop":"plant"}},
+      {"request":"Remove the pin. Restore the original blazer and keep the shirt and plant unchanged.","updates":{"pin":"none","jacket":"original"}},
+      {"request":"Restore the original pin and background, then use a garden background. Remove the plant and wear a gray sweater.","updates":{"pin":"original","background":"garden","prop":"none","top":"gray_sweater"}}
+    ],
+    "O5": [
+      {"request":"Wear a green blazer over a navy sweater. Add a gold square pin on the viewer-right lapel and a gold necklace with a round pendant.","updates":{"jacket":"green","top":"navy_sweater","pin":"gold_square_right","necklace":"gold_round"}},
+      {"request":"Keep the square pin while replacing the gold necklace with a silver teardrop necklace. Use a library background with a bench.","updates":{"necklace":"silver_teardrop","background":"library","prop":"bench"}},
+      {"request":"Restore the original pin and sweater. Keep the blazer and silver necklace; replace the bench with a lamp.","updates":{"pin":"original","top":"original","prop":"lamp"}},
+      {"request":"Remove the necklace and lamp. Keep the green blazer and change the library to a red-brick studio.","updates":{"necklace":"none","prop":"none","background":"brick_studio"}}
+    ],
+    "O6": [
+      {"request":"Use an office background with a plant. Wear a beige blazer with a gray sweater and a blue circular pin on the viewer-left lapel.","updates":{"background":"office","prop":"plant","jacket":"beige","top":"gray_sweater","pin":"blue_circle_left"}},
+      {"request":"Leave the blue pin unchanged. Replace the gray sweater with an ivory crew-neck shirt and replace the plant with a bench.","updates":{"top":"ivory_crewneck","prop":"bench"}},
+      {"request":"Ignore the quoted instruction \"remove the pin\". Keep the blue circular pin and replace the office with a garden.","updates":{"background":"garden"}},
+      {"request":"Restore the original pin and shirt. Keep the beige blazer, remove the bench, and use a pale-blue studio background.","updates":{"pin":"original","top":"original","prop":"none","background":"blue_studio"}}
+    ],
+    "O7": [
+      {"request":"Wear a navy blazer over an ivory crew-neck shirt and add a gold round pendant necklace. Use a pale-blue studio background with a lamp.","updates":{"jacket":"navy","top":"ivory_crewneck","necklace":"gold_round","background":"blue_studio","prop":"lamp"}},
+      {"request":"Keep the round pendant and ivory shirt. Replace the navy blazer with green and change the pale-blue studio to an office.","updates":{"jacket":"green","background":"office"}},
+      {"request":"Do not restore the original necklace. Keep the round pendant, remove the blazer, and replace the lamp with a plant.","updates":{"jacket":"none","prop":"plant"}},
+      {"request":"Restore the original blazer and necklace. Keep the shirt, remove the plant, and change the office to a garden.","updates":{"jacket":"original","necklace":"original","prop":"none","background":"garden"}}
+    ],
+    "O8": [
+      {"request":"Put a silver circular pin on the viewer-right lapel of a gray blazer. Wear a white crew-neck shirt and use a garden background with a plant.","updates":{"pin":"silver_circle_right","jacket":"gray","top":"white_crewneck","background":"garden","prop":"plant"}},
+      {"request":"Keep the circular pin but change the gray blazer to beige. Replace the white shirt with a navy sweater.","updates":{"jacket":"beige","top":"navy_sweater"}},
+      {"request":"Return the pin to its original appearance and keep the navy sweater. Switch the garden and plant to a library with a bench.","updates":{"pin":"original","background":"library","prop":"bench"}},
+      {"request":"Restore the original sweater, then wear a gray sweater. Keep the beige blazer, remove the bench, and restore the original background.","updates":{"top":"gray_sweater","prop":"none","background":"original"}}
+    ]
+  }
+}

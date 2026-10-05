@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "advance_to_images": false,
+  "operation_scores": {
+    "first_only": {
+      "set": {
+        "correct": 40,
+        "total": 48
+      },
+      "remove": {
+        "correct": 6,
+        "total": 9
+      },
+      "reset": {
+        "correct": 11,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 67,
+        "total": 73
+      }
+    },
+    "generic": {
+      "set": {
+        "correct": 41,
+        "total": 48
+      },
+      "remove": {
+        "correct": 6,
+        "total": 9
+      },
+      "reset": {
+        "correct": 11,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 69,
+        "total": 73
+      }
+    },
+    "generic_noop": {
+      "set": {
+        "correct": 44,
+        "total": 48
+      },
+      "remove": {
+        "correct": 7,
+        "total": 9
+      },
+      "reset": {
+        "correct": 11,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 70,
+        "total": 73
+      }
+    },
+    "action": {
+      "set": {
+        "correct": 45,
+        "total": 48
+      },
+      "remove": {
+        "correct": 9,
+        "total": 9
+      },
+      "reset": {
+        "correct": 11,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 70,
+        "total": 73
+      }
+    },
+    "action_atomic": {
+      "set": {
+        "correct": 29,
+        "total": 48
+      },
+      "remove": {
+        "correct": 5,
+        "total": 9
+      },
+      "reset": {
+        "correct": 11,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 55,
+        "total": 73
+      }
+    },
+    "generic_noop_restore": {
+      "set": {
+        "correct": 44,
+        "total": 48
+      },
+      "remove": {
+        "correct": 7,
+        "total": 9
+      },
+      "reset": {
+        "correct": 14,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 72,
+        "total": 73
+      }
+    },
+    "action_restore": {
+      "set": {
+        "correct": 45,
+        "total": 48
+      },
+      "remove": {
+        "correct": 9,
+        "total": 9
+      },
+      "reset": {
+        "correct": 14,
+        "total": 14
+      },
+      "unchanged": {
+        "correct": 71,
+        "total": 73
+      }
+    }
+  },
+  "sha256": {
+    "frozen.json": "97438b2737cafbe9de210e816956e03d5b81236dd53ce2cb795b39e53d584611",
+    "transcripts.json": "c1cdc71b94586eeacf4378bf01568c44efdd93a75e4018438353b49012575222",
+    "results.json": "6d4193bde0c3bc046c20d521d536bfb02bd28d19968af5ddf744a084ee2a4a98",
+    "report.py": "cc15a246233f8e56ba736d8490cc607c57f71321ebb96f59c0bea9a3c92448c3"
+  }
+}

@@ -72,7 +72,10 @@ def check():
             assert (path.parent / local).exists(), f'{path.relative_to(ROOT)} -> {local}'
     with zipfile.ZipFile(ROOT / 'paper/manuscript.inha.docx') as archive:
         assert not forbidden.search(archive.read('word/document.xml').decode())
-    for study in ['coverage-repair-v1', 'coverage-validation-v1']:
+    verified_studies = ['coverage-repair-v1', 'coverage-validation-v1',
+                        'action-plan-v2', 'action-plan-validation-v1',
+                        'restore-contract-validation-v1']
+    for study in verified_studies:
         folder = ROOT / 'experiments' / study
         verification = json.loads((folder / 'verification.json').read_text())
         assert verification['passed'], study
@@ -82,9 +85,27 @@ def check():
         for name, expected in json.loads((folder / manifest).read_text()).items():
             if name != 'model_revision':
                 assert digest(ROOT / name) == expected, name
+    # Preserve the rejected first candidate and the explicitly post-hoc replay.
+    for name, expected in load('experiments/action-plan-v1/frozen.json').items():
+        if name != 'model_revision':
+            assert digest(ROOT / name) == expected, name
+    restore = load('experiments/restore-contract-v1/results.json')
+    assert restore['posthoc_development'] and restore['additional_model_calls'] == 0
+    for name, expected in restore['sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    isolation = load('experiments/slot-isolation-v1/results.json')
+    assert isolation['posthoc_development'] and isolation['additional_model_calls'] == 0
+    for name, expected in isolation['sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    prepared = load('experiments/action-image-v1/prepared.json')
+    for name, expected in prepared['inputs'].items():
+        assert digest(ROOT / name) == expected, name
+    assert len(prepared['conditions']) == prepared['condition_count'] == 48
+    assert len({row['job'] for row in prepared['conditions']}) == prepared['unique_prompt_reference_jobs']
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, 40-slide manifest, '
-          'AI evaluation setup and two request-repair studies')
+          f'AI evaluation setup and {len(verified_studies)} verified text studies; '
+          'rejected candidate, post-hoc development and prepared image inputs preserved')
 
 
 if __name__ == '__main__':

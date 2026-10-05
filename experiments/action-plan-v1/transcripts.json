@@ -1,0 +1,130 @@
+{
+  "V1-1": {
+    "request": "Wear a beige blazer over a navy sweater. Put a gold square pin on the viewer-right lapel.",
+    "plan": "{\n  \"jacket\": \"set\",\n  \"top\": \"set\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"keep\",\n  \"prop\": \"keep\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Wear a beige blazer over a navy sweater. Put a gold square pin on the viewer-right lapel.\nAction plan: {\"jacket\": \"set\", \"top\": \"set\", \"pin\": \"set\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "values": "{\"jacket\": \"beige\", \"top\": \"navy_sweater\", \"pin\": \"gold_square_right\"}",
+    "seconds": 13.376230209001733
+  },
+  "V1-2": {
+    "request": "Keep the gold square pin and replace the beige blazer with a green blazer. Use a library background with a plant.",
+    "plan": "{\n  \"jacket\": \"set\",\n  \"top\": \"keep\",\n  \"pin\": \"keep\",\n  \"necklace\": \"keep\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Keep the gold square pin and replace the beige blazer with a green blazer. Use a library background with a plant.\nAction plan: {\"jacket\": \"set\", \"top\": \"keep\", \"pin\": \"keep\", \"necklace\": \"keep\", \"background\": \"set\", \"prop\": \"set\"}",
+    "values": "{\"jacket\": \"unknown\", \"top\": \"keep\", \"pin\": \"keep\", \"necklace\": \"keep\", \"background\": \"library\", \"prop\": \"plant\"}",
+    "seconds": 15.172142999999778
+  },
+  "V1-3": {
+    "request": "Replace the gold square pin with a red triangular pin on the viewer-left lapel. Keep the plant and library background.",
+    "plan": "{\n  \"jacket\": \"set\",\n  \"top\": \"keep\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"keep\",\n  \"prop\": \"keep\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Replace the gold square pin with a red triangular pin on the viewer-left lapel. Keep the plant and library background.\nAction plan: {\"jacket\": \"set\", \"top\": \"keep\", \"pin\": \"set\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "values": "{\"jacket\": \"unknown\", \"top\": \"unknown\", \"pin\": \"red_triangle_left\", \"necklace\": \"unknown\", \"background\": \"unknown\", \"prop\": \"unknown\"}",
+    "seconds": 13.080057167000632
+  },
+  "V1-4": {
+    "request": "Keep the triangular pin unchanged; restore the original blazer and original sweater. Remove the plant.",
+    "plan": "{\n  \"jacket\": \"reset\",\n  \"top\": \"reset\",\n  \"pin\": \"keep\",\n  \"necklace\": \"keep\",\n  \"background\": \"keep\",\n  \"prop\": \"remove\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Keep the triangular pin unchanged; restore the original blazer and original sweater. Remove the plant.\nAction plan: {\"jacket\": \"reset\", \"top\": \"reset\", \"pin\": \"keep\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"remove\"}",
+    "values": "{\"pin\": \"red_triangle_left\", \"top\": \"gray_sweater\", \"jacket\": \"navy\", \"background\": \"office\", \"necklace\": \"silver_teardrop\", \"prop\": \"none\"}",
+    "seconds": 19.495582999999897
+  },
+  "V2-1": {
+    "request": "Use a red-brick studio with a lamp, a gray blazer, and a silver necklace with a teardrop pendant.",
+    "plan": "{\n  \"jacket\": \"set\",\n  \"top\": \"keep\",\n  \"pin\": \"keep\",\n  \"necklace\": \"set\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Use a red-brick studio with a lamp, a gray blazer, and a silver necklace with a teardrop pendant.\nAction plan: {\"jacket\": \"set\", \"top\": \"keep\", \"pin\": \"keep\", \"necklace\": \"set\", \"background\": \"set\", \"prop\": \"set\"}",
+    "values": "{\"jacket\": \"unknown\", \"top\": \"unknown\", \"pin\": \"unknown\", \"necklace\": \"silver_teardrop\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+    "seconds": 14.637008666999463
+  },
+  "V2-2": {
+    "request": "Do not remove the necklace or lamp. Remove the blazer and use a white crew-neck shirt.",
+    "plan": "{\n  \"jacket\": \"remove\",\n  \"top\": \"set\",\n  \"pin\": \"keep\",\n  \"necklace\": \"keep\",\n  \"background\": \"keep\",\n  \"prop\": \"keep\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Do not remove the necklace or lamp. Remove the blazer and use a white crew-neck shirt.\nAction plan: {\"jacket\": \"remove\", \"top\": \"set\", \"pin\": \"keep\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "values": "{\"top\": \"white_crewneck\"}",
+    "seconds": 11.559120542000528
+  },
+  "V2-3": {
+    "request": "Remove the necklace and lamp now. Keep the white shirt; change the red-brick studio background to a garden.",
+    "plan": "{\n  \"jacket\": \"keep\",\n  \"top\": \"keep\",\n  \"pin\": \"keep\",\n  \"necklace\": \"remove\",\n  \"background\": \"set\",\n  \"prop\": \"remove\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Remove the necklace and lamp now. Keep the white shirt; change the red-brick studio background to a garden.\nAction plan: {\"jacket\": \"keep\", \"top\": \"keep\", \"pin\": \"keep\", \"necklace\": \"remove\", \"background\": \"set\", \"prop\": \"remove\"}",
+    "values": "{\"background\": \"garden\", \"necklace\": \"remove\", \"prop\": \"remove\"}",
+    "seconds": 11.73585033299969
+  },
+  "V2-4": {
+    "request": "Add a bench in the garden and add a gold necklace with a round pendant. Keep the jacket absent.",
+    "plan": "{\n  \"jacket\": \"remove\",\n  \"top\": \"keep\",\n  \"pin\": \"keep\",\n  \"necklace\": \"set\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Add a bench in the garden and add a gold necklace with a round pendant. Keep the jacket absent.\nAction plan: {\"jacket\": \"remove\", \"top\": \"keep\", \"pin\": \"keep\", \"necklace\": \"set\", \"background\": \"set\", \"prop\": \"set\"}",
+    "values": "{\"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"bench\"}",
+    "seconds": 18.15032841700122
+  },
+  "V3-1": {
+    "request": "Add a blue circular pin on the viewer-left lapel and wear an ivory crew-neck shirt. Use a pale-blue studio background.",
+    "plan": "{\n  \"jacket\": \"keep\",\n  \"top\": \"set\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"set\",\n  \"prop\": \"keep\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Add a blue circular pin on the viewer-left lapel and wear an ivory crew-neck shirt. Use a pale-blue studio background.\nAction plan: {\"jacket\": \"keep\", \"top\": \"set\", \"pin\": \"set\", \"necklace\": \"keep\", \"background\": \"set\", \"prop\": \"keep\"}",
+    "values": "{\"top\": \"ivory_crewneck\", \"pin\": \"blue_circle_left\", \"background\": \"blue_studio\"}",
+    "seconds": 11.157240375001493
+  },
+  "V3-2": {
+    "request": "Keep the circular pin, but replace the ivory shirt with a gray sweater. Change the background to an office with a lamp.",
+    "plan": "{\n  \"jacket\": \"keep\",\n  \"top\": \"remove\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": "Cannot remove top",
+    "values_user": "Request: Keep the circular pin, but replace the ivory shirt with a gray sweater. Change the background to an office with a lamp.\nAction plan: {\"jacket\": \"keep\", \"top\": \"keep\", \"pin\": \"keep\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "values": "{\"pin\": \"silver_circle_right\", \"top\": \"gray_sweater\", \"background\": \"office\", \"prop\": \"lamp\"}",
+    "seconds": 15.018411375000142
+  },
+  "V3-3": {
+    "request": "Restore the original pin and original background. Remove the lamp; leave the sweater unchanged.",
+    "plan": "{\n  \"jacket\": \"keep\",\n  \"top\": \"keep\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"reset\",\n  \"prop\": \"remove\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Restore the original pin and original background. Remove the lamp; leave the sweater unchanged.\nAction plan: {\"jacket\": \"keep\", \"top\": \"keep\", \"pin\": \"set\", \"necklace\": \"keep\", \"background\": \"reset\", \"prop\": \"remove\"}",
+    "values": "{\"pin\": \"unknown\", \"background\": \"blue_studio\"}",
+    "seconds": 10.483288625000569
+  },
+  "V3-4": {
+    "request": "Add a silver circular pin on the viewer-right lapel, use a library background and add a bench. Keep the gray sweater.",
+    "plan": "{\n  \"jacket\": \"keep\",\n  \"top\": \"keep\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Add a silver circular pin on the viewer-right lapel, use a library background and add a bench. Keep the gray sweater.\nAction plan: {\"jacket\": \"keep\", \"top\": \"keep\", \"pin\": \"set\", \"necklace\": \"keep\", \"background\": \"set\", \"prop\": \"set\"}",
+    "values": "{\"pin\": \"silver_circle_right\", \"background\": \"library\", \"prop\": \"bench\"}",
+    "seconds": 14.311995457999728
+  },
+  "V4-1": {
+    "request": "Wear a navy blazer with a white crew-neck shirt and a gold necklace with a round pendant. Use a garden background with a plant.",
+    "plan": "{\n  \"jacket\": \"set\",\n  \"top\": \"set\",\n  \"pin\": \"keep\",\n  \"necklace\": \"set\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Wear a navy blazer with a white crew-neck shirt and a gold necklace with a round pendant. Use a garden background with a plant.\nAction plan: {\"jacket\": \"set\", \"top\": \"set\", \"pin\": \"keep\", \"necklace\": \"set\", \"background\": \"set\", \"prop\": \"set\"}",
+    "values": "{\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"plant\"}",
+    "seconds": 19.417434875000254
+  },
+  "V4-2": {
+    "request": "Keep the round pendant. Replace the garden with a red-brick studio and replace the plant with a lamp.",
+    "plan": "{\n  \"jacket\": \"keep\",\n  \"top\": \"keep\",\n  \"pin\": \"set\",\n  \"necklace\": \"keep\",\n  \"background\": \"set\",\n  \"prop\": \"set\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Keep the round pendant. Replace the garden with a red-brick studio and replace the plant with a lamp.\nAction plan: {\"jacket\": \"keep\", \"top\": \"keep\", \"pin\": \"set\", \"necklace\": \"keep\", \"background\": \"set\", \"prop\": \"set\"}",
+    "values": "{\"pin\": \"silver_teardrop\", \"background\": \"blue_studio\", \"prop\": \"lamp\"}",
+    "seconds": 14.744596332999208
+  },
+  "V4-3": {
+    "request": "Remove the pendant and jacket. Restore the original shirt, but keep the lamp and background.",
+    "plan": "{\n  \"jacket\": \"remove\",\n  \"top\": \"keep\",\n  \"pin\": \"remove\",\n  \"necklace\": \"reset\",\n  \"background\": \"keep\",\n  \"prop\": \"keep\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Remove the pendant and jacket. Restore the original shirt, but keep the lamp and background.\nAction plan: {\"jacket\": \"remove\", \"top\": \"keep\", \"pin\": \"remove\", \"necklace\": \"reset\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "values": "{\"top\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "seconds": 17.692623165999976
+  },
+  "V4-4": {
+    "request": "Wear a beige blazer over an ivory crew-neck shirt. Keep the necklace absent and remove the lamp.",
+    "plan": "{\n  \"jacket\": \"set\",\n  \"top\": \"set\",\n  \"pin\": \"keep\",\n  \"necklace\": \"remove\",\n  \"background\": \"keep\",\n  \"prop\": \"remove\"\n}",
+    "plan_error": null,
+    "values_user": "Request: Wear a beige blazer over an ivory crew-neck shirt. Keep the necklace absent and remove the lamp.\nAction plan: {\"jacket\": \"set\", \"top\": \"set\", \"pin\": \"keep\", \"necklace\": \"remove\", \"background\": \"keep\", \"prop\": \"remove\"}",
+    "values": "{\"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"pin\": \"unknown\", \"necklace\": \"unknown\", \"background\": \"unknown\", \"prop\": \"unknown\"}",
+    "seconds": 15.500438875000327
+  }
+}

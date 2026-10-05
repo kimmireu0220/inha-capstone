@@ -1,0 +1,4917 @@
+{
+  "posthoc_development": true,
+  "additional_model_calls": 0,
+  "studies": {
+    "action-plan-validation-v1": {
+      "baseline_restore": {
+        "exact_turns": 22,
+        "correct_slots": 142,
+        "exact_final_dialogues": 6,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "N1",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 0,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 3,
+            "observed": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 0,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      },
+      "latest_atomic_restore": {
+        "exact_turns": 18,
+        "correct_slots": 133,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "N1",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "errors": {
+              "background": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 3,
+            "observed": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": false,
+            "correct_slots": 2,
+            "errors": {
+              "prop": "Changed slot is not mentioned in the request",
+              "background": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      },
+      "isolated_restore": {
+        "exact_turns": 23,
+        "correct_slots": 143,
+        "exact_final_dialogues": 6,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "N1",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "background": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 3,
+            "observed": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "prop": "Changed slot is not mentioned in the request",
+              "background": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      },
+      "isolated": {
+        "exact_turns": 21,
+        "correct_slots": 141,
+        "exact_final_dialogues": 4,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "N1",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "background": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 3,
+            "observed": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N5",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "prop": "Changed slot is not mentioned in the request",
+              "background": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "N6",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      }
+    },
+    "restore-contract-validation-v1": {
+      "baseline_restore": {
+        "exact_turns": 20,
+        "correct_slots": 137,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": null,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "errors": {},
+            "selected": null,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 2,
+            "observed": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "errors": {},
+            "selected": null,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      },
+      "latest_atomic_restore": {
+        "exact_turns": 20,
+        "correct_slots": 137,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {
+              "prop": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "errors": {
+              "jacket": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 2,
+            "observed": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "errors": {
+              "jacket": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      },
+      "isolated_restore": {
+        "exact_turns": 22,
+        "correct_slots": 142,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "prop": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {
+              "jacket": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 2,
+            "observed": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "jacket": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      },
+      "isolated": {
+        "exact_turns": 19,
+        "correct_slots": 139,
+        "exact_final_dialogues": 3,
+        "newly_corrupted_unchanged_slots": 0,
+        "rows": [
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "silver_teardrop",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "prop": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {
+              "jacket": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M3",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 2,
+            "observed": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "none",
+              "top": "navy_sweater",
+              "pin": "gold_square_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M4",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "plant"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M5",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "original",
+              "prop": "none"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "silver_circle_right",
+              "necklace": "original",
+              "background": "office",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "navy_sweater",
+              "pin": "none",
+              "necklace": "original",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {
+              "jacket": "Changed slot is not mentioned in the request"
+            },
+            "selected": 1,
+            "newly_corrupted_slots": []
+          },
+          {
+            "dialogue": "M6",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "navy_sweater",
+              "pin": "original",
+              "necklace": "original",
+              "background": "office",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "errors": {},
+            "selected": 1,
+            "newly_corrupted_slots": []
+          }
+        ]
+      }
+    }
+  },
+  "sha256": {
+    "experiments/slot-isolation-v1/replay.py": "c8c30e2dfcc6af893edc32f945ffbe914d837e2c7a251f4484d60049f044783c",
+    "experiments/slot-isolation-v1/method.py": "5a0340514013f4421c9134ead01b5ffb4afc1cde68f375c26d2f529e64d58a4d",
+    "experiments/slot-isolation-v1/PROTOCOL.md": "b70fb762148149db02a017e547a086c639022cb60e79a6437b6347406435bd27",
+    "experiments/restore-contract-v1/contract.py": "67df5174f024f24e8fa120d28e9878a08bff954b560fd4e1ac819746222202ee",
+    "experiments/action-plan-validation-v1/benchmark.json": "35eb707187f4df885cd7d422b54f273510ca77b0efdd8c55bc5e47c8770b0f1f",
+    "experiments/action-plan-validation-v1/transcripts.json": "05b6a101850824a8fb1576fa0632cf801d8c7d556a126bf5b1c57c535daba085",
+    "experiments/restore-contract-validation-v1/benchmark.json": "773dbc2b96dc2bf08096a1206952d2728315e11bf65db9ae03321862af2f8823",
+    "experiments/restore-contract-validation-v1/transcripts.json": "c1cdc71b94586eeacf4378bf01568c44efdd93a75e4018438353b49012575222"
+  }
+}

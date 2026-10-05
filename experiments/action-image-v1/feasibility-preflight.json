@@ -1,0 +1,299 @@
+{
+  "before_generation": true,
+  "diagnostic_only": true,
+  "conditions_excluded": 0,
+  "prepared_sha256": "da95999f997a178f0181ab3456cba9cc8dbfba5cca5449d0d15d1329f4e51f9b",
+  "script_sha256": "730ac7a04e625888d185a3897e20e06213fbb114f0610b382cf9ac639cf9ed26",
+  "target_flagged_conditions": 12,
+  "predicted_flagged_conditions": 12,
+  "rows": [
+    {
+      "id": "R01-N1-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N1-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N1-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N1-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N1-t4-action",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R01-N1-t4-generic_noop",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R02-N1-t4-generic_noop",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R02-N1-t4-action",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R01-N2-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N2-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N2-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N2-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N2-t4-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N2-t4-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N2-t4-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N2-t4-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N3-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N3-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N3-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N3-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N3-t4-action",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R01-N3-t4-generic_noop",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R02-N3-t4-generic_noop",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R02-N3-t4-action",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R01-N4-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N4-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N4-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N4-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N4-t4-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N4-t4-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N4-t4-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N4-t4-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N5-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N5-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N5-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N5-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N5-t4-action",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R01-N5-t4-generic_noop",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R02-N5-t4-generic_noop",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R02-N5-t4-action",
+      "target_flags": [
+        "lapel_pin_without_blazer"
+      ],
+      "predicted_flags": [
+        "lapel_pin_without_blazer"
+      ]
+    },
+    {
+      "id": "R01-N6-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N6-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N6-t2-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N6-t2-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N6-t4-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-N6-t4-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N6-t4-action",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-N6-t4-generic_noop",
+      "target_flags": [],
+      "predicted_flags": []
+    }
+  ]
+}
