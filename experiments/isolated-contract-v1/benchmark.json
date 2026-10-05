@@ -1,0 +1,42 @@
+{"histories":{
+"T1":[
+{"request":"Use a pale-blue studio with a plant. Dress the person in a gray blazer and an ivory crew-neck shirt. Add a silver teardrop necklace.","updates":{"background":"blue_studio","prop":"plant","jacket":"gray","top":"ivory_crewneck","necklace":"silver_teardrop"}},
+{"request":"Leave the necklace unchanged. Replace the ivory shirt with a navy sweater and change the pale-blue studio to a library.","updates":{"top":"navy_sweater","background":"library"}},
+{"request":"Keep the plant unchanged, then remove the plant. Leave the gray blazer unchanged.","updates":{"prop":"none"}},
+{"request":"Restore the original shirt and necklace. Keep the gray blazer and library background unchanged.","updates":{"top":"original","necklace":"original"}}],
+"T2":[
+{"request":"Use an office with a bench. Wear a beige blazer over a white crew-neck shirt. Put a blue circular pin on the viewer-left lapel.","updates":{"background":"office","prop":"bench","jacket":"beige","top":"white_crewneck","pin":"blue_circle_left"}},
+{"request":"Keep the pin unchanged. Change the shirt to a gray sweater and replace the office with a garden.","updates":{"top":"gray_sweater","background":"garden"}},
+{"request":"Remove the pin and replace the bench with a floor lamp. Leave the beige blazer unchanged.","updates":{"pin":"none","prop":"lamp"}},
+{"request":"Restore the original blazer and shirt. Keep the garden background and lamp unchanged.","updates":{"jacket":"original","top":"original"}}],
+"T3":[
+{"request":"Wear a green blazer and a navy sweater. Add a gold round pendant necklace. Use a library background with a lamp.","updates":{"jacket":"green","top":"navy_sweater","necklace":"gold_round","background":"library","prop":"lamp"}},
+{"request":"Keep the necklace off. Leave the navy sweater and lamp unchanged while replacing the library with a red-brick studio.","updates":{"necklace":"none","background":"brick_studio"}},
+{"request":"Change the green blazer to navy. Keep the lamp unchanged, then remove the lamp.","updates":{"jacket":"navy","prop":"none"}},
+{"request":"Restore the original necklace and shirt. Leave the navy blazer and red-brick studio background unchanged.","updates":{"necklace":"original","top":"original"}}],
+"T4":[
+{"request":"Put a red triangular pin on the viewer-left lapel of a navy blazer over a gray sweater. Use a garden background with a plant.","updates":{"pin":"red_triangle_left","jacket":"navy","top":"gray_sweater","background":"garden","prop":"plant"}},
+{"request":"Keep the blazer beige. Leave the plant and gray sweater unchanged and replace the garden with an office.","updates":{"jacket":"beige","background":"office"}},
+{"request":"Leave the pin out of the image. Replace the plant with a bench and keep the office background unchanged.","updates":{"pin":"none","prop":"bench"}},
+{"request":"Restore the original blazer and shirt. Keep the office background and bench unchanged.","updates":{"jacket":"original","top":"original"}}],
+"T5":[
+{"request":"Wear a gray blazer with an ivory crew-neck shirt and a gold round pendant necklace. Use a red-brick studio background with a bench.","updates":{"jacket":"gray","top":"ivory_crewneck","necklace":"gold_round","background":"brick_studio","prop":"bench"}},
+{"request":"Keep the necklace unchanged? No, remove it. Leave the bench unchanged and change the shirt to a white crew-neck shirt.","updates":{"necklace":"none","top":"white_crewneck"}},
+{"request":"Remove the bench. Keep the gray blazer and white shirt unchanged while changing the red-brick studio to a pale-blue studio.","updates":{"prop":"none","background":"blue_studio"}},
+{"request":"Restore the original shirt and necklace. Keep the pale-blue studio background unchanged.","updates":{"top":"original","necklace":"original"}}],
+"T6":[
+{"request":"Use a library background with a plant. Wear a beige blazer over a gray sweater and add a silver circular pin on the viewer-right lapel.","updates":{"background":"library","prop":"plant","jacket":"beige","top":"gray_sweater","pin":"silver_circle_right"}},
+{"request":"Keep the silver pin unchanged. Replace the gray sweater with a navy sweater and change the library to an office.","updates":{"top":"navy_sweater","background":"office"}},
+{"request":"Leave the plant unchanged, then remove the plant. Keep the beige blazer and navy sweater unchanged.","updates":{"prop":"none"}},
+{"request":"Restore the original pin and shirt. Leave the beige blazer and office background unchanged.","updates":{"pin":"original","top":"original"}}],
+"T7":[
+{"request":"Use an office background with a floor lamp. Wear a green blazer with a white crew-neck shirt and add a silver teardrop necklace.","updates":{"background":"office","prop":"lamp","jacket":"green","top":"white_crewneck","necklace":"silver_teardrop"}},
+{"request":"Keep the blazer but make it gray. Keep the lamp unchanged and switch the office to a garden.","updates":{"jacket":"gray","background":"garden"}},
+{"request":"Remove the necklace. Leave the white shirt and lamp unchanged.","updates":{"necklace":"none"}},
+{"request":"Restore the original shirt and necklace. Keep the gray blazer and garden background unchanged.","updates":{"top":"original","necklace":"original"}}],
+"T8":[
+{"request":"Use a pale-blue studio background with a bench. Wear a navy blazer and an ivory crew-neck shirt. Put a gold square pin on the viewer-right lapel.","updates":{"background":"blue_studio","prop":"bench","jacket":"navy","top":"ivory_crewneck","pin":"gold_square_right"}},
+{"request":"Keep the pin unchanged? No, remove it. Change the ivory shirt to a gray sweater and leave the bench unchanged.","updates":{"pin":"none","top":"gray_sweater"}},
+{"request":"Keep the navy blazer and gray sweater unchanged. Replace the bench with a plant and the pale-blue studio with a library.","updates":{"prop":"plant","background":"library"}},
+{"request":"Restore the original blazer and pin. Keep the library background and plant unchanged.","updates":{"jacket":"original","pin":"original"}}]
+}}

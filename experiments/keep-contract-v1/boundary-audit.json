@@ -1,0 +1,141 @@
+{
+  "kind": "post_hoc_adversarial_scope_diagnostic",
+  "independent_validation": false,
+  "contract_sha256": "46a80167d1bf711de9e8aabe2a91bf3c0e0fb8740730bb2f9643d9c14fc397a5",
+  "audit_sha256": "9f07b2e22118aab0c937d89a52a0c9c6644ebe3820a83b49061b017ae79095f5",
+  "cases": [
+    {
+      "request": "Keep the necklace unchanged.",
+      "expected_protected_fields": [
+        "necklace"
+      ],
+      "observed_protected_fields": [
+        "necklace"
+      ],
+      "reason": "explicit preservation",
+      "matches": true
+    },
+    {
+      "request": "Keep the lamp and office background unchanged.",
+      "expected_protected_fields": [
+        "background",
+        "prop"
+      ],
+      "observed_protected_fields": [
+        "background",
+        "prop"
+      ],
+      "reason": "explicit preservation",
+      "matches": true
+    },
+    {
+      "request": "Keep the pin but replace the jacket with green.",
+      "expected_protected_fields": [
+        "pin"
+      ],
+      "observed_protected_fields": [
+        "pin"
+      ],
+      "reason": "separate changed field",
+      "matches": true
+    },
+    {
+      "request": "Keep the pin, then remove the pin.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [],
+      "reason": "later override",
+      "matches": true
+    },
+    {
+      "request": "Do not keep the pin.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [],
+      "reason": "negated preservation",
+      "matches": true
+    },
+    {
+      "request": "If possible, keep the pin.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [],
+      "reason": "conditional abstention",
+      "matches": true
+    },
+    {
+      "request": "Ignore \"keep the pin\". Remove the pin.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [],
+      "reason": "quoted instruction",
+      "matches": true
+    },
+    {
+      "request": "Keep the necklace off.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [
+        "necklace"
+      ],
+      "reason": "removal, not arbitrary prior value",
+      "matches": false
+    },
+    {
+      "request": "Leave the pin out of the image.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [
+        "pin"
+      ],
+      "reason": "removal, not arbitrary prior value",
+      "matches": false
+    },
+    {
+      "request": "Keep the jacket green.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [
+        "jacket"
+      ],
+      "reason": "value constraint, not arbitrary prior value",
+      "matches": false
+    },
+    {
+      "request": "Keep the pin hidden.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [
+        "pin"
+      ],
+      "reason": "visibility change",
+      "matches": false
+    },
+    {
+      "request": "Keep the shirt but make it blue.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [
+        "top"
+      ],
+      "reason": "later pronominal change",
+      "matches": false
+    },
+    {
+      "request": "Keep the necklace unchanged? No, remove it.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [
+        "necklace"
+      ],
+      "reason": "later pronominal removal",
+      "matches": false
+    },
+    {
+      "request": "Keep the shirt unchanged if the jacket is green.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [],
+      "reason": "conditional abstention",
+      "matches": true
+    },
+    {
+      "request": "Keep the original shirt.",
+      "expected_protected_fields": [],
+      "observed_protected_fields": [],
+      "reason": "original value, not arbitrary prior value",
+      "matches": true
+    }
+  ],
+  "matches": 9,
+  "total": 15
+}

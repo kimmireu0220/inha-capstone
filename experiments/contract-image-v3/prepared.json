@@ -1,0 +1,3520 @@
+{
+  "generation_not_started": true,
+  "backend_pending_confirmation": false,
+  "planned_backend": "builtin",
+  "text_combined_method_gate_passed": true,
+  "exploratory_component_followup": false,
+  "source": "experiments/request-contract-v3",
+  "modes": [
+    "baseline_restore",
+    "keep_remove"
+  ],
+  "turns": [
+    "all"
+  ],
+  "condition_count": 128,
+  "unique_prompt_reference_jobs": 66,
+  "different_prompt_snapshots": 2,
+  "paired_snapshots": [
+    {
+      "history": "S1",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S1",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S1",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S1",
+      "turn": 4,
+      "same_prompt": true
+    },
+    {
+      "history": "S2",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S2",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S2",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S2",
+      "turn": 4,
+      "same_prompt": true
+    },
+    {
+      "history": "S3",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S3",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S3",
+      "turn": 3,
+      "same_prompt": false
+    },
+    {
+      "history": "S3",
+      "turn": 4,
+      "same_prompt": false
+    },
+    {
+      "history": "S4",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S4",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S4",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S4",
+      "turn": 4,
+      "same_prompt": true
+    },
+    {
+      "history": "S5",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S5",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S5",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S5",
+      "turn": 4,
+      "same_prompt": true
+    },
+    {
+      "history": "S6",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S6",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S6",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S6",
+      "turn": 4,
+      "same_prompt": true
+    },
+    {
+      "history": "S7",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S7",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S7",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S7",
+      "turn": 4,
+      "same_prompt": true
+    },
+    {
+      "history": "S8",
+      "turn": 1,
+      "same_prompt": true
+    },
+    {
+      "history": "S8",
+      "turn": 2,
+      "same_prompt": true
+    },
+    {
+      "history": "S8",
+      "turn": 3,
+      "same_prompt": true
+    },
+    {
+      "history": "S8",
+      "turn": 4,
+      "same_prompt": true
+    }
+  ],
+  "inputs": {
+    "experiments/action-image-v1/prepare_from_states.py": "d8d7370409782a54cc50babf6a0f7a5ac4a3820cd3d510c1bc012db7536a0c3f",
+    "experiments/action-image-v1/prepare.py": "bd8ee00846ddc1d608b9eab07f55225fa57ca8ee4816994a95aaad0865a7b9c8",
+    "experiments/contract-image-v3/PROTOCOL.md": "e67599d42e87f40059e7689a8a95d6d8968f8a2868d333ec0544112d36a2422c",
+    "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
+    "experiments/request-contract-v3/verification.json": "a5afd8e7134589379908e80a3da1c445b843f8e5e4c7dc585b1bde03b9d1069a",
+    "local-studio/request_state.py": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+    "experiments/state-tracking-v2/references/R01.png": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+    "experiments/state-tracking-v2/references/R02.png": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9"
+  },
+  "conditions": [
+    {
+      "id": "R01-S1-t1-keep_remove",
+      "person": "R01",
+      "history": "S1",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-38cac7d5756aad47",
+      "signature": "38cac7d5756aad4717f17e84cfd12320eb688d65366e559d63f5284ecda4f31d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S1-t1-baseline_restore",
+      "person": "R01",
+      "history": "S1",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-38cac7d5756aad47",
+      "signature": "38cac7d5756aad4717f17e84cfd12320eb688d65366e559d63f5284ecda4f31d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S1-t1-baseline_restore",
+      "person": "R02",
+      "history": "S1",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-5c8ceb3a8d40a61b",
+      "signature": "5c8ceb3a8d40a61bd62ef307d47d5dc4db558c4a87a7d96eb01104a1a79a5359",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S1-t1-keep_remove",
+      "person": "R02",
+      "history": "S1",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-5c8ceb3a8d40a61b",
+      "signature": "5c8ceb3a8d40a61bd62ef307d47d5dc4db558c4a87a7d96eb01104a1a79a5359",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S1-t2-baseline_restore",
+      "person": "R01",
+      "history": "S1",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-a796bdca76575ed5",
+      "signature": "a796bdca76575ed51c43fdea3169e0f96b8d7605f02c9a371d9ed76b0347ea9c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S1-t2-keep_remove",
+      "person": "R01",
+      "history": "S1",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-a796bdca76575ed5",
+      "signature": "a796bdca76575ed51c43fdea3169e0f96b8d7605f02c9a371d9ed76b0347ea9c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S1-t2-keep_remove",
+      "person": "R02",
+      "history": "S1",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-8dd8132bfa62ade5",
+      "signature": "8dd8132bfa62ade56ea9909cbbf496206ff7994de4a5d216fafbdf79258cf95f",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S1-t2-baseline_restore",
+      "person": "R02",
+      "history": "S1",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-8dd8132bfa62ade5",
+      "signature": "8dd8132bfa62ade56ea9909cbbf496206ff7994de4a5d216fafbdf79258cf95f",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S1-t3-keep_remove",
+      "person": "R01",
+      "history": "S1",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-ea81d893b7ef2397",
+      "signature": "ea81d893b7ef239799fa4f64ff858b4bd558c55b8acfc4a559b5bfe7bced235a",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S1-t3-baseline_restore",
+      "person": "R01",
+      "history": "S1",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-ea81d893b7ef2397",
+      "signature": "ea81d893b7ef239799fa4f64ff858b4bd558c55b8acfc4a559b5bfe7bced235a",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S1-t3-baseline_restore",
+      "person": "R02",
+      "history": "S1",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-34486e06cf1c1465",
+      "signature": "34486e06cf1c1465ac5de67d93c4e8d1dfe795cf67be9ec0f6c4eef054afffbe",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S1-t3-keep_remove",
+      "person": "R02",
+      "history": "S1",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-34486e06cf1c1465",
+      "signature": "34486e06cf1c1465ac5de67d93c4e8d1dfe795cf67be9ec0f6c4eef054afffbe",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a modern office.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S1-t4-baseline_restore",
+      "person": "R01",
+      "history": "S1",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-0f517fd54fb1a537",
+      "signature": "0f517fd54fb1a53794317b589a22b1356ef18a51ad4c748d04ca7080b35af014",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S1-t4-keep_remove",
+      "person": "R01",
+      "history": "S1",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-0f517fd54fb1a537",
+      "signature": "0f517fd54fb1a53794317b589a22b1356ef18a51ad4c748d04ca7080b35af014",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S1-t4-keep_remove",
+      "person": "R02",
+      "history": "S1",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-2011f73c0db6f02b",
+      "signature": "2011f73c0db6f02bb5f05834055b04f89a4166f51032697b5f33c92e85c88d56",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S1-t4-baseline_restore",
+      "person": "R02",
+      "history": "S1",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-2011f73c0db6f02b",
+      "signature": "2011f73c0db6f02bb5f05834055b04f89a4166f51032697b5f33c92e85c88d56",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "original",
+        "background": "office",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S2-t1-keep_remove",
+      "person": "R01",
+      "history": "S2",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-bdc8f4b9fe28095d",
+      "signature": "bdc8f4b9fe28095d9f93d15283a9f88dc637ddf11a5616a91d36b4828f4e6e81",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S2-t1-baseline_restore",
+      "person": "R01",
+      "history": "S2",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-bdc8f4b9fe28095d",
+      "signature": "bdc8f4b9fe28095d9f93d15283a9f88dc637ddf11a5616a91d36b4828f4e6e81",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S2-t1-baseline_restore",
+      "person": "R02",
+      "history": "S2",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-1ed325681b5880d8",
+      "signature": "1ed325681b5880d892722e4cb4484672468c268f43d5131dd649ebb7a45ec856",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S2-t1-keep_remove",
+      "person": "R02",
+      "history": "S2",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-1ed325681b5880d8",
+      "signature": "1ed325681b5880d892722e4cb4484672468c268f43d5131dd649ebb7a45ec856",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S2-t2-baseline_restore",
+      "person": "R01",
+      "history": "S2",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-8e7482267a53bed5",
+      "signature": "8e7482267a53bed5213d730b1096673cf6c1451ac32de4162506328f3d97b6af",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S2-t2-keep_remove",
+      "person": "R01",
+      "history": "S2",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-8e7482267a53bed5",
+      "signature": "8e7482267a53bed5213d730b1096673cf6c1451ac32de4162506328f3d97b6af",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S2-t2-keep_remove",
+      "person": "R02",
+      "history": "S2",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-cde16db97904fcfe",
+      "signature": "cde16db97904fcfe439586145c6b7bc50cb7d71547c26d294dc44a55f0759e8c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S2-t2-baseline_restore",
+      "person": "R02",
+      "history": "S2",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-cde16db97904fcfe",
+      "signature": "cde16db97904fcfe439586145c6b7bc50cb7d71547c26d294dc44a55f0759e8c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small circular blue pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "blue_circle_left",
+        "necklace": "original",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S2-t3-keep_remove",
+      "person": "R01",
+      "history": "S2",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-4c1d076c10253e31",
+      "signature": "4c1d076c10253e31c7453e74ae4365f7e0642b598af25fe37f8923153dcc0c79",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S2-t3-baseline_restore",
+      "person": "R01",
+      "history": "S2",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-4c1d076c10253e31",
+      "signature": "4c1d076c10253e31c7453e74ae4365f7e0642b598af25fe37f8923153dcc0c79",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S2-t3-baseline_restore",
+      "person": "R02",
+      "history": "S2",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-af5b59e9ade0f1f9",
+      "signature": "af5b59e9ade0f1f9da7c5ff887b04be1bb2422df13e9feac03abe77bfef2c0e5",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S2-t3-keep_remove",
+      "person": "R02",
+      "history": "S2",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-af5b59e9ade0f1f9",
+      "signature": "af5b59e9ade0f1f9da7c5ff887b04be1bb2422df13e9feac03abe77bfef2c0e5",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S2-t4-baseline_restore",
+      "person": "R01",
+      "history": "S2",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-26936c782b1e6404",
+      "signature": "26936c782b1e640416537c78bb2d2904fadcd86123aa14a056346083da31953e",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S2-t4-keep_remove",
+      "person": "R01",
+      "history": "S2",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-26936c782b1e6404",
+      "signature": "26936c782b1e640416537c78bb2d2904fadcd86123aa14a056346083da31953e",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S2-t4-keep_remove",
+      "person": "R02",
+      "history": "S2",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-032e70bf5ec4ec62",
+      "signature": "032e70bf5ec4ec62eedd25725d4804d1ba541b02bb5d7416131dbe12d5a74db2",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S2-t4-baseline_restore",
+      "person": "R02",
+      "history": "S2",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-032e70bf5ec4ec62",
+      "signature": "032e70bf5ec4ec62eedd25725d4804d1ba541b02bb5d7416131dbe12d5a74db2",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S3-t1-keep_remove",
+      "person": "R01",
+      "history": "S3",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-081f468514abccc3",
+      "signature": "081f468514abccc322ee0a17fe1c1a755caac9804cbeec5340b73090ca897519",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S3-t1-baseline_restore",
+      "person": "R01",
+      "history": "S3",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-081f468514abccc3",
+      "signature": "081f468514abccc322ee0a17fe1c1a755caac9804cbeec5340b73090ca897519",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S3-t1-baseline_restore",
+      "person": "R02",
+      "history": "S3",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-59bd83aa0398b95f",
+      "signature": "59bd83aa0398b95fba64e4ca17cac5885812a9b4d84db81cee576957318ca7da",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S3-t1-keep_remove",
+      "person": "R02",
+      "history": "S3",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-59bd83aa0398b95f",
+      "signature": "59bd83aa0398b95fba64e4ca17cac5885812a9b4d84db81cee576957318ca7da",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "gold_round",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S3-t2-baseline_restore",
+      "person": "R01",
+      "history": "S3",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-6e3d43fef5408552",
+      "signature": "6e3d43fef5408552a2ad21ba543adbe3e03c0ae40040f62dd54edb30b8ba2e28",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S3-t2-keep_remove",
+      "person": "R01",
+      "history": "S3",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-6e3d43fef5408552",
+      "signature": "6e3d43fef5408552a2ad21ba543adbe3e03c0ae40040f62dd54edb30b8ba2e28",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S3-t2-keep_remove",
+      "person": "R02",
+      "history": "S3",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-9e4ba4abf27ba3f7",
+      "signature": "9e4ba4abf27ba3f71ecf6ab351cfd501eb1c56ab95bb79a95a31341ca7a0d128",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S3-t2-baseline_restore",
+      "person": "R02",
+      "history": "S3",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-9e4ba4abf27ba3f7",
+      "signature": "9e4ba4abf27ba3f71ecf6ab351cfd501eb1c56ab95bb79a95a31341ca7a0d128",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S3-t3-keep_remove",
+      "person": "R01",
+      "history": "S3",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-5725f046523b1faf",
+      "signature": "5725f046523b1faf4e1f941c810d4b21be591c45b4b7d219dae2d585f54da0e3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S3-t3-baseline_restore",
+      "person": "R01",
+      "history": "S3",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-57d69cd6a6d8386b",
+      "signature": "57d69cd6a6d8386b389567439c1b0b7f1fc456bf6c22ad3ef7bc471cae14a3b3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S3-t3-baseline_restore",
+      "person": "R02",
+      "history": "S3",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-f2f6062ce8e62c31",
+      "signature": "f2f6062ce8e62c31bde666c1f8569cf9948d7e48fc961f41ddf948686ba0ec6e",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S3-t3-keep_remove",
+      "person": "R02",
+      "history": "S3",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-b7f4d7cb8a78b452",
+      "signature": "b7f4d7cb8a78b4523aaf76bdfc56d39a5e464a2c5e179aa5095a7c43ab9a31b8",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a continuous pale-blue studio backdrop.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "gray_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S3-t4-baseline_restore",
+      "person": "R01",
+      "history": "S3",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-a209e8df0d3cd19b",
+      "signature": "a209e8df0d3cd19b9dd88860513dcf46401239cc4b06ec5da8ffd2bd65db4819",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Keep the original background unchanged.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S3-t4-keep_remove",
+      "person": "R01",
+      "history": "S3",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-1584d6aaea4453d8",
+      "signature": "1584d6aaea4453d81eb3acb3bbfcf4daa3905db8865fd261c2427b97e0dcf520",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to a continuous pale-blue studio backdrop.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S3-t4-keep_remove",
+      "person": "R02",
+      "history": "S3",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-4656040cc67ecc2f",
+      "signature": "4656040cc67ecc2f2427611916df653458274fa7634ac725bb5d35f409b8c9c1",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to a continuous pale-blue studio backdrop.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S3-t4-baseline_restore",
+      "person": "R02",
+      "history": "S3",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-560fab445976c83c",
+      "signature": "560fab445976c83c507a63b6f3a0659eed97efd30966e803157740b9a76f634b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Keep the original background unchanged.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "original",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S4-t1-keep_remove",
+      "person": "R01",
+      "history": "S4",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-298f3c87cdbd75cf",
+      "signature": "298f3c87cdbd75cf85157514ad3bb94e637df3de82f4ddf0107d42f0b4bc180e",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S4-t1-baseline_restore",
+      "person": "R01",
+      "history": "S4",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-298f3c87cdbd75cf",
+      "signature": "298f3c87cdbd75cf85157514ad3bb94e637df3de82f4ddf0107d42f0b4bc180e",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S4-t1-baseline_restore",
+      "person": "R02",
+      "history": "S4",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-e5cb1a7da1cd010d",
+      "signature": "e5cb1a7da1cd010d1c8b81c9801bed97884459bcc9e17cb7b15b501628a38133",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S4-t1-keep_remove",
+      "person": "R02",
+      "history": "S4",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-e5cb1a7da1cd010d",
+      "signature": "e5cb1a7da1cd010d1c8b81c9801bed97884459bcc9e17cb7b15b501628a38133",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S4-t2-baseline_restore",
+      "person": "R01",
+      "history": "S4",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-71981ddca5e8abec",
+      "signature": "71981ddca5e8abecea4acc1bdfcddc4d0ced2ca4bfebab8365e1de6714adb881",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S4-t2-keep_remove",
+      "person": "R01",
+      "history": "S4",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-71981ddca5e8abec",
+      "signature": "71981ddca5e8abecea4acc1bdfcddc4d0ced2ca4bfebab8365e1de6714adb881",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S4-t2-keep_remove",
+      "person": "R02",
+      "history": "S4",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-8c66bac6c62c55e6",
+      "signature": "8c66bac6c62c55e693f8d6edb30f7f64621db2d917f23a8a3654d572aba861e4",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S4-t2-baseline_restore",
+      "person": "R02",
+      "history": "S4",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-8c66bac6c62c55e6",
+      "signature": "8c66bac6c62c55e693f8d6edb30f7f64621db2d917f23a8a3654d572aba861e4",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain white crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "white_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S4-t3-keep_remove",
+      "person": "R01",
+      "history": "S4",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-0577b618d46a06d6",
+      "signature": "0577b618d46a06d60303c25746538b8d20074a02cf08ab39b26ed9af11cd7a1c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S4-t3-baseline_restore",
+      "person": "R01",
+      "history": "S4",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-0577b618d46a06d6",
+      "signature": "0577b618d46a06d60303c25746538b8d20074a02cf08ab39b26ed9af11cd7a1c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S4-t3-baseline_restore",
+      "person": "R02",
+      "history": "S4",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-3e7714b1cfc2b3b4",
+      "signature": "3e7714b1cfc2b3b4488d7f664cd3a8426e9aca83763be17b323b7cef2e7c1419",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S4-t3-keep_remove",
+      "person": "R02",
+      "history": "S4",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-3e7714b1cfc2b3b4",
+      "signature": "3e7714b1cfc2b3b4488d7f664cd3a8426e9aca83763be17b323b7cef2e7c1419",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S4-t4-baseline_restore",
+      "person": "R01",
+      "history": "S4",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-671a06233eb275d5",
+      "signature": "671a06233eb275d5f807e410ec8ef2c8ceede6b1109c90cb25a135ea041f5865",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S4-t4-keep_remove",
+      "person": "R01",
+      "history": "S4",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-671a06233eb275d5",
+      "signature": "671a06233eb275d5f807e410ec8ef2c8ceede6b1109c90cb25a135ea041f5865",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S4-t4-keep_remove",
+      "person": "R02",
+      "history": "S4",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-7f0ed4b499cecbf2",
+      "signature": "7f0ed4b499cecbf22bd3d914b16415d46af72592e1ba959322e06f8a2d865fd1",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S4-t4-baseline_restore",
+      "person": "R02",
+      "history": "S4",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-7f0ed4b499cecbf2",
+      "signature": "7f0ed4b499cecbf22bd3d914b16415d46af72592e1ba959322e06f8a2d865fd1",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Keep the original top unchanged.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "original",
+        "pin": "none",
+        "necklace": "original",
+        "background": "library",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S5-t1-keep_remove",
+      "person": "R01",
+      "history": "S5",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-2dd86e2537bd72be",
+      "signature": "2dd86e2537bd72beca7fb5f3519e4f8424f52012cb43facbe91c46a11f49c231",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Add exactly one small circular silver pin on the viewer-right lapel.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S5-t1-baseline_restore",
+      "person": "R01",
+      "history": "S5",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-2dd86e2537bd72be",
+      "signature": "2dd86e2537bd72beca7fb5f3519e4f8424f52012cb43facbe91c46a11f49c231",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Add exactly one small circular silver pin on the viewer-right lapel.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S5-t1-baseline_restore",
+      "person": "R02",
+      "history": "S5",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-79f8d18f7b48a9d0",
+      "signature": "79f8d18f7b48a9d045197ce31c244cb7ced7bd21b44f1ce19c0ba4bf806c38ca",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Add exactly one small circular silver pin on the viewer-right lapel.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S5-t1-keep_remove",
+      "person": "R02",
+      "history": "S5",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-79f8d18f7b48a9d0",
+      "signature": "79f8d18f7b48a9d045197ce31c244cb7ced7bd21b44f1ce19c0ba4bf806c38ca",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- Add exactly one small circular silver pin on the viewer-right lapel.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a library with wooden bookshelves.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "silver_circle_right",
+        "necklace": "silver_teardrop",
+        "background": "library",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S5-t2-baseline_restore",
+      "person": "R01",
+      "history": "S5",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-92ee368d7caa3e12",
+      "signature": "92ee368d7caa3e12c271f12a4987a38e06f3ba56e44205b157a3e4f7a0b938a7",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S5-t2-keep_remove",
+      "person": "R01",
+      "history": "S5",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-92ee368d7caa3e12",
+      "signature": "92ee368d7caa3e12c271f12a4987a38e06f3ba56e44205b157a3e4f7a0b938a7",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S5-t2-keep_remove",
+      "person": "R02",
+      "history": "S5",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-0da14b4d41a664f0",
+      "signature": "0da14b4d41a664f022ba267050ce3182b98b6f451caa5f1187f1ebe561a0e8e0",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S5-t2-baseline_restore",
+      "person": "R02",
+      "history": "S5",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-0da14b4d41a664f0",
+      "signature": "0da14b4d41a664f022ba267050ce3182b98b6f451caa5f1187f1ebe561a0e8e0",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S5-t3-keep_remove",
+      "person": "R01",
+      "history": "S5",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-fbc1dfc147184d2e",
+      "signature": "fbc1dfc147184d2e0fee0a9efbf5b2a15cc955edebbad26f9d9afc605ed1d9aa",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to a studio with a plain red-brick wall.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S5-t3-baseline_restore",
+      "person": "R01",
+      "history": "S5",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-fbc1dfc147184d2e",
+      "signature": "fbc1dfc147184d2e0fee0a9efbf5b2a15cc955edebbad26f9d9afc605ed1d9aa",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to a studio with a plain red-brick wall.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S5-t3-baseline_restore",
+      "person": "R02",
+      "history": "S5",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-e2a16c8e4014b703",
+      "signature": "e2a16c8e4014b703653954872457c48454a37141fc3208c939dec2c49a35aa6b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to a studio with a plain red-brick wall.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S5-t3-keep_remove",
+      "person": "R02",
+      "history": "S5",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-e2a16c8e4014b703",
+      "signature": "e2a16c8e4014b703653954872457c48454a37141fc3208c939dec2c49a35aa6b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- Add exactly one thin gold necklace with one small round gold pendant.\n- Set the background to a studio with a plain red-brick wall.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "gold_round",
+        "background": "brick_studio",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S5-t4-baseline_restore",
+      "person": "R01",
+      "history": "S5",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-e2a73ad93b22dd2d",
+      "signature": "e2a73ad93b22dd2d6723e0a52f46d5e8a9c5b001838c7fda3a15b43396e1322b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S5-t4-keep_remove",
+      "person": "R01",
+      "history": "S5",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-e2a73ad93b22dd2d",
+      "signature": "e2a73ad93b22dd2d6723e0a52f46d5e8a9c5b001838c7fda3a15b43396e1322b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S5-t4-keep_remove",
+      "person": "R02",
+      "history": "S5",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-eba4700397317cd2",
+      "signature": "eba4700397317cd2672155308dc6dff3d6aa7490925d9f99bb31a71e2ae85ff3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S5-t4-baseline_restore",
+      "person": "R02",
+      "history": "S5",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-eba4700397317cd2",
+      "signature": "eba4700397317cd2672155308dc6dff3d6aa7490925d9f99bb31a71e2ae85ff3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Wear a plain dark-navy crew-neck sweater.\n- There must be no pin anywhere.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "navy_sweater",
+        "pin": "none",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S6-t1-keep_remove",
+      "person": "R01",
+      "history": "S6",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-186133fe783e954a",
+      "signature": "186133fe783e954a6ffcdbe60af9bcd957fc5b5b0d5919223923c03c88ebedbe",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S6-t1-baseline_restore",
+      "person": "R01",
+      "history": "S6",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-186133fe783e954a",
+      "signature": "186133fe783e954a6ffcdbe60af9bcd957fc5b5b0d5919223923c03c88ebedbe",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S6-t1-baseline_restore",
+      "person": "R02",
+      "history": "S6",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-fbee786b00f1083b",
+      "signature": "fbee786b00f1083b49e21737f738d3de61dc9810540ae8aa20d39511c5c13a66",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S6-t1-keep_remove",
+      "person": "R02",
+      "history": "S6",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-fbee786b00f1083b",
+      "signature": "fbee786b00f1083b49e21737f738d3de61dc9810540ae8aa20d39511c5c13a66",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear a plain light-gray crew-neck sweater.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to a continuous pale-blue studio backdrop.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "gray_sweater",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "blue_studio",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S6-t2-baseline_restore",
+      "person": "R01",
+      "history": "S6",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-cd65ba09470c39a6",
+      "signature": "cd65ba09470c39a6c4779796751dd12d3af1eea6bd9d4b1c0b5812bf96d3f3f1",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S6-t2-keep_remove",
+      "person": "R01",
+      "history": "S6",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-cd65ba09470c39a6",
+      "signature": "cd65ba09470c39a6c4779796751dd12d3af1eea6bd9d4b1c0b5812bf96d3f3f1",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S6-t2-keep_remove",
+      "person": "R02",
+      "history": "S6",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-754c3455d676ce88",
+      "signature": "754c3455d676ce88289ceaec5afe84ab84cb9f7b6ea8e1d4d2422e5e118ab358",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R02-S6-t2-baseline_restore",
+      "person": "R02",
+      "history": "S6",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-754c3455d676ce88",
+      "signature": "754c3455d676ce88289ceaec5afe84ab84cb9f7b6ea8e1d4d2422e5e118ab358",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small square gold pin on the viewer-right lapel.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one green potted plant in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "gold_square_right",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "plant"
+      }
+    },
+    {
+      "id": "R01-S6-t3-keep_remove",
+      "person": "R01",
+      "history": "S6",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-0e0872eeacad6eff",
+      "signature": "0e0872eeacad6effb70d5bee7357aa89699d12f916a2dc37b4a1e267c3762428",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S6-t3-baseline_restore",
+      "person": "R01",
+      "history": "S6",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-0e0872eeacad6eff",
+      "signature": "0e0872eeacad6effb70d5bee7357aa89699d12f916a2dc37b4a1e267c3762428",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S6-t3-baseline_restore",
+      "person": "R02",
+      "history": "S6",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-a6e07a0f5f329843",
+      "signature": "a6e07a0f5f3298437e81d939619ebf0895ec9ab4987e304b75aa984b584fcc72",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S6-t3-keep_remove",
+      "person": "R02",
+      "history": "S6",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-a6e07a0f5f329843",
+      "signature": "a6e07a0f5f3298437e81d939619ebf0895ec9ab4987e304b75aa984b584fcc72",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S6-t4-baseline_restore",
+      "person": "R01",
+      "history": "S6",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-18c6bf73d66464e1",
+      "signature": "18c6bf73d66464e171bb15b74a9e149fc9c50e0959d6963c36bf951ad3cc8125",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S6-t4-keep_remove",
+      "person": "R01",
+      "history": "S6",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-18c6bf73d66464e1",
+      "signature": "18c6bf73d66464e171bb15b74a9e149fc9c50e0959d6963c36bf951ad3cc8125",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S6-t4-keep_remove",
+      "person": "R02",
+      "history": "S6",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-da62678f3ad00ee4",
+      "signature": "da62678f3ad00ee4095c6be2bc330394d771091c13cee23990334cc35029d3b3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S6-t4-baseline_restore",
+      "person": "R02",
+      "history": "S6",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-da62678f3ad00ee4",
+      "signature": "da62678f3ad00ee4095c6be2bc330394d771091c13cee23990334cc35029d3b3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a beige blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "beige",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t1-keep_remove",
+      "person": "R01",
+      "history": "S7",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-673021c7363acf4a",
+      "signature": "673021c7363acf4a108f9492407270669b646d29a1112816a1c42c0817f9308d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t1-baseline_restore",
+      "person": "R01",
+      "history": "S7",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-673021c7363acf4a",
+      "signature": "673021c7363acf4a108f9492407270669b646d29a1112816a1c42c0817f9308d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t1-baseline_restore",
+      "person": "R02",
+      "history": "S7",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-3c9aa64eafc215e0",
+      "signature": "3c9aa64eafc215e02b847233f76a21538d8db2ba277d21b58ed9114e97290f79",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t1-keep_remove",
+      "person": "R02",
+      "history": "S7",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-3c9aa64eafc215e0",
+      "signature": "3c9aa64eafc215e02b847233f76a21538d8db2ba277d21b58ed9114e97290f79",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t2-baseline_restore",
+      "person": "R01",
+      "history": "S7",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-673021c7363acf4a",
+      "signature": "673021c7363acf4a108f9492407270669b646d29a1112816a1c42c0817f9308d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t2-keep_remove",
+      "person": "R01",
+      "history": "S7",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-673021c7363acf4a",
+      "signature": "673021c7363acf4a108f9492407270669b646d29a1112816a1c42c0817f9308d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t2-keep_remove",
+      "person": "R02",
+      "history": "S7",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-3c9aa64eafc215e0",
+      "signature": "3c9aa64eafc215e02b847233f76a21538d8db2ba277d21b58ed9114e97290f79",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t2-baseline_restore",
+      "person": "R02",
+      "history": "S7",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-3c9aa64eafc215e0",
+      "signature": "3c9aa64eafc215e02b847233f76a21538d8db2ba277d21b58ed9114e97290f79",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- Add exactly one thin silver necklace with one small teardrop pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "silver_teardrop",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t3-keep_remove",
+      "person": "R01",
+      "history": "S7",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-56ece4142b62f9ca",
+      "signature": "56ece4142b62f9ca96ec6ff9b60c0f6c629eec2b234eb6a952fa13d9c3959e5c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t3-baseline_restore",
+      "person": "R01",
+      "history": "S7",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-56ece4142b62f9ca",
+      "signature": "56ece4142b62f9ca96ec6ff9b60c0f6c629eec2b234eb6a952fa13d9c3959e5c",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t3-baseline_restore",
+      "person": "R02",
+      "history": "S7",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-0a40c3cba035691d",
+      "signature": "0a40c3cba035691d17c799ea0607f4d6e96aa56f56427a05e6d93487e99b4350",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t3-keep_remove",
+      "person": "R02",
+      "history": "S7",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-0a40c3cba035691d",
+      "signature": "0a40c3cba035691d17c799ea0607f4d6e96aa56f56427a05e6d93487e99b4350",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark navy blazer.\n- Wear a plain white crew-neck shirt.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "navy",
+        "top": "white_crewneck",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "navy",
+        "top": "navy_sweater",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t4-baseline_restore",
+      "person": "R01",
+      "history": "S7",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-5d2b2a6d3d527683",
+      "signature": "5d2b2a6d3d5276836cce0291ee498bd4f3965a54bdc14878e30ce6978c5cd081",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S7-t4-keep_remove",
+      "person": "R01",
+      "history": "S7",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-5d2b2a6d3d527683",
+      "signature": "5d2b2a6d3d5276836cce0291ee498bd4f3965a54bdc14878e30ce6978c5cd081",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t4-keep_remove",
+      "person": "R02",
+      "history": "S7",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-cf85344b261a87ce",
+      "signature": "cf85344b261a87ce3b61ce72808deed288a471e5dd6074d18f308c2b728fe771",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R02-S7-t4-baseline_restore",
+      "person": "R02",
+      "history": "S7",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-cf85344b261a87ce",
+      "signature": "cf85344b261a87ce3b61ce72808deed288a471e5dd6074d18f308c2b728fe771",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Keep the original outer garment unchanged.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- There must be no necklace or pendant.\n- Set the background to a studio with a plain red-brick wall.\n- Include exactly one warm floor lamp in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "brick_studio",
+        "prop": "lamp"
+      },
+      "expected_state": {
+        "jacket": "original",
+        "top": "original",
+        "pin": "original",
+        "necklace": "none",
+        "background": "office",
+        "prop": "lamp"
+      }
+    },
+    {
+      "id": "R01-S8-t1-keep_remove",
+      "person": "R01",
+      "history": "S8",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-d8652090762b118e",
+      "signature": "d8652090762b118e42b9a125cdc37e502aa643b958a215a2f2b53504777e6da0",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S8-t1-baseline_restore",
+      "person": "R01",
+      "history": "S8",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-d8652090762b118e",
+      "signature": "d8652090762b118e42b9a125cdc37e502aa643b958a215a2f2b53504777e6da0",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S8-t1-baseline_restore",
+      "person": "R02",
+      "history": "S8",
+      "turn": 1,
+      "mode": "baseline_restore",
+      "job": "img-db48a675922624f6",
+      "signature": "db48a675922624f65cd06028393ed1b22b4427266ac80e0f06a936838278dda3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S8-t1-keep_remove",
+      "person": "R02",
+      "history": "S8",
+      "turn": 1,
+      "mode": "keep_remove",
+      "job": "img-db48a675922624f6",
+      "signature": "db48a675922624f65cd06028393ed1b22b4427266ac80e0f06a936838278dda3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a dark gray blazer.\n- Wear an ivory crew-neck shirt.\n- Add exactly one small triangular red pin on the viewer-left lapel.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "gray",
+        "top": "ivory_crewneck",
+        "pin": "red_triangle_left",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S8-t2-baseline_restore",
+      "person": "R01",
+      "history": "S8",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-fc4217b9affae767",
+      "signature": "fc4217b9affae76716f2269f24ca4c872c946dc5f3233d0bc393683911623a2b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S8-t2-keep_remove",
+      "person": "R01",
+      "history": "S8",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-fc4217b9affae767",
+      "signature": "fc4217b9affae76716f2269f24ca4c872c946dc5f3233d0bc393683911623a2b",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S8-t2-keep_remove",
+      "person": "R02",
+      "history": "S8",
+      "turn": 2,
+      "mode": "keep_remove",
+      "job": "img-7267e5ae9fb6a099",
+      "signature": "7267e5ae9fb6a0998807e059b764d4d3415205637fef2ef40aeefcab55477b69",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S8-t2-baseline_restore",
+      "person": "R02",
+      "history": "S8",
+      "turn": 2,
+      "mode": "baseline_restore",
+      "job": "img-7267e5ae9fb6a099",
+      "signature": "7267e5ae9fb6a0998807e059b764d4d3415205637fef2ef40aeefcab55477b69",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- There must be no pin anywhere.\n- Keep the original necklace unchanged.\n- Set the background to a modern office.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "none",
+        "necklace": "original",
+        "background": "office",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S8-t3-keep_remove",
+      "person": "R01",
+      "history": "S8",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-95b359151c944355",
+      "signature": "95b359151c944355746f2c81ab7cceadf28df1c2ff6eebfe945a989db73a76a5",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S8-t3-baseline_restore",
+      "person": "R01",
+      "history": "S8",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-95b359151c944355",
+      "signature": "95b359151c944355746f2c81ab7cceadf28df1c2ff6eebfe945a989db73a76a5",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S8-t3-baseline_restore",
+      "person": "R02",
+      "history": "S8",
+      "turn": 3,
+      "mode": "baseline_restore",
+      "job": "img-5f878d2a882d98da",
+      "signature": "5f878d2a882d98dabd01c6027c29b94ea731c20002819df75d2307b666acdb0d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R02-S8-t3-keep_remove",
+      "person": "R02",
+      "history": "S8",
+      "turn": 3,
+      "mode": "keep_remove",
+      "job": "img-5f878d2a882d98da",
+      "signature": "5f878d2a882d98dabd01c6027c29b94ea731c20002819df75d2307b666acdb0d",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Wear an ivory crew-neck shirt.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- Include exactly one stone bench in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "ivory_crewneck",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "bench"
+      }
+    },
+    {
+      "id": "R01-S8-t4-baseline_restore",
+      "person": "R01",
+      "history": "S8",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-06e0a040dda6eaa5",
+      "signature": "06e0a040dda6eaa568e5a15e090b2816545cf4a02cdf0f56a4315af53eaa52f3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R01-S8-t4-keep_remove",
+      "person": "R01",
+      "history": "S8",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-06e0a040dda6eaa5",
+      "signature": "06e0a040dda6eaa568e5a15e090b2816545cf4a02cdf0f56a4315af53eaa52f3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S8-t4-keep_remove",
+      "person": "R02",
+      "history": "S8",
+      "turn": 4,
+      "mode": "keep_remove",
+      "job": "img-b084dabcbd9820b7",
+      "signature": "b084dabcbd9820b7865c890317d56c0358665a86ef071a365c033bfb025a20e3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    },
+    {
+      "id": "R02-S8-t4-baseline_restore",
+      "person": "R02",
+      "history": "S8",
+      "turn": 4,
+      "mode": "baseline_restore",
+      "job": "img-b084dabcbd9820b7",
+      "signature": "b084dabcbd9820b7865c890317d56c0358665a86ef071a365c033bfb025a20e3",
+      "prompt": "Edit only the supplied photograph. Apply these final current requirements; preserve everything else:\n- Wear a forest green blazer.\n- Keep the original top unchanged.\n- Keep the original pin unchanged.\n- Keep the original necklace unchanged.\n- Set the background to an outdoor garden with a leafy hedge.\n- No decorative plants, lamps, or benches in the background.\nKeep the person's face, facial features, expression, gaze, natural skin texture, hair, pose, body proportions, lighting on the person, and camera framing. Do not beautify or smooth the face. No text, logos, or watermarks.",
+      "observed_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      },
+      "expected_state": {
+        "jacket": "green",
+        "top": "original",
+        "pin": "original",
+        "necklace": "original",
+        "background": "garden",
+        "prop": "none"
+      }
+    }
+  ]
+}

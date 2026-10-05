@@ -16,12 +16,16 @@ def main():
     parser.add_argument('--source', type=Path, required=True)
     parser.add_argument('--modes', nargs=2, required=True)
     parser.add_argument('--turns', nargs='+', required=True)
+    parser.add_argument('--exploratory-followup', action='store_true')
+    parser.add_argument('--backend', choices=['pending', 'builtin'], default='pending')
     args = parser.parse_args()
     root, source = args.root.resolve(), args.source.resolve()
     assert (root / 'PROTOCOL.md').is_file()
     assert root.is_relative_to(REPO) and source.is_relative_to(REPO)
     verification = json.loads((source / 'verification.json').read_text())
-    assert verification['passed'] and verification['advance_to_images']
+    assert verification['passed']
+    if not verification['advance_to_images']:
+        assert args.exploratory_followup and (root / 'FOLLOWUP.md').is_file(), 'Failed gates require an explicit exploratory follow-up decision'
     for name, digest in verification['sha256'].items():
         assert sha(source / name) == digest
     results = json.loads((source / 'results.json').read_text())['methods']
@@ -50,7 +54,11 @@ def main():
     files = [Path(__file__), Path(__file__).with_name('prepare.py'), root / 'PROTOCOL.md',
              source / 'results.json', source / 'verification.json', REPO / 'local-studio/request_state.py']
     files += [REFERENCES / f'{person}.png' for person in ['R01', 'R02']]
-    result = {'generation_not_started': True, 'backend_pending_confirmation': True,
+    if args.exploratory_followup:
+        files.append(root / 'FOLLOWUP.md')
+    result = {'generation_not_started': True, 'backend_pending_confirmation': args.backend == 'pending',
+              'planned_backend': args.backend, 'text_combined_method_gate_passed': verification['advance_to_images'],
+              'exploratory_component_followup': args.exploratory_followup,
               'source': str(source.relative_to(REPO)), 'modes': modes, 'turns': args.turns,
               'condition_count': len(conditions), 'unique_prompt_reference_jobs': len(jobs),
               'different_prompt_snapshots': sum(not r['same_prompt'] for r in paired_snapshots),

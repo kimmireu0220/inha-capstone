@@ -1,0 +1,16 @@
+{
+  "backend": "builtin_image_gen",
+  "model_revision": "not_exposed",
+  "seed": "not_exposed",
+  "transparent_background": false,
+  "prepared_sha256": "7f2797a672a82820e01b16ca4664d22f32aa1d8c630e1d0f0a7c77f34f4115e3",
+  "preflight_sha256": "550172a4d3711331e89c8941e4e045a2cbda6d09838ef15ed6639b88a53bcd68",
+  "manager_sha256": "9cb444283bb1513b90c0072caaf191732599e7494223b98866fa9a4e9fe97ad5",
+  "evaluation_scripts_sha256": {
+    "goals.py": "ded2fa3f4defafef64d512a6caf8b0c7f3a904be9427db7fff182647702dbcd8",
+    "evaluate.py": "8e516a987103e0b88a2534131dbb5f1f5c602582030f6f434a361eb4b39bc01d",
+    "measure_faces.py": "10386fa7962b08beb9d9ca7b89e5945a2e317bfee2f0ccf2caff985ac5131878",
+    "preflight.py": "730ac7a04e625888d185a3897e20e06213fbb114f0610b382cf9ac639cf9ed26",
+    "summarize.py": "b1f6c1e1ad55394f1041e183d4bee64402900d62985956acff738de3741d47b8"
+  }
+}

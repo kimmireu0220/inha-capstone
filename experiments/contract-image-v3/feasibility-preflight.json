@@ -1,0 +1,651 @@
+{
+  "before_generation": true,
+  "diagnostic_only": true,
+  "conditions_excluded": 0,
+  "prepared_sha256": "7f2797a672a82820e01b16ca4664d22f32aa1d8c630e1d0f0a7c77f34f4115e3",
+  "script_sha256": "730ac7a04e625888d185a3897e20e06213fbb114f0610b382cf9ac639cf9ed26",
+  "target_flagged_conditions": 0,
+  "predicted_flagged_conditions": 0,
+  "rows": [
+    {
+      "id": "R01-S1-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S1-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S1-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S2-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S2-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S3-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S3-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S4-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S4-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S5-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S5-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S6-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S6-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S7-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S7-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t1-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t1-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t2-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t2-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t3-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t3-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R01-S8-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t4-keep_remove",
+      "target_flags": [],
+      "predicted_flags": []
+    },
+    {
+      "id": "R02-S8-t4-baseline_restore",
+      "target_flags": [],
+      "predicted_flags": []
+    }
+  ]
+}

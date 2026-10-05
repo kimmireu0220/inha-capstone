@@ -9,10 +9,15 @@ R=Path(__file__).resolve().parent
 parser=argparse.ArgumentParser(description='Build the paper using the established Inha review layout.')
 parser.add_argument('--output-dir',type=Path,default=R,
                     help='Use a private directory for draft layout review; defaults to paper/.')
-OUT=parser.parse_args().output_dir.resolve()
+parser.add_argument('--source-dir',type=Path,default=R,
+                    help='Optional draft source directory; author metadata remains in paper/.')
+args=parser.parse_args()
+OUT=args.output_dir.resolve()
+SOURCE=args.source_dir.resolve()
 OUT.mkdir(parents=True,exist_ok=True)
-s=(R/'manuscript.ko.md').read_text().strip()
-abstract=(R/'abstract.en.txt').read_text().strip()
+s=(SOURCE/'manuscript.ko.md').read_text().strip()
+abstract=(SOURCE/'abstract.en.txt').read_text().strip()
+metadata=json.loads((SOURCE/'layout.json').read_text()) if (SOURCE/'layout.json').exists() else {}
 auth=json.loads((R/'authors.json').read_text()) if (R/'authors.json').exists() else {'korean':'________________','english':'________________','advisor_korean':'________________','advisor_english':'________________'}
 d=Document();sec=d.sections[0];sec.page_width=Cm(21);sec.page_height=Cm(29.7);sec.top_margin=Cm(2);sec.bottom_margin=Cm(2);sec.left_margin=Cm(2);sec.right_margin=Cm(2)
 for name in ['Normal','Title','Subtitle','Heading 1','Heading 2','Caption']:
@@ -39,11 +44,12 @@ if auth['english'].strip('_ ,'):
 center('지도교수: '+auth['advisor_korean']).paragraph_format.space_before=Pt(6)
 center('('+auth['advisor_english']+')').paragraph_format.space_after=Pt(14)
 ko=s.split('## 초록\n')[1].split('\n\n주요어:')[0].strip()
-for label,txt in [('요약: ',ko),('Abstract: ',abstract),('Keywords: ','Iterative portrait editing, Facial preservation, Original-referenced regeneration, Final-request synthesis')]:
+for label,txt in [('요약: ',ko),('Abstract: ',abstract),('Keywords: ',metadata.get('keywords','Iterative portrait editing, Facial preservation, Original-referenced regeneration, Final-request synthesis'))]:
  p=d.add_paragraph();p.paragraph_format.first_line_indent=Pt(0);p.add_run(label).bold=True;p.add_run(txt)
 lines=s.split('## 1. 서론')[1];lines='## 1. 서론'+lines
 lines=lines.splitlines();i=0;tn=0;roman=['I','II','III','IV','V','VI','VII']
 caps=['합성 인물의 입력 정책 비교','실제 인물의 최종 목표와 얼굴 유사도','인물별 목표와 얼굴 유사도','편집 이력별 목표 충족','자동 상태 갱신의 목표 충족과 얼굴 유사도','새 대화의 인물별 비교','전체 대화 상태 추출을 포함한 추가 대조']
+caps=metadata.get('table_captions',caps)
 while i<len(lines):
  line=lines[i]
  if not line:i+=1;continue
@@ -70,7 +76,7 @@ while i<len(lines):
      borders=OxmlElement('w:tcBorders');e=OxmlElement('w:bottom');e.set(qn('w:val'),'single');e.set(qn('w:sz'),'5');borders.append(e);c._tc.get_or_add_tcPr().append(borders)
   continue
  if line.startswith('!['):
-  m=re.match(r'!\[(.*?)\]\((.*?)\)',line);d.add_picture(str(R/m[2]),width=Cm(16.8));d.paragraphs[-1].paragraph_format.keep_with_next=True;d.paragraphs[-1].paragraph_format.line_spacing=1;d.add_paragraph(m[1],'Caption')
+  m=re.match(r'!\[(.*?)\]\((.*?)\)',line);d.add_picture(str(SOURCE/m[2]),width=Cm(16.8));d.paragraphs[-1].paragraph_format.keep_with_next=True;d.paragraphs[-1].paragraph_format.line_spacing=1;d.add_paragraph(m[1],'Caption')
  elif line.startswith('### '):d.add_paragraph(re.sub(r'^\d+\.(\d+) ',r'\1. ',line[4:]),'Heading 2')
  elif line.startswith('## '):
   text=line[3:];text=re.sub(r'^(\d+)\.',lambda m:roman[int(m[1])-1]+'.',text);d.add_paragraph(text,'Heading 1')
