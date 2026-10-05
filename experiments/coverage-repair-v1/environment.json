@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-06",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.16.1",
+    "huggingface-hub": "1.30.0"
+  },
+  "network": "HF_HUB_OFFLINE=1; local cached weights only",
+  "execution_note": "Initial sandbox run could not access Metal. Initial GPU attempt waited without saving a completed turn. CPU fallback was then stopped at the user's request, also before saving a completed turn. On user-authorized resume, the unchanged run.py succeeded on GPU and saved its first complete turn. The accepted transcripts use this resumed GPU run; no CPU results are mixed in. Timing includes shared first-call costs and may reflect unrelated machine load.",
+  "accepted_execution_device": "GPU",
+  "resume_command": "HF_HUB_OFFLINE=1 .venv-local-prompt/bin/python -u experiments/coverage-repair-v1/run.py"
+}

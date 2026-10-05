@@ -72,8 +72,19 @@ def check():
             assert (path.parent / local).exists(), f'{path.relative_to(ROOT)} -> {local}'
     with zipfile.ZipFile(ROOT / 'paper/manuscript.inha.docx') as archive:
         assert not forbidden.search(archive.read('word/document.xml').decode())
+    for study in ['coverage-repair-v1', 'coverage-validation-v1']:
+        folder = ROOT / 'experiments' / study
+        verification = json.loads((folder / 'verification.json').read_text())
+        assert verification['passed'], study
+        for name, expected in verification['sha256'].items():
+            assert digest(folder / name) == expected, f'{study}/{name}'
+        manifest = 'method-freeze.json' if (folder / 'method-freeze.json').exists() else 'frozen.json'
+        for name, expected in json.loads((folder / manifest).read_text()).items():
+            if name != 'model_revision':
+                assert digest(ROOT / name) == expected, name
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
-          f'{len(current)} current documents, paper artifact hashes, 40-slide manifest and AI evaluation setup')
+          f'{len(current)} current documents, paper artifact hashes, 40-slide manifest, '
+          'AI evaluation setup and two request-repair studies')
 
 
 if __name__ == '__main__':

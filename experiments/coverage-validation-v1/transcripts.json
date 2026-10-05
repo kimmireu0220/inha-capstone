@@ -1,0 +1,242 @@
+{
+  "V1-1": {
+    "request": "Wear a beige blazer over a navy sweater. Put a gold square pin on the viewer-right lapel.",
+    "first": "{\"jacket\": \"beige\", \"top\": \"navy_sweater\", \"pin\": \"gold_square_right\"}",
+    "first_seconds": 6.620393208000678,
+    "generic": {
+      "user": "Wear a beige blazer over a navy sweater. Put a gold square pin on the viewer-right lapel.\nProposed patch: {\"jacket\": \"beige\", \"top\": \"navy_sweater\", \"pin\": \"gold_square_right\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"jacket\": \"beige\", \"top\": \"navy_sweater\", \"pin\": \"gold_square_right\"}",
+      "seconds": 7.6193646249994345
+    },
+    "coverage": {
+      "user": "Wear a beige blazer over a navy sweater. Put a gold square pin on the viewer-right lapel.\nProposed patch: {\"jacket\": \"beige\", \"top\": \"navy_sweater\", \"pin\": \"gold_square_right\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, top, pin\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"beige\", \"top\": \"navy_sweater\", \"pin\": \"gold_square_right\"}",
+      "seconds": 10.009938291999788
+    }
+  },
+  "V1-2": {
+    "request": "Keep the gold square pin and replace the beige blazer with a green blazer. Use a library background with a plant.",
+    "first": "{\"jacket\": \"keep\", \"pin\": \"gold_square_right\", \"background\": \"library\", \"prop\": \"plant\"}",
+    "first_seconds": 8.42924899999889,
+    "coverage": {
+      "user": "Keep the gold square pin and replace the beige blazer with a green blazer. Use a library background with a plant.\nProposed patch: {\"jacket\": \"keep\", \"pin\": \"gold_square_right\", \"background\": \"library\", \"prop\": \"plant\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, pin, background, prop\nValidator: pin=gold_square_right has no lexical support in the request\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"keep\", \"pin\": \"gold_square_right\", \"background\": \"library\", \"prop\": \"plant\"}",
+      "seconds": 7.6295888330005255
+    },
+    "generic": {
+      "user": "Keep the gold square pin and replace the beige blazer with a green blazer. Use a library background with a plant.\nProposed patch: {\"jacket\": \"keep\", \"pin\": \"gold_square_right\", \"background\": \"library\", \"prop\": \"plant\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"jacket\": \"keep\", \"pin\": \"gold_square_right\", \"background\": \"library\", \"prop\": \"plant\"}",
+      "seconds": 11.340078624998569
+    }
+  },
+  "V1-3": {
+    "request": "Replace the gold square pin with a red triangular pin on the viewer-left lapel. Keep the plant and library background.",
+    "first": "{\"pin\": \"red_triangle_left\", \"prop\": \"plant\", \"background\": \"library\"}",
+    "first_seconds": 9.336421832998894,
+    "generic": {
+      "user": "Replace the gold square pin with a red triangular pin on the viewer-left lapel. Keep the plant and library background.\nProposed patch: {\"pin\": \"red_triangle_left\", \"prop\": \"plant\", \"background\": \"library\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"pin\": \"red_triangle_left\", \"prop\": \"plant\", \"background\": \"library\"}",
+      "seconds": 7.622548500001358
+    },
+    "coverage": {
+      "user": "Replace the gold square pin with a red triangular pin on the viewer-left lapel. Keep the plant and library background.\nProposed patch: {\"pin\": \"red_triangle_left\", \"prop\": \"plant\", \"background\": \"library\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: pin, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"pin\": \"red_triangle_left\", \"background\": \"library\", \"prop\": \"plant\"}",
+      "seconds": 7.306891625001299
+    }
+  },
+  "V1-4": {
+    "request": "Keep the triangular pin unchanged; restore the original blazer and original sweater. Remove the plant.",
+    "first": "{\"pin\": \"keep\", \"jacket\": \"original\", \"top\": \"original\", \"prop\": \"none\"}",
+    "first_seconds": 7.127281875000335,
+    "coverage": {
+      "user": "Keep the triangular pin unchanged; restore the original blazer and original sweater. Remove the plant.\nProposed patch: {\"pin\": \"keep\", \"jacket\": \"original\", \"top\": \"original\", \"prop\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, top, pin, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"keep\", \"top\": \"original\", \"pin\": \"keep\", \"prop\": \"none\"}",
+      "seconds": 9.140071042000272
+    },
+    "generic": {
+      "user": "Keep the triangular pin unchanged; restore the original blazer and original sweater. Remove the plant.\nProposed patch: {\"pin\": \"keep\", \"jacket\": \"original\", \"top\": \"original\", \"prop\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"pin\": \"keep\", \"jacket\": \"original\", \"top\": \"original\", \"prop\": \"none\"}",
+      "seconds": 6.2976065409984585
+    }
+  },
+  "V2-1": {
+    "request": "Use a red-brick studio with a lamp, a gray blazer, and a silver necklace with a teardrop pendant.",
+    "first": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"gray\", \"necklace\": \"silver_teardrop\"}",
+    "first_seconds": 7.221285333000196,
+    "coverage": {
+      "user": "Use a red-brick studio with a lamp, a gray blazer, and a silver necklace with a teardrop pendant.\nProposed patch: {\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"gray\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, necklace, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"gray\", \"necklace\": \"silver_teardrop\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+      "seconds": 10.333292082999833
+    },
+    "generic": {
+      "user": "Use a red-brick studio with a lamp, a gray blazer, and a silver necklace with a teardrop pendant.\nProposed patch: {\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"gray\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"gray\", \"necklace\": \"silver_teardrop\"}",
+      "seconds": 11.091212082999846
+    }
+  },
+  "V2-2": {
+    "request": "Do not remove the necklace or lamp. Remove the blazer and use a white crew-neck shirt.",
+    "first": "{\"jacket\": \"none\", \"top\": \"white_crewneck\", \"necklace\": \"keep\", \"prop\": \"lamp\"}",
+    "first_seconds": 9.755499791999682,
+    "generic": {
+      "user": "Do not remove the necklace or lamp. Remove the blazer and use a white crew-neck shirt.\nProposed patch: {\"jacket\": \"none\", \"top\": \"white_crewneck\", \"necklace\": \"keep\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"jacket\": \"none\", \"top\": \"white_crewneck\", \"necklace\": \"keep\", \"prop\": \"lamp\"}",
+      "seconds": 7.572314875000302
+    },
+    "coverage": {
+      "user": "Do not remove the necklace or lamp. Remove the blazer and use a white crew-neck shirt.\nProposed patch: {\"jacket\": \"none\", \"top\": \"white_crewneck\", \"necklace\": \"keep\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, top, necklace, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"none\", \"top\": \"white_crewneck\", \"necklace\": \"keep\", \"prop\": \"lamp\"}",
+      "seconds": 10.810742125000615
+    }
+  },
+  "V2-3": {
+    "request": "Remove the necklace and lamp now. Keep the white shirt; change the red-brick studio background to a garden.",
+    "first": "{\"necklace\": \"none\", \"prop\": \"none\", \"background\": \"garden\"}",
+    "first_seconds": 8.103504332999364,
+    "coverage": {
+      "user": "Remove the necklace and lamp now. Keep the white shirt; change the red-brick studio background to a garden.\nProposed patch: {\"necklace\": \"none\", \"prop\": \"none\", \"background\": \"garden\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: top, necklace, background, prop\nValidator: Missing decisions for mentioned slots: top\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"top\": \"keep\", \"necklace\": \"none\", \"background\": \"garden\", \"prop\": \"none\"}",
+      "seconds": 7.422229208001227
+    },
+    "generic": {
+      "user": "Remove the necklace and lamp now. Keep the white shirt; change the red-brick studio background to a garden.\nProposed patch: {\"necklace\": \"none\", \"prop\": \"none\", \"background\": \"garden\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"necklace\": \"none\", \"prop\": \"none\", \"background\": \"garden\"}",
+      "seconds": 11.540195415998824
+    }
+  },
+  "V2-4": {
+    "request": "Add a bench in the garden and add a gold necklace with a round pendant. Keep the jacket absent.",
+    "first": "{\"background\": \"garden\", \"prop\": \"bench\", \"necklace\": \"gold_round\", \"jacket\": \"none\"}",
+    "first_seconds": 7.189413541998874,
+    "generic": {
+      "user": "Add a bench in the garden and add a gold necklace with a round pendant. Keep the jacket absent.\nProposed patch: {\"background\": \"garden\", \"prop\": \"bench\", \"necklace\": \"gold_round\", \"jacket\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"background\": \"garden\", \"prop\": \"bench\", \"necklace\": \"gold_round\", \"jacket\": \"none\"}",
+      "seconds": 9.81793770799959
+    },
+    "coverage": {
+      "user": "Add a bench in the garden and add a gold necklace with a round pendant. Keep the jacket absent.\nProposed patch: {\"background\": \"garden\", \"prop\": \"bench\", \"necklace\": \"gold_round\", \"jacket\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, necklace, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"none\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"bench\"}",
+      "seconds": 11.56909325000015
+    }
+  },
+  "V3-1": {
+    "request": "Add a blue circular pin on the viewer-left lapel and wear an ivory crew-neck shirt. Use a pale-blue studio background.",
+    "first": "{\"pin\": \"blue_circle_left\", \"top\": \"ivory_crewneck\", \"background\": \"blue_studio\"}",
+    "first_seconds": 8.681552083000497,
+    "generic": {
+      "user": "Add a blue circular pin on the viewer-left lapel and wear an ivory crew-neck shirt. Use a pale-blue studio background.\nProposed patch: {\"pin\": \"blue_circle_left\", \"top\": \"ivory_crewneck\", \"background\": \"blue_studio\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"pin\": \"blue_circle_left\", \"top\": \"ivory_crewneck\", \"background\": \"blue_studio\"}",
+      "seconds": 11.114597667001362
+    },
+    "coverage": {
+      "user": "Add a blue circular pin on the viewer-left lapel and wear an ivory crew-neck shirt. Use a pale-blue studio background.\nProposed patch: {\"pin\": \"blue_circle_left\", \"top\": \"ivory_crewneck\", \"background\": \"blue_studio\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: top, pin, background\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"pin\": \"blue_circle_left\", \"top\": \"ivory_crewneck\", \"background\": \"blue_studio\"}",
+      "seconds": 12.400593250000384
+    }
+  },
+  "V3-2": {
+    "request": "Keep the circular pin, but replace the ivory shirt with a gray sweater. Change the background to an office with a lamp.",
+    "first": "{\"pin\": \"keep\", \"top\": \"gray_sweater\", \"background\": \"office\", \"prop\": \"lamp\"}",
+    "first_seconds": 7.6486033749988565,
+    "coverage": {
+      "user": "Keep the circular pin, but replace the ivory shirt with a gray sweater. Change the background to an office with a lamp.\nProposed patch: {\"pin\": \"keep\", \"top\": \"gray_sweater\", \"background\": \"office\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: top, pin, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"pin\": \"keep\", \"top\": \"gray_sweater\", \"background\": \"office\", \"prop\": \"lamp\"}",
+      "seconds": 10.846186540999042
+    },
+    "generic": {
+      "user": "Keep the circular pin, but replace the ivory shirt with a gray sweater. Change the background to an office with a lamp.\nProposed patch: {\"pin\": \"keep\", \"top\": \"gray_sweater\", \"background\": \"office\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"pin\": \"keep\", \"top\": \"gray_sweater\", \"background\": \"office\", \"prop\": \"lamp\"}",
+      "seconds": 11.467739333000281
+    }
+  },
+  "V3-3": {
+    "request": "Restore the original pin and original background. Remove the lamp; leave the sweater unchanged.",
+    "first": "{\"pin\": \"original\", \"background\": \"original\", \"prop\": \"none\"}",
+    "first_seconds": 10.063814790999459,
+    "generic": {
+      "user": "Restore the original pin and original background. Remove the lamp; leave the sweater unchanged.\nProposed patch: {\"pin\": \"original\", \"background\": \"original\", \"prop\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"pin\": \"original\", \"background\": \"original\", \"prop\": \"none\"}",
+      "seconds": 10.636736417000066
+    },
+    "coverage": {
+      "user": "Restore the original pin and original background. Remove the lamp; leave the sweater unchanged.\nProposed patch: {\"pin\": \"original\", \"background\": \"original\", \"prop\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: top, pin, background, prop\nValidator: Missing decisions for mentioned slots: top\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"top\": \"keep\", \"pin\": \"original\", \"background\": \"original\", \"prop\": \"none\"}",
+      "seconds": 12.810992040998826
+    }
+  },
+  "V3-4": {
+    "request": "Add a silver circular pin on the viewer-right lapel, use a library background and add a bench. Keep the gray sweater.",
+    "first": "{\"pin\": \"silver_circle_right\", \"background\": \"library\", \"prop\": \"bench\", \"top\": \"gray_sweater\"}",
+    "first_seconds": 9.805606500000067,
+    "coverage": {
+      "user": "Add a silver circular pin on the viewer-right lapel, use a library background and add a bench. Keep the gray sweater.\nProposed patch: {\"pin\": \"silver_circle_right\", \"background\": \"library\", \"prop\": \"bench\", \"top\": \"gray_sweater\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: top, pin, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"pin\": \"silver_circle_right\", \"background\": \"library\", \"prop\": \"bench\", \"top\": \"gray_sweater\"}",
+      "seconds": 10.328600332999486
+    },
+    "generic": {
+      "user": "Add a silver circular pin on the viewer-right lapel, use a library background and add a bench. Keep the gray sweater.\nProposed patch: {\"pin\": \"silver_circle_right\", \"background\": \"library\", \"prop\": \"bench\", \"top\": \"gray_sweater\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"pin\": \"silver_circle_right\", \"background\": \"library\", \"prop\": \"bench\", \"top\": \"gray_sweater\"}",
+      "seconds": 13.629815874999622
+    }
+  },
+  "V4-1": {
+    "request": "Wear a navy blazer with a white crew-neck shirt and a gold necklace with a round pendant. Use a garden background with a plant.",
+    "first": "{\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"plant\"}",
+    "first_seconds": 10.581610916999125,
+    "coverage": {
+      "user": "Wear a navy blazer with a white crew-neck shirt and a gold necklace with a round pendant. Use a garden background with a plant.\nProposed patch: {\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"plant\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, top, necklace, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"plant\"}",
+      "seconds": 12.087042375000237
+    },
+    "generic": {
+      "user": "Wear a navy blazer with a white crew-neck shirt and a gold necklace with a round pendant. Use a garden background with a plant.\nProposed patch: {\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"plant\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"necklace\": \"gold_round\", \"background\": \"garden\", \"prop\": \"plant\"}",
+      "seconds": 12.771332624999559
+    }
+  },
+  "V4-2": {
+    "request": "Keep the round pendant. Replace the garden with a red-brick studio and replace the plant with a lamp.",
+    "first": "{\"necklace\": \"keep\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+    "first_seconds": 19.1883837080004,
+    "generic": {
+      "user": "Keep the round pendant. Replace the garden with a red-brick studio and replace the plant with a lamp.\nProposed patch: {\"necklace\": \"keep\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"necklace\": \"keep\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+      "seconds": 11.662313040998924
+    },
+    "coverage": {
+      "user": "Keep the round pendant. Replace the garden with a red-brick studio and replace the plant with a lamp.\nProposed patch: {\"necklace\": \"keep\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: necklace, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"necklace\": \"keep\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+      "seconds": 14.446432124999774
+    }
+  },
+  "V4-3": {
+    "request": "Remove the pendant and jacket. Restore the original shirt, but keep the lamp and background.",
+    "first": "{\"jacket\": \"none\", \"necklace\": \"none\", \"top\": \"keep\", \"prop\": \"lamp\", \"background\": \"keep\"}",
+    "first_seconds": 11.09961233300055,
+    "coverage": {
+      "user": "Remove the pendant and jacket. Restore the original shirt, but keep the lamp and background.\nProposed patch: {\"jacket\": \"none\", \"necklace\": \"none\", \"top\": \"keep\", \"prop\": \"lamp\", \"background\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, top, necklace, background, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"none\", \"top\": \"keep\", \"necklace\": \"none\", \"background\": \"keep\", \"prop\": \"lamp\"}",
+      "seconds": 11.522997833000773
+    },
+    "generic": {
+      "user": "Remove the pendant and jacket. Restore the original shirt, but keep the lamp and background.\nProposed patch: {\"jacket\": \"none\", \"necklace\": \"none\", \"top\": \"keep\", \"prop\": \"lamp\", \"background\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"jacket\": \"none\", \"necklace\": \"none\", \"top\": \"keep\", \"prop\": \"lamp\", \"background\": \"keep\"}",
+      "seconds": 12.215814166998825
+    }
+  },
+  "V4-4": {
+    "request": "Wear a beige blazer over an ivory crew-neck shirt. Keep the necklace absent and remove the lamp.",
+    "first": "{\"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"necklace\": \"none\", \"prop\": \"none\"}",
+    "first_seconds": 9.302466500001174,
+    "generic": {
+      "user": "Wear a beige blazer over an ivory crew-neck shirt. Keep the necklace absent and remove the lamp.\nProposed patch: {\"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"necklace\": \"none\", \"prop\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+      "response": "{\"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"necklace\": \"none\", \"prop\": \"none\"}",
+      "seconds": 11.4164772919994
+    },
+    "coverage": {
+      "user": "Wear a beige blazer over an ivory crew-neck shirt. Keep the necklace absent and remove the lamp.\nProposed patch: {\"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"necklace\": \"none\", \"prop\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.\nMentioned slots: jacket, top, necklace, prop\nValidator: No schema, lexical-support or coverage error detected.\nReturn an explicit decision for EVERY mentioned slot. Use keep when unchanged. Do not omit background or prop decisions. Distinguish negated removals from removals.",
+      "response": "{\"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"necklace\": \"none\", \"prop\": \"none\"}",
+      "seconds": 12.215086541000346
+    }
+  }
+}

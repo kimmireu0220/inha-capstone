@@ -4,6 +4,8 @@
 
 ## 논문에 사용한 자료
 
+현재 논문 이후의 방법 개발은 [요청 검사 파일럿](experiments/coverage-repair-v1/RESULTS.md)과 [고정 방법의 추가 대화 검증](experiments/coverage-validation-v1/RESULTS.md)으로 구분한다. 추가 검증에서 누락 검사의 개선이 재현되지 않아 후보를 채택하지 않았으며, 논문 본문에 확정된 개선 방법으로 반영하지 않는다. [오류 분석](experiments/coverage-validation-v1/INTERPRETATION.md)에 다음 연구에서 해결해야 할 동작 해석 문제를 기록했다.
+
 - [합성 인물 6명·최종 18쌍 입력 정책 비교](experiments/studio-multiperson-v1/RESULTS.md)
 - [실제 인물 6명·세 편집 이력·108장 최종 요구 종합 비교](experiments/prompt-synthesis-expanded-v1/RESULTS.md)
 - [실제 인물 6명·새 대화 4종·96장 자동 상태 갱신 비교](experiments/state-tracking-v2/README.md)

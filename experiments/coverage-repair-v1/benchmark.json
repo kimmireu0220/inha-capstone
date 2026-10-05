@@ -1,0 +1,28 @@
+{
+  "histories": {
+    "C1": [
+      {"request": "Use a navy blazer and an ivory crew-neck shirt. Set the background to an office with a plant.", "updates": {"jacket": "navy", "top": "ivory_crewneck", "background": "office", "prop": "plant"}},
+      {"request": "Replace the office with a library and replace the plant with a lamp. Keep the blazer unchanged.", "updates": {"background": "library", "prop": "lamp"}},
+      {"request": "Remove the lamp and add a gold necklace with a round pendant. Do not change the library background.", "updates": {"prop": "none", "necklace": "gold_round"}},
+      {"request": "Restore the original background and original top. Leave the necklace and blazer as they are.", "updates": {"background": "original", "top": "original"}}
+    ],
+    "C2": [
+      {"request": "Add a silver circular pin on the viewer-right lapel and a silver necklace with a teardrop pendant.", "updates": {"pin": "silver_circle_right", "necklace": "silver_teardrop"}},
+      {"request": "Remove the pin, not the necklace. Wear a gray sweater and a green blazer.", "updates": {"pin": "none", "top": "gray_sweater", "jacket": "green"}},
+      {"request": "Add a blue circular pin on the viewer-left lapel. Remove the necklace, not the blazer.", "updates": {"pin": "blue_circle_left", "necklace": "none"}},
+      {"request": "Keep the pin. Replace the green blazer with a beige blazer and change the gray sweater to a navy sweater.", "updates": {"jacket": "beige", "top": "navy_sweater"}}
+    ],
+    "C3": [
+      {"request": "Use a garden background with a bench. Add a red triangular pin on the viewer-left lapel.", "updates": {"background": "garden", "prop": "bench", "pin": "red_triangle_left"}},
+      {"request": "Use a pale-blue studio instead of the garden, with no bench. Keep the red triangular pin.", "updates": {"background": "blue_studio", "prop": "none"}},
+      {"request": "Replace the pale-blue studio with a red-brick studio. Add a plant, and remove the pin.", "updates": {"background": "brick_studio", "prop": "plant", "pin": "none"}},
+      {"request": "Restore the original pin. Replace the plant with a lamp, without changing the red-brick studio background.", "updates": {"pin": "original", "prop": "lamp"}}
+    ],
+    "C4": [
+      {"request": "Wear a white crew-neck shirt with no blazer and no necklace. Use an office background with a lamp.", "updates": {"top": "white_crewneck", "jacket": "none", "necklace": "none", "background": "office", "prop": "lamp"}},
+      {"request": "Add a gray blazer and a gold necklace with a round pendant. Replace the office and lamp with a garden and bench.", "updates": {"jacket": "gray", "necklace": "gold_round", "background": "garden", "prop": "bench"}},
+      {"request": "Remove the blazer and necklace again. Keep the shirt, garden and bench unchanged.", "updates": {"jacket": "none", "necklace": "none"}},
+      {"request": "Change the shirt to an ivory crew-neck shirt. Restore the original background, and remove the bench.", "updates": {"top": "ivory_crewneck", "background": "original", "prop": "none"}}
+    ]
+  }
+}

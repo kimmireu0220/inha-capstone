@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "advance_to_heldout": true,
+  "diagnostics": {
+    "first_only": {
+      "newly_corrupted_unchanged_slots": 0,
+      "by_dialogue": {
+        "C1": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C2": {
+          "exact_turns": 3,
+          "turns": 4,
+          "final_exact": false
+        },
+        "C3": {
+          "exact_turns": 3,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C4": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        }
+      }
+    },
+    "generic": {
+      "newly_corrupted_unchanged_slots": 0,
+      "by_dialogue": {
+        "C1": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C2": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C3": {
+          "exact_turns": 3,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C4": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        }
+      }
+    },
+    "coverage": {
+      "newly_corrupted_unchanged_slots": 0,
+      "by_dialogue": {
+        "C1": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C2": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C3": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        },
+        "C4": {
+          "exact_turns": 4,
+          "turns": 4,
+          "final_exact": true
+        }
+      }
+    }
+  },
+  "sha256": {
+    "frozen.json": "6c7f427cdc618d537d4337c95138528f167abe7baae2b5c8a0ce3c96edd43c60",
+    "transcripts.json": "d7a8355ba063453edac112fa96fba618daba4629cd3b85d55032ba17abf1f2e1",
+    "results.json": "8e453433bc2acffca973903fbfb2056c6f95560f09e308415f06d7918f5b0e27",
+    "environment.json": "4388676b8cd55cc9e6bdbd6cb8d3a6aea5641a97f2ac8e81cf467a14d9056742",
+    "report.py": "707ec2a7a69645cf52265a5e65467131b41deed368a30fd2a002cf7a8ed7316a"
+  }
+}
