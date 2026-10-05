@@ -74,7 +74,7 @@ def check():
         assert not forbidden.search(archive.read('word/document.xml').decode())
     verified_studies = ['coverage-repair-v1', 'coverage-validation-v1',
                         'action-plan-v2', 'action-plan-validation-v1',
-                        'restore-contract-validation-v1']
+                        'restore-contract-validation-v1', 'slot-isolation-validation-v1']
     for study in verified_studies:
         folder = ROOT / 'experiments' / study
         verification = json.loads((folder / 'verification.json').read_text())
@@ -97,6 +97,14 @@ def check():
     assert isolation['posthoc_development'] and isolation['additional_model_calls'] == 0
     for name, expected in isolation['sha256'].items():
         assert digest(ROOT / name) == expected, name
+    keep = load('experiments/keep-contract-v1/results.json')
+    assert keep['posthoc_development'] and keep['additional_model_calls'] == 0
+    for name, expected in keep['sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    input_audit = load('experiments/slot-isolation-validation-v1/image-input-audit.json')
+    assert input_audit['different_prompt_snapshots'] == 0 and input_audit['new_images_generated'] == 0
+    for name, expected in input_audit['source_sha256'].items():
+        assert digest(ROOT / 'experiments/slot-isolation-validation-v1' / name) == expected, name
     prepared = load('experiments/action-image-v1/prepared.json')
     for name, expected in prepared['inputs'].items():
         assert digest(ROOT / name) == expected, name

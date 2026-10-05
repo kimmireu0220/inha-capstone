@@ -1,0 +1,16 @@
+{
+  "capture_phase": "during_frozen_inference",
+  "python": "3.12.14",
+  "system": "Darwin",
+  "machine": "arm64",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.16.1",
+    "huggingface-hub": "1.30.0"
+  },
+  "network_mode": "HF_HUB_OFFLINE=1",
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "model_revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "note": "Versions observed from the running study's Python environment. No packages were changed during this study."
+}

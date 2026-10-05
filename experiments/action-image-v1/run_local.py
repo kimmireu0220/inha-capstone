@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import shutil
 import subprocess
+import sys
 import time
 from PIL import Image
 from prepare import ROOT, REPO, REFERENCES, save, sha
@@ -18,6 +19,10 @@ CLI = REPO / '.venv-local-image/bin/mflux-generate-flux2-edit'
 
 
 def main():
+    global ROOT
+    if len(sys.argv) > 1:
+        ROOT = Path(sys.argv[1]).resolve()
+        assert ROOT.is_relative_to(REPO / 'experiments')
     config_path = ROOT / 'execution.json'
     if not config_path.exists():
         raise RuntimeError('Backend confirmation is pending; no images generated')
@@ -67,7 +72,7 @@ def main():
                    '--prompt-file', str(folder / 'prompt.txt'), '--width', str(width), '--height', str(height),
                    '--steps', '4', '--seed', '42', '--output', str(folder / 'output.png')]
         save(ROOT / 'running.json', {'status': 'running', 'job': job, 'completed_unique_jobs': len(done),
-                                    'total_unique_jobs': len(jobs), 'total_conditions': 48})
+                                    'total_unique_jobs': len(jobs), 'total_conditions': prepared['condition_count']})
         print('START', job, len(done), '/', len(jobs), flush=True)
         start = time.monotonic()
         with (folder / 'model.log').open('w') as log:
@@ -87,7 +92,7 @@ def main():
         done[job] = record
         print('DONE', job, flush=True)
     save(ROOT / 'running.json', {'status': 'complete', 'completed_unique_jobs': len(done),
-                                'total_unique_jobs': len(jobs), 'total_conditions': 48})
+                                'total_unique_jobs': len(jobs), 'total_conditions': prepared['condition_count']})
 
 
 if __name__ == '__main__':

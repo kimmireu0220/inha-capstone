@@ -18,3 +18,11 @@ ChatEdit는 대화 이력에서 현재 요청을 추적하고 직전 출력 대�
 
 - IMAGAgent: Orchestrating Multi-Turn Image Editing via Constraint-Aware Planning and Reflection. https://arxiv.org/abs/2603.29602
 - AnchorEdit: Maintaining Temporal Consistency in Multi-turn Image Editing via Causal Memory. https://arxiv.org/abs/2606.11751
+
+## 원문과 외부 자료 확인
+
+ChatEdit의 공식 논문 원문에서 대화 모듈은 T5/PPTOD 기반 학습 모델, 이미지 모듈은 StyleCLIP 계열이며, 편집 항목은 표정·머리색·머리/수염·화장의 네 그룹임을 확인했다(§3.1, §4.1–4.2). 현재 의상·핀·목걸이·배경 여섯 항목과 바로 같은 과제로 간주할 수 없다. 원래 이미지와 대화 이력의 상태를 이용한다는 선행 개념은 명확히 인용해야 한다.
+
+공식 논문이 연결한 [코드 저장소](https://github.com/cuixing100876/ChatEdit)는 2026-10-06 확인 시 README만 표시했고 공개 예정이라고 안내했다. 따라서 외부 대화 데이터로 검증했다고 주장하거나 공개되지 않은 자료를 확보한 것처럼 쓰지 않는다. 현재 N·M·O는 전부 이 프로젝트에서 작성한 검사 대화다.
+
+항목별 오류 격리는 일반적인 소프트웨어 처리 원리의 적용이다. 논문 기여 후보는 명칭의 새로움이 아니라, 고정 소형 모델의 같은 응답을 사용한 대조에서 부수적인 편집 실패가 얼마나 줄었으며 이미지에도 이어지는지를 검증하는 데 있다. 현재 구현은 서로 의존하는 요청을 일반적으로 처리하지 않으므로, 옷깃 없는 옷의 옷깃 핀과 같은 충돌을 포함한 한계를 명시한다.

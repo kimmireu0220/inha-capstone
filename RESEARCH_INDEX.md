@@ -4,7 +4,7 @@
 
 ## 논문에 사용한 자료
 
-후속 방법 연구는 계속 진행 중이다. [동작 분리 N 고정 검증](experiments/action-plan-validation-v1/RESULTS.md)은 20/24에서 22/24의 제한적 개선을 보였지만, 남은 복원 오류를 보완한 [M 고정 검증](experiments/restore-contract-validation-v1/RESULTS.md)은 19/24로 동일한 복원 제약을 적용한 일반 대조의 20/24를 넘지 못했다. 현재 [항목별 오류 격리의 O 고정 검증](experiments/slot-isolation-validation-v1/PROTOCOL.md)을 실행 중이다. 실패한 후보와 사후 개발 결과를 보존하며, 이미지 성능까지 검증하기 전 기존 논문의 확정된 해결 방법으로 반영하지 않는다.
+후속 방법 연구는 계속 진행 중이다. [동작 분리 N 고정 검증](experiments/action-plan-validation-v1/RESULTS.md)은 20/24에서 22/24의 제한적 개선을 보였지만, 남은 복원 오류를 보완한 [M 고정 검증](experiments/restore-contract-validation-v1/RESULTS.md)은 19/24로 동일한 복원 제약을 적용한 일반 대조의20/24를 넘지 못했다. [항목별 오류 격리의 O 고정 검증](experiments/slot-isolation-validation-v1/RESULTS.md)은29→30/32였지만 예정된 이미지 시점의 프롬프트가 모두 같았다. 현재 명시적 유지 제약을 보완한 [P 고정 검증](experiments/keep-contract-validation-v1/PROTOCOL.md)을 실행 중이며 이미지 계획에 모든 턴을 포함한다. 실패한 후보와 사후 개발 결과를 보존하며, 이미지 성능까지 검증하기 전 기존 논문의 확정된 해결 방법으로 반영하지 않는다.
 
 현재 논문 이후의 방법 개발은 [요청 검사 파일럿](experiments/coverage-repair-v1/RESULTS.md)과 [고정 방법의 추가 대화 검증](experiments/coverage-validation-v1/RESULTS.md)으로 구분한다. 추가 검증에서 누락 검사의 개선이 재현되지 않아 후보를 채택하지 않았으며, 논문 본문에 확정된 개선 방법으로 반영하지 않는다. [오류 분석](experiments/coverage-validation-v1/INTERPRETATION.md)에 다음 연구에서 해결해야 할 동작 해석 문제를 기록했다.
 

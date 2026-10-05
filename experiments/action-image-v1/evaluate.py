@@ -48,9 +48,12 @@ def packet(root):
     items, mapping = {}, {}
     for row in prepared['conditions']:
         record = records[row['job']]
+        assert record['person'] == row['person']
         folder = root / record['folder']
         for name, digest in record['sha256'].items():
             assert sha(folder / name) == digest
+        reference = repo / 'experiments/state-tracking-v2/references' / f'{row["person"]}.png'
+        assert sha(folder / 'input.png') == sha(reference), 'Generation did not use the planned reference'
         assert (folder / 'prompt.txt').read_text() == row['prompt'] + '\n'
         targets = goals(row['person'], row['expected_state'])
         digest = sha(folder / 'output.png')
