@@ -22,4 +22,4 @@
 
 `python paper/render_inha.py --runtime-root <번들 dependencies 경로> --renderer <문서 스킬의 render_docx.py 경로> --output-dir .codex-build/paper-render`로 렌더링한다. 이 보조 스크립트는 한글 글꼴 경로를 Fontconfig에 명시한다. 전체 페이지를 눈으로 확인한 뒤 PDF와 검증 해시를 갱신한다.
 
-앞선 비교 중심 원고는 Git 이력에 남아 있다. 온라인 발표 자료는 인증 재연결 전까지 이전 40장이므로 [반영 상태](../artifacts/README.md)를 함께 확인한다.
+앞선 비교 중심 원고는 Git 이력에 남아 있다. [온라인 발표 자료](../artifacts/README.md)는 최신 방법 논문과 일치하는 10장이며 수치·이미지 출처·발표자 노트와 전체 배치를 검수했다.

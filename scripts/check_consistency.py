@@ -47,19 +47,20 @@ def check():
         for name, expected in summary['source_sha256'].items():
             assert digest(base / name) == expected, name
     deck = load('artifacts/slides-verification.json')
-    assert deck['slides'] == deck['main_slides'] + deck['appendix_slides'] == 40
-    alignment = deck['paper_alignment']
-    modes = ['agent', 'tracked', 'structured']
-    for field, source in [('primary_goals', 'primary_ai'), ('secondary_goals', 'secondary_ai')]:
-        assert alignment[field] == [control[source]['by_mode'][mode]['achieved'] for mode in modes]
-    assert alignment['arcface'] == [round(control['primary_ai']['by_mode'][mode]['identity_mean'], 6)
-                                    for mode in modes]
-    assert alignment['goal_denominator_per_method'] == 288
-    assert alignment['independent_people'] == control['independent_people'] == automatic['independent_people'] == 6
+    assert deck['slides'] == len(deck['slide_ids']) == 10
+    assert deck['visual_check']['reviewed_slides'] == list(range(1, 11))
+    assert not deck['visual_check']['visible_overlap_or_clipping_found']
+    assert deck['editable_evidence'] == {'tables': 3, 'images': 8, 'notes': 10}
+    for group in ['source_sha256', 'script_sha256']:
+        for name, expected in deck[group].items():
+            assert digest(ROOT / name) == expected, name
+    assert deck['source_sha256']['paper/manuscript.ko.md'] == evidence['manuscript_sha256']
 
     current = [ROOT / name for name in ['CURRENT_STATUS.md', 'RESEARCH_INDEX.md',
                'paper/README.md', 'paper/manuscript.ko.md', 'paper/manuscript.inha.md',
-               'paper/abstract.en.txt', 'artifacts/README.md']]
+               'paper/abstract.en.txt', 'artifacts/README.md', 'RESEARCH_DESIGN.md',
+               'local-studio/README.md', 'scripts/GOOGLE_SLIDES_API.md',
+               'artifacts/실험_프롬프트와_상세수치.md']]
     for folder in ['state-tracking-v1', 'state-tracking-v2', 'state-format-control-v1']:
         current.extend((ROOT / 'experiments' / folder).glob('*.md'))
         assert not (ROOT / 'experiments' / folder / 'human-ratings.csv').exists()
@@ -138,7 +139,7 @@ def check():
             assert digest(review / filename) == report[key], filename
         review_status = 'complete'
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
-          f'{len(current)} current documents, paper artifact hashes, historical 40-slide manifest (live update pending), '
+          f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
           f'AI evaluation setup and {len(verified_studies)} verified text studies; '
           f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 

@@ -1,50 +1,69 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-06",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "_ATM81TrlpEyOg",
-  "slides": 40,
-  "main_slides": 30,
-  "appendix_slides": 10,
-  "page_numbers": "1-40",
-  "sections": {
-    "initial_10_step": "2-9; six people, six final pairs",
-    "synthetic_3_step": "21; six people, three repetitions, 18 final pairs",
-    "real_prompt": "22-24; 108 images",
-    "state_update": "25-27; 96 images",
-    "full_history_control": "28; 48 conditions, 36 distinct RGB images",
-    "conclusion": "29",
-    "resources": "30"
+  "revision_id": "VEbjEv-YV0eq-Q",
+  "slides": 10,
+  "slide_ids": [
+    "p1",
+    "capstone_real_design_v2",
+    "capstone_real_results_v2",
+    "capstone_real_failure_v2",
+    "capstone_state_design_v2",
+    "capstone_state_results_v2",
+    "capstone_state_limits_v2",
+    "capstone_format_results_v1",
+    "p24",
+    "p25"
+  ],
+  "paper_alignment": "S/T constrained state updates with P/S image limitations",
+  "source_sha256": {
+    "paper/manuscript.ko.md": "4b40bf79092eb9595abe18280bf1d79933347b1a233a8843cf6f0d0da3cd773b",
+    "paper/evidence.json": "03edb0596c3e92767a45a110898b5356ab8b3001b5fdc61d9cfe94d29b020831",
+    "paper/figures/figure-provenance.json": "1cdf1172b1746eae9d4baa347f513dc603269b896c6840b0c712ac93b59e2a5e",
+    "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
+    "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
+    "experiments/contract-image-v3/summary.json": "064a6a39031886bd0cd157cc728249848b34357f5b12ac835442dd191f95356c",
+    "experiments/contract-image-review-v1/summary.json": "448d53b51bb4fb84c1d84df90394b4c647faf5b8492d148a6a4418188a974ce6",
+    "experiments/keep-image-v1/summary.json": "965af4a0dc67c2892bed78c2c5f0142e884929617e3275cbaad3ec6354c4897f"
   },
-  "paper_alignment": {
-    "primary_goals": [
-      194,
-      240,
-      127
-    ],
-    "secondary_goals": [
-      257,
-      261,
-      142
-    ],
-    "goal_denominator_per_method": 288,
-    "arcface": [
-      0.585593,
-      0.675335,
-      0.846995
-    ],
-    "independent_people": 6,
-    "evaluation": "AI goal judgments and ArcFace face similarity"
+  "script_sha256": {
+    "scripts/publish_method_slides.py": "4848ed379f8a4c076af982decfec6b28f5481b09eaf9963c8840c3d0e933717f",
+    "scripts/verify_method_slides.py": "4d3d9cd91ba66e9c61cfaeba87ff1fdaccdc854331520054b64fec1dc5bfe0ae"
   },
+  "content_sha256": "e291c6fc61345113758ac949597001b49125e8cb49ec7b99809fc4f57d8326d1",
+  "editable_evidence": {
+    "tables": 3,
+    "images": 8,
+    "notes": 10
+  },
+  "snapshot_sha256": "9f0516c3e47246fcdf2e841421a1edf5f89619300838f75989ba826b53c54a38",
   "visual_check": {
-    "all_slides_reviewed": true,
+    "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
+    "reviewed_slides": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "visible_overlap_or_clipping_found": false,
-    "method": "Full-deck browser exportGsuite PDF rendered with bundled Poppler at 100dpi; changed slides 27 and 29 visually inspected, other 38 PNGs byte-identical to previously inspected render",
-    "pdf_sha256": "fa4da3bbb9608b9439d9ad10844e45903e49c93542c98c2d7967e07e10be0815",
-    "native_export_fallback_reason": "Drive PDF helper did not materialize its reference-backed PDF; browser export succeeded"
+    "preview_sha256": {
+      "1": "6026869f76b36a611cd622aff3c77b8067237620fd3210134787645cfa193c12",
+      "2": "43a362bf373c2604934887889800136c5f99ac3b8e8f03e519d721d17015d093",
+      "3": "123fcaa7f6d2326cdb3a01ca32c2fe69db388df80c669145ab78932da906d7c6",
+      "4": "b2136555b6f3588d1db242c8c27a442a8fad997f3fc20455da336295f78ab034",
+      "5": "99af96409c5a67ee8fb744251e2f1eded4c1c872e0eeee78be9bd35910f186b7",
+      "6": "3435586ea49840d60c0dd5ecbde40cb80b67c9d2ba09a60dc72266be2adc4829",
+      "7": "c2dba1058b94fea53cf4925b0c7cb335d56cc2731605385fb4b5b2a52767486e",
+      "8": "45b75e8e17f49fdbb55cb15c3bb9ed7ecc277509ff50a28679439a8591ffc8fa",
+      "9": "e271f08420736df99156c17d38fd0d96923ac7fe5d58a623ef7e51d0e9ced506",
+      "10": "c1ad325bf8577a7e5df7e7ed5179db41ac8224a1aae1ffc3775b10e25578ab21"
+    }
   },
-  "structural_issue_checker": {
-    "total_issues": 0,
-    "raw_snapshot_sha256": "9dc4ff776d735732d4a216a0030d6a86dd30bbb82f655284291773750e0722e8"
-  },
-  "scope": "Presentation fidelity and source alignment, not independent validation of AI ratings"
+  "scope": "Presentation fidelity and source alignment, not independent scientific validation"
 }

@@ -1,8 +1,4 @@
-"""Insert the six-person comparison image into the existing Google Slides deck.
-
-Requires a Desktop OAuth client JSON from Google Cloud. The OAuth URL is printed
-instead of opening a browser, so the user's active browser session is untouched.
-"""
+"""Shared Google Slides OAuth credentials and explicit authentication CLI."""
 
 import argparse
 import os
@@ -12,16 +8,9 @@ from google.auth.transport.requests import Request
 from google.auth.exceptions import RefreshError
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
 
 
 PRESENTATION_ID = "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8"
-SLIDE_TITLE = "6인물·3회 확대 비교"
-IMAGE_ID = "capstone_comparison_p03_314"
-IMAGE_URL = (
-    "https://raw.githubusercontent.com/kimmireu0220/inha-capstone/main/"
-    "experiments/studio-multiperson-v1/comparison-P03-314.png"
-)
 SCOPES = ["https://www.googleapis.com/auth/presentations"]
 TOKEN_FILE = Path.home() / ".config/inha-capstone/google-slides-token.json"
 DEFAULT_CLIENT_FILE = Path.home() / ".config/inha-capstone/google-slides-client.json"
@@ -58,89 +47,14 @@ def credentials(client_file: Path, *, reauthorize=False):
     return creds
 
 
-def points(dimension):
-    unit = dimension.get("unit", "EMU")
-    magnitude = dimension["magnitude"]
-    if unit == "PT":
-        return magnitude
-    if unit == "EMU":
-        return magnitude / 12700
-    raise ValueError(f"Unsupported page-size unit: {unit}")
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--apply", action="store_true", help="실제 슬라이드에 이미지를 삽입")
     parser.add_argument("--reauthorize", action="store_true", help="기존 토큰 대신 새 계정 승인을 요청")
-    parser.add_argument("--auth-only", action="store_true", help="인증만 수행하고 슬라이드는 읽거나 수정하지 않음")
+    parser.add_argument("--auth-only", action="store_true", help="인증만 수행하며 슬라이드는 변경하지 않음")
     args = parser.parse_args()
-    if args.auth_only and args.apply:
-        parser.error("--auth-only와 --apply는 함께 사용할 수 없습니다.")
-
-    client_file = Path(
-        os.environ.get("GOOGLE_SLIDES_OAUTH_CLIENT", str(DEFAULT_CLIENT_FILE))
-    ).expanduser()
-    creds = credentials(client_file, reauthorize=args.reauthorize)
-    if args.auth_only:
-        print("인증 완료. 슬라이드는 수정하지 않았습니다.")
-        return
-    service = build("slides", "v1", credentials=creds)
-    presentation = service.presentations().get(presentationId=PRESENTATION_ID).execute()
-    matches = []
-    for slide in presentation.get("slides", []):
-        text = " ".join(
-            element.get("textRun", {}).get("content", "")
-            for page_element in slide.get("pageElements", [])
-            for paragraph in page_element.get("shape", {}).get("text", {}).get("textElements", [])
-            for element in [paragraph]
-        )
-        if SLIDE_TITLE in text:
-            matches.append(slide)
-    if len(matches) != 1:
-        raise SystemExit(f"대상 제목이 있는 슬라이드가 {len(matches)}개입니다. 수정하지 않았습니다.")
-
-    slide = matches[0]
-    slide_id = slide["objectId"]
-    if any(item["objectId"] == IMAGE_ID for item in slide.get("pageElements", [])):
-        print(f"이미지가 이미 있습니다: {slide_id} ({IMAGE_ID})")
-        return
-
-    page_size = presentation["pageSize"]
-    page_width = points(page_size["width"])
-    page_height = points(page_size["height"])
-    # Place the image below the title and two result lines, preserving aspect ratio.
-    image_width = min(page_width * 0.61, (page_height * 0.58) * 1536 / 806)
-    image_height = image_width * 806 / 1536
-    x = (page_width - image_width) / 2
-    y = page_height - image_height - page_height * 0.065
-    request = {
-        "createImage": {
-            "objectId": IMAGE_ID,
-            "url": IMAGE_URL,
-            "elementProperties": {
-                "pageObjectId": slide_id,
-                "size": {
-                    "width": {"magnitude": image_width, "unit": "PT"},
-                    "height": {"magnitude": image_height, "unit": "PT"},
-                },
-                "transform": {
-                    "scaleX": 1,
-                    "scaleY": 1,
-                    "translateX": x,
-                    "translateY": y,
-                    "unit": "PT",
-                },
-            },
-        }
-    }
-    print(f"대상: 슬라이드 {slide_id}, 이미지 {IMAGE_ID}, {image_width:.0f}×{image_height:.0f}pt")
-    if args.apply:
-        service.presentations().batchUpdate(
-            presentationId=PRESENTATION_ID, body={"requests": [request]}
-        ).execute()
-        print("삽입 완료:", f"https://docs.google.com/presentation/d/{PRESENTATION_ID}/edit")
-    else:
-        print("미리보기만 했습니다. 적용하려면 --apply를 추가하세요.")
+    client_file = Path(os.environ.get("GOOGLE_SLIDES_OAUTH_CLIENT", str(DEFAULT_CLIENT_FILE))).expanduser()
+    credentials(client_file, reauthorize=args.reauthorize)
+    print("인증 완료. 슬라이드는 수정하지 않았습니다.")
 
 
 if __name__ == "__main__":

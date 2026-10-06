@@ -2,6 +2,8 @@
 
 M1·16GB에서 검증한 공개 모델을 연결한 로컬 전용 시제품. 인터넷 공개 서비스는 아니다.
 
+이 편집기와 아래 6항목 CLI는 앞선 구현 기록이다. 최신 논문의 유지·삭제 후처리 검사는 별도의 [고정 실험 코드](../experiments/request-contract-v3/contract.py)에서 검증했으며 웹 UI에 통합했다고 주장하지 않는다. 현재 연구 범위와 결과는 [논문](../paper/README.md)을 기준으로 한다.
+
 시작: 저장소 루트에서 `./local-studio/start.sh`, 이후 http://localhost:8770 접속. 이미지 모델 `.venv-local-image`, 언어 모델 `.venv-local-prompt`, 웹 서버 `.venv-metrics` 환경을 사용한다. 의존성 잠금 기록은 experiments/local-open-model-v1에 있다. 모델은 최초 실행 때 Hugging Face 캐시가 필요하다.
 
 사용 순서:

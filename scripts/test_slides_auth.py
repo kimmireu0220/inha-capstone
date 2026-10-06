@@ -65,7 +65,7 @@ class AuthTests(unittest.TestCase):
 
     def test_auth_only_never_opens_slides_service(self):
         with patch('sys.argv', ['update_google_slides.py', '--reauthorize', '--auth-only']), \
-             patch.object(slides, 'credentials') as auth, patch.object(slides, 'build') as build:
+             patch.object(slides, 'credentials') as auth, patch('googleapiclient.discovery.build') as build:
             slides.main()
             self.assertTrue(auth.call_args.kwargs['reauthorize'])
             build.assert_not_called()
