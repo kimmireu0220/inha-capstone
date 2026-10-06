@@ -63,26 +63,30 @@ while i<len(lines):
   p=d.add_paragraph(f'표 {tn}. {caps[tn-1]}','Caption');p.paragraph_format.keep_with_next=True;p.paragraph_format.first_line_indent=Pt(0);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
   t=d.add_table(rows=0,cols=len(rows[0]));t.autofit=False
   width=17
-  for col in t.columns:col.width=Cm(width/len(rows[0]))
+  column_widths=[4.4]+[(width-4.4)/(len(rows[0])-1)]*(len(rows[0])-1)
+  for col,col_width in zip(t.columns,column_widths):col.width=Cm(col_width)
   for j,row in enumerate(rows):
    cells=t.add_row().cells;pr=t.rows[-1]._tr.get_or_add_trPr();pr.append(OxmlElement('w:cantSplit'))
    if j==0:pr.append(OxmlElement('w:tblHeader'))
-   for c,txt in zip(cells,row):
+   for column,(c,txt) in enumerate(zip(cells,row)):
+    c.width=Cm(column_widths[column])
     c.text=txt
     for p in c.paragraphs:
      p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_after=Pt(3);p.paragraph_format.space_before=Pt(3);p.paragraph_format.line_spacing=1
+     p.paragraph_format.keep_with_next=j<len(rows)-1
+     p.alignment=WD_ALIGN_PARAGRAPH.LEFT if column==0 else WD_ALIGN_PARAGRAPH.CENTER
      for run in p.runs:run.font.size=Pt(8);run.bold=j==0
     if j==0 or j==len(rows)-1:
      borders=OxmlElement('w:tcBorders');e=OxmlElement('w:bottom');e.set(qn('w:val'),'single');e.set(qn('w:sz'),'5');borders.append(e);c._tc.get_or_add_tcPr().append(borders)
   continue
  if line.startswith('!['):
-  m=re.match(r'!\[(.*?)\]\((.*?)\)',line);d.add_picture(str(SOURCE/m[2]),width=Cm(16.8));d.paragraphs[-1].paragraph_format.keep_with_next=True;d.paragraphs[-1].paragraph_format.line_spacing=1;d.add_paragraph(m[1],'Caption')
+  m=re.match(r'!\[(.*?)\]\((.*?)\)',line);shape=d.add_picture(str(SOURCE/m[2]),width=Cm(16.8));shape._inline.docPr.set('descr',m[1]);d.paragraphs[-1].paragraph_format.keep_with_next=True;d.paragraphs[-1].paragraph_format.line_spacing=1;d.add_paragraph(m[1],'Caption')
  elif line.startswith('### '):d.add_paragraph(re.sub(r'^\d+\.(\d+) ',r'\1. ',line[4:]),'Heading 2')
  elif line.startswith('## '):
   text=line[3:];text=re.sub(r'^(\d+)\.',lambda m:roman[int(m[1])-1]+'.',text);d.add_paragraph(text,'Heading 1')
  else:
   p=d.add_paragraph(line.replace('`',''));p.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
-  if line.startswith('['):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True
+  if line.startswith('['):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True;p.alignment=WD_ALIGN_PARAGRAPH.LEFT
  i+=1
 for sec in d.sections:
  f=sec.footer.paragraphs[0];f.alignment=WD_ALIGN_PARAGRAPH.CENTER;f.paragraph_format.first_line_indent=Pt(0)

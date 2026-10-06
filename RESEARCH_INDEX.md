@@ -6,10 +6,10 @@
 
 - [유지·삭제 제약과 S 검증](experiments/request-contract-v3/RESULTS.md): 기준 27/32, 유지 27/32, 삭제 28/32, 결합 29/32. 최종 대화 6/8→7/8. 개선은 한 대화의 두 턴에 집중됐다.
 - [별도 T 검증](experiments/isolated-contract-v1/RESULTS.md): 기준 28/32, 유지·삭제 29/32. 최종 대화 7/8→8/8. 항목별 오류 격리를 추가한 이점은 없었다.
-- [S 이미지 검증](experiments/contract-image-v3/PROTOCOL.md): 128조건·66개 고유 이미지의 1차 평가와 검산 완료. 목표 350/384→358/384 중 증가 6개는 판단 불가→성공이다. 입력이 다른 비교는 네 쌍이다. [7B 후속 평가](experiments/contract-image-review-v1/PROTOCOL.md)는 전체 68개 고유 평가 입력을 사용하며 사후 분석으로 구분한다.
+- [S 이미지 검증](experiments/contract-image-v3/INTERPRETATION.md): 128조건·66개 고유 이미지의 1차 평가와 검산 완료. 목표 350/384→358/384 중 증가 6개는 판단 불가→성공이다. 입력이 다른 비교는 네 쌍이다. [7B 후속 평가](experiments/contract-image-review-v1/INTERPRETATION.md)는 전체 68개 고유 평가 입력에서 372/384→374/384였다. 판단 불가는 없어졌지만 설명 모순은 남았다. 사후 분석이며 독립 정답 검증이 아니다.
 - [P 이미지 결과와 해석](experiments/keep-image-v1/INTERPRETATION.md): 128조건·68개 고유 이미지. 목표 점수의 한 항목 차이만으로 뚜렷한 이미지 개선을 주장하지 않는다.
 
-두 텍스트 검증은 개발자가 작성한 제한 문형 검사다. 서로 다른 개발 단계의 자료이며 표본 수를 합산하지 않는다. 새 논문은 별도 초안에서 작성 중이다. [배포된 논문](paper/README.md)과 [40장 Google Slides](artifacts/README.md)는 아직 앞선 비교 연구 산출물이다. 슬라이드는 인증 재연결이 필요하다.
+두 텍스트 검증은 개발자가 작성한 제한 문형 검사다. 서로 다른 개발 단계의 자료이며 표본 수를 합산하지 않는다. [최신 논문](paper/README.md)은 S·T와 이미지 분석을 반영했다. [40장 Google Slides](artifacts/README.md)는 아직 앞선 비교 연구 산출물이며 인증 재연결이 필요하다.
 
 ## 방법 개발 경위
 

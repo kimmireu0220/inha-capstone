@@ -1,111 +1,129 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-06",
   "passed": true,
-  "scope": "Numeric transcription and source-hash checks, not independent scientific validation",
-  "manuscript_sha256": "ce2fc1308fbe4cf06f65f2fe3845c7ce00524b998b1d3e086675b66aed722a36",
-  "english_abstract_sha256": "0e083ff1feda9bd898ca8adb937fd6d0b9a499630e2c3dae6a25c73fe016655a",
+  "scope": "Numeric transcription and provenance QA, not independent scientific validation",
+  "manuscript_sha256": "4b40bf79092eb9595abe18280bf1d79933347b1a233a8843cf6f0d0da3cd773b",
+  "english_abstract_sha256": "a93c565160fa26695949cc46911b9624bb443019b20c2905692ce2e18933e425",
   "checked_values": [
-    "0.087120",
-    "0.846176",
-    "0.922054",
-    "0.108710",
-    "0.768563",
-    "0.713703",
-    "0.555040",
-    "0.842260",
-    "0.740218",
-    "0.943947",
-    "96",
-    "0.732527",
-    "35",
-    "27",
-    "34",
-    "168",
-    "0.585017",
-    "70",
-    "60",
-    "38",
-    "199",
-    "0.734518",
-    "68",
-    "60",
-    "71",
-    "19/36",
-    "0.387",
-    "28/36",
-    "0.366",
-    "18/36",
-    "0.885",
-    "27/36",
-    "0.692",
-    "17/36",
-    "0.833",
-    "29/36",
-    "0.715",
-    "16/36",
-    "0.521",
-    "28/36",
-    "0.392",
-    "13/36",
-    "0.897",
-    "27/36",
-    "0.743",
-    "13/36",
-    "0.872",
-    "29/36",
-    "0.602",
-    "| 에이전트 종합 | 194/288 | 257/288 | 26/72 | 0.585593 |",
-    "| 자동 상태 갱신 | 240/288 | 261/288 | 72/72 | 0.675335 |",
-    "| R01 | 33/48 | 40/48 | 0.352 | 0.377 |",
-    "| R02 | 33/48 | 40/48 | 0.708 | 0.805 |",
-    "| R03 | 32/48 | 40/48 | 0.666 | 0.765 |",
-    "| R04 | 32/48 | 40/48 | 0.374 | 0.506 |",
-    "| R05 | 32/48 | 40/48 | 0.774 | 0.838 |",
-    "| R06 | 32/48 | 40/48 | 0.641 | 0.760 |",
-    "186/192",
-    "50/52",
-    "22/24",
+    "30/32",
+    "32/32",
+    "27/32",
+    "12/32",
+    "27/32",
+    "6/8",
+    "5/8",
+    "| 공통 기준 | 27/32 | 184/192 | 6/8 | 1 |",
+    "| 유지 보호만 | 27/32 | 185/192 | 6/8 | 0 |",
+    "| 삭제 실행만 | 28/32 | 186/192 | 6/8 | 1 |",
+    "| 유지·삭제 결합 | 29/32 | 187/192 | 7/8 | 0 |",
+    "27/32",
     "29/32",
-    "3/4",
-    "470/576",
-    "| 에이전트 종합 | 194/288 | 257/288 | 0.585593 |",
-    "| 자동 상태 갱신 | 240/288 | 261/288 | 0.675335 |",
-    "| 전체 대화 상태 추출 | 127/288 | 142/288 | 0.846995 |",
-    "10/24",
-    "61.4",
-    "5,428.7",
-    "693/863"
+    "| 공통 기준 | 28/32 | 187/192 | 7/8 | 3 |",
+    "| 항목별 적용 | 28/32 | 187/192 | 7/8 | 3 |",
+    "| 유지·삭제 | 29/32 | 189/192 | 8/8 | 1 |",
+    "| 항목별 적용+유지·삭제 | 29/32 | 189/192 | 8/8 | 1 |",
+    "28/32",
+    "29/32",
+    "354/384",
+    "0.914851",
+    "355/384",
+    "0.914108",
+    "350/384",
+    "0.910458",
+    "| 공통 기준 | 350/384 | 20 | 48/64 | 0.910458 |",
+    "358/384",
+    "0.910535",
+    "| 유지·삭제 결합 | 358/384 | 13 | 50/64 | 0.910535 |",
+    "| 공통 기준 | 372/384 | 0 | 56/64 |",
+    "| 유지·삭제 결합 | 374/384 | 0 | 58/64 |",
+    "| R01 S3 3턴 | 5/6 | 5/6 | 6/6 | 6/6 |",
+    "| R01 S3 4턴 | 5/6 | 6/6 | 5/6 | 6/6 |",
+    "| R02 S3 3턴 | 0/6 | 5/6 | 6/6 | 6/6 |",
+    "| R02 S3 4턴 | 4/6 | 6/6 | 5/6 | 6/6 |",
+    "367/408",
+    "367/387"
   ],
+  "figure_provenance_sha256": "1cdf1172b1746eae9d4baa347f513dc603269b896c6840b0c712ac93b59e2a5e",
   "sources": [
     {
-      "name": "synthetic_policy",
-      "path": "experiments/studio-multiperson-v1/results.json",
-      "sha256": "13aa514180c4fe861d17237786a317a7141a626d962b390884687d8305f03fe1"
+      "name": "experiments/keep-contract-validation-v1/results.json",
+      "path": "experiments/keep-contract-validation-v1/results.json",
+      "sha256": "edddceede587ae6c0111d2f43b978820d687757a3a48fa481c5a132c0970286e"
     },
     {
-      "name": "synthetic_arcface",
-      "path": "experiments/studio-multiperson-v1/arcface-results.json",
-      "sha256": "4f2c229ac89cc49372145321241465d4f6ce8be5b5a906e00758b36019cd4712"
+      "name": "experiments/keep-contract-validation-v1/verification.json",
+      "path": "experiments/keep-contract-validation-v1/verification.json",
+      "sha256": "f975bf4a43b64915f13530a5dd4f8ef87e2dea494dec8a2190415a4a07c5c352"
     },
     {
-      "name": "real_policy_pilot",
-      "path": "experiments/real-people-v1/results.json",
-      "sha256": "7cca685fec182811d49be4f8e54b1ecc677bffc51041bd5d380cbe4a58fe68b2"
+      "name": "experiments/keep-contract-v2/results.json",
+      "path": "experiments/keep-contract-v2/results.json",
+      "sha256": "b859fcca51b1562823cd24b9415b955507a9d2f677d6999a5f0a03d2c581fbe6"
     },
     {
-      "name": "prompt_synthesis",
-      "path": "experiments/prompt-synthesis-expanded-v1/summary.json",
-      "sha256": "494b3c327f35366a0af200049a4f2bdf7384338dba0005669e8bc60573c96bd2"
+      "name": "experiments/keep-contract-v2/verification.json",
+      "path": "experiments/keep-contract-v2/verification.json",
+      "sha256": "cc2912b643ae662e136ef75043923755bba3d89362ed87c46f7e1191c3b8f3e4"
     },
     {
-      "name": "automatic_state",
-      "path": "experiments/state-tracking-v2/summary.json",
-      "sha256": "a36dfb4af1e9315c1fb0a45edfa7e33d8ca4678aab5d2445e6e2cfa09837d41b"
+      "name": "experiments/request-contract-v3/results.json",
+      "path": "experiments/request-contract-v3/results.json",
+      "sha256": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5"
     },
     {
-      "name": "structured_control",
-      "path": "experiments/state-format-control-v1/summary.json",
-      "sha256": "2ad1fd939ecffc118bbfdaf53b6737ef89c787799fe6b923f1c39ae4bc357647"
+      "name": "experiments/request-contract-v3/verification.json",
+      "path": "experiments/request-contract-v3/verification.json",
+      "sha256": "a5afd8e7134589379908e80a3da1c445b843f8e5e4c7dc585b1bde03b9d1069a"
+    },
+    {
+      "name": "experiments/isolated-contract-v1/results.json",
+      "path": "experiments/isolated-contract-v1/results.json",
+      "sha256": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744"
+    },
+    {
+      "name": "experiments/isolated-contract-v1/verification.json",
+      "path": "experiments/isolated-contract-v1/verification.json",
+      "sha256": "9a802c841b7b2318a25c1114a814db161f1cc727c7226ef6b74be600ee77bb3d"
+    },
+    {
+      "name": "experiments/keep-image-v1/summary.json",
+      "path": "experiments/keep-image-v1/summary.json",
+      "sha256": "965af4a0dc67c2892bed78c2c5f0142e884929617e3275cbaad3ec6354c4897f"
+    },
+    {
+      "name": "experiments/keep-image-v1/verification.json",
+      "path": "experiments/keep-image-v1/verification.json",
+      "sha256": "e497f21f4060b3b0efcb48679322e93e86067cd3d9edf062f60d2450520dbc18"
+    },
+    {
+      "name": "experiments/keep-image-v1/paired-audit.json",
+      "path": "experiments/keep-image-v1/paired-audit.json",
+      "sha256": "999e3981e1b9b0310c6e70ec614f273d97e03a68c8701ffc6e23bc18654b344e"
+    },
+    {
+      "name": "experiments/contract-image-v3/summary.json",
+      "path": "experiments/contract-image-v3/summary.json",
+      "sha256": "064a6a39031886bd0cd157cc728249848b34357f5b12ac835442dd191f95356c"
+    },
+    {
+      "name": "experiments/contract-image-v3/verification.json",
+      "path": "experiments/contract-image-v3/verification.json",
+      "sha256": "57bdef6cfe0c76577b56152295bc461f9c8f61804fb731c2f50d99106be53371"
+    },
+    {
+      "name": "experiments/contract-image-v3/paired-audit.json",
+      "path": "experiments/contract-image-v3/paired-audit.json",
+      "sha256": "9319fb872fcf015c5f32bda3e131749dcc759ed916c8d511b84cbfb1db4431fb"
+    },
+    {
+      "name": "experiments/contract-image-review-v1/summary.json",
+      "path": "experiments/contract-image-review-v1/summary.json",
+      "sha256": "448d53b51bb4fb84c1d84df90394b4c647faf5b8492d148a6a4418188a974ce6"
+    },
+    {
+      "name": "experiments/contract-image-review-v1/verification.json",
+      "path": "experiments/contract-image-review-v1/verification.json",
+      "sha256": "344d7cf44f3e38827e827bf13c244303f62fc2ecb5f332c073481ed78cb9e477"
     }
   ]
 }

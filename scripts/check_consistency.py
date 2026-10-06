@@ -35,7 +35,9 @@ def check():
                           ('manuscript.inha.docx', 'docx_sha256'),
                           ('manuscript.inha.pdf', 'pdf_sha256')]:
         assert digest(ROOT / 'paper' / filename) == render[key], filename
-    assert render['all_pages_visually_reviewed'] and render['pages'] == 7
+    assert render['all_pages_visually_reviewed'] and render['pages'] == 6
+    assert render['reviewed_pages'] == list(range(1, render['pages'] + 1))
+    assert digest(ROOT / 'paper/figures/figure-provenance.json') == evidence['figure_provenance_sha256']
 
     automatic = load('experiments/state-tracking-v2/summary.json')
     control = load('experiments/state-format-control-v1/summary.json')
@@ -119,10 +121,26 @@ def check():
         for name, expected in verified['sha256'].items():
             assert digest(native / name) == expected, name
         assert digest(ROOT / 'experiments/action-image-v1/verify_native.py') == verified['verifier_sha256']
+    review = ROOT / 'experiments/contract-image-review-v1'
+    for name, expected in json.loads((review / 'frozen.json').read_text())['sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    review_status = 'pending'
+    if (review / 'verification.json').exists():
+        reviewed = json.loads((review / 'verification.json').read_text())
+        assert reviewed['passed'] and reviewed['conditions'] == 128
+        assert reviewed['unique_evaluation_inputs'] == 68 and reviewed['post_hoc']
+        for name, expected in reviewed['sha256'].items():
+            assert digest(review / name) == expected, name
+        report = json.loads((review / 'report-verification.json').read_text())
+        for filename, key in [('summary.json', 'summary_sha256'),
+                              ('RESULTS.md', 'report_sha256'),
+                              ('report_text.py', 'script_sha256')]:
+            assert digest(review / filename) == report[key], filename
+        review_status = 'complete'
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
-          f'{len(current)} current documents, paper artifact hashes, 40-slide manifest, '
+          f'{len(current)} current documents, paper artifact hashes, historical 40-slide manifest (live update pending), '
           f'AI evaluation setup and {len(verified_studies)} verified text studies; '
-          'rejected candidate, post-hoc development and prepared image inputs preserved')
+          f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 
 
 if __name__ == '__main__':

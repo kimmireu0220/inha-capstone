@@ -1,0 +1,59 @@
+{
+  "selection": "all four different-input S pairs",
+  "prepared_sha256": "7f2797a672a82820e01b16ca4664d22f32aa1d8c630e1d0f0a7c77f34f4115e3",
+  "script_sha256": "68b8aa9bf25c08d73ff72fd8f143880c0c1b62cdd85bc78e3df897d6d25b9f8a",
+  "figures": [
+    {
+      "figure": "contract-R01.png",
+      "sources": [
+        {
+          "condition": "R01-S3-t3-baseline_restore",
+          "source": "experiments/contract-image-v3/generated/img-57d69cd6a6d8386b/output.png",
+          "sha256": "18033ad1155e72c309e4cb00d6d72ed0d4a1737b0d02b4ce89205893abb41805"
+        },
+        {
+          "condition": "R01-S3-t3-keep_remove",
+          "source": "experiments/contract-image-v3/generated/img-5725f046523b1faf/output.png",
+          "sha256": "9636cb386b47b1c9f54dd186d0e5002bb3b81596c805dc015c671f5dc9f31bc3"
+        },
+        {
+          "condition": "R01-S3-t4-baseline_restore",
+          "source": "experiments/contract-image-v3/generated/img-a209e8df0d3cd19b/output.png",
+          "sha256": "8e21262f13fdce2bc9864bbfce0544d524e54903180c59b6a019c3b5e84ec636"
+        },
+        {
+          "condition": "R01-S3-t4-keep_remove",
+          "source": "experiments/contract-image-v3/generated/img-1584d6aaea4453d8/output.png",
+          "sha256": "37e1525d27720fe45142b26e49112db4cd7142c6a6a3574641c7551acce1e42c"
+        }
+      ],
+      "sha256": "81601eb5f9807b13fc49e5dfdd497e6f6dadab8c74302e24007a26e367fd4bc2"
+    },
+    {
+      "figure": "contract-R02.png",
+      "sources": [
+        {
+          "condition": "R02-S3-t3-baseline_restore",
+          "source": "experiments/contract-image-v3/generated/img-f2f6062ce8e62c31/output.png",
+          "sha256": "4e3f9f5fb0e6270f52125f1400d659746be403da15ca6691c32909a71e55a927"
+        },
+        {
+          "condition": "R02-S3-t3-keep_remove",
+          "source": "experiments/contract-image-v3/generated/img-b7f4d7cb8a78b452/output.png",
+          "sha256": "d3935183f82a8c2a785518da836a7acd72c1230e949dd218ea39efa4cbebb61f"
+        },
+        {
+          "condition": "R02-S3-t4-baseline_restore",
+          "source": "experiments/contract-image-v3/generated/img-560fab445976c83c/output.png",
+          "sha256": "3b50c9c8b5a158a80839e965e2923c69a60dce95b874198f5705d65f46224cca"
+        },
+        {
+          "condition": "R02-S3-t4-keep_remove",
+          "source": "experiments/contract-image-v3/generated/img-4656040cc67ecc2f/output.png",
+          "sha256": "bbcb6e14ac17086657279e8a43c293a9cc02c3b8572f43f18ff214c37dca1d2a"
+        }
+      ],
+      "sha256": "ec7fc2e9b457d075e40541dd23aa11dcaa2a4b0171913c758c1663b4458cd0dc"
+    }
+  ]
+}

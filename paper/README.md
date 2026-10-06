@@ -2,22 +2,24 @@
 
 [논문 PDF](manuscript.inha.pdf) · [논문 Word](manuscript.inha.docx) · [한국어 원본](manuscript.ko.md) · [국문·영문 통합본](manuscript.inha.md)
 
-완료된 U1–U4의 96장 비교와 추가 48개 조건의 두 AI 평가·얼굴 측정을 반영했다. 추가 대조는 목표 127/288·142/288, ArcFace 0.846995, 고유 RGB 이미지 36종이다. 국문·영문 통합본과 Word/PDF를 재생성했고 7쪽 전체의 한글, 표, 그림, 결론과 참고문헌을 시각 확인했다. 문서 검증 기록에는 최종 산출물 해시를 남겼다.
+제목은 「반복 인물 이미지 편집을 위한 유지 및 삭제 지시의 상태 갱신 제약」이다. 최신 S·T 검증과 P·S 이미지 분석, 전체 입력의 사후 7B 평가를 반영했다. 6쪽의 표 5개·비교 그림 2개와 참고문헌을 검수했다.
 
-저자 김미르·장윤석, 지도교수 안남혁. 영문 저자명은 확인되지 않아 원고에서 생략했다. 학교의 공식 빈 양식은 확보하지 못했으므로 현재 Word/PDF는 검토용 A4 단일 단 원고다. 제출 전 학과 양식 및 영문 저자명을 확인해야 한다.
+명시적 유지·삭제 검사로 S 정확 턴은 27/32→29/32, T는 28/32→29/32였다. S에서는 유지와 삭제를 결합해야 각각의 단독 구성요소보다 높았다. 다만 개발자가 구성한 제한 문형 검사이고 개선은 소수 대화에 집중됐다. 이미지 점수의 판단 불가와 설명 모순 때문에 전반적인 이미지 품질 개선을 주장하지 않는다.
 
-기초 비교는 합성 인물 6명·최종 18쌍의 순차 편집/원본 기반 재생성과 실제 인물 6명·편집 이력 3종·2시드·세 프롬프트 방법의 최종 요구 종합 108장이다. 실제 인물 2명의 정책 비교는 별도 예비 결과다. 서로 다른 실험의 수치를 합산하지 않는다.
+저자 김미르·장윤석, 지도교수 안남혁. 영문 저자명은 확인되지 않아 생략했다. 학교 공식 빈 양식을 확보하지 못했으므로 Word/PDF는 사례 배치를 참고한 A4 단일 단 검토 원고다. 제출 전 학과 양식 및 영문 저자명을 확인해야 한다.
 
-후속 비교는 같은 실제 인물 6명에 새 대화 4종·두 시드·두 방법을 적용한 96장이다. 자동 상태 갱신의 1차 AI 목표 충족과 얼굴 유사도는 자연어 종합보다 높지만 대화별 실패와 평가자 의존성이 있다. 전체 대화에서 구조화된 상태를 추출하는 추가 대조는 같은 대화의 후속 진단이다.
-
-- [합성 인물 입력 정책 원자료](../experiments/studio-multiperson-v1/RESULTS.md)
-- [실제 인물 최종 요구 종합 원자료](../experiments/prompt-synthesis-expanded-v1/RESULTS.md)
-- [자동 상태 갱신의 완료된 집계](../experiments/state-tracking-v2/summary.json)
-- [추가 대조의 사전 명세](../experiments/state-format-control-v1/PROTOCOL.md)
-- [실제 인물 정책 예비 비교](../experiments/real-people-v1/RESULTS.md)
+- [S 구성요소 비교](../experiments/request-contract-v3/RESULTS.md)
+- [T 추가 검증](../experiments/isolated-contract-v1/RESULTS.md)
+- [S 이미지 해석](../experiments/contract-image-v3/INTERPRETATION.md)
+- [7B 사후 평가 해석](../experiments/contract-image-review-v1/INTERPRETATION.md)
+- [P 이미지 해석](../experiments/keep-image-v1/INTERPRETATION.md)
+- [개발 실패와 앞선 연구 색인](../RESEARCH_INDEX.md)
 - [본문 수치 대조 기록](evidence.json)
 - [문서 렌더링 검증 기록](render-verification.json)
+- [그림의 원본 출력 연결 기록](figures/figure-provenance.json)
 
-재생성: 번들 Python으로 `python paper/audit.py`와 `python paper/build_inha.py`를 실행한다. 초안 검토는 `build_inha.py --output-dir .codex-build/paper-draft`로 최종 산출물을 덮어쓰지 않고 할 수 있다.
+`python paper/audit.py`로 본문을 검산하고 번들 Python으로 `python paper/build_inha.py`를 실행한다. `layout.json`은 표 제목과 키워드를 관리한다. 별도 초안은 `--source-dir <초안 폴더> --output-dir <산출 폴더>`로 검토한다. 그림은 `paper/make_contract_figure.py`로 재생성한다.
 
-`python paper/render_inha.py --runtime-root <의존성 로더가 반환한 dependencies 경로> --renderer <문서 스킬의 render_docx.py 경로> --output-dir .codex-build/paper-render`로 번들 렌더러를 실행한다. 이 보조 스크립트는 설치된 사용자·시스템 글꼴을 Fontconfig에 명시해 임시 렌더링 환경에서 한글이 사라지는 문제를 방지한다. 글꼴 경로가 다른 환경에서는 `--font-dir`를 지정한다. 전체 페이지의 한글과 표·그림 배치를 눈으로 확인한 뒤 PDF를 교체한다. 원본 이미지와 생성 기록은 독립 검증을 위해 실험 폴더에 보존한다.
+`python paper/render_inha.py --runtime-root <번들 dependencies 경로> --renderer <문서 스킬의 render_docx.py 경로> --output-dir .codex-build/paper-render`로 렌더링한다. 이 보조 스크립트는 한글 글꼴 경로를 Fontconfig에 명시한다. 전체 페이지를 눈으로 확인한 뒤 PDF와 검증 해시를 갱신한다.
+
+앞선 비교 중심 원고는 Git 이력에 남아 있다. 온라인 발표 자료는 인증 재연결 전까지 이전 40장이므로 [반영 상태](../artifacts/README.md)를 함께 확인한다.
