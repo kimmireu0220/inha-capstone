@@ -35,7 +35,8 @@ def check():
                           ('manuscript.inha.docx', 'docx_sha256'),
                           ('manuscript.inha.pdf', 'pdf_sha256')]:
         assert digest(ROOT / 'paper' / filename) == render[key], filename
-    assert render['all_pages_visually_reviewed'] and render['pages'] == 6
+    assert render['all_pages_visually_reviewed'] and render['pages'] == 5
+    assert render['body_columns'] == 2
     assert render['reviewed_pages'] == list(range(1, render['pages'] + 1))
     assert digest(ROOT / 'paper/figures/figure-provenance.json') == evidence['figure_provenance_sha256']
 

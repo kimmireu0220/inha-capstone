@@ -52,10 +52,10 @@ def audit(folder):
                 expect(f"{development['methods'][mode]['exact_final_dialogues']}/8")
 
     studies = [
-        ('request-contract-v3', [('baseline_restore', '공통 기준'),
-          ('keep_only', '유지 보호만'), ('remove_only', '삭제 실행만'),
+        ('request-contract-v3', [('baseline_restore', '기준 방법'),
+          ('keep_only', '유지 규칙만'), ('remove_only', '삭제 규칙만'),
           ('keep_remove', '유지·삭제 결합')]),
-        ('isolated-contract-v1', [('baseline_restore', '공통 기준'),
+        ('isolated-contract-v1', [('baseline_restore', '기준 방법'),
           ('isolated_restore', '항목별 적용'), ('keep_remove', '유지·삭제'),
           ('isolated_keep_remove', '항목별 적용+유지·삭제')]),
     ]
@@ -89,7 +89,7 @@ def audit(folder):
             expect(f"{result['goals_satisfied']}/384")
             expect(f"{result['face_mean']:.6f}")
             if name == 'contract-image-v3':
-                label = '공통 기준' if mode == 'baseline_restore' else '유지·삭제 결합'
+                label = '기준 방법' if mode == 'baseline_restore' else '유지·삭제 결합'
                 row([label, f"{result['goals_satisfied']}/384", result['unknown_goals'],
                      f"{result['all_six_satisfied']}/64", f"{result['face_mean']:.6f}"])
 
@@ -103,7 +103,7 @@ def audit(folder):
     for filename, digest in freeze['sha256'].items():
         assert sha(ROOT / filename) == digest
     for mode, result in review['by_mode'].items():
-        label = '공통 기준' if mode == 'baseline_restore' else '유지·삭제 결합'
+        label = '기준 방법' if mode == 'baseline_restore' else '유지·삭제 결합'
         row([label, f"{result['goals_satisfied']}/384", result['unknown_goals'],
              f"{result['all_six_satisfied']}/64"])
     primary_pairs = json.loads((ROOT / 'experiments/contract-image-v3/paired-audit.json').read_text())

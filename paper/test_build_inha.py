@@ -32,6 +32,9 @@ class BuilderTests(unittest.TestCase):
                             '--source-dir', str(source), '--output-dir', str(output)],
                            check=True, capture_output=True)
             doc = Document(output / 'manuscript.inha.docx')
+            from docx.oxml.ns import qn
+            self.assertEqual(doc.sections[0]._sectPr.find(qn('w:cols')).get(qn('w:num'), '1'), '1')
+            self.assertEqual(doc.sections[1]._sectPr.find(qn('w:cols')).get(qn('w:num')), '2')
             paragraphs = [p.text for p in doc.paragraphs]
             self.assertIn('검증 제목', paragraphs)
             self.assertIn('표 1. 검증 표', paragraphs)

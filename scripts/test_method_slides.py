@@ -16,6 +16,33 @@ class SlidesTests(unittest.TestCase):
     def test_missing_targets_fail_closed(self):
         with self.assertRaises(ValueError):
             publish.requests({'slides': []})
+        with self.assertRaises(ValueError):
+            publish.text_requests({'slides': []})
+
+    def test_text_edits_preserve_objects(self):
+        deck = {'slides': []}
+        for sid, item in zip(publish.IDS, publish.spec()):
+            elements = [{'objectId': sid+'_method_'+key, 'shape': {}}
+                        for key in ['title', 'body', 'intro', 'below', 'foot'] if key in item]
+            if 'table' in item:
+                elements.append({'objectId': sid+'_method_table', 'table': {
+                    'tableRows': [{'tableCells': [{} for _ in row]} for row in item['table']]}})
+            if 'person' in item:
+                elements.extend({'objectId': sid+f'_method_label{j}', 'shape': {}} for j in range(4))
+            deck['slides'].append({'objectId': sid, 'pageElements': elements,
+                'slideProperties': {'notesPage': {'notesProperties': {'speakerNotesObjectId': sid+'_notes'}}}})
+        requests = publish.text_requests(deck)
+        self.assertTrue(requests)
+        self.assertTrue(all(set(r) <= {'deleteText', 'insertText'} for r in requests))
+        self.assertEqual(sum('cellLocation' in r.get('insertText', {}) for r in requests), 49)
+        deck['slides'][0]['pageElements'] = []
+        with self.assertRaises(ValueError):
+            publish.text_requests(deck)
+
+    def test_editorial_cleanup(self):
+        content = str(publish.spec())
+        for phrase in ['논문 채택', '미확정', '새 훼손', '유리한 결과', '유지 보호만', '삭제 실행만']:
+            self.assertNotIn(phrase, content)
 
     def test_plan_reuses_slides_and_native_evidence(self):
         deck = {'slides': [{'objectId': sid, 'pageElements': [], 'slideProperties': {'notesPage': {'notesProperties': {'speakerNotesObjectId': sid+'_notes'}}}} for sid in publish.IDS]}

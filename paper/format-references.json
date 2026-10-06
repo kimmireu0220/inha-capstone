@@ -1,0 +1,39 @@
+{
+  "retrieved_on": "2026-10-06",
+  "source": "Inha Electrical and Electronic Engineering yearly thesis board, title search 안남혁",
+  "reference_count": 2,
+  "scope": "Layout reference only; not a current institutional template certification",
+  "storage": "paper/reference-pdfs/ (local only, excluded from Git because cover forms include signatures and student IDs)",
+  "shared_layout": {
+    "paper_size": "A4",
+    "front_matter": "Centered Korean and English title, authors and advisor, full-width abstract and keywords",
+    "body_columns": 2,
+    "wide_figures": "Full-width comparison figures with captions; return to two-column body",
+    "headings": "Roman numeral main headings and Arabic subsection numbers",
+    "font_note": "PDFs contain outlined/scanned text without extractable font metadata; sizes and fonts are visual approximations",
+    "intentional_differences": ["Copyright transfer form and signatures omitted", "Unconfirmed English author names omitted", "Existing paper content and result tables retained without copying reference prose"]
+  },
+  "references": [
+    {
+      "id": "185092",
+      "title": "PGM: 확산 과정 기반 보호 생성 모델",
+      "article_url": "https://eee.inha.ac.kr/bbs/eee/3919/185092/artclView.do",
+      "download_url": "https://eee.inha.ac.kr/bbs/eee/3919/179796/download.do",
+      "file": "reference-pdfs/185092-protection-generating-model.pdf",
+      "sha256": "e913bd836612e743bc03664ecb4dff4a690b8cbfc897b40e943a5c20bf331382",
+      "pages": 8,
+      "inspected_layout_pages": [1, 2, 6]
+    },
+    {
+      "id": "185026",
+      "title": "이미지 특성 기반 Dynamic Target 생성을 이용한 Diffusion Model 이미지 보호 기법",
+      "article_url": "https://eee.inha.ac.kr/bbs/eee/3919/185026/artclView.do",
+      "download_url": "https://eee.inha.ac.kr/bbs/eee/3919/179733/download.do",
+      "file": "reference-pdfs/185026-dynamic-target.pdf",
+      "sha256": "fdf5b25b2b772882c40757234ae0365407940245b833d5d39adc0fe14af18cbf",
+      "pages": 10,
+      "inspected_layout_pages": [1, 2, 3]
+    }
+  ],
+  "additional_downloads": "Two other attachment attempts were blocked in Chrome with ERR_BLOCKED_BY_CLIENT; no security bypass was attempted"
+}

@@ -3,6 +3,7 @@ import argparse,re,json
 from docx import Document
 from docx.shared import Pt,Cm,RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.section import WD_SECTION_START
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 R=Path(__file__).resolve().parent
@@ -46,6 +47,15 @@ center('('+auth['advisor_english']+')').paragraph_format.space_after=Pt(14)
 ko=s.split('## 초록\n')[1].split('\n\n주요어:')[0].strip()
 for label,txt in [('요약: ',ko),('Abstract: ',abstract),('Keywords: ',metadata.get('keywords','Iterative portrait editing, Facial preservation, Original-referenced regeneration, Final-request synthesis'))]:
  p=d.add_paragraph();p.paragraph_format.first_line_indent=Pt(0);p.add_run(label).bold=True;p.add_run(txt)
+def columns(count):
+ section=d.add_section(WD_SECTION_START.CONTINUOUS)
+ cols=section._sectPr.find(qn('w:cols'))
+ cols.set(qn('w:num'),str(count));cols.set(qn('w:space'),'397')
+ # Keep section separators from adding an empty body-sized line.
+ p=d.paragraphs[-1];p.paragraph_format.space_after=Pt(0);p.paragraph_format.space_before=Pt(0);p.paragraph_format.line_spacing=Pt(1)
+ return section
+columns(2)
+wide_figures=False
 lines=s.split('## 1. 서론')[1];lines='## 1. 서론'+lines
 lines=lines.splitlines();i=0;tn=0;roman=['I','II','III','IV','V','VI','VII']
 caps=['합성 인물의 입력 정책 비교','실제 인물의 최종 목표와 얼굴 유사도','인물별 목표와 얼굴 유사도','편집 이력별 목표 충족','자동 상태 갱신의 목표 충족과 얼굴 유사도','새 대화의 인물별 비교','전체 대화 상태 추출을 포함한 추가 대조']
@@ -53,6 +63,10 @@ caps=metadata.get('table_captions',caps)
 while i<len(lines):
  line=lines[i]
  if not line:i+=1;continue
+ if wide_figures and not line.startswith('!['):
+  columns(2);wide_figures=False
+ if line.startswith('### ') and next((x for x in lines[i+1:] if x.strip()),'').startswith('!['):
+  columns(1);wide_figures=True
  if line.startswith('|'):
   rows=[]
   while i<len(lines) and lines[i].startswith('|'):
@@ -60,17 +74,25 @@ while i<len(lines):
    if not all(re.fullmatch('[-: ]+',v) for v in rr):rows.append(rr)
    i+=1
   tn+=1
-  p=d.add_paragraph(f'표 {tn}. {caps[tn-1]}','Caption');p.paragraph_format.keep_with_next=True;p.paragraph_format.first_line_indent=Pt(0);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
+  p=d.add_paragraph(f'표 {tn}. {caps[tn-1]}','Caption');p.paragraph_format.keep_with_next=True;p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_before=Pt(5);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
   t=d.add_table(rows=0,cols=len(rows[0]));t.autofit=False
-  width=17
-  column_widths=[4.4]+[(width-4.4)/(len(rows[0])-1)]*(len(rows[0])-1)
+  width=8.15
+  first_width=2.5
+  column_widths=[first_width]+[(width-first_width)/(len(rows[0])-1)]*(len(rows[0])-1)
+  if len(rows[0])==5 and any('코사인' in x for x in rows[0]):
+   column_widths=[1.95,1.45,1.2,1.65,1.9]
   for col,col_width in zip(t.columns,column_widths):col.width=Cm(col_width)
   for j,row in enumerate(rows):
    cells=t.add_row().cells;pr=t.rows[-1]._tr.get_or_add_trPr();pr.append(OxmlElement('w:cantSplit'))
    if j==0:pr.append(OxmlElement('w:tblHeader'))
    for column,(c,txt) in enumerate(zip(cells,row)):
     c.width=Cm(column_widths[column])
-    c.text=txt
+    margins=OxmlElement('w:tcMar')
+    for side in ['left','right']:
+     margin=OxmlElement('w:'+side);margin.set(qn('w:w'),'45');margin.set(qn('w:type'),'dxa');margins.append(margin)
+    c._tc.get_or_add_tcPr().append(margins)
+    c.text=({'정확한 턴':'정확한\n턴','정확한 항목':'정확한\n항목',
+             '최종 정답 대화':'최종 정답\n대화','판단 불가':'판단\n불가'}.get(txt,txt) if j==0 else txt)
     for p in c.paragraphs:
      p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_after=Pt(3);p.paragraph_format.space_before=Pt(3);p.paragraph_format.line_spacing=1
      p.paragraph_format.keep_with_next=j<len(rows)-1
@@ -80,12 +102,14 @@ while i<len(lines):
      borders=OxmlElement('w:tcBorders');e=OxmlElement('w:bottom');e.set(qn('w:val'),'single');e.set(qn('w:sz'),'5');borders.append(e);c._tc.get_or_add_tcPr().append(borders)
   continue
  if line.startswith('!['):
+  if not wide_figures:columns(1);wide_figures=True
   m=re.match(r'!\[(.*?)\]\((.*?)\)',line);shape=d.add_picture(str(SOURCE/m[2]),width=Cm(16.8));shape._inline.docPr.set('descr',m[1]);d.paragraphs[-1].paragraph_format.keep_with_next=True;d.paragraphs[-1].paragraph_format.line_spacing=1;d.add_paragraph(m[1],'Caption')
  elif line.startswith('### '):d.add_paragraph(re.sub(r'^\d+\.(\d+) ',r'\1. ',line[4:]),'Heading 2')
  elif line.startswith('## '):
   text=line[3:];text=re.sub(r'^(\d+)\.',lambda m:roman[int(m[1])-1]+'.',text);d.add_paragraph(text,'Heading 1')
  else:
   p=d.add_paragraph(line.replace('`',''));p.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
+  if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT
   if line.startswith('['):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True;p.alignment=WD_ALIGN_PARAGRAPH.LEFT
  i+=1
 for sec in d.sections:

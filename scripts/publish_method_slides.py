@@ -40,57 +40,57 @@ def spec():
     s = load(SOURCES[3])['methods']
     t = load(SOURCES[4])['methods']
     def rows(data, methods):
-        result = [['방법', '정확한 턴', '최종 상태 정확', '새 훼손']]
+        result = [['방법', '정확한 턴', '최종 정답 대화', '유지 오류']]
         for key, label in methods:
             r = data[key]
             result.append([label, f"{r['exact_turns']}/{r['turns']}",
                            f"{r['exact_final_dialogues']}/8", str(r['newly_corrupted_unchanged_slots'])])
         return result
     first, second = load(SOURCES[5])['by_mode'], load(SOURCES[6])['by_mode']
-    images = [['AI 목표 충족', '공통 기준', '유지·삭제 결합']]
+    images = [['AI 목표 충족', '기준 방법', '유지·삭제 결합']]
     for data, label in [(first, '1차 3B'), (second, '사후 7B')]:
         images.append([label] + [f"{data[m]['goals_satisfied']}/{data[m]['goal_denominator']}" for m in ['baseline_restore', 'keep_remove']])
     return [
         dict(title='반복 인물 이미지 편집을 위한\n유지 및 삭제 지시의 상태 갱신 제약',
              body='변경 요청을 종합할 때 생기는 상태 오류를 줄이는 방법\n\n김미르 · 장윤석\n지도교수 안남혁',
              foot='종합설계 연구 발표',
-             notes='연구 질문은 같은 언어 모델 응답을 사용할 때 유지와 삭제 지시를 별도로 검사하면 상태 갱신 오류가 줄어드는가이다. 기여는 제한 문형의 요청 검사 방법과 두 구성요소가 필요한 오류 사례의 검증이다. 얼굴 보존이나 전반적 이미지 품질 개선을 확정한 연구로 설명하지 않는다.'),
+             notes='같은 언어 모델 응답에 유지·삭제 규칙을 적용했을 때 편집 상태의 오류가 줄어드는지 살펴봤습니다. 모델이 변경 사항을 추출하고 재검토한 뒤, 유지하거나 삭제하라는 명시적 지시를 코드로 한 번 더 확인하는 방법입니다. 두 규칙이 각각 어떤 오류를 줄이는지 비교했습니다.'),
         dict(title='유지·삭제 지시의 상태 검사',
              body='1. 현재 요청에서 변경을 추출하고 한 번 재검토\n2. 각 방법의 이전 상태에 변경을 적용\n3. 유지할 항목을 보호하고, 명시한 삭제를 실행\n4. 완성된 상태를 원본 사진의 편집 요청으로 변환',
              foot='재킷·상의·핀·목걸이·배경·소품의 6항목을 저장한다. 추가 모델 호출은 없다.',
-             notes='Qwen3-4B-4bit가 현재 요청만 읽고 추출·재검토 두 번을 수행한다. 모든 방법은 같은 응답을 공유하지만 각자의 이전 상태를 갱신한다. 정답은 채점에만 사용한다. unchanged와 지원 항목명이 명시된 구절의 직전 값을 보호하고, 명시적인 remove 구절은 제거 가능한 항목을 없음으로 설정한다. 원본 복원과 삭제는 구별한다. 상의·배경 삭제는 지원하지 않는다. 인용·조건부·대명사·뒤의 동일 항목 언급 등에서는 개입을 유보한다. ChatEdit 상태 추적 구조를 따르되 후처리 검사에 초점을 둔다. https://aclanthology.org/2023.emnlp-main.899/'),
+             notes='Qwen3-4B-4bit가 현재 요청에서 변경 사항을 추출하고 한 번 재검토합니다. 모든 방법은 이 두 응답을 공유하고 각자의 이전 상태에 적용합니다. 정답은 채점에만 사용했습니다. 유지 규칙은 항목 이름과 unchanged가 함께 있는 구절에서 직전 값을 보존합니다. 삭제 규칙은 remove가 명시된 재킷·핀·목걸이·소품의 값을 없음으로 바꿉니다. 상의와 배경은 삭제 대상에서 제외합니다. 원본 복원은 최초 사진의 상태로 돌리는 것이고 삭제는 대상을 없애는 것입니다. 인용, 조건부 표현, 대명사, 같은 항목의 후속 언급에는 규칙을 적용하지 않고 모델 결과를 사용합니다. 상태를 저장하는 구성은 ChatEdit를 참고했습니다. https://aclanthology.org/2023.emnlp-main.899/'),
         dict(title='S 검증: 유지와 삭제를 함께 적용한 효과',
-             intro='미리 고정한 합성 대화 8개, 32턴. 동일한 모델 응답 64개를 공유',
-             table=rows(s, [('baseline_restore','공통 기준'),('keep_only','유지 보호만'),('remove_only','삭제 실행만'),('keep_remove','유지·삭제 결합')]),
-             foot='개선은 S3의 두 턴에 집중됐다. 정확한 턴은 6항목 모두 정답인 경우다.\n새 훼손: 바꿀 필요가 없는 정확한 항목을 이번 갱신에서 틀리게 바꾼 수',
-             notes='논문 표 1. 새 훼손은 직전까지 맞았고 이번 요청에서도 유지돼야 할 항목을 틀리게 바꾼 수다. S3 3턴에서는 식물 삭제 누락을 삭제 규칙이 막았고 4턴에서는 배경 원본 복원 오류를 유지 규칙이 막았다. 유지 단독은 이전 삭제 누락이 남고 삭제 단독은 다음 턴의 배경 훼손이 남아 결합만 두 턴 모두 정확했다. S7은 모든 방법이 1/4로 실패했다. 항목 정확 수는 184,185,186,187/192. 개발자가 작성한 제한 영어 문형이며 외부 사용자 대화가 아니다. '+REPO+'/blob/main/experiments/request-contract-v3/RESULTS.md'),
+             intro='추론 전에 확정한 영어 합성 대화 8개, 32턴. 같은 모델 응답 64개 사용',
+             table=rows(s, [('baseline_restore','기준 방법'),('keep_only','유지 규칙만'),('remove_only','삭제 규칙만'),('keep_remove','유지·삭제 결합')]),
+             foot='차이는 S3의 두 턴에서 발생. 정확한 턴은 6항목 모두 정답인 경우\n유지 오류: 직전까지 정확했고 유지해야 할 항목을 잘못 변경한 횟수',
+             notes='한 번의 요청에 따라 상태를 갱신하는 단위를 턴이라고 합니다. 정확한 턴은 여섯 항목이 모두 맞은 경우이고, 최종 정답 대화는 마지막 턴의 여섯 항목이 모두 맞은 대화입니다. S3의 3턴에서는 삭제 규칙이 식물 삭제 누락을 막았고, 4턴에서는 유지 규칙이 불필요한 배경 변경을 막았습니다. 두 규칙을 결합했을 때만 두 턴 모두 정확했습니다. S7은 모든 방법에서 네 턴 중 한 턴만 맞았습니다. 정확한 항목은 표의 방법 순서대로 184, 185, 186, 187개이며 분모는 192개입니다. 대화는 연구용으로 만든 제한된 영어 문형입니다. '+REPO+'/blob/main/experiments/request-contract-v3/RESULTS.md'),
         dict(title='T 검증: 추가 규칙의 효과 확인',
-             intro='새로 고정한 합성 대화 8개, 32턴. S와 표본 수를 합산하지 않음',
-             table=rows(t, [('baseline_restore','공통 기준'),('isolated_restore','항목별 적용'),('keep_remove','유지·삭제'),('isolated_keep_remove','항목별 적용 + 유지·삭제')]),
+             intro='추가 검증용 합성 대화 8개, 32턴. 코드를 수정하지 않고 적용',
+             table=rows(t, [('baseline_restore','기준 방법'),('isolated_restore','항목별 적용'),('keep_remove','유지·삭제'),('isolated_keep_remove','항목별 적용 + 유지·삭제')]),
              foot='유지·삭제가 T7 마지막 턴을 바로잡았다. 항목별 적용을 더한 이점은 없었다.',
-             notes='논문 표 2. 항목별 적용은 잘못된 항목 때문에 다른 유효 변경까지 버리는 오류를 줄이려는 후보다. S 사후 재계산의 32/32는 개발 결과로만 보존했다. 코드를 수정하지 않고 새 T에 적용한 결과, 항목별 적용 추가 이점이 없어서 단순한 유지·삭제를 선택했다. 항목 정확은 187,187,189,189/192. '+REPO+'/blob/main/experiments/isolated-contract-v1/RESULTS.md'),
+             notes='항목별 적용은 한 항목의 오류 때문에 다른 유효한 변경까지 취소되는 것을 막는 처리입니다. S 결과를 본 뒤 이 처리를 더해 재계산하자 32턴 모두 맞았습니다. 그래서 추가 효과가 새 대화에서도 나타나는지 T로 확인했습니다. T의 대화와 정답은 추론 전에 확정했습니다. 결과는 유지·삭제 규칙만 적용한 경우와 같아 추가 처리 없이 두 규칙을 사용하기로 했습니다. 정확한 항목은 표 순서대로 187, 187, 189, 189개이며 분모는 192개입니다. S와 T는 서로 다른 개발 단계에서 구성했으므로 결과를 따로 보고합니다. '+REPO+'/blob/main/experiments/isolated-contract-v1/RESULTS.md'),
         dict(title='실제 인물 R01: 식물 삭제와 배경 유지', person='R01',
              foot='원본: Monstera Production / Pexels. 의상·장신구·배경은 AI 편집 결과.',
-             notes='입력이 달랐던 R01의 두 비교 쌍 전체. 3턴에서 식물 삭제와 재킷 유지, 4턴에서 상의·목걸이 원본 복원과 재킷·연한 파란 배경 유지를 요청했다. 원본 출력은 자르거나 보정하지 않았다. 사진 속 인물의 실제 행동이나 연구 참여를 나타내지 않는다. 원본 https://www.pexels.com/photo/confident-black-man-in-studio-6311573/\n'+REPO+'/blob/main/paper/figures/figure-provenance.json'),
+             notes='R01에서 두 방법의 입력이 달랐던 두 쌍입니다. 3턴에서는 식물을 삭제하고 재킷을 유지하도록 요청했습니다. 4턴에서는 상의와 목걸이를 원본으로 돌리면서 재킷과 연한 파란 배경은 유지하도록 요청했습니다. 각 이미지의 전체 영역을 보여줍니다. 연구 참여자가 아닌 공개 사진을 사용했고 의상과 배경 등은 AI로 편집했습니다. 원본 https://www.pexels.com/photo/confident-black-man-in-studio-6311573/\n'+REPO+'/blob/main/paper/figures/figure-provenance.json'),
         dict(title='실제 인물 R02: 동일한 요청의 편집 결과', person='R02',
              foot='원본: Monstera Production / Pexels. 의상·장신구·배경은 AI 편집 결과.',
-             notes='입력이 달랐던 R02의 두 비교 쌍 전체. R01과 동일한 S3 3·4턴. 3B는 3턴 기준 출력에서 JSON 파싱에 실패했다. 7B는 같은 출력의 식물 설명과 점수가 모순되었다. 그림의 사례 설명과 AI 점수를 구분한다. 원본 출력은 자르거나 보정하지 않았다. 사진 속 인물의 실제 행동이나 연구 참여를 나타내지 않는다. 원본 https://www.pexels.com/photo/cheerful-black-woman-in-studio-6311581/\n'+REPO+'/blob/main/paper/figures/figure-provenance.json'),
-        dict(title='이미지 평가: 점수 증가의 해석 범위',
+             notes='R02에도 R01과 같은 S3의 3·4턴 요청을 적용했습니다. 각 이미지의 전체 영역을 보여줍니다. 3B 모델은 3턴 기준 이미지를 평가할 때 JSON 대신 느낌표를 출력했고, 7B 모델은 식물에 관한 설명과 점수가 일치하지 않았습니다. 다음 장에서 이러한 평가 오류를 구분해 설명하겠습니다. 연구 참여자가 아닌 공개 사진을 사용했고 의상과 배경 등은 AI로 편집했습니다. 원본 https://www.pexels.com/photo/cheerful-black-woman-in-studio-6311581/\n'+REPO+'/blob/main/paper/figures/figure-provenance.json'),
+        dict(title='이미지 평가 점수와 판정 오류',
              intro='실제 사진 2명 × 32턴 × 두 방법 = 128조건, 고유 생성 이미지 66개',
              table=images,
-             below='3B 증가 8개 중 6개는 판단 불가가 성공으로 바뀐 항목\n7B에서도 설명 모순이 남아 이미지 품질 개선은 미확정',
+             below='3B에서 늘어난 8개 중 6개는 판단 불가가 성공으로 바뀐 항목\n7B에도 설명과 점수의 모순이 있어 품질 향상 판단에 한계',
              foot='목표 충족은 방법당 64조건 × 6항목으로 집계한다.\n64쌍 중 서로 다른 입력은 4쌍이며 나머지 60쌍은 같은 출력을 공유한다.',
-             notes='논문 표 3~5. Qwen2.5-VL-3B-4bit 1차와 같은 계열 7B-4bit 사후 민감도 분석. 출력·목표를 함께 구분한 고유 AI 평가 입력은 68개다. 3B 판단 불가 20/13, 7B 0/0. 3B 파싱 실패 3개, 7B 0개. 7B는 1차 오류를 본 뒤 계획했으므로 독립 정답 검증으로 해석하지 않는다. 두 평가가 공통으로 실패에서 성공으로 판정한 것은 R02 S3 4턴 배경 한 항목이다. 얼굴 코사인 평균 '+f"{first['baseline_restore']['face_mean']:.6f}, {first['keep_remove']['face_mean']:.6f}"+'이며 서로 다른 네 쌍은 두 쌍 상승·두 쌍 하락이다. 얼굴 개선 또는 비열등성 증거가 아니다. 내부 생성 모델 리비전과 시드는 노출되지 않았다. '+REPO+'/blob/main/experiments/contract-image-review-v1/INTERPRETATION.md'),
+             notes='이미지와 평가 목표의 조합은 68개입니다. 3B의 판단 불가는 기준 20개, 결합 13개였고, 응답 형식 오류는 3개였습니다. 이 오류를 본 뒤 같은 계열의 7B 모델로 전체를 다시 평가했습니다. 7B에는 형식 오류나 판단 불가가 없었지만 설명과 점수의 모순은 남았습니다. 두 모델이 공통으로 실패에서 성공으로 판정한 것은 R02 S3 4턴의 배경 한 항목입니다. 같은 계열 모델의 사후 평가이므로 판정이 일치한다고 정답으로 볼 수는 없습니다. 얼굴 코사인 평균은 기준 '+f"{first['baseline_restore']['face_mean']:.6f}, 결합 {first['keep_remove']['face_mean']:.6f}"+'입니다. 입력이 다른 네 쌍 중 두 쌍은 높아지고 두 쌍은 낮아져 얼굴 보존이 개선됐다고 판단하기 어렵습니다. '+REPO+'/blob/main/experiments/contract-image-review-v1/INTERPRETATION.md'),
         dict(title='앞선 실패에서 확인한 규칙의 범위',
-             body='넓은 유지 규칙은 Q 검증에서 12/32로 하락\n문형을 좁힌 유지 단독도 최종 대화 정확 수가 감소\n\n삭제 누락까지 함께 검사하도록 방법을 수정\n조건부·대명사·지원 범위 밖 표현은 일반 추출에 맡김',
-             foot='앞선 P 이미지 점수 차이는 판단 불가 한 항목의 변화였다. 실패 원문도 보존했다.',
-             notes='P 텍스트에서 30/32 대 32/32였지만 넓은 keep 규칙은 off와 색 변경 등의 경계에서 실패했다. Q 공통 기준 27/32, 넓은 유지 12/32, 좁은 유지 27/32. 좁은 유지의 최종 대화는 기준 6/8에서 5/8로 낮았다. 이후 유지·삭제 결합을 개발하고 S에서 고정 검증했다. P 이미지 128조건·68개 고유 출력은 354/384 대 355/384이며 판단 불가 한 항목이 성공으로 바뀌었을 뿐 실패에서 성공 전환은 없었다. '+REPO+'/blob/main/RESEARCH_INDEX.md'),
-        dict(title='결론: 명시적 지시를 분리해 검사하는 효과',
-             body='유지 보호와 삭제 실행이 서로 다른 상태 오류를 줄임\n같은 모델 응답을 사용하고 추가 호출 없이 적용\n\n검증 범위는 제한된 영어 문형과 소수의 합성 대화\n실제 사진 2명의 결과만으로 일반적인 품질 향상은 미확정',
-             foot='얼굴 유사도는 입력이 다른 4쌍 중 2쌍 상승·2쌍 하락. 얼굴 보존 개선도 미확정.',
-             notes='S 정확 턴 27/32 대 29/32, T 28/32 대 29/32. 각각의 향상은 S3와 T7에 집중됐다. 연구용 합성 대화와 단일 4B 추출 모델에 한정된다. 과거 상태가 잘못됐다면 유지 규칙도 잘못된 값을 보존할 수 있다. AI 평가와 얼굴 계산 지표의 한계를 명시한다. 새로운 독립 사용자 자료나 다른 추출 모델에서의 일반화는 검증되지 않았다. 본 연구는 비교에서 그치지 않고 검사 방법을 구현하고 구성요소별 오류를 검증했지만 광범위한 효과나 논문 채택을 보장하지 않는다.'),
+             body='keep을 폭넓게 탐지한 규칙은 Q에서 12/32\n적용 문형을 좁혀도 마지막 상태가 정확한 대화는 감소\n\n이후 삭제 누락도 함께 검사하도록 수정\n조건부 표현과 대명사 등은 모델의 추출 결과를 사용',
+             foot='앞선 P 이미지 평가의 점수 차이는 판단 불가 한 항목이 성공으로 바뀐 결과',
+             notes='초기 개발 대화 P에서는 정확한 턴이 30/32에서 32/32로 늘었습니다. 하지만 keep을 폭넓게 탐지하면 off나 색 변경 요청을 유지로 잘못 처리했습니다. 새 대화 Q에서 기준은 27/32, 넓은 규칙은 12/32, 문형을 좁힌 규칙은 27/32였습니다. 문형을 좁혀도 마지막 상태가 정확한 대화는 6/8에서 5/8로 줄어 삭제 누락을 함께 검사하도록 수정했습니다. 이후 S에서 두 규칙의 효과를 비교했습니다. P 이미지 실험은 128조건에서 68개 이미지를 생성했고 목표 충족 수는 기준 354/384, 유지 규칙 355/384였습니다. 차이는 판단 불가 한 항목이 성공으로 바뀐 경우였습니다. '+REPO+'/blob/main/RESEARCH_INDEX.md'),
+        dict(title='유지·삭제 규칙을 함께 적용한 결과',
+             body='삭제 규칙은 식물 삭제 누락을 방지\n유지 규칙은 불필요한 배경 변경을 방지\n같은 모델 응답을 사용해 추가 호출 없이 적용\n\n효과를 확인한 범위는 제한된 영어 문형의 합성 대화',
+             foot='이미지 품질은 AI 판정 오류로 결론이 제한됨. 얼굴 유사도는 4쌍 중 2쌍 상승·2쌍 하락',
+             notes='정확한 턴은 S에서 27/32에서 29/32로, T에서 28/32에서 29/32로 늘었습니다. 차이는 S3와 T7에서 나타났습니다. S3에서는 삭제 규칙이 식물을 남기는 오류를 막고 유지 규칙이 배경을 잘못 바꾸는 오류를 막았습니다. 두 규칙이 서로 다른 오류를 처리한다는 점을 확인했습니다. 다만 연구용 합성 대화와 한 종류의 4B 추출 모델로 검사했으므로 일반 대화에서의 효과는 추가 확인이 필요합니다. 이전 상태가 이미 틀렸다면 유지 규칙이 잘못된 값을 보존할 수도 있습니다.'),
         dict(title='논문과 재현 자료',
-             body='논문 PDF 및 Word\nS·T 요청, 정답, 모델 응답과 고정 코드\n전체 생성 이미지와 AI 평가 원문\n개발 과정의 실패 후보와 실험 색인',
+             body='논문 PDF 및 Word\nS·T 요청, 정답, 모델 응답과 실험 코드\n전체 생성 이미지와 AI 평가 원문\n개발 과정과 실험별 결과',
              foot='github.com/kimmireu0220/inha-capstone',
              notes='논문 '+REPO+'/blob/main/paper/manuscript.inha.pdf\nWord '+REPO+'/blob/main/paper/manuscript.inha.docx\n실험 색인 '+REPO+'/blob/main/RESEARCH_INDEX.md\n관련 연구 및 사진 출처 전체는 논문 참고문헌에 기재했다.')
     ]
@@ -158,7 +158,7 @@ def requests(deck):
             person=item['person']
             figure=next(f for f in load(SOURCES[2])['figures'] if person in f['figure'])
             for j,source in enumerate(figure['sources']):
-                text_box(req,sid,f'label{j}',f"{3+j//2}턴  {'공통 기준' if j%2==0 else '유지·삭제'}",70+j*211,103,204,33,18,True)
+                text_box(req,sid,f'label{j}',f"{3+j//2}턴  {'기준 방법' if j%2==0 else '유지·삭제'}",70+j*211,103,204,33,18,True)
                 # Google fits the complete original image inside the box, preserving aspect ratio.
                 req.append({'createImage':{'objectId':sid+f'_method_image{j}', 'url':f'https://raw.githubusercontent.com/kimmireu0220/inha-capstone/{IMAGE_COMMIT}/'+source['source'],'elementProperties':props(sid,70+j*211,147,190,285)}})
         if number==10:
@@ -168,15 +168,57 @@ def requests(deck):
     return req
 
 
+def text_requests(deck):
+    """Revise wording in place, retaining images, formatting and object IDs."""
+    if [s['objectId'] for s in deck['slides']] != IDS:
+        raise ValueError('Text-only edits require the inspected ten-slide structure.')
+    req = []
+
+    def replace(oid, text, location=None):
+        target = {'objectId': oid}
+        if location is not None:
+            target['cellLocation'] = location
+        req.extend([{'deleteText': {**target, 'textRange': {'type': 'ALL'}}},
+                    {'insertText': {**target, 'text': text}}])
+
+    for slide, item in zip(deck['slides'], spec()):
+        sid = slide['objectId']
+        elements = {e['objectId']: e for e in slide['pageElements']}
+        for key in ['title', 'body', 'intro', 'below', 'foot']:
+            if key in item:
+                oid = sid + '_method_' + key
+                if 'shape' not in elements.get(oid, {}):
+                    raise ValueError(f'Missing text object: {oid}')
+                replace(oid, item[key])
+        if 'table' in item:
+            oid = sid + '_method_table'
+            existing = elements.get(oid, {}).get('table', {}).get('tableRows', [])
+            if len(existing) != len(item['table']) or any(len(r['tableCells']) != len(item['table'][0]) for r in existing):
+                raise ValueError(f'Table dimensions changed: {oid}')
+            for row, values in enumerate(item['table']):
+                for column, value in enumerate(values):
+                    replace(oid, value, {'rowIndex': row, 'columnIndex': column})
+        if 'person' in item:
+            for j in range(4):
+                oid = sid + f'_method_label{j}'
+                if oid not in elements:
+                    raise ValueError(f'Missing image label: {oid}')
+                replace(oid, f"{3+j//2}턴  {'기준 방법' if j%2==0 else '유지·삭제'}")
+        note_id = slide['slideProperties']['notesPage']['notesProperties']['speakerNotesObjectId']
+        replace(note_id, item['notes'])
+    return req
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--snapshot',type=Path,required=True)
     p.add_argument('--apply',action='store_true')
+    p.add_argument('--text-only',action='store_true',help='Keep the existing objects and update wording only.')
     args=p.parse_args()
     old=json.loads(args.snapshot.read_text())
     if old['presentationId'] != PRESENTATION_ID:
         raise SystemExit('Snapshot belongs to another deck.')
-    req=requests(old)
+    req=text_requests(old) if args.text_only else requests(old)
     print(f"Plan: {len(old['slides'])} slides to {len(IDS)}, {len(req)} requests")
     if not args.apply:
         return

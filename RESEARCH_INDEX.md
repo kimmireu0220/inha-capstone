@@ -5,9 +5,9 @@
 ## 최신 방법과 검증
 
 - [유지·삭제 제약과 S 검증](experiments/request-contract-v3/RESULTS.md): 기준 27/32, 유지 27/32, 삭제 28/32, 결합 29/32. 최종 대화 6/8→7/8. 개선은 한 대화의 두 턴에 집중됐다.
-- [별도 T 검증](experiments/isolated-contract-v1/RESULTS.md): 기준 28/32, 유지·삭제 29/32. 최종 대화 7/8→8/8. 항목별 오류 격리를 추가한 이점은 없었다.
+- [별도 T 검증](experiments/isolated-contract-v1/RESULTS.md): 기준 28/32, 유지·삭제 29/32. 최종 정답 대화 7/8→8/8. 변경을 항목별로 적용하는 처리를 추가해도 결과는 같았다.
 - [S 이미지 검증](experiments/contract-image-v3/INTERPRETATION.md): 128조건·66개 고유 이미지의 1차 평가와 검산 완료. 목표 350/384→358/384 중 증가 6개는 판단 불가→성공이다. 입력이 다른 비교는 네 쌍이다. [7B 후속 평가](experiments/contract-image-review-v1/INTERPRETATION.md)는 전체 68개 고유 평가 입력에서 372/384→374/384였다. 판단 불가는 없어졌지만 설명 모순은 남았다. 사후 분석이며 독립 정답 검증이 아니다.
-- [P 이미지 결과와 해석](experiments/keep-image-v1/INTERPRETATION.md): 128조건·68개 고유 이미지. 목표 점수의 한 항목 차이만으로 뚜렷한 이미지 개선을 주장하지 않는다.
+- [P 이미지 결과와 해석](experiments/keep-image-v1/INTERPRETATION.md): 128조건·68개 고유 이미지. 점수 차이는 판단 불가였던 한 항목이 성공으로 바뀐 결과다.
 
 두 텍스트 검증은 개발자가 작성한 제한 문형 검사다. 서로 다른 개발 단계의 자료이며 표본 수를 합산하지 않는다. [최신 논문](paper/README.md)은 S·T와 이미지 분석을 반영했다. [10장 Google Slides](artifacts/README.md)도 같은 범위의 결과와 한계를 반영했다.
 
@@ -17,7 +17,7 @@
 - [동작 분리 개발](experiments/action-plan-v2/RESULTS.md), [N 검증](experiments/action-plan-validation-v1/RESULTS.md)
 - [원본 복원 제약 개발](experiments/restore-contract-v1/PROTOCOL.md), [M 검증](experiments/restore-contract-validation-v1/RESULTS.md)
 - [항목별 오류 격리 개발](experiments/slot-isolation-v1/RESULTS.md), [O 검증](experiments/slot-isolation-validation-v1/RESULTS.md)
-- [유지 보호 개발](experiments/keep-contract-v1/PROTOCOL.md), [P 검증](experiments/keep-contract-validation-v1/RESULTS.md), [경계 점검](experiments/keep-contract-v1/BOUNDARIES.md), [Q 검증](experiments/keep-contract-v2/RESULTS.md)
+- [유지 규칙 개발](experiments/keep-contract-v1/PROTOCOL.md), [P 검증](experiments/keep-contract-validation-v1/RESULTS.md), [경계 점검](experiments/keep-contract-v1/BOUNDARIES.md), [Q 검증](experiments/keep-contract-v2/RESULTS.md)
 
 채택되지 않은 후보와 사후 분석을 보존한다. 개발 자료에서의 개선과 코드 고정 후 별도 대화에서의 검증은 구별한다.
 
