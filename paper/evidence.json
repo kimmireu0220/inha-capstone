@@ -2,8 +2,8 @@
   "date": "2026-10-08",
   "passed": true,
   "scope": "Numeric transcription and provenance QA, not independent scientific validation",
-  "manuscript_sha256": "c6a5c7f82cf1b2093334d7aec9cdb5c27176f78af5a171e04fda2aafd4a7e3c3",
-  "english_abstract_sha256": "5a8ed8bc424ffb6e385e751149ec6b91b2daf48bc9d79f1895cbfea8f89ca2a9",
+  "manuscript_sha256": "4e1d49a42cf913c4bc07b05b1c507d7315a7f4a60727f2d03eabbcfadd1686b3",
+  "english_abstract_sha256": "c9cdbe78c397c95c179119d35ade9bdb95f029d69a303fb31b97f980cfc96ffa",
   "checked_values": [
     "30/32",
     "32/32",
@@ -36,10 +36,10 @@
     "| 유지·삭제 결합 | 358/384 | 13 | 50/64 | 0.910535 |",
     "| 기준 방법 | 372/384 | 0 | 56/64 |",
     "| 유지·삭제 결합 | 374/384 | 0 | 58/64 |",
-    "| R01 S3 3턴 | 5/6 | 5/6 | 6/6 | 6/6 |",
-    "| R01 S3 4턴 | 5/6 | 6/6 | 5/6 | 6/6 |",
-    "| R02 S3 3턴 | 0/6 | 5/6 | 6/6 | 6/6 |",
-    "| R02 S3 4턴 | 4/6 | 6/6 | 5/6 | 6/6 |",
+    "| R01 3턴 | 5/6 | 5/6 | 6/6 | 6/6 |",
+    "| R01 4턴 | 5/6 | 6/6 | 5/6 | 6/6 |",
+    "| R02 3턴 | 0/6 | 5/6 | 6/6 | 6/6 |",
+    "| R02 4턴 | 4/6 | 6/6 | 5/6 | 6/6 |",
     "367/408",
     "367/387",
     "| 표정 | 16/16 | 16/16 | 16/16 |",
@@ -51,7 +51,7 @@
     "4/16",
     "16/16"
   ],
-  "figure_provenance_sha256": "1cdf1172b1746eae9d4baa347f513dc603269b896c6840b0c712ac93b59e2a5e",
+  "figure_provenance_sha256": "b62abc9454402ee43e78bb4c122cc45d738ebcac27d4c09f0304d52f1e392622",
   "sources": [
     {
       "name": "experiments/keep-contract-validation-v1/results.json",

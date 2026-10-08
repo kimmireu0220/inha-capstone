@@ -114,7 +114,7 @@ def audit(folder):
         if pair['same_input_job']:
             continue
         baseline = lookup[key(pair)]
-        row([f"{pair['person']} {pair['history']} {pair['turn']}턴",
+        row([f"{pair['person']} {pair['turn']}턴",
              *[f'{v}/6' for v in baseline['goal_counts']],
              *[f'{v}/6' for v in pair['goal_counts']]])
     agreement = review['unique_input_agreement']
@@ -154,7 +154,8 @@ def audit(folder):
                                for mode in ['baseline_restore', 'keep_remove']}
     for token in ['진행 중이며', '집계 후 이 절', '집계 후 반영', 'being evaluated']:
         assert token not in manuscript + abstract, f'Unfinished draft: {token}'
-    for token in ['추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요']:
+    for token in ['추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요',
+                  '근거로 삼지 않았다', '검증 대화 S', '추가 검증 T', '실험 C']:
         assert token not in manuscript + abstract, f'Generic future-work wording: {token}'
     assert not re.search(r'\b[a-f0-9]{40}\b', manuscript), 'Keep model revision hashes in experiment records'
     return {'date': '2026-10-08', 'passed': True,
