@@ -6,6 +6,7 @@ The default checks the published paper; --source-dir permits draft checking.
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -137,6 +138,7 @@ def audit(folder):
         assert token not in manuscript + abstract, f'Unfinished draft: {token}'
     for token in ['추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요']:
         assert token not in manuscript + abstract, f'Generic future-work wording: {token}'
+    assert not re.search(r'\b[a-f0-9]{40}\b', manuscript), 'Keep model revision hashes in experiment records'
     return {'date': '2026-10-08', 'passed': True,
             'scope': 'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256': sha(folder / 'manuscript.ko.md'),
