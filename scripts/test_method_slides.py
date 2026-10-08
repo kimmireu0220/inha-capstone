@@ -41,7 +41,8 @@ class SlidesTests(unittest.TestCase):
 
     def test_editorial_cleanup(self):
         content = str(publish.spec())
-        for phrase in ['논문 채택', '미확정', '새 훼손', '유리한 결과', '유지 보호만', '삭제 실행만']:
+        for phrase in ['논문 채택', '미확정', '새 훼손', '유리한 결과', '유지 보호만', '삭제 실행만',
+                       '추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요']:
             self.assertNotIn(phrase, content)
 
     def test_plan_reuses_slides_and_native_evidence(self):

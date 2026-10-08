@@ -135,7 +135,9 @@ def audit(folder):
                                for mode in ['baseline_restore', 'keep_remove']}
     for token in ['진행 중이며', '집계 후 이 절', '집계 후 반영', 'being evaluated']:
         assert token not in manuscript + abstract, f'Unfinished draft: {token}'
-    return {'date': '2026-10-06', 'passed': True,
+    for token in ['추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요']:
+        assert token not in manuscript + abstract, f'Generic future-work wording: {token}'
+    return {'date': '2026-10-08', 'passed': True,
             'scope': 'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256': sha(folder / 'manuscript.ko.md'),
             'english_abstract_sha256': hashlib.sha256(abstract.encode()).hexdigest(),

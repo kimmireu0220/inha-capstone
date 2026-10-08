@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-08",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "piSNXyzu8NZ5YA",
+  "revision_id": "D25fSQGb1QjAnQ",
   "slides": 10,
   "slide_ids": [
     "p1",
@@ -17,8 +17,8 @@
   ],
   "paper_alignment": "S/T constrained state updates with P/S image limitations",
   "source_sha256": {
-    "paper/manuscript.ko.md": "003ba9cf9c315a1df9a8c4310e195303205105ffedda5dfb3419ac236254cf02",
-    "paper/evidence.json": "6c43b50810b082bed17268d8df19e58fae75f883738f26d2669e00417f64c4fd",
+    "paper/manuscript.ko.md": "7f771fb6860de1a4ab7de92eeaf3ded2e7f2c0803a457a2db9d871c0de2526f6",
+    "paper/evidence.json": "c433857f67c2954c498b29f4b595224e1e8b98b40969e409b1ae004be6ece8d0",
     "paper/figures/figure-provenance.json": "1cdf1172b1746eae9d4baa347f513dc603269b896c6840b0c712ac93b59e2a5e",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
@@ -27,16 +27,16 @@
     "experiments/keep-image-v1/summary.json": "965af4a0dc67c2892bed78c2c5f0142e884929617e3275cbaad3ec6354c4897f"
   },
   "script_sha256": {
-    "scripts/publish_method_slides.py": "4120591b12288c12a3cfa04a82014a4352512cdef246d049446af070ff752f62",
-    "scripts/verify_method_slides.py": "54e0ed9b1578980475ff7cf627512ed73e2b2a6bdc9574484f85c4b09b119382"
+    "scripts/publish_method_slides.py": "98e1410b524a993908b26acd0f632c42d5188abedc42414e51297536c0dd1072",
+    "scripts/verify_method_slides.py": "765994a82ff4d4cabaef0ddbe84a86d370f65d2da6a70ada6630c9f1c2d8418b"
   },
-  "content_sha256": "4f400b4d536f0ebd373f89668ff5f490d755a8cab8b1bb4f7441f34da2ceec35",
+  "content_sha256": "17797aa50dacf987cf721189abd4c10b097c47c9ea46752429ddb9b85d0ac9b2",
   "editable_evidence": {
     "tables": 3,
     "images": 8,
     "notes": 10
   },
-  "snapshot_sha256": "40f510b2aa62135eb1155b9b0136ddd987cdbb191f08913d2e9ca0222ef02690",
+  "snapshot_sha256": "e8aba279ba8f59fcd38898ccee7108a2465071ab39bcaad98ed3817642c38941",
   "visual_check": {
     "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
     "reviewed_slides": [
