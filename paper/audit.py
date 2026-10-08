@@ -155,7 +155,8 @@ def audit(folder):
     for token in ['진행 중이며', '집계 후 이 절', '집계 후 반영', 'being evaluated']:
         assert token not in manuscript + abstract, f'Unfinished draft: {token}'
     for token in ['추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요',
-                  '근거로 삼지 않았다', '검증 대화 S', '추가 검증 T', '실험 C']:
+                  '근거로 삼지 않았다', '검증 대화 S', '추가 검증 T', '실험 C',
+                  '합산하지 않', '해석하지 않', '해석하기 어렵', '판단하기 어렵']:
         assert token not in manuscript + abstract, f'Generic future-work wording: {token}'
     assert not re.search(r'\b[a-f0-9]{40}\b', manuscript), 'Keep model revision hashes in experiment records'
     return {'date': '2026-10-08', 'passed': True,

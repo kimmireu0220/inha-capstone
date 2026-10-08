@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "a2i3U24F0VgT9Q",
+  "revision_id": "W4l3nj8N8wFjEw",
   "slides": 10,
   "slide_ids": [
     "p1",
@@ -17,8 +17,8 @@
   ],
   "paper_alignment": "S/T state updates, separate C pose/expression extension and image evaluation errors",
   "source_sha256": {
-    "paper/manuscript.ko.md": "4e1d49a42cf913c4bc07b05b1c507d7315a7f4a60727f2d03eabbcfadd1686b3",
-    "paper/evidence.json": "0a35a5ef69a683d9c7701754819eb0b40aff16dbdd9a7d81cda2f4d0c7e8b2b7",
+    "paper/manuscript.ko.md": "eaf8e89f6194904619af82fdfe7e920917c118ad287280f6b03f000e840b69e6",
+    "paper/evidence.json": "8f368aa250e1ab4f06a4711c9c4792e4eac51bf75f87b6cb03770709fe94a684",
     "paper/figures/figure-provenance.json": "b62abc9454402ee43e78bb4c122cc45d738ebcac27d4c09f0304d52f1e392622",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
@@ -28,16 +28,16 @@
     "experiments/compound-edit-v1/summary.json": "5ba8beef42932e3514fadb9aaa45a4b6ec1a3a5d5a5db0ccd35fd3f0db97c228"
   },
   "script_sha256": {
-    "scripts/publish_method_slides.py": "9ed14a20a2b568859a6f563c4c7404c6fb0241810f38095aadbbcd16983bf172",
+    "scripts/publish_method_slides.py": "cb9d2922ae4d63695175c872c4a91b038c74d6b8fa0a05a4564ba5d8f814b5db",
     "scripts/verify_method_slides.py": "a38b91e1c9d0a9a38624f566062b688fe6d39d8bccc51a7bdbd601898ad589be"
   },
-  "content_sha256": "405c5937f5f5182ffff67761fc3cc855b75c0e2207df4237bc24b9d6d9937bf9",
+  "content_sha256": "cca3d7d13f5ef3c2236656899b08e12b85f82c86d57ef7e57397c8232694e349",
   "editable_evidence": {
     "tables": 3,
     "images": 8,
     "notes": 10
   },
-  "snapshot_sha256": "7023afbf85124da29a5a6f573d9078e7919bcd4bf9d616b55d73d6648e1a03d6",
+  "snapshot_sha256": "bec24e01c903d3de2aba48cc3190cde75d8631970161d0c4a73fcae7c2b452e3",
   "visual_check": {
     "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
     "reviewed_slides": [
@@ -55,14 +55,14 @@
     "visible_overlap_or_clipping_found": false,
     "preview_sha256": {
       "1": "6026869f76b36a611cd622aff3c77b8067237620fd3210134787645cfa193c12",
-      "2": "43a362bf373c2604934887889800136c5f99ac3b8e8f03e519d721d17015d093",
+      "2": "a6e6945a647e915eeefd4f65cb13de769f30793ffa6559d5c01177e16d864e00",
       "3": "39f11d5ac42e856abeb4d9bdb5971fc31eb16262419965eb1b556474ca2b6bbe",
-      "4": "b549d9ce38dd9d4485a957493cd36bdc0a994ea678940fd90019d9a67f61a0a6",
+      "4": "0e885324ddfd06f3f93df4eeb9eface732c855b6af5690487445881d8b23a2d6",
       "5": "8115b31467d8cea0169496565b8773712b9f7184c6df447939387acad5238389",
       "6": "61e4156fb8a9f247b8323dc620f014bed30e6e8dd548a4260e799b64813360ee",
       "7": "b4c65db154ad8661cb10c0144ef23ac62633e57b7d4c9aee898975d3173bd5cb",
       "8": "0a9102cad1b717a88054ea11f5c61d5f30eadc6bf1ef1c1cfec3aad7a7b4be6f",
-      "9": "e958adbd4a08b5e5ad7a9d9af30290e6a48fa571c0023a2b64ce605357327528",
+      "9": "1ba67cb5f7210b1493698cf91e58c33ed1de3bc9252dbffe643456e5bd3bf59b",
       "10": "609f0db400e0812a7563cd566439f5701120f2a3be4b68dade297ca891bbea22"
     }
   },

@@ -14,7 +14,8 @@ class SlidesTests(unittest.TestCase):
         self.assertEqual(slides[6]['table'][2][1:], ['372/384', '374/384'])
         self.assertIn('재검토 4/16, 규칙 보정 16/16', slides[7]['body'])
         self.assertIn('별도 구현', slides[7]['foot'])
-        self.assertIn('사후 진단', slides[8]['notes'])
+        self.assertIn('오류를 분석한 뒤 수행', slides[8]['notes'])
+        self.assertIn('8개 요청의 결과를 별도로 집계', slides[8]['notes'])
 
     def test_missing_targets_fail_closed(self):
         with self.assertRaises(ValueError):
@@ -46,7 +47,8 @@ class SlidesTests(unittest.TestCase):
         content = str(publish.spec())
         for phrase in ['논문 채택', '미확정', '새 훼손', '유리한 결과', '유지 보호만', '삭제 실행만',
                        '추가 확인이 필요', '아직 확인이 필요', '추가 검증이 필요',
-                       '근거로 쓰지 않았습니다', 'S 검증', 'T 검증', 'C 확장 검사']:
+                       '근거로 쓰지 않았습니다', 'S 검증', 'T 검증', 'C 확장 검사',
+                       '합산하지 않', '이점은 없었다', '판단하기 어렵']:
             self.assertNotIn(phrase, content)
 
     def test_plan_reuses_slides_and_native_evidence(self):
