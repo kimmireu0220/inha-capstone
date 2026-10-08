@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "D25fSQGb1QjAnQ",
+  "revision_id": "OXMtyVl9OdGzMA",
   "slides": 10,
   "slide_ids": [
     "p1",
@@ -15,28 +15,29 @@
     "p24",
     "p25"
   ],
-  "paper_alignment": "S/T constrained state updates with P/S image limitations",
+  "paper_alignment": "S/T state updates, separate C pose/expression extension and image evaluation errors",
   "source_sha256": {
-    "paper/manuscript.ko.md": "e47cdc50bd1ac1afe19abc45f5dba507a770aa54e3bb19dbbb8986ea3e1c449b",
-    "paper/evidence.json": "c3b95620651dde93b72cae8b3eabe12c3c2e0990508defc63710f40cb394b091",
+    "paper/manuscript.ko.md": "c6a5c7f82cf1b2093334d7aec9cdb5c27176f78af5a171e04fda2aafd4a7e3c3",
+    "paper/evidence.json": "403c97773a7963755d0b464f0c05d127ad80434e7b1bba447ffd05b5b739e81c",
     "paper/figures/figure-provenance.json": "1cdf1172b1746eae9d4baa347f513dc603269b896c6840b0c712ac93b59e2a5e",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
     "experiments/contract-image-v3/summary.json": "064a6a39031886bd0cd157cc728249848b34357f5b12ac835442dd191f95356c",
     "experiments/contract-image-review-v1/summary.json": "448d53b51bb4fb84c1d84df90394b4c647faf5b8492d148a6a4418188a974ce6",
-    "experiments/keep-image-v1/summary.json": "965af4a0dc67c2892bed78c2c5f0142e884929617e3275cbaad3ec6354c4897f"
+    "experiments/keep-image-v1/summary.json": "965af4a0dc67c2892bed78c2c5f0142e884929617e3275cbaad3ec6354c4897f",
+    "experiments/compound-edit-v1/summary.json": "5ba8beef42932e3514fadb9aaa45a4b6ec1a3a5d5a5db0ccd35fd3f0db97c228"
   },
   "script_sha256": {
-    "scripts/publish_method_slides.py": "98e1410b524a993908b26acd0f632c42d5188abedc42414e51297536c0dd1072",
-    "scripts/verify_method_slides.py": "765994a82ff4d4cabaef0ddbe84a86d370f65d2da6a70ada6630c9f1c2d8418b"
+    "scripts/publish_method_slides.py": "e2aaed33e83671c30754cdc36526046df17a9b4b3f597191922bfef53636450b",
+    "scripts/verify_method_slides.py": "a38b91e1c9d0a9a38624f566062b688fe6d39d8bccc51a7bdbd601898ad589be"
   },
-  "content_sha256": "17797aa50dacf987cf721189abd4c10b097c47c9ea46752429ddb9b85d0ac9b2",
+  "content_sha256": "75fc3c4d850c3fd066b30c267283cc5863ab9d782e3f2780951337e2e5abf8cd",
   "editable_evidence": {
     "tables": 3,
     "images": 8,
     "notes": 10
   },
-  "snapshot_sha256": "e8aba279ba8f59fcd38898ccee7108a2465071ab39bcaad98ed3817642c38941",
+  "snapshot_sha256": "554f767a8040d5a9c2a4a736d39aa28eff7da0d52aebb40fe8a88f9c869edf51",
   "visual_check": {
     "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
     "reviewed_slides": [
@@ -60,11 +61,10 @@
       "5": "8115b31467d8cea0169496565b8773712b9f7184c6df447939387acad5238389",
       "6": "61e4156fb8a9f247b8323dc620f014bed30e6e8dd548a4260e799b64813360ee",
       "7": "0d739a919d73c186bddb913b719536e7362d6accf84bdcc3bfa60bee149a9d2f",
-      "8": "3313c9683f93ee7fab4f2a1060b61e7df7de99bdb220a4323230cf5176fc50b4",
-      "9": "531ffb8674324fae4f7cbfb5c2fafe880bdd310e0790ab78ef8b6166fa6a6af7",
-      "10": "b2fc438c3ca45e22f70ad39da26e57a4cc074603af82f2bd02867fda0ae0438a"
+      "8": "164da99a6e66da3848a9ddf4252afb3be212839fab47339f8d656bed522f609a",
+      "9": "92334496701f5bb2af844ba07518100e195b9aff20a87339272ab92391145a4b",
+      "10": "ac4c3f733e0c200e7f74a03c3b635422f30abb8c579f7d1192452df695635687"
     }
   },
-  "scope": "Presentation fidelity and source alignment, not independent scientific validation",
-  "paper_editorial_alignment": "2026-10-08: Removed revision hashes and internal paths from paper prose; clarified model names and evaluation terms. Experimental facts and slide content unchanged. Existing native visual verification retained."
+  "scope": "Presentation fidelity and source alignment, not independent scientific validation"
 }

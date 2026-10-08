@@ -4,12 +4,13 @@
 
 ## 최신 방법과 검증
 
+- [포즈·표정 확장 C와 동작 대조](experiments/compound-edit-v1/RESULTS.md): 12대화 48턴. 혼합 조건은 재검토 4/16, 규칙 보정 16/16이며 삭제 규칙만으로 동일한 결과. 사후 짧은 대조 8개는 7/8. 정답 요청 이미지 6장은 평가 오류를 기록했다. S·T와 별도 구현이다.
 - [유지·삭제 제약과 S 검증](experiments/request-contract-v3/RESULTS.md): 기준 27/32, 유지 27/32, 삭제 28/32, 결합 29/32. 최종 대화 6/8→7/8. 개선은 한 대화의 두 턴에 집중됐다.
 - [별도 T 검증](experiments/isolated-contract-v1/RESULTS.md): 기준 28/32, 유지·삭제 29/32. 최종 정답 대화 7/8→8/8. 변경을 항목별로 적용하는 처리를 추가해도 결과는 같았다.
 - [S 이미지 검증](experiments/contract-image-v3/INTERPRETATION.md): 128조건·66개 고유 이미지의 1차 평가와 검산 완료. 목표 350/384→358/384 중 증가 6개는 판단 불가→성공이다. 입력이 다른 비교는 네 쌍이다. [7B 후속 평가](experiments/contract-image-review-v1/INTERPRETATION.md)는 전체 68개 고유 평가 입력에서 372/384→374/384였다. 판단 불가는 없어졌지만 설명 모순은 남았다. 사후 분석이며 독립 정답 검증이 아니다.
 - [P 이미지 결과와 해석](experiments/keep-image-v1/INTERPRETATION.md): 128조건·68개 고유 이미지. 점수 차이는 판단 불가였던 한 항목이 성공으로 바뀐 결과다.
 
-두 텍스트 검증은 개발자가 작성한 제한 문형 검사다. 서로 다른 개발 단계의 자료이며 표본 수를 합산하지 않는다. [최신 논문](paper/README.md)은 S·T와 이미지 분석을 반영했다. [10장 Google Slides](artifacts/README.md)도 같은 범위의 결과와 한계를 반영했다.
+텍스트 검증은 개발자가 작성한 제한 문형 검사다. 서로 다른 개발 단계의 자료이며 표본 수를 합산하지 않는다. [최신 논문](paper/README.md)은 S·T, C 확장과 이미지 분석을 반영했다. [10장 Google Slides](artifacts/README.md)도 같은 범위의 결과와 한계를 반영했다.
 
 ## 방법 개발 경위
 

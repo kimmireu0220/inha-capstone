@@ -1,0 +1,74 @@
+{
+  "stage": "oracle-generation-diagnostic",
+  "conditions": [
+    {
+      "id": "R01-single",
+      "reference": "experiments/state-tracking-v2/references/R01.png",
+      "reference_sha256": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+      "prompt": "Edit the supplied portrait photograph. Change the expression to a closed-mouth smile. Left and right refer to the depicted person's own left and right. Preserve the person's identity, hair, age, body proportions and all unrequested attributes. Keep the original camera framing. Return one photorealistic edited photograph without text or labels.",
+      "goals": [
+        "The person has a closed-mouth smile; no teeth are visible."
+      ]
+    },
+    {
+      "id": "R01-compound",
+      "reference": "experiments/state-tracking-v2/references/R01.png",
+      "reference_sha256": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+      "prompt": "Edit the supplied portrait photograph. Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Left and right refer to the depicted person's own left and right. Preserve the person's identity, hair, age, body proportions and all unrequested attributes. Keep the original camera framing. Return one photorealistic edited photograph without text or labels.",
+      "goals": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket."
+      ]
+    },
+    {
+      "id": "R01-mixed",
+      "reference": "experiments/state-tracking-v2/references/R01.png",
+      "reference_sha256": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+      "prompt": "Edit the supplied portrait photograph. Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant. Left and right refer to the depicted person's own left and right. Preserve the person's identity, hair, age, body proportions and all unrequested attributes. Keep the original camera framing. Return one photorealistic edited photograph without text or labels.",
+      "goals": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket.",
+        "The person wears a navy jacket.",
+        "The background is blue.",
+        "A plant is present."
+      ]
+    },
+    {
+      "id": "R02-single",
+      "reference": "experiments/state-tracking-v2/references/R02.png",
+      "reference_sha256": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+      "prompt": "Edit the supplied portrait photograph. Change the expression to a closed-mouth smile. Left and right refer to the depicted person's own left and right. Preserve the person's identity, hair, age, body proportions and all unrequested attributes. Keep the original camera framing. Return one photorealistic edited photograph without text or labels.",
+      "goals": [
+        "The person has a closed-mouth smile; no teeth are visible."
+      ]
+    },
+    {
+      "id": "R02-compound",
+      "reference": "experiments/state-tracking-v2/references/R02.png",
+      "reference_sha256": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+      "prompt": "Edit the supplied portrait photograph. Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Left and right refer to the depicted person's own left and right. Preserve the person's identity, hair, age, body proportions and all unrequested attributes. Keep the original camera framing. Return one photorealistic edited photograph without text or labels.",
+      "goals": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket."
+      ]
+    },
+    {
+      "id": "R02-mixed",
+      "reference": "experiments/state-tracking-v2/references/R02.png",
+      "reference_sha256": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9",
+      "prompt": "Edit the supplied portrait photograph. Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant. Left and right refer to the depicted person's own left and right. Preserve the person's identity, hair, age, body proportions and all unrequested attributes. Keep the original camera framing. Return one photorealistic edited photograph without text or labels.",
+      "goals": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket.",
+        "The person wears a navy jacket.",
+        "The background is blue.",
+        "A plant is present."
+      ]
+    }
+  ],
+  "protocol_sha256": "3987bc681753b6c579bbb122a4dd5e46694fcf0452471f5e587187b5d92aa14f"
+}

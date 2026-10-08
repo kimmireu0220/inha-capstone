@@ -1,0 +1,66 @@
+{
+  "post_hoc": true,
+  "purpose": "Distinguish operation confusion from pose complexity",
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "temperature": 0,
+  "max_tokens": 320,
+  "cases": [
+    [
+      "Remove the plant.",
+      {
+        "prop": "none"
+      }
+    ],
+    [
+      "Remove the necklace.",
+      {
+        "necklace": "none"
+      }
+    ],
+    [
+      "Restore the plant to the original.",
+      {
+        "prop": "original"
+      }
+    ],
+    [
+      "Restore the necklace to the original.",
+      {
+        "necklace": "original"
+      }
+    ],
+    [
+      "Remove the plant. Restore the necklace to the original.",
+      {
+        "prop": "none",
+        "necklace": "original"
+      }
+    ],
+    [
+      "Restore the plant to the original. Remove the necklace.",
+      {
+        "prop": "original",
+        "necklace": "none"
+      }
+    ],
+    [
+      "Restore the necklace to the original. Remove the plant.",
+      {
+        "prop": "none",
+        "necklace": "original"
+      }
+    ],
+    [
+      "Remove the necklace. Restore the plant to the original.",
+      {
+        "prop": "original",
+        "necklace": "none"
+      }
+    ]
+  ],
+  "sha256": {
+    "check_operations.py": "303c30eded52cea8a62d1c709beed3ac99bb34316a9e6dbc8241c39a91da829b",
+    "run.py": "46a7f05e03eb38f3ea18ce6cadcd5b0f4507fa8b22d4e7245ee0a343326d6c51"
+  }
+}

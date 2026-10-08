@@ -2,8 +2,8 @@
   "date": "2026-10-08",
   "passed": true,
   "scope": "Numeric transcription and provenance QA, not independent scientific validation",
-  "manuscript_sha256": "e47cdc50bd1ac1afe19abc45f5dba507a770aa54e3bb19dbbb8986ea3e1c449b",
-  "english_abstract_sha256": "753a437dfc51142a0535ba4578a7616f39a8467cac27805d461ade655ff57f76",
+  "manuscript_sha256": "c6a5c7f82cf1b2093334d7aec9cdb5c27176f78af5a171e04fda2aafd4a7e3c3",
+  "english_abstract_sha256": "5a8ed8bc424ffb6e385e751149ec6b91b2daf48bc9d79f1895cbfea8f89ca2a9",
   "checked_values": [
     "30/32",
     "32/32",
@@ -41,7 +41,15 @@
     "| R02 S3 3턴 | 0/6 | 5/6 | 6/6 | 6/6 |",
     "| R02 S3 4턴 | 4/6 | 6/6 | 5/6 | 6/6 |",
     "367/408",
-    "367/387"
+    "367/387",
+    "| 표정 | 16/16 | 16/16 | 16/16 |",
+    "| 표정·포즈 | 16/16 | 16/16 | 16/16 |",
+    "| 속성 지시 혼합 | 4/16 | 4/16 | 16/16 |",
+    "각각 7/8",
+    "124/144",
+    "144/144",
+    "4/16",
+    "16/16"
   ],
   "figure_provenance_sha256": "1cdf1172b1746eae9d4baa347f513dc603269b896c6840b0c712ac93b59e2a5e",
   "sources": [
@@ -124,6 +132,16 @@
       "name": "experiments/contract-image-review-v1/verification.json",
       "path": "experiments/contract-image-review-v1/verification.json",
       "sha256": "344d7cf44f3e38827e827bf13c244303f62fc2ecb5f332c073481ed78cb9e477"
+    },
+    {
+      "name": "experiments/compound-edit-v1/summary.json",
+      "path": "experiments/compound-edit-v1/summary.json",
+      "sha256": "5ba8beef42932e3514fadb9aaa45a4b6ec1a3a5d5a5db0ccd35fd3f0db97c228"
+    },
+    {
+      "name": "experiments/compound-edit-v1/verification.json",
+      "path": "experiments/compound-edit-v1/verification.json",
+      "sha256": "f4bb1505502c82587a6f73f1535148c3481d78ce99c4496a5627dd4d97620e20"
     }
   ]
 }

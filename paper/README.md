@@ -2,7 +2,7 @@
 
 [논문 PDF](manuscript.inha.pdf) · [논문 Word](manuscript.inha.docx) · [한국어 원본](manuscript.ko.md) · [국문·영문 통합본](manuscript.inha.md)
 
-제목은 「반복 인물 이미지 편집을 위한 유지 및 삭제 지시의 상태 갱신 제약」이다. 최신 S·T 검증과 P·S 이미지 분석, 전체 입력의 사후 7B 평가를 반영했다. 5쪽의 표 5개·비교 그림 2개와 참고문헌을 검수했다.
+제목은 「반복 인물 이미지 편집을 위한 유지 및 삭제 지시의 상태 갱신 제약」이다. S·T 검증과 P·S 이미지 분석, 사후 7B 평가에 포즈·표정 확장 C와 짧은 동작 대조를 추가했다. 6쪽의 표 6개·비교 그림 2개와 참고문헌을 검수했다. 최종 페이지 검수 기록은 `render-verification.json`에 저장한다.
 
 유지·삭제 규칙을 함께 적용했을 때 정확한 턴은 S에서 27/32→29/32, T에서 28/32→29/32였다. S에서는 각 규칙을 단독으로 적용한 경우보다 두 규칙을 결합한 경우가 더 높았다. 연구용 합성 대화로 검사했으며 개선은 S3와 T7에서 나타났다. 이미지 평가는 판단 불가와 설명·점수 불일치가 있어 전반적인 품질 향상 여부를 판단하기 어렵다.
 
@@ -10,6 +10,7 @@
 
 - [S 구성요소 비교](../experiments/request-contract-v3/RESULTS.md)
 - [T 추가 검증](../experiments/isolated-contract-v1/RESULTS.md)
+- [C 포즈·표정 확장과 삭제·복원 대조](../experiments/compound-edit-v1/RESULTS.md)
 - [S 이미지 해석](../experiments/contract-image-v3/INTERPRETATION.md)
 - [7B 사후 평가 해석](../experiments/contract-image-review-v1/INTERPRETATION.md)
 - [P 이미지 해석](../experiments/keep-image-v1/INTERPRETATION.md)

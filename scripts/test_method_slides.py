@@ -12,6 +12,9 @@ class SlidesTests(unittest.TestCase):
         self.assertEqual(slides[3]['table'][-1][1:], ['29/32', '8/8', '1'])
         self.assertEqual(slides[6]['table'][1][1:], ['350/384', '358/384'])
         self.assertEqual(slides[6]['table'][2][1:], ['372/384', '374/384'])
+        self.assertIn('재검토 4/16, 규칙 보정 16/16', slides[7]['body'])
+        self.assertIn('별도 구현', slides[7]['foot'])
+        self.assertIn('사후 진단', slides[8]['notes'])
 
     def test_missing_targets_fail_closed(self):
         with self.assertRaises(ValueError):

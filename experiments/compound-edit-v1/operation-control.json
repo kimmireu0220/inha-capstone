@@ -1,0 +1,86 @@
+{
+  "1": {
+    "request": "Remove the plant.",
+    "expected": {
+      "prop": "none"
+    },
+    "first": "{\"prop\": \"none\"}",
+    "second": "{\"prop\": \"none\"}",
+    "first_exact": true,
+    "review_exact": true
+  },
+  "2": {
+    "request": "Remove the necklace.",
+    "expected": {
+      "necklace": "none"
+    },
+    "first": "{\"necklace\": \"none\"}",
+    "second": "{\"necklace\": \"none\"}",
+    "first_exact": true,
+    "review_exact": true
+  },
+  "3": {
+    "request": "Restore the plant to the original.",
+    "expected": {
+      "prop": "original"
+    },
+    "first": "{\"prop\": \"original\"}",
+    "second": "{\"prop\": \"original\"}",
+    "first_exact": true,
+    "review_exact": true
+  },
+  "4": {
+    "request": "Restore the necklace to the original.",
+    "expected": {
+      "necklace": "original"
+    },
+    "first": "{\"necklace\": \"original\"}",
+    "second": "{\"necklace\": \"original\"}",
+    "first_exact": true,
+    "review_exact": true
+  },
+  "5": {
+    "request": "Remove the plant. Restore the necklace to the original.",
+    "expected": {
+      "prop": "none",
+      "necklace": "original"
+    },
+    "first": "{\"prop\": \"original\", \"necklace\": \"original\"}",
+    "second": "{\"prop\": \"original\", \"necklace\": \"original\"}",
+    "first_exact": false,
+    "review_exact": false
+  },
+  "6": {
+    "request": "Restore the plant to the original. Remove the necklace.",
+    "expected": {
+      "prop": "original",
+      "necklace": "none"
+    },
+    "first": "{\"prop\": \"original\", \"necklace\": \"none\"}",
+    "second": "{\"prop\": \"original\", \"necklace\": \"none\"}",
+    "first_exact": true,
+    "review_exact": true
+  },
+  "7": {
+    "request": "Restore the necklace to the original. Remove the plant.",
+    "expected": {
+      "prop": "none",
+      "necklace": "original"
+    },
+    "first": "{\"necklace\": \"original\", \"prop\": \"none\"}",
+    "second": "{\"necklace\": \"original\", \"prop\": \"none\"}",
+    "first_exact": true,
+    "review_exact": true
+  },
+  "8": {
+    "request": "Remove the necklace. Restore the plant to the original.",
+    "expected": {
+      "prop": "original",
+      "necklace": "none"
+    },
+    "first": "{\"necklace\": \"none\", \"prop\": \"original\"}",
+    "second": "{\"necklace\": \"none\", \"prop\": \"original\"}",
+    "first_exact": true,
+    "review_exact": true
+  }
+}

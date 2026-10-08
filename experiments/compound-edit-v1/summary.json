@@ -1,0 +1,211 @@
+{
+  "complete": true,
+  "exploratory": true,
+  "rater_type": "AI",
+  "groups": {
+    "direct": {
+      "single": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 16,
+        "changed": 16,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      },
+      "compound": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 36,
+        "changed": 36,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      },
+      "mixed": {
+        "turns": 16,
+        "exact_turns": 4,
+        "correct_slots": 124,
+        "slots": 144,
+        "changed_correct": 56,
+        "changed": 64,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 0,
+        "new_corruptions": 0
+      }
+    },
+    "review": {
+      "single": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 16,
+        "changed": 16,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      },
+      "compound": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 36,
+        "changed": 36,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      },
+      "mixed": {
+        "turns": 16,
+        "exact_turns": 4,
+        "correct_slots": 124,
+        "slots": 144,
+        "changed_correct": 56,
+        "changed": 64,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 0,
+        "new_corruptions": 0
+      }
+    },
+    "guarded": {
+      "single": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 16,
+        "changed": 16,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      },
+      "compound": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 36,
+        "changed": 36,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      },
+      "mixed": {
+        "turns": 16,
+        "exact_turns": 16,
+        "correct_slots": 144,
+        "slots": 144,
+        "changed_correct": 64,
+        "changed": 64,
+        "pose_expression_correct": 48,
+        "pose_expression_total": 48,
+        "exact_final_dialogues": 4,
+        "new_corruptions": 0
+      }
+    }
+  },
+  "review_wrong_slots": {
+    "prop: original -> none": 12,
+    "necklace: original -> none": 8
+  },
+  "post_hoc_remove_only_exact_turns": 48,
+  "image_rows": [
+    {
+      "id": "R01-single",
+      "satisfied": 0,
+      "total": 1,
+      "unknown": 1,
+      "scores": [
+        null
+      ],
+      "parse_error": "AssertionError()"
+    },
+    {
+      "id": "R01-compound",
+      "satisfied": 2,
+      "total": 3,
+      "unknown": 0,
+      "scores": [
+        1,
+        0,
+        1
+      ],
+      "parse_error": null
+    },
+    {
+      "id": "R01-mixed",
+      "satisfied": 5,
+      "total": 6,
+      "unknown": 0,
+      "scores": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null
+    },
+    {
+      "id": "R02-single",
+      "satisfied": 0,
+      "total": 1,
+      "unknown": 1,
+      "scores": [
+        null
+      ],
+      "parse_error": "AssertionError()"
+    },
+    {
+      "id": "R02-compound",
+      "satisfied": 2,
+      "total": 3,
+      "unknown": 0,
+      "scores": [
+        1,
+        0,
+        1
+      ],
+      "parse_error": null
+    },
+    {
+      "id": "R02-mixed",
+      "satisfied": 5,
+      "total": 6,
+      "unknown": 0,
+      "scores": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null
+    }
+  ],
+  "post_hoc_operation_control": {
+    "requests": 8,
+    "model_calls": 16,
+    "first_exact": 7,
+    "review_exact": 7,
+    "failed_ids": [
+      "5"
+    ]
+  }
+}

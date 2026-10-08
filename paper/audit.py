@@ -120,6 +120,24 @@ def audit(folder):
     agreement = review['unique_input_agreement']
     expect(f"{agreement['same_including_unknown']}/{agreement['decisions']}")
     expect(f"{agreement['same_when_both_known']}/{agreement['both_known']}")
+    compound = source('experiments/compound-edit-v1/summary.json')
+    compound_verified = source('experiments/compound-edit-v1/verification.json')
+    assert compound['complete'] and compound_verified['passed']
+    for filename, digest in compound_verified['sha256'].items():
+        assert sha(ROOT / 'experiments/compound-edit-v1' / filename) == digest
+    for level, label in [('single', '표정'), ('compound', '표정·포즈'), ('mixed', '속성 지시 혼합')]:
+        row([label] + [f"{compound['groups'][mode][level]['exact_turns']}/16"
+                       for mode in ['direct', 'review', 'guarded']])
+    assert compound['post_hoc_remove_only_exact_turns'] == 48
+    assert compound['post_hoc_operation_control'] == {
+        'requests': 8, 'model_calls': 16, 'first_exact': 7, 'review_exact': 7, 'failed_ids': ['5']}
+    expect('각각 7/8')
+    expect('124/144')
+    expect('144/144')
+    expect('4/16', abstract)
+    expect('16/16', abstract)
+    assert sum(x['unknown'] for x in compound['image_rows']) == 2
+    assert sum(x['parse_error'] is not None for x in compound['image_rows']) == 2
     provenance = json.loads((folder / 'figures/figure-provenance.json').read_text())
     assert provenance['script_sha256'] == sha(ROOT / 'paper/make_contract_figure.py')
     assert provenance['prepared_sha256'] == sha(ROOT / 'experiments/contract-image-v3/prepared.json')

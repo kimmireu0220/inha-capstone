@@ -35,7 +35,7 @@ def check():
                           ('manuscript.inha.docx', 'docx_sha256'),
                           ('manuscript.inha.pdf', 'pdf_sha256')]:
         assert digest(ROOT / 'paper' / filename) == render[key], filename
-    assert render['all_pages_visually_reviewed'] and render['pages'] == 5
+    assert render['all_pages_visually_reviewed'] and render['pages'] == 6
     assert render['body_columns'] == 2
     assert render['reviewed_pages'] == list(range(1, render['pages'] + 1))
     assert digest(ROOT / 'paper/figures/figure-provenance.json') == evidence['figure_provenance_sha256']
@@ -76,6 +76,20 @@ def check():
             assert (path.parent / local).exists(), f'{path.relative_to(ROOT)} -> {local}'
     with zipfile.ZipFile(ROOT / 'paper/manuscript.inha.docx') as archive:
         assert not forbidden.search(archive.read('word/document.xml').decode())
+    compound = ROOT / 'experiments/compound-edit-v1'
+    compound_verified = json.loads((compound / 'verification.json').read_text())
+    assert compound_verified['passed'] and compound_verified['turns'] == 48
+    for name, expected in compound_verified['sha256'].items():
+        assert digest(compound / name) == expected, name
+    for name, expected in json.loads((compound / 'frozen.json').read_text())['sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    for manifest in ['image-evaluation-frozen.json', 'operation-control-frozen.json']:
+        for name, expected in json.loads((compound / manifest).read_text())['sha256'].items():
+            assert digest(compound / name) == expected, name
+    plan = json.loads((compound / 'image-plan.json').read_text())
+    assert digest(compound / 'image_protocol.md') == plan['protocol_sha256']
+    for item in plan['conditions']:
+        assert digest(ROOT / item['reference']) == item['reference_sha256']
     verified_studies = ['coverage-repair-v1', 'coverage-validation-v1',
                         'action-plan-v2', 'action-plan-validation-v1',
                         'restore-contract-validation-v1', 'slot-isolation-validation-v1',

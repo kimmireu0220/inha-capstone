@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-08",
+  "generator": "built-in imagegen",
+  "model_revision": null,
+  "seed": null,
+  "input_plan": "image-plan.json",
+  "selection": "First successful output for each fixed condition; no quality-based rerolls",
+  "outputs": {
+    "R01-single": "exec-2efa6218-f249-4803-9cb2-57f4ded7d436.png",
+    "R01-compound": "exec-d048122f-7f38-47ab-9db0-569b00ae96f7.png",
+    "R01-mixed": "exec-2dca2902-1e57-46c5-81f0-f942694c0213.png",
+    "R02-single": "exec-321f5acd-5d56-4a3a-ac06-71cfca596e23.png",
+    "R02-compound": "exec-7c45272f-0791-4ac1-a8ba-f7db24b0a233.png",
+    "R02-mixed": "exec-ab9053e0-bcd1-414b-8551-50f539cb1a91.png"
+  },
+  "stored_images": "images/<condition>.png",
+  "stored_image_hashes": "image-evaluation-frozen.json"
+}

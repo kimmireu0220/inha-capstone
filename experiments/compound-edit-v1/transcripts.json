@@ -1,0 +1,338 @@
+{
+  "C1-single-1": {
+    "request": "Change the expression to a closed-mouth smile.",
+    "first": "{\"expression\": \"closed_mouth_smile\"}",
+    "second_user": "Change the expression to a closed-mouth smile.\nProposed patch: {\"expression\": \"closed_mouth_smile\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\"}",
+    "seconds": 5.187478625011863
+  },
+  "C1-single-2": {
+    "request": "Change the expression to a neutral expression.",
+    "first": "{\"expression\": \"neutral\"}",
+    "second_user": "Change the expression to a neutral expression.\nProposed patch: {\"expression\": \"neutral\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\"}",
+    "seconds": 4.528447374992538
+  },
+  "C1-single-3": {
+    "request": "Restore the expression to the original.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.642420458025299
+  },
+  "C1-single-4": {
+    "request": "Change the expression to a closed-mouth smile.",
+    "first": "{\"expression\": \"closed_mouth_smile\"}",
+    "second_user": "Change the expression to a closed-mouth smile.\nProposed patch: {\"expression\": \"closed_mouth_smile\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\"}",
+    "seconds": 4.829376457986655
+  },
+  "C1-compound-1": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\"}",
+    "seconds": 6.812962083989987
+  },
+  "C1-compound-2": {
+    "request": "Change the expression to a neutral expression. Face forward and lower both hands.",
+    "first": "{\"expression\": \"neutral\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "second_user": "Change the expression to a neutral expression. Face forward and lower both hands.\nProposed patch: {\"expression\": \"neutral\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "seconds": 6.189531707990682
+  },
+  "C1-compound-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.713584583980264
+  },
+  "C1-compound-4": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the right. Keep the hand pose unchanged.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the right. Keep the hand pose unchanged.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\"}",
+    "seconds": 5.805403292004485
+  },
+  "C1-mixed-1": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "seconds": 8.629752083012136
+  },
+  "C1-mixed-2": {
+    "request": "Change the expression to a neutral expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+    "first": "{\"expression\": \"neutral\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "second_user": "Change the expression to a neutral expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.\nProposed patch: {\"expression\": \"neutral\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "seconds": 6.840590916981455
+  },
+  "C1-mixed-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+    "first": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.\nProposed patch: {\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "seconds": 6.236016874987399
+  },
+  "C1-mixed-4": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the right. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"background\": \"original\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the right. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"background\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"background\": \"original\"}",
+    "seconds": 6.479130459018052
+  },
+  "C2-single-1": {
+    "request": "Change the expression to a surprised expression.",
+    "first": "{\"expression\": \"surprised\"}",
+    "second_user": "Change the expression to a surprised expression.\nProposed patch: {\"expression\": \"surprised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\"}",
+    "seconds": 4.799529333016835
+  },
+  "C2-single-2": {
+    "request": "Change the expression to a closed-mouth smile.",
+    "first": "{\"expression\": \"closed_mouth_smile\"}",
+    "second_user": "Change the expression to a closed-mouth smile.\nProposed patch: {\"expression\": \"closed_mouth_smile\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\"}",
+    "seconds": 4.851476583018666
+  },
+  "C2-single-3": {
+    "request": "Restore the expression to the original.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.608668750006473
+  },
+  "C2-single-4": {
+    "request": "Change the expression to a surprised expression.",
+    "first": "{\"expression\": \"surprised\"}",
+    "second_user": "Change the expression to a surprised expression.\nProposed patch: {\"expression\": \"surprised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\"}",
+    "seconds": 4.699028458009707
+  },
+  "C2-compound-1": {
+    "request": "Change the expression to a surprised expression. Turn the body to the right and raise the left hand.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\"}",
+    "second_user": "Change the expression to a surprised expression. Turn the body to the right and raise the left hand.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\"}",
+    "seconds": 6.532752333005192
+  },
+  "C2-compound-2": {
+    "request": "Change the expression to a closed-mouth smile. Face forward and lower both hands.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Face forward and lower both hands.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "seconds": 6.418660374998581
+  },
+  "C2-compound-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.712497708998853
+  },
+  "C2-compound-4": {
+    "request": "Change the expression to a surprised expression. Turn the body to the left. Keep the hand pose unchanged.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"left\"}",
+    "second_user": "Change the expression to a surprised expression. Turn the body to the left. Keep the hand pose unchanged.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"left\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"left\"}",
+    "seconds": 5.547318541997811
+  },
+  "C2-mixed-1": {
+    "request": "Change the expression to a surprised expression. Turn the body to the right and raise the left hand. Set the jacket to navy and the background to blue. Add a plant.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "second_user": "Change the expression to a surprised expression. Turn the body to the right and raise the left hand. Set the jacket to navy and the background to blue. Add a plant.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "seconds": 8.442115834011929
+  },
+  "C2-mixed-2": {
+    "request": "Change the expression to a closed-mouth smile. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "seconds": 7.238545875006821
+  },
+  "C2-mixed-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+    "first": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.\nProposed patch: {\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "seconds": 6.211230416985927
+  },
+  "C2-mixed-4": {
+    "request": "Change the expression to a surprised expression. Turn the body to the left. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"left\", \"background\": \"original\"}",
+    "second_user": "Change the expression to a surprised expression. Turn the body to the left. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"left\", \"background\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"left\", \"background\": \"original\"}",
+    "seconds": 6.228532625013031
+  },
+  "C3-single-1": {
+    "request": "Change the expression to a neutral expression.",
+    "first": "{\"expression\": \"neutral\"}",
+    "second_user": "Change the expression to a neutral expression.\nProposed patch: {\"expression\": \"neutral\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\"}",
+    "seconds": 5.11332933299127
+  },
+  "C3-single-2": {
+    "request": "Change the expression to a surprised expression.",
+    "first": "{\"expression\": \"surprised\"}",
+    "second_user": "Change the expression to a surprised expression.\nProposed patch: {\"expression\": \"surprised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\"}",
+    "seconds": 4.657021791994339
+  },
+  "C3-single-3": {
+    "request": "Restore the expression to the original.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.624448750022566
+  },
+  "C3-single-4": {
+    "request": "Change the expression to a neutral expression.",
+    "first": "{\"expression\": \"neutral\"}",
+    "second_user": "Change the expression to a neutral expression.\nProposed patch: {\"expression\": \"neutral\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\"}",
+    "seconds": 4.501961375004612
+  },
+  "C3-compound-1": {
+    "request": "Change the expression to a neutral expression. Turn the body to the left and raise the right hand.",
+    "first": "{\"expression\": \"neutral\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\"}",
+    "second_user": "Change the expression to a neutral expression. Turn the body to the left and raise the right hand.\nProposed patch: {\"expression\": \"neutral\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\"}",
+    "seconds": 6.3258966249995865
+  },
+  "C3-compound-2": {
+    "request": "Change the expression to a surprised expression. Face forward and lower both hands.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "second_user": "Change the expression to a surprised expression. Face forward and lower both hands.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "seconds": 6.218488042009994
+  },
+  "C3-compound-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.75427204099833
+  },
+  "C3-compound-4": {
+    "request": "Change the expression to a neutral expression. Turn the body to the right. Keep the hand pose unchanged.",
+    "first": "{\"expression\": \"neutral\", \"body_direction\": \"right\"}",
+    "second_user": "Change the expression to a neutral expression. Turn the body to the right. Keep the hand pose unchanged.\nProposed patch: {\"expression\": \"neutral\", \"body_direction\": \"right\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\", \"body_direction\": \"right\"}",
+    "seconds": 5.3292517910012975
+  },
+  "C3-mixed-1": {
+    "request": "Change the expression to a neutral expression. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant.",
+    "first": "{\"expression\": \"neutral\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "second_user": "Change the expression to a neutral expression. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant.\nProposed patch: {\"expression\": \"neutral\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\", \"body_direction\": \"left\", \"hand_pose\": \"right_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "seconds": 8.46343624999281
+  },
+  "C3-mixed-2": {
+    "request": "Change the expression to a surprised expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "second_user": "Change the expression to a surprised expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "seconds": 7.049126458005048
+  },
+  "C3-mixed-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+    "first": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.\nProposed patch: {\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "seconds": 6.188418208010262
+  },
+  "C3-mixed-4": {
+    "request": "Change the expression to a neutral expression. Turn the body to the right. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+    "first": "{\"expression\": \"neutral\", \"body_direction\": \"right\", \"background\": \"original\"}",
+    "second_user": "Change the expression to a neutral expression. Turn the body to the right. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.\nProposed patch: {\"expression\": \"neutral\", \"body_direction\": \"right\", \"background\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"neutral\", \"body_direction\": \"right\", \"background\": \"original\"}",
+    "seconds": 6.041785333014559
+  },
+  "C4-single-1": {
+    "request": "Change the expression to a closed-mouth smile.",
+    "first": "{\"expression\": \"closed_mouth_smile\"}",
+    "second_user": "Change the expression to a closed-mouth smile.\nProposed patch: {\"expression\": \"closed_mouth_smile\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\"}",
+    "seconds": 4.950099334004335
+  },
+  "C4-single-2": {
+    "request": "Change the expression to a surprised expression.",
+    "first": "{\"expression\": \"surprised\"}",
+    "second_user": "Change the expression to a surprised expression.\nProposed patch: {\"expression\": \"surprised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\"}",
+    "seconds": 4.677383250003913
+  },
+  "C4-single-3": {
+    "request": "Restore the expression to the original.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.60759504098678
+  },
+  "C4-single-4": {
+    "request": "Change the expression to a closed-mouth smile.",
+    "first": "{\"expression\": \"closed_mouth_smile\"}",
+    "second_user": "Change the expression to a closed-mouth smile.\nProposed patch: {\"expression\": \"closed_mouth_smile\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\"}",
+    "seconds": 4.934848125005374
+  },
+  "C4-compound-1": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the right and raise the left hand.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the right and raise the left hand.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\"}",
+    "seconds": 6.738381875009509
+  },
+  "C4-compound-2": {
+    "request": "Change the expression to a surprised expression. Face forward and lower both hands.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "second_user": "Change the expression to a surprised expression. Face forward and lower both hands.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\"}",
+    "seconds": 6.240395208005793
+  },
+  "C4-compound-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+    "first": "{\"expression\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged.\nProposed patch: {\"expression\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\"}",
+    "seconds": 4.797141042014118
+  },
+  "C4-compound-4": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the left. Keep the hand pose unchanged.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the left. Keep the hand pose unchanged.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\"}",
+    "seconds": 5.6634712500090245
+  },
+  "C4-mixed-1": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the right and raise the left hand. Set the jacket to navy and the background to blue. Add a plant.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the right and raise the left hand. Set the jacket to navy and the background to blue. Add a plant.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"right\", \"hand_pose\": \"left_hand_raised\", \"jacket\": \"navy\", \"background\": \"blue\", \"prop\": \"plant\"}",
+    "seconds": 8.611297041992657
+  },
+  "C4-mixed-2": {
+    "request": "Change the expression to a surprised expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+    "first": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "second_user": "Change the expression to a surprised expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.\nProposed patch: {\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"surprised\", \"body_direction\": \"front\", \"hand_pose\": \"hands_down\", \"prop\": \"original\"}",
+    "seconds": 7.055470124993008
+  },
+  "C4-mixed-3": {
+    "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+    "first": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "second_user": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.\nProposed patch: {\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"original\", \"jacket\": \"original\", \"necklace\": \"original\"}",
+    "seconds": 6.152390832983656
+  },
+  "C4-mixed-4": {
+    "request": "Change the expression to a closed-mouth smile. Turn the body to the left. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+    "first": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"background\": \"original\"}",
+    "second_user": "Change the expression to a closed-mouth smile. Turn the body to the left. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.\nProposed patch: {\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"background\": \"original\"}\nReview against the request. Correct errors and return only a flat JSON patch.",
+    "second": "{\"expression\": \"closed_mouth_smile\", \"body_direction\": \"left\", \"background\": \"original\"}",
+    "seconds": 6.431044875003863
+  }
+}

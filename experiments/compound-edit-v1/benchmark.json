@@ -1,0 +1,382 @@
+{
+  "C1-single": [
+    {
+      "request": "Change the expression to a closed-mouth smile.",
+      "updates": {
+        "expression": "closed_mouth_smile"
+      }
+    },
+    {
+      "request": "Change the expression to a neutral expression.",
+      "updates": {
+        "expression": "neutral"
+      }
+    },
+    {
+      "request": "Restore the expression to the original.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile.",
+      "updates": {
+        "expression": "closed_mouth_smile"
+      }
+    }
+  ],
+  "C1-compound": [
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "left",
+        "hand_pose": "right_hand_raised"
+      }
+    },
+    {
+      "request": "Change the expression to a neutral expression. Face forward and lower both hands.",
+      "updates": {
+        "expression": "neutral",
+        "body_direction": "front",
+        "hand_pose": "hands_down"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the right. Keep the hand pose unchanged.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "right"
+      }
+    }
+  ],
+  "C1-mixed": [
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "left",
+        "hand_pose": "right_hand_raised",
+        "jacket": "navy",
+        "background": "blue",
+        "prop": "plant"
+      }
+    },
+    {
+      "request": "Change the expression to a neutral expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+      "updates": {
+        "expression": "neutral",
+        "body_direction": "front",
+        "hand_pose": "hands_down",
+        "prop": "none"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+      "updates": {
+        "expression": "original",
+        "jacket": "original",
+        "necklace": "none"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the right. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "right",
+        "background": "original"
+      }
+    }
+  ],
+  "C2-single": [
+    {
+      "request": "Change the expression to a surprised expression.",
+      "updates": {
+        "expression": "surprised"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile.",
+      "updates": {
+        "expression": "closed_mouth_smile"
+      }
+    },
+    {
+      "request": "Restore the expression to the original.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression.",
+      "updates": {
+        "expression": "surprised"
+      }
+    }
+  ],
+  "C2-compound": [
+    {
+      "request": "Change the expression to a surprised expression. Turn the body to the right and raise the left hand.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "right",
+        "hand_pose": "left_hand_raised"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile. Face forward and lower both hands.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "front",
+        "hand_pose": "hands_down"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression. Turn the body to the left. Keep the hand pose unchanged.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "left"
+      }
+    }
+  ],
+  "C2-mixed": [
+    {
+      "request": "Change the expression to a surprised expression. Turn the body to the right and raise the left hand. Set the jacket to navy and the background to blue. Add a plant.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "right",
+        "hand_pose": "left_hand_raised",
+        "jacket": "navy",
+        "background": "blue",
+        "prop": "plant"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "front",
+        "hand_pose": "hands_down",
+        "prop": "none"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+      "updates": {
+        "expression": "original",
+        "jacket": "original",
+        "necklace": "none"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression. Turn the body to the left. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "left",
+        "background": "original"
+      }
+    }
+  ],
+  "C3-single": [
+    {
+      "request": "Change the expression to a neutral expression.",
+      "updates": {
+        "expression": "neutral"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression.",
+      "updates": {
+        "expression": "surprised"
+      }
+    },
+    {
+      "request": "Restore the expression to the original.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a neutral expression.",
+      "updates": {
+        "expression": "neutral"
+      }
+    }
+  ],
+  "C3-compound": [
+    {
+      "request": "Change the expression to a neutral expression. Turn the body to the left and raise the right hand.",
+      "updates": {
+        "expression": "neutral",
+        "body_direction": "left",
+        "hand_pose": "right_hand_raised"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression. Face forward and lower both hands.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "front",
+        "hand_pose": "hands_down"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a neutral expression. Turn the body to the right. Keep the hand pose unchanged.",
+      "updates": {
+        "expression": "neutral",
+        "body_direction": "right"
+      }
+    }
+  ],
+  "C3-mixed": [
+    {
+      "request": "Change the expression to a neutral expression. Turn the body to the left and raise the right hand. Set the jacket to navy and the background to blue. Add a plant.",
+      "updates": {
+        "expression": "neutral",
+        "body_direction": "left",
+        "hand_pose": "right_hand_raised",
+        "jacket": "navy",
+        "background": "blue",
+        "prop": "plant"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "front",
+        "hand_pose": "hands_down",
+        "prop": "none"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+      "updates": {
+        "expression": "original",
+        "jacket": "original",
+        "necklace": "none"
+      }
+    },
+    {
+      "request": "Change the expression to a neutral expression. Turn the body to the right. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+      "updates": {
+        "expression": "neutral",
+        "body_direction": "right",
+        "background": "original"
+      }
+    }
+  ],
+  "C4-single": [
+    {
+      "request": "Change the expression to a closed-mouth smile.",
+      "updates": {
+        "expression": "closed_mouth_smile"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression.",
+      "updates": {
+        "expression": "surprised"
+      }
+    },
+    {
+      "request": "Restore the expression to the original.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile.",
+      "updates": {
+        "expression": "closed_mouth_smile"
+      }
+    }
+  ],
+  "C4-compound": [
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the right and raise the left hand.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "right",
+        "hand_pose": "left_hand_raised"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression. Face forward and lower both hands.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "front",
+        "hand_pose": "hands_down"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged.",
+      "updates": {
+        "expression": "original"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the left. Keep the hand pose unchanged.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "left"
+      }
+    }
+  ],
+  "C4-mixed": [
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the right and raise the left hand. Set the jacket to navy and the background to blue. Add a plant.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "right",
+        "hand_pose": "left_hand_raised",
+        "jacket": "navy",
+        "background": "blue",
+        "prop": "plant"
+      }
+    },
+    {
+      "request": "Change the expression to a surprised expression. Face forward and lower both hands. Keep the jacket and background unchanged. Remove the plant.",
+      "updates": {
+        "expression": "surprised",
+        "body_direction": "front",
+        "hand_pose": "hands_down",
+        "prop": "none"
+      }
+    },
+    {
+      "request": "Restore the expression to the original. Keep the body direction and hand pose unchanged. Restore the jacket to the original. Keep the background unchanged. Remove the necklace.",
+      "updates": {
+        "expression": "original",
+        "jacket": "original",
+        "necklace": "none"
+      }
+    },
+    {
+      "request": "Change the expression to a closed-mouth smile. Turn the body to the left. Keep the hand pose unchanged. Keep the jacket and necklace unchanged. Restore the background to the original.",
+      "updates": {
+        "expression": "closed_mouth_smile",
+        "body_direction": "left",
+        "background": "original"
+      }
+    }
+  ]
+}

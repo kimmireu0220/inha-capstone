@@ -1,0 +1,96 @@
+{
+  "rater_type": "AI",
+  "frozen_sha256": "b0aad6bf1554b27f28f2252c9bcf410d72fb6db2415d644add95536fe41b53b7",
+  "ratings": {
+    "R01-single": {
+      "scores": [
+        null
+      ],
+      "reasons": [],
+      "raw": "```json\n{\"scores\":[1,0,null],\"reasons\":[\"brief visible evidence per goal\"]}\n```",
+      "parse_error": "AssertionError()",
+      "seconds": 33.18762595800217
+    },
+    "R01-compound": {
+      "scores": [
+        1,
+        0,
+        1
+      ],
+      "reasons": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket."
+      ],
+      "raw": "```json\n{\n    \"scores\": [\n        1,\n        0,\n        1\n    ],\n    \"reasons\": [\n        \"The person has a closed-mouth smile; no teeth are visible.\",\n        \"The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.\",\n        \"The person's right hand is raised rather than resting down or in a pocket.\"\n    ]\n}\n```",
+      "parse_error": null,
+      "seconds": 34.427026999997906
+    },
+    "R01-mixed": {
+      "scores": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket.",
+        "The person wears a navy jacket.",
+        "The background is blue.",
+        "A plant is present."
+      ],
+      "raw": "```json\n{\n    \"scores\": [\n        1,\n        0,\n        1,\n        1,\n        1,\n        1\n    ],\n    \"reasons\": [\n        \"The person has a closed-mouth smile; no teeth are visible.\",\n        \"The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.\",\n        \"The person's right hand is raised rather than resting down or in a pocket.\",\n        \"The person wears a navy jacket.\",\n        \"The background is blue.\",\n        \"A plant is present.\"\n    ]\n}\n```",
+      "parse_error": null,
+      "seconds": 37.905316332995426
+    },
+    "R02-single": {
+      "scores": [
+        null
+      ],
+      "reasons": [],
+      "raw": "```json\n{\"scores\":[1,0,null],\"reasons\":[\"brief visible evidence per goal\"]}\n```",
+      "parse_error": "AssertionError()",
+      "seconds": 28.38173733302392
+    },
+    "R02-compound": {
+      "scores": [
+        1,
+        0,
+        1
+      ],
+      "reasons": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket."
+      ],
+      "raw": "```json\n{\n    \"scores\": [\n        1,\n        0,\n        1\n    ],\n    \"reasons\": [\n        \"The person has a closed-mouth smile; no teeth are visible.\",\n        \"The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.\",\n        \"The person's right hand is raised rather than resting down or in a pocket.\"\n    ]\n}\n```",
+      "parse_error": null,
+      "seconds": 42.97755870799301
+    },
+    "R02-mixed": {
+      "scores": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "The person has a closed-mouth smile; no teeth are visible.",
+        "The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.",
+        "The person's right hand is raised rather than resting down or in a pocket.",
+        "The person wears a navy jacket.",
+        "The background is blue.",
+        "A plant is present."
+      ],
+      "raw": "```json\n{\n    \"scores\": [\n        1,\n        0,\n        1,\n        1,\n        1,\n        1\n    ],\n    \"reasons\": [\n        \"The person has a closed-mouth smile; no teeth are visible.\",\n        \"The torso is turned toward the person's own left (toward viewer-right), rather than square to the camera.\",\n        \"The person's right hand is raised rather than resting down or in a pocket.\",\n        \"The person wears a navy jacket.\",\n        \"The background is blue.\",\n        \"A plant is present.\"\n    ]\n}\n```",
+      "parse_error": null,
+      "seconds": 57.64550941699417
+    }
+  }
+}

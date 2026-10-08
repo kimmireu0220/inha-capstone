@@ -24,7 +24,8 @@ SOURCES = ['paper/manuscript.ko.md', 'paper/evidence.json',
            'experiments/isolated-contract-v1/results.json',
            'experiments/contract-image-v3/summary.json',
            'experiments/contract-image-review-v1/summary.json',
-           'experiments/keep-image-v1/summary.json']
+           'experiments/keep-image-v1/summary.json',
+           'experiments/compound-edit-v1/summary.json']
 
 
 def load(path):
@@ -47,6 +48,9 @@ def spec():
                            f"{r['exact_final_dialogues']}/8", str(r['newly_corrupted_unchanged_slots'])])
         return result
     first, second = load(SOURCES[5])['by_mode'], load(SOURCES[6])['by_mode']
+    compound = load(SOURCES[8])
+    mixed_review = compound['groups']['review']['mixed']['exact_turns']
+    mixed_guarded = compound['groups']['guarded']['mixed']['exact_turns']
     images = [['AI 목표 충족', '기준 방법', '유지·삭제 결합']]
     for data, label in [(first, '1차 3B'), (second, '사후 7B')]:
         images.append([label] + [f"{data[m]['goals_satisfied']}/{data[m]['goal_denominator']}" for m in ['baseline_restore', 'keep_remove']])
@@ -81,16 +85,16 @@ def spec():
              below='3B에서 늘어난 8개 중 6개는 판단 불가가 성공으로 바뀐 항목\n7B에도 설명과 점수의 모순이 있어 품질 향상 판단에 한계',
              foot='목표 충족은 방법당 64조건 × 6항목으로 집계한다.\n64쌍 중 서로 다른 입력은 4쌍이며 나머지 60쌍은 같은 출력을 공유한다.',
              notes='이미지와 평가 목표의 조합은 68개입니다. 3B의 판단 불가는 기준 20개, 결합 13개였고, 응답 형식 오류는 3개였습니다. 이 오류를 본 뒤 같은 계열의 7B 모델로 전체를 다시 평가했습니다. 7B에는 형식 오류나 판단 불가가 없었지만 설명과 점수의 모순은 남았습니다. 두 모델이 공통으로 실패에서 성공으로 판정한 것은 R02 S3 4턴의 배경 한 항목입니다. 같은 계열 모델의 사후 평가이므로 판정이 일치한다고 정답으로 볼 수는 없습니다. 얼굴 코사인 평균은 기준 '+f"{first['baseline_restore']['face_mean']:.6f}, 결합 {first['keep_remove']['face_mean']:.6f}"+'입니다. 입력이 다른 네 쌍 중 두 쌍은 높아지고 두 쌍은 낮아져 얼굴 보존이 개선됐다고 판단하기 어렵습니다. '+REPO+'/blob/main/experiments/contract-image-review-v1/INTERPRETATION.md'),
-        dict(title='앞선 실패에서 확인한 규칙의 범위',
-             body='keep을 폭넓게 탐지한 규칙은 Q에서 12/32\n적용 문형을 좁혀도 마지막 상태가 정확한 대화는 감소\n\n이후 삭제 누락도 함께 검사하도록 수정\n조건부 표현과 대명사 등은 모델의 추출 결과를 사용',
-             foot='앞선 P 이미지 평가의 점수 차이는 판단 불가 한 항목이 성공으로 바뀐 결과',
-             notes='초기 개발 대화 P에서는 정확한 턴이 30/32에서 32/32로 늘었습니다. 하지만 keep을 폭넓게 탐지하면 off나 색 변경 요청을 유지로 잘못 처리했습니다. 새 대화 Q에서 기준은 27/32, 넓은 규칙은 12/32, 문형을 좁힌 규칙은 27/32였습니다. 문형을 좁혀도 마지막 상태가 정확한 대화는 6/8에서 5/8로 줄어 삭제 누락을 함께 검사하도록 수정했습니다. 이후 S에서 두 규칙의 효과를 비교했습니다. P 이미지 실험은 128조건에서 68개 이미지를 생성했고 목표 충족 수는 기준 354/384, 유지 규칙 355/384였습니다. 차이는 판단 불가 한 항목이 성공으로 바뀐 경우였습니다. '+REPO+'/blob/main/RESEARCH_INDEX.md'),
+        dict(title='포즈·표정과 속성 지시를 함께 처리한 결과',
+             body='C 확장 검사: 4시나리오 × 3조건 × 4턴 = 48턴\n표정만, 표정·포즈 조건은 세 방법 모두 16/16\n'+f'속성 지시 혼합은 재검토 {mixed_review}/16, 규칙 보정 {mixed_guarded}/16\n\n삭제를 원본 복원으로 해석한 오류를 바로잡음',
+             foot='9항목의 별도 구현. 같은 삭제 문형을 반복했으며, 삭제 규칙만 적용해도 같은 결과',
+             notes='최초 추출, 한 차례 재검토, 재검토 뒤 규칙 보정을 비교했습니다. 최초 추출은 턴당 한 번, 나머지는 두 번 호출합니다. 상태는 기존 속성에 몸 방향·손동작·표정을 추가한 아홉 항목이며 어휘와 구현을 새로 고정했습니다. S·T와 정확도나 표본을 합산하지 않습니다. 세 방법 모두 포즈·표정은 조건별 48항목이 정확했습니다. 혼합 조건에서 최초 추출과 재검토는 각각 4/16, 규칙 보정은 16/16이었습니다. 모델은 2턴 식물 삭제와 3턴 목걸이 삭제를 원본 복원으로 잘못 해석했습니다. 이 오류가 다음 상태에 남아 전체 항목 오류는 20개였습니다. 삭제 규칙만 적용한 사후 재계산도 48/48이므로 유지·복원 규칙의 추가 효과를 주장하지 않습니다. 정답 요청으로 생성한 별도 6장은 평가 응답 두 개의 형식 오류와 네 개의 방향 점수·설명 모순이 있어 이미지 성능 근거로 쓰지 않았습니다. 앞선 P·Q의 개발 실패도 연구 색인에 보존했습니다. '+REPO+'/blob/main/experiments/compound-edit-v1/RESULTS.md'),
         dict(title='유지·삭제 규칙을 함께 적용한 결과',
-             body='삭제 규칙은 식물 삭제 누락을 방지\n유지 규칙은 불필요한 배경 변경을 방지\n같은 모델 응답을 사용해 추가 호출 없이 적용\n\n효과를 확인한 범위는 제한된 영어 문형의 합성 대화',
+             body='S·T에서 유지 오류와 삭제 누락을 감소\nC에서 삭제와 원본 복원의 혼동을 보정\n재검토와 같은 응답에 적용하여 추가 호출 없음\n\n효과를 확인한 범위는 제한된 영어 문형의 합성 대화',
              foot='이미지 품질은 AI 판정 오류로 결론이 제한됨. 얼굴 유사도는 4쌍 중 2쌍 상승·2쌍 하락',
-             notes='정확한 턴은 S에서 27/32에서 29/32로, T에서 28/32에서 29/32로 늘었습니다. 차이는 S3와 T7에서 나타났습니다. S3에서는 삭제 규칙이 식물을 남기는 오류를 막고 유지 규칙이 배경을 잘못 바꾸는 오류를 막았습니다. 두 규칙은 서로 다른 오류를 처리했습니다. 실험에는 정해진 영어 문형의 합성 대화와 한 종류의 4B 추출 모델을 사용했습니다. 유지 규칙은 직전 값을 그대로 보존하므로 이전 상태에 있던 오류도 유지합니다.'),
+             notes='정확한 턴은 S에서 27/32에서 29/32로, T에서 28/32에서 29/32로 늘었습니다. 차이는 S3와 T7에서 나타났습니다. C에서는 삭제와 복원을 혼동한 오류를 바로잡았습니다. C 결과를 본 뒤 짧은 대조 요청 8개를 고정하여 별도로 검사하니 최초 추출과 재검토 모두 7/8이었습니다. 삭제와 복원을 단독으로 요청한 네 경우는 맞았지만, 식물 삭제 다음에 목걸이 복원을 요청하면 식물도 원본으로 바꿨습니다. 문장 순서만 뒤집으면 맞았습니다. 따라서 포즈 자체보다 지시 조합에서의 상태 동작 혼동을 확인한 사례입니다. 사후 진단이므로 C의 표본에 합산하지 않습니다. 연구에는 제한 문형과 한 종류의 4B 추출 모델을 사용했습니다. 유지 규칙은 이전 상태에 있던 오류도 유지합니다.'),
         dict(title='논문과 재현 자료',
-             body='논문 PDF 및 Word\nS·T 요청, 정답, 모델 응답과 실험 코드\n전체 생성 이미지와 AI 평가 원문\n개발 과정과 실험별 결과',
+             body='논문 PDF 및 Word\nS·T·C 요청, 정답, 모델 응답과 실험 코드\n전체 생성 이미지와 AI 평가 원문\n개발 과정과 실험별 결과',
              foot='github.com/kimmireu0220/inha-capstone',
              notes='논문 '+REPO+'/blob/main/paper/manuscript.inha.pdf\nWord '+REPO+'/blob/main/paper/manuscript.inha.docx\n실험 색인 '+REPO+'/blob/main/RESEARCH_INDEX.md\n관련 연구 및 사진 출처 전체는 논문 참고문헌에 기재했다.')
     ]
