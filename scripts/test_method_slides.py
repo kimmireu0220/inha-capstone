@@ -13,7 +13,7 @@ class SlidesTests(unittest.TestCase):
         self.assertEqual(slides[6]['table'][1][1:], ['350/384', '358/384'])
         self.assertEqual(slides[6]['table'][2][1:], ['372/384', '374/384'])
         self.assertIn('재검토 4/16, 규칙 보정 16/16', slides[7]['body'])
-        self.assertIn('별도 구현', slides[7]['foot'])
+        self.assertIn('어휘와 구현을 새로 고정', slides[7]['notes'])
         self.assertIn('오류를 분석한 뒤 수행', slides[8]['notes'])
         self.assertIn('8개 요청의 결과를 별도로 집계', slides[8]['notes'])
 

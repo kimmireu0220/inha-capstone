@@ -79,7 +79,7 @@ while i<len(lines):
   width=8.15
   first_width=2.5
   column_widths=[first_width]+[(width-first_width)/(len(rows[0])-1)]*(len(rows[0])-1)
-  if len(rows[0])==5 and any('코사인' in x for x in rows[0]):
+  if len(rows[0])==5 and any('얼굴 유사도' in x for x in rows[0]):
    column_widths=[1.95,1.45,1.2,1.65,1.9]
   for col,col_width in zip(t.columns,column_widths):col.width=Cm(col_width)
   for j,row in enumerate(rows):
@@ -91,8 +91,10 @@ while i<len(lines):
     for side in ['left','right']:
      margin=OxmlElement('w:'+side);margin.set(qn('w:w'),'45');margin.set(qn('w:type'),'dxa');margins.append(margin)
     c._tc.get_or_add_tcPr().append(margins)
-    c.text=({'정확한 턴':'정확한\n턴','정확한 항목':'정확한\n항목',
-             '최종 정답 대화':'최종 정답\n대화','판단 불가':'판단\n불가'}.get(txt,txt) if j==0 else txt)
+    c.text=({'전체 상태 일치율':'전체 상태\n일치율','항목별 일치율':'항목별\n일치율',
+             '최종 상태 일치율':'최종 상태\n일치율','유지 지시 위반 수':'유지 지시\n위반 수',
+             '항목별 충족률':'항목별\n충족률','판단 불가 항목 수':'판단 불가\n항목 수',
+             '전체 항목 충족률':'전체 항목\n충족률','얼굴 유사도 평균':'얼굴 유사도\n평균'}.get(txt,txt) if j==0 else txt)
     for p in c.paragraphs:
      p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_after=Pt(3);p.paragraph_format.space_before=Pt(3);p.paragraph_format.line_spacing=1
      p.paragraph_format.keep_with_next=j<len(rows)-1

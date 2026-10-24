@@ -159,7 +159,7 @@ def audit(folder):
                   '합산하지 않', '해석하지 않', '해석하기 어렵', '판단하기 어렵']:
         assert token not in manuscript + abstract, f'Generic future-work wording: {token}'
     assert not re.search(r'\b[a-f0-9]{40}\b', manuscript), 'Keep model revision hashes in experiment records'
-    return {'date': '2026-10-08', 'passed': True,
+    return {'date': '2026-10-24', 'passed': True,
             'scope': 'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256': sha(folder / 'manuscript.ko.md'),
             'english_abstract_sha256': hashlib.sha256(abstract.encode()).hexdigest(),
