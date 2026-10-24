@@ -58,9 +58,9 @@ def main():
     expected, counts = verify(deck)
     print(f'Native text, tables, image provenance and notes verified: {counts}')
     if args.reviewed_all:
-        record = {'date': '2026-10-08', 'presentation_id': PRESENTATION_ID, 'revision_id': deck['revisionId'],
+        record = {'date': '2026-10-24', 'presentation_id': PRESENTATION_ID, 'revision_id': deck['revisionId'],
                   'slides': len(IDS), 'slide_ids': IDS,
-                  'paper_alignment': 'S/T state updates, separate C pose/expression extension and image evaluation errors',
+                  'paper_alignment': 'Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording',
                   'source_sha256': {path: sha(ROOT/path) for path in SOURCES},
                   'script_sha256': {path: sha(ROOT/path) for path in ['scripts/publish_method_slides.py', 'scripts/verify_method_slides.py']},
                   'content_sha256': hashlib.sha256(json.dumps(expected, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
