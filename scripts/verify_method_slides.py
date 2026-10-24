@@ -3,7 +3,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-from publish_method_slides import ROOT, IDS, SOURCES, IMAGE_COMMIT, spec, sha
+from method_slides_content import ROOT, IDS, SOURCES, IMAGE_COMMIT, spec, sha
 from update_google_slides import PRESENTATION_ID
 
 
@@ -62,7 +62,7 @@ def main():
                   'slides': len(IDS), 'slide_ids': IDS,
                   'paper_alignment': 'Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording',
                   'source_sha256': {path: sha(ROOT/path) for path in SOURCES},
-                  'script_sha256': {path: sha(ROOT/path) for path in ['scripts/publish_method_slides.py', 'scripts/verify_method_slides.py']},
+                  'script_sha256': {path: sha(ROOT/path) for path in ['scripts/method_slides_content.py', 'scripts/publish_method_slides.py', 'scripts/verify_method_slides.py']},
                   'content_sha256': hashlib.sha256(json.dumps(expected, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
                   'editable_evidence': counts, 'snapshot_sha256': sha(snapshot),
                   'visual_check': {'method': 'Google Slides native LARGE thumbnails, all ten reviewed at 1600x900',
