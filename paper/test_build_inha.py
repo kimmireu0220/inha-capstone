@@ -24,7 +24,7 @@ class BuilderTests(unittest.TestCase):
                 '# 검증 제목\n\nValidation Title\n\n## 초록\n\n검증 요약.\n\n주요어: 검증\n\n'
                 '## 1. 서론\n\n검증 본문.\n\n'
                 '| 방법 | 정확도 |\n| --- | --- |\n| 기준 | 1/2 |\n| 정규화+항목별 적용 | 2/2 |\n\n'
-                '## 참고문헌\n\n[1] Example reference.\n')
+                'https://github.com/example/research\n\n## 참고문헌\n\n[1] Example reference.\n')
             (source / 'abstract.en.txt').write_text('Validation abstract.\n')
             (source / 'layout.json').write_text(json.dumps({
                 'keywords': 'Validation keyword', 'table_captions': ['검증 표']}))
@@ -49,6 +49,9 @@ class BuilderTests(unittest.TestCase):
             self.assertEqual(table.rows[1].cells[1].paragraphs[0].alignment, WD_ALIGN_PARAGRAPH.CENTER)
             reference = next(p for p in doc.paragraphs if p.text.startswith('[1]'))
             self.assertEqual(reference.alignment, WD_ALIGN_PARAGRAPH.LEFT)
+            repository = next(p for p in doc.paragraphs if p.text.startswith('https://'))
+            self.assertEqual(repository.alignment, WD_ALIGN_PARAGRAPH.LEFT)
+            self.assertEqual(repository.paragraph_format.first_line_indent, 0)
 
 
 if __name__ == '__main__':

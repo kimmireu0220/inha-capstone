@@ -20,6 +20,12 @@ def audit(folder):
     manuscript = (folder / 'manuscript.ko.md').read_text()
     abstract = (folder / 'abstract.en.txt').read_text().strip()
     checked, sources = [], {}
+    references = manuscript.split('## 참고문헌\n', 1)[1]
+    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 9)]
+    assert '[9]' not in manuscript
+    repository = 'https://github.com/kimmireu0220/inha-capstone'
+    reproduction = manuscript.split('### 4.3 재현 자료\n', 1)[1].split('### 4.4', 1)[0]
+    assert repository in reproduction and repository not in references
 
     def source(relative):
         path = ROOT / relative
