@@ -10,17 +10,94 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_FILES = ['paper/initial-portrait-verification.json', 'experiments/prompt-state-image-v1/summary.json', 'experiments/prompt-state-image-v1/verification.json', 'experiments/prompt-state-image-v1/prompt-lengths.json', 'experiments/prompt-state-image-v1/face-results.json', 'experiments/prompt-state-image-v1/ai-ratings.json', 'experiments/prompt-state-image-v1/ai-ratings-7b.json', 'experiments/prompt-state-image-v1/secondary-frozen.json', 'paper/figures/prompt-state-image-provenance.json', 'experiments/clause-normalization-v1/invariant-audit.json', 'experiments/clause-normalization-v1/plain-patch-comparison.json', 'experiments/instruction-transfer-v1/results.json', 'experiments/instruction-transfer-v1/summary.json', 'experiments/instruction-transfer-v1/verification.json', 'experiments/operation-scope-validation-v1/verification.json', 'experiments/operation-scope-validation-v1/summary.json', 'experiments/operation-scope-validation-v1/results-qwen3.json', 'experiments/operation-scope-validation-v1/results-llama32.json', 'experiments/instruction-eligibility-validation-v1/verification.json', 'experiments/instruction-eligibility-validation-v1/summary.json', 'experiments/instruction-eligibility-validation-v1/results-qwen3.json', 'experiments/instruction-eligibility-validation-v1/results-llama32.json', 'experiments/single-extraction-validation-v1/verification.json', 'experiments/single-extraction-validation-v1/summary.json', 'experiments/single-extraction-validation-v1/results-qwen3.json', 'experiments/single-extraction-validation-v1/results-llama32.json', 'experiments/operation-scope-v2/verification.json', 'experiments/instruction-eligibility-v1/verification.json', 'experiments/instruction-eligibility-v1/invariant-audit.json', 'paper/implementation-verification.json', 'experiments/clause-factorial-v1/results.json', 'experiments/clause-factorial-v1/summary.json', 'experiments/clause-factorial-v1/verification.json', 'experiments/prompt-synthesis-expanded-v1/prompt-audit.json', 'experiments/prompt-synthesis-expanded-v1/plan.json', 'experiments/paraphrase-contract-v1/results.json', 'experiments/paraphrase-contract-v1/verification.json', 'experiments/clause-normalization-v1/results.json', 'experiments/clause-normalization-v1/verification.json', 'experiments/clause-normalization-v1/development-replay.json', 'experiments/keep-contract-validation-v1/results.json', 'experiments/keep-contract-validation-v1/verification.json', 'experiments/keep-contract-v2/results.json', 'experiments/keep-contract-v2/verification.json', 'experiments/request-contract-v3/results.json', 'experiments/request-contract-v3/verification.json', 'experiments/isolated-contract-v1/results.json', 'experiments/isolated-contract-v1/verification.json', 'experiments/keep-image-v1/summary.json', 'experiments/keep-image-v1/verification.json', 'experiments/keep-image-v1/paired-audit.json', 'experiments/contract-image-v3/summary.json', 'experiments/contract-image-v3/verification.json', 'experiments/contract-image-v3/paired-audit.json', 'experiments/contract-image-review-v1/summary.json', 'experiments/contract-image-review-v1/verification.json', 'experiments/compound-edit-v1/summary.json', 'experiments/compound-edit-v1/verification.json']
+SOURCE_FILES = (
+    'paper/initial-portrait-verification.json',
+    'experiments/prompt-state-image-v1/summary.json',
+    'experiments/prompt-state-image-v1/verification.json',
+    'experiments/prompt-state-image-v1/prompt-lengths.json',
+    'experiments/prompt-state-image-v1/face-results.json',
+    'experiments/prompt-state-image-v1/ai-ratings.json',
+    'experiments/prompt-state-image-v1/ai-ratings-7b.json',
+    'experiments/prompt-state-image-v1/secondary-frozen.json',
+    'paper/figures/prompt-state-image-provenance.json',
+    'experiments/clause-normalization-v1/invariant-audit.json',
+    'experiments/clause-normalization-v1/plain-patch-comparison.json',
+    'experiments/instruction-transfer-v1/results.json',
+    'experiments/instruction-transfer-v1/summary.json',
+    'experiments/instruction-transfer-v1/verification.json',
+    'experiments/operation-scope-validation-v1/verification.json',
+    'experiments/operation-scope-validation-v1/summary.json',
+    'experiments/operation-scope-validation-v1/results-qwen3.json',
+    'experiments/operation-scope-validation-v1/results-llama32.json',
+    'experiments/instruction-eligibility-validation-v1/verification.json',
+    'experiments/instruction-eligibility-validation-v1/summary.json',
+    'experiments/instruction-eligibility-validation-v1/results-qwen3.json',
+    'experiments/instruction-eligibility-validation-v1/results-llama32.json',
+    'experiments/single-extraction-validation-v1/verification.json',
+    'experiments/single-extraction-validation-v1/summary.json',
+    'experiments/single-extraction-validation-v1/results-qwen3.json',
+    'experiments/single-extraction-validation-v1/results-llama32.json',
+    'experiments/operation-scope-v2/verification.json',
+    'experiments/instruction-eligibility-v1/verification.json',
+    'experiments/instruction-eligibility-v1/invariant-audit.json',
+    'paper/implementation-verification.json',
+    'experiments/clause-factorial-v1/results.json',
+    'experiments/clause-factorial-v1/summary.json',
+    'experiments/clause-factorial-v1/verification.json',
+    'experiments/prompt-synthesis-expanded-v1/prompt-audit.json',
+    'experiments/prompt-synthesis-expanded-v1/plan.json',
+    'experiments/paraphrase-contract-v1/results.json',
+    'experiments/paraphrase-contract-v1/verification.json',
+    'experiments/clause-normalization-v1/results.json',
+    'experiments/clause-normalization-v1/verification.json',
+    'experiments/clause-normalization-v1/development-replay.json',
+    'experiments/keep-contract-validation-v1/results.json',
+    'experiments/keep-contract-validation-v1/verification.json',
+    'experiments/keep-contract-v2/results.json',
+    'experiments/keep-contract-v2/verification.json',
+    'experiments/request-contract-v3/results.json',
+    'experiments/request-contract-v3/verification.json',
+    'experiments/isolated-contract-v1/results.json',
+    'experiments/isolated-contract-v1/verification.json',
+    'experiments/keep-image-v1/summary.json',
+    'experiments/keep-image-v1/verification.json',
+    'experiments/keep-image-v1/paired-audit.json',
+    'experiments/contract-image-v3/summary.json',
+    'experiments/contract-image-v3/verification.json',
+    'experiments/contract-image-v3/paired-audit.json',
+    'experiments/contract-image-review-v1/summary.json',
+    'experiments/contract-image-review-v1/verification.json',
+    'experiments/compound-edit-v1/summary.json',
+    'experiments/compound-edit-v1/verification.json',
+)
+
+
+HASH_FIELDS = ('sha256', 'source_sha256', 'sources_sha256',
+               'frozen_inputs_verified', 'input_sha256')
 
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def verify_dependency_hashes(record, source_path, root=ROOT):
+    """Check dependency digests stored relative to the repository or record."""
+    for key in HASH_FIELDS:
+        mapping = record.get(key, {})
+        if not isinstance(mapping, dict):
+            continue
+        for filename, digest in mapping.items():
+            if not isinstance(digest, str) or not re.fullmatch(r'[a-f0-9]{64}', digest):
+                continue
+            candidates = (root / filename, source_path.parent / filename)
+            assert any(p.is_file() and sha(p) == digest for p in candidates), (source_path, filename)
+
+
 def audit(folder):
     manuscript = (folder / 'manuscript.ko.md').read_text()
     abstract = (folder / 'abstract.en.txt').read_text().strip()
     checked, sources, data = [], {}, {}
+    manuscript_lines = set(manuscript.splitlines())
 
     def source(name):
         if name not in data:
@@ -35,21 +112,13 @@ def audit(folder):
 
     def row(cells):
         expected = '| ' + ' | '.join(map(str, cells)) + ' |'
-        assert expected in manuscript.splitlines(), f'Missing table row: {expected}'
+        assert expected in manuscript_lines, f'Missing table row: {expected}'
         checked.append(expected)
 
     # Retain the evidence inventory and validate its frozen dependency hashes.
     for name in SOURCE_FILES:
         record = source(name)
-        for key in ['sha256', 'source_sha256', 'sources_sha256', 'frozen_inputs_verified', 'input_sha256']:
-            mapping = record.get(key, {})
-            if not isinstance(mapping, dict):
-                continue
-            for filename, digest in mapping.items():
-                if not isinstance(digest, str) or not re.fullmatch(r'[a-f0-9]{64}', digest):
-                    continue
-                candidates = [ROOT / filename, (ROOT / name).parent / filename]
-                assert any(p.is_file() and sha(p) == digest for p in candidates), (name, filename)
+        verify_dependency_hashes(record, ROOT / name)
         if 'passed' in record:
             assert record.get('passed'), name
 
