@@ -1,0 +1,728 @@
+{
+  "origin": "AI-authored synthetic English dialogues",
+  "families": 4,
+  "dialogues": 12,
+  "requests": 96,
+  "histories": {
+    "F1-D1": [
+      {
+        "category": "setup",
+        "request": "For this portrait, use a navy blazer, a white crew-neck shirt, a silver circular pin on the viewer-right lapel, a gold round necklace, and a office background with one plant.",
+        "updates": {
+          "jacket": "navy",
+          "top": "white_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "office",
+          "prop": "plant"
+        }
+      },
+      {
+        "category": "replacement",
+        "request": "Change the blazer to gray and change the top to a ivory crew-neck shirt.",
+        "updates": {
+          "jacket": "gray",
+          "top": "ivory_crewneck"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Remove the necklace and keep the navy blazer unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Restore the pin to the source photo appearance while keeping the office background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Do not remove the plant. Use a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "The caption says \"Remove the plant\"; this is not an editing instruction. Keep the office background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If the background is office, remove the plant. Keep the necklace unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "direct_priority",
+        "request": "The caption reads \"Remove the necklace\". Remove the necklace now and keep the office background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      }
+    ],
+    "F1-D2": [
+      {
+        "category": "setup",
+        "request": "For this portrait, use a gray blazer, a gray sweater, a gold square pin on the viewer-right lapel, a gold round necklace, and a library background with one lamp.",
+        "updates": {
+          "jacket": "gray",
+          "top": "gray_sweater",
+          "pin": "gold_square_right",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Remove the necklace and keep the gray blazer unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Restore the pin to the source photo appearance while keeping the library background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Do not remove the lamp. Use a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "The caption says \"Remove the lamp\"; this is not an editing instruction. Keep the library background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If the background is library, remove the lamp. Keep the necklace unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Change the blazer to green and change the top to a navy sweater.",
+        "updates": {
+          "jacket": "green",
+          "top": "navy_sweater"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "The caption reads \"Remove the necklace\". Remove the necklace now and keep the library background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      }
+    ],
+    "F1-D3": [
+      {
+        "category": "setup",
+        "request": "For this portrait, use a green blazer, a white crew-neck shirt, a red triangular pin on the viewer-left lapel, a gold round necklace, and a garden background with one bench.",
+        "updates": {
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "garden",
+          "prop": "bench"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Restore the pin to the source photo appearance while keeping the garden background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Do not remove the bench. Use a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "The caption says \"Remove the bench\"; this is not an editing instruction. Keep the garden background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If the background is garden, remove the bench. Keep the necklace unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Change the blazer to beige and change the top to a ivory crew-neck shirt.",
+        "updates": {
+          "jacket": "beige",
+          "top": "ivory_crewneck"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Remove the necklace and keep the green blazer unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "The caption reads \"Remove the necklace\". Remove the necklace now and keep the garden background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      }
+    ],
+    "F2-D1": [
+      {
+        "category": "setup",
+        "request": "Begin with a office background and one lamp; dress the person in a gray blazer and a ivory crew-neck shirt, adding a gold round necklace and a gold square pin on the viewer-right lapel.",
+        "updates": {
+          "jacket": "gray",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "gold_round",
+          "background": "office",
+          "prop": "lamp"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Keep the gray blazer unchanged; delete the necklace entirely.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Return the pin to how it looked in the original photo. Keep the office background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Never delete the lamp; add a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "Quoted text: \"Restore the gray blazer\". Keep the office background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If a gray blazer is visible, restore the pin. Keep the necklace unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Use a gray sweater now, and replace the blazer with a green blazer.",
+        "updates": {
+          "jacket": "green",
+          "top": "gray_sweater"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "If the background is office, remove the pin. Remove the pin now and keep the lamp unchanged.",
+        "updates": {
+          "pin": "none"
+        }
+      }
+    ],
+    "F2-D2": [
+      {
+        "category": "setup",
+        "request": "Begin with a library background and one bench; dress the person in a green blazer and a navy sweater, adding a gold round necklace and a red triangular pin on the viewer-left lapel.",
+        "updates": {
+          "jacket": "green",
+          "top": "navy_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "bench"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Return the pin to how it looked in the original photo. Keep the library background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Never delete the bench; add a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "Quoted text: \"Restore the green blazer\". Keep the library background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If a green blazer is visible, restore the pin. Keep the necklace unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Use a white crew-neck shirt now, and replace the blazer with a beige blazer.",
+        "updates": {
+          "jacket": "beige",
+          "top": "white_crewneck"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Keep the green blazer unchanged; delete the necklace entirely.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "If the background is library, remove the pin. Remove the pin now and keep the bench unchanged.",
+        "updates": {
+          "pin": "none"
+        }
+      }
+    ],
+    "F2-D3": [
+      {
+        "category": "setup",
+        "request": "Begin with a garden background and one plant; dress the person in a beige blazer and a ivory crew-neck shirt, adding a gold round necklace and a blue circular pin on the viewer-left lapel.",
+        "updates": {
+          "jacket": "beige",
+          "top": "ivory_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round",
+          "background": "garden",
+          "prop": "plant"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Never delete the plant; add a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "Quoted text: \"Restore the beige blazer\". Keep the garden background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If a beige blazer is visible, restore the pin. Keep the necklace unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Use a gray sweater now, and replace the blazer with a navy blazer.",
+        "updates": {
+          "jacket": "navy",
+          "top": "gray_sweater"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Keep the beige blazer unchanged; delete the necklace entirely.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Return the pin to how it looked in the original photo. Keep the garden background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "If the background is garden, remove the pin. Remove the pin now and keep the plant unchanged.",
+        "updates": {
+          "pin": "none"
+        }
+      }
+    ],
+    "F3-D1": [
+      {
+        "category": "setup",
+        "request": "Set the clothing to a green blazer over a gray sweater. Add a red triangular pin on the viewer-left lapel and a gold round necklace. Use a office background with one bench.",
+        "updates": {
+          "jacket": "green",
+          "top": "gray_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "office",
+          "prop": "bench"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Bring the pin back as in the source image, preserving the office background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Use a silver teardrop necklace, but do not take away the bench.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "This is a caption: \"Delete the necklace\". Keep the office background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If the person wears a gray sweater against a office background, remove the necklace. Keep the blazer unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Make the blazer beige; put on a navy sweater.",
+        "updates": {
+          "jacket": "beige",
+          "top": "navy_sweater"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Take away the necklace completely while preserving the green blazer unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "Do not remove the necklace. Remove the necklace now and keep the office background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      }
+    ],
+    "F3-D2": [
+      {
+        "category": "setup",
+        "request": "Set the clothing to a beige blazer over a white crew-neck shirt. Add a blue circular pin on the viewer-left lapel and a gold round necklace. Use a library background with one plant.",
+        "updates": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "plant"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Use a silver teardrop necklace, but do not take away the plant.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "This is a caption: \"Delete the necklace\". Keep the library background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If the person wears a white crew-neck shirt against a library background, remove the necklace. Keep the blazer unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Make the blazer navy; put on a ivory crew-neck shirt.",
+        "updates": {
+          "jacket": "navy",
+          "top": "ivory_crewneck"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Take away the necklace completely while preserving the beige blazer unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Bring the pin back as in the source image, preserving the library background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "Do not remove the necklace. Remove the necklace now and keep the library background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      }
+    ],
+    "F3-D3": [
+      {
+        "category": "setup",
+        "request": "Set the clothing to a navy blazer over a gray sweater. Add a silver circular pin on the viewer-right lapel and a gold round necklace. Use a garden background with one lamp.",
+        "updates": {
+          "jacket": "navy",
+          "top": "gray_sweater",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "garden",
+          "prop": "lamp"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "This is a caption: \"Delete the necklace\". Keep the garden background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If the person wears a gray sweater against a garden background, remove the necklace. Keep the blazer unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "Make the blazer gray; put on a navy sweater.",
+        "updates": {
+          "jacket": "gray",
+          "top": "navy_sweater"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Take away the necklace completely while preserving the navy blazer unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Bring the pin back as in the source image, preserving the garden background unchanged.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Use a silver teardrop necklace, but do not take away the lamp.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "Do not remove the necklace. Remove the necklace now and keep the garden background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      }
+    ],
+    "F4-D1": [
+      {
+        "category": "setup",
+        "request": "Create this configuration: a navy sweater beneath a beige blazer, a gold round necklace, a blue circular pin on the viewer-left lapel, and a office background containing one plant.",
+        "updates": {
+          "jacket": "beige",
+          "top": "navy_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round",
+          "background": "office",
+          "prop": "plant"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Add a silver teardrop necklace. Do not change the plant.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "The quoted text reads \"Remove the pin\"; keep the office background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If there is a plant, delete the pin. Keep the top unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "For the next edit, wear a navy blazer over a white crew-neck shirt.",
+        "updates": {
+          "jacket": "navy",
+          "top": "white_crewneck"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Leave the beige blazer alone, but get rid of the necklace.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Reset the pin to the original image appearance; leave the office background alone.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "Quoted text: \"Restore the blazer\". Restore the blazer to the source photo appearance now. Keep the office background unchanged.",
+        "updates": {
+          "jacket": "original"
+        }
+      }
+    ],
+    "F4-D2": [
+      {
+        "category": "setup",
+        "request": "Create this configuration: a ivory crew-neck shirt beneath a navy blazer, a gold round necklace, a silver circular pin on the viewer-right lapel, and a library background containing one lamp.",
+        "updates": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "silver_circle_right",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "lamp"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "The quoted text reads \"Remove the pin\"; keep the library background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "conditional",
+        "request": "If there is a lamp, delete the pin. Keep the top unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "For the next edit, wear a gray blazer over a gray sweater.",
+        "updates": {
+          "jacket": "gray",
+          "top": "gray_sweater"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Leave the navy blazer alone, but get rid of the necklace.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Reset the pin to the original image appearance; leave the library background alone.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Add a silver teardrop necklace. Do not change the lamp.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "direct_priority",
+        "request": "Quoted text: \"Restore the blazer\". Restore the blazer to the source photo appearance now. Keep the library background unchanged.",
+        "updates": {
+          "jacket": "original"
+        }
+      }
+    ],
+    "F4-D3": [
+      {
+        "category": "setup",
+        "request": "Create this configuration: a navy sweater beneath a gray blazer, a gold round necklace, a gold square pin on the viewer-right lapel, and a garden background containing one bench.",
+        "updates": {
+          "jacket": "gray",
+          "top": "navy_sweater",
+          "pin": "gold_square_right",
+          "necklace": "gold_round",
+          "background": "garden",
+          "prop": "bench"
+        }
+      },
+      {
+        "category": "conditional",
+        "request": "If there is a bench, delete the pin. Keep the top unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "replacement",
+        "request": "For the next edit, wear a green blazer over a white crew-neck shirt.",
+        "updates": {
+          "jacket": "green",
+          "top": "white_crewneck"
+        }
+      },
+      {
+        "category": "removal_keep",
+        "request": "Leave the gray blazer alone, but get rid of the necklace.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "category": "restoration_keep",
+        "request": "Reset the pin to the original image appearance; leave the garden background alone.",
+        "updates": {
+          "pin": "original"
+        }
+      },
+      {
+        "category": "negation",
+        "request": "Add a silver teardrop necklace. Do not change the bench.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "category": "quotation",
+        "request": "The quoted text reads \"Remove the pin\"; keep the garden background unchanged.",
+        "updates": {}
+      },
+      {
+        "category": "direct_priority",
+        "request": "Quoted text: \"Restore the blazer\". Restore the blazer to the source photo appearance now. Keep the garden background unchanged.",
+        "updates": {
+          "jacket": "original"
+        }
+      }
+    ]
+  }
+}

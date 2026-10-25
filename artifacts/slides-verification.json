@@ -1,7 +1,7 @@
 {
   "date": "2026-10-25",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "-Wp1RFyhG5FK6g",
+  "revision_id": "__ouBm5VTnbapw",
   "slides": 10,
   "slide_ids": [
     "p1",
@@ -17,8 +17,8 @@
   ],
   "paper_alignment": "Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording",
   "source_sha256": {
-    "paper/manuscript.ko.md": "094447b1230e3c3569a20d72e9fb507baeaa1eeb5c842bcdabd2269cdbff38db",
-    "paper/evidence.json": "3809cd61648755f7a402f30d3cb0c6071a34f5663aa8e68b96da8bd3a6d41848",
+    "paper/manuscript.ko.md": "cb7aa882758606ab25c3559d42e78705002c344c8fc016f3be450e5a13c64428",
+    "paper/evidence.json": "daf915ed782914d0f8eeefe20954f85e9d6cd21684679507fe2024c435e02aa7",
     "paper/figures/figure-provenance.json": "ee52e842d82adeb9665f0a6628c142c9f30aaf417363019c04e86cad3af4191d",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
@@ -45,20 +45,22 @@
     "paper/initial-portrait-verification.json": "0ef6b134d4b74878a3e96730a5a3d4e78ae1835dfef23de8b3af5add468c0614",
     "experiments/prompt-state-image-v1/summary.json": "ef2d346764efe889abf2498d50d2f41d422467b2388bbc9fe53d96d93904219a",
     "experiments/prompt-state-image-v1/verification.json": "28596b3cfd09bc3794ea0fe3029cfb604b93ff2c6f0faa8a6976e464df54d25c",
-    "paper/figures/prompt-state-image-provenance.json": "1a4819c716642bb4ce37b66538183dd1d27e59a167d286911301b4a2446e871a"
+    "paper/figures/prompt-state-image-provenance.json": "1a4819c716642bb4ce37b66538183dd1d27e59a167d286911301b4a2446e871a",
+    "experiments/extended-state-validation-v1/summary.json": "14443f41e3af30aa920997d0e93996adf63e4ad9a55b8786f2d7b34593659421",
+    "experiments/extended-state-validation-v1/verification.json": "cab91884e0590eea9aaa0bd8fb13b3f558c98348099f9c5e80e15526a7408c48"
   },
   "script_sha256": {
-    "scripts/method_slides_content.py": "ecacd388fcb751939d5536f38b456653fb9faa352d8212151e784f8f9153dde6",
+    "scripts/method_slides_content.py": "4c163d239c97189d6a7ef6763706c82e0a82f2b4ac4ec10d1877f0dd2fc0a966",
     "scripts/publish_method_slides.py": "0b101ead61f755d68581abf2e791efbf6e65a9218443d4849c3d6bed3e035802",
     "scripts/verify_method_slides.py": "1f6527ae4e960eed6fc8918f0d96e538317ec1c8ade4e92b9fd762a7a164d665"
   },
-  "content_sha256": "eeb41af77467672c5ec57580ddf2c5666e8e0dcf207ea9b20e024031e932badd",
+  "content_sha256": "81ae5e686161b2c6568cd5fa1055c0d4f6fabb7a56f9dc4a145dd80286cd9e6c",
   "editable_evidence": {
     "tables": 4,
     "images": 7,
     "notes": 10
   },
-  "snapshot_sha256": "2019c32d2b23f591a62eedc7d97aa47940af9c194d4da32dcee3cddeeb337356",
+  "snapshot_sha256": "71ac93c90a341c4ec76f9f8fc6da7e75fd2ea88c522a139495205ab328850cbf",
   "visual_check": {
     "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
     "reviewed_slides": [
@@ -78,13 +80,13 @@
       "1": "055e65d950a9bac26e7b65122e2f6bc555573df1925feb2d6fc80d2a7717dd40",
       "2": "0483fa76687c7a492c871624941187814e6bb3f0f8c08592eb86c62eb60ec049",
       "3": "15ff0b376955058d34c2b724320565d43c2e0dc02a7e3badcbb13eac8ed11f7d",
-      "4": "12795572a3438969d5619fe51644bd1d6a8112586d6ceaf63edc790b2bcbb82b",
+      "4": "0370d9646fd6a886ff4140ebf62941500e3215032dbcf099e176d168d8d35d25",
       "5": "d363be18036a48e714c5db6b455b693190bdee50b9f7633aa751e120c95e0418",
       "6": "61d2cf11d93ae32f4e5f4a2f714f6eff5032585a9a4e368a53a23547633206f5",
       "7": "77f8dfb41596cdf882c26adceeb9a78ca9326700e7b3344c66be1629437098c4",
       "8": "243870a049997a10ac3ff554b359572209f7a6860fbda4a6637b74606727be5a",
       "9": "0748e22dfdc6553429532150f9fa01135449c456245c787d979842076ed69474",
-      "10": "e08a2eead58fef88aecb39432ad8942dfba5ca9c7c79868a50a096536cf7902d"
+      "10": "030130647dd36e495426742522c62b75910105a6673c5dd60fc2517c66209047"
     }
   },
   "scope": "Presentation fidelity and source alignment, not independent scientific validation"

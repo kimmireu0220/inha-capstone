@@ -64,6 +64,7 @@ def check():
                'paper/abstract.en.txt', 'artifacts/README.md', 'RESEARCH_DESIGN.md',
                'local-studio/README.md', 'scripts/GOOGLE_SLIDES_API.md',
                'artifacts/실험_프롬프트와_상세수치.md']]
+    current.extend((ROOT / 'experiments/extended-state-validation-v1').glob('*.md'))
     for folder in ['state-tracking-v1', 'state-tracking-v2', 'state-format-control-v1']:
         current.extend((ROOT / 'experiments' / folder).glob('*.md'))
         assert not (ROOT / 'experiments' / folder / 'human-ratings.csv').exists()
@@ -152,6 +153,18 @@ def check():
             assert digest(folder / name) == expected, name
         for name, expected in json.loads((folder / 'frozen.json').read_text())['sha256'].items():
             assert digest(ROOT / name) == expected, name
+    extended = load('experiments/extended-state-validation-v1/summary.json')
+    verified = load('experiments/extended-state-validation-v1/verification.json')
+    assert extended['complete'] and verified['passed']
+    assert extended['requests'] == verified['requests'] == 96
+    assert extended['completed_responses'] == verified['completed_responses'] == 384
+    assert extended['production_pipeline_replays'] == 192
+    assert extended['replay_additional_model_calls'] == 0
+    assert digest(ROOT / 'experiments/extended-state-validation-v1/summary.json') == verified['summary_sha256']
+    for group in ['source_sha256', 'frozen_inputs_verified']:
+        for name, expected in verified[group].items():
+            assert digest(ROOT / name) == expected, name
+
     implementation = load('paper/implementation-verification.json')
     assert implementation['passed'] and implementation['replayed_requests'] == 24
     assert implementation['actual_model_calls'] == 0
@@ -224,7 +237,7 @@ def check():
 
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
-          f'AI evaluation setup and {len(verified_studies) + 7} verified text studies; '
+          f'AI evaluation setup and {len(verified_studies) + 8} verified text studies; '
           f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 
 

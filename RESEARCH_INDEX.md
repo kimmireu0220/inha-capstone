@@ -9,6 +9,9 @@
 
 ## 최신 방법과 검증
 
+[96개 새 요청의 추가 검증](experiments/extended-state-validation-v1/RESULTS.md). 추가 검증은 코드와 모델 설정을 유지한 새 합성 영어 대화 12개, 요청 96개이다. Qwen3의 첫 응답 단순 적용은 52/96, 한 번 추출과 지시 검사는 96/96이었다. Llama의 첫 응답 단순 적용은 27/96, 한 번 추출과 지시 검사는 93/96이었다. 모델별 점수를 따로 집계하고 대화 단위 정확도 차이의 95% 구간과 대응 검정을 계산했다. 원문 응답 384개와 모든 실패 사례를 보존했으며, 첫 응답 192개를 실제 실행 코드에 재생한 상태도 실험 결과와 일치했다.
+
+
 - [한 번 추출과 지시 검사의 새 요청 검증](experiments/single-extraction-validation-v1/RESULTS.md): 새 요청 12개를 Qwen3와 Llama에 각각 적용. 단순 최초 응답은 두 모델 모두 3/12, 한 번 추출과 지시 검사는 모두 12/12. 두 번 호출한 검사 결합은 각각 12/12와 4/12. 실제 비교 실험은 총 48회 호출했다.
 - [실행 대상 검사의 새 요청 검증](experiments/instruction-eligibility-validation-v1/RESULTS.md): 새 요청 16개, 총 64회 호출. Qwen3 9/16에서 16/16, Llama는 초기 재검토 오류로 0/16. 같은 요청을 두 모델에 각각 적용했다.
 - [복원 표현 개선의 두 모델 검증](experiments/operation-scope-validation-v1/RESULTS.md): 새 요청 32개, 총 128회 호출. Qwen3 14/32에서 28/32, Llama 7/32에서 17/32.

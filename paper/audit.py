@@ -11,6 +11,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_FILES = (
+    'experiments/extended-state-validation-v1/summary.json',
+    'experiments/extended-state-validation-v1/verification.json',
+    'experiments/extended-state-validation-v1/frozen.json',
     'paper/initial-portrait-verification.json',
     'experiments/prompt-state-image-v1/summary.json',
     'experiments/prompt-state-image-v1/verification.json',
@@ -135,7 +138,7 @@ def audit(folder):
     assert not re.search(r'\bturns?\b', abstract, re.I)
     assert not re.search(r'\b[a-f0-9]{40}\b', manuscript)
     blocks = re.findall(r'(?m)^\|[^\n]+\|(?:\n\|[^\n]+\|)+', manuscript)
-    assert len(blocks) == 9
+    assert len(blocks) == 10
     assert len(re.findall(r'^!\[', manuscript, re.M)) == 2
     for phrase in ['집계 후 반영', 'being evaluated']:
         assert phrase not in manuscript + abstract
@@ -156,17 +159,40 @@ def audit(folder):
 
     final = {m: source(f'experiments/single-extraction-validation-v1/results-{m}.json')['methods']
              for m in ['qwen3','llama32']}
-    for key, label in [('baseline_restore','기준 방법'), ('json_first_only','첫 응답만 적용'),
-                       ('json_review_then_first','재검토 응답 우선'),
-                       ('eligible_normalization','추출·재검토+검사'),
-                       ('single_extraction_checked','한 번 추출+검사')]:
-        row([label, final['qwen3'][key]['required_model_calls_per_request']] +
-            [f"{final[m][key]['exact_turns']}/12" for m in ['qwen3','llama32']])
     for model in final:
         selected = final[model]['single_extraction_checked']
         assert selected['correct_slots'] == 72 and selected['exact_final_dialogues'] == 3
-        expect('12/12', abstract)
-    expect('72/72'); expect('3/3')
+    expect('3/12'); expect('12/12')
+
+    extended = source('experiments/extended-state-validation-v1/summary.json')
+    assert extended['complete'] and extended['requests'] == 96
+    assert extended['dialogues'] == 12 and extended['completed_responses'] == 384
+    assert extended['production_pipeline_replays'] == 192
+    metrics = extended['metrics']
+    for key, label in [('json_first_only', '첫 응답만 적용'),
+                       ('json_review_then_first', '재검토 응답 우선'),
+                       ('eligible_normalization', '추출·재검토+검사'),
+                       ('single_extraction_checked', '한 번 추출+검사')]:
+        row([label, metrics['qwen3'][key]['required_model_calls_per_request']] +
+            [f"{metrics[m][key]['exact_turns']}/96" for m in ['qwen3', 'llama32']])
+    for category, label in [('setup', '초기 설정'), ('replacement', '두 항목 변경'),
+                            ('removal_keep', '삭제·유지'), ('restoration_keep', '복원·유지'),
+                            ('negation', '부정 지시'), ('quotation', '인용문'),
+                            ('conditional', '조건문'), ('direct_priority', '뒤 직접 지시')]:
+        row([label] + [f"{extended['by_category'][m][key][category]['correct']}/12"
+                       for m, key in [('qwen3', 'json_first_only'), ('qwen3', 'single_extraction_checked'),
+                                      ('llama32', 'json_first_only'), ('llama32', 'single_extraction_checked')]])
+    for model in metrics:
+        selected = metrics[model]['single_extraction_checked']
+        expect(f"{selected['correct_slots']}/576")
+        expect(f"{selected['exact_final_dialogues']}/12")
+        for key in ['json_first_only', 'single_extraction_checked']:
+            expect(f"{metrics[model][key]['exact_turns']}/96", abstract)
+        comparison = extended['paired_comparisons'][model]['json_first_only']
+        expect(f"{comparison['difference_percentage_points']:.2f}%p")
+        low, high = comparison['bootstrap_95_percentage_points']
+        expect(f"{low:.2f}–{high:.2f}%p")
+        expect(f"{comparison['holm_p_two_models']:.6f}")
 
     ablation = source('experiments/request-contract-v3/results.json')['methods']
     for key, label in [('baseline_restore','기준 방법'), ('keep_only','유지 규칙만'),

@@ -91,7 +91,7 @@ while i<len(lines):
     for side in ['left','right']:
      margin=OxmlElement('w:'+side);margin.set(qn('w:w'),'45');margin.set(qn('w:type'),'dxa');margins.append(margin)
     c._tc.get_or_add_tcPr().append(margins)
-    c.text=({'전체 상태 일치율':'전체 상태\n일치율','항목별 일치율':'항목별\n일치율',
+    c.text=({'전체 상태 일치율':'전체 상태\n일치율','Qwen3 단순':'Qwen3\n단순','Qwen3 검사':'Qwen3\n검사','Llama 단순':'Llama\n단순','Llama 검사':'Llama\n검사','항목별 일치율':'항목별\n일치율',
              '최종 상태 일치율':'최종 상태\n일치율','유지 지시 위반 수':'유지 지시\n위반 수',
              '항목별 충족률':'항목별\n충족률','판단 불가 항목 수':'판단 불가\n항목 수','판단 불가 기준/결합':'판단 불가\n기준/결합','유지·삭제 결합':'유지·삭제\n결합','요청당 호출 수':'요청당\n호출 수',
              '전체 항목 충족률':'전체 항목\n충족률','얼굴 유사도 평균':'얼굴 유사도\n평균','얼굴 코사인':'얼굴\n코사인'}.get(txt,txt) if j==0 else
@@ -115,6 +115,8 @@ while i<len(lines):
   if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT
   if line.startswith(('[','https://','http://')):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True;p.alignment=WD_ALIGN_PARAGRAPH.LEFT
  i+=1
+# Close the final body section so references balance across both columns.
+columns(1)
 for sec in d.sections:
  f=sec.footer.paragraphs[0];f.alignment=WD_ALIGN_PARAGRAPH.CENTER;f.paragraph_format.first_line_indent=Pt(0)
  if not f._p.find(qn('w:fldSimple')) is not None:

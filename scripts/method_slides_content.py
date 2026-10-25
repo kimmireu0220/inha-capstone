@@ -38,7 +38,9 @@ SOURCES = ['paper/manuscript.ko.md', 'paper/evidence.json',
            'paper/initial-portrait-verification.json',
            'experiments/prompt-state-image-v1/summary.json',
            'experiments/prompt-state-image-v1/verification.json',
-           'paper/figures/prompt-state-image-provenance.json']
+           'paper/figures/prompt-state-image-provenance.json',
+           'experiments/extended-state-validation-v1/summary.json',
+           'experiments/extended-state-validation-v1/verification.json']
 
 
 def load(path):
@@ -61,12 +63,21 @@ def spec():
         return result
     first, second = load(SOURCES[5])['by_mode'], load(SOURCES[6])['by_mode']
     compound = load(SOURCES[8])
-    final = load('experiments/single-extraction-validation-v1/summary.json')['metrics']
+    extended = load('experiments/extended-state-validation-v1/summary.json')
+    final = extended['metrics']
     final_rows = [['방법', '전체 상태 일치율', '요청당 호출 수', '최종 상태 일치율']]
     for model, name in [('qwen3', 'Qwen3'), ('llama32', 'Llama')]:
         for method, label in [('eligible_normalization', '추출·재검토+검사'), ('single_extraction_checked', '한 번 추출+검사')]:
             data = final[model][method]
-            final_rows.append([name+' '+label, f"{data['exact_turns']}/12", str(data['required_model_calls_per_request']), f"{data['exact_final_dialogues']}/3"])
+            final_rows.append([name+' '+label, f"{data['exact_turns']}/96", str(data['required_model_calls_per_request']), f"{data['exact_final_dialogues']}/12"])
+    simple = {m: final[m]['json_first_only']['exact_turns'] for m in final}
+    checked = {m: final[m]['single_extraction_checked']['exact_turns'] for m in final}
+    extended_notes = '코드와 모델 설정을 고정하고 새 합성 영어 대화 12개에 요청을 여덟 개씩 적용했습니다. 네 가지 표현 틀에 세 가지 속성 조합을 배정한 96개 요청이며, 두 모델에 같은 요청을 각각 입력했습니다. 최초 추출과 재검토 응답 총 384개를 모두 저장했습니다. '
+    for model, label in [('qwen3', 'Qwen3'), ('llama32', 'Llama')]:
+        comparison = extended['paired_comparisons'][model]['json_first_only']
+        lo, hi = comparison['bootstrap_95_percentage_points']
+        extended_notes += f"{label}는 첫 응답 단순 적용 {simple[model]}/96, 한 번 추출과 검사 {checked[model]}/96입니다. 정확도 차이는 {comparison['difference_percentage_points']:.2f}%p, 대화 단위 95% 구간은 {lo:.2f}–{hi:.2f}%p, Holm 보정 p값은 {comparison['holm_p_two_models']:.6f}입니다. "
+    extended_notes += 'Llama의 오류 세 개는 같은 표현 틀에서 인용문 뒤에 나온 재킷 원본 복원을 놓친 사례입니다. 모델이 반환한 녹색 변경은 거부했지만 복원을 적용하지 못해 직전 재킷 값이 남았습니다. 대화별·요청 유형별 결과와 모든 오류를 공개했습니다. 구간은 표현 틀을 공유하는 이 합성 자료 안에서의 변동입니다. 저장한 첫 응답 192개를 실제 실행 코드에도 재생하여 상태가 모두 일치함을 확인했습니다. '+REPO+'/blob/main/experiments/extended-state-validation-v1/RESULTS.md'
     mixed_review = compound['groups']['review']['mixed']['exact_turns']
     mixed_guarded = compound['groups']['guarded']['mixed']['exact_turns']
     images = [['AI 항목별 충족률', '기준 방법', '유지·삭제 결합']]
@@ -92,11 +103,11 @@ def spec():
              table=rows(s, [('baseline_restore','기준 방법'),('keep_only','유지 규칙만'),('remove_only','삭제 규칙만'),('keep_remove','유지·삭제 결합')]),
              foot='전체 상태는 요청 처리 후, 최종 상태는 대화 종료 후 평가\n유지 위반 수는 직전까지 맞았고 그대로 둘 항목을 잘못 바꾼 횟수',
              notes='이 표는 추출·재검토 응답을 사용하는 초기 유지·삭제 구성요소 비교입니다. 전체 상태 일치율은 모든 항목이 정답과 일치한 요청의 비율입니다. 최종 상태 일치율은 마지막 요청 처리 후 모든 항목이 일치한 대화의 비율입니다. 27/32는 요청 32개 중 27개에서 여섯 항목 모두 맞았다는 뜻입니다. 세 번째 대화의 세 번째 요청에서는 삭제 규칙이 식물 삭제 누락을 막았습니다. 네 번째 요청에서는 유지 규칙이 배경을 잘못 바꾸는 것을 막았습니다. 두 규칙을 결합해야 두 요청 모두 정답과 일치했습니다. 일곱 번째 대화는 모든 방법에서 요청 네 개 중 하나만 맞았습니다. 맞은 항목 수는 표의 방법 순서대로 184, 185, 186, 187개이며 전체 항목 수는 192개입니다. 연구를 위해 만든 영어 대화로 검사했습니다. '+REPO+'/blob/main/experiments/request-contract-v3/RESULTS.md'),
-        dict(title='두 모델에서 한 번 추출하는 방법의 결과',
-             intro='새 합성 대화 3개, 요청 12개를 두 모델에 각각 적용',
+        dict(title='대화를 늘린 96개 요청의 추가 검증',
+             intro='새 합성 대화 12개 × 요청 8개 · 두 모델에 같은 요청 적용',
              table=final_rows,
-             foot='같은 최초 응답을 단순 JSON으로 적용하면 두 모델 모두 3/12\n호출 수는 방법 실행에 필요한 모델 호출 횟수',
-             notes='후처리와 자료를 고정한 뒤 새 대화 세 개, 서로 다른 요청 열두 개로 검증했습니다. 표의 두 번 호출 조건은 추출·재검토 응답에 같은 지시 검사를 적용했고, 한 번 조건은 첫 응답만 사용했습니다. Qwen3는 각각 12/12, Llama는 각각 4/12와 12/12였습니다. 단순 JSON 최초 응답은 두 모델 모두 3/12였으므로 첫 응답 선택과 지시 검사 모두의 효과를 비교했습니다. 한 번 추출 조건은 두 모델 모두 항목별 72/72, 최종 상태 3/3, 추가 오류 0개였습니다. 전체 비교를 위한 실제 모델 호출은 모델별 24회, 총 48회입니다. 실험에서 보관한 재검토 응답은 한 번 추출 조건의 점수 계산에 사용하지 않았습니다. '+REPO+'/blob/main/experiments/single-extraction-validation-v1/RESULTS.md'),
+             foot=f"첫 응답 단순 적용: Qwen3 {simple['qwen3']}/96 · Llama {simple['llama32']}/96\n같은 코드·모델 설정 유지 · 요청당 필요한 모델 호출 수",
+             notes=extended_notes),
         dict(title='실제 인물 R01: 식물 삭제와 배경 유지', person='R01',
              foot='원본: Monstera Production / Pexels. 의상·장신구·배경은 AI 편집 결과.',
              notes='두 방법의 편집 입력이 달랐던 두 쌍입니다. 세 번째 요청에서는 식물을 삭제하고 재킷은 유지하도록 했습니다. 네 번째 요청에서는 상의와 목걸이를 원본으로 돌리되 재킷과 연한 파란 배경은 유지하도록 했습니다. 각 이미지의 전체 영역을 보여 줍니다. Pexels 공개 사진을 사용했고 의상·장신구·배경은 AI로 편집했습니다. 원본 https://www.pexels.com/photo/confident-black-man-in-studio-6311573/\n'+REPO+'/blob/main/paper/figures/figure-provenance.json'),
@@ -121,9 +132,9 @@ def spec():
              foot='토큰: Qwen3 기준·보존 문구 포함 / 코사인↑·LPIPS↓ / 목표 평가: Qwen2.5-VL-7B',
              notes="전체 요청 이력·검사 전 현재 조건·지시 검사 후 현재 조건을 같은 원본 사진에서 생성했습니다. Qwen3 최초 응답의 세 대화를 실제 인물 두 명에게 적용한 18조건이며 새 언어 검증과 구분합니다. 프롬프트는 공통 보존 문구를 포함하여 고정 Qwen3 토크나이저로 측정했습니다. 첫 요청에서는 상태 표현이 더 길었고 마지막 요청에서 평균 39.87% 줄었습니다. 3B 결과는 {'full_history': (29, 6), 'unchecked_state': (18, 18), 'checked_state': (30, 6)}입니다. 각 쌍은 성공 항목 수와 판단 불가 수입니다. 3B 형식 오류와 잘못된 설명을 관찰한 뒤 7B로 전체 18장을 사후 대조했습니다. 7B의 판단 불가 수는 {'full_history': 0, 'unchecked_state': 2, 'checked_state': 0}입니다. 원문 점수는 교체하지 않았습니다. 얼굴 랜드마크를 기준으로 정렬한 112×112 얼굴에서 MAE·SSIM·LPIPS를 계산했습니다. 전체 이력과 비교하면 지시 검사 후 얼굴 코사인은 높았고 나머지 세 지표는 불리했습니다. 프롬프트 길이와 얼굴 품질의 일률적인 개선은 구분합니다. https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/prompt-state-image-v1/RESULTS.md"),
         dict(title='연구 결과와 적용 범위',
-             body='원본 사진에 현재 편집 조건을 적용\n새 요청 12개: 두 모델 모두 3/12에서 12/12\n상태 갱신에 필요한 모델 호출은 요청당 1회\n전체 이력을 현재 조건으로 정리해 입력 길이를 줄임\n얼굴 지표의 변화 방향은 측정 항목에 따라 다름',
+             body=f"새 요청 96개에서 지시 검사 전후 비교\nQwen3 {simple['qwen3']}/96 → {checked['qwen3']}/96 · Llama {simple['llama32']}/96 → {checked['llama32']}/96\n상태 갱신에 필요한 모델 호출은 요청당 1회\n전체 이력을 현재 조건으로 정리해 입력 길이를 줄임\n얼굴 지표의 변화 방향은 측정 항목에 따라 다름",
              foot='명시한 영어 표현과 여섯 편집 항목의 결과',
-             notes='복원 표현 검증은 새 대화 8개, 요청 32개입니다. Qwen3 기준 14/32와 개선 28/32, Llama 기준 7/32와 개선 17/32였습니다. 실행 대상 검사 검증은 새 대화 4개, 요청 16개입니다. Qwen3 기준 9/16, 복원 표현 개선 11/16, 실행 검사 16/16이었고 Llama는 세 조건 모두 0/16이었습니다. 개발 자료 32개에서 한 번 추출과 지시 검사는 Qwen3 32/32, Llama 27/32였고 두 번 호출한 검사 결합은 각각 32/32와 19/32였습니다. 이후 고정한 새 요청 12개에서는 두 모델 모두 한 번 추출과 지시 검사가 12/12였습니다. 두 번 호출한 검사 결합은 Qwen3 12/12, Llama 4/12였습니다. 제안 방법 실행에는 호출 한 번이 필요합니다. 실험에서는 비교를 위해 최초와 재검토 응답을 모두 기록했습니다. 세 검증의 실제 호출은 두 모델을 합쳐 각각 128회, 64회, 48회이며 분모는 각각 모델별 32, 16, 12개입니다.\nhttps://github.com/kimmireu0220/inha-capstone/blob/main/experiments/operation-scope-validation-v1/RESULTS.md\nhttps://github.com/kimmireu0220/inha-capstone/blob/main/experiments/instruction-eligibility-validation-v1/RESULTS.md\nhttps://github.com/kimmireu0220/inha-capstone/blob/main/experiments/single-extraction-validation-v1/RESULTS.md 코드 검사 1323개는 직접 구성한 상태 검사입니다. 초기 6인물 결과에서 원본 기반 구성을 선택한 뒤 현재 조건 정리와 후속 이미지 18장을 비교했습니다. 첫 응답을 사용해 재검토의 오류를 피하는 방식의 상태 정확도와 프롬프트 길이를 검증했습니다.')
+             notes=extended_notes+' 앞선 복원 표현 검증은 새 대화 8개, 요청 32개입니다. Qwen3 기준 14/32와 개선 28/32, Llama 기준 7/32와 개선 17/32였습니다. 실행 대상 검사 검증은 새 대화 4개, 요청 16개입니다. Qwen3 기준 9/16, 복원 표현 개선 11/16, 실행 검사 16/16이었고 Llama는 세 조건 모두 0/16이었습니다. 개발 자료 32개에서 한 번 추출과 지시 검사는 Qwen3 32/32, Llama 27/32였고 두 번 호출한 검사 결합은 각각 32/32와 19/32였습니다. 이후 고정한 새 요청 12개에서는 두 모델 모두 한 번 추출과 지시 검사가 12/12였습니다. 두 번 호출한 검사 결합은 Qwen3 12/12, Llama 4/12였습니다. 제안 방법 실행에는 호출 한 번이 필요합니다. 실험에서는 비교를 위해 최초와 재검토 응답을 모두 기록했습니다. 세 검증의 실제 호출은 두 모델을 합쳐 각각 128회, 64회, 48회이며 분모는 각각 모델별 32, 16, 12개입니다.\nhttps://github.com/kimmireu0220/inha-capstone/blob/main/experiments/operation-scope-validation-v1/RESULTS.md\nhttps://github.com/kimmireu0220/inha-capstone/blob/main/experiments/instruction-eligibility-validation-v1/RESULTS.md\nhttps://github.com/kimmireu0220/inha-capstone/blob/main/experiments/single-extraction-validation-v1/RESULTS.md 코드 검사 1323개는 직접 구성한 상태 검사입니다. 초기 6인물 결과에서 원본 기반 구성을 선택한 뒤 현재 조건 정리와 후속 이미지 18장을 비교했습니다. 첫 응답을 사용해 재검토의 오류를 피하는 방식의 상태 정확도와 프롬프트 길이를 검증했습니다.')
     ]
 
 
