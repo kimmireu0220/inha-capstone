@@ -2,8 +2,8 @@
   "date": "2026-10-25",
   "passed": true,
   "scope": "Numeric transcription and provenance QA, not independent scientific validation",
-  "manuscript_sha256": "87efcd97885d135641a2c7142abb462585c24683e1b42590c73f37b33c1f2095",
-  "english_abstract_sha256": "e7807f02dd2b2924351c559d50389840f39effbb80e0536f2a9e18414aeec92a",
+  "manuscript_sha256": "e53f1cd3134f85e5ec055edc141842f185406d74f99cdc6c3dc508abb3a9e4fd",
+  "english_abstract_sha256": "0fbd600345682a99a36ea8bd81cfa050166b8b843dc946f0ee8a15353907bec6",
   "checked_values": [
     "963",
     "10/16",
@@ -24,6 +24,29 @@
     "| 기존 어휘의 새 조합 | 2/8 | 2/8 | 8/8 | 2/8 |",
     "| 규칙에 없는 표현 | 0/8 | 0/8 | 0/8 | 0/8 |",
     "| 앞 지시의 수정 | 6/8 | 8/8 | 8/8 | 0/8 |",
+    "| 기준 방법 | 14/32 | 7/32 |",
+    "| 기존 유지·삭제 | 14/32 | 7/32 |",
+    "| 기존 정규화 | 17/32 | 9/32 |",
+    "| 항목별 적용 | 14/32 | 6/32 |",
+    "| 기존 정규화+항목별 적용 | 17/32 | 8/32 |",
+    "| 개선 정규화 | 28/32 | 17/32 |",
+    "| JSON 최초 응답 | 16/32 | 7/32 |",
+    "| JSON 재검토 우선 | 17/32 | 4/32 |",
+    "| 기준 방법 | 9/16 | 0/16 |",
+    "| 복원 표현 개선 | 11/16 | 0/16 |",
+    "| 실행 대상 검사 결합 | 16/16 | 0/16 |",
+    "| 기준 방법 | 2 | 3/12 | 1/12 |",
+    "| JSON 최초 응답 | 1 | 3/12 | 3/12 |",
+    "| JSON 재검토 우선 | 2 | 3/12 | 1/12 |",
+    "| 추출·재검토+지시 검사 | 2 | 12/12 | 4/12 |",
+    "| 한 번 추출+지시 검사 | 1 | 12/12 | 12/12 |",
+    "72/72",
+    "3/3",
+    "12/12",
+    "72/72",
+    "3/3",
+    "12/12",
+    "1323",
     "18/36",
     "26/36",
     "36/36",
@@ -53,14 +76,10 @@
     "| 유지 규칙만 | 27/32 | 185/192 | 6/8 | 0 |",
     "| 삭제 규칙만 | 28/32 | 186/192 | 6/8 | 1 |",
     "| 유지·삭제 결합 | 29/32 | 187/192 | 7/8 | 0 |",
-    "27/32",
-    "29/32",
     "| 기준 방법 | 28/32 | 187/192 | 7/8 | 3 |",
     "| 항목별 적용 | 28/32 | 187/192 | 7/8 | 3 |",
     "| 유지·삭제 | 29/32 | 189/192 | 8/8 | 1 |",
     "| 항목별 적용+유지·삭제 | 29/32 | 189/192 | 8/8 | 1 |",
-    "28/32",
-    "29/32",
     "354/384",
     "0.914851",
     "355/384",
@@ -114,6 +133,86 @@
       "name": "experiments/instruction-transfer-v1/verification.json",
       "path": "experiments/instruction-transfer-v1/verification.json",
       "sha256": "a65a2435d105d7a310c43ccd6c973e83cbe06fb044fa455c7be1b51e5e32fda9"
+    },
+    {
+      "name": "experiments/operation-scope-validation-v1/verification.json",
+      "path": "experiments/operation-scope-validation-v1/verification.json",
+      "sha256": "5eb77e5a954efaa66241b21318a2a163200303ae3283809e09f4112d71b093fb"
+    },
+    {
+      "name": "experiments/operation-scope-validation-v1/summary.json",
+      "path": "experiments/operation-scope-validation-v1/summary.json",
+      "sha256": "d0a11c440538ce0936253b05f12d923497d8e69f781790c4d8b2d1224e25e9cb"
+    },
+    {
+      "name": "experiments/operation-scope-validation-v1/results-qwen3.json",
+      "path": "experiments/operation-scope-validation-v1/results-qwen3.json",
+      "sha256": "9f0273babc85983bf4c7c610fd2271235679cab1e723e4042e847f827ae9199b"
+    },
+    {
+      "name": "experiments/operation-scope-validation-v1/results-llama32.json",
+      "path": "experiments/operation-scope-validation-v1/results-llama32.json",
+      "sha256": "805dc63359ba09f2567a2fba5148ccc4cb416e80b6a3a679fad88d57d1757e83"
+    },
+    {
+      "name": "experiments/instruction-eligibility-validation-v1/verification.json",
+      "path": "experiments/instruction-eligibility-validation-v1/verification.json",
+      "sha256": "0927671f51ee4287c09638ae53a0dc26597d3d1e4f27b66a03658d41b318d280"
+    },
+    {
+      "name": "experiments/instruction-eligibility-validation-v1/summary.json",
+      "path": "experiments/instruction-eligibility-validation-v1/summary.json",
+      "sha256": "7fdcace9ea9538825b5f451457f0341b4f9f98f015b678c9189897249acea632"
+    },
+    {
+      "name": "experiments/instruction-eligibility-validation-v1/results-qwen3.json",
+      "path": "experiments/instruction-eligibility-validation-v1/results-qwen3.json",
+      "sha256": "ad653b4f714632260e7b3468d48c81909a452ddce8bc54f2f6a8efb4aa234343"
+    },
+    {
+      "name": "experiments/instruction-eligibility-validation-v1/results-llama32.json",
+      "path": "experiments/instruction-eligibility-validation-v1/results-llama32.json",
+      "sha256": "0bb3a2a896ee5d60f1c224cd5b89c2e3445ee5ef943be1482a2ef9a9d346f9fd"
+    },
+    {
+      "name": "experiments/single-extraction-validation-v1/verification.json",
+      "path": "experiments/single-extraction-validation-v1/verification.json",
+      "sha256": "1f67280971626d6b84937dbc26e3c74ee9e12d3d8205eb708e597a0608ebfdc9"
+    },
+    {
+      "name": "experiments/single-extraction-validation-v1/summary.json",
+      "path": "experiments/single-extraction-validation-v1/summary.json",
+      "sha256": "0f7e0f7082d52403312bb1bad763db998c0e84f5811e8fcb32aa05ad3eb0ca50"
+    },
+    {
+      "name": "experiments/single-extraction-validation-v1/results-qwen3.json",
+      "path": "experiments/single-extraction-validation-v1/results-qwen3.json",
+      "sha256": "7db7c9dea1664029dd801641e178f0a88ebe5e3f582051b76edd2918ba1434ae"
+    },
+    {
+      "name": "experiments/single-extraction-validation-v1/results-llama32.json",
+      "path": "experiments/single-extraction-validation-v1/results-llama32.json",
+      "sha256": "464f7370ed0c8c65cabfbec175bd72d711f1d6d42c99fddc4a70dfc126ac3a64"
+    },
+    {
+      "name": "experiments/operation-scope-v2/verification.json",
+      "path": "experiments/operation-scope-v2/verification.json",
+      "sha256": "c89d3f2e48c02fbcc1f669ab422f41813732c18e1c4ed4cd2ee41ecfddde8b0a"
+    },
+    {
+      "name": "experiments/instruction-eligibility-v1/verification.json",
+      "path": "experiments/instruction-eligibility-v1/verification.json",
+      "sha256": "cc3b5af2c139ee820eccf92228217cddd5288f3d74f1b7feb391d186ae735c39"
+    },
+    {
+      "name": "experiments/instruction-eligibility-v1/invariant-audit.json",
+      "path": "experiments/instruction-eligibility-v1/invariant-audit.json",
+      "sha256": "1dff12b83f74dd7fbc265b3a17a024dbde3a6b1ab965064ac8d373561f40de79"
+    },
+    {
+      "name": "paper/implementation-verification.json",
+      "path": "paper/implementation-verification.json",
+      "sha256": "0892eeb0da5b944bf67281a43d6fe0b95fa165129799dab8a8cc35664909f3fc"
     },
     {
       "name": "experiments/clause-factorial-v1/results.json",

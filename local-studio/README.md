@@ -1,8 +1,18 @@
 # 원본 스튜디오 — 로컬 편집기
 
-M1·16GB에서 검증한 공개 모델을 연결한 로컬 전용 시제품. 인터넷 공개 서비스는 아니다.
+M1·16GB에서 검증한 공개 모델을 연결한 로컬 전용 시제품이다.
 
-이 편집기와 아래 6항목 CLI는 앞선 구현 기록이다. 논문의 최신 방법은 별도의 [지시 구절 정규화 모듈](../experiments/clause-normalization-v1/method.py)이며, [유지·삭제 규칙](../experiments/request-contract-v3/contract.py)을 재사용한다. 연구용 실행·평가와 웹 편집기의 구현 범위를 구분한다. 현재 연구 범위와 결과는 [논문](../paper/README.md)을 기준으로 한다.
+논문의 최신 실행 코드는 [instruction_pipeline.py](instruction_pipeline.py)다. 변경 사항을 한 번 추출하고 복원·유지·삭제 지시와 현재 실행할 지시를 검사한 뒤, 여섯 항목의 상태와 이미지 편집 프롬프트를 반환한다. [새 요청 검증](../experiments/single-extraction-validation-v1/RESULTS.md)과 같은 후처리를 사용한다. 아래 웹 편집기와 기존 CLI는 앞선 구현 기록이다.
+
+최신 CLI는 저장소 루트에서 실행한다. 두 번째 명령은 첫 명령의 출력에 저장한 상태를 이어서 사용한다.
+
+```sh
+mkdir -p .codex-build
+.venv-local-prompt/bin/python local-studio/instruction_pipeline.py --request "Wear a navy blazer. Use a garden background with a plant." --output .codex-build/edit-1.json
+.venv-local-prompt/bin/python local-studio/instruction_pipeline.py --state .codex-build/edit-1.json --request "Remove the plant. Keep the garden background unchanged." --output .codex-build/edit-2.json
+```
+
+기본 모델은 고정된 Qwen3-4B-4bit이며 `--model llama32`로 같은 검증에 사용한 Llama를 선택한다. 해당 배포 버전이 Hugging Face 로컬 캐시에 있어야 한다. 결과 JSON에는 상태, 편집 프롬프트, 모델 응답과 적용 근거를 저장한다. 지원 값은 [여섯 항목의 스키마](request_state.py), 지원 문형과 검증 범위는 [논문](../paper/README.md)에 정리했다.
 
 시작: 저장소 루트에서 `./local-studio/start.sh`, 이후 http://localhost:8770 접속. 이미지 모델 `.venv-local-image`, 언어 모델 `.venv-local-prompt`, 웹 서버 `.venv-metrics` 환경을 사용한다. 의존성 잠금 기록은 experiments/local-open-model-v1에 있다. 모델은 최초 실행 때 Hugging Face 캐시가 필요하다.
 
@@ -36,6 +46,6 @@ M1·16GB에서 검증한 공개 모델을 연결한 로컬 전용 시제품. 인
 
 `request_state.py`는 새 요청 하나에서 재킷·상의·핀·목걸이·배경·소품의 변경을 추출하고, 코드가 이전 상태와 삭제값을 유지한다. `track_requests.py`에 `{"requests":["요청 1", "요청 2"]}`를 표준 입력으로 주면 최종 상태·프롬프트·갱신 기록을 반환한다. 실행 환경은 `.venv-local-prompt/bin/python`이다.
 
-이 기능은 위의 3항목 웹 화면과 분리된 연구용 CLI다. 지원 값은 코드의 제한된 어휘를 따르며, 범용 요구 해석을 보장하지 않는다. 개발용 대화 4종은 모든 요청에서 정답 상태와 일치했다. 별도로 고정한 새 대화 4종에서는 요청별 186/192항목, 최종 22/24항목이 맞았고 마지막 대화의 배경·소품 교체는 틀렸다. [새 이미지 비교 실험](../experiments/state-tracking-v2/README.md)에서 오류를 포함한 상태를 그대로 사용한다.
+이 기능은 위의 3항목 웹 화면과 분리된 연구용 CLI다. 지원 값은 코드에 정의한 어휘를 따른다. 개발용 대화 4종은 모든 요청에서 정답 상태와 일치했다. 별도로 고정한 새 대화 4종에서는 요청별 186/192항목, 최종 22/24항목이 맞았고 마지막 대화의 배경·소품 교체는 틀렸다. [새 이미지 비교 실험](../experiments/state-tracking-v2/README.md)에서 오류를 포함한 상태를 그대로 사용한다.
 
 검사: `.venv-local-prompt/bin/python local-studio/checks/test_request_state.py`는 모델 없이 7개 상태 갱신 검사를 실행한다. `check_request_extractor.py`는 실제 모델을 사용하는 개발용 점검이다.

@@ -106,7 +106,7 @@ while i<len(lines):
   continue
  if line.startswith('!['):
   if not wide_figures:columns(1);wide_figures=True
-  m=re.match(r'!\[(.*?)\]\((.*?)\)',line);shape=d.add_picture(str(SOURCE/m[2]),width=Cm(16.8));shape._inline.docPr.set('descr',m[1]);d.paragraphs[-1].paragraph_format.keep_with_next=True;d.paragraphs[-1].paragraph_format.line_spacing=1;d.add_paragraph(m[1],'Caption')
+  m=re.match(r'!\[(.*?)\]\((.*?)\)',line);shape=d.add_picture(str(SOURCE/m[2]),width=Cm(metadata.get('figure_width_cm',16.8)));shape._inline.docPr.set('descr',m[1]);figure_paragraph=d.paragraphs[-1];figure_paragraph.paragraph_format.first_line_indent=Pt(0);figure_paragraph.alignment=WD_ALIGN_PARAGRAPH.CENTER;figure_paragraph.paragraph_format.keep_with_next=True;figure_paragraph.paragraph_format.line_spacing=1;caption=d.add_paragraph(m[1],'Caption');caption.paragraph_format.first_line_indent=Pt(0)
  elif line.startswith('### '):d.add_paragraph(re.sub(r'^\d+\.(\d+) ',r'\1. ',line[4:]),'Heading 2')
  elif line.startswith('## '):
   text=line[3:];text=re.sub(r'^(\d+)\.',lambda m:roman[int(m[1])-1]+'.',text);d.add_paragraph(text,'Heading 1')

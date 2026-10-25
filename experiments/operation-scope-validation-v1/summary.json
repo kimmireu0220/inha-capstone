@@ -1,0 +1,869 @@
+{
+  "complete": true,
+  "actual_model_calls": 128,
+  "requests_per_model": 32,
+  "dialogues": 8,
+  "distinct_request_texts": 32,
+  "models": {
+    "qwen3": {
+      "model": "mlx-community/Qwen3-4B-4bit",
+      "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25"
+    },
+    "llama32": {
+      "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+      "revision": "7f0dc925e0d0afb0322d96f9255cfddf2ba5636e",
+      "card": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit"
+    }
+  },
+  "groups": {
+    "qwen3": {
+      "baseline_restore": {
+        "변경과 복원 혼합": {
+          "exact": 5,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "keep_remove": {
+        "변경과 복원 혼합": {
+          "exact": 5,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "normalized_atomic": {
+        "변경과 복원 혼합": {
+          "exact": 8,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "isolated_keep_remove": {
+        "변경과 복원 혼합": {
+          "exact": 5,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "normalized_isolated": {
+        "변경과 복원 혼합": {
+          "exact": 8,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "expanded_normalization": {
+        "변경과 복원 혼합": {
+          "exact": 8,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 8,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 8,
+          "requests": 8
+        }
+      },
+      "json_first_only": {
+        "변경과 복원 혼합": {
+          "exact": 8,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 2,
+          "requests": 8
+        }
+      },
+      "json_review_then_first": {
+        "변경과 복원 혼합": {
+          "exact": 8,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 4,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      }
+    },
+    "llama32": {
+      "baseline_restore": {
+        "변경과 복원 혼합": {
+          "exact": 2,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      },
+      "keep_remove": {
+        "변경과 복원 혼합": {
+          "exact": 2,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      },
+      "normalized_atomic": {
+        "변경과 복원 혼합": {
+          "exact": 5,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 1,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      },
+      "isolated_keep_remove": {
+        "변경과 복원 혼합": {
+          "exact": 2,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 1,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      },
+      "normalized_isolated": {
+        "변경과 복원 혼합": {
+          "exact": 5,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 0,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      },
+      "expanded_normalization": {
+        "변경과 복원 혼합": {
+          "exact": 8,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 4,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "json_first_only": {
+        "변경과 복원 혼합": {
+          "exact": 2,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 2,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 2,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      },
+      "json_review_then_first": {
+        "변경과 복원 혼합": {
+          "exact": 2,
+          "requests": 8
+        },
+        "복원 표현": {
+          "exact": 0,
+          "requests": 8
+        },
+        "부정·조건·인용": {
+          "exact": 1,
+          "requests": 8
+        },
+        "앞 지시의 수정": {
+          "exact": 1,
+          "requests": 8
+        }
+      }
+    }
+  },
+  "failures": {
+    "qwen3": [
+      {
+        "dialogue": "G1",
+        "request_number": 3,
+        "request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+        "first": "{\"necklace\": \"original\", \"background\": \"keep\"}",
+        "second": "{\"necklace\": \"original\", \"background\": \"keep\"}",
+        "differences": {
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "G1",
+        "request_number": 4,
+        "request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+        "first": "{\"top\": \"navy_sweater\", \"pin\": \"none\"}",
+        "second": "{\"top\": \"navy_sweater\", \"pin\": \"none\"}",
+        "differences": {
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "none"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "G2",
+        "request_number": 3,
+        "request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+        "first": "{\"prop\": \"none\"}",
+        "second": "{\"prop\": \"none\"}",
+        "differences": {
+          "prop": {
+            "expected": "lamp",
+            "observed": "none"
+          }
+        }
+      },
+      {
+        "dialogue": "G2",
+        "request_number": 4,
+        "request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+        "first": "{\"necklace\": \"keep\", \"background\": \"garden\"}",
+        "second": "{\"necklace\": \"keep\", \"background\": \"garden\"}",
+        "differences": {
+          "prop": {
+            "expected": "lamp",
+            "observed": "none"
+          }
+        }
+      }
+    ],
+    "llama32": [
+      {
+        "dialogue": "R2",
+        "request_number": 1,
+        "request": "Wear a gray blazer and white crew-neck shirt, a gold square pin on the viewer-right lapel, and a gold round pendant necklace. Use a red-brick studio background with a floor lamp.",
+        "first": "{\"jacket\": \"gray\", \"top\": \"white_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+        "second": "{\"necklace\": \"none\"}",
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "gold_square_right",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "R2",
+        "request_number": 2,
+        "request": "Put the pin and shirt back as in the original photo, preserving the gray blazer and red-brick studio background just as they are.",
+        "first": "{\"pin\": \"silver_circle_right\", \"top\": \"white_crewneck\", \"jacket\": \"gray\", \"background\": \"brick_studio\", \"prop\": \"none\"}",
+        "second": "{\"pin\": \"silver_circle_right\", \"necklace\": \"none\", \"prop\": \"none\"}",
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "R2",
+        "request_number": 3,
+        "request": "Take away the necklace entirely. Maintain the lamp unchanged.",
+        "first": "{\"necklace\": \"none\"}",
+        "second": "{\"necklace\": \"none\", \"prop\": \"lamp\"}",
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "R2",
+        "request_number": 4,
+        "request": "Use an office background. Retain the gray blazer.",
+        "first": "{\"background\": \"office\", \"jacket\": \"gray\"}",
+        "second": "{\"background\": \"office\", \"jacket\": \"gray\"}",
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "C1",
+        "request_number": 1,
+        "request": "Use a garden background with a bench. Wear a navy blazer, a white crew-neck shirt, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+        "first": "{\"jacket\": \"navy\", \"top\": \"white_crewneck\", \"pin\": \"blue_circle_left\", \"necklace\": \"silver_teardrop\"}",
+        "second": "{\"necklace\": \"none\"}",
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "C1",
+        "request_number": 2,
+        "request": "Get rid of the bench completely; actually, keep the bench unchanged. Put the shirt back to the source photo.",
+        "first": "{\"prop\": \"none\", \"background\": \"brick_studio\", \"top\": \"gray_sweater\"}",
+        "second": "{\"background\": \"brick_studio\", \"prop\": \"bench\", \"top\": \"gray_sweater\"}",
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "C1",
+        "request_number": 3,
+        "request": "Restore the original pin. Actually, take away the pin.",
+        "first": "{\"pin\": \"original\"}",
+        "second": "{\"pin\": \"none\"}",
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "C1",
+        "request_number": 4,
+        "request": "Reset the blazer to the source photo; actually, keep the blazer as before. Change the background to a library.",
+        "first": "{\"jacket\": \"green\", \"background\": \"library\"}",
+        "second": "{\"jacket\": \"green\", \"background\": \"library\"}",
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "library",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "C2",
+        "request_number": 4,
+        "request": "Return the blazer to the source image. Actually, maintain the blazer as before. Use a pale-blue studio background.",
+        "first": "{\"background\": \"blue_studio\", \"jacket\": \"green\"}",
+        "second": "{\"background\": \"blue_studio\", \"jacket\": \"green\"}",
+        "differences": {
+          "background": {
+            "expected": "blue_studio",
+            "observed": "library"
+          }
+        }
+      },
+      {
+        "dialogue": "G1",
+        "request_number": 3,
+        "request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+        "first": "{\"necklace\": \"original\", \"prop\": \"none\"}",
+        "second": "{\"necklace\": \"original\"}",
+        "differences": {
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "G1",
+        "request_number": 4,
+        "request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+        "first": "{\"top\": \"navy_sweater\"}",
+        "second": "{\"top\": \"navy_sweater\"}",
+        "differences": {
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "G2",
+        "request_number": 1,
+        "request": "Use a red-brick studio background with a floor lamp. Wear a green blazer and white crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+        "first": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"gold_round\"}",
+        "second": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"necklace\": \"gold_round\"}",
+        "differences": {
+          "jacket": {
+            "expected": "green",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "G2",
+        "request_number": 2,
+        "request": "Never revert the shirt to the source photo. Preserve the pin.",
+        "first": "{\"necklace\": \"none\", \"pin\": \"silver_circle_right\"}",
+        "second": "{\"necklace\": \"none\", \"pin\": \"silver_circle_right\"}",
+        "differences": {
+          "jacket": {
+            "expected": "green",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "G2",
+        "request_number": 3,
+        "request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+        "first": "{\"prop\": \"none\"}",
+        "second": "{\"prop\": \"none\"}",
+        "differences": {
+          "jacket": {
+            "expected": "green",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "none"
+          }
+        }
+      },
+      {
+        "dialogue": "G2",
+        "request_number": 4,
+        "request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+        "first": "{\"necklace\": \"original\", \"background\": \"garden\"}",
+        "second": "{\"necklace\": \"original\", \"background\": \"garden\"}",
+        "differences": {
+          "jacket": {
+            "expected": "green",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "none"
+          }
+        }
+      }
+    ]
+  },
+  "metrics": {
+    "qwen3": {
+      "baseline_restore": {
+        "exact_turns": 14,
+        "turns": 32,
+        "correct_slots": 162,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 6,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 14,
+        "turns": 32,
+        "correct_slots": 165,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 5,
+        "contract_field_events": 3,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 17,
+        "turns": 32,
+        "correct_slots": 170,
+        "slots": 192,
+        "exact_final_dialogues": 2,
+        "newly_corrupted_unchanged_slots": 3,
+        "new_errors_vs_baseline": 0
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 14,
+        "turns": 32,
+        "correct_slots": 165,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 5,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_isolated": {
+        "exact_turns": 17,
+        "turns": 32,
+        "correct_slots": 170,
+        "slots": 192,
+        "exact_final_dialogues": 2,
+        "newly_corrupted_unchanged_slots": 3,
+        "new_errors_vs_baseline": 0
+      },
+      "expanded_normalization": {
+        "exact_turns": 28,
+        "turns": 32,
+        "correct_slots": 187,
+        "slots": 192,
+        "exact_final_dialogues": 6,
+        "new_errors_vs_baseline": 0
+      },
+      "json_first_only": {
+        "exact_turns": 16,
+        "turns": 32,
+        "correct_slots": 159,
+        "slots": 192,
+        "exact_final_dialogues": 2,
+        "dialogues": 8,
+        "new_errors_vs_baseline": 1
+      },
+      "json_review_then_first": {
+        "exact_turns": 17,
+        "turns": 32,
+        "correct_slots": 163,
+        "slots": 192,
+        "exact_final_dialogues": 2,
+        "dialogues": 8,
+        "new_errors_vs_baseline": 0
+      }
+    },
+    "llama32": {
+      "baseline_restore": {
+        "exact_turns": 7,
+        "turns": 32,
+        "correct_slots": 121,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 5,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 7,
+        "turns": 32,
+        "correct_slots": 121,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 5,
+        "contract_field_events": 3,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 9,
+        "turns": 32,
+        "correct_slots": 125,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 3,
+        "new_errors_vs_baseline": 1
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 6,
+        "turns": 32,
+        "correct_slots": 114,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 5,
+        "new_errors_vs_baseline": 1
+      },
+      "normalized_isolated": {
+        "exact_turns": 8,
+        "turns": 32,
+        "correct_slots": 118,
+        "slots": 192,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 3,
+        "new_errors_vs_baseline": 2
+      },
+      "expanded_normalization": {
+        "exact_turns": 17,
+        "turns": 32,
+        "correct_slots": 140,
+        "slots": 192,
+        "exact_final_dialogues": 3,
+        "new_errors_vs_baseline": 1
+      },
+      "json_first_only": {
+        "exact_turns": 7,
+        "turns": 32,
+        "correct_slots": 131,
+        "slots": 192,
+        "exact_final_dialogues": 0,
+        "dialogues": 8,
+        "new_errors_vs_baseline": 2
+      },
+      "json_review_then_first": {
+        "exact_turns": 4,
+        "turns": 32,
+        "correct_slots": 100,
+        "slots": 192,
+        "exact_final_dialogues": 0,
+        "dialogues": 8,
+        "new_errors_vs_baseline": 3
+      }
+    }
+  }
+}

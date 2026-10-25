@@ -1,0 +1,259 @@
+{
+  "histories": {
+    "R1": [
+      {
+        "request": "Wear a navy blazer over an ivory crew-neck shirt, with a red triangular pin on the viewer-left lapel and a silver teardrop necklace. Use a pale-blue studio background and a plant.",
+        "updates": {
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "silver_teardrop",
+          "background": "blue_studio",
+          "prop": "plant"
+        }
+      },
+      {
+        "request": "Reset the shirt and necklace to the source image appearance, maintaining the pale-blue studio background and navy blazer unchanged.",
+        "updates": {
+          "top": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Get rid of the plant completely. Keep the pin as before.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the blazer to green. Leave the pale-blue studio background alone.",
+        "updates": {
+          "jacket": "green"
+        }
+      }
+    ],
+    "R2": [
+      {
+        "request": "Wear a gray blazer and white crew-neck shirt, a gold square pin on the viewer-right lapel, and a gold round pendant necklace. Use a red-brick studio background with a floor lamp.",
+        "updates": {
+          "jacket": "gray",
+          "top": "white_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "gold_round",
+          "background": "brick_studio",
+          "prop": "lamp"
+        }
+      },
+      {
+        "request": "Put the pin and shirt back as in the original photo, preserving the gray blazer and red-brick studio background just as they are.",
+        "updates": {
+          "pin": "original",
+          "top": "original"
+        }
+      },
+      {
+        "request": "Take away the necklace entirely. Maintain the lamp unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "request": "Use an office background. Retain the gray blazer.",
+        "updates": {
+          "background": "office"
+        }
+      }
+    ],
+    "M1": [
+      {
+        "request": "Use a library background and a bench. Wear a beige blazer with a navy sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+        "updates": {
+          "jacket": "beige",
+          "top": "navy_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop",
+          "background": "library",
+          "prop": "bench"
+        }
+      },
+      {
+        "request": "Return the necklace to the source photo. Leave the beige blazer alone. Change the shirt to a white crew-neck shirt.",
+        "updates": {
+          "necklace": "original",
+          "top": "white_crewneck"
+        }
+      },
+      {
+        "request": "Delete the bench completely. Maintain the library background unchanged.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Reset the blue pin to the source image appearance, keeping the white shirt exactly as it is now.",
+        "updates": {
+          "pin": "original"
+        }
+      }
+    ],
+    "M2": [
+      {
+        "request": "Use an office background and a floor lamp. Wear a green blazer with a gray sweater, a gold square pin on the viewer-right lapel, and a gold round pendant necklace.",
+        "updates": {
+          "jacket": "green",
+          "top": "gray_sweater",
+          "pin": "gold_square_right",
+          "necklace": "gold_round",
+          "background": "office",
+          "prop": "lamp"
+        }
+      },
+      {
+        "request": "Revert the blazer and pin to how they looked in the original image, leaving the office background and lamp as before.",
+        "updates": {
+          "jacket": "original",
+          "pin": "original"
+        }
+      },
+      {
+        "request": "Exclude the necklace entirely. Keep the gray sweater just as it is.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "request": "Use a garden background. Leave the gray sweater alone.",
+        "updates": {
+          "background": "garden"
+        }
+      }
+    ],
+    "C1": [
+      {
+        "request": "Use a garden background with a bench. Wear a navy blazer, a white crew-neck shirt, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+        "updates": {
+          "jacket": "navy",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop",
+          "background": "garden",
+          "prop": "bench"
+        }
+      },
+      {
+        "request": "Get rid of the bench completely; actually, keep the bench unchanged. Put the shirt back to the source photo.",
+        "updates": {
+          "top": "original"
+        }
+      },
+      {
+        "request": "Restore the original pin. Actually, take away the pin.",
+        "updates": {
+          "pin": "none"
+        }
+      },
+      {
+        "request": "Reset the blazer to the source photo; actually, keep the blazer as before. Change the background to a library.",
+        "updates": {
+          "background": "library"
+        }
+      }
+    ],
+    "C2": [
+      {
+        "request": "Use a library background with a plant. Wear a gray blazer and ivory crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+        "updates": {
+          "jacket": "gray",
+          "top": "ivory_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "library",
+          "prop": "plant"
+        }
+      },
+      {
+        "request": "Keep the necklace unchanged, then get rid of the necklace entirely. Reset the shirt to the source image appearance.",
+        "updates": {
+          "necklace": "none",
+          "top": "original"
+        }
+      },
+      {
+        "request": "Take away the plant. Actually, put the plant back as in the source photo.",
+        "updates": {
+          "prop": "original"
+        }
+      },
+      {
+        "request": "Return the blazer to the source image. Actually, maintain the blazer as before. Use a pale-blue studio background.",
+        "updates": {
+          "background": "blue_studio"
+        }
+      }
+    ],
+    "G1": [
+      {
+        "request": "Use an office background with a bench. Wear a beige blazer and gray sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+        "updates": {
+          "jacket": "beige",
+          "top": "gray_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop",
+          "background": "office",
+          "prop": "bench"
+        }
+      },
+      {
+        "request": "Do not take away the bench. Maintain the blazer unchanged.",
+        "updates": {}
+      },
+      {
+        "request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+        "updates": {}
+      },
+      {
+        "request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+        "updates": {
+          "top": "navy_sweater"
+        }
+      }
+    ],
+    "G2": [
+      {
+        "request": "Use a red-brick studio background with a floor lamp. Wear a green blazer and white crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+        "updates": {
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "brick_studio",
+          "prop": "lamp"
+        }
+      },
+      {
+        "request": "Never revert the shirt to the source photo. Preserve the pin.",
+        "updates": {}
+      },
+      {
+        "request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+        "updates": {}
+      },
+      {
+        "request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+        "updates": {
+          "background": "garden"
+        }
+      }
+    ]
+  },
+  "groups": {
+    "R1": "복원 표현",
+    "R2": "복원 표현",
+    "M1": "변경과 복원 혼합",
+    "M2": "변경과 복원 혼합",
+    "C1": "앞 지시의 수정",
+    "C2": "앞 지시의 수정",
+    "G1": "부정·조건·인용",
+    "G2": "부정·조건·인용"
+  }
+}

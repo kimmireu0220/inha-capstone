@@ -1,0 +1,225 @@
+{
+  "complete": true,
+  "actual_model_calls": 48,
+  "requests_per_model": 12,
+  "dialogues": 3,
+  "distinct_request_texts": 12,
+  "metrics": {
+    "qwen3": {
+      "baseline_restore": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 2,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "keep_remove": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 2,
+        "contract_field_events": 1,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "normalized_atomic": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 2,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 2,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "normalized_isolated": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 2,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "expanded_normalization": {
+        "exact_turns": 9,
+        "turns": 12,
+        "correct_slots": 67,
+        "slots": 72,
+        "exact_final_dialogues": 2,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "json_first_only": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 1
+      },
+      "json_review_then_first": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "eligible_normalization": {
+        "exact_turns": 12,
+        "turns": 12,
+        "correct_slots": 72,
+        "slots": 72,
+        "exact_final_dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "single_extraction_checked": {
+        "exact_turns": 12,
+        "turns": 12,
+        "correct_slots": 72,
+        "slots": 72,
+        "exact_final_dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 1
+      }
+    },
+    "llama32": {
+      "baseline_restore": {
+        "exact_turns": 1,
+        "turns": 12,
+        "correct_slots": 46,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "keep_remove": {
+        "exact_turns": 1,
+        "turns": 12,
+        "correct_slots": 46,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "contract_field_events": 1,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "normalized_atomic": {
+        "exact_turns": 1,
+        "turns": 12,
+        "correct_slots": 46,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 1,
+        "turns": 12,
+        "correct_slots": 43,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 1,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "normalized_isolated": {
+        "exact_turns": 1,
+        "turns": 12,
+        "correct_slots": 43,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 1,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "expanded_normalization": {
+        "exact_turns": 4,
+        "turns": 12,
+        "correct_slots": 53,
+        "slots": 72,
+        "exact_final_dialogues": 1,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "json_first_only": {
+        "exact_turns": 3,
+        "turns": 12,
+        "correct_slots": 53,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 1
+      },
+      "json_review_then_first": {
+        "exact_turns": 1,
+        "turns": 12,
+        "correct_slots": 34,
+        "slots": 72,
+        "exact_final_dialogues": 0,
+        "dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "eligible_normalization": {
+        "exact_turns": 4,
+        "turns": 12,
+        "correct_slots": 51,
+        "slots": 72,
+        "exact_final_dialogues": 1,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 2
+      },
+      "single_extraction_checked": {
+        "exact_turns": 12,
+        "turns": 12,
+        "correct_slots": 72,
+        "slots": 72,
+        "exact_final_dialogues": 3,
+        "new_errors_vs_baseline": 0,
+        "required_model_calls_per_request": 1
+      }
+    }
+  },
+  "failures": {
+    "qwen3": [],
+    "llama32": []
+  },
+  "review_effect": {
+    "qwen3": {
+      "one_correct_two_wrong": 0,
+      "two_correct_one_wrong": 0
+    },
+    "llama32": {
+      "one_correct_two_wrong": 8,
+      "two_correct_one_wrong": 0
+    }
+  }
+}

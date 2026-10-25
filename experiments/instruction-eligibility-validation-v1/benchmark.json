@@ -1,0 +1,132 @@
+{
+  "histories": {
+    "E1": [
+      {
+        "request": "Wear a green blazer over an ivory crew-neck shirt, with a blue circular pin on the viewer-left lapel and a gold round pendant necklace. Use an office background and a floor lamp.",
+        "updates": {
+          "jacket": "green",
+          "top": "ivory_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round",
+          "background": "office",
+          "prop": "lamp"
+        }
+      },
+      {
+        "request": "If I later ask, restore the original necklace. Change the blazer to gray.",
+        "updates": {
+          "jacket": "gray"
+        }
+      },
+      {
+        "request": "\"Take away the lamp\" is quoted text. Replace the office background with a garden.",
+        "updates": {
+          "background": "garden"
+        }
+      },
+      {
+        "request": "Do not remove the blue pin, but change the shirt to a navy sweater.",
+        "updates": {
+          "top": "navy_sweater"
+        }
+      }
+    ],
+    "E2": [
+      {
+        "request": "Wear a beige blazer over a white crew-neck shirt, with a gold square pin on the viewer-right lapel and a silver teardrop necklace. Use a library background and a plant.",
+        "updates": {
+          "jacket": "beige",
+          "top": "white_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "silver_teardrop",
+          "background": "library",
+          "prop": "plant"
+        }
+      },
+      {
+        "request": "Never reset the blazer to the source image. Use a pale-blue studio background.",
+        "updates": {
+          "background": "blue_studio"
+        }
+      },
+      {
+        "request": "If asked later, get rid of the plant. Change the necklace to a gold round pendant necklace.",
+        "updates": {
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "`Remove the pin` is a caption. Change the blazer to navy.",
+        "updates": {
+          "jacket": "navy"
+        }
+      }
+    ],
+    "E3": [
+      {
+        "request": "Wear a gray blazer with a navy sweater, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace. Use a garden background and a bench.",
+        "updates": {
+          "jacket": "gray",
+          "top": "navy_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round",
+          "background": "garden",
+          "prop": "bench"
+        }
+      },
+      {
+        "request": "Do not remove the necklace. Actually, get rid of the necklace entirely.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "request": "If I later ask, reset the shirt to the source image. Actually, put the shirt back as in the source photo.",
+        "updates": {
+          "top": "original"
+        }
+      },
+      {
+        "request": "\"Remove the pin\" is a caption. Actually, remove the pin.",
+        "updates": {
+          "pin": "none"
+        }
+      }
+    ],
+    "E4": [
+      {
+        "request": "Wear a navy blazer with a gray sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace. Use a red-brick studio background and a plant.",
+        "updates": {
+          "jacket": "navy",
+          "top": "gray_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop",
+          "background": "brick_studio",
+          "prop": "plant"
+        }
+      },
+      {
+        "request": "Never remove the plant. Change the gray sweater to a white crew-neck shirt.",
+        "updates": {
+          "top": "white_crewneck"
+        }
+      },
+      {
+        "request": "If asked later, get rid of the plant. Actually, keep the plant as before.",
+        "updates": {}
+      },
+      {
+        "request": "\"Reset the necklace to the source image\" is quoted text. Actually, reset the necklace to the source image appearance.",
+        "updates": {
+          "necklace": "original"
+        }
+      }
+    ]
+  },
+  "groups": {
+    "E1": "실행 대상 제외",
+    "E2": "실행 대상 제외",
+    "E3": "뒤의 직접 지시",
+    "E4": "뒤의 직접 지시"
+  }
+}

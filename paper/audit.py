@@ -21,8 +21,8 @@ def audit(folder):
     abstract = (folder / 'abstract.en.txt').read_text().strip()
     checked, sources = [], {}
     references = manuscript.split('## 참고문헌\n', 1)[1]
-    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 9)]
-    assert '[9]' not in manuscript
+    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 10)]
+    assert 'Meta, “Llama 3.2 Model Card,”' in references
     repository = 'https://github.com/kimmireu0220/inha-capstone'
     reproduction = manuscript.split('### 4.3 재현 자료\n', 1)[1].split('### 4.4', 1)[0]
     assert repository in reproduction and repository not in references
@@ -82,11 +82,64 @@ def audit(folder):
     expect(f"{normalized_transfer['correct_slots']}/288")
     expect(f"{normalized_transfer['exact_final_dialogues']}/12")
     expect(f"기준이 맞았던 요청을 새로 틀린 경우는 {normalized_transfer['new_errors_vs_baseline']}개였다.")
-    expect(f"{transfer['methods']['normalized_atomic']['exact_turns']}/48", abstract)
+    expect(f"{transfer['methods']['normalized_atomic']['exact_turns']}/48")
     for group, label in [('recombined', '기존 어휘의 새 조합'),
                          ('unseen', '규칙에 없는 표현'), ('revision', '앞 지시의 수정')]:
         row([label] + [f"{transfer_summary['groups'][mode][group]['target_exact']}/8"
                        for mode in ['baseline_restore', 'keep_remove', 'normalized_atomic', 'json_review_then_first']])
+
+    new_studies = [('operation-scope-validation-v1', 128),
+                   ('instruction-eligibility-validation-v1', 64),
+                   ('single-extraction-validation-v1', 48)]
+    new_results = {}
+    for study, calls in new_studies:
+        verified = source(f'experiments/{study}/verification.json')
+        summary = source(f'experiments/{study}/summary.json')
+        assert verified['passed'] and summary['complete']
+        assert verified['actual_model_calls'] == summary['actual_model_calls'] == calls
+        for name, digest in verified['sha256'].items():
+            assert sha(ROOT / 'experiments' / study / name) == digest, (study, name)
+        for name, digest in json.loads((ROOT / 'experiments' / study / 'frozen.json').read_text())['sha256'].items():
+            assert sha(ROOT / name) == digest, name
+        new_results[study] = {model: source(f'experiments/{study}/results-{model}.json')['methods']
+                              for model in ['qwen3', 'llama32']}
+    for method, label in [('baseline_restore', '기준 방법'), ('keep_remove', '기존 유지·삭제'),
+                          ('normalized_atomic', '기존 정규화'), ('isolated_keep_remove', '항목별 적용'),
+                          ('normalized_isolated', '기존 정규화+항목별 적용'),
+                          ('expanded_normalization', '개선 정규화'), ('json_first_only', 'JSON 최초 응답'),
+                          ('json_review_then_first', 'JSON 재검토 우선')]:
+        row([label] + [f"{new_results['operation-scope-validation-v1'][m][method]['exact_turns']}/32"
+                       for m in ['qwen3', 'llama32']])
+    for method, label in [('baseline_restore', '기준 방법'), ('expanded_normalization', '복원 표현 개선'),
+                          ('eligible_normalization', '실행 대상 검사 결합')]:
+        row([label] + [f"{new_results['instruction-eligibility-validation-v1'][m][method]['exact_turns']}/16"
+                       for m in ['qwen3', 'llama32']])
+    for method, label in [('baseline_restore', '기준 방법'), ('json_first_only', 'JSON 최초 응답'),
+                          ('json_review_then_first', 'JSON 재검토 우선'),
+                          ('eligible_normalization', '추출·재검토+지시 검사'),
+                          ('single_extraction_checked', '한 번 추출+지시 검사')]:
+        data = new_results['single-extraction-validation-v1']
+        row([label, data['qwen3'][method]['required_model_calls_per_request']] +
+            [f"{data[m][method]['exact_turns']}/12" for m in ['qwen3', 'llama32']])
+    for model in ['qwen3', 'llama32']:
+        final = new_results['single-extraction-validation-v1'][model]['single_extraction_checked']
+        assert final['required_model_calls_per_request'] == 1
+        expect(f"{final['correct_slots']}/72")
+        expect(f"{final['exact_final_dialogues']}/3")
+        expect(f"{final['exact_turns']}/12", abstract)
+    for study in ['operation-scope-v2', 'instruction-eligibility-v1']:
+        verified = source(f'experiments/{study}/verification.json')
+        assert verified['passed'] and verified['additional_model_calls'] == 0
+        for name, digest in verified['sha256'].items():
+            assert sha(ROOT / 'experiments' / study / name) == digest, name
+    final_checks = source('experiments/instruction-eligibility-v1/invariant-audit.json')
+    assert final_checks['passed'] and final_checks['cases'] == 1323
+    expect('1323')
+    implementation = source('paper/implementation-verification.json')
+    assert implementation['passed'] and implementation['actual_model_calls'] == 0
+    assert implementation['replayed_requests'] == 24 and implementation['one_extraction_per_request']
+    for name, digest in implementation['source_sha256'].items():
+        assert sha(ROOT / name) == digest, name
 
     structural = source('experiments/clause-factorial-v1/results.json')
     structural_summary = source('experiments/clause-factorial-v1/summary.json')
@@ -178,9 +231,6 @@ def audit(folder):
             assert len(dialogues) == 8 and result['turns'] == 32 and result['slots'] == 192
             row([label, f"{result['exact_turns']}/32", f"{result['correct_slots']}/192",
                  f"{result['exact_final_dialogues']}/8", result['newly_corrupted_unchanged_slots']])
-        for mode in ['baseline_restore', 'keep_remove']:
-            expect(f"{data['methods'][mode]['exact_turns']}/32", abstract)
-
     for name in ['keep-image-v1', 'contract-image-v3']:
         data = source(f'experiments/{name}/summary.json')
         verification = source(f'experiments/{name}/verification.json')
@@ -239,8 +289,8 @@ def audit(folder):
     expect('각각 7/8')
     expect('124/144')
     expect('144/144')
-    expect('4/16', abstract)
-    expect('16/16', abstract)
+    expect('4/16')
+    expect('16/16')
     assert sum(x['unknown'] for x in compound['image_rows']) == 2
     assert sum(x['parse_error'] is not None for x in compound['image_rows']) == 2
     provenance = json.loads((folder / 'figures/figure-provenance.json').read_text())

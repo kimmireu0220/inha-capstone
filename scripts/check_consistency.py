@@ -141,6 +141,22 @@ def check():
         assert digest(transfer / name) == expected, name
     for name, expected in json.loads((transfer / 'frozen.json').read_text())['sha256'].items():
         assert digest(ROOT / name) == expected, name
+    for study, calls, requests in [('operation-scope-validation-v1', 128, 32),
+                                   ('instruction-eligibility-validation-v1', 64, 16),
+                                   ('single-extraction-validation-v1', 48, 12)]:
+        folder = ROOT / 'experiments' / study
+        verification = json.loads((folder / 'verification.json').read_text())
+        assert verification['passed']
+        assert verification['actual_model_calls'] == calls and verification['requests_per_model'] == requests
+        for name, expected in verification['sha256'].items():
+            assert digest(folder / name) == expected, name
+        for name, expected in json.loads((folder / 'frozen.json').read_text())['sha256'].items():
+            assert digest(ROOT / name) == expected, name
+    implementation = load('paper/implementation-verification.json')
+    assert implementation['passed'] and implementation['replayed_requests'] == 24
+    assert implementation['actual_model_calls'] == 0
+    for name, expected in implementation['source_sha256'].items():
+        assert digest(ROOT / name) == expected, name
     # Preserve the rejected first candidate and the explicitly post-hoc replay.
     for name, expected in load('experiments/action-plan-v1/frozen.json').items():
         if name != 'model_revision':
@@ -191,7 +207,7 @@ def check():
         review_status = 'complete'
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
-          f'AI evaluation setup and {len(verified_studies) + 4} verified text studies; '
+          f'AI evaluation setup and {len(verified_studies) + 7} verified text studies; '
           f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 
 

@@ -1,0 +1,5721 @@
+{
+  "posthoc_development": true,
+  "additional_model_calls": 0,
+  "requests_per_model": 32,
+  "methods": {
+    "qwen3": {
+      "eligible_normalization": {
+        "exact_turns": 32,
+        "turns": 32,
+        "correct_slots": 192,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "new_errors_vs_baseline": 0,
+        "rows": [
+          {
+            "dialogue": "R1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a navy blazer over an ivory crew-neck shirt, with a red triangular pin on the viewer-left lapel and a silver teardrop necklace. Use a pale-blue studio background and a plant.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original shirt and necklace. Keep the pale-blue studio background and navy blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the shirt and necklace to the source image appearance",
+                  "normalized": "Restore the original shirt and necklace"
+                },
+                {
+                  "original": "maintaining the pale-blue studio background and navy blazer unchanged",
+                  "normalized": "Keep the pale-blue studio background and navy blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                },
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Get rid of the plant completely",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "Keep the pin as before",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the plant",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Change the blazer to green. Keep the pale-blue studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the pale-blue studio background alone",
+                  "normalized": "Keep the pale-blue studio background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the pale-blue studio background unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a gray blazer and white crew-neck shirt, a gold square pin on the viewer-right lapel, and a gold round pendant necklace. Use a red-brick studio background with a floor lamp.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original pin and shirt. Keep the gray blazer and red-brick studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Put the pin and shirt back as in the original photo",
+                  "normalized": "Restore the original pin and shirt"
+                },
+                {
+                  "original": "preserving the gray blazer and red-brick studio background just as they are",
+                  "normalized": "Keep the gray blazer and red-brick studio background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "brick_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Take away the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Maintain the lamp unchanged",
+                  "normalized": "Keep the lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "prop": {
+                  "evidence": "Keep the lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background. Keep the gray blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Retain the gray blazer",
+                  "normalized": "Keep the gray blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background and a bench. Wear a beige blazer with a navy sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original necklace. Keep the beige blazer unchanged. Change the shirt to a white crew-neck shirt.",
+              "normalization": [
+                {
+                  "original": "Return the necklace to the source photo",
+                  "normalized": "Restore the original necklace"
+                },
+                {
+                  "original": "Leave the beige blazer alone",
+                  "normalized": "Keep the beige blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the beige blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the bench. Keep the library background unchanged.",
+              "normalization": [
+                {
+                  "original": "Delete the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "Maintain the library background unchanged",
+                  "normalized": "Keep the library background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the bench",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "background": {
+                  "evidence": "Keep the library background unchanged",
+                  "value": "library",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blue pin. Keep the white shirt unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the blue pin to the source image appearance",
+                  "normalized": "Restore the original blue pin"
+                },
+                {
+                  "original": "keeping the white shirt exactly as it is now",
+                  "normalized": "Keep the white shirt unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blue pin"
+                }
+              },
+              "rules": {
+                "top": {
+                  "evidence": "Keep the white shirt unchanged",
+                  "value": "white_crewneck",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background and a floor lamp. Wear a green blazer with a gray sweater, a gold square pin on the viewer-right lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer and pin. Keep the office background and lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Revert the blazer and pin to how they looked in the original image",
+                  "normalized": "Restore the original blazer and pin"
+                },
+                {
+                  "original": "leaving the office background and lamp as before",
+                  "normalized": "Keep the office background and lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "jacket": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                }
+              },
+              "rules": {
+                "background": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                },
+                "prop": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Exclude the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Keep the gray sweater just as it is",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a garden background. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the gray sweater alone",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a garden background with a bench. Wear a navy blazer, a white crew-neck shirt, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the bench. actually. Keep the bench unchanged. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "Get rid of the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "keep the bench unchanged",
+                  "normalized": "Keep the bench unchanged"
+                },
+                {
+                  "original": "Put the shirt back to the source photo",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "prop": {
+                  "evidence": "Keep the bench unchanged",
+                  "value": "bench",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original pin. Actually. Remove the pin.",
+              "normalization": [
+                {
+                  "original": "take away the pin",
+                  "normalized": "Remove the pin"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Remove the pin",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer. actually. Keep the blazer unchanged. Change the background to a library.",
+              "normalization": [
+                {
+                  "original": "Reset the blazer to the source photo",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "keep the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background with a plant. Wear a gray blazer and ivory crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Keep the necklace unchanged. Remove the necklace. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "get rid of the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Reset the shirt to the source image appearance",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Actually. Restore the original plant.",
+              "normalization": [
+                {
+                  "original": "Take away the plant",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "put the plant back as in the source photo",
+                  "normalized": "Restore the original plant"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "prop": {
+                  "value": "original",
+                  "evidence": "Restore the original plant"
+                }
+              },
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "blue_studio",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "blue_studio",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer. Actually. Keep the blazer unchanged. Use a pale-blue studio background.",
+              "normalization": [
+                {
+                  "original": "Return the blazer to the source image",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "maintain the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background with a bench. Wear a beige blazer and gray sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Do not take away the bench. Keep the blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Maintain the blazer unchanged",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 26,
+                  "reason": "negated",
+                  "evidence": "Do not take away the bench"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the background unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 54,
+                  "reason": "conditional",
+                  "evidence": "If asked later, reset the necklace to the source image"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "pin": {
+                  "start": 0,
+                  "end": 20,
+                  "reason": "quoted_text",
+                  "evidence": "\"Get rid of the pin\""
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a red-brick studio background with a floor lamp. Wear a green blazer and white crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Never revert the shirt to the source photo. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Preserve the pin",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "top": {
+                  "start": 0,
+                  "end": 42,
+                  "reason": "negated",
+                  "evidence": "Never revert the shirt to the source photo"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 3,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "green",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 38,
+                  "reason": "conditional",
+                  "evidence": "If I later ask you, take away the lamp"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 40,
+                  "reason": "quoted_text",
+                  "evidence": "`Reset the necklace to the source image`"
+                }
+              }
+            }
+          }
+        ],
+        "required_model_calls_per_request": 2
+      },
+      "single_extraction_checked": {
+        "exact_turns": 32,
+        "turns": 32,
+        "correct_slots": 192,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "new_errors_vs_baseline": 0,
+        "rows": [
+          {
+            "dialogue": "R1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a navy blazer over an ivory crew-neck shirt, with a red triangular pin on the viewer-left lapel and a silver teardrop necklace. Use a pale-blue studio background and a plant.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original shirt and necklace. Keep the pale-blue studio background and navy blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the shirt and necklace to the source image appearance",
+                  "normalized": "Restore the original shirt and necklace"
+                },
+                {
+                  "original": "maintaining the pale-blue studio background and navy blazer unchanged",
+                  "normalized": "Keep the pale-blue studio background and navy blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                },
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Get rid of the plant completely",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "Keep the pin as before",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the plant",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Change the blazer to green. Keep the pale-blue studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the pale-blue studio background alone",
+                  "normalized": "Keep the pale-blue studio background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the pale-blue studio background unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a gray blazer and white crew-neck shirt, a gold square pin on the viewer-right lapel, and a gold round pendant necklace. Use a red-brick studio background with a floor lamp.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original pin and shirt. Keep the gray blazer and red-brick studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Put the pin and shirt back as in the original photo",
+                  "normalized": "Restore the original pin and shirt"
+                },
+                {
+                  "original": "preserving the gray blazer and red-brick studio background just as they are",
+                  "normalized": "Keep the gray blazer and red-brick studio background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "brick_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Take away the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Maintain the lamp unchanged",
+                  "normalized": "Keep the lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "prop": {
+                  "evidence": "Keep the lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background. Keep the gray blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Retain the gray blazer",
+                  "normalized": "Keep the gray blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background and a bench. Wear a beige blazer with a navy sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original necklace. Keep the beige blazer unchanged. Change the shirt to a white crew-neck shirt.",
+              "normalization": [
+                {
+                  "original": "Return the necklace to the source photo",
+                  "normalized": "Restore the original necklace"
+                },
+                {
+                  "original": "Leave the beige blazer alone",
+                  "normalized": "Keep the beige blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the beige blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the bench. Keep the library background unchanged.",
+              "normalization": [
+                {
+                  "original": "Delete the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "Maintain the library background unchanged",
+                  "normalized": "Keep the library background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the bench",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "background": {
+                  "evidence": "Keep the library background unchanged",
+                  "value": "library",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blue pin. Keep the white shirt unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the blue pin to the source image appearance",
+                  "normalized": "Restore the original blue pin"
+                },
+                {
+                  "original": "keeping the white shirt exactly as it is now",
+                  "normalized": "Keep the white shirt unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blue pin"
+                }
+              },
+              "rules": {
+                "top": {
+                  "evidence": "Keep the white shirt unchanged",
+                  "value": "white_crewneck",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background and a floor lamp. Wear a green blazer with a gray sweater, a gold square pin on the viewer-right lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer and pin. Keep the office background and lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Revert the blazer and pin to how they looked in the original image",
+                  "normalized": "Restore the original blazer and pin"
+                },
+                {
+                  "original": "leaving the office background and lamp as before",
+                  "normalized": "Keep the office background and lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "jacket": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                }
+              },
+              "rules": {
+                "background": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                },
+                "prop": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Exclude the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Keep the gray sweater just as it is",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a garden background. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the gray sweater alone",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a garden background with a bench. Wear a navy blazer, a white crew-neck shirt, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the bench. actually. Keep the bench unchanged. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "Get rid of the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "keep the bench unchanged",
+                  "normalized": "Keep the bench unchanged"
+                },
+                {
+                  "original": "Put the shirt back to the source photo",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "prop": {
+                  "evidence": "Keep the bench unchanged",
+                  "value": "bench",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original pin. Actually. Remove the pin.",
+              "normalization": [
+                {
+                  "original": "take away the pin",
+                  "normalized": "Remove the pin"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Remove the pin",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer. actually. Keep the blazer unchanged. Change the background to a library.",
+              "normalization": [
+                {
+                  "original": "Reset the blazer to the source photo",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "keep the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background with a plant. Wear a gray blazer and ivory crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Keep the necklace unchanged. Remove the necklace. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "get rid of the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Reset the shirt to the source image appearance",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Actually. Restore the original plant.",
+              "normalization": [
+                {
+                  "original": "Take away the plant",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "put the plant back as in the source photo",
+                  "normalized": "Restore the original plant"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "prop": {
+                  "value": "original",
+                  "evidence": "Restore the original plant"
+                }
+              },
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "blue_studio",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "blue_studio",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer. Actually. Keep the blazer unchanged. Use a pale-blue studio background.",
+              "normalization": [
+                {
+                  "original": "Return the blazer to the source image",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "maintain the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background with a bench. Wear a beige blazer and gray sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Do not take away the bench. Keep the blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Maintain the blazer unchanged",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 26,
+                  "reason": "negated",
+                  "evidence": "Do not take away the bench"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the background unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 54,
+                  "reason": "conditional",
+                  "evidence": "If asked later, reset the necklace to the source image"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "pin": {
+                  "start": 0,
+                  "end": 20,
+                  "reason": "quoted_text",
+                  "evidence": "\"Get rid of the pin\""
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a red-brick studio background with a floor lamp. Wear a green blazer and white crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Never revert the shirt to the source photo. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Preserve the pin",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "top": {
+                  "start": 0,
+                  "end": 42,
+                  "reason": "negated",
+                  "evidence": "Never revert the shirt to the source photo"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 3,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "green",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 38,
+                  "reason": "conditional",
+                  "evidence": "If I later ask you, take away the lamp"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 40,
+                  "reason": "quoted_text",
+                  "evidence": "`Reset the necklace to the source image`"
+                }
+              }
+            }
+          }
+        ],
+        "required_model_calls_per_request": 1
+      }
+    },
+    "llama32": {
+      "eligible_normalization": {
+        "exact_turns": 19,
+        "turns": 32,
+        "correct_slots": 145,
+        "slots": 192,
+        "exact_final_dialogues": 4,
+        "new_errors_vs_baseline": 1,
+        "rows": [
+          {
+            "dialogue": "R1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a navy blazer over an ivory crew-neck shirt, with a red triangular pin on the viewer-left lapel and a silver teardrop necklace. Use a pale-blue studio background and a plant.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original shirt and necklace. Keep the pale-blue studio background and navy blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the shirt and necklace to the source image appearance",
+                  "normalized": "Restore the original shirt and necklace"
+                },
+                {
+                  "original": "maintaining the pale-blue studio background and navy blazer unchanged",
+                  "normalized": "Keep the pale-blue studio background and navy blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                },
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Get rid of the plant completely",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "Keep the pin as before",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the plant",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Change the blazer to green. Keep the pale-blue studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the pale-blue studio background alone",
+                  "normalized": "Keep the pale-blue studio background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the pale-blue studio background unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 0,
+            "trace": {
+              "normalized_request": "Wear a gray blazer and white crew-neck shirt, a gold square pin on the viewer-right lapel, and a gold round pendant necklace. Use a red-brick studio background with a floor lamp.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 2,
+            "trace": {
+              "normalized_request": "Restore the original pin and shirt. Keep the gray blazer and red-brick studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Put the pin and shirt back as in the original photo",
+                  "normalized": "Restore the original pin and shirt"
+                },
+                {
+                  "original": "preserving the gray blazer and red-brick studio background just as they are",
+                  "normalized": "Keep the gray blazer and red-brick studio background unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Take away the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Maintain the lamp unchanged",
+                  "normalized": "Keep the lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "prop": {
+                  "evidence": "Keep the lamp unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "trace": {
+              "normalized_request": "Use an office background. Keep the gray blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Retain the gray blazer",
+                  "normalized": "Keep the gray blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background and a bench. Wear a beige blazer with a navy sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original necklace. Keep the beige blazer unchanged. Change the shirt to a white crew-neck shirt.",
+              "normalization": [
+                {
+                  "original": "Return the necklace to the source photo",
+                  "normalized": "Restore the original necklace"
+                },
+                {
+                  "original": "Leave the beige blazer alone",
+                  "normalized": "Keep the beige blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the beige blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the bench. Keep the library background unchanged.",
+              "normalization": [
+                {
+                  "original": "Delete the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "Maintain the library background unchanged",
+                  "normalized": "Keep the library background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the bench",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "background": {
+                  "evidence": "Keep the library background unchanged",
+                  "value": "library",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blue pin. Keep the white shirt unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the blue pin to the source image appearance",
+                  "normalized": "Restore the original blue pin"
+                },
+                {
+                  "original": "keeping the white shirt exactly as it is now",
+                  "normalized": "Keep the white shirt unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blue pin"
+                }
+              },
+              "rules": {
+                "top": {
+                  "evidence": "Keep the white shirt unchanged",
+                  "value": "white_crewneck",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background and a floor lamp. Wear a green blazer with a gray sweater, a gold square pin on the viewer-right lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer and pin. Keep the office background and lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Revert the blazer and pin to how they looked in the original image",
+                  "normalized": "Restore the original blazer and pin"
+                },
+                {
+                  "original": "leaving the office background and lamp as before",
+                  "normalized": "Keep the office background and lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "jacket": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                }
+              },
+              "rules": {
+                "background": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                },
+                "prop": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Exclude the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Keep the gray sweater just as it is",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a garden background. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the gray sweater alone",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 0,
+            "trace": {
+              "normalized_request": "Use a garden background with a bench. Wear a navy blazer, a white crew-neck shirt, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 1,
+            "trace": {
+              "normalized_request": "Remove the bench. actually. Keep the bench unchanged. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "Get rid of the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "keep the bench unchanged",
+                  "normalized": "Keep the bench unchanged"
+                },
+                {
+                  "original": "Put the shirt back to the source photo",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "prop": {
+                  "evidence": "Keep the bench unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "none",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 2,
+            "trace": {
+              "normalized_request": "Restore the original pin. Actually. Remove the pin.",
+              "normalization": [
+                {
+                  "original": "take away the pin",
+                  "normalized": "Remove the pin"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Remove the pin",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "none",
+              "necklace": "none",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 2,
+            "trace": {
+              "normalized_request": "Restore the original blazer. actually. Keep the blazer unchanged. Change the background to a library.",
+              "normalization": [
+                {
+                  "original": "Reset the blazer to the source photo",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "keep the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background with a plant. Wear a gray blazer and ivory crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Keep the necklace unchanged. Remove the necklace. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "get rid of the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Reset the shirt to the source image appearance",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Actually. Restore the original plant.",
+              "normalization": [
+                {
+                  "original": "Take away the plant",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "put the plant back as in the source photo",
+                  "normalized": "Restore the original plant"
+                }
+              ],
+              "errors": {},
+              "selected": 1,
+              "reset": {
+                "prop": {
+                  "value": "original",
+                  "evidence": "Restore the original plant"
+                }
+              },
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "blue_studio",
+              "prop": "original"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "trace": {
+              "normalized_request": "Restore the original blazer. Actually. Keep the blazer unchanged. Use a pale-blue studio background.",
+              "normalization": [
+                {
+                  "original": "Return the blazer to the source image",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "maintain the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background with a bench. Wear a beige blazer and gray sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Do not take away the bench. Keep the blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Maintain the blazer unchanged",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 26,
+                  "reason": "negated",
+                  "evidence": "Do not take away the bench"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the background unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 54,
+                  "reason": "conditional",
+                  "evidence": "If asked later, reset the necklace to the source image"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "pin": {
+                  "start": 0,
+                  "end": 20,
+                  "reason": "quoted_text",
+                  "evidence": "\"Get rid of the pin\""
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 1,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "trace": {
+              "normalized_request": "Use a red-brick studio background with a floor lamp. Wear a green blazer and white crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "trace": {
+              "normalized_request": "Never revert the shirt to the source photo. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Preserve the pin",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "top": {
+                  "start": 0,
+                  "end": 42,
+                  "reason": "negated",
+                  "evidence": "Never revert the shirt to the source photo"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "trace": {
+              "normalized_request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 38,
+                  "reason": "conditional",
+                  "evidence": "If I later ask you, take away the lamp"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": false,
+            "correct_slots": 3,
+            "trace": {
+              "normalized_request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+              "normalization": [],
+              "errors": {},
+              "selected": 1,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 40,
+                  "reason": "quoted_text",
+                  "evidence": "`Reset the necklace to the source image`"
+                }
+              }
+            }
+          }
+        ],
+        "required_model_calls_per_request": 2
+      },
+      "single_extraction_checked": {
+        "exact_turns": 27,
+        "turns": 32,
+        "correct_slots": 183,
+        "slots": 192,
+        "exact_final_dialogues": 6,
+        "new_errors_vs_baseline": 0,
+        "rows": [
+          {
+            "dialogue": "R1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "silver_teardrop",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a navy blazer over an ivory crew-neck shirt, with a red triangular pin on the viewer-left lapel and a silver teardrop necklace. Use a pale-blue studio background and a plant.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original shirt and necklace. Keep the pale-blue studio background and navy blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the shirt and necklace to the source image appearance",
+                  "normalized": "Restore the original shirt and necklace"
+                },
+                {
+                  "original": "maintaining the pale-blue studio background and navy blazer unchanged",
+                  "normalized": "Keep the pale-blue studio background and navy blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                },
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt and necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the pale-blue studio background and navy blazer unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Get rid of the plant completely",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "Keep the pin as before",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the plant",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R1",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "original",
+              "background": "blue_studio",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Change the blazer to green. Keep the pale-blue studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the pale-blue studio background alone",
+                  "normalized": "Keep the pale-blue studio background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the pale-blue studio background unchanged",
+                  "value": "blue_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "white_crewneck",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Wear a gray blazer and white crew-neck shirt, a gold square pin on the viewer-right lapel, and a gold round pendant necklace. Use a red-brick studio background with a floor lamp.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original pin and shirt. Keep the gray blazer and red-brick studio background unchanged.",
+              "normalization": [
+                {
+                  "original": "Put the pin and shirt back as in the original photo",
+                  "normalized": "Restore the original pin and shirt"
+                },
+                {
+                  "original": "preserving the gray blazer and red-brick studio background just as they are",
+                  "normalized": "Keep the gray blazer and red-brick studio background unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original pin and shirt"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                },
+                "background": {
+                  "evidence": "Keep the gray blazer and red-brick studio background unchanged",
+                  "value": "brick_studio",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Take away the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Maintain the lamp unchanged",
+                  "normalized": "Keep the lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "prop": {
+                  "evidence": "Keep the lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "R2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background. Keep the gray blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Retain the gray blazer",
+                  "normalized": "Keep the gray blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the gray blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background and a bench. Wear a beige blazer with a navy sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original necklace. Keep the beige blazer unchanged. Change the shirt to a white crew-neck shirt.",
+              "normalization": [
+                {
+                  "original": "Return the necklace to the source photo",
+                  "normalized": "Restore the original necklace"
+                },
+                {
+                  "original": "Leave the beige blazer alone",
+                  "normalized": "Keep the beige blazer unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "necklace": {
+                  "value": "original",
+                  "evidence": "Restore the original necklace"
+                }
+              },
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the beige blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the bench. Keep the library background unchanged.",
+              "normalization": [
+                {
+                  "original": "Delete the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "Maintain the library background unchanged",
+                  "normalized": "Keep the library background unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "prop": {
+                  "evidence": "Remove the bench",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "background": {
+                  "evidence": "Keep the library background unchanged",
+                  "value": "library",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "white_crewneck",
+              "pin": "original",
+              "necklace": "original",
+              "background": "library",
+              "prop": "none"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blue pin. Keep the white shirt unchanged.",
+              "normalization": [
+                {
+                  "original": "Reset the blue pin to the source image appearance",
+                  "normalized": "Restore the original blue pin"
+                },
+                {
+                  "original": "keeping the white shirt exactly as it is now",
+                  "normalized": "Keep the white shirt unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blue pin"
+                }
+              },
+              "rules": {
+                "top": {
+                  "evidence": "Keep the white shirt unchanged",
+                  "value": "white_crewneck",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "gray_sweater",
+              "pin": "gold_square_right",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background and a floor lamp. Wear a green blazer with a gray sweater, a gold square pin on the viewer-right lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 2,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "gold_round",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Restore the original blazer and pin. Keep the office background and lamp unchanged.",
+              "normalization": [
+                {
+                  "original": "Revert the blazer and pin to how they looked in the original image",
+                  "normalized": "Restore the original blazer and pin"
+                },
+                {
+                  "original": "leaving the office background and lamp as before",
+                  "normalized": "Keep the office background and lamp unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "jacket": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                },
+                "pin": {
+                  "value": "original",
+                  "evidence": "Restore the original blazer and pin"
+                }
+              },
+              "rules": {
+                "background": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                },
+                "prop": {
+                  "evidence": "Keep the office background and lamp unchanged",
+                  "value": "lamp",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 3,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "office",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the necklace. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Exclude the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Keep the gray sweater just as it is",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                },
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "M2",
+            "turn": 4,
+            "observed": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "original",
+              "top": "gray_sweater",
+              "pin": "original",
+              "necklace": "none",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a garden background. Keep the gray sweater unchanged.",
+              "normalization": [
+                {
+                  "original": "Leave the gray sweater alone",
+                  "normalized": "Keep the gray sweater unchanged"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "top": {
+                  "evidence": "Keep the gray sweater unchanged",
+                  "value": "gray_sweater",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 1,
+            "observed": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "white_crewneck",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "trace": {
+              "normalized_request": "Use a garden background with a bench. Wear a navy blazer, a white crew-neck shirt, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 2,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "trace": {
+              "normalized_request": "Remove the bench. actually. Keep the bench unchanged. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "Get rid of the bench completely",
+                  "normalized": "Remove the bench"
+                },
+                {
+                  "original": "keep the bench unchanged",
+                  "normalized": "Keep the bench unchanged"
+                },
+                {
+                  "original": "Put the shirt back to the source photo",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "prop": {
+                  "evidence": "Keep the bench unchanged",
+                  "value": "original",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 3,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "garden",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "trace": {
+              "normalized_request": "Restore the original pin. Actually. Remove the pin.",
+              "normalization": [
+                {
+                  "original": "take away the pin",
+                  "normalized": "Remove the pin"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Remove the pin",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C1",
+            "turn": 4,
+            "observed": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "original",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "navy",
+              "top": "original",
+              "pin": "none",
+              "necklace": "silver_teardrop",
+              "background": "library",
+              "prop": "bench"
+            },
+            "exact": false,
+            "correct_slots": 4,
+            "trace": {
+              "normalized_request": "Restore the original blazer. actually. Keep the blazer unchanged. Change the background to a library.",
+              "normalization": [
+                {
+                  "original": "Reset the blazer to the source photo",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "keep the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "navy",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 1,
+            "observed": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "ivory_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a library background with a plant. Wear a gray blazer and ivory crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 2,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "plant"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Keep the necklace unchanged. Remove the necklace. Restore the original shirt.",
+              "normalization": [
+                {
+                  "original": "get rid of the necklace entirely",
+                  "normalized": "Remove the necklace"
+                },
+                {
+                  "original": "Reset the shirt to the source image appearance",
+                  "normalized": "Restore the original shirt"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "top": {
+                  "value": "original",
+                  "evidence": "Restore the original shirt"
+                }
+              },
+              "rules": {
+                "necklace": {
+                  "evidence": "Remove the necklace",
+                  "value": "none",
+                  "operation": "remove"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 3,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Remove the plant. Actually. Restore the original plant.",
+              "normalization": [
+                {
+                  "original": "Take away the plant",
+                  "normalized": "Remove the plant"
+                },
+                {
+                  "original": "put the plant back as in the source photo",
+                  "normalized": "Restore the original plant"
+                }
+              ],
+              "errors": {},
+              "selected": 0,
+              "reset": {
+                "prop": {
+                  "value": "original",
+                  "evidence": "Restore the original plant"
+                }
+              },
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "C2",
+            "turn": 4,
+            "observed": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "library",
+              "prop": "original"
+            },
+            "expected": {
+              "jacket": "gray",
+              "top": "original",
+              "pin": "red_triangle_left",
+              "necklace": "none",
+              "background": "blue_studio",
+              "prop": "original"
+            },
+            "exact": false,
+            "correct_slots": 5,
+            "trace": {
+              "normalized_request": "Restore the original blazer. Actually. Keep the blazer unchanged. Use a pale-blue studio background.",
+              "normalization": [
+                {
+                  "original": "Return the blazer to the source image",
+                  "normalized": "Restore the original blazer"
+                },
+                {
+                  "original": "maintain the blazer as before",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "gray",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 1,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use an office background with a bench. Wear a beige blazer and gray sweater, a blue circular pin on the viewer-left lapel, and a silver teardrop necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 2,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Do not take away the bench. Keep the blazer unchanged.",
+              "normalization": [
+                {
+                  "original": "Maintain the blazer unchanged",
+                  "normalized": "Keep the blazer unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "beige",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 26,
+                  "reason": "negated",
+                  "evidence": "Do not take away the bench"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 3,
+            "observed": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "gray_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If asked later, reset the necklace to the source image. Keep the background unchanged.",
+              "normalization": [],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "background": {
+                  "evidence": "Keep the background unchanged",
+                  "value": "office",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 54,
+                  "reason": "conditional",
+                  "evidence": "If asked later, reset the necklace to the source image"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G1",
+            "turn": 4,
+            "observed": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "expected": {
+              "jacket": "beige",
+              "top": "navy_sweater",
+              "pin": "blue_circle_left",
+              "necklace": "silver_teardrop",
+              "background": "office",
+              "prop": "bench"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "\"Get rid of the pin\" is a caption, not an editing instruction. Change the shirt to a navy sweater.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "pin": {
+                  "start": 0,
+                  "end": 20,
+                  "reason": "quoted_text",
+                  "evidence": "\"Get rid of the pin\""
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 1,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Use a red-brick studio background with a floor lamp. Wear a green blazer and white crew-neck shirt, a red triangular pin on the viewer-left lapel, and a gold round pendant necklace.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {}
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 2,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "Never revert the shirt to the source photo. Keep the pin unchanged.",
+              "normalization": [
+                {
+                  "original": "Preserve the pin",
+                  "normalized": "Keep the pin unchanged"
+                }
+              ],
+              "errors": {
+                "patch": "No valid patch"
+              },
+              "selected": null,
+              "reset": {},
+              "rules": {
+                "pin": {
+                  "evidence": "Keep the pin unchanged",
+                  "value": "red_triangle_left",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "top": {
+                  "start": 0,
+                  "end": 42,
+                  "reason": "negated",
+                  "evidence": "Never revert the shirt to the source photo"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 3,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "brick_studio",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "If I later ask you, take away the lamp. Keep the blazer unchanged.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {
+                "jacket": {
+                  "evidence": "Keep the blazer unchanged",
+                  "value": "green",
+                  "operation": "keep"
+                }
+              },
+              "ignored_instructions": {
+                "prop": {
+                  "start": 0,
+                  "end": 38,
+                  "reason": "conditional",
+                  "evidence": "If I later ask you, take away the lamp"
+                }
+              }
+            }
+          },
+          {
+            "dialogue": "G2",
+            "turn": 4,
+            "observed": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "expected": {
+              "jacket": "green",
+              "top": "white_crewneck",
+              "pin": "red_triangle_left",
+              "necklace": "gold_round",
+              "background": "garden",
+              "prop": "lamp"
+            },
+            "exact": true,
+            "correct_slots": 6,
+            "trace": {
+              "normalized_request": "`Reset the necklace to the source image` is quoted text. Replace the background with a garden.",
+              "normalization": [],
+              "errors": {},
+              "selected": 0,
+              "reset": {},
+              "rules": {},
+              "ignored_instructions": {
+                "necklace": {
+                  "start": 0,
+                  "end": 40,
+                  "reason": "quoted_text",
+                  "evidence": "`Reset the necklace to the source image`"
+                }
+              }
+            }
+          }
+        ],
+        "required_model_calls_per_request": 1
+      }
+    }
+  },
+  "source_sha256": {
+    "experiments/operation-scope-validation-v1/benchmark.json": "52aed0780c3e2eb12245cb3b0b263fe8a7a009075ff8015459346c9afc5d156a",
+    "experiments/single-extraction-validation-v1/run.py": "9a01e036ffc819a8430c078b48c003e5526f74d297922cf984be0bf25bda6719",
+    "experiments/operation-scope-validation-v1/transcripts-qwen3.json": "bc757f463d32dc389e83c859674f5c8310884273a6e644697c0ced31a5b2b652",
+    "experiments/operation-scope-validation-v1/transcripts-llama32.json": "060bb6f64f808021e54d32a179ffea534924e526bbef440e1311e1f45c3cf16d"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "actual_model_calls": 0,
+  "replayed_requests": 24,
+  "one_extraction_per_request": true,
+  "state_and_prompt_match": true,
+  "source_sha256": {
+    "experiments/single-extraction-validation-v1/benchmark.json": "c33da78dbd853061f234b8f4aacdf614f48067c84c4f3a6fb8a18ef76d151584",
+    "experiments/single-extraction-validation-v1/frozen.json": "c409e3761f3bf009f12c629b7a4f28c0ebdfd0de02ef7f4291a973451a4eec2e",
+    "local-studio/instruction_pipeline.py": "e65bc113f19f2f6f54415981356117c01d076299e122daad90cdf2d9a42159ac",
+    "local-studio/checks/test_instruction_pipeline.py": "966de5c8e4d574a69e9c017839a5e596001cccd22f59d0c6639f40277d4c3053",
+    "local-studio/request_state.py": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+    "scripts/verify_instruction_pipeline.py": "7a9f3b24ba2eabfb2930e7ec1481c81aba540e47a2ce5e6141036167a3449fbc",
+    "experiments/single-extraction-validation-v1/transcripts-qwen3.json": "e5fc33c1ba43765711e31aa61bf3b2b34161843d27a5d3078b7f2fecf13b29fe",
+    "experiments/single-extraction-validation-v1/results-qwen3.json": "7db7c9dea1664029dd801641e178f0a88ebe5e3f582051b76edd2918ba1434ae",
+    "experiments/single-extraction-validation-v1/transcripts-llama32.json": "65cb5195cd876c647b6cf51f1cb55e6b8726b9950902c395226f3ea907fdc727",
+    "experiments/single-extraction-validation-v1/results-llama32.json": "464f7370ed0c8c65cabfbec175bd72d711f1d6d42c99fddc4a70dfc126ac3a64"
+  }
+}

@@ -1,0 +1,797 @@
+{
+  "complete": true,
+  "actual_model_calls": 64,
+  "requests_per_model": 16,
+  "dialogues": 4,
+  "distinct_request_texts": 16,
+  "models": {
+    "qwen3": {
+      "model": "mlx-community/Qwen3-4B-4bit",
+      "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25"
+    },
+    "llama32": {
+      "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+      "revision": "7f0dc925e0d0afb0322d96f9255cfddf2ba5636e",
+      "card": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit"
+    }
+  },
+  "groups": {
+    "qwen3": {
+      "baseline_restore": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "keep_remove": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "normalized_atomic": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "isolated_keep_remove": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "normalized_isolated": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "expanded_normalization": {
+        "뒤의 직접 지시": {
+          "exact": 8,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "json_first_only": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "json_review_then_first": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 3,
+          "requests": 8
+        }
+      },
+      "eligible_normalization": {
+        "뒤의 직접 지시": {
+          "exact": 8,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 8,
+          "requests": 8
+        }
+      }
+    },
+    "llama32": {
+      "baseline_restore": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "keep_remove": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "normalized_atomic": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "isolated_keep_remove": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "normalized_isolated": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "expanded_normalization": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "json_first_only": {
+        "뒤의 직접 지시": {
+          "exact": 6,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 2,
+          "requests": 8
+        }
+      },
+      "json_review_then_first": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      },
+      "eligible_normalization": {
+        "뒤의 직접 지시": {
+          "exact": 0,
+          "requests": 8
+        },
+        "실행 대상 제외": {
+          "exact": 0,
+          "requests": 8
+        }
+      }
+    }
+  },
+  "failures": {
+    "qwen3": [],
+    "llama32": [
+      {
+        "dialogue": "E1",
+        "request_number": 1,
+        "differences": {
+          "jacket": {
+            "expected": "green",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "ivory_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "office",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E1",
+        "request_number": 2,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "ivory_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "office",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E1",
+        "request_number": 3,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "ivory_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E1",
+        "request_number": 4,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "navy_sweater",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "prop": {
+            "expected": "lamp",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E2",
+        "request_number": 1,
+        "differences": {
+          "jacket": {
+            "expected": "beige",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "gold_square_right",
+            "observed": "none"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "library",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E2",
+        "request_number": 2,
+        "differences": {
+          "jacket": {
+            "expected": "beige",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "gold_square_right",
+            "observed": "none"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "blue_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E2",
+        "request_number": 3,
+        "differences": {
+          "jacket": {
+            "expected": "beige",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "gold_square_right",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "blue_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E2",
+        "request_number": 4,
+        "differences": {
+          "top": {
+            "expected": "white_crewneck",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "gold_square_right",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "blue_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E3",
+        "request_number": 1,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "navy_sweater",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "gold_round",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E3",
+        "request_number": 2,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "navy_sweater",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E3",
+        "request_number": 3,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "red_triangle_left",
+            "observed": "original"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E3",
+        "request_number": 4,
+        "differences": {
+          "jacket": {
+            "expected": "gray",
+            "observed": "original"
+          },
+          "background": {
+            "expected": "garden",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "bench",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E4",
+        "request_number": 1,
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "top": {
+            "expected": "gray_sweater",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E4",
+        "request_number": 2,
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E4",
+        "request_number": 3,
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "necklace": {
+            "expected": "silver_teardrop",
+            "observed": "none"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      },
+      {
+        "dialogue": "E4",
+        "request_number": 4,
+        "differences": {
+          "jacket": {
+            "expected": "navy",
+            "observed": "original"
+          },
+          "pin": {
+            "expected": "blue_circle_left",
+            "observed": "original"
+          },
+          "background": {
+            "expected": "brick_studio",
+            "observed": "original"
+          },
+          "prop": {
+            "expected": "plant",
+            "observed": "original"
+          }
+        }
+      }
+    ]
+  },
+  "metrics": {
+    "qwen3": {
+      "baseline_restore": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 4,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 4,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_isolated": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "newly_corrupted_unchanged_slots": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "expanded_normalization": {
+        "exact_turns": 11,
+        "turns": 16,
+        "correct_slots": 88,
+        "slots": 96,
+        "exact_final_dialogues": 2,
+        "new_errors_vs_baseline": 0
+      },
+      "json_first_only": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "dialogues": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "json_review_then_first": {
+        "exact_turns": 9,
+        "turns": 16,
+        "correct_slots": 86,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "dialogues": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "eligible_normalization": {
+        "exact_turns": 16,
+        "turns": 16,
+        "correct_slots": 96,
+        "slots": 96,
+        "exact_final_dialogues": 4,
+        "new_errors_vs_baseline": 0
+      }
+    },
+    "llama32": {
+      "baseline_restore": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 18,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 18,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 18,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 22,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_isolated": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 22,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "expanded_normalization": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 18,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "json_first_only": {
+        "exact_turns": 8,
+        "turns": 16,
+        "correct_slots": 83,
+        "slots": 96,
+        "exact_final_dialogues": 1,
+        "dialogues": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "json_review_then_first": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 21,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "dialogues": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "eligible_normalization": {
+        "exact_turns": 0,
+        "turns": 16,
+        "correct_slots": 15,
+        "slots": 96,
+        "exact_final_dialogues": 0,
+        "new_errors_vs_baseline": 0
+      }
+    }
+  }
+}

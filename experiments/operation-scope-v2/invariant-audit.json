@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "actual_model_calls": 0,
+  "groups": {
+    "one_restore_one_keep": {
+      "cases": 360,
+      "passed": 360
+    },
+    "two_restore_one_keep": {
+      "cases": 540,
+      "passed": 540
+    },
+    "later_instruction": {
+      "cases": 48,
+      "passed": 48
+    },
+    "no_unconditional_change": {
+      "cases": 15,
+      "passed": 15
+    },
+    "new_restore_keep": {
+      "cases": 360,
+      "passed": 360
+    }
+  },
+  "failures": [],
+  "source_sha256": {
+    "experiments/operation-scope-v2/method.py": "c9f2d6f6d467c30efb44c844ae5b43aad682ef2b7efb2e9128e98c8f8af50c5c",
+    "experiments/operation-scope-v2/test_method.py": "0e80044705b77c87b14251de168b3d456d31ad14a4cb2234557a2a74a1c421e8",
+    "scripts/audit_clause_invariants.py": "5c3e88fbe49b073ba21c6ac5f57eb53132b2c5c12e27072f72d1978d6afcd263"
+  }
+}

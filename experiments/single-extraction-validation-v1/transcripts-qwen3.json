@@ -1,0 +1,86 @@
+{
+  "S1-1": {
+    "request": "Use a garden background and a floor lamp. Wear a navy blazer over a gray sweater, with a gold square pin on the viewer-right lapel and a silver teardrop necklace.",
+    "first": "{\"background\": \"garden\", \"prop\": \"lamp\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"gold_square_right\", \"necklace\": \"silver_teardrop\"}",
+    "second_user": "Use a garden background and a floor lamp. Wear a navy blazer over a gray sweater, with a gold square pin on the viewer-right lapel and a silver teardrop necklace.\nProposed patch: {\"background\": \"garden\", \"prop\": \"lamp\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"gold_square_right\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"garden\", \"prop\": \"lamp\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"gold_square_right\", \"necklace\": \"silver_teardrop\"}",
+    "seconds": 15.133933208067901
+  },
+  "S1-2": {
+    "request": "Put the sweater and pin back as in the source image, preserving the navy blazer and garden background just as they are.",
+    "first": "{\"top\": \"keep\", \"pin\": \"keep\", \"jacket\": \"keep\", \"background\": \"garden\"}",
+    "second_user": "Put the sweater and pin back as in the source image, preserving the navy blazer and garden background just as they are.\nProposed patch: {\"top\": \"keep\", \"pin\": \"keep\", \"jacket\": \"keep\", \"background\": \"garden\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"keep\", \"pin\": \"keep\", \"jacket\": \"keep\", \"background\": \"garden\"}",
+    "seconds": 14.324697833973914
+  },
+  "S1-3": {
+    "request": "Do not get rid of the lamp. Change the necklace to a gold round pendant necklace.",
+    "first": "{\"prop\": \"lamp\", \"necklace\": \"gold_round\"}",
+    "second_user": "Do not get rid of the lamp. Change the necklace to a gold round pendant necklace.\nProposed patch: {\"prop\": \"lamp\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"lamp\", \"necklace\": \"gold_round\"}",
+    "seconds": 11.800349042052403
+  },
+  "S1-4": {
+    "request": "Take away the necklace entirely. Keep the garden background as before.",
+    "first": "{\"necklace\": \"none\", \"background\": \"garden\"}",
+    "second_user": "Take away the necklace entirely. Keep the garden background as before.\nProposed patch: {\"necklace\": \"none\", \"background\": \"garden\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"necklace\": \"none\", \"background\": \"garden\"}",
+    "seconds": 11.355041916947812
+  },
+  "S2-1": {
+    "request": "Use a library background and a bench. Wear a green blazer over a white crew-neck shirt, with a red triangular pin on the viewer-left lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"library\", \"prop\": \"bench\", \"jacket\": \"green\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a library background and a bench. Wear a green blazer over a white crew-neck shirt, with a red triangular pin on the viewer-left lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"library\", \"prop\": \"bench\", \"jacket\": \"green\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"library\", \"prop\": \"bench\", \"jacket\": \"green\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"gold_round\"}",
+    "seconds": 15.402612041099928
+  },
+  "S2-2": {
+    "request": "If I ask later, remove the bench. Reset the shirt to the source photo.",
+    "first": "{\"prop\": \"none\", \"top\": \"keep\"}",
+    "second_user": "If I ask later, remove the bench. Reset the shirt to the source photo.\nProposed patch: {\"prop\": \"none\", \"top\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"none\", \"top\": \"keep\"}",
+    "seconds": 11.325866291997954
+  },
+  "S2-3": {
+    "request": "\"Restore the original blazer\" is a caption. Change the pin to a blue circular pin on the viewer-left lapel.",
+    "first": "{\"jacket\": \"original\", \"pin\": \"blue_circle_left\"}",
+    "second_user": "\"Restore the original blazer\" is a caption. Change the pin to a blue circular pin on the viewer-left lapel.\nProposed patch: {\"jacket\": \"original\", \"pin\": \"blue_circle_left\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"original\", \"pin\": \"blue_circle_left\"}",
+    "seconds": 12.704923167009838
+  },
+  "S2-4": {
+    "request": "Get rid of the bench completely; actually, keep the bench unchanged. Return the necklace to the source image.",
+    "first": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "second_user": "Get rid of the bench completely; actually, keep the bench unchanged. Return the necklace to the source image.\nProposed patch: {\"prop\": \"none\", \"necklace\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "seconds": 12.025925458990969
+  },
+  "S3-1": {
+    "request": "Use an office background and a plant. Wear a beige blazer over an ivory crew-neck shirt, with a blue circular pin on the viewer-left lapel and a silver teardrop necklace.",
+    "first": "{\"background\": \"office\", \"prop\": \"plant\", \"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"pin\": \"blue_circle_left\", \"necklace\": \"silver_teardrop\"}",
+    "second_user": "Use an office background and a plant. Wear a beige blazer over an ivory crew-neck shirt, with a blue circular pin on the viewer-left lapel and a silver teardrop necklace.\nProposed patch: {\"background\": \"office\", \"prop\": \"plant\", \"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"pin\": \"blue_circle_left\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"office\", \"prop\": \"plant\", \"jacket\": \"beige\", \"top\": \"ivory_crewneck\", \"pin\": \"blue_circle_left\", \"necklace\": \"silver_teardrop\"}",
+    "seconds": 15.922353875008412
+  },
+  "S3-2": {
+    "request": "Revert the shirt and necklace to how they looked in the source image, leaving the office background and plant exactly as they are now.",
+    "first": "{\"top\": \"keep\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "second_user": "Revert the shirt and necklace to how they looked in the source image, leaving the office background and plant exactly as they are now.\nProposed patch: {\"top\": \"keep\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"keep\", \"necklace\": \"keep\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "seconds": 12.749726291978732
+  },
+  "S3-3": {
+    "request": "Never remove the plant, but change the blazer to gray.",
+    "first": "{\"jacket\": \"gray\", \"prop\": \"plant\"}",
+    "second_user": "Never remove the plant, but change the blazer to gray.\nProposed patch: {\"jacket\": \"gray\", \"prop\": \"plant\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"gray\", \"prop\": \"plant\"}",
+    "seconds": 9.593300416949205
+  },
+  "S3-4": {
+    "request": "`Reset the pin to the source image` is quoted text. Actually, take away the pin completely.",
+    "first": "{\"pin\": \"none\"}",
+    "second_user": "`Reset the pin to the source image` is quoted text. Actually, take away the pin completely.\nProposed patch: {\"pin\": \"none\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"none\"}",
+    "seconds": 8.511806624941528
+  }
+}

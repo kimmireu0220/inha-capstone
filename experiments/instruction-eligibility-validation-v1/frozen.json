@@ -1,0 +1,114 @@
+{
+  "sha256": {
+    "experiments/clause-normalization-v1/PROTOCOL.md": "f53935690c10ad545fa0631b290e3f0937f89ad6b1a51f46d1ef4c5b4e9f81fd",
+    "experiments/clause-normalization-v1/benchmark.json": "83f49c27019e7bebb15be550bb53181918d07004e90abc2531ba3233f5c4a6c9",
+    "experiments/clause-normalization-v1/method.py": "9ae2b2ab76573e76eb25fa692098da77e0b4d60b38464500ea4b58539b881131",
+    "experiments/clause-normalization-v1/run.py": "969902aa75e11a60b4185b83d9861b91dab27db261b2b4cc23ba1fa527de4501",
+    "experiments/clause-normalization-v1/test_method.py": "f778a771a2e9dcd589f2d5cd1efab71da59d062bd7e18f3d4d27be4149390d58",
+    "experiments/coverage-repair-v1/ablation.py": "78302ed5ba860e00b496806619f11ee11d63a935af1c13849c10cba32f79345e",
+    "experiments/coverage-repair-v1/run.py": "a677206c253bbed586d6302866ae9eb68501961eb4cdf20a3e8291d725268a6b",
+    "experiments/instruction-eligibility-v1/PROTOCOL.md": "a05308bbcf5723c03adb0163cb1cd562fa6162ec8ff235dd45e68a5ee8ec5534",
+    "experiments/instruction-eligibility-v1/method.py": "8158cc6ac60ba5edfc72011de06d7cff4328d93e01d11eb25e10b118b8077dbc",
+    "experiments/instruction-eligibility-v1/test_method.py": "7d2ae97c87eb1387b3c5f3e405a8520a2a73e3d943b304d74582787309c6a01f",
+    "experiments/instruction-eligibility-validation-v1/PROTOCOL.md": "16085cef84eb1d7af6d2da662f60157341cc616e073f2d7ded4a2d33f888efd7",
+    "experiments/instruction-eligibility-validation-v1/benchmark.json": "a7c975e2a63e3000fd8a31d99606e46790ed57741453d5ac9fd71076f58a2d17",
+    "experiments/instruction-eligibility-validation-v1/run.py": "ed2fab1609b97189a22a1ee8cbb8ceb72d5fbd69a47ed867646a187c27c1153f",
+    "experiments/instruction-eligibility-validation-v1/test_design.py": "c74382567f00b55d4c029b8ff761c6d0391efcd03ebb6ee0c29ee863c7964a3e",
+    "experiments/keep-contract-v1/contract.py": "46a80167d1bf711de9e8aabe2a91bf3c0e0fb8740730bb2f9643d9c14fc397a5",
+    "experiments/keep-contract-v2/PROTOCOL.md": "ddfa055ce63ac7adfc5af684435b6eecfa3971b1602569b6f54caafac0760fbd",
+    "experiments/keep-contract-v2/benchmark.json": "5f3450f3634072ec3444d4872baf66c495af45dc217a3e7b739cfa609951574f",
+    "experiments/keep-contract-v2/contract.py": "b45f7652455c1d8a020ceedabb0a421f4c48e20cac9e100e7e00ec12d312ce2a",
+    "experiments/keep-contract-v2/run.py": "1b01a9860a58bd5084b32d352ade2aff66c728e08f585f93a01f0bcaae949ad4",
+    "experiments/keep-contract-v2/test_contract.py": "0a9041998d5f888e9ba9b8f6514e85c501f0fd5ce9721abf315e14c84ab8060f",
+    "experiments/keep-contract-validation-v1/PROTOCOL.md": "a8c47ee05e4dbefcce4546bd88056984d3dca558440d0d825ff269376149c8aa",
+    "experiments/keep-contract-validation-v1/benchmark.json": "2a2b37d8c242257dd33069212a86b777d48ed64ca1c50242a2ad429d32420191",
+    "experiments/keep-contract-validation-v1/run.py": "834f769935053916793a4ee0265bf0a0d529bbfaac9cb54e9b1bafc9620aaab2",
+    "experiments/operation-scope-v2/PROTOCOL.md": "a06e914f24faa7df9c130062e413650cb4e62b09759f3ae5337a7af955c57703",
+    "experiments/operation-scope-v2/method.py": "c9f2d6f6d467c30efb44c844ae5b43aad682ef2b7efb2e9128e98c8f8af50c5c",
+    "experiments/operation-scope-v2/test_method.py": "0e80044705b77c87b14251de168b3d456d31ad14a4cb2234557a2a74a1c421e8",
+    "experiments/operation-scope-validation-v1/PROTOCOL.md": "7f8113d819ebefd6df78f0d33c6eec8939d683d1930da9fe6f4ac21449722ac8",
+    "experiments/operation-scope-validation-v1/benchmark.json": "52aed0780c3e2eb12245cb3b0b263fe8a7a009075ff8015459346c9afc5d156a",
+    "experiments/operation-scope-validation-v1/models.json": "aef177178e41979e083c169615f45df87383899ac92216581334319246117be6",
+    "experiments/operation-scope-validation-v1/run.py": "e5fb86fb22ac26950cac941e5b3e41ae9180aa9a79c1ed13ec7563670d4cecab",
+    "experiments/operation-scope-validation-v1/test_design.py": "25f23702d72946aa18d1167b70575ad377c78d59e7d18c8c9750c12d797c4f13",
+    "experiments/request-contract-v3/PROTOCOL.md": "29ccfa7a3c37260e3762754d3be26bde723990542dced3100060ecc616e57ad1",
+    "experiments/request-contract-v3/benchmark.json": "15f3baf5c9ad3514be8578c2b04114573e4d0694a6fb77e7120f5e77f1edc25b",
+    "experiments/request-contract-v3/contract.py": "d2ee12527cb80b8236a9e45386e62d46a0da24e83e449b89664a0cba266aa031",
+    "experiments/request-contract-v3/run.py": "cfb7031b6ce0533b4bd2d4ec53da5f636d9d256b6d2f7d95a6c9ce9a626424bf",
+    "experiments/request-contract-v3/test_contract.py": "3e6686db5ea9d09006ac96df66e9c5fec64eeefb00860815ed386f741a5564ed",
+    "experiments/restore-contract-v1/contract.py": "67df5174f024f24e8fa120d28e9878a08bff954b560fd4e1ac819746222202ee",
+    "experiments/slot-isolation-v1/method.py": "5a0340514013f4421c9134ead01b5ffb4afc1cde68f375c26d2f529e64d58a4d",
+    "experiments/slot-isolation-validation-v1/run.py": "ba1c390facb14c1313b396a31095a1e91a02398b327f66f6cfee01c691ebbe2e",
+    "local-studio/request_state.py": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+    "scripts/compare_plain_patch.py": "8e86eddca1fb6ea59d70ab2ccb35508048812100e4ad71ec049116d95b0134dd"
+  },
+  "models": {
+    "qwen3": {
+      "model": "mlx-community/Qwen3-4B-4bit",
+      "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25"
+    },
+    "llama32": {
+      "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+      "revision": "7f0dc925e0d0afb0322d96f9255cfddf2ba5636e",
+      "card": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit"
+    }
+  },
+  "temperature": 0,
+  "max_tokens": 260,
+  "examples": [
+    [
+      "Put a navy blazer over a white crew-neck shirt.",
+      {
+        "jacket": "navy",
+        "top": "white_crewneck"
+      }
+    ],
+    [
+      "Remove the pin but do not remove the necklace.",
+      {
+        "pin": "none",
+        "necklace": "keep"
+      }
+    ],
+    [
+      "Replace the red triangular pin with a gold square pin on the viewer-right lapel.",
+      {
+        "pin": "gold_square_right"
+      }
+    ],
+    [
+      "Take off the jacket and wear a light-gray crew-neck sweater.",
+      {
+        "jacket": "none",
+        "top": "gray_sweater"
+      }
+    ],
+    [
+      "Switch the office and plant to a library with one warm floor lamp.",
+      {
+        "background": "library",
+        "prop": "lamp"
+      }
+    ],
+    [
+      "Keep the green blazer. Remove the necklace and pendant.",
+      {
+        "jacket": "keep",
+        "necklace": "none"
+      }
+    ],
+    [
+      "Use a red-brick studio with no plants, lamps or benches.",
+      {
+        "background": "brick_studio",
+        "prop": "none"
+      }
+    ]
+  ],
+  "libraries": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.16.1",
+    "huggingface-hub": "1.30.0"
+  }
+}
