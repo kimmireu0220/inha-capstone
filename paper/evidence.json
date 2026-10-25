@@ -1,10 +1,19 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "passed": true,
   "scope": "Numeric transcription and provenance QA, not independent scientific validation",
-  "manuscript_sha256": "33de8053a27400dc6c81e73bf08fbdeab29e00b9660160f3baf965b61fa02fe0",
-  "english_abstract_sha256": "57066feb2e1ffda45f818de6e74afa2cae3f63a43e109513e4eac998a71530a5",
+  "manuscript_sha256": "d2802dd1eea731b461fcdd6832126a9c6d6c0fe637c01592496762c37036a700",
+  "english_abstract_sha256": "c1c178caea90e4810005881a6b875c49ce506ebc4c1337fb0d2931835502cf31",
   "checked_values": [
+    "25/32",
+    "| 기준 방법 | 9/16 | 86/96 | 2/4 | 0 |",
+    "| 기존 유지·삭제 | 10/16 | 87/96 | 3/4 | 0 |",
+    "| 구절 정규화 | 16/16 | 96/96 | 4/4 | 0 |",
+    "| 항목별 적용 | 10/16 | 87/96 | 3/4 | 0 |",
+    "| 정규화+항목별 적용 | 16/16 | 96/96 | 4/4 | 0 |",
+    "29/32",
+    "27/32",
+    "32/32",
     "30/32",
     "32/32",
     "27/32",
@@ -53,6 +62,41 @@
   ],
   "figure_provenance_sha256": "b62abc9454402ee43e78bb4c122cc45d738ebcac27d4c09f0304d52f1e392622",
   "sources": [
+    {
+      "name": "experiments/prompt-synthesis-expanded-v1/prompt-audit.json",
+      "path": "experiments/prompt-synthesis-expanded-v1/prompt-audit.json",
+      "sha256": "82b395172f94fffe5d0a85072e5835fad77e0ca81e09fc54047554d6f6275ece"
+    },
+    {
+      "name": "experiments/prompt-synthesis-expanded-v1/plan.json",
+      "path": "experiments/prompt-synthesis-expanded-v1/plan.json",
+      "sha256": "c74033ab748b67b9c6a8195bea90cf34b7c1e46443f8a7dd7471084e77315eb8"
+    },
+    {
+      "name": "experiments/paraphrase-contract-v1/results.json",
+      "path": "experiments/paraphrase-contract-v1/results.json",
+      "sha256": "12443637d1b974f1ab7a7d294040ded0fdb839dcb743c3dce594a3e2f93b5b8e"
+    },
+    {
+      "name": "experiments/paraphrase-contract-v1/verification.json",
+      "path": "experiments/paraphrase-contract-v1/verification.json",
+      "sha256": "f6426fecaec31c801fd5f341d3ab646206efbaa5bbda9eaadb7d242fc9b3498c"
+    },
+    {
+      "name": "experiments/clause-normalization-v1/results.json",
+      "path": "experiments/clause-normalization-v1/results.json",
+      "sha256": "f542aeb013dc8265ebe01a8e0d0a3cf044bf336ae34c7fea3b3cb5b8751b2124"
+    },
+    {
+      "name": "experiments/clause-normalization-v1/verification.json",
+      "path": "experiments/clause-normalization-v1/verification.json",
+      "sha256": "be02078c5b7d90af76f3653629fcaf113144478b4e115e22344ddeaa0937ded4"
+    },
+    {
+      "name": "experiments/clause-normalization-v1/development-replay.json",
+      "path": "experiments/clause-normalization-v1/development-replay.json",
+      "sha256": "cd1474736a3ca9c48e2dc5e564fcb5af802741f2eee31668cb09461476140d25"
+    },
     {
       "name": "experiments/keep-contract-validation-v1/results.json",
       "path": "experiments/keep-contract-validation-v1/results.json",

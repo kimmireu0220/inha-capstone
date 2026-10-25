@@ -1,15 +1,17 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "document": "manuscript.inha.docx",
   "pdf": "manuscript.inha.pdf",
-  "pages": 6,
+  "pages": 8,
   "reviewed_pages": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7,
+    8
   ],
   "body_columns": 2,
   "format_references": "format-references.json",
@@ -18,9 +20,9 @@
   "tables_readable": true,
   "figure_readable": true,
   "conclusion_and_references_complete": true,
-  "pdf_sha256": "73e39c0bf06611322127edcd4029f853f57ecf515a56e818966a6433584b2991",
-  "docx_sha256": "cf4c75d8aad8cd567223b9ad29fd95cb855b89688d591d3fc165fb583a88ec67",
-  "manuscript_sha256": "33de8053a27400dc6c81e73bf08fbdeab29e00b9660160f3baf965b61fa02fe0",
+  "pdf_sha256": "1b6eeefef80ece6cc48431e2995ab435fe4c9fcc05d837991b96b0f9484754bc",
+  "docx_sha256": "cf66db5444a8b132d0b55aac8e77f9bd0be1c5724b0fe7b4b8909f0f50da5abe",
+  "manuscript_sha256": "d2802dd1eea731b461fcdd6832126a9c6d6c0fe637c01592496762c37036a700",
   "renderer": "Bundled render_docx.py / LibreOffice with installed Korean fonts exposed by paper/render_inha.py",
   "scope": "Visual and numeric-transcription QA; not institutional format approval or independent scientific validation"
 }

@@ -16,6 +16,9 @@ class SlidesTests(unittest.TestCase):
         self.assertIn('어휘와 구현을 새로 고정', slides[7]['notes'])
         self.assertIn('오류를 분석한 뒤 수행', slides[8]['notes'])
         self.assertIn('8개 요청의 결과를 별도로 집계', slides[8]['notes'])
+        self.assertIn('기준 9/16, 기존 유지·삭제 10/16', slides[8]['body'])
+        self.assertIn('정규화 16/16', slides[8]['body'])
+        self.assertIn('개발 자료 재계산', slides[8]['notes'])
 
     def test_missing_targets_fail_closed(self):
         with self.assertRaises(ValueError):

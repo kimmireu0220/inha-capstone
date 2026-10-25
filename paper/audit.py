@@ -35,6 +35,38 @@ def audit(folder):
         assert value in manuscript.splitlines(), f'Missing exact table row: {value}'
         checked.append(value)
 
+    prompt_audit = source('experiments/prompt-synthesis-expanded-v1/prompt-audit.json')
+    prompt_plan = source('experiments/prompt-synthesis-expanded-v1/plan.json')
+    assert sha(ROOT / 'experiments/prompt-synthesis-expanded-v1/prompt-audit.json') == prompt_plan['prompt_audit_sha256']
+    assert prompt_audit['histories']['H3']['agent']['superseded_conditions_still_mentioned'] == 3
+
+    paraphrase = source('experiments/paraphrase-contract-v1/results.json')
+    paraphrase_verification = source('experiments/paraphrase-contract-v1/verification.json')
+    assert paraphrase['complete'] and paraphrase['actual_model_calls'] == 64
+    assert paraphrase_verification['passed']
+    for filename, digest in paraphrase_verification['sha256'].items():
+        assert sha(ROOT / 'experiments/paraphrase-contract-v1' / filename) == digest
+    expect(f"{paraphrase['methods']['keep_remove']['exact_turns']}/32")
+
+    normalized = source('experiments/clause-normalization-v1/results.json')
+    normalized_verification = source('experiments/clause-normalization-v1/verification.json')
+    assert normalized['complete'] and normalized['actual_model_calls'] == 32
+    assert normalized_verification['passed']
+    for filename, digest in normalized_verification['sha256'].items():
+        assert sha(ROOT / 'experiments/clause-normalization-v1' / filename) == digest
+    for mode, label in [('baseline_restore', '기준 방법'), ('keep_remove', '기존 유지·삭제'),
+                        ('normalized_atomic', '구절 정규화'), ('isolated_keep_remove', '항목별 적용'),
+                        ('normalized_isolated', '정규화+항목별 적용')]:
+        result = normalized['methods'][mode]
+        row([label, f"{result['exact_turns']}/16", f"{result['correct_slots']}/96",
+             f"{result['exact_final_dialogues']}/4", result['new_errors_vs_baseline']])
+    development = source('experiments/clause-normalization-v1/development-replay.json')
+    assert development['posthoc_development'] and development['additional_model_calls'] == 0
+    for name, digest in development['sources_sha256'].items():
+        assert sha(ROOT / name) == digest
+    for mode in ['normalized_atomic', 'isolated_keep_remove', 'normalized_isolated']:
+        expect(f"{development['studies']['paraphrase-contract-v1'][mode]['exact_turns']}/32")
+
     # Development numbers remain distinguishable from frozen S/T validation.
     for name in ['keep-contract-validation-v1', 'keep-contract-v2']:
         development = source(f'experiments/{name}/results.json')
@@ -159,7 +191,7 @@ def audit(folder):
                   '합산하지 않', '해석하지 않', '해석하기 어렵', '판단하기 어렵']:
         assert token not in manuscript + abstract, f'Generic future-work wording: {token}'
     assert not re.search(r'\b[a-f0-9]{40}\b', manuscript), 'Keep model revision hashes in experiment records'
-    return {'date': '2026-10-24', 'passed': True,
+    return {'date': '2026-10-25', 'passed': True,
             'scope': 'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256': sha(folder / 'manuscript.ko.md'),
             'english_abstract_sha256': hashlib.sha256(abstract.encode()).hexdigest(),

@@ -1,0 +1,161 @@
+{
+  "posthoc_development": true,
+  "additional_model_calls": 0,
+  "sources_sha256": {
+    "experiments/paraphrase-contract-v1/frozen.json": "23db12831d94ba4d0427edb52de0a79768d7dcd815114acd829c12394089410a",
+    "experiments/paraphrase-contract-v1/transcripts.json": "4a25a3c8dfaee5f9254f6fc9b0773a7df8868231c163a888c23a1ebf31053dff",
+    "experiments/request-contract-v3/benchmark.json": "15f3baf5c9ad3514be8578c2b04114573e4d0694a6fb77e7120f5e77f1edc25b",
+    "experiments/request-contract-v3/transcripts.json": "dc40b5ec72e441689b9eee1970cc7d1c0dc414e61bd8ffcc76c54dbe5e888c2a",
+    "experiments/isolated-contract-v1/benchmark.json": "7852e5ebc3e8eb20043aa55ac86006b22d7625a0b85bd011cd9bf68288146bfc",
+    "experiments/isolated-contract-v1/transcripts.json": "8692b6edcbdf3259125eeedba5f82d71cbb85d785f665b92107241a6cb7183fc"
+  },
+  "studies": {
+    "paraphrase-contract-v1": {
+      "baseline_restore": {
+        "exact_turns": 25,
+        "turns": 32,
+        "correct_slots": 181,
+        "slots": 192,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 4,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 25,
+        "turns": 32,
+        "correct_slots": 181,
+        "slots": 192,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 4,
+        "contract_field_events": 2,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 29,
+        "turns": 32,
+        "correct_slots": 187,
+        "slots": 192,
+        "exact_final_dialogues": 7,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 1
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 27,
+        "turns": 32,
+        "correct_slots": 185,
+        "slots": 192,
+        "exact_final_dialogues": 5,
+        "newly_corrupted_unchanged_slots": 4,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_isolated": {
+        "exact_turns": 32,
+        "turns": 32,
+        "correct_slots": 192,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      }
+    },
+    "request-contract-v3": {
+      "baseline_restore": {
+        "exact_turns": 27,
+        "turns": 32,
+        "correct_slots": 184,
+        "slots": 192,
+        "exact_final_dialogues": 6,
+        "newly_corrupted_unchanged_slots": 1,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 29,
+        "turns": 32,
+        "correct_slots": 187,
+        "slots": 192,
+        "exact_final_dialogues": 7,
+        "newly_corrupted_unchanged_slots": 0,
+        "contract_field_events": 50,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 29,
+        "turns": 32,
+        "correct_slots": 187,
+        "slots": 192,
+        "exact_final_dialogues": 7,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 32,
+        "turns": 32,
+        "correct_slots": 192,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_isolated": {
+        "exact_turns": 32,
+        "turns": 32,
+        "correct_slots": 192,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      }
+    },
+    "isolated-contract-v1": {
+      "baseline_restore": {
+        "exact_turns": 28,
+        "turns": 32,
+        "correct_slots": 187,
+        "slots": 192,
+        "exact_final_dialogues": 7,
+        "newly_corrupted_unchanged_slots": 3,
+        "contract_field_events": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "keep_remove": {
+        "exact_turns": 29,
+        "turns": 32,
+        "correct_slots": 189,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 1,
+        "contract_field_events": 39,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_atomic": {
+        "exact_turns": 30,
+        "turns": 32,
+        "correct_slots": 190,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      },
+      "isolated_keep_remove": {
+        "exact_turns": 29,
+        "turns": 32,
+        "correct_slots": 189,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 1,
+        "new_errors_vs_baseline": 0
+      },
+      "normalized_isolated": {
+        "exact_turns": 30,
+        "turns": 32,
+        "correct_slots": 190,
+        "slots": 192,
+        "exact_final_dialogues": 8,
+        "newly_corrupted_unchanged_slots": 0,
+        "new_errors_vs_baseline": 0
+      }
+    }
+  }
+}

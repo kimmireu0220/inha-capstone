@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "0PQo8k8299w96w",
+  "revision_id": "ySTUQS_mkLncSQ",
   "slides": 10,
   "slide_ids": [
     "p1",
@@ -17,28 +17,30 @@
   ],
   "paper_alignment": "Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording",
   "source_sha256": {
-    "paper/manuscript.ko.md": "33de8053a27400dc6c81e73bf08fbdeab29e00b9660160f3baf965b61fa02fe0",
-    "paper/evidence.json": "378abc2eb6e76f27ce9094384d3c09ba2bb93fbd116491638a41121c517f7318",
+    "paper/manuscript.ko.md": "d2802dd1eea731b461fcdd6832126a9c6d6c0fe637c01592496762c37036a700",
+    "paper/evidence.json": "17ff57f11b51ca8c9ee11811e82aced5086af52ebb60450ca15b695cbc6a1c5d",
     "paper/figures/figure-provenance.json": "b62abc9454402ee43e78bb4c122cc45d738ebcac27d4c09f0304d52f1e392622",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
     "experiments/contract-image-v3/summary.json": "064a6a39031886bd0cd157cc728249848b34357f5b12ac835442dd191f95356c",
     "experiments/contract-image-review-v1/summary.json": "448d53b51bb4fb84c1d84df90394b4c647faf5b8492d148a6a4418188a974ce6",
     "experiments/keep-image-v1/summary.json": "965af4a0dc67c2892bed78c2c5f0142e884929617e3275cbaad3ec6354c4897f",
-    "experiments/compound-edit-v1/summary.json": "5ba8beef42932e3514fadb9aaa45a4b6ec1a3a5d5a5db0ccd35fd3f0db97c228"
+    "experiments/compound-edit-v1/summary.json": "5ba8beef42932e3514fadb9aaa45a4b6ec1a3a5d5a5db0ccd35fd3f0db97c228",
+    "experiments/clause-normalization-v1/results.json": "f542aeb013dc8265ebe01a8e0d0a3cf044bf336ae34c7fea3b3cb5b8751b2124",
+    "experiments/paraphrase-contract-v1/results.json": "12443637d1b974f1ab7a7d294040ded0fdb839dcb743c3dce594a3e2f93b5b8e"
   },
   "script_sha256": {
-    "scripts/method_slides_content.py": "7a84e6bcc914d383069444dd5f3cc3b0f8eadbab42a7cf7bafefef883400f641",
+    "scripts/method_slides_content.py": "ed99bccec3c452de6b1a46a3a3ff54a45fb4dabff6ef9ed88da0f68a70e594f8",
     "scripts/publish_method_slides.py": "ecfb53405e1b54be9ee1bc9a5d8ca0e92038abf51cebfb99855ed63e7ae4f220",
-    "scripts/verify_method_slides.py": "01c4ba11bab0de21311c3ab283ced45ff60d39d60904966dd9bb5b9038fde2e0"
+    "scripts/verify_method_slides.py": "ae67e16cf2651fda88ac37038e45775a313e96ea6fa8e844fc7f75706f7157a8"
   },
-  "content_sha256": "60dcfdbcdbc3cf86ebff0c0d57acbce613891fa9857f2719bddda95ecea8e0a9",
+  "content_sha256": "f6d7cfec69421dda089482bbd1846ccf6d34cae57ed05a1b08e63961a4c71bb6",
   "editable_evidence": {
     "tables": 3,
     "images": 8,
     "notes": 10
   },
-  "snapshot_sha256": "c8308c65351204087a7a9a194f147fd53244e9710424f17173ed5cb4e49a1628",
+  "snapshot_sha256": "bd7c3ab58ae361602a0a335a9f08bf0f961f029158247d0335e29b4938cb25b4",
   "visual_check": {
     "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
     "reviewed_slides": [
@@ -56,14 +58,14 @@
     "visible_overlap_or_clipping_found": false,
     "preview_sha256": {
       "1": "6026869f76b36a611cd622aff3c77b8067237620fd3210134787645cfa193c12",
-      "2": "a6e6945a647e915eeefd4f65cb13de769f30793ffa6559d5c01177e16d864e00",
+      "2": "b23615af313cd8339b589021743b775984cffd86b3e8cf40f386d7da5511fe23",
       "3": "76fe247bfdcde677d7ac9b0f93fd3904bb36b2ddb5c5690b3b10235ca566e105",
       "4": "3d9ed24ea8e5c6f9725318fc56881764cb80f207ca6f764ef094af890df8134f",
       "5": "8115b31467d8cea0169496565b8773712b9f7184c6df447939387acad5238389",
       "6": "61e4156fb8a9f247b8323dc620f014bed30e6e8dd548a4260e799b64813360ee",
       "7": "2648c019bd36e22549d889d40a5b49e90b54fbf5dfba79f60c0d98e5057fffd0",
       "8": "cfdbe6f7ba8cb1281b918104831dff8eba1adb80d290a0cd9dedfc048f6746a5",
-      "9": "5dad235c841ccaa3e878a2126c765edc0235980a69abf9b9d30dc1a854243ca1",
+      "9": "cbdbecbc5d9b2a081430e211c62291f899c53e337d33f591fdaac5cf04b9b19b",
       "10": "609f0db400e0812a7563cd566439f5701120f2a3be4b68dade297ca891bbea22"
     }
   },

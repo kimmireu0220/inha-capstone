@@ -35,7 +35,7 @@ def check():
                           ('manuscript.inha.docx', 'docx_sha256'),
                           ('manuscript.inha.pdf', 'pdf_sha256')]:
         assert digest(ROOT / 'paper' / filename) == render[key], filename
-    assert render['all_pages_visually_reviewed'] and render['pages'] == 6
+    assert render['all_pages_visually_reviewed'] and render['pages'] == 8
     assert render['body_columns'] == 2
     assert render['reviewed_pages'] == list(range(1, render['pages'] + 1))
     assert digest(ROOT / 'paper/figures/figure-provenance.json') == evidence['figure_provenance_sha256']
@@ -65,6 +65,21 @@ def check():
     for folder in ['state-tracking-v1', 'state-tracking-v2', 'state-format-control-v1']:
         current.extend((ROOT / 'experiments' / folder).glob('*.md'))
         assert not (ROOT / 'experiments' / folder / 'human-ratings.csv').exists()
+    for study in ['paraphrase-contract-v1', 'clause-normalization-v1']:
+        current.extend((ROOT / 'experiments' / study).glob('*.md'))
+        folder = ROOT / 'experiments' / study
+        verified = json.loads((folder / 'verification.json').read_text())
+        assert verified['passed']
+        assert digest(folder / 'report.py') == verified['verifier_sha256']
+        for name, expected in verified['sha256'].items():
+            assert digest(folder / name) == expected, f'{study}/{name}'
+        frozen = json.loads((folder / 'frozen.json').read_text())
+        for name, expected in frozen['sha256'].items():
+            assert digest(ROOT / name) == expected, name
+    development = load('experiments/clause-normalization-v1/development-replay.json')
+    assert development['posthoc_development'] and development['additional_model_calls'] == 0
+    for name, expected in development['sources_sha256'].items():
+        assert digest(ROOT / name) == expected, name
     forbidden = re.compile(r'independent_human|human-ratings\.csv|독립 인간 평가|사람용 양식')
     for path in current:
         contents = path.read_text()
@@ -155,7 +170,7 @@ def check():
         review_status = 'complete'
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
-          f'AI evaluation setup and {len(verified_studies)} verified text studies; '
+          f'AI evaluation setup and {len(verified_studies) + 2} verified text studies; '
           f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 
 

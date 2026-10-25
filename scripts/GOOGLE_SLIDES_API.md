@@ -1,6 +1,6 @@
 # Google Slides API 관리
 
-2026-10-06 OAuth 재승인과 최신 방법 논문 반영을 완료했다. [발표 자료](../artifacts/README.md)는 10장이다. 토큰과 OAuth 클라이언트 파일은 저장소 밖의 `~/.config/inha-capstone/`에만 둔다.
+2026-10-25 지시 구절 정규화 검증을 포함한 최신 논문을 온라인 자료에 반영했다. [발표 자료](../artifacts/README.md)는 10장이다. 토큰과 OAuth 클라이언트 파일은 저장소 밖의 `~/.config/inha-capstone/`에만 둔다.
 
 ## 읽기와 편집
 
