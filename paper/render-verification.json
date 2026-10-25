@@ -2,7 +2,7 @@
   "date": "2026-10-25",
   "document": "manuscript.inha.docx",
   "pdf": "manuscript.inha.pdf",
-  "pages": 11,
+  "pages": 13,
   "reviewed_pages": [
     1,
     2,
@@ -14,7 +14,9 @@
     8,
     9,
     10,
-    11
+    11,
+    12,
+    13
   ],
   "body_columns": 2,
   "format_references": "format-references.json",
@@ -23,9 +25,26 @@
   "tables_readable": true,
   "figure_readable": true,
   "conclusion_and_references_complete": true,
-  "pdf_sha256": "a96976cad50d59749986d61b82c1912d182b299095149ee72b3284c99d496d81",
-  "docx_sha256": "0844fc362b81c52b45eb95697eb53cac1a8b9643eb054fefceb0d09e45fcb9c5",
-  "manuscript_sha256": "e53f1cd3134f85e5ec055edc141842f185406d74f99cdc6c3dc508abb3a9e4fd",
+  "pdf_sha256": "c1b43e8037cd8737f6fda56b5392b3e1b0455346b622472626ee477d16fe4b86",
+  "docx_sha256": "5021ff4d83bb1bcecee8dc598b53dd88f7bc263650afe1f2fedd8b4468eaa947",
+  "manuscript_sha256": "88401b3429b130a86df6f734d4a92ebcf6c7e3b4e491a1be244ea71dcfd32f58",
   "renderer": "Bundled render_docx.py / LibreOffice with installed Korean fonts exposed by paper/render_inha.py",
-  "scope": "Visual and numeric-transcription QA; not institutional format approval or independent scientific validation"
+  "scope": "Visual and numeric-transcription QA; not institutional format approval or independent scientific validation",
+  "layout_sha256": "d968195ba41edc10e65ed54771e710d2f1c650e6d9a4bef514209db473e0f2db",
+  "builder_sha256": "6d0b646a80e96d35e0c6c330b1d3ac99f4f639e563b3eca37bf341cace66bf06",
+  "page_preview_sha256": {
+    "1": "a6eb924bac4d6ca8e22e813be736bc1851e9411ea6914e6579f7d93b0c4c2825",
+    "2": "6e65dcfd10f5a8183bce422248315e80ef8d1f14c05fb13c58410c22d4c1fea3",
+    "3": "9ba07366f79d7d3eccfcd804fdad7dbeb3f1a66d6e8be77b9b3cdf29fbb7f230",
+    "4": "5dbc9308ff31bcc8200eb97491678d6c5ed0052d3f26babdacd41d0b4674c718",
+    "5": "d069334f2495bb3e493cd318307175e07674516b677d7eea301a23524b59766b",
+    "6": "e19641f27edc9d81622a0844ad8fd965097cbdb4dbe709b3be1ad3c1d67167a9",
+    "7": "060129ad37576eb2650253df89cd4420a40b42e61f8a800a725a4622e3c6597a",
+    "8": "149b2e5cdf02c2bcb8b870af37ee7b7dee35191892909a6be920a1f2fe201cf0",
+    "9": "c05daa211b4e592682382850c53c5bcf58fdbcc42c2d223306aefdaceadbc392",
+    "10": "58fa4ea9fa22a448052686191ddfbc9a144da34c10a48ba1fb473dde4ed0f173",
+    "11": "2fa00e50731808c5790697be037326d27c14c10e9afbeea6d4489112a0838c1c",
+    "12": "348f955487cd4a17a9d1f283d2fa287ea8654c59aed94f540754acbb6f554a24",
+    "13": "a694ba2144ea695b77d8d0a7a241dd00100349a26f34643195e7817201b75af7"
+  }
 }

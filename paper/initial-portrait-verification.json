@@ -1,0 +1,2177 @@
+{
+  "historical_reanalysis": true,
+  "new_image_calls": 0,
+  "people": 6,
+  "stages_per_person": 10,
+  "paired_endpoints": 6,
+  "sequential_outputs": 60,
+  "total_measured_outputs": 66,
+  "source_sha256": {
+    "experiments/nonhuman-followup-v1/extension-metrics/results.json": "68b6c8990d731a64a36d4ada43b9644ee034d795b3e2e53e155035112086b628",
+    "experiments/nonhuman-followup-v1/metrics/analyze.py": "ebfc2d862d9ddd3c6ec670fd8168ddbf6ae4a9644ce150244f7c25de44b0f6d9"
+  },
+  "verifier_sha256": "e54c89d34e46be82b7595ed8e1272418a335d9562d244cba5ed8b4e3e09f52a4",
+  "checked_images": {
+    "experiments/revised-tail-v1/generated/7c8d0946616d761ad2d55ef859cbfacf70d0a8a0e113205fcd9874e489821ef7.png": "7b8d398a7ebb4855be7f8667f496e49f6da50d799b6d50b41b51c9887772a2f7",
+    "assets/people/P01.png": "eafb7d0113d1039271f2475f622c54effa3acad314497c01b6ec55f1c290d0d8",
+    "experiments/nonhuman-followup-v1/generation/generated/f7d3d61c9268e64cdc10e69fc83fa2fc13f9fa1ffa411135f7996d984320514a.png": "f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965",
+    "experiments/revised-tail-v1/generated/d420a5bf6e07cffe19c5db8e418c56b5ca39efb940549ee148cc5a155c9c573a.png": "9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43",
+    "assets/people/P02.png": "b131a72a3df0e499fd0740e8252004d56f759bf79f35de60fc4e5027a8aa5da0",
+    "experiments/nonhuman-followup-v1/generation/generated/f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398.png": "4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe",
+    "experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png": "521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
+    "assets/people/P03.png": "24a259085f3e7460cdf1989788b3dfbd8168582aeb54cdd53c1de52fd360691d",
+    "experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png": "475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
+    "experiments/revised-tail-v1/generated/eda17b0b5f52c14a740cbb1d937d90e7bfd2ebb33fd7fe887d5bbb1b6d1c4987.png": "5aa04a5c54be19bcc2bb750402d42bffcc8fb6dd4fc1d7d85ded4388fe163b08",
+    "experiments/trigger-validation-v1/P04/reference.png": "a3f8e0261a11f281fc3065ef628990e945e171149ea9505057a2bdf3ec691180",
+    "experiments/revised-tail-v1/generated/0584df0f0264621e36baf9958de82a612b7952e9f8cec8396db470aafe1acf0f.png": "58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf",
+    "experiments/revised-tail-v1/generated/78f6bc399780d19df4f64cb8bbb4c0fcb6a48d10040828b34ff19058ab49f628.png": "d9f6bb7cb333570fa80e508e444b49db0e1cde91640e19f363e7c17b18ebc3f1",
+    "experiments/trigger-validation-v1/P05/reference.png": "8f3f729c8cb4a53b9ef2584e810673ee5b7133b5ea9263b75b77e0a1c6866bc2",
+    "experiments/nonhuman-followup-v1/generation/generated/c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f.png": "2197ec4b57bfc80159ea1682b352432f948353c0fe358d40828b2d3b5ba0b9f1",
+    "experiments/revised-tail-v1/generated/608125c2cadb67320d528299817b86ec178b0aaca3d86bb2051578ea16482f21.png": "6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a",
+    "experiments/trigger-validation-v1/P06/reference.png": "0c066a6530f05a89f4087c0278dab449ec735118b588baf024133c40647c0767",
+    "experiments/nonhuman-followup-v1/generation/generated/9f07dd1ff9f715e364bbfb6b8429a6bb85ffdb1a1dffbadc3606fa87133e26b0.png": "2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074",
+    "experiments/ten-stage-v1/step-1.png": "3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043",
+    "experiments/ten-stage-v1/step-2.png": "5edf621a615953f5454253bd0ea31f3c9b0a40ff0e037d0a27286c04e4a44a8e",
+    "experiments/ten-stage-v1/step-3.png": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+    "experiments/ten-stage-v1/step-4.png": "93069e877fb11f264f2f8af78ab9c008158be25cdafee7422470c38d49eec4a6",
+    "experiments/ten-stage-v1/step-5.png": "920021a6c61ee4781e4b3eea0c42cee999eaf258855b6ebe212f6f44d0b2f91e",
+    "experiments/ten-stage-v1/step-6.png": "62722e56d65c4519472ba85f6cfbab205edb03e6362e434a6bc5f35b4d11ffe1",
+    "experiments/ten-stage-v1/step-7.png": "e8abd8ccfffaead18ab620feeda61f6b002ad1e270ead96393bb47f846a761b2",
+    "experiments/ten-stage-v1/step-8.png": "35960e73a70622c0624edddfc39de04be7967e1bd5d9672e4147f6e1e0995b7c",
+    "experiments/revised-tail-v1/generated/c770278a2aa512cc0ba98d51e4482a2f034e87fafb628ac50b19e581e4b98d07.png": "c9452208da161ff37ad673d387e91d685c8462fce65c82a548dc1a6cf5a6eb6e",
+    "experiments/ten-stage-p02-v1/step-1.png": "6422f8b64f6844af7ea0f0e89708fb3d74ee0a666f76ec2348b819285fa81386",
+    "experiments/ten-stage-p02-v1/step-2.png": "a5c7b3cb7efb45f4dc0700bb8d69adc8d87c42f27de5157c2bc7ab6ec1eb5ae5",
+    "experiments/ten-stage-p02-v1/step-3.png": "aeec89e4090fd037e749ed471be7f1378df4d528ceb7026ce935de3ecbaeb135",
+    "experiments/ten-stage-p02-v1/step-4.png": "0cbd67590dc9d6924e97a9bdeb700db2988b50c0b9ef26d4d2c9f61609779fd2",
+    "experiments/ten-stage-p02-v1/step-5.png": "de3404e40c52884eca4700f7141ed4dd245b04347493aa7030ef33d844da63f6",
+    "experiments/ten-stage-p02-v1/step-6.png": "3759fd3429ad1b07fe4effade7e47d5815091fb64b3f65f40321767d4f936596",
+    "experiments/ten-stage-p02-v1/step-7.png": "0affc060402d8b0072c4f0ae399f9b19d53b46764d81f434739084ab1399d67a",
+    "experiments/ten-stage-p02-v1/step-8.png": "15a93c0b704376c2a9e617da20ec9ad467618d63332beaaaf34673500c50b815",
+    "experiments/revised-tail-v1/generated/cf272b209fce91dcbb34a793ef6b4828230a54d0ed473de855d7cce5a13af6de.png": "f96bdff0df1d5a089625e70d6b99ef20b09138200735d9ebe7f22f4982555ca9",
+    "experiments/ten-stage-p03-v1/run-1/step-1.png": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+    "experiments/ten-stage-p03-v1/run-1/step-2.png": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+    "experiments/ten-stage-p03-v1/run-1/step-3.png": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+    "experiments/ten-stage-p03-v1/run-1/step-4.png": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+    "experiments/ten-stage-p03-v1/run-1/step-5.png": "fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
+    "experiments/ten-stage-p03-v1/run-1/step-6.png": "66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
+    "experiments/ten-stage-p03-v1/run-1/step-7.png": "323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
+    "experiments/ten-stage-p03-v1/run-1/step-8.png": "8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
+    "experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png": "d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465",
+    "experiments/trigger-validation-v1/P04/step-1.png": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+    "experiments/trigger-validation-v1/P04/step-2.png": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+    "experiments/trigger-validation-v1/P04/step-3.png": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+    "experiments/trigger-validation-v1/P04/step-4.png": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+    "experiments/trigger-validation-v1/P04/step-5.png": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+    "experiments/trigger-validation-v1/P04/step-6.png": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+    "experiments/trigger-validation-v1/P04/step-7.png": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+    "experiments/trigger-validation-v1/P04/step-8.png": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+    "experiments/revised-tail-v1/generated/c39cf5cf388d11ff05256723aea92efedb1062f57f7dcb95a1a31d1e3f2d67b3.png": "69dd6819343740ae5cb234dcec7dd78d7998ba197a3a1b2da94a459382353519",
+    "experiments/trigger-validation-v1/P05/step-1.png": "6d9106aa3aadeeb985b1878c5509ce0f5da341b972cfbce4be9c79454841b09d",
+    "experiments/trigger-validation-v1/P05/step-2.png": "f6f9652b5ac951928b29a122fdc799834db4acc6f9830732f5c09925e77bf305",
+    "experiments/trigger-validation-v1/P05/step-3.png": "5590e5c30ece7661bb1ac2d39e4c4d14f0c2dd48f62302623e4b03c967374eef",
+    "experiments/trigger-validation-v1/P05/step-4.png": "9b1a43ca55185dd3d4b046d97d01afd48996708f2781878e37527aae66ea7709",
+    "experiments/trigger-validation-v1/P05/step-5.png": "b29fc97456cd3f84f2b43093ccea9d3fe5702bb55f1d94c8be875da01a4b1130",
+    "experiments/trigger-validation-v1/P05/step-6.png": "a47813f7d3aefc2c386f4384c503c27678447332af629c936c3fe5295902e42b",
+    "experiments/trigger-validation-v1/P05/step-7.png": "824ca468c306cdae41af869c08bed8c0e10c4e1707bc2c9e74fce91fca53ab1a",
+    "experiments/trigger-validation-v1/P05/step-8.png": "5952565501716b3ad06bbbd5e9d307c65ce548f0ed2c5e3aae046a7912bc4f37",
+    "experiments/revised-tail-v1/generated/9d5a2414af8ab26ea6b8232f73a50093c0f511d02bf8fa3ce7910213eeaa3323.png": "2ecf2d7404183ed9e9888331c55941bf86fceff3e4b66019dfe448122475a1fe",
+    "experiments/trigger-validation-v1/P06/step-1.png": "5d52a0d716c9c76ad725e99e9910eb81a8db5770702f0e8e02e69aafd5818e14",
+    "experiments/trigger-validation-v1/P06/step-2.png": "3b0dd622f8fe7c0ce8b4fb8173e2cf7f414d37dfc02b5b5ed5218ee1b7e428aa",
+    "experiments/trigger-validation-v1/P06/step-3.png": "fbbc2f2a6163d555e1cfe9aa8bd0b836abb7242576e8e31f189650aa2a3a61dd",
+    "experiments/trigger-validation-v1/P06/step-4.png": "999c822946c3ba0b1ba32398cf2aee0200536848c685cf8da8c0fc439dc5ea0c",
+    "experiments/trigger-validation-v1/P06/step-5.png": "b84bcc00604b0f5d45b0383d3fee5eb80b760ac6cce6f75ba3b8dfbdfe20fd14",
+    "experiments/trigger-validation-v1/P06/step-6.png": "a9729e585d5348ed34aaf1f92af2a3e0ec4dadf621f955e39646fb3f1af7ce00",
+    "experiments/trigger-validation-v1/P06/step-7.png": "a0348cfeb5cdaca256c07bd58d3bd4088750b2e9853c7faba0f4bacfba46129d",
+    "experiments/trigger-validation-v1/P06/step-8.png": "ad66feeb437d1f0d721778bce79f6d8326bd6d7e76d101eea6ea0e32ab23ab23",
+    "experiments/revised-tail-v1/generated/f5056d73335a30e55762621567865688d01c6c2f09b94185f82ed8e93e706ae3.png": "77acee908b5367fff308bee17f4dfb5e1154953057b0dd48eb5c1037893da094"
+  },
+  "max_metric_replay_error": 0.0,
+  "original_based_favorable_pairs": {
+    "fixed": {
+      "mae": 5,
+      "ssim": 5,
+      "lpips": 5
+    },
+    "1": {
+      "mae": 6,
+      "ssim": 6,
+      "lpips": 6
+    },
+    "3": {
+      "mae": 6,
+      "ssim": 6,
+      "lpips": 6
+    },
+    "6": {
+      "mae": 6,
+      "ssim": 6,
+      "lpips": 6
+    }
+  },
+  "stage_registered_means": {
+    "1": {
+      "mae": 0.017615880196293194,
+      "ssim": 0.8769716322422028,
+      "lpips": 0.042115929226080574
+    },
+    "2": {
+      "mae": 0.023548938023547333,
+      "ssim": 0.8336933851242065,
+      "lpips": 0.06292728148400784
+    },
+    "3": {
+      "mae": 0.03018394609292348,
+      "ssim": 0.8014207979043325,
+      "lpips": 0.08345192608733971
+    },
+    "4": {
+      "mae": 0.04264255799353123,
+      "ssim": 0.7493438522020975,
+      "lpips": 0.11689223224918048
+    },
+    "5": {
+      "mae": 0.06875275075435638,
+      "ssim": 0.6603461106618246,
+      "lpips": 0.17350477476914725
+    },
+    "6": {
+      "mae": 0.07162873322765033,
+      "ssim": 0.6365215877691904,
+      "lpips": 0.18968129406372705
+    },
+    "7": {
+      "mae": 0.07440284887949626,
+      "ssim": 0.6138820946216583,
+      "lpips": 0.2010966862241427
+    },
+    "8": {
+      "mae": 0.07717959582805634,
+      "ssim": 0.5880551834901174,
+      "lpips": 0.21692025661468506
+    },
+    "9": {
+      "mae": 0.08129838357369105,
+      "ssim": 0.5610278099775314,
+      "lpips": 0.23860178142786026
+    },
+    "10": {
+      "mae": 0.1621751052637895,
+      "ssim": 0.4082333544890086,
+      "lpips": 0.3640149037043254
+    }
+  },
+  "sequential_rows": [
+    {
+      "person": "P01",
+      "stage": 1,
+      "path": "experiments/ten-stage-v1/step-1.png",
+      "sha256": "3283b698d37221ba9bb1e6190ab288a591d65dca1b2990d21299993b8bd54043",
+      "face": {
+        "fixed": {
+          "mae": 0.01682279445230961,
+          "ssim": 0.9092685580253601,
+          "lpips": 0.029075920581817627
+        },
+        "1": {
+          "mae": 0.01682279445230961,
+          "ssim": 0.9092685580253601,
+          "lpips": 0.029075920581817627
+        },
+        "3": {
+          "mae": 0.01682279445230961,
+          "ssim": 0.9092685580253601,
+          "lpips": 0.029075920581817627
+        },
+        "6": {
+          "mae": 0.01682279445230961,
+          "ssim": 0.9092685580253601,
+          "lpips": 0.029075920581817627
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 2,
+      "path": "experiments/ten-stage-v1/step-2.png",
+      "sha256": "5edf621a615953f5454253bd0ea31f3c9b0a40ff0e037d0a27286c04e4a44a8e",
+      "face": {
+        "fixed": {
+          "mae": 0.025318698957562447,
+          "ssim": 0.8610936999320984,
+          "lpips": 0.045663982629776
+        },
+        "1": {
+          "mae": 0.023979511111974716,
+          "ssim": 0.86857670545578,
+          "lpips": 0.04554736241698265
+        },
+        "3": {
+          "mae": 0.023979511111974716,
+          "ssim": 0.86857670545578,
+          "lpips": 0.04554736241698265
+        },
+        "6": {
+          "mae": 0.023979511111974716,
+          "ssim": 0.86857670545578,
+          "lpips": 0.04554736241698265
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 3,
+      "path": "experiments/ten-stage-v1/step-3.png",
+      "sha256": "f58ce0880a9001f1a2369d497c4e04bf5e9ed5dcb04bf1f91b79f92fd6d81429",
+      "face": {
+        "fixed": {
+          "mae": 0.03235635906457901,
+          "ssim": 0.8246541023254395,
+          "lpips": 0.06535055488348007
+        },
+        "1": {
+          "mae": 0.029664114117622375,
+          "ssim": 0.847237765789032,
+          "lpips": 0.061555471271276474
+        },
+        "3": {
+          "mae": 0.029664114117622375,
+          "ssim": 0.847237765789032,
+          "lpips": 0.061555471271276474
+        },
+        "6": {
+          "mae": 0.029664114117622375,
+          "ssim": 0.847237765789032,
+          "lpips": 0.061555471271276474
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 4,
+      "path": "experiments/ten-stage-v1/step-4.png",
+      "sha256": "93069e877fb11f264f2f8af78ab9c008158be25cdafee7422470c38d49eec4a6",
+      "face": {
+        "fixed": {
+          "mae": 0.04575975611805916,
+          "ssim": 0.7748034000396729,
+          "lpips": 0.09369942545890808
+        },
+        "1": {
+          "mae": 0.04218009114265442,
+          "ssim": 0.8089295029640198,
+          "lpips": 0.08704492449760437
+        },
+        "3": {
+          "mae": 0.04218009114265442,
+          "ssim": 0.8089295029640198,
+          "lpips": 0.08704492449760437
+        },
+        "6": {
+          "mae": 0.04218009114265442,
+          "ssim": 0.8089295029640198,
+          "lpips": 0.08704492449760437
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 5,
+      "path": "experiments/ten-stage-v1/step-5.png",
+      "sha256": "920021a6c61ee4781e4b3eea0c42cee999eaf258855b6ebe212f6f44d0b2f91e",
+      "face": {
+        "fixed": {
+          "mae": 0.05325869098305702,
+          "ssim": 0.7275538444519043,
+          "lpips": 0.1472696214914322
+        },
+        "1": {
+          "mae": 0.04936990141868591,
+          "ssim": 0.7596468925476074,
+          "lpips": 0.1388384848833084
+        },
+        "3": {
+          "mae": 0.04936990141868591,
+          "ssim": 0.7596468925476074,
+          "lpips": 0.1388384848833084
+        },
+        "6": {
+          "mae": 0.04936990141868591,
+          "ssim": 0.7596468925476074,
+          "lpips": 0.1388384848833084
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 6,
+      "path": "experiments/ten-stage-v1/step-6.png",
+      "sha256": "62722e56d65c4519472ba85f6cfbab205edb03e6362e434a6bc5f35b4d11ffe1",
+      "face": {
+        "fixed": {
+          "mae": 0.05713431537151337,
+          "ssim": 0.7041564583778381,
+          "lpips": 0.15798193216323853
+        },
+        "1": {
+          "mae": 0.052986495196819305,
+          "ssim": 0.7396819591522217,
+          "lpips": 0.14989019930362701
+        },
+        "3": {
+          "mae": 0.052986495196819305,
+          "ssim": 0.7396819591522217,
+          "lpips": 0.14989019930362701
+        },
+        "6": {
+          "mae": 0.052986495196819305,
+          "ssim": 0.7396819591522217,
+          "lpips": 0.14989019930362701
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 7,
+      "path": "experiments/ten-stage-v1/step-7.png",
+      "sha256": "e8abd8ccfffaead18ab620feeda61f6b002ad1e270ead96393bb47f846a761b2",
+      "face": {
+        "fixed": {
+          "mae": 0.06003551930189133,
+          "ssim": 0.6880168914794922,
+          "lpips": 0.16779829561710358
+        },
+        "1": {
+          "mae": 0.05739738047122955,
+          "ssim": 0.7098167538642883,
+          "lpips": 0.15942201018333435
+        },
+        "3": {
+          "mae": 0.05739738047122955,
+          "ssim": 0.7098167538642883,
+          "lpips": 0.15942201018333435
+        },
+        "6": {
+          "mae": 0.05739738047122955,
+          "ssim": 0.7098167538642883,
+          "lpips": 0.15942201018333435
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 8,
+      "path": "experiments/ten-stage-v1/step-8.png",
+      "sha256": "35960e73a70622c0624edddfc39de04be7967e1bd5d9672e4147f6e1e0995b7c",
+      "face": {
+        "fixed": {
+          "mae": 0.06567317992448807,
+          "ssim": 0.6651027202606201,
+          "lpips": 0.17702649533748627
+        },
+        "1": {
+          "mae": 0.06358537822961807,
+          "ssim": 0.6855347156524658,
+          "lpips": 0.1700306236743927
+        },
+        "3": {
+          "mae": 0.06358537822961807,
+          "ssim": 0.6855347156524658,
+          "lpips": 0.1700306236743927
+        },
+        "6": {
+          "mae": 0.06358537822961807,
+          "ssim": 0.6855347156524658,
+          "lpips": 0.1700306236743927
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 9,
+      "path": "experiments/revised-tail-v1/generated/c770278a2aa512cc0ba98d51e4482a2f034e87fafb628ac50b19e581e4b98d07.png",
+      "sha256": "c9452208da161ff37ad673d387e91d685c8462fce65c82a548dc1a6cf5a6eb6e",
+      "face": {
+        "fixed": {
+          "mae": 0.07317664474248886,
+          "ssim": 0.6282134652137756,
+          "lpips": 0.20342886447906494
+        },
+        "1": {
+          "mae": 0.07095509022474289,
+          "ssim": 0.6513688564300537,
+          "lpips": 0.19450446963310242
+        },
+        "3": {
+          "mae": 0.07095509022474289,
+          "ssim": 0.6513688564300537,
+          "lpips": 0.19450446963310242
+        },
+        "6": {
+          "mae": 0.07095509022474289,
+          "ssim": 0.6513688564300537,
+          "lpips": 0.19450446963310242
+        }
+      }
+    },
+    {
+      "person": "P01",
+      "stage": 10,
+      "path": "experiments/revised-tail-v1/generated/7c8d0946616d761ad2d55ef859cbfacf70d0a8a0e113205fcd9874e489821ef7.png",
+      "sha256": "7b8d398a7ebb4855be7f8667f496e49f6da50d799b6d50b41b51c9887772a2f7",
+      "face": {
+        "fixed": {
+          "mae": 0.14570675790309906,
+          "ssim": 0.4989817440509796,
+          "lpips": 0.27048414945602417
+        },
+        "1": {
+          "mae": 0.14212055504322052,
+          "ssim": 0.5297394394874573,
+          "lpips": 0.2594680190086365
+        },
+        "3": {
+          "mae": 0.1428041160106659,
+          "ssim": 0.5281270146369934,
+          "lpips": 0.2617783844470978
+        },
+        "6": {
+          "mae": 0.14613395929336548,
+          "ssim": 0.4931087791919708,
+          "lpips": 0.2680579721927643
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 1,
+      "path": "experiments/ten-stage-p02-v1/step-1.png",
+      "sha256": "6422f8b64f6844af7ea0f0e89708fb3d74ee0a666f76ec2348b819285fa81386",
+      "face": {
+        "fixed": {
+          "mae": 0.021788310259580612,
+          "ssim": 0.8218111991882324,
+          "lpips": 0.05121392011642456
+        },
+        "1": {
+          "mae": 0.021788310259580612,
+          "ssim": 0.8218111991882324,
+          "lpips": 0.05121392011642456
+        },
+        "3": {
+          "mae": 0.021788310259580612,
+          "ssim": 0.8218111991882324,
+          "lpips": 0.05121392011642456
+        },
+        "6": {
+          "mae": 0.021788310259580612,
+          "ssim": 0.8218111991882324,
+          "lpips": 0.05121392011642456
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 2,
+      "path": "experiments/ten-stage-p02-v1/step-2.png",
+      "sha256": "a5c7b3cb7efb45f4dc0700bb8d69adc8d87c42f27de5157c2bc7ab6ec1eb5ae5",
+      "face": {
+        "fixed": {
+          "mae": 0.030131500214338303,
+          "ssim": 0.7501263618469238,
+          "lpips": 0.07663755118846893
+        },
+        "1": {
+          "mae": 0.029172420501708984,
+          "ssim": 0.759837806224823,
+          "lpips": 0.0755927711725235
+        },
+        "3": {
+          "mae": 0.029172420501708984,
+          "ssim": 0.759837806224823,
+          "lpips": 0.0755927711725235
+        },
+        "6": {
+          "mae": 0.029172420501708984,
+          "ssim": 0.759837806224823,
+          "lpips": 0.0755927711725235
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 3,
+      "path": "experiments/ten-stage-p02-v1/step-3.png",
+      "sha256": "aeec89e4090fd037e749ed471be7f1378df4d528ceb7026ce935de3ecbaeb135",
+      "face": {
+        "fixed": {
+          "mae": 0.03669736534357071,
+          "ssim": 0.6926453709602356,
+          "lpips": 0.0967579185962677
+        },
+        "1": {
+          "mae": 0.034644950181245804,
+          "ssim": 0.7151186466217041,
+          "lpips": 0.09539806097745895
+        },
+        "3": {
+          "mae": 0.034902580082416534,
+          "ssim": 0.7117676734924316,
+          "lpips": 0.0966821014881134
+        },
+        "6": {
+          "mae": 0.034902580082416534,
+          "ssim": 0.7117676734924316,
+          "lpips": 0.0966821014881134
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 4,
+      "path": "experiments/ten-stage-p02-v1/step-4.png",
+      "sha256": "0cbd67590dc9d6924e97a9bdeb700db2988b50c0b9ef26d4d2c9f61609779fd2",
+      "face": {
+        "fixed": {
+          "mae": 0.04702320322394371,
+          "ssim": 0.6243091225624084,
+          "lpips": 0.12890082597732544
+        },
+        "1": {
+          "mae": 0.04364503175020218,
+          "ssim": 0.663843035697937,
+          "lpips": 0.12440567463636398
+        },
+        "3": {
+          "mae": 0.04364503175020218,
+          "ssim": 0.663843035697937,
+          "lpips": 0.12440567463636398
+        },
+        "6": {
+          "mae": 0.04364503175020218,
+          "ssim": 0.663843035697937,
+          "lpips": 0.12440567463636398
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 5,
+      "path": "experiments/ten-stage-p02-v1/step-5.png",
+      "sha256": "de3404e40c52884eca4700f7141ed4dd245b04347493aa7030ef33d844da63f6",
+      "face": {
+        "fixed": {
+          "mae": 0.07907287031412125,
+          "ssim": 0.4742469787597656,
+          "lpips": 0.18909992277622223
+        },
+        "1": {
+          "mae": 0.06668028980493546,
+          "ssim": 0.5924898982048035,
+          "lpips": 0.17104068398475647
+        },
+        "3": {
+          "mae": 0.06668028980493546,
+          "ssim": 0.5924898982048035,
+          "lpips": 0.17104068398475647
+        },
+        "6": {
+          "mae": 0.06668028980493546,
+          "ssim": 0.5924898982048035,
+          "lpips": 0.17104068398475647
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 6,
+      "path": "experiments/ten-stage-p02-v1/step-6.png",
+      "sha256": "3759fd3429ad1b07fe4effade7e47d5815091fb64b3f65f40321767d4f936596",
+      "face": {
+        "fixed": {
+          "mae": 0.0823577344417572,
+          "ssim": 0.45751288533210754,
+          "lpips": 0.20260554552078247
+        },
+        "1": {
+          "mae": 0.0708954781293869,
+          "ssim": 0.5689559578895569,
+          "lpips": 0.18510954082012177
+        },
+        "3": {
+          "mae": 0.07125925272703171,
+          "ssim": 0.5664193630218506,
+          "lpips": 0.18683218955993652
+        },
+        "6": {
+          "mae": 0.0719980001449585,
+          "ssim": 0.5596897602081299,
+          "lpips": 0.18665340542793274
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 7,
+      "path": "experiments/ten-stage-p02-v1/step-7.png",
+      "sha256": "0affc060402d8b0072c4f0ae399f9b19d53b46764d81f434739084ab1399d67a",
+      "face": {
+        "fixed": {
+          "mae": 0.08702487498521805,
+          "ssim": 0.4287870228290558,
+          "lpips": 0.23098960518836975
+        },
+        "1": {
+          "mae": 0.07623013854026794,
+          "ssim": 0.5345602035522461,
+          "lpips": 0.21453231573104858
+        },
+        "3": {
+          "mae": 0.0768977478146553,
+          "ssim": 0.5289155840873718,
+          "lpips": 0.21645808219909668
+        },
+        "6": {
+          "mae": 0.0768977478146553,
+          "ssim": 0.5289155840873718,
+          "lpips": 0.21645808219909668
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 8,
+      "path": "experiments/ten-stage-p02-v1/step-8.png",
+      "sha256": "15a93c0b704376c2a9e617da20ec9ad467618d63332beaaaf34673500c50b815",
+      "face": {
+        "fixed": {
+          "mae": 0.09236957877874374,
+          "ssim": 0.3990817070007324,
+          "lpips": 0.2334298938512802
+        },
+        "1": {
+          "mae": 0.08165322989225388,
+          "ssim": 0.5016750693321228,
+          "lpips": 0.21008522808551788
+        },
+        "3": {
+          "mae": 0.08165322989225388,
+          "ssim": 0.5016750693321228,
+          "lpips": 0.21008522808551788
+        },
+        "6": {
+          "mae": 0.08165322989225388,
+          "ssim": 0.5016750693321228,
+          "lpips": 0.21008522808551788
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 9,
+      "path": "experiments/revised-tail-v1/generated/cf272b209fce91dcbb34a793ef6b4828230a54d0ed473de855d7cce5a13af6de.png",
+      "sha256": "f96bdff0df1d5a089625e70d6b99ef20b09138200735d9ebe7f22f4982555ca9",
+      "face": {
+        "fixed": {
+          "mae": 0.09657423198223114,
+          "ssim": 0.3798588216304779,
+          "lpips": 0.259820818901062
+        },
+        "1": {
+          "mae": 0.0884815901517868,
+          "ssim": 0.45322510600090027,
+          "lpips": 0.24630707502365112
+        },
+        "3": {
+          "mae": 0.0884815901517868,
+          "ssim": 0.45322510600090027,
+          "lpips": 0.24630707502365112
+        },
+        "6": {
+          "mae": 0.0884815901517868,
+          "ssim": 0.45322510600090027,
+          "lpips": 0.24630707502365112
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "stage": 10,
+      "path": "experiments/revised-tail-v1/generated/d420a5bf6e07cffe19c5db8e418c56b5ca39efb940549ee148cc5a155c9c573a.png",
+      "sha256": "9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43",
+      "face": {
+        "fixed": {
+          "mae": 0.1283421516418457,
+          "ssim": 0.36652669310569763,
+          "lpips": 0.26662883162498474
+        },
+        "1": {
+          "mae": 0.12412518262863159,
+          "ssim": 0.41425177454948425,
+          "lpips": 0.2588009834289551
+        },
+        "3": {
+          "mae": 0.12416679412126541,
+          "ssim": 0.4068376123905182,
+          "lpips": 0.2607609033584595
+        },
+        "6": {
+          "mae": 0.12463708966970444,
+          "ssim": 0.41658079624176025,
+          "lpips": 0.2594878077507019
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 1,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-1.png",
+      "sha256": "822586e373c59942cc319b7b5a9eca9b95d0c57ad4a2885d22b178d52f4aae22",
+      "face": {
+        "fixed": {
+          "mae": 0.016818616539239883,
+          "ssim": 0.8832266926765442,
+          "lpips": 0.0397653803229332
+        },
+        "1": {
+          "mae": 0.016818616539239883,
+          "ssim": 0.8832266926765442,
+          "lpips": 0.0397653803229332
+        },
+        "3": {
+          "mae": 0.016818616539239883,
+          "ssim": 0.8832266926765442,
+          "lpips": 0.0397653803229332
+        },
+        "6": {
+          "mae": 0.016818616539239883,
+          "ssim": 0.8832266926765442,
+          "lpips": 0.0397653803229332
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 2,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-2.png",
+      "sha256": "9d640354a139713fd4b170a29aa4fb475ab312f84d5dc87d5c8a982603f363f1",
+      "face": {
+        "fixed": {
+          "mae": 0.023919278755784035,
+          "ssim": 0.8415461182594299,
+          "lpips": 0.06436368077993393
+        },
+        "1": {
+          "mae": 0.023015739396214485,
+          "ssim": 0.8469493985176086,
+          "lpips": 0.06130266562104225
+        },
+        "3": {
+          "mae": 0.023015739396214485,
+          "ssim": 0.8469493985176086,
+          "lpips": 0.06130266562104225
+        },
+        "6": {
+          "mae": 0.023015739396214485,
+          "ssim": 0.8469493985176086,
+          "lpips": 0.06130266562104225
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 3,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-3.png",
+      "sha256": "6adb61e661b32ecd6df0e8eae2368f3e94259432a28cc3aab7369765e31aacec",
+      "face": {
+        "fixed": {
+          "mae": 0.035219378769397736,
+          "ssim": 0.8154917359352112,
+          "lpips": 0.08458372950553894
+        },
+        "1": {
+          "mae": 0.03467418998479843,
+          "ssim": 0.8129358291625977,
+          "lpips": 0.08336623013019562
+        },
+        "3": {
+          "mae": 0.03467418998479843,
+          "ssim": 0.8129358291625977,
+          "lpips": 0.08336623013019562
+        },
+        "6": {
+          "mae": 0.03467418998479843,
+          "ssim": 0.8129358291625977,
+          "lpips": 0.08336623013019562
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 4,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-4.png",
+      "sha256": "c593ddff289a664dea0966d52c9316df8aa93ad3885809fd2d1bc52c40536c35",
+      "face": {
+        "fixed": {
+          "mae": 0.04619228467345238,
+          "ssim": 0.7493398189544678,
+          "lpips": 0.1184653639793396
+        },
+        "1": {
+          "mae": 0.04347698763012886,
+          "ssim": 0.7693193554878235,
+          "lpips": 0.11682933568954468
+        },
+        "3": {
+          "mae": 0.04516448825597763,
+          "ssim": 0.7537969946861267,
+          "lpips": 0.11466523259878159
+        },
+        "6": {
+          "mae": 0.048636045306921005,
+          "ssim": 0.7105652689933777,
+          "lpips": 0.12118515372276306
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 5,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-5.png",
+      "sha256": "fb518674e0352dc6ac2e85717de2bee34e2efa6267f50f6d0e8160264e18ca92",
+      "face": {
+        "fixed": {
+          "mae": 0.12108762562274933,
+          "ssim": 0.4625864028930664,
+          "lpips": 0.24226857721805573
+        },
+        "1": {
+          "mae": 0.08753294497728348,
+          "ssim": 0.6472768187522888,
+          "lpips": 0.17715446650981903
+        },
+        "3": {
+          "mae": 0.09012965857982635,
+          "ssim": 0.6132805943489075,
+          "lpips": 0.18278786540031433
+        },
+        "6": {
+          "mae": 0.09710732102394104,
+          "ssim": 0.535780131816864,
+          "lpips": 0.19664092361927032
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 6,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-6.png",
+      "sha256": "66349281145be944dae18789572abff891dee7cd968a5ce4bd32f45800dc9e34",
+      "face": {
+        "fixed": {
+          "mae": 0.12087925523519516,
+          "ssim": 0.45227834582328796,
+          "lpips": 0.25372883677482605
+        },
+        "1": {
+          "mae": 0.08893025666475296,
+          "ssim": 0.6233661770820618,
+          "lpips": 0.1924964040517807
+        },
+        "3": {
+          "mae": 0.09140907973051071,
+          "ssim": 0.5953536033630371,
+          "lpips": 0.197172611951828
+        },
+        "6": {
+          "mae": 0.0976228192448616,
+          "ssim": 0.519848644733429,
+          "lpips": 0.21094323694705963
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 7,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-7.png",
+      "sha256": "323ee7108aed360c9e8138140952521e94afb21828a336ad58ac8d5389c36761",
+      "face": {
+        "fixed": {
+          "mae": 0.12076550722122192,
+          "ssim": 0.4395838975906372,
+          "lpips": 0.2693564295768738
+        },
+        "1": {
+          "mae": 0.09025387465953827,
+          "ssim": 0.6047284603118896,
+          "lpips": 0.20744535326957703
+        },
+        "3": {
+          "mae": 0.09229037165641785,
+          "ssim": 0.57559734582901,
+          "lpips": 0.21299514174461365
+        },
+        "6": {
+          "mae": 0.09816350787878036,
+          "ssim": 0.5043819546699524,
+          "lpips": 0.22804054617881775
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 8,
+      "path": "experiments/ten-stage-p03-v1/run-1/step-8.png",
+      "sha256": "8216dd670f1bb3fc39b182eeee4e4d81dd2c78c3b97e0718765311994cd7ade7",
+      "face": {
+        "fixed": {
+          "mae": 0.12047415226697922,
+          "ssim": 0.4257400333881378,
+          "lpips": 0.2859041690826416
+        },
+        "1": {
+          "mae": 0.0908387303352356,
+          "ssim": 0.5775063037872314,
+          "lpips": 0.22639977931976318
+        },
+        "3": {
+          "mae": 0.09258058667182922,
+          "ssim": 0.5523152947425842,
+          "lpips": 0.23395957052707672
+        },
+        "6": {
+          "mae": 0.09810400009155273,
+          "ssim": 0.485977441072464,
+          "lpips": 0.24582698941230774
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 9,
+      "path": "experiments/revised-tail-v1/generated/b0ef58cac9abef3027ec1643934ffb98f62ed0425943cfffba2ce5d054e11fb4.png",
+      "sha256": "d3bb1a3a2a3f7623a46a99cf54d56628227a8f848a1c59937fe29a8713ca4465",
+      "face": {
+        "fixed": {
+          "mae": 0.12254548072814941,
+          "ssim": 0.40891745686531067,
+          "lpips": 0.30787450075149536
+        },
+        "1": {
+          "mae": 0.0944012999534607,
+          "ssim": 0.548331081867218,
+          "lpips": 0.25171178579330444
+        },
+        "3": {
+          "mae": 0.09570301324129105,
+          "ssim": 0.5264108777046204,
+          "lpips": 0.25652945041656494
+        },
+        "6": {
+          "mae": 0.101176418364048,
+          "ssim": 0.45868125557899475,
+          "lpips": 0.272597074508667
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "stage": 10,
+      "path": "experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
+      "sha256": "521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
+      "face": {
+        "fixed": {
+          "mae": 0.2008240669965744,
+          "ssim": 0.25522199273109436,
+          "lpips": 0.41561371088027954
+        },
+        "1": {
+          "mae": 0.1726452112197876,
+          "ssim": 0.4131282567977905,
+          "lpips": 0.34450486302375793
+        },
+        "3": {
+          "mae": 0.17389467358589172,
+          "ssim": 0.4089403450489044,
+          "lpips": 0.3455989956855774
+        },
+        "6": {
+          "mae": 0.1771048605442047,
+          "ssim": 0.37525853514671326,
+          "lpips": 0.3529857099056244
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 1,
+      "path": "experiments/trigger-validation-v1/P04/step-1.png",
+      "sha256": "72f0074fe7df1b717d90d2db6df234212b5df2afc6166f11a13d73a80952dcea",
+      "face": {
+        "fixed": {
+          "mae": 0.01840371824800968,
+          "ssim": 0.8883209228515625,
+          "lpips": 0.031728047877550125
+        },
+        "1": {
+          "mae": 0.01840371824800968,
+          "ssim": 0.8883209228515625,
+          "lpips": 0.031728047877550125
+        },
+        "3": {
+          "mae": 0.01840371824800968,
+          "ssim": 0.8883209228515625,
+          "lpips": 0.031728047877550125
+        },
+        "6": {
+          "mae": 0.01840371824800968,
+          "ssim": 0.8883209228515625,
+          "lpips": 0.031728047877550125
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 2,
+      "path": "experiments/trigger-validation-v1/P04/step-2.png",
+      "sha256": "06b5c9dc02fbf13fc15f528b85b948100afb06fac95032453399dab4f05e8cb7",
+      "face": {
+        "fixed": {
+          "mae": 0.025968050584197044,
+          "ssim": 0.8348621726036072,
+          "lpips": 0.05477737635374069
+        },
+        "1": {
+          "mae": 0.023362623527646065,
+          "ssim": 0.8567665219306946,
+          "lpips": 0.05424788221716881
+        },
+        "3": {
+          "mae": 0.023362623527646065,
+          "ssim": 0.8567665219306946,
+          "lpips": 0.05424788221716881
+        },
+        "6": {
+          "mae": 0.023362623527646065,
+          "ssim": 0.8567665219306946,
+          "lpips": 0.05424788221716881
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 3,
+      "path": "experiments/trigger-validation-v1/P04/step-3.png",
+      "sha256": "0ee7d7c5349dc71b8f60ee842000aca388d37688ba65a3d5028ad511f58611ed",
+      "face": {
+        "fixed": {
+          "mae": 0.03271098807454109,
+          "ssim": 0.7871373295783997,
+          "lpips": 0.07703612744808197
+        },
+        "1": {
+          "mae": 0.029098980128765106,
+          "ssim": 0.8208720088005066,
+          "lpips": 0.07321377098560333
+        },
+        "3": {
+          "mae": 0.029098980128765106,
+          "ssim": 0.8208720088005066,
+          "lpips": 0.07321377098560333
+        },
+        "6": {
+          "mae": 0.029098980128765106,
+          "ssim": 0.8208720088005066,
+          "lpips": 0.07321377098560333
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 4,
+      "path": "experiments/trigger-validation-v1/P04/step-4.png",
+      "sha256": "afb9ee34d297717f92888799c55bb475149d0e445f1efdbeeac4fa28eb84f067",
+      "face": {
+        "fixed": {
+          "mae": 0.05544218793511391,
+          "ssim": 0.71294766664505,
+          "lpips": 0.12006574869155884
+        },
+        "1": {
+          "mae": 0.04820133373141289,
+          "ssim": 0.7773118019104004,
+          "lpips": 0.10510864853858948
+        },
+        "3": {
+          "mae": 0.04820133373141289,
+          "ssim": 0.7773118019104004,
+          "lpips": 0.10510864853858948
+        },
+        "6": {
+          "mae": 0.051172886043787,
+          "ssim": 0.7440197467803955,
+          "lpips": 0.10925644636154175
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 5,
+      "path": "experiments/trigger-validation-v1/P04/step-5.png",
+      "sha256": "cf4f8303118f133dba1077c06f10ddfccde01c0c8b7844ca935fc3772f19bfc5",
+      "face": {
+        "fixed": {
+          "mae": 0.13240620493888855,
+          "ssim": 0.4151075780391693,
+          "lpips": 0.34183269739151
+        },
+        "1": {
+          "mae": 0.06295200437307358,
+          "ssim": 0.7224617004394531,
+          "lpips": 0.15251649916172028
+        },
+        "3": {
+          "mae": 0.06295200437307358,
+          "ssim": 0.7224617004394531,
+          "lpips": 0.15251649916172028
+        },
+        "6": {
+          "mae": 0.06561541557312012,
+          "ssim": 0.6983886361122131,
+          "lpips": 0.1529621183872223
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 6,
+      "path": "experiments/trigger-validation-v1/P04/step-6.png",
+      "sha256": "9662d6d1c973a43af15378d218c82e247ed10362330bcdbc3ad1366f2d1411ae",
+      "face": {
+        "fixed": {
+          "mae": 0.13438569009304047,
+          "ssim": 0.4023829996585846,
+          "lpips": 0.3525209426879883
+        },
+        "1": {
+          "mae": 0.0668826773762703,
+          "ssim": 0.6964426040649414,
+          "lpips": 0.16892492771148682
+        },
+        "3": {
+          "mae": 0.0668826773762703,
+          "ssim": 0.6964426040649414,
+          "lpips": 0.16892492771148682
+        },
+        "6": {
+          "mae": 0.06884182244539261,
+          "ssim": 0.6803510189056396,
+          "lpips": 0.17003434896469116
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 7,
+      "path": "experiments/trigger-validation-v1/P04/step-7.png",
+      "sha256": "fd58722931d848508495c724a296326087beaec3a61ae834860fc62c5e24cbe5",
+      "face": {
+        "fixed": {
+          "mae": 0.13611829280853271,
+          "ssim": 0.4022347033023834,
+          "lpips": 0.3479330241680145
+        },
+        "1": {
+          "mae": 0.06988504528999329,
+          "ssim": 0.6864304542541504,
+          "lpips": 0.1652376651763916
+        },
+        "3": {
+          "mae": 0.06988504528999329,
+          "ssim": 0.6864304542541504,
+          "lpips": 0.1652376651763916
+        },
+        "6": {
+          "mae": 0.07150953263044357,
+          "ssim": 0.675100564956665,
+          "lpips": 0.16494722664356232
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 8,
+      "path": "experiments/trigger-validation-v1/P04/step-8.png",
+      "sha256": "3e58666b152e5e221b60c1cee61fecdcca9b61879139535256189fcbb954ba6c",
+      "face": {
+        "fixed": {
+          "mae": 0.13804741203784943,
+          "ssim": 0.3897973299026489,
+          "lpips": 0.3590282201766968
+        },
+        "1": {
+          "mae": 0.07338233292102814,
+          "ssim": 0.6560167670249939,
+          "lpips": 0.1850573867559433
+        },
+        "3": {
+          "mae": 0.07338233292102814,
+          "ssim": 0.6560167670249939,
+          "lpips": 0.1850573867559433
+        },
+        "6": {
+          "mae": 0.07338233292102814,
+          "ssim": 0.6560167670249939,
+          "lpips": 0.1850573867559433
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 9,
+      "path": "experiments/revised-tail-v1/generated/c39cf5cf388d11ff05256723aea92efedb1062f57f7dcb95a1a31d1e3f2d67b3.png",
+      "sha256": "69dd6819343740ae5cb234dcec7dd78d7998ba197a3a1b2da94a459382353519",
+      "face": {
+        "fixed": {
+          "mae": 0.1399747133255005,
+          "ssim": 0.3754703104496002,
+          "lpips": 0.3721795082092285
+        },
+        "1": {
+          "mae": 0.07663470506668091,
+          "ssim": 0.6262993812561035,
+          "lpips": 0.2066776007413864
+        },
+        "3": {
+          "mae": 0.07663470506668091,
+          "ssim": 0.6262993812561035,
+          "lpips": 0.2066776007413864
+        },
+        "6": {
+          "mae": 0.07724126428365707,
+          "ssim": 0.6266276240348816,
+          "lpips": 0.20571331679821014
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "stage": 10,
+      "path": "experiments/revised-tail-v1/generated/eda17b0b5f52c14a740cbb1d937d90e7bfd2ebb33fd7fe887d5bbb1b6d1c4987.png",
+      "sha256": "5aa04a5c54be19bcc2bb750402d42bffcc8fb6dd4fc1d7d85ded4388fe163b08",
+      "face": {
+        "fixed": {
+          "mae": 0.2195051908493042,
+          "ssim": 0.24451230466365814,
+          "lpips": 0.45022645592689514
+        },
+        "1": {
+          "mae": 0.1685907393693924,
+          "ssim": 0.45527195930480957,
+          "lpips": 0.3084413409233093
+        },
+        "3": {
+          "mae": 0.17004646360874176,
+          "ssim": 0.44831743836402893,
+          "lpips": 0.3121553361415863
+        },
+        "6": {
+          "mae": 0.17297334969043732,
+          "ssim": 0.4228728115558624,
+          "lpips": 0.31534087657928467
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 1,
+      "path": "experiments/trigger-validation-v1/P05/step-1.png",
+      "sha256": "6d9106aa3aadeeb985b1878c5509ce0f5da341b972cfbce4be9c79454841b09d",
+      "face": {
+        "fixed": {
+          "mae": 0.015822634100914,
+          "ssim": 0.8821151256561279,
+          "lpips": 0.048692625015974045
+        },
+        "1": {
+          "mae": 0.015822634100914,
+          "ssim": 0.8821151256561279,
+          "lpips": 0.048692625015974045
+        },
+        "3": {
+          "mae": 0.015822634100914,
+          "ssim": 0.8821151256561279,
+          "lpips": 0.048692625015974045
+        },
+        "6": {
+          "mae": 0.017926130443811417,
+          "ssim": 0.8482168316841125,
+          "lpips": 0.050030529499053955
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 2,
+      "path": "experiments/trigger-validation-v1/P05/step-2.png",
+      "sha256": "f6f9652b5ac951928b29a122fdc799834db4acc6f9830732f5c09925e77bf305",
+      "face": {
+        "fixed": {
+          "mae": 0.022392643615603447,
+          "ssim": 0.815277099609375,
+          "lpips": 0.06950265914201736
+        },
+        "1": {
+          "mae": 0.019868647679686546,
+          "ssim": 0.8376884460449219,
+          "lpips": 0.06536561995744705
+        },
+        "3": {
+          "mae": 0.019868647679686546,
+          "ssim": 0.8376884460449219,
+          "lpips": 0.06536561995744705
+        },
+        "6": {
+          "mae": 0.019868647679686546,
+          "ssim": 0.8376884460449219,
+          "lpips": 0.06536561995744705
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 3,
+      "path": "experiments/trigger-validation-v1/P05/step-3.png",
+      "sha256": "5590e5c30ece7661bb1ac2d39e4c4d14f0c2dd48f62302623e4b03c967374eef",
+      "face": {
+        "fixed": {
+          "mae": 0.0282905176281929,
+          "ssim": 0.7789292335510254,
+          "lpips": 0.09390426427125931
+        },
+        "1": {
+          "mae": 0.025175461545586586,
+          "ssim": 0.8120314478874207,
+          "lpips": 0.0889648050069809
+        },
+        "3": {
+          "mae": 0.025098266080021858,
+          "ssim": 0.813166618347168,
+          "lpips": 0.08551110327243805
+        },
+        "6": {
+          "mae": 0.02563704364001751,
+          "ssim": 0.8040394186973572,
+          "lpips": 0.087386354804039
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 4,
+      "path": "experiments/trigger-validation-v1/P05/step-4.png",
+      "sha256": "9b1a43ca55185dd3d4b046d97d01afd48996708f2781878e37527aae66ea7709",
+      "face": {
+        "fixed": {
+          "mae": 0.04256638512015343,
+          "ssim": 0.6973174214363098,
+          "lpips": 0.13186918199062347
+        },
+        "1": {
+          "mae": 0.035658098757267,
+          "ssim": 0.7770125269889832,
+          "lpips": 0.11754801869392395
+        },
+        "3": {
+          "mae": 0.03669387847185135,
+          "ssim": 0.761134922504425,
+          "lpips": 0.12161270529031754
+        },
+        "6": {
+          "mae": 0.03944957256317139,
+          "ssim": 0.7294378280639648,
+          "lpips": 0.12546426057815552
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 5,
+      "path": "experiments/trigger-validation-v1/P05/step-5.png",
+      "sha256": "b29fc97456cd3f84f2b43093ccea9d3fe5702bb55f1d94c8be875da01a4b1130",
+      "face": {
+        "fixed": {
+          "mae": 0.13363569974899292,
+          "ssim": 0.41188350319862366,
+          "lpips": 0.43358439207077026
+        },
+        "1": {
+          "mae": 0.0808720588684082,
+          "ssim": 0.6381780505180359,
+          "lpips": 0.19190973043441772
+        },
+        "3": {
+          "mae": 0.08119811117649078,
+          "ssim": 0.6378839612007141,
+          "lpips": 0.18988880515098572
+        },
+        "6": {
+          "mae": 0.0849856287240982,
+          "ssim": 0.5857078433036804,
+          "lpips": 0.19822123646736145
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 6,
+      "path": "experiments/trigger-validation-v1/P05/step-6.png",
+      "sha256": "a47813f7d3aefc2c386f4384c503c27678447332af629c936c3fe5295902e42b",
+      "face": {
+        "fixed": {
+          "mae": 0.13394500315189362,
+          "ssim": 0.40122947096824646,
+          "lpips": 0.4366246163845062
+        },
+        "1": {
+          "mae": 0.08364389836788177,
+          "ssim": 0.6131631731987,
+          "lpips": 0.20740550756454468
+        },
+        "3": {
+          "mae": 0.08458177000284195,
+          "ssim": 0.6022471785545349,
+          "lpips": 0.20826023817062378
+        },
+        "6": {
+          "mae": 0.08682116121053696,
+          "ssim": 0.5684162974357605,
+          "lpips": 0.2144228219985962
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 7,
+      "path": "experiments/trigger-validation-v1/P05/step-7.png",
+      "sha256": "824ca468c306cdae41af869c08bed8c0e10c4e1707bc2c9e74fce91fca53ab1a",
+      "face": {
+        "fixed": {
+          "mae": 0.13378362357616425,
+          "ssim": 0.3929974138736725,
+          "lpips": 0.44054850935935974
+        },
+        "1": {
+          "mae": 0.08607164770364761,
+          "ssim": 0.5934911966323853,
+          "lpips": 0.21531081199645996
+        },
+        "3": {
+          "mae": 0.08676925301551819,
+          "ssim": 0.5858847498893738,
+          "lpips": 0.21692466735839844
+        },
+        "6": {
+          "mae": 0.08866829425096512,
+          "ssim": 0.5572678446769714,
+          "lpips": 0.22305899858474731
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 8,
+      "path": "experiments/trigger-validation-v1/P05/step-8.png",
+      "sha256": "5952565501716b3ad06bbbd5e9d307c65ce548f0ed2c5e3aae046a7912bc4f37",
+      "face": {
+        "fixed": {
+          "mae": 0.13546288013458252,
+          "ssim": 0.3777247965335846,
+          "lpips": 0.45329034328460693
+        },
+        "1": {
+          "mae": 0.08831309527158737,
+          "ssim": 0.5596904754638672,
+          "lpips": 0.23725050687789917
+        },
+        "3": {
+          "mae": 0.08829323947429657,
+          "ssim": 0.5617552399635315,
+          "lpips": 0.24069203436374664
+        },
+        "6": {
+          "mae": 0.08953006565570831,
+          "ssim": 0.5422341227531433,
+          "lpips": 0.24703598022460938
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 9,
+      "path": "experiments/revised-tail-v1/generated/9d5a2414af8ab26ea6b8232f73a50093c0f511d02bf8fa3ce7910213eeaa3323.png",
+      "sha256": "2ecf2d7404183ed9e9888331c55941bf86fceff3e4b66019dfe448122475a1fe",
+      "face": {
+        "fixed": {
+          "mae": 0.13451658189296722,
+          "ssim": 0.37728404998779297,
+          "lpips": 0.45400717854499817
+        },
+        "1": {
+          "mae": 0.08961238712072372,
+          "ssim": 0.5550453066825867,
+          "lpips": 0.24725058674812317
+        },
+        "3": {
+          "mae": 0.08961238712072372,
+          "ssim": 0.5550453066825867,
+          "lpips": 0.24725058674812317
+        },
+        "6": {
+          "mae": 0.09049186110496521,
+          "ssim": 0.5396023392677307,
+          "lpips": 0.2518075108528137
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "stage": 10,
+      "path": "experiments/revised-tail-v1/generated/78f6bc399780d19df4f64cb8bbb4c0fcb6a48d10040828b34ff19058ab49f628.png",
+      "sha256": "d9f6bb7cb333570fa80e508e444b49db0e1cde91640e19f363e7c17b18ebc3f1",
+      "face": {
+        "fixed": {
+          "mae": 0.24122847616672516,
+          "ssim": 0.24444396793842316,
+          "lpips": 0.5315648317337036
+        },
+        "1": {
+          "mae": 0.2290075719356537,
+          "ssim": 0.24665673077106476,
+          "lpips": 0.6196185350418091
+        },
+        "3": {
+          "mae": 0.22841043770313263,
+          "ssim": 0.24880069494247437,
+          "lpips": 0.6137474775314331
+        },
+        "6": {
+          "mae": 0.2281481921672821,
+          "ssim": 0.24800169467926025,
+          "lpips": 0.6095815896987915
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 1,
+      "path": "experiments/trigger-validation-v1/P06/step-1.png",
+      "sha256": "5d52a0d716c9c76ad725e99e9910eb81a8db5770702f0e8e02e69aafd5818e14",
+      "face": {
+        "fixed": {
+          "mae": 0.016039207577705383,
+          "ssim": 0.8770872950553894,
+          "lpips": 0.052219681441783905
+        },
+        "1": {
+          "mae": 0.016039207577705383,
+          "ssim": 0.8770872950553894,
+          "lpips": 0.052219681441783905
+        },
+        "3": {
+          "mae": 0.016039207577705383,
+          "ssim": 0.8770872950553894,
+          "lpips": 0.052219681441783905
+        },
+        "6": {
+          "mae": 0.016039207577705383,
+          "ssim": 0.8770872950553894,
+          "lpips": 0.052219681441783905
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 2,
+      "path": "experiments/trigger-validation-v1/P06/step-2.png",
+      "sha256": "3b0dd622f8fe7c0ce8b4fb8173e2cf7f414d37dfc02b5b5ed5218ee1b7e428aa",
+      "face": {
+        "fixed": {
+          "mae": 0.022228486835956573,
+          "ssim": 0.8333027362823486,
+          "lpips": 0.07619599997997284
+        },
+        "1": {
+          "mae": 0.021894685924053192,
+          "ssim": 0.8323414325714111,
+          "lpips": 0.07550738751888275
+        },
+        "3": {
+          "mae": 0.021894685924053192,
+          "ssim": 0.8323414325714111,
+          "lpips": 0.07550738751888275
+        },
+        "6": {
+          "mae": 0.022228486835956573,
+          "ssim": 0.8333027362823486,
+          "lpips": 0.07619599997997284
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 3,
+      "path": "experiments/trigger-validation-v1/P06/step-3.png",
+      "sha256": "fbbc2f2a6163d555e1cfe9aa8bd0b836abb7242576e8e31f189650aa2a3a61dd",
+      "face": {
+        "fixed": {
+          "mae": 0.02911248989403248,
+          "ssim": 0.7905220985412598,
+          "lpips": 0.0997520461678505
+        },
+        "1": {
+          "mae": 0.027665546163916588,
+          "ssim": 0.802544891834259,
+          "lpips": 0.10038287937641144
+        },
+        "3": {
+          "mae": 0.027665546163916588,
+          "ssim": 0.802544891834259,
+          "lpips": 0.10038287937641144
+        },
+        "6": {
+          "mae": 0.027665546163916588,
+          "ssim": 0.802544891834259,
+          "lpips": 0.10038287937641144
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 4,
+      "path": "experiments/trigger-validation-v1/P06/step-4.png",
+      "sha256": "999c822946c3ba0b1ba32398cf2aee0200536848c685cf8da8c0fc439dc5ea0c",
+      "face": {
+        "fixed": {
+          "mae": 0.04030841961503029,
+          "ssim": 0.7304844260215759,
+          "lpips": 0.14814046025276184
+        },
+        "1": {
+          "mae": 0.03872042894363403,
+          "ssim": 0.7437245845794678,
+          "lpips": 0.14945080876350403
+        },
+        "3": {
+          "mae": 0.0399705246090889,
+          "ssim": 0.7310468554496765,
+          "lpips": 0.1485162079334259
+        },
+        "6": {
+          "mae": 0.0399705246090889,
+          "ssim": 0.7310468554496765,
+          "lpips": 0.1485162079334259
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 5,
+      "path": "experiments/trigger-validation-v1/P06/step-5.png",
+      "sha256": "b84bcc00604b0f5d45b0383d3fee5eb80b760ac6cce6f75ba3b8dfbdfe20fd14",
+      "face": {
+        "fixed": {
+          "mae": 0.06792251020669937,
+          "ssim": 0.5909715294837952,
+          "lpips": 0.21689721941947937
+        },
+        "1": {
+          "mae": 0.06146226078271866,
+          "ssim": 0.6404414176940918,
+          "lpips": 0.20893974602222443
+        },
+        "3": {
+          "mae": 0.06218653917312622,
+          "ssim": 0.6363136172294617,
+          "lpips": 0.20595631003379822
+        },
+        "6": {
+          "mae": 0.06218653917312622,
+          "ssim": 0.6363136172294617,
+          "lpips": 0.20595631003379822
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 6,
+      "path": "experiments/trigger-validation-v1/P06/step-6.png",
+      "sha256": "a9729e585d5348ed34aaf1f92af2a3e0ec4dadf621f955e39646fb3f1af7ce00",
+      "face": {
+        "fixed": {
+          "mae": 0.06756208837032318,
+          "ssim": 0.5814064145088196,
+          "lpips": 0.23464888334274292
+        },
+        "1": {
+          "mae": 0.06265312433242798,
+          "ssim": 0.6189848184585571,
+          "lpips": 0.22700759768486023
+        },
+        "3": {
+          "mae": 0.06265312433242798,
+          "ssim": 0.6189848184585571,
+          "lpips": 0.22700759768486023
+        },
+        "6": {
+          "mae": 0.06265312433242798,
+          "ssim": 0.6189848184585571,
+          "lpips": 0.22700759768486023
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 7,
+      "path": "experiments/trigger-validation-v1/P06/step-7.png",
+      "sha256": "a0348cfeb5cdaca256c07bd58d3bd4088750b2e9853c7faba0f4bacfba46129d",
+      "face": {
+        "fixed": {
+          "mae": 0.0670701339840889,
+          "ssim": 0.5728539824485779,
+          "lpips": 0.24356715381145477
+        },
+        "1": {
+          "mae": 0.06317729502916336,
+          "ssim": 0.5966476798057556,
+          "lpips": 0.23554255068302155
+        },
+        "3": {
+          "mae": 0.06317729502916336,
+          "ssim": 0.5966476798057556,
+          "lpips": 0.23554255068302155
+        },
+        "6": {
+          "mae": 0.06317729502916336,
+          "ssim": 0.5966476798057556,
+          "lpips": 0.23554255068302155
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 8,
+      "path": "experiments/trigger-validation-v1/P06/step-8.png",
+      "sha256": "ad66feeb437d1f0d721778bce79f6d8326bd6d7e76d101eea6ea0e32ab23ab23",
+      "face": {
+        "fixed": {
+          "mae": 0.06696654111146927,
+          "ssim": 0.5530668497085571,
+          "lpips": 0.27116531133651733
+        },
+        "1": {
+          "mae": 0.06358280777931213,
+          "ssim": 0.5710340142250061,
+          "lpips": 0.2616966962814331
+        },
+        "3": {
+          "mae": 0.06358280777931213,
+          "ssim": 0.5710340142250061,
+          "lpips": 0.2616966962814331
+        },
+        "6": {
+          "mae": 0.06358280777931213,
+          "ssim": 0.5710340142250061,
+          "lpips": 0.2616966962814331
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 9,
+      "path": "experiments/revised-tail-v1/generated/f5056d73335a30e55762621567865688d01c6c2f09b94185f82ed8e93e706ae3.png",
+      "sha256": "77acee908b5367fff308bee17f4dfb5e1154953057b0dd48eb5c1037893da094",
+      "face": {
+        "fixed": {
+          "mae": 0.06881317496299744,
+          "ssim": 0.5451095104217529,
+          "lpips": 0.2784115970134735
+        },
+        "1": {
+          "mae": 0.06640351563692093,
+          "ssim": 0.5538173317909241,
+          "lpips": 0.2803415060043335
+        },
+        "3": {
+          "mae": 0.06640351563692093,
+          "ssim": 0.5538173317909241,
+          "lpips": 0.2803415060043335
+        },
+        "6": {
+          "mae": 0.06660903990268707,
+          "ssim": 0.5551142692565918,
+          "lpips": 0.27552902698516846
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "stage": 10,
+      "path": "experiments/revised-tail-v1/generated/608125c2cadb67320d528299817b86ec178b0aaca3d86bb2051578ea16482f21.png",
+      "sha256": "6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a",
+      "face": {
+        "fixed": {
+          "mae": 0.13443037867546082,
+          "ssim": 0.40591657161712646,
+          "lpips": 0.3830995559692383
+        },
+        "1": {
+          "mae": 0.13266703486442566,
+          "ssim": 0.41136685013771057,
+          "lpips": 0.3867199718952179
+        },
+        "3": {
+          "mae": 0.13372814655303955,
+          "ssim": 0.4083770215511322,
+          "lpips": 0.3900483250617981
+        },
+        "6": {
+          "mae": 0.13592040538787842,
+          "ssim": 0.3884945213794708,
+          "lpips": 0.393435537815094
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "person": "P01",
+      "sequential": {
+        "path": "experiments/revised-tail-v1/generated/7c8d0946616d761ad2d55ef859cbfacf70d0a8a0e113205fcd9874e489821ef7.png",
+        "sha256": "7b8d398a7ebb4855be7f8667f496e49f6da50d799b6d50b41b51c9887772a2f7",
+        "face": {
+          "fixed": {
+            "mae": 0.14570675790309906,
+            "ssim": 0.4989817440509796,
+            "lpips": 0.27048414945602417
+          },
+          "1": {
+            "mae": 0.14212055504322052,
+            "ssim": 0.5297394394874573,
+            "lpips": 0.2594680190086365
+          },
+          "3": {
+            "mae": 0.1428041160106659,
+            "ssim": 0.5281270146369934,
+            "lpips": 0.2617783844470978
+          },
+          "6": {
+            "mae": 0.14613395929336548,
+            "ssim": 0.4931087791919708,
+            "lpips": 0.2680579721927643
+          }
+        }
+      },
+      "original_based": {
+        "path": "experiments/nonhuman-followup-v1/generation/generated/f7d3d61c9268e64cdc10e69fc83fa2fc13f9fa1ffa411135f7996d984320514a.png",
+        "sha256": "f491930f45e7951fd0ea9bc6e801515d1723e61cbcc1a406c3337d0471297965",
+        "face": {
+          "fixed": {
+            "mae": 0.16480223834514618,
+            "ssim": 0.42618611454963684,
+            "lpips": 0.2761557698249817
+          },
+          "1": {
+            "mae": 0.11869838833808899,
+            "ssim": 0.7145751118659973,
+            "lpips": 0.16221408545970917
+          },
+          "3": {
+            "mae": 0.1246144026517868,
+            "ssim": 0.6528502106666565,
+            "lpips": 0.17019937932491302
+          },
+          "6": {
+            "mae": 0.13526563346385956,
+            "ssim": 0.5517849326133728,
+            "lpips": 0.18635398149490356
+          }
+        }
+      }
+    },
+    {
+      "person": "P02",
+      "sequential": {
+        "path": "experiments/revised-tail-v1/generated/d420a5bf6e07cffe19c5db8e418c56b5ca39efb940549ee148cc5a155c9c573a.png",
+        "sha256": "9c4e6a399bed49ba1cef1f3d41386adcc1319a725310fb93a2e389bab006fa43",
+        "face": {
+          "fixed": {
+            "mae": 0.1283421516418457,
+            "ssim": 0.36652669310569763,
+            "lpips": 0.26662883162498474
+          },
+          "1": {
+            "mae": 0.12412518262863159,
+            "ssim": 0.41425177454948425,
+            "lpips": 0.2588009834289551
+          },
+          "3": {
+            "mae": 0.12416679412126541,
+            "ssim": 0.4068376123905182,
+            "lpips": 0.2607609033584595
+          },
+          "6": {
+            "mae": 0.12463708966970444,
+            "ssim": 0.41658079624176025,
+            "lpips": 0.2594878077507019
+          }
+        }
+      },
+      "original_based": {
+        "path": "experiments/nonhuman-followup-v1/generation/generated/f08a4b60488a2b496188c7ab87e28ddbcbb2a54f572c3d1c879354b510e36398.png",
+        "sha256": "4f3b097d47bc764babd2475a3dc9dac7d734a549b50c206c8704e41177bfb2fe",
+        "face": {
+          "fixed": {
+            "mae": 0.07742524147033691,
+            "ssim": 0.7169287800788879,
+            "lpips": 0.11530911177396774
+          },
+          "1": {
+            "mae": 0.07798106223344803,
+            "ssim": 0.7008340358734131,
+            "lpips": 0.11541267484426498
+          },
+          "3": {
+            "mae": 0.08077709376811981,
+            "ssim": 0.6549031138420105,
+            "lpips": 0.11723203212022781
+          },
+          "6": {
+            "mae": 0.08660459518432617,
+            "ssim": 0.5723446011543274,
+            "lpips": 0.12751592695713043
+          }
+        }
+      }
+    },
+    {
+      "person": "P03",
+      "sequential": {
+        "path": "experiments/revised-tail-v1/generated/f0c145ab2453d4f1945566329b471984cf0e89a39e19745ec1c6435f11857930.png",
+        "sha256": "521dc7bc0cf861d9386c396c156e48db7a2fea5d3faebc89e258061176692dfc",
+        "face": {
+          "fixed": {
+            "mae": 0.2008240669965744,
+            "ssim": 0.25522199273109436,
+            "lpips": 0.41561371088027954
+          },
+          "1": {
+            "mae": 0.1726452112197876,
+            "ssim": 0.4131282567977905,
+            "lpips": 0.34450486302375793
+          },
+          "3": {
+            "mae": 0.17389467358589172,
+            "ssim": 0.4089403450489044,
+            "lpips": 0.3455989956855774
+          },
+          "6": {
+            "mae": 0.1771048605442047,
+            "ssim": 0.37525853514671326,
+            "lpips": 0.3529857099056244
+          }
+        }
+      },
+      "original_based": {
+        "path": "experiments/nonhuman-followup-v1/generation/generated/06757f3919fadeddde7a0750acfa69b6ed77fce0660caf259fb27524b5cc5ad0.png",
+        "sha256": "475f204e41140b642a4a7b8ae939c447dff9fa3f7bf26280d23439d9e7cd2766",
+        "face": {
+          "fixed": {
+            "mae": 0.1474795937538147,
+            "ssim": 0.4508729875087738,
+            "lpips": 0.2523171007633209
+          },
+          "1": {
+            "mae": 0.12379182130098343,
+            "ssim": 0.5979663133621216,
+            "lpips": 0.20169299840927124
+          },
+          "3": {
+            "mae": 0.12637537717819214,
+            "ssim": 0.5641468167304993,
+            "lpips": 0.21022529900074005
+          },
+          "6": {
+            "mae": 0.1403309404850006,
+            "ssim": 0.4357074499130249,
+            "lpips": 0.24493439495563507
+          }
+        }
+      }
+    },
+    {
+      "person": "P04",
+      "sequential": {
+        "path": "experiments/revised-tail-v1/generated/eda17b0b5f52c14a740cbb1d937d90e7bfd2ebb33fd7fe887d5bbb1b6d1c4987.png",
+        "sha256": "5aa04a5c54be19bcc2bb750402d42bffcc8fb6dd4fc1d7d85ded4388fe163b08",
+        "face": {
+          "fixed": {
+            "mae": 0.2195051908493042,
+            "ssim": 0.24451230466365814,
+            "lpips": 0.45022645592689514
+          },
+          "1": {
+            "mae": 0.1685907393693924,
+            "ssim": 0.45527195930480957,
+            "lpips": 0.3084413409233093
+          },
+          "3": {
+            "mae": 0.17004646360874176,
+            "ssim": 0.44831743836402893,
+            "lpips": 0.3121553361415863
+          },
+          "6": {
+            "mae": 0.17297334969043732,
+            "ssim": 0.4228728115558624,
+            "lpips": 0.31534087657928467
+          }
+        }
+      },
+      "original_based": {
+        "path": "experiments/revised-tail-v1/generated/0584df0f0264621e36baf9958de82a612b7952e9f8cec8396db470aafe1acf0f.png",
+        "sha256": "58cf0a97042c8d759c39b05ac806a834666f5b16faa12492af10149e9be2adcf",
+        "face": {
+          "fixed": {
+            "mae": 0.14220327138900757,
+            "ssim": 0.694753885269165,
+            "lpips": 0.18617664277553558
+          },
+          "1": {
+            "mae": 0.14352057874202728,
+            "ssim": 0.6712606549263,
+            "lpips": 0.18759576976299286
+          },
+          "3": {
+            "mae": 0.14823032915592194,
+            "ssim": 0.6199067234992981,
+            "lpips": 0.19212482869625092
+          },
+          "6": {
+            "mae": 0.15904510021209717,
+            "ssim": 0.5249489545822144,
+            "lpips": 0.20823490619659424
+          }
+        }
+      }
+    },
+    {
+      "person": "P05",
+      "sequential": {
+        "path": "experiments/revised-tail-v1/generated/78f6bc399780d19df4f64cb8bbb4c0fcb6a48d10040828b34ff19058ab49f628.png",
+        "sha256": "d9f6bb7cb333570fa80e508e444b49db0e1cde91640e19f363e7c17b18ebc3f1",
+        "face": {
+          "fixed": {
+            "mae": 0.24122847616672516,
+            "ssim": 0.24444396793842316,
+            "lpips": 0.5315648317337036
+          },
+          "1": {
+            "mae": 0.2290075719356537,
+            "ssim": 0.24665673077106476,
+            "lpips": 0.6196185350418091
+          },
+          "3": {
+            "mae": 0.22841043770313263,
+            "ssim": 0.24880069494247437,
+            "lpips": 0.6137474775314331
+          },
+          "6": {
+            "mae": 0.2281481921672821,
+            "ssim": 0.24800169467926025,
+            "lpips": 0.6095815896987915
+          }
+        }
+      },
+      "original_based": {
+        "path": "experiments/nonhuman-followup-v1/generation/generated/c1ac392b58b11812e77b84aaa1a934a636e6101872fa8fd1233bbae45b716d4f.png",
+        "sha256": "2197ec4b57bfc80159ea1682b352432f948353c0fe358d40828b2d3b5ba0b9f1",
+        "face": {
+          "fixed": {
+            "mae": 0.15727263689041138,
+            "ssim": 0.5925163626670837,
+            "lpips": 0.23568332195281982
+          },
+          "1": {
+            "mae": 0.19887793064117432,
+            "ssim": 0.343243271112442,
+            "lpips": 0.5684999823570251
+          },
+          "3": {
+            "mae": 0.2006443738937378,
+            "ssim": 0.3427695333957672,
+            "lpips": 0.5772225260734558
+          },
+          "6": {
+            "mae": 0.2008897066116333,
+            "ssim": 0.34276315569877625,
+            "lpips": 0.5768853425979614
+          }
+        }
+      }
+    },
+    {
+      "person": "P06",
+      "sequential": {
+        "path": "experiments/revised-tail-v1/generated/608125c2cadb67320d528299817b86ec178b0aaca3d86bb2051578ea16482f21.png",
+        "sha256": "6ed13d3ef40d6478f3185145cb8c85ca6e96ba102f208a54e7a96e68e905ef6a",
+        "face": {
+          "fixed": {
+            "mae": 0.13443037867546082,
+            "ssim": 0.40591657161712646,
+            "lpips": 0.3830995559692383
+          },
+          "1": {
+            "mae": 0.13266703486442566,
+            "ssim": 0.41136685013771057,
+            "lpips": 0.3867199718952179
+          },
+          "3": {
+            "mae": 0.13372814655303955,
+            "ssim": 0.4083770215511322,
+            "lpips": 0.3900483250617981
+          },
+          "6": {
+            "mae": 0.13592040538787842,
+            "ssim": 0.3884945213794708,
+            "lpips": 0.393435537815094
+          }
+        }
+      },
+      "original_based": {
+        "path": "experiments/nonhuman-followup-v1/generation/generated/9f07dd1ff9f715e364bbfb6b8429a6bb85ffdb1a1dffbadc3606fa87133e26b0.png",
+        "sha256": "2bc10eb812424ca6399384141350b8e6da7631832bac13a507c7f5bb1fc98074",
+        "face": {
+          "fixed": {
+            "mae": 0.12653160095214844,
+            "ssim": 0.4720388948917389,
+            "lpips": 0.3100045621395111
+          },
+          "1": {
+            "mae": 0.10303274542093277,
+            "ssim": 0.6541406512260437,
+            "lpips": 0.241262748837471
+          },
+          "3": {
+            "mae": 0.10645657777786255,
+            "ssim": 0.6141180396080017,
+            "lpips": 0.24684754014015198
+          },
+          "6": {
+            "mae": 0.11447178572416306,
+            "ssim": 0.5273174047470093,
+            "lpips": 0.2629855275154114
+          }
+        }
+      }
+    }
+  ]
+}

@@ -21,7 +21,7 @@ def audit(folder):
     abstract = (folder / 'abstract.en.txt').read_text().strip()
     checked, sources = [], {}
     references = manuscript.split('## 참고문헌\n', 1)[1]
-    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 10)]
+    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 11)]
     assert 'Meta, “Llama 3.2 Model Card,”' in references
     repository = 'https://github.com/kimmireu0220/inha-capstone'
     reproduction = manuscript.split('### 4.3 재현 자료\n', 1)[1].split('### 4.4', 1)[0]
@@ -44,6 +44,54 @@ def audit(folder):
         value = '| ' + ' | '.join(map(str, cells)) + ' |'
         assert value in manuscript.splitlines(), f'Missing exact table row: {value}'
         checked.append(value)
+
+    initial = source('paper/initial-portrait-verification.json')
+    assert initial['people'] == initial['paired_endpoints'] == 6
+    assert initial['stages_per_person'] == 10 and initial['new_image_calls'] == 0
+    assert initial['max_metric_replay_error'] < 1e-6
+    assert initial['sequential_outputs'] == 60 and initial['total_measured_outputs'] == 66
+    for stage in ['1','5','10']:
+        expect(f"{initial['stage_registered_means'][stage]['lpips']:.6f}")
+    assert sha(ROOT / 'scripts/summarize_initial_portrait.py') == initial['verifier_sha256']
+    for path, digest in {**initial['source_sha256'], **initial['checked_images']}.items():
+        assert sha(ROOT / path) == digest, path
+    for item in initial['rows']:
+        row([item['person'], f"{item['sequential']['face']['3']['lpips']:.6f}", f"{item['original_based']['face']['3']['lpips']:.6f}"])
+    expect('6/6쌍')
+
+    prompt_study = ROOT / 'experiments/prompt-state-image-v1'
+    prompts = source('experiments/prompt-state-image-v1/summary.json')
+    prompt_verified = source('experiments/prompt-state-image-v1/verification.json')
+    assert prompts['complete'] and prompts['conditions'] == 18
+    assert prompts['people'] == 2 and prompts['dialogues'] == 3
+    assert prompts['actual_image_calls'] == 18 and prompts['completed_image_evaluation_responses'] == 36
+    assert prompts['actual_new_state_extraction_calls'] == 0
+    assert prompt_verified['passed']
+    for name, digest in prompt_verified['source_sha256'].items():
+        assert sha(prompt_study / name) == digest, name
+    for name, digest in prompt_verified['frozen_inputs_verified'].items():
+        assert sha(ROOT / name) == digest, name
+    length = source('experiments/prompt-state-image-v1/prompt-lengths.json')
+    faces = source('experiments/prompt-state-image-v1/face-results.json')
+    source('experiments/prompt-state-image-v1/ai-ratings.json')
+    source('experiments/prompt-state-image-v1/ai-ratings-7b.json')
+    source('experiments/prompt-state-image-v1/secondary-frozen.json')
+    assert len(faces['rows']) == 18 and all(r['face_count'] == 1 for r in faces['rows'])
+    labels = {'full_history': '전체 요청 이력', 'unchecked_state': '검사 전 현재 조건', 'checked_state': '지시 검사 후 현재 조건'}
+    for key, label in labels.items():
+        l = length['final_request_means'][key]
+        row([label] + [f"{l[v]:.2f}" for v in ['characters', 'words', 'tokens']])
+        a, b = prompts['by_mode'][key], prompts['secondary_by_mode'][key]
+        row([label, f"{a['goals_satisfied']}/36", a['unknown'], f"{b['goals_satisfied']}/36", b['unknown']])
+        row([label, f"{a['identity_mean']:.6f}"] + [f"{a['aligned_means'][v]:.6f}" for v in ['mae','ssim','lpips']])
+    reduction = 100 * (1-length['final_request_means']['checked_state']['tokens']/length['final_request_means']['full_history']['tokens'])
+    expect(f'{reduction:.2f}%')
+    expect('122.67', abstract)
+    illustration = source('paper/figures/prompt-state-image-provenance.json')
+    assert sha(ROOT / illustration['figure']) == illustration['figure_sha256']
+    assert sha(prompt_study / 'figure.py') == illustration['script_sha256']
+    for item in illustration['sources']:
+        assert sha(ROOT / item['source']) == item['sha256']
 
     invariants = source('experiments/clause-normalization-v1/invariant-audit.json')
     assert invariants['passed'] and invariants['actual_model_calls'] == 0

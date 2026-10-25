@@ -2,6 +2,11 @@
 
 최신 진행 상황은 [현재 상태](CURRENT_STATUS.md)를 기준으로 읽는다. 현재 연구 질문은 한 번의 변경 사항 추출에 지시 구절 정규화와 실행 대상 검사를 적용하면 정확도와 필요한 모델 호출 횟수를 개선할 수 있는가이다.
 
+## 반복 편집 관찰과 프롬프트 정리
+
+- [초기 6인물 이미지 실험](experiments/nonhuman-followup-v1/RESULTS.md): 인물마다 같은 10단계 순차 편집. 최종 동일 요구의 원본 기반 결과와 비교해 위치 보정 MAE·SSIM·LPIPS가 모두 6/6쌍에서 원본 기반에 유리했다. [수치 재계산](paper/initial-portrait-verification.json)은 출력·원본 해시를 대조하고 오차 0을 확인했다.
+- [전체 요청 이력과 현재 조건의 생성 비교](experiments/prompt-state-image-v1/RESULTS.md): Qwen3 최초 응답 기반, 실제 인물 두 명·기존 대화 세 개·세 방식, 첫 생성 이미지 18장. 마지막 요청에서 평균 204.00→122.67토큰. 얼굴 코사인·정렬 MAE·SSIM·LPIPS와 두 AI 모델의 요청 충족 평가를 분리했다. [분석 재현](experiments/prompt-state-image-v1/REPRODUCE.md).
+
 ## 최신 방법과 검증
 
 - [한 번 추출과 지시 검사의 새 요청 검증](experiments/single-extraction-validation-v1/RESULTS.md): 새 요청 12개를 Qwen3와 Llama에 각각 적용. 단순 최초 응답은 두 모델 모두 3/12, 한 번 추출과 지시 검사는 모두 12/12. 두 번 호출한 검사 결합은 각각 12/12와 4/12. 실제 비교 실험은 총 48회 호출했다.

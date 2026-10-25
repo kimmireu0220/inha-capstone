@@ -10,7 +10,7 @@ from pathlib import Path
 from googleapiclient.discovery import build
 from update_google_slides import credentials, DEFAULT_CLIENT_FILE, PRESENTATION_ID
 
-from method_slides_content import ROOT, REPO, IMAGE_COMMIT, IDS, SOURCES, load, sha, spec, image_label
+from method_slides_content import ROOT, REPO, IMAGE_COMMIT, IDS, SOURCES, load, sha, spec, image_label, image_sources
 
 
 def props(slide, x, y, w, h):
@@ -70,14 +70,14 @@ def requests(deck):
         if 'table' in item:
             table(req,sid,item['table'],[340,175,175,130] if len(item['table'][0])==4 else [270,275,275])
         if 'below' in item:
-            text_box(req,sid,'below',item['below'],70,337,820,111,21)
-        if 'person' in item:
-            person=item['person']
-            figure=next(f for f in load(SOURCES[2])['figures'] if person in f['figure'])
-            for j,source in enumerate(figure['sources']):
-                text_box(req,sid,f'label{j}',image_label(j),70+j*211,103,204,33,18,True)
-                # Google fits the complete original image inside the box, preserving aspect ratio.
-                req.append({'createImage':{'objectId':sid+f'_method_image{j}', 'url':f'https://raw.githubusercontent.com/kimmireu0220/inha-capstone/{IMAGE_COMMIT}/'+source['source'],'elementProperties':props(sid,70+j*211,147,190,285)}})
+            text_box(req,sid,'below',item['below'],70,item.get('below_y',337),820,item.get('below_h',111),item.get('below_size',21))
+        sources = image_sources(item)
+        if sources:
+            step = 844 / len(sources)
+            for j, source in enumerate(sources):
+                text_box(req,sid,f'label{j}',source['label'],70+j*step,103,step-7,33,18,True)
+                # Fit the complete original photograph without cropping.
+                req.append({'createImage':{'objectId':sid+f'_method_image{j}', 'url':source['url'],'elementProperties':props(sid,70+j*step,147,step-21,285)}})
         if number==10:
             text_box(req,sid,'link','논문 PDF 열기',70,377,300,40,20,False,REPO+'/blob/main/paper/manuscript.inha.pdf')
         note_id=slides[sid]['slideProperties']['notesPage']['notesProperties']['speakerNotesObjectId']
@@ -115,12 +115,11 @@ def text_requests(deck):
             for row, values in enumerate(item['table']):
                 for column, value in enumerate(values):
                     replace(oid, value, {'rowIndex': row, 'columnIndex': column})
-        if 'person' in item:
-            for j in range(4):
-                oid = sid + f'_method_label{j}'
-                if oid not in elements:
-                    raise ValueError(f'Missing image label: {oid}')
-                replace(oid, image_label(j))
+        for j, source in enumerate(image_sources(item)):
+            oid = sid + f'_method_label{j}'
+            if oid not in elements:
+                raise ValueError(f'Missing image label: {oid}')
+            replace(oid, source['label'])
         note_id = slide['slideProperties']['notesPage']['notesProperties']['speakerNotesObjectId']
         replace(note_id, item['notes'])
     return req

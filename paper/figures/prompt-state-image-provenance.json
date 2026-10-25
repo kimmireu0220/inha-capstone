@@ -1,0 +1,24 @@
+{
+  "figure": "paper/figures/prompt-state-image-s2.png",
+  "figure_sha256": "e7b61df2b1b2e7aed15ae75377f5cd485c61e83664ca423bd3f8dae0383e8db7",
+  "selection": "Illustration of conditional/quoted S2 request dialogue, R02; aggregate analysis uses all 18 conditions",
+  "sources": [
+    {
+      "condition": "R02-S2-full_history",
+      "source": "experiments/prompt-state-image-v1/generated/img-6c49bad0f171d896/output.png",
+      "sha256": "5926f6bf981cde129e5d4d19e42055b9f0b23327c73db32e429b4c4471679fa9"
+    },
+    {
+      "condition": "R02-S2-unchecked_state",
+      "source": "experiments/prompt-state-image-v1/generated/img-1197b8c6c0b24d96/output.png",
+      "sha256": "7977409d0a3031dc398778521aa8c134fe98cf74dcfa7a3b6d5ec1f0ae5ca9b0"
+    },
+    {
+      "condition": "R02-S2-checked_state",
+      "source": "experiments/prompt-state-image-v1/generated/img-f51c79f33b64fce7/output.png",
+      "sha256": "66889c176728656c8edb815551b042f4056a589f2b85af4e2554f67cccfdf6c0"
+    }
+  ],
+  "script_sha256": "d8a89791b994e6c5352be3843c84434775e7e236b018a39d38151ae5f999ef65",
+  "display": "Full photographs, aspect ratio preserved, no crop"
+}

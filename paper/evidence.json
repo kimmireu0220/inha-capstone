@@ -2,9 +2,30 @@
   "date": "2026-10-25",
   "passed": true,
   "scope": "Numeric transcription and provenance QA, not independent scientific validation",
-  "manuscript_sha256": "e53f1cd3134f85e5ec055edc141842f185406d74f99cdc6c3dc508abb3a9e4fd",
-  "english_abstract_sha256": "0fbd600345682a99a36ea8bd81cfa050166b8b843dc946f0ee8a15353907bec6",
+  "manuscript_sha256": "88401b3429b130a86df6f734d4a92ebcf6c7e3b4e491a1be244ea71dcfd32f58",
+  "english_abstract_sha256": "95b0dc4cd0a0127689c4af0498bd0e990dffcad85e94aa7240784721172798f8",
   "checked_values": [
+    "0.042116",
+    "0.173505",
+    "0.364015",
+    "| P01 | 0.261778 | 0.170199 |",
+    "| P02 | 0.260761 | 0.117232 |",
+    "| P03 | 0.345599 | 0.210225 |",
+    "| P04 | 0.312155 | 0.192125 |",
+    "| P05 | 0.613747 | 0.577223 |",
+    "| P06 | 0.390048 | 0.246848 |",
+    "6/6쌍",
+    "| 전체 요청 이력 | 958.67 | 156.33 | 204.00 |",
+    "| 전체 요청 이력 | 29/36 | 6 | 34/36 | 0 |",
+    "| 전체 요청 이력 | 0.919842 | 0.072179 | 0.789038 | 0.095158 |",
+    "| 검사 전 현재 조건 | 624.33 | 101.33 | 133.33 |",
+    "| 검사 전 현재 조건 | 18/36 | 18 | 24/36 | 2 |",
+    "| 검사 전 현재 조건 | 0.901997 | 0.086795 | 0.748089 | 0.109213 |",
+    "| 지시 검사 후 현재 조건 | 581.00 | 93.67 | 122.67 |",
+    "| 지시 검사 후 현재 조건 | 30/36 | 6 | 36/36 | 0 |",
+    "| 지시 검사 후 현재 조건 | 0.923318 | 0.095572 | 0.754197 | 0.106698 |",
+    "39.87%",
+    "122.67",
     "963",
     "10/16",
     "9/16",
@@ -109,6 +130,51 @@
   ],
   "figure_provenance_sha256": "ee52e842d82adeb9665f0a6628c142c9f30aaf417363019c04e86cad3af4191d",
   "sources": [
+    {
+      "name": "paper/initial-portrait-verification.json",
+      "path": "paper/initial-portrait-verification.json",
+      "sha256": "0ef6b134d4b74878a3e96730a5a3d4e78ae1835dfef23de8b3af5add468c0614"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/summary.json",
+      "path": "experiments/prompt-state-image-v1/summary.json",
+      "sha256": "ef2d346764efe889abf2498d50d2f41d422467b2388bbc9fe53d96d93904219a"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/verification.json",
+      "path": "experiments/prompt-state-image-v1/verification.json",
+      "sha256": "28596b3cfd09bc3794ea0fe3029cfb604b93ff2c6f0faa8a6976e464df54d25c"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/prompt-lengths.json",
+      "path": "experiments/prompt-state-image-v1/prompt-lengths.json",
+      "sha256": "881f1c5baeefd340a8b0815a8642c87c7eb6c3feea7badb4d02bc5ec4d77d65a"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/face-results.json",
+      "path": "experiments/prompt-state-image-v1/face-results.json",
+      "sha256": "94d5fd99281536455e0fb8921cf711becfc69d63ef3a22580cd4537dfd058b95"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/ai-ratings.json",
+      "path": "experiments/prompt-state-image-v1/ai-ratings.json",
+      "sha256": "1384ea27247e92adcc9042d407df5c77a8adef28f44f19fb2bf017a3e28f6a8b"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/ai-ratings-7b.json",
+      "path": "experiments/prompt-state-image-v1/ai-ratings-7b.json",
+      "sha256": "83744bc321b04a3b3852490877dd924fff0748611bcc0eb6a3f9142318a2f16f"
+    },
+    {
+      "name": "experiments/prompt-state-image-v1/secondary-frozen.json",
+      "path": "experiments/prompt-state-image-v1/secondary-frozen.json",
+      "sha256": "d1248a3573fe2c1433a0390002b45f00e9f81ef0e4603a12ce6b13c9d2abae8b"
+    },
+    {
+      "name": "paper/figures/prompt-state-image-provenance.json",
+      "path": "paper/figures/prompt-state-image-provenance.json",
+      "sha256": "1a4819c716642bb4ce37b66538183dd1d27e59a167d286911301b4a2446e871a"
+    },
     {
       "name": "experiments/clause-normalization-v1/invariant-audit.json",
       "path": "experiments/clause-normalization-v1/invariant-audit.json",

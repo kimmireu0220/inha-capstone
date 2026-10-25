@@ -3,7 +3,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-from method_slides_content import ROOT, IDS, SOURCES, IMAGE_COMMIT, spec, sha, image_label
+from method_slides_content import ROOT, IDS, SOURCES, IMAGE_COMMIT, spec, sha, image_label, image_sources
 from update_google_slides import PRESENTATION_ID
 
 
@@ -27,24 +27,20 @@ def verify(deck):
             rows = [[text_of(c['text']) for c in r['tableCells']] for r in els[sid+'_method_table']['table']['tableRows']]
             assert rows == item['table'], number
             counts['tables'] += 1
-        if 'person' in item:
-            provenance = json.loads((ROOT/SOURCES[2]).read_text())
-            figure = next(f for f in provenance['figures'] if item['person'] in f['figure'])
-            for j, source in enumerate(figure['sources']):
-                label = image_label(j)
-                assert text_of(els[sid+f'_method_label{j}']['shape']['text']) == label
-                img = els[sid+f'_method_image{j}']['image']
-                assert img['sourceUrl'] == f'https://raw.githubusercontent.com/kimmireu0220/inha-capstone/{IMAGE_COMMIT}/'+source['source']
-                assert sha(ROOT/source['source']) == source['sha256']
-                crop = img.get('imageProperties', {}).get('cropProperties', {})
-                assert all(crop.get(key, 0) == 0 for key in ['leftOffset', 'rightOffset', 'topOffset', 'bottomOffset', 'angle'])
-                counts['images'] += 1
+        for j, source in enumerate(image_sources(item)):
+            assert text_of(els[sid+f'_method_label{j}']['shape']['text']) == source['label']
+            img = els[sid+f'_method_image{j}']['image']
+            assert img['sourceUrl'] == source['url']
+            assert sha(ROOT/source['source']) == source['sha256']
+            crop = img.get('imageProperties', {}).get('cropProperties', {})
+            assert all(crop.get(key, 0) == 0 for key in ['leftOffset', 'rightOffset', 'topOffset', 'bottomOffset', 'angle'])
+            counts['images'] += 1
         notes = slide['slideProperties']['notesPage']
         nid = notes['notesProperties']['speakerNotesObjectId']
         note = next(e for e in notes['pageElements'] if e['objectId'] == nid)
         assert text_of(note['shape']['text']) == item['notes'], number
         counts['notes'] += 1
-    assert counts == {'tables': 3, 'images': 8, 'notes': 10}
+    assert counts == {'tables': 4, 'images': 7, 'notes': 10}
     return expected, counts
 
 

@@ -15,13 +15,11 @@ class SlidesTests(unittest.TestCase):
         self.assertEqual(slides[6]['table'][2][1:], ['372/384', '374/384'])
         self.assertIn('재검토 4/16, 규칙 보정 16/16', slides[7]['body'])
         self.assertIn('어휘와 구현을 새로 고정', slides[7]['notes'])
-        self.assertIn('0/16', slides[8]['notes'])
-        self.assertIn('코드 검사 1323개', slides[8]['notes'])
-        self.assertIn('첫 응답을 사용해 재검토의 오류를 피함', slides[8]['body'])
-        self.assertIn('Qwen3 14/32에서 28/32', slides[9]['body'])
-        self.assertIn('Llama 7/32에서 17/32', slides[9]['body'])
-        self.assertIn('한 번 추출과 지시 검사 12개: 두 모델 모두 12/12', slides[9]['body'])
-        self.assertIn('단순 최초 응답은 각각 3/12', slides[9]['body'])
+        self.assertIn('0/16', slides[9]['notes'])
+        self.assertIn('코드 검사 1323개', slides[9]['notes'])
+        self.assertIn('39.87%', slides[8]['below'])
+        self.assertEqual([r[1] for r in slides[8]['table'][1:]], ['204.00', '133.33', '122.67'])
+        self.assertIn('두 모델 모두 3/12에서 12/12', slides[9]['body'])
         self.assertIn('개발 자료 32개', slides[9]['notes'])
         self.assertIn('한 번 추출 조건은 첫 응답만', slides[1]['notes'])
 
@@ -39,14 +37,14 @@ class SlidesTests(unittest.TestCase):
             if 'table' in item:
                 elements.append({'objectId': sid+'_method_table', 'table': {
                     'tableRows': [{'tableCells': [{} for _ in row]} for row in item['table']]}})
-            if 'person' in item:
-                elements.extend({'objectId': sid+f'_method_label{j}', 'shape': {}} for j in range(4))
+            if publish.image_sources(item):
+                elements.extend({'objectId': sid+f'_method_label{j}', 'shape': {}} for j in range(len(publish.image_sources(item))))
             deck['slides'].append({'objectId': sid, 'pageElements': elements,
                 'slideProperties': {'notesPage': {'notesProperties': {'speakerNotesObjectId': sid+'_notes'}}}})
         requests = publish.text_requests(deck)
         self.assertTrue(requests)
         self.assertTrue(all(set(r) <= {'deleteText', 'insertText'} for r in requests))
-        self.assertEqual(sum('cellLocation' in r.get('insertText', {}) for r in requests), 49)
+        self.assertEqual(sum('cellLocation' in r.get('insertText', {}) for r in requests), 65)
         deck['slides'][0]['pageElements'] = []
         with self.assertRaises(ValueError):
             publish.text_requests(deck)
@@ -66,8 +64,8 @@ class SlidesTests(unittest.TestCase):
     def test_plan_reuses_slides_and_native_evidence(self):
         deck = {'slides': [{'objectId': sid, 'pageElements': [], 'slideProperties': {'notesPage': {'notesProperties': {'speakerNotesObjectId': sid+'_notes'}}}} for sid in publish.IDS]}
         req = publish.requests(deck)
-        self.assertEqual(sum('createTable' in r for r in req), 3)
-        self.assertEqual(sum('createImage' in r for r in req), 8)
+        self.assertEqual(sum('createTable' in r for r in req), 4)
+        self.assertEqual(sum('createImage' in r for r in req), 7)
         self.assertFalse(any('createSlide' in r for r in req))
         self.assertFalse(any('deleteObject' in r for r in req))
 

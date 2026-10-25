@@ -94,7 +94,7 @@ while i<len(lines):
     c.text=({'전체 상태 일치율':'전체 상태\n일치율','항목별 일치율':'항목별\n일치율',
              '최종 상태 일치율':'최종 상태\n일치율','유지 지시 위반 수':'유지 지시\n위반 수',
              '항목별 충족률':'항목별\n충족률','판단 불가 항목 수':'판단 불가\n항목 수',
-             '전체 항목 충족률':'전체 항목\n충족률','얼굴 유사도 평균':'얼굴 유사도\n평균'}.get(txt,txt) if j==0 else
+             '전체 항목 충족률':'전체 항목\n충족률','얼굴 유사도 평균':'얼굴 유사도\n평균','얼굴 코사인':'얼굴\n코사인'}.get(txt,txt) if j==0 else
              {'정규화+항목별 적용':'정규화+\n항목별 적용'}.get(txt,txt))
     for p in c.paragraphs:
      p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_after=Pt(3);p.paragraph_format.space_before=Pt(3);p.paragraph_format.line_spacing=1

@@ -53,7 +53,7 @@ def check():
     assert deck['slides'] == len(deck['slide_ids']) == 10
     assert deck['visual_check']['reviewed_slides'] == list(range(1, 11))
     assert not deck['visual_check']['visible_overlap_or_clipping_found']
-    assert deck['editable_evidence'] == {'tables': 3, 'images': 8, 'notes': 10}
+    assert deck['editable_evidence'] == {'tables': 4, 'images': 7, 'notes': 10}
     for group in ['source_sha256', 'script_sha256']:
         for name, expected in deck[group].items():
             assert digest(ROOT / name) == expected, name
@@ -205,6 +205,23 @@ def check():
                               ('report_text.py', 'script_sha256')]:
             assert digest(review / filename) == report[key], filename
         review_status = 'complete'
+    prompt_folder = ROOT / 'experiments/prompt-state-image-v1'
+    prompt_verified = load('experiments/prompt-state-image-v1/verification.json')
+    assert prompt_verified['passed'] and prompt_verified['conditions'] == 18
+    for name, expected in prompt_verified['source_sha256'].items():
+        assert digest(prompt_folder / name) == expected, name
+    for name, expected in prompt_verified['frozen_inputs_verified'].items():
+        assert digest(ROOT / name) == expected, name
+    prompt_calls = load('experiments/prompt-state-image-v1/calls.json')
+    assert len(prompt_calls['calls']) == 18 and not prompt_calls['failures']
+    for call in prompt_calls['calls']:
+        for name, expected in call['sha256'].items():
+            assert digest(prompt_folder / call['folder'] / name) == expected, name
+    initial = load('paper/initial-portrait-verification.json')
+    assert initial['paired_endpoints'] == 6 and initial['max_metric_replay_error'] < 1e-6
+    for name, expected in {**initial['source_sha256'], **initial['checked_images']}.items():
+        assert digest(ROOT / name) == expected, name
+
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
           f'AI evaluation setup and {len(verified_studies) + 7} verified text studies; '
