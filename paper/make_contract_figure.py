@@ -42,9 +42,10 @@ def main():
                 path = root / calls[row['job']]['folder'] / 'output.png'
                 assert sha(path) == calls[row['job']]['sha256']['output.png']
                 axes[j * 2 + i].imshow(plt.imread(path))
-                axes[j * 2 + i].set_title(f'Turn {key[2]}\n' + ('Baseline' if i == 0 else 'Keep + remove'), fontsize=13)
+                label = f'Request {key[2]}\n' + ('Baseline' if i == 0 else 'Keep + remove')
+                axes[j * 2 + i].set_title(label, fontsize=13)
                 axes[j * 2 + i].axis('off')
-                sources.append({'condition': row['id'],
+                sources.append({'condition': row['id'], 'label': label,
                                 'source': str(path.relative_to(Path(__file__).resolve().parents[1])),
                                 'sha256': sha(path)})
         fig.subplots_adjust(left=.01, right=.99, top=.87, bottom=.02, wspace=.03)

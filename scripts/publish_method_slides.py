@@ -10,7 +10,7 @@ from pathlib import Path
 from googleapiclient.discovery import build
 from update_google_slides import credentials, DEFAULT_CLIENT_FILE, PRESENTATION_ID
 
-from method_slides_content import ROOT, REPO, IMAGE_COMMIT, IDS, SOURCES, load, sha, spec
+from method_slides_content import ROOT, REPO, IMAGE_COMMIT, IDS, SOURCES, load, sha, spec, image_label
 
 
 def props(slide, x, y, w, h):
@@ -75,7 +75,7 @@ def requests(deck):
             person=item['person']
             figure=next(f for f in load(SOURCES[2])['figures'] if person in f['figure'])
             for j,source in enumerate(figure['sources']):
-                text_box(req,sid,f'label{j}',f"{3+j//2}턴  {'기준 방법' if j%2==0 else '유지·삭제'}",70+j*211,103,204,33,18,True)
+                text_box(req,sid,f'label{j}',image_label(j),70+j*211,103,204,33,18,True)
                 # Google fits the complete original image inside the box, preserving aspect ratio.
                 req.append({'createImage':{'objectId':sid+f'_method_image{j}', 'url':f'https://raw.githubusercontent.com/kimmireu0220/inha-capstone/{IMAGE_COMMIT}/'+source['source'],'elementProperties':props(sid,70+j*211,147,190,285)}})
         if number==10:
@@ -120,7 +120,7 @@ def text_requests(deck):
                 oid = sid + f'_method_label{j}'
                 if oid not in elements:
                     raise ValueError(f'Missing image label: {oid}')
-                replace(oid, f"{3+j//2}턴  {'기준 방법' if j%2==0 else '유지·삭제'}")
+                replace(oid, image_label(j))
         note_id = slide['slideProperties']['notesPage']['notesProperties']['speakerNotesObjectId']
         replace(note_id, item['notes'])
     return req

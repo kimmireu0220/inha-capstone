@@ -3,7 +3,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-from method_slides_content import ROOT, IDS, SOURCES, IMAGE_COMMIT, spec, sha
+from method_slides_content import ROOT, IDS, SOURCES, IMAGE_COMMIT, spec, sha, image_label
 from update_google_slides import PRESENTATION_ID
 
 
@@ -31,7 +31,7 @@ def verify(deck):
             provenance = json.loads((ROOT/SOURCES[2]).read_text())
             figure = next(f for f in provenance['figures'] if item['person'] in f['figure'])
             for j, source in enumerate(figure['sources']):
-                label = f"{3+j//2}턴  {'기준 방법' if j%2==0 else '유지·삭제'}"
+                label = image_label(j)
                 assert text_of(els[sid+f'_method_label{j}']['shape']['text']) == label
                 img = els[sid+f'_method_image{j}']['image']
                 assert img['sourceUrl'] == f'https://raw.githubusercontent.com/kimmireu0220/inha-capstone/{IMAGE_COMMIT}/'+source['source']

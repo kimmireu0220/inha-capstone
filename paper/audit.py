@@ -26,6 +26,10 @@ def audit(folder):
     repository = 'https://github.com/kimmireu0220/inha-capstone'
     reproduction = manuscript.split('### 4.3 재현 자료\n', 1)[1].split('### 4.4', 1)[0]
     assert repository in reproduction and repository not in references
+    body = manuscript.split('## 참고문헌\n', 1)[0]
+    for phrase in ['턴', '원응답', '자기 이전 상태를 누적', '최종 정답 대화']:
+        assert phrase not in body, f'Reader-facing wording: {phrase}'
+    assert not re.search(r'\bturns?\b', abstract, re.I)
 
     def source(relative):
         path = ROOT / relative
@@ -192,7 +196,7 @@ def audit(folder):
         if pair['same_input_job']:
             continue
         baseline = lookup[key(pair)]
-        row([f"{pair['person']} {pair['turn']}턴",
+        row([f"{pair['person']} 요청 {pair['turn']}",
              *[f'{v}/6' for v in baseline['goal_counts']],
              *[f'{v}/6' for v in pair['goal_counts']]])
     agreement = review['unique_input_agreement']
