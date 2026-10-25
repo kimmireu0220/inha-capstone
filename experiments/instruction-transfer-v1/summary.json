@@ -1,0 +1,265 @@
+{
+  "complete": true,
+  "actual_model_calls": 96,
+  "dialogues": 12,
+  "requests": 48,
+  "distinct_request_texts": 32,
+  "goal_configurations": 4,
+  "groups": {
+    "baseline_restore": {
+      "recombined": {
+        "exact": 7,
+        "requests": 16,
+        "target_exact": 2,
+        "target_requests": 8,
+        "correct_slots": 84,
+        "slots": 96,
+        "final_exact": 1,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 13,
+        "requests": 16,
+        "target_exact": 6,
+        "target_requests": 8,
+        "correct_slots": 90,
+        "slots": 96,
+        "final_exact": 3,
+        "dialogues": 4,
+        "new_errors": 0
+      }
+    },
+    "keep_remove": {
+      "recombined": {
+        "exact": 7,
+        "requests": 16,
+        "target_exact": 2,
+        "target_requests": 8,
+        "correct_slots": 84,
+        "slots": 96,
+        "final_exact": 1,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 16,
+        "requests": 16,
+        "target_exact": 8,
+        "target_requests": 8,
+        "correct_slots": 96,
+        "slots": 96,
+        "final_exact": 4,
+        "dialogues": 4,
+        "new_errors": 0
+      }
+    },
+    "normalized_atomic": {
+      "recombined": {
+        "exact": 16,
+        "requests": 16,
+        "target_exact": 8,
+        "target_requests": 8,
+        "correct_slots": 96,
+        "slots": 96,
+        "final_exact": 4,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 16,
+        "requests": 16,
+        "target_exact": 8,
+        "target_requests": 8,
+        "correct_slots": 96,
+        "slots": 96,
+        "final_exact": 4,
+        "dialogues": 4,
+        "new_errors": 0
+      }
+    },
+    "isolated_keep_remove": {
+      "recombined": {
+        "exact": 7,
+        "requests": 16,
+        "target_exact": 2,
+        "target_requests": 8,
+        "correct_slots": 87,
+        "slots": 96,
+        "final_exact": 1,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 16,
+        "requests": 16,
+        "target_exact": 8,
+        "target_requests": 8,
+        "correct_slots": 96,
+        "slots": 96,
+        "final_exact": 4,
+        "dialogues": 4,
+        "new_errors": 0
+      }
+    },
+    "normalized_isolated": {
+      "recombined": {
+        "exact": 16,
+        "requests": 16,
+        "target_exact": 8,
+        "target_requests": 8,
+        "correct_slots": 96,
+        "slots": 96,
+        "final_exact": 4,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 16,
+        "requests": 16,
+        "target_exact": 8,
+        "target_requests": 8,
+        "correct_slots": 96,
+        "slots": 96,
+        "final_exact": 4,
+        "dialogues": 4,
+        "new_errors": 0
+      }
+    },
+    "json_first_only": {
+      "recombined": {
+        "exact": 7,
+        "requests": 16,
+        "target_exact": 2,
+        "target_requests": 8,
+        "correct_slots": 84,
+        "slots": 96,
+        "final_exact": 1,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 9
+      }
+    },
+    "json_review_then_first": {
+      "recombined": {
+        "exact": 7,
+        "requests": 16,
+        "target_exact": 2,
+        "target_requests": 8,
+        "correct_slots": 84,
+        "slots": 96,
+        "final_exact": 1,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "unseen": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 0
+      },
+      "revision": {
+        "exact": 4,
+        "requests": 16,
+        "target_exact": 0,
+        "target_requests": 8,
+        "correct_slots": 72,
+        "slots": 96,
+        "final_exact": 0,
+        "dialogues": 4,
+        "new_errors": 9
+      }
+    }
+  },
+  "repeated_texts": {
+    "Use a garden background with a bench. Wear a gray blazer over a navy sweater. Add a red triangular pin on the viewer-left lapel and a gold round pendant necklace.": 3,
+    "Change the necklace to a silver teardrop necklace.": 3,
+    "Use a library background with a floor lamp. Wear a navy blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a silver teardrop necklace.": 3,
+    "Change the shirt to a gray sweater.": 3,
+    "Use a pale-blue studio with a plant. Wear a green blazer over a white crew-neck shirt. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.": 3,
+    "Change the pin to a red triangular pin on the viewer-left lapel.": 3,
+    "Use a red-brick studio with a bench. Wear a beige blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a silver teardrop necklace.": 3,
+    "Replace the bench with a plant.": 3
+  }
+}

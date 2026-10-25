@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 import zipfile
+from pypdf import PdfReader
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,7 +36,8 @@ def check():
                           ('manuscript.inha.docx', 'docx_sha256'),
                           ('manuscript.inha.pdf', 'pdf_sha256')]:
         assert digest(ROOT / 'paper' / filename) == render[key], filename
-    assert render['all_pages_visually_reviewed'] and render['pages'] == 8
+    assert render['all_pages_visually_reviewed']
+    assert render['pages'] == len(PdfReader(ROOT / 'paper/manuscript.inha.pdf').pages)
     assert render['body_columns'] == 2
     assert render['reviewed_pages'] == list(range(1, render['pages'] + 1))
     assert digest(ROOT / 'paper/figures/figure-provenance.json') == evidence['figure_provenance_sha256']
@@ -131,6 +133,14 @@ def check():
         for name, expected in json.loads((folder / manifest).read_text()).items():
             if name != 'model_revision':
                 assert digest(ROOT / name) == expected, name
+    transfer = ROOT / 'experiments/instruction-transfer-v1'
+    transfer_verification = json.loads((transfer / 'verification.json').read_text())
+    assert transfer_verification['passed']
+    assert transfer_verification['requests'] == 48 and transfer_verification['actual_model_calls'] == 96
+    for name, expected in transfer_verification['sha256'].items():
+        assert digest(transfer / name) == expected, name
+    for name, expected in json.loads((transfer / 'frozen.json').read_text())['sha256'].items():
+        assert digest(ROOT / name) == expected, name
     # Preserve the rejected first candidate and the explicitly post-hoc replay.
     for name, expected in load('experiments/action-plan-v1/frozen.json').items():
         if name != 'model_revision':
@@ -181,7 +191,7 @@ def check():
         review_status = 'complete'
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
-          f'AI evaluation setup and {len(verified_studies) + 3} verified text studies; '
+          f'AI evaluation setup and {len(verified_studies) + 4} verified text studies; '
           f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 
 

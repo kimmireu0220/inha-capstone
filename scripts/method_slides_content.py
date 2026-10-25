@@ -23,7 +23,10 @@ SOURCES = ['paper/manuscript.ko.md', 'paper/evidence.json',
            'experiments/clause-factorial-v1/results.json',
            'experiments/clause-factorial-v1/summary.json',
            'experiments/clause-normalization-v1/plain-patch-comparison.json',
-           'experiments/clause-normalization-v1/invariant-audit.json']
+           'experiments/clause-normalization-v1/invariant-audit.json',
+           'experiments/instruction-transfer-v1/results.json',
+           'experiments/instruction-transfer-v1/summary.json',
+           'experiments/instruction-transfer-v1/verification.json']
 
 
 def load(path):
@@ -50,6 +53,8 @@ def spec():
     normalized = load(SOURCES[9])['methods']
     structural = load(SOURCES[11])['methods']
     plain = load(SOURCES[13])['studies']['clause-factorial-v1']['review_then_first']
+    transfer = load('experiments/instruction-transfer-v1/results.json')['methods']
+    transfer_groups = load('experiments/instruction-transfer-v1/summary.json')['groups']['normalized_atomic']
     mixed_review = compound['groups']['review']['mixed']['exact_turns']
     mixed_guarded = compound['groups']['guarded']['mixed']['exact_turns']
     images = [['AI 항목별 충족률', '기준 방법', '유지·삭제 결합']]
@@ -94,10 +99,10 @@ def spec():
              body='표현을 바꾼 요청 32개에서 기존 방법은 25/32\n복원할 대상과 유지할 대상이 섞이는 오류 확인\n\n개선 코드를 고정한 뒤 새 대화 4개, 요청 16개 검사\n'+f"기준 {normalized['baseline_restore']['exact_turns']}/16, 기존 유지·삭제 {normalized['keep_remove']['exact_turns']}/16\n정규화 {normalized['normalized_atomic']['exact_turns']}/16, 항목별 적용을 더해도 같은 결과",
              foot='개선은 대화 네 개 중 세 개에서 발생. 기준이 맞은 요청을 추가로 틀린 경우는 0개\n검사에는 규칙이 처리하도록 정한 영어 표현을 사용',
              notes='표현을 바꾸자 모델이 맞게 답해도 복원 지시가 뒤의 유지 대상까지 적용되는 오류가 나타났습니다. 두 지시를 구분하고 같은 뜻의 표현을 정해진 형태로 바꿨습니다. 개발 자료 재계산은 정규화 29/32, 항목별 적용 27/32, 결합 32/32였습니다. 이후 코드를 고정하고 새 대화로 검사한 결과는 기준 9/16, 기존 유지·삭제 10/16, 정규화 16/16, 항목별 적용 10/16, 결합 16/16이었습니다. 개선은 세 대화에서 나타났으며 일부 차이는 앞선 오류가 이후 요청에도 남은 결과입니다. '+REPO+'/blob/main/experiments/clause-normalization-v1/RESULTS.md\n복합 요청의 오류를 분석한 뒤 수행한 짧은 대조는 최초 추출·재검토 모두 7/8이었습니다. 이 8개 요청의 결과를 별도로 집계했습니다.'),
-        dict(title='문장 구조를 바꿔 비교한 결과와 결론',
-             body='편집 조건 3가지 × 문장 구조 4가지 × 요청 3개\n'+f"기준 {structural['baseline_restore']['exact_turns']}/36, 기존 유지·삭제 {structural['keep_remove']['exact_turns']}/36\n단순 JSON 적용 {plain['exact_turns']}/36, 정규화 {structural['normalized_atomic']['exact_turns']}/36\n\n복원할 대상과 유지할 대상을 구분해 상태 오류를 줄임",
-             foot='서로 다른 요청 문장은 18개. 세 편집 조건을 네 문장 구조로 비교\ngithub.com/kimmireu0220/inha-capstone',
-             notes='표준 분리 구절, leaving 연결, preserving 연결, bring back과 부정형 유지 표현을 비교했습니다. 복원과 유지가 함께 있는 요청에서 기존 유지·삭제는 구조 순서대로 3/3, 3/3, 0/3, 1/3이었고 정규화는 모두 3/3이었습니다. 전체 요청에서 기준은 18/36, 기존 유지·삭제는 26/36, 정규화는 36/36입니다. 항목별 적용을 더해도 정규화와 같은 결과였습니다. 저장된 응답에 단순 JSON 적용 방법을 비교하니 최초 응답과 재검토 우선 방식 모두 28/36이었습니다. 대화 12개는 세 편집 조건을 네 구조로 반복한 것이며 서로 다른 요청 문장은 18개입니다. 같은 초기 설정과 후속 요청의 응답 쌍은 모두 같았습니다. 별도의 코드 검사에서는 직접 구성한 정답 응답 963개를 사용했고, 대화 실험에서는 실제 모델 응답을 사용했습니다.\n문장 구조 결과 '+REPO+'/blob/main/experiments/clause-factorial-v1/RESULTS.md\n논문 '+REPO+'/blob/main/paper/manuscript.inha.pdf\nWord '+REPO+'/blob/main/paper/manuscript.inha.docx\n실험 색인 '+REPO+'/blob/main/RESEARCH_INDEX.md')
+        dict(title='문장 구조 비교와 추가 검증 결과',
+             body=f"기준 {structural['baseline_restore']['exact_turns']}/36, 기존 유지·삭제 {structural['keep_remove']['exact_turns']}/36\n단순 JSON 적용 {plain['exact_turns']}/36, 정규화 {structural['normalized_atomic']['exact_turns']}/36\n\n추가 요청 48개: 기준 {transfer['baseline_restore']['exact_turns']}/48, 정규화 {transfer['normalized_atomic']['exact_turns']}/48\n새 조합 {transfer_groups['recombined']['target_exact']}/8, 지시 수정 {transfer_groups['revision']['target_exact']}/8, 새 표현 {transfer_groups['unseen']['target_exact']}/8\n지원 표현의 적용 대상을 구분해 오류를 줄임",
+             foot='문장 구조 비교의 요청 문장은 18개. 추가 검증은 32개.\n표현 유형별 수치는 두 번째와 세 번째 요청 8개의 결과',
+             notes='표준 분리 구절, leaving 연결, preserving 연결, bring back과 부정형 유지 표현을 비교했습니다. 복원과 유지가 함께 있는 요청에서 기존 유지·삭제는 구조 순서대로 3/3, 3/3, 0/3, 1/3이었고 정규화는 모두 3/3이었습니다. 전체 요청에서 기준은 18/36, 기존 유지·삭제는 26/36, 정규화는 36/36입니다. 항목별 적용을 더해도 정규화와 같은 결과였습니다. 저장된 응답에 단순 JSON 적용 방법을 비교하니 최초 응답과 재검토 우선 방식 모두 28/36이었습니다. 대화 12개는 세 편집 조건을 네 구조로 반복한 것이며 서로 다른 요청 문장은 18개입니다. 같은 초기 설정과 후속 요청의 응답 쌍은 모두 같았습니다. 별도의 코드 검사에서는 직접 구성한 정답 응답 963개를 사용했고, 대화 실험에서는 실제 모델 응답을 사용했습니다. 추가 검증은 코드와 요청을 고정한 뒤 네 편집 조건을 세 표현 유형으로 비교한 대화 12개, 요청 48개입니다. 실제 모델 호출은 96회이고 서로 다른 요청 문장은 32개입니다. 기준 24/48, 기존 유지·삭제 27/48, 정규화 36/48, 항목별 적용 27/48, 결합 36/48, JSON 최초 응답과 재검토 우선은 각각 15/48입니다. 정규화의 최종 상태 일치율은 8/12이고 추가 오류는 0개였습니다. 기존 어휘의 새 조합과 앞 지시 수정은 각각 8/8이지만 규칙에 없는 표현은 0/8입니다. 새로운 복원 표현을 모델이 유지로 추출하였고 재검토와 규칙도 고치지 못했습니다. 최초 복원 오류 네 건과 그 오류가 남은 후속 요청 네 건이 0/8에 포함됩니다. https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/instruction-transfer-v1/RESULTS.md\n문장 구조 결과 '+REPO+'/blob/main/experiments/clause-factorial-v1/RESULTS.md\n논문 '+REPO+'/blob/main/paper/manuscript.inha.pdf\nWord '+REPO+'/blob/main/paper/manuscript.inha.docx\n실험 색인 '+REPO+'/blob/main/RESEARCH_INDEX.md')
     ]
 
 

@@ -1,0 +1,422 @@
+{
+  "sha256": {
+    "experiments/clause-normalization-v1/PROTOCOL.md": "f53935690c10ad545fa0631b290e3f0937f89ad6b1a51f46d1ef4c5b4e9f81fd",
+    "experiments/clause-normalization-v1/benchmark.json": "83f49c27019e7bebb15be550bb53181918d07004e90abc2531ba3233f5c4a6c9",
+    "experiments/clause-normalization-v1/method.py": "9ae2b2ab76573e76eb25fa692098da77e0b4d60b38464500ea4b58539b881131",
+    "experiments/clause-normalization-v1/run.py": "969902aa75e11a60b4185b83d9861b91dab27db261b2b4cc23ba1fa527de4501",
+    "experiments/clause-normalization-v1/test_method.py": "f778a771a2e9dcd589f2d5cd1efab71da59d062bd7e18f3d4d27be4149390d58",
+    "experiments/coverage-repair-v1/ablation.py": "78302ed5ba860e00b496806619f11ee11d63a935af1c13849c10cba32f79345e",
+    "experiments/coverage-repair-v1/run.py": "a677206c253bbed586d6302866ae9eb68501961eb4cdf20a3e8291d725268a6b",
+    "experiments/instruction-transfer-v1/PROTOCOL.md": "b04f3018669338921d64e28f4a01b435c18b79627e6b7ab6bde0fb1d49ab289f",
+    "experiments/instruction-transfer-v1/run.py": "2878c386d2735067f2ae01f0f91aae629f6f5b38b303d167871e3718d380f33e",
+    "experiments/keep-contract-v1/contract.py": "46a80167d1bf711de9e8aabe2a91bf3c0e0fb8740730bb2f9643d9c14fc397a5",
+    "experiments/keep-contract-v2/PROTOCOL.md": "ddfa055ce63ac7adfc5af684435b6eecfa3971b1602569b6f54caafac0760fbd",
+    "experiments/keep-contract-v2/benchmark.json": "5f3450f3634072ec3444d4872baf66c495af45dc217a3e7b739cfa609951574f",
+    "experiments/keep-contract-v2/contract.py": "b45f7652455c1d8a020ceedabb0a421f4c48e20cac9e100e7e00ec12d312ce2a",
+    "experiments/keep-contract-v2/run.py": "1b01a9860a58bd5084b32d352ade2aff66c728e08f585f93a01f0bcaae949ad4",
+    "experiments/keep-contract-v2/test_contract.py": "0a9041998d5f888e9ba9b8f6514e85c501f0fd5ce9721abf315e14c84ab8060f",
+    "experiments/keep-contract-validation-v1/PROTOCOL.md": "a8c47ee05e4dbefcce4546bd88056984d3dca558440d0d825ff269376149c8aa",
+    "experiments/keep-contract-validation-v1/benchmark.json": "2a2b37d8c242257dd33069212a86b777d48ed64ca1c50242a2ad429d32420191",
+    "experiments/keep-contract-validation-v1/run.py": "834f769935053916793a4ee0265bf0a0d529bbfaac9cb54e9b1bafc9620aaab2",
+    "experiments/request-contract-v3/PROTOCOL.md": "29ccfa7a3c37260e3762754d3be26bde723990542dced3100060ecc616e57ad1",
+    "experiments/request-contract-v3/benchmark.json": "15f3baf5c9ad3514be8578c2b04114573e4d0694a6fb77e7120f5e77f1edc25b",
+    "experiments/request-contract-v3/contract.py": "d2ee12527cb80b8236a9e45386e62d46a0da24e83e449b89664a0cba266aa031",
+    "experiments/request-contract-v3/run.py": "cfb7031b6ce0533b4bd2d4ec53da5f636d9d256b6d2f7d95a6c9ce9a626424bf",
+    "experiments/request-contract-v3/test_contract.py": "3e6686db5ea9d09006ac96df66e9c5fec64eeefb00860815ed386f741a5564ed",
+    "experiments/restore-contract-v1/contract.py": "67df5174f024f24e8fa120d28e9878a08bff954b560fd4e1ac819746222202ee",
+    "experiments/slot-isolation-v1/method.py": "5a0340514013f4421c9134ead01b5ffb4afc1cde68f375c26d2f529e64d58a4d",
+    "experiments/slot-isolation-validation-v1/run.py": "ba1c390facb14c1313b396a31095a1e91a02398b327f66f6cfee01c691ebbe2e",
+    "local-studio/request_state.py": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+    "scripts/compare_plain_patch.py": "8e86eddca1fb6ea59d70ab2ccb35508048812100e4ad71ec049116d95b0134dd"
+  },
+  "histories": {
+    "A__recombined": [
+      {
+        "request": "Use a garden background with a bench. Wear a gray blazer over a navy sweater. Add a red triangular pin on the viewer-left lapel and a gold round pendant necklace.",
+        "updates": {
+          "background": "garden",
+          "prop": "bench",
+          "jacket": "gray",
+          "top": "navy_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "Preserve the gray blazer and garden background; bring the sweater and pin back to the original photo.",
+        "updates": {
+          "top": "original",
+          "pin": "original"
+        }
+      },
+      {
+        "request": "Do not alter the gray blazer and garden background. Remove the bench.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the necklace to a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      }
+    ],
+    "A__unseen": [
+      {
+        "request": "Use a garden background with a bench. Wear a gray blazer over a navy sweater. Add a red triangular pin on the viewer-left lapel and a gold round pendant necklace.",
+        "updates": {
+          "background": "garden",
+          "prop": "bench",
+          "jacket": "gray",
+          "top": "navy_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "Revert the sweater and pin to how they looked in the source photo, keeping the gray blazer and garden background exactly as it is now.",
+        "updates": {
+          "top": "original",
+          "pin": "original"
+        }
+      },
+      {
+        "request": "Get rid of the bench entirely, and leave the gray blazer and garden background alone.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the necklace to a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      }
+    ],
+    "A__revision": [
+      {
+        "request": "Use a garden background with a bench. Wear a gray blazer over a navy sweater. Add a red triangular pin on the viewer-left lapel and a gold round pendant necklace.",
+        "updates": {
+          "background": "garden",
+          "prop": "bench",
+          "jacket": "gray",
+          "top": "navy_sweater",
+          "pin": "red_triangle_left",
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "Restore the original gray blazer and garden background; actually, keep the gray blazer and garden background unchanged. Restore the original sweater and pin.",
+        "updates": {
+          "top": "original",
+          "pin": "original"
+        }
+      },
+      {
+        "request": "Keep the bench unchanged; actually, remove the bench. Keep the gray blazer and garden background unchanged.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the necklace to a silver teardrop necklace.",
+        "updates": {
+          "necklace": "silver_teardrop"
+        }
+      }
+    ],
+    "B__recombined": [
+      {
+        "request": "Use a library background with a floor lamp. Wear a navy blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a silver teardrop necklace.",
+        "updates": {
+          "background": "library",
+          "prop": "lamp",
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "request": "Preserve the library background and lamp; bring the blazer and necklace back to the original photo.",
+        "updates": {
+          "jacket": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Do not alter the library background and lamp. Remove the pin.",
+        "updates": {
+          "pin": "none"
+        }
+      },
+      {
+        "request": "Change the shirt to a gray sweater.",
+        "updates": {
+          "top": "gray_sweater"
+        }
+      }
+    ],
+    "B__unseen": [
+      {
+        "request": "Use a library background with a floor lamp. Wear a navy blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a silver teardrop necklace.",
+        "updates": {
+          "background": "library",
+          "prop": "lamp",
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "request": "Revert the blazer and necklace to how they looked in the source photo, keeping the library background and lamp exactly as it is now.",
+        "updates": {
+          "jacket": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Get rid of the pin entirely, and leave the library background and lamp alone.",
+        "updates": {
+          "pin": "none"
+        }
+      },
+      {
+        "request": "Change the shirt to a gray sweater.",
+        "updates": {
+          "top": "gray_sweater"
+        }
+      }
+    ],
+    "B__revision": [
+      {
+        "request": "Use a library background with a floor lamp. Wear a navy blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a silver teardrop necklace.",
+        "updates": {
+          "background": "library",
+          "prop": "lamp",
+          "jacket": "navy",
+          "top": "ivory_crewneck",
+          "pin": "gold_square_right",
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "request": "Restore the original library background and lamp; actually, keep the library background and lamp unchanged. Restore the original blazer and necklace.",
+        "updates": {
+          "jacket": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Keep the pin unchanged; actually, remove the pin. Keep the library background and lamp unchanged.",
+        "updates": {
+          "pin": "none"
+        }
+      },
+      {
+        "request": "Change the shirt to a gray sweater.",
+        "updates": {
+          "top": "gray_sweater"
+        }
+      }
+    ],
+    "C__recombined": [
+      {
+        "request": "Use a pale-blue studio with a plant. Wear a green blazer over a white crew-neck shirt. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+        "updates": {
+          "background": "blue_studio",
+          "prop": "plant",
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "Preserve the green blazer and pale-blue studio background; bring the shirt and necklace back to the original photo.",
+        "updates": {
+          "top": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Do not alter the green blazer and pale-blue studio background. Remove the plant.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the pin to a red triangular pin on the viewer-left lapel.",
+        "updates": {
+          "pin": "red_triangle_left"
+        }
+      }
+    ],
+    "C__unseen": [
+      {
+        "request": "Use a pale-blue studio with a plant. Wear a green blazer over a white crew-neck shirt. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+        "updates": {
+          "background": "blue_studio",
+          "prop": "plant",
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "Revert the shirt and necklace to how they looked in the source photo, keeping the green blazer and pale-blue studio background exactly as it is now.",
+        "updates": {
+          "top": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Get rid of the plant entirely, and leave the green blazer and pale-blue studio background alone.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the pin to a red triangular pin on the viewer-left lapel.",
+        "updates": {
+          "pin": "red_triangle_left"
+        }
+      }
+    ],
+    "C__revision": [
+      {
+        "request": "Use a pale-blue studio with a plant. Wear a green blazer over a white crew-neck shirt. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+        "updates": {
+          "background": "blue_studio",
+          "prop": "plant",
+          "jacket": "green",
+          "top": "white_crewneck",
+          "pin": "blue_circle_left",
+          "necklace": "gold_round"
+        }
+      },
+      {
+        "request": "Restore the original green blazer and pale-blue studio background; actually, keep the green blazer and pale-blue studio background unchanged. Restore the original shirt and necklace.",
+        "updates": {
+          "top": "original",
+          "necklace": "original"
+        }
+      },
+      {
+        "request": "Keep the plant unchanged; actually, remove the plant. Keep the green blazer and pale-blue studio background unchanged.",
+        "updates": {
+          "prop": "none"
+        }
+      },
+      {
+        "request": "Change the pin to a red triangular pin on the viewer-left lapel.",
+        "updates": {
+          "pin": "red_triangle_left"
+        }
+      }
+    ],
+    "D__recombined": [
+      {
+        "request": "Use a red-brick studio with a bench. Wear a beige blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a silver teardrop necklace.",
+        "updates": {
+          "background": "brick_studio",
+          "prop": "bench",
+          "jacket": "beige",
+          "top": "gray_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "request": "Preserve the beige blazer and red-brick studio background; bring the pin and sweater back to the original photo.",
+        "updates": {
+          "pin": "original",
+          "top": "original"
+        }
+      },
+      {
+        "request": "Do not alter the beige blazer and red-brick studio background. Remove the necklace.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "request": "Replace the bench with a plant.",
+        "updates": {
+          "prop": "plant"
+        }
+      }
+    ],
+    "D__unseen": [
+      {
+        "request": "Use a red-brick studio with a bench. Wear a beige blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a silver teardrop necklace.",
+        "updates": {
+          "background": "brick_studio",
+          "prop": "bench",
+          "jacket": "beige",
+          "top": "gray_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "request": "Revert the pin and sweater to how they looked in the source photo, keeping the beige blazer and red-brick studio background exactly as it is now.",
+        "updates": {
+          "pin": "original",
+          "top": "original"
+        }
+      },
+      {
+        "request": "Get rid of the necklace entirely, and leave the beige blazer and red-brick studio background alone.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "request": "Replace the bench with a plant.",
+        "updates": {
+          "prop": "plant"
+        }
+      }
+    ],
+    "D__revision": [
+      {
+        "request": "Use a red-brick studio with a bench. Wear a beige blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a silver teardrop necklace.",
+        "updates": {
+          "background": "brick_studio",
+          "prop": "bench",
+          "jacket": "beige",
+          "top": "gray_sweater",
+          "pin": "blue_circle_left",
+          "necklace": "silver_teardrop"
+        }
+      },
+      {
+        "request": "Restore the original beige blazer and red-brick studio background; actually, keep the beige blazer and red-brick studio background unchanged. Restore the original pin and sweater.",
+        "updates": {
+          "pin": "original",
+          "top": "original"
+        }
+      },
+      {
+        "request": "Keep the necklace unchanged; actually, remove the necklace. Keep the beige blazer and red-brick studio background unchanged.",
+        "updates": {
+          "necklace": "none"
+        }
+      },
+      {
+        "request": "Replace the bench with a plant.",
+        "updates": {
+          "prop": "plant"
+        }
+      }
+    ]
+  },
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "temperature": 0,
+  "max_tokens": 260
+}

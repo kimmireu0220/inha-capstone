@@ -65,6 +65,29 @@ def audit(folder):
         for data in plain['studies'][study].values():
             expect(f"{data['exact_turns']}/{denominator}")
 
+    transfer = source('experiments/instruction-transfer-v1/results.json')
+    transfer_summary = source('experiments/instruction-transfer-v1/summary.json')
+    transfer_verified = source('experiments/instruction-transfer-v1/verification.json')
+    assert transfer['complete'] and transfer['actual_model_calls'] == 96
+    assert transfer_verified['passed'] and transfer_verified['requests'] == 48
+    assert transfer_summary['distinct_request_texts'] == 32
+    assert transfer_summary['goal_configurations'] == 4
+    for name, digest in transfer_verified['sha256'].items():
+        assert sha(ROOT / 'experiments/instruction-transfer-v1' / name) == digest
+    for name, digest in json.loads((ROOT / 'experiments/instruction-transfer-v1/frozen.json').read_text())['sha256'].items():
+        assert sha(ROOT / name) == digest
+    for data in transfer['methods'].values():
+        expect(f"{data['exact_turns']}/48")
+    normalized_transfer = transfer['methods']['normalized_atomic']
+    expect(f"{normalized_transfer['correct_slots']}/288")
+    expect(f"{normalized_transfer['exact_final_dialogues']}/12")
+    expect(f"기준이 맞았던 요청을 새로 틀린 경우는 {normalized_transfer['new_errors_vs_baseline']}개였다.")
+    expect(f"{transfer['methods']['normalized_atomic']['exact_turns']}/48", abstract)
+    for group, label in [('recombined', '기존 어휘의 새 조합'),
+                         ('unseen', '규칙에 없는 표현'), ('revision', '앞 지시의 수정')]:
+        row([label] + [f"{transfer_summary['groups'][mode][group]['target_exact']}/8"
+                       for mode in ['baseline_restore', 'keep_remove', 'normalized_atomic', 'json_review_then_first']])
+
     structural = source('experiments/clause-factorial-v1/results.json')
     structural_summary = source('experiments/clause-factorial-v1/summary.json')
     structural_verified = source('experiments/clause-factorial-v1/verification.json')
