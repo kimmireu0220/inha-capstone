@@ -1,0 +1,306 @@
+{
+  "model": {
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25"
+  },
+  "prepared_sha256": "70c79a9d39103b950bc0112143da302d0f0ac95762c21fff99dd477074a13f17",
+  "script_sha256": "4a306181656f0b54e4cd018ad17f34a9af0c6f2041d99ee8d2b97d299ded8519",
+  "tokenizer_sha256": {
+    "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "versions": {
+    "transformers": "5.16.1",
+    "tokenizers": "0.23.2"
+  },
+  "actual_new_language_model_calls": 0,
+  "request_prefixes": 12,
+  "rows": [
+    {
+      "history": "S1",
+      "request_index": 1,
+      "lengths": {
+        "full_history": {
+          "characters": 638,
+          "words": 100,
+          "tokens": 131
+        },
+        "unchecked_state": {
+          "characters": 652,
+          "words": 106,
+          "tokens": 140
+        },
+        "checked_state": {
+          "characters": 652,
+          "words": 106,
+          "tokens": 140
+        }
+      }
+    },
+    {
+      "history": "S1",
+      "request_index": 2,
+      "lengths": {
+        "full_history": {
+          "characters": 769,
+          "words": 124,
+          "tokens": 160
+        },
+        "unchecked_state": {
+          "characters": 652,
+          "words": 106,
+          "tokens": 140
+        },
+        "checked_state": {
+          "characters": 610,
+          "words": 99,
+          "tokens": 129
+        }
+      }
+    },
+    {
+      "history": "S1",
+      "request_index": 3,
+      "lengths": {
+        "full_history": {
+          "characters": 862,
+          "words": 142,
+          "tokens": 182
+        },
+        "unchecked_state": {
+          "characters": 652,
+          "words": 107,
+          "tokens": 139
+        },
+        "checked_state": {
+          "characters": 610,
+          "words": 100,
+          "tokens": 128
+        }
+      }
+    },
+    {
+      "history": "S1",
+      "request_index": 4,
+      "lengths": {
+        "full_history": {
+          "characters": 944,
+          "words": 155,
+          "tokens": 199
+        },
+        "unchecked_state": {
+          "characters": 620,
+          "words": 102,
+          "tokens": 134
+        },
+        "checked_state": {
+          "characters": 578,
+          "words": 95,
+          "tokens": 123
+        }
+      }
+    },
+    {
+      "history": "S2",
+      "request_index": 1,
+      "lengths": {
+        "full_history": {
+          "characters": 649,
+          "words": 101,
+          "tokens": 131
+        },
+        "unchecked_state": {
+          "characters": 643,
+          "words": 104,
+          "tokens": 136
+        },
+        "checked_state": {
+          "characters": 643,
+          "words": 104,
+          "tokens": 136
+        }
+      }
+    },
+    {
+      "history": "S2",
+      "request_index": 2,
+      "lengths": {
+        "full_history": {
+          "characters": 731,
+          "words": 117,
+          "tokens": 152
+        },
+        "unchecked_state": {
+          "characters": 651,
+          "words": 105,
+          "tokens": 139
+        },
+        "checked_state": {
+          "characters": 640,
+          "words": 103,
+          "tokens": 134
+        }
+      }
+    },
+    {
+      "history": "S2",
+      "request_index": 3,
+      "lengths": {
+        "full_history": {
+          "characters": 850,
+          "words": 138,
+          "tokens": 182
+        },
+        "unchecked_state": {
+          "characters": 665,
+          "words": 106,
+          "tokens": 139
+        },
+        "checked_state": {
+          "characters": 639,
+          "words": 103,
+          "tokens": 134
+        }
+      }
+    },
+    {
+      "history": "S2",
+      "request_index": 4,
+      "lengths": {
+        "full_history": {
+          "characters": 971,
+          "words": 158,
+          "tokens": 208
+        },
+        "unchecked_state": {
+          "characters": 665,
+          "words": 106,
+          "tokens": 139
+        },
+        "checked_state": {
+          "characters": 607,
+          "words": 96,
+          "tokens": 127
+        }
+      }
+    },
+    {
+      "history": "S3",
+      "request_index": 1,
+      "lengths": {
+        "full_history": {
+          "characters": 646,
+          "words": 100,
+          "tokens": 132
+        },
+        "unchecked_state": {
+          "characters": 619,
+          "words": 100,
+          "tokens": 133
+        },
+        "checked_state": {
+          "characters": 619,
+          "words": 100,
+          "tokens": 133
+        }
+      }
+    },
+    {
+      "history": "S3",
+      "request_index": 2,
+      "lengths": {
+        "full_history": {
+          "characters": 792,
+          "words": 126,
+          "tokens": 163
+        },
+        "unchecked_state": {
+          "characters": 619,
+          "words": 100,
+          "tokens": 133
+        },
+        "checked_state": {
+          "characters": 589,
+          "words": 94,
+          "tokens": 124
+        }
+      }
+    },
+    {
+      "history": "S3",
+      "request_index": 3,
+      "lengths": {
+        "full_history": {
+          "characters": 858,
+          "words": 138,
+          "tokens": 180
+        },
+        "unchecked_state": {
+          "characters": 623,
+          "words": 101,
+          "tokens": 134
+        },
+        "checked_state": {
+          "characters": 593,
+          "words": 95,
+          "tokens": 125
+        }
+      }
+    },
+    {
+      "history": "S3",
+      "request_index": 4,
+      "lengths": {
+        "full_history": {
+          "characters": 961,
+          "words": 156,
+          "tokens": 205
+        },
+        "unchecked_state": {
+          "characters": 588,
+          "words": 96,
+          "tokens": 127
+        },
+        "checked_state": {
+          "characters": 558,
+          "words": 90,
+          "tokens": 118
+        }
+      }
+    }
+  ],
+  "all_prefix_means": {
+    "full_history": {
+      "characters": 805.9166666666666,
+      "words": 129.58333333333334,
+      "tokens": 168.75
+    },
+    "unchecked_state": {
+      "characters": 637.4166666666666,
+      "words": 103.25,
+      "tokens": 136.08333333333334
+    },
+    "checked_state": {
+      "characters": 611.5,
+      "words": 98.75,
+      "tokens": 129.25
+    }
+  },
+  "final_request_means": {
+    "full_history": {
+      "characters": 958.6666666666666,
+      "words": 156.33333333333334,
+      "tokens": 204.0
+    },
+    "unchecked_state": {
+      "characters": 624.3333333333334,
+      "words": 101.33333333333333,
+      "tokens": 133.33333333333334
+    },
+    "checked_state": {
+      "characters": 581.0,
+      "words": 93.66666666666667,
+      "tokens": 122.66666666666667
+    }
+  }
+}

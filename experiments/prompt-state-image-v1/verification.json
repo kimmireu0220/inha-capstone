@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "summary.json": "ef2d346764efe889abf2498d50d2f41d422467b2388bbc9fe53d96d93904219a",
+    "prepared.json": "70c79a9d39103b950bc0112143da302d0f0ac95762c21fff99dd477074a13f17",
+    "calls.json": "c61e5e8bbe2a555b5eb657f5763f50879bde019ace224bf1cdad820ddea34c33",
+    "generation-plan.json": "10ca46601863152a56fd90fa06a448518e82d87de3ff734434e580d32d1e2bb0",
+    "feasibility-preflight.json": "f1cdb458099712268fb46b59700c4081f90b5daf9cd03279cac76c91ac19f46f",
+    "prompt-lengths.json": "881f1c5baeefd340a8b0815a8642c87c7eb6c3feea7badb4d02bc5ec4d77d65a",
+    "face-results.json": "94d5fd99281536455e0fb8921cf711becfc69d63ef3a22580cd4537dfd058b95",
+    "ai-ratings.json": "1384ea27247e92adcc9042d407df5c77a8adef28f44f19fb2bf017a3e28f6a8b",
+    "evaluation-plan.json": "6d263b16b33e51071479d39d36dddcae8bb9a10c9700ee6b46afabc39b52ca69",
+    "report.py": "29d05550e6a9683df529ce6990b2b19dfe871f481da1b77e8e92eae1ff5186f2",
+    "measure_lengths.py": "4a306181656f0b54e4cd018ad17f34a9af0c6f2041d99ee8d2b97d299ded8519",
+    "measure_faces.py": "04d728fec466a4c29d40ceb2721b92cd008880b02dae018fbc110e5b991469f7",
+    "manage.py": "c436af734d6908f798aee7d7986e52a4995f9bf7cab877cd7570558364f3e27e",
+    "figure.py": "d8a89791b994e6c5352be3843c84434775e7e236b018a39d38151ae5f999ef65",
+    "test_design.py": "957b44b28b57d41668c8ed9a7b127bd0f076b7d6bfb9933026eaed66591e7549",
+    "evaluate_secondary.py": "faa43810b07ca42fb1d91ce0654a35445e53778df9cfd0547c84ab3411df46ff",
+    "EVALUATOR_CHECK.md": "73537ca4bd1643ce407c22e179c2252587fd91bbb980b83f18d61797b8dedcf3",
+    "secondary-frozen.json": "d1248a3573fe2c1433a0390002b45f00e9f81ef0e4603a12ce6b13c9d2abae8b",
+    "ai-ratings-7b.json": "83744bc321b04a3b3852490877dd924fff0748611bcc0eb6a3f9142318a2f16f",
+    "qualitative-audit.json": "ed147c4457ffe2e2fefb5762007f21bc2fabe313a45c36121eeec5dacd3d236c",
+    "evaluation-interruptions.json": "574e19003c7df482ba7d7ff9bcb8cfac7236eae2005a90874d96c77691622543"
+  },
+  "frozen_inputs_verified": {
+    "experiments/single-extraction-validation-v1/benchmark.json": "c33da78dbd853061f234b8f4aacdf614f48067c84c4f3a6fb8a18ef76d151584",
+    "experiments/single-extraction-validation-v1/results-qwen3.json": "7db7c9dea1664029dd801641e178f0a88ebe5e3f582051b76edd2918ba1434ae",
+    "local-studio/request_state.py": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+    "experiments/prompt-state-image-v1/PROTOCOL.md": "03a76054d2f53c2e617d60514db52dc0ccd299ce1db918b2ee9321bb6067a825",
+    "experiments/prompt-state-image-v1/prepare.py": "8430aa10f20226758e42f1400cd85e0fb4bde8ddf3407ef6b9aadb09d2141d6d",
+    "experiments/state-tracking-v2/references/R01.png": "c96876735249d18a907c80dd7be0a7a0b10bc870db7981525e3e3e9f9f1655f2",
+    "experiments/state-tracking-v2/references/R02.png": "53ccb37dd7fb14fa1504cc647f8ea4b65327e2a87f096b9bd727d04f6edfb4e9"
+  },
+  "first_outputs_preserved": true,
+  "conditions": 18,
+  "unique_jobs": 18,
+  "actual_new_state_extraction_calls": 0
+}

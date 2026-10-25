@@ -1,0 +1,18 @@
+{
+  "reviewer": "Codex AI visual inspection",
+  "scope": "Qualitative discrepancy examples; not blinded, not human evaluation, no replacement scores",
+  "examples": [
+    {
+      "condition": "R02-S1-unchecked_state",
+      "observation": "A gray sweater and a small gold square lapel pin are visible.",
+      "primary_evaluator_statement": "The image shows a white short-sleeve crew-neck T-shirt; no visible lapel pin.",
+      "issue": "Evaluator explanation does not match visible clothing and accessory. Raw score and explanation remain unchanged."
+    },
+    {
+      "condition": "R01-S2-full_history",
+      "observation": "A wooden slatted bench is visible in the foreground.",
+      "primary_evaluator_statement": "There is one stone bench in the background.",
+      "issue": "Bench material in the explanation differs from the visible result. Raw score and explanation remain unchanged."
+    }
+  ]
+}

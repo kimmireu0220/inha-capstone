@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "stage": "secondary_7b",
+      "reason": "Turn interrupted; prior unified exec session 99912 and process were absent on resume.",
+      "completed_responses_before_resume": 1,
+      "resume_action": "Resume the same frozen evaluator; reuse the one stored response and evaluate only missing keys.",
+      "unrecorded_inflight_response_status": "unknown",
+      "exact_total_inference_attempts": null
+    }
+  ],
+  "counting": "Report completed evaluation responses separately from exact attempted inference calls. No stored response was overwritten."
+}

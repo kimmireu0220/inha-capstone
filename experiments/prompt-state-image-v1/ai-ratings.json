@@ -1,0 +1,252 @@
+{
+  "rater_type": "AI",
+  "method_labels_hidden": true,
+  "inputs": {
+    "evaluation_plan_sha256": "6d263b16b33e51071479d39d36dddcae8bb9a10c9700ee6b46afabc39b52ca69",
+    "model": "mlx-community/Qwen2.5-VL-3B-Instruct-4bit",
+    "revision": "46d4cf06a06ffc1a766c214174f9cbed2f45bcab",
+    "temperature": 0,
+    "max_tokens": 400
+  },
+  "versions": {
+    "mlx-vlm": "0.7.4",
+    "mlx": "0.32.3",
+    "transformers": "5.18.0"
+  },
+  "ratings": {
+    "0d6e6767df10b6a6a1243ee9093e0edb4aaf67bbb3917eca2a1389ea934a9337": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a green blazer.\",\n    \"The person is wearing a gray short-sleeve crew-neck T-shirt.\",\n    \"There is a blue circular pin on the viewer-left lapel.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows a library with wooden bookshelves.\",\n    \"There is one stone bench in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 50.22365220799111
+    },
+    "16d548c6704b809236fa0591ab93c55ecbda832088fa49c1ea451f4ceaddc7cf": {
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "seconds": 91.19462379207835
+    },
+    "3c4ecc23c6c06de49eb16c04ab4101a9c02cc351dfe469930ef2db00fb7eb837": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a dark gray blazer.\",\n    \"The person is wearing a white short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the blazer.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows an office setting.\",\n    \"There is one green potted plant in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 53.06984629202634
+    },
+    "46d320ef8cbbacf6084d0952737c9d187acc3e3e8906188c6c77f628b2e3499f": {
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "seconds": 103.53280629194342
+    },
+    "574accc174382dea2c84b6288bdaa8bea231b12e78d8fc1021b9e20ba4c24306": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The image shows a navy blazer.\",\n    \"The image shows a white short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The image shows an outdoor garden with leafy hedges.\",\n    \"There is one warm floor lamp in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 56.40354233398102
+    },
+    "5ed7b6a14b5c0870d16eeee62d25654704ee0d6cec1cdb599da9d090cd3a2e12": {
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "seconds": 95.58463120891247
+    },
+    "8192a4f82ffe16ceb57bc54df94df0a0fbc3587aed09f90407deb0a6b6df6746": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The image shows a dark gray blazer.\",\n    \"The image shows a white short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background appears to be an office setting.\",\n    \"There is one green potted plant in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 56.296379999956116
+    },
+    "85ee953f569d4aa6800dcdeef1397029ba39f369b42f970daf4141116fa0adf2": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a navy blazer.\",\n    \"The person is wearing a gray short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the person.\",\n    \"There is no visible necklace chain or pendant on the person.\",\n    \"The background shows an outdoor garden with leafy hedges.\",\n    \"There is one warm floor lamp in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 57.64193379099015
+    },
+    "8c9f5e8de4bf99ebdb654e271a16689bb7afcffbd6089460b0eb586aa32d4846": {
+      "scores": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 0, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a green blazer.\",\n    \"The person is wearing a white short-sleeve crew-neck T-shirt.\",\n    \"There is a blue circular pin on the viewer-left lapel.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows a library with wooden bookshelves.\",\n    \"There is one stone bench in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 61.418711791047826
+    },
+    "8e7e09cf19f74b1f5be8f9dc302bd16419cf0f9ede20b0a38ca6473b75daf149": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a navy blazer.\",\n    \"The person is wearing a gray short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the person.\",\n    \"There is no visible necklace chain or pendant on the person.\",\n    \"The background shows an outdoor garden with leafy hedges.\",\n    \"There is one warm floor lamp in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 61.80732412496582
+    },
+    "9659668f80a70b860d466220e18b213f57eae7f8d59172ae0de62d0fdaca7cda": {
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "seconds": 128.87236954201944
+    },
+    "b7ef20a6cfa41d5af63368ec18f82acae7b7173824b8864c66c2518ab703f8ea": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a dark gray blazer.\",\n    \"The person is wearing a white short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the blazer.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows an office setting.\",\n    \"There is a green potted plant in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 73.56536574999336
+    },
+    "c259b2a2258ba3797f85a9eaef70c80dfc5687c130e8957baa3c40d67349f3e7": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a dark gray blazer.\",\n    \"The person is wearing a gray short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the blazer.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows an office setting with desks and chairs.\",\n    \"There is one green potted plant in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 70.86058641597629
+    },
+    "d321f904ddfee08ab416e80e53f7cc0a723e3dcffb6a0fe2439fbc41ca29b5b0": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a navy blazer.\",\n    \"The person is wearing a white short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the blazer.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows an outdoor garden with leafy hedges.\",\n    \"There is one warm floor lamp in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 64.17550179106183
+    },
+    "ded5fb1e4befa4ab2197b8f8b86df6fe560c8dc6687a3131f04cc0b1f1f245b2": {
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "seconds": 130.53680083306972
+    },
+    "e4678d73abea34cf142429bb6a071ecd7a820b93f6a14172be26ea34747eba33": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a green blazer.\",\n    \"The person is wearing a white short-sleeve crew-neck T-shirt.\",\n    \"There is a blue circular pin on the viewer-left lapel.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows a library with wooden bookshelves.\",\n    \"There is a stone bench in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 54.77306254208088
+    },
+    "f604223787ac25173b3143592868a2b6239bf1704f767f300bb3bf1726eaf56c": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The image shows a navy blazer worn by the person.\",\n    \"The person is wearing a white short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the person.\",\n    \"No necklace chain or pendant is visible on the person.\",\n    \"The background includes an outdoor garden with leafy hedges.\",\n    \"A warm floor lamp is present in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 62.403540916973725
+    },
+    "fa88421d478c3032e2587a9ff7dffdf3aa6bfab83da11769c70d4e1a82378590": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reasons\": [\n    \"The person is wearing a dark gray blazer.\",\n    \"The person is wearing a gray short-sleeve crew-neck T-shirt.\",\n    \"There is no visible lapel pin on the blazer.\",\n    \"There is no visible necklace chain or pendant.\",\n    \"The background shows an office setting.\",\n    \"There is one green potted plant in the background.\"\n  ]\n}\n```",
+      "parse_error": null,
+      "seconds": 51.831826749956235
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "posthoc": true,
+  "model": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
+  "revision": "fdcc572e8b05ba9daeaf71be8c9e4267c826ff9b",
+  "temperature": 0,
+  "max_tokens": 400,
+  "evaluation_plan_sha256": "6d263b16b33e51071479d39d36dddcae8bb9a10c9700ee6b46afabc39b52ca69",
+  "source_sha256": {
+    "evaluate_secondary.py": "faa43810b07ca42fb1d91ce0654a35445e53778df9cfd0547c84ab3411df46ff",
+    "EVALUATOR_CHECK.md": "73537ca4bd1643ce407c22e179c2252587fd91bbb980b83f18d61797b8dedcf3",
+    "ai-ratings.json": "1384ea27247e92adcc9042d407df5c77a8adef28f44f19fb2bf017a3e28f6a8b"
+  },
+  "helper_sha256": {
+    "evaluate.py": "8e516a987103e0b88a2534131dbb5f1f5c602582030f6f434a361eb4b39bc01d",
+    "goals.py": "ded2fa3f4defafef64d512a6caf8b0c7f3a904be9427db7fff182647702dbcd8"
+  }
+}

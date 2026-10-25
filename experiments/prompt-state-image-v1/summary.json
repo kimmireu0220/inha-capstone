@@ -1,0 +1,547 @@
+{
+  "complete": true,
+  "secondary_posthoc": true,
+  "secondary_by_mode": {
+    "full_history": {
+      "conditions": 6,
+      "goals_satisfied": 34,
+      "goal_denominator": 36,
+      "unknown": 0,
+      "exact_images": 4
+    },
+    "unchecked_state": {
+      "conditions": 6,
+      "goals_satisfied": 24,
+      "goal_denominator": 36,
+      "unknown": 2,
+      "exact_images": 0
+    },
+    "checked_state": {
+      "conditions": 6,
+      "goals_satisfied": 36,
+      "goal_denominator": 36,
+      "unknown": 0,
+      "exact_images": 6
+    }
+  },
+  "evaluator_agreement": {
+    "all_items": 108,
+    "equal_scores": 75,
+    "both_scored": 78,
+    "equal_both_scored": 73
+  },
+  "paired_comparisons": {
+    "full_history": {
+      "checked_better": {
+        "identity_similarity": 4,
+        "lpips": 4,
+        "goals_satisfied": 2
+      },
+      "checked_worse": {
+        "identity_similarity": 2,
+        "lpips": 2,
+        "goals_satisfied": 1
+      },
+      "paired_conditions": 6
+    },
+    "unchecked_state": {
+      "checked_better": {
+        "identity_similarity": 5,
+        "lpips": 4,
+        "goals_satisfied": 2
+      },
+      "checked_worse": {
+        "identity_similarity": 1,
+        "lpips": 2,
+        "goals_satisfied": 0
+      },
+      "paired_conditions": 6
+    }
+  },
+  "people": 2,
+  "dialogues": 3,
+  "request_prefixes": 12,
+  "conditions": 18,
+  "completed_image_evaluation_responses": 36,
+  "exact_image_evaluation_attempts": null,
+  "evaluator_process_interruptions": 1,
+  "actual_image_calls": 18,
+  "actual_new_state_extraction_calls": 0,
+  "by_mode": {
+    "full_history": {
+      "conditions": 6,
+      "goals_satisfied": 29,
+      "goal_denominator": 36,
+      "unknown": 6,
+      "exact_images": 4,
+      "valid_single_faces": 6,
+      "identity_mean": 0.9198422161107849,
+      "aligned_means": {
+        "mae": 0.07217937428504229,
+        "ssim": 0.7890377541383108,
+        "lpips": 0.09515808305392663
+      }
+    },
+    "unchecked_state": {
+      "conditions": 6,
+      "goals_satisfied": 18,
+      "goal_denominator": 36,
+      "unknown": 18,
+      "exact_images": 3,
+      "valid_single_faces": 6,
+      "identity_mean": 0.9019974744937023,
+      "aligned_means": {
+        "mae": 0.08679537754505873,
+        "ssim": 0.7480889161427816,
+        "lpips": 0.10921291230867307
+      }
+    },
+    "checked_state": {
+      "conditions": 6,
+      "goals_satisfied": 30,
+      "goal_denominator": 36,
+      "unknown": 6,
+      "exact_images": 5,
+      "valid_single_faces": 6,
+      "identity_mean": 0.9233177391931486,
+      "aligned_means": {
+        "mae": 0.09557171600560348,
+        "ssim": 0.7541971405347189,
+        "lpips": 0.10669828827182452
+      }
+    }
+  },
+  "prompt_lengths": {
+    "full_history": {
+      "characters": 958.6666666666666,
+      "words": 156.33333333333334,
+      "tokens": 204.0
+    },
+    "unchecked_state": {
+      "characters": 624.3333333333334,
+      "words": 101.33333333333333,
+      "tokens": 133.33333333333334
+    },
+    "checked_state": {
+      "characters": 581.0,
+      "words": 93.66666666666667,
+      "tokens": 122.66666666666667
+    }
+  },
+  "rows": [
+    {
+      "id": "R01-S1-full_history",
+      "person": "R01",
+      "history": "S1",
+      "mode": "full_history",
+      "job": "img-3ddbe2aa42b1329f",
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "identity_similarity": 0.9008707628817342,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.20508557558059692,
+        "ssim": 0.5536063313484192,
+        "lpips": 0.22185610234737396
+      }
+    },
+    {
+      "id": "R01-S1-unchecked_state",
+      "person": "R01",
+      "history": "S1",
+      "mode": "unchecked_state",
+      "job": "img-d754947ddddc6a0c",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.8832623877663546,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.21383407711982727,
+        "ssim": 0.541394054889679,
+        "lpips": 0.24766674637794495
+      }
+    },
+    {
+      "id": "R01-S1-checked_state",
+      "person": "R01",
+      "history": "S1",
+      "mode": "checked_state",
+      "job": "img-30ad3f20f7413446",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9050890151103537,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.2121409922838211,
+        "ssim": 0.585239052772522,
+        "lpips": 0.23005037009716034
+      }
+    },
+    {
+      "id": "R02-S1-unchecked_state",
+      "person": "R02",
+      "history": "S1",
+      "mode": "unchecked_state",
+      "job": "img-6ec4d44d26d9f59d",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9310185684482235,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.025869308039546013,
+        "ssim": 0.8233334422111511,
+        "lpips": 0.03428076207637787
+      }
+    },
+    {
+      "id": "R02-S1-checked_state",
+      "person": "R02",
+      "history": "S1",
+      "mode": "checked_state",
+      "job": "img-ed3980339e61ecd9",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9068386537774872,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.019250722602009773,
+        "ssim": 0.8692330718040466,
+        "lpips": 0.030685335397720337
+      }
+    },
+    {
+      "id": "R02-S1-full_history",
+      "person": "R02",
+      "history": "S1",
+      "mode": "full_history",
+      "job": "img-a0dbf763703c0312",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9262980203990024,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.022572048008441925,
+        "ssim": 0.8701370358467102,
+        "lpips": 0.03148117661476135
+      }
+    },
+    {
+      "id": "R01-S2-unchecked_state",
+      "person": "R01",
+      "history": "S2",
+      "mode": "unchecked_state",
+      "job": "img-100ff10049a5a2a8",
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "identity_similarity": 0.8997928699059262,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.17514775693416595,
+        "ssim": 0.6666226387023926,
+        "lpips": 0.20911961793899536
+      }
+    },
+    {
+      "id": "R01-S2-checked_state",
+      "person": "R01",
+      "history": "S2",
+      "mode": "checked_state",
+      "job": "img-666217cdf959c2ef",
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "identity_similarity": 0.9229644472148528,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.19481344521045685,
+        "ssim": 0.6295697689056396,
+        "lpips": 0.23652949929237366
+      }
+    },
+    {
+      "id": "R01-S2-full_history",
+      "person": "R01",
+      "history": "S2",
+      "mode": "full_history",
+      "job": "img-f8a02b40c6c7ca5e",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9228768285787039,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.09741562604904175,
+        "ssim": 0.8034167885780334,
+        "lpips": 0.15100833773612976
+      }
+    },
+    {
+      "id": "R02-S2-checked_state",
+      "person": "R02",
+      "history": "S2",
+      "mode": "checked_state",
+      "job": "img-f51c79f33b64fce7",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9440048940160084,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.024991350248456,
+        "ssim": 0.8384251594543457,
+        "lpips": 0.025604646652936935
+      }
+    },
+    {
+      "id": "R02-S2-full_history",
+      "person": "R02",
+      "history": "S2",
+      "mode": "full_history",
+      "job": "img-6c49bad0f171d896",
+      "scores": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9354731029355314,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.022431887686252594,
+        "ssim": 0.8337068557739258,
+        "lpips": 0.02966357208788395
+      }
+    },
+    {
+      "id": "R02-S2-unchecked_state",
+      "person": "R02",
+      "history": "S2",
+      "mode": "unchecked_state",
+      "job": "img-1197b8c6c0b24d96",
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "identity_similarity": 0.9365312092692288,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.020633045583963394,
+        "ssim": 0.8468620181083679,
+        "lpips": 0.02264307253062725
+      }
+    },
+    {
+      "id": "R01-S3-checked_state",
+      "person": "R01",
+      "history": "S3",
+      "mode": "checked_state",
+      "job": "img-cc7c0c5ad1696f53",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9168074870472664,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.1031058207154274,
+        "ssim": 0.7323822975158691,
+        "lpips": 0.09796606004238129
+      }
+    },
+    {
+      "id": "R01-S3-full_history",
+      "person": "R01",
+      "history": "S3",
+      "mode": "full_history",
+      "job": "img-257489714cb7df24",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.8807229684842366,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.06523474305868149,
+        "ssim": 0.7914467453956604,
+        "lpips": 0.1142876148223877
+      }
+    },
+    {
+      "id": "R01-S3-unchecked_state",
+      "person": "R01",
+      "history": "S3",
+      "mode": "unchecked_state",
+      "job": "img-efcfb3c9c7527bab",
+      "scores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "identity_similarity": 0.8487108055336223,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.059811532497406006,
+        "ssim": 0.7614936828613281,
+        "lpips": 0.11182187497615814
+      }
+    },
+    {
+      "id": "R02-S3-full_history",
+      "person": "R02",
+      "history": "S3",
+      "mode": "full_history",
+      "job": "img-754f1b5105506460",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.952811613385501,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.020336365327239037,
+        "ssim": 0.8819127678871155,
+        "lpips": 0.02265169471502304
+      }
+    },
+    {
+      "id": "R02-S3-unchecked_state",
+      "person": "R02",
+      "history": "S3",
+      "mode": "unchecked_state",
+      "job": "img-1f65d2ab88f2fe11",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.912669006038858,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.025476545095443726,
+        "ssim": 0.8488276600837708,
+        "lpips": 0.029745399951934814
+      }
+    },
+    {
+      "id": "R02-S3-checked_state",
+      "person": "R02",
+      "history": "S3",
+      "mode": "checked_state",
+      "job": "img-e417c0c3402ff8f9",
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parse_error": null,
+      "identity_similarity": 0.9442019379929234,
+      "face_count": 1,
+      "aligned_112": {
+        "mae": 0.019127964973449707,
+        "ssim": 0.8703334927558899,
+        "lpips": 0.019353818148374557
+      }
+    }
+  ]
+}

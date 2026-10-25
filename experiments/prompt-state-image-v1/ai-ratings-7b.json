@@ -1,0 +1,260 @@
+{
+  "inputs": {
+    "posthoc": true,
+    "model": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
+    "revision": "fdcc572e8b05ba9daeaf71be8c9e4267c826ff9b",
+    "temperature": 0,
+    "max_tokens": 400,
+    "evaluation_plan_sha256": "6d263b16b33e51071479d39d36dddcae8bb9a10c9700ee6b46afabc39b52ca69",
+    "source_sha256": {
+      "evaluate_secondary.py": "faa43810b07ca42fb1d91ce0654a35445e53778df9cfd0547c84ab3411df46ff",
+      "EVALUATOR_CHECK.md": "73537ca4bd1643ce407c22e179c2252587fd91bbb980b83f18d61797b8dedcf3",
+      "ai-ratings.json": "1384ea27247e92adcc9042d407df5c77a8adef28f44f19fb2bf017a3e28f6a8b"
+    },
+    "helper_sha256": {
+      "evaluate.py": "8e516a987103e0b88a2534131dbb5f1f5c602582030f6f434a361eb4b39bc01d",
+      "goals.py": "ded2fa3f4defafef64d512a6caf8b0c7f3a904be9427db7fff182647702dbcd8"
+    }
+  },
+  "ratings": {
+    "0d6e6767df10b6a6a1243ee9093e0edb4aaf67bbb3917eca2a1389ea934a9337": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 0],\n  \"reason\": \"The image shows a person wearing a green blazer, a gray short-sleeve crew-neck T-shirt, a blue circular pin on the left lapel, no visible necklace chain or pendant, a library with wooden bookshelves, and a wooden bench in the background, but the bench appears to be made of wood, not stone.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 112.3527579579968
+    },
+    "16d548c6704b809236fa0591ab93c55ecbda832088fa49c1ea451f4ceaddc7cf": {
+      "scores": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null
+      ],
+      "raw": "```json\n{\n  \"scores\": [0, 1, 1, 0, 1, null],\n  \"reason\": \"The image shows a person wearing a white short-sleeve crew-neck T-shirt with a blue circular pin on the left side. There is no green blazer, no necklace chain or pendant, and the background is a library with wooden bookshelves. There is no stone bench visible in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 42.574881999986246
+    },
+    "3c4ecc23c6c06de49eb16c04ab4101a9c02cc351dfe469930ef2db00fb7eb837": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a dark gray blazer, a white short-sleeve crew-neck T-shirt, and no visible accessories. The background appears to be an office setting with a green potted plant in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 57.01467191602569
+    },
+    "46d320ef8cbbacf6084d0952737c9d187acc3e3e8906188c6c77f628b2e3499f": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a green blazer, a gray short-sleeve crew-neck T-shirt, a blue circular pin on the left lapel, no visible necklace chain or pendant, a library with wooden bookshelves, and a stone bench in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 59.70551316696219
+    },
+    "574accc174382dea2c84b6288bdaa8bea231b12e78d8fc1021b9e20ba4c24306": {
+      "scores": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 0, 0, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a navy blazer, a gray short-sleeve crew-neck T-shirt, no visible lapel pin, no necklace chain or pendant, an outdoor garden with leafy hedges, and one warm floor lamp in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 56.86778820795007
+    },
+    "5ed7b6a14b5c0870d16eeee62d25654704ee0d6cec1cdb599da9d090cd3a2e12": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a navy blazer, a gray short-sleeve crew-neck T-shirt, and no visible accessories like a lapel pin or necklace. The background features an outdoor garden with leafy hedges and a warm floor lamp in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 55.30476433306467
+    },
+    "8192a4f82ffe16ceb57bc54df94df0a0fbc3587aed09f90407deb0a6b6df6746": {
+      "scores": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 0, 1, 1],\n  \"reason\": \"The image shows a person wearing a dark gray blazer, a white short-sleeve crew-neck T-shirt, and no visible lapel pin. The person is wearing a necklace chain with a pendant, which is not visible. The background appears to be an office setting, and there is one green potted plant visible in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 58.288883749977686
+    },
+    "85ee953f569d4aa6800dcdeef1397029ba39f369b42f970daf4141116fa0adf2": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a navy blazer, a gray short-sleeve crew-neck T-shirt, and no visible accessories like a lapel pin or necklace. The background features an outdoor garden with leafy hedges, and there is one warm floor lamp in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 53.39273745799437
+    },
+    "8c9f5e8de4bf99ebdb654e271a16689bb7afcffbd6089460b0eb586aa32d4846": {
+      "scores": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 0, 1, 1],\n  \"reason\": \"The image shows a person wearing a green blazer, a white short-sleeve crew-neck T-shirt, a blue circular pin on the viewer-left lapel, no visible necklace chain or pendant, a library with wooden bookshelves, and a stone bench in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 56.119048916967586
+    },
+    "8e7e09cf19f74b1f5be8f9dc302bd16419cf0f9ede20b0a38ca6473b75daf149": {
+      "scores": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 0, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a navy blazer, a gray short-sleeve crew-neck T-shirt, and no visible lapel pin or necklace chain. The background features an outdoor garden with leafy hedges and a warm floor lamp in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 51.576761250034906
+    },
+    "9659668f80a70b860d466220e18b213f57eae7f8d59172ae0de62d0fdaca7cda": {
+      "scores": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 0, 1, 0, 1, 1],\n  \"reason\": \"The person is wearing a dark gray blazer, a gray short-sleeve crew-neck T-shirt, and no visible lapel pin or necklace chain or pendant. The background shows an office setting with a green potted plant in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 57.942168958019465
+    },
+    "b7ef20a6cfa41d5af63368ec18f82acae7b7173824b8864c66c2518ab703f8ea": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a dark gray blazer, a white short-sleeve crew-neck T-shirt, and no visible accessories. The background appears to be an office setting, and there is one green potted plant visible in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 39.076052249991335
+    },
+    "c259b2a2258ba3797f85a9eaef70c80dfc5687c130e8957baa3c40d67349f3e7": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a man wearing a dark gray blazer, a gray short-sleeve crew-neck T-shirt, and no visible accessories such as a lapel pin or necklace. The background is an office setting, and there is one green potted plant visible.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 29.00919445801992
+    },
+    "d321f904ddfee08ab416e80e53f7cc0a723e3dcffb6a0fe2439fbc41ca29b5b0": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a navy blazer, a white short-sleeve crew-neck T-shirt, and no visible accessories. The background includes an outdoor garden with leafy hedges and a warm floor lamp. The blazer has no lapel pin, and there are no visible necklace chains or pendants. The warm floor lamp is present in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 32.85836487496272
+    },
+    "ded5fb1e4befa4ab2197b8f8b86df6fe560c8dc6687a3131f04cc0b1f1f245b2": {
+      "scores": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null
+      ],
+      "raw": "```json\n{\n  \"scores\": [0, 1, 1, 0, 1, null],\n  \"reason\": \"The image shows a person wearing a gray short-sleeve crew-neck T-shirt, a blue circular pin on the viewer-left lapel, and a necklace chain with a pendant. The background is a library with wooden bookshelves, but there is no visible stone bench in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 40.897206375026144
+    },
+    "e4678d73abea34cf142429bb6a071ecd7a820b93f6a14172be26ea34747eba33": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a green blazer, a white short-sleeve crew-neck T-shirt, a blue circular pin on the viewer-left lapel, no visible necklace chain or pendant, a library with wooden bookshelves, and a stone bench in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 63.38879475009162
+    },
+    "f604223787ac25173b3143592868a2b6239bf1704f767f300bb3bf1726eaf56c": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a person wearing a navy blazer, a white short-sleeve crew-neck T-shirt, and no visible accessories like a lapel pin or necklace. The background includes an outdoor garden with leafy hedges and a warm floor lamp in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 72.32146533404011
+    },
+    "fa88421d478c3032e2587a9ff7dffdf3aa6bfab83da11769c70d4e1a82378590": {
+      "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw": "```json\n{\n  \"scores\": [1, 1, 1, 1, 1, 1],\n  \"reason\": \"The image shows a man wearing a dark gray blazer, a gray short-sleeve crew-neck T-shirt, and no visible accessories. The background appears to be an office setting, and there is one green potted plant visible in the background.\"\n}\n```",
+      "parse_error": null,
+      "seconds": 64.49097920802888
+    }
+  },
+  "versions": {
+    "mlx-vlm": "0.7.4",
+    "mlx": "0.32.3",
+    "transformers": "5.18.0"
+  }
+}
