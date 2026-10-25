@@ -1,0 +1,348 @@
+{
+  "evaluator": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "ratings": [
+    {
+      "id": "V01",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Green tailored blazer visible.",
+        "White crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "One round blue pin on viewer-left lapel.",
+        "No chain or pendant visible at neck or chest.",
+        "Books fill wooden library shelves.",
+        "One pale stone slab bench visible behind subject."
+      ]
+    },
+    {
+      "id": "V02",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        0
+      ],
+      "reasons": [
+        "Dark charcoal gray blazer visible.",
+        "White crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Glass partitions, desks and office chairs visible.",
+        "Large potted plant at right plus a second small plant at rear left."
+      ]
+    },
+    {
+      "id": "V03",
+      "scores": [
+        0,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Blazer is light gray, not dark gray.",
+        "White crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Glass partitions, desks and office chairs visible.",
+        "One large green plant in a dark planter visible."
+      ]
+    },
+    {
+      "id": "V04",
+      "scores": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "reasons": [
+        "Dark charcoal gray blazer visible.",
+        "Undershirt is white rather than gray.",
+        "Both lapels visibly free of pins.",
+        "Chain with hanging pendant clearly visible.",
+        "Glass partitions, desks and office chairs visible.",
+        "Large potted plant at left and another small plant behind glass."
+      ]
+    },
+    {
+      "id": "V05",
+      "scores": [
+        1,
+        null,
+        0,
+        0,
+        1,
+        0
+      ],
+      "reasons": [
+        "Green blazer visible.",
+        "White crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Blue circular pin is on viewer-right lapel.",
+        "Gold chain and round pendant visible.",
+        "Books fill wooden library shelves.",
+        "Background bench is visibly wooden."
+      ]
+    },
+    {
+      "id": "V06",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "reasons": [
+        "No blazer is present.",
+        "White crew-neck T-shirt with exposed short sleeves.",
+        "Blue round pin is on T-shirt, with no lapel present.",
+        "Gold chain and pendant visible.",
+        "Books fill wooden library shelves.",
+        "No bench visible."
+      ]
+    },
+    {
+      "id": "V07",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Navy blazer visible.",
+        "Gray crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Outdoor foliage and leafy hedges visible.",
+        "One illuminated warm-shaded floor lamp visible."
+      ]
+    },
+    {
+      "id": "V08",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Navy blazer visible.",
+        "White crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Outdoor foliage and leafy hedges visible.",
+        "One illuminated warm-shaded floor lamp visible."
+      ]
+    },
+    {
+      "id": "V09",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Dark gray blazer visible.",
+        "Gray crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Glass partitions, desks and office chairs visible.",
+        "One green plant in white pot visible at right."
+      ]
+    },
+    {
+      "id": "V10",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Navy blazer visible.",
+        "Gray crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Outdoor foliage and leafy hedges visible.",
+        "One illuminated warm-shaded floor lamp visible."
+      ]
+    },
+    {
+      "id": "V11",
+      "scores": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Navy blazer visible.",
+        "Gray knit top has sweater-like ribbed collar and waistband.",
+        "Gold square pin on viewer-right lapel.",
+        "No chain or pendant visible at neck or chest.",
+        "Outdoor foliage and leafy hedges visible.",
+        "One illuminated warm-shaded floor lamp visible."
+      ]
+    },
+    {
+      "id": "V12",
+      "scores": [
+        1,
+        null,
+        0,
+        1,
+        1,
+        0
+      ],
+      "reasons": [
+        "Green blazer visible.",
+        "Gray crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Round blue pin is on viewer-right lapel.",
+        "No chain or pendant visible at neck or chest.",
+        "Books fill wooden library shelves.",
+        "Bench has wooden slats and wooden arms."
+      ]
+    },
+    {
+      "id": "V13",
+      "scores": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "reasons": [
+        "No blazer is present.",
+        "Gray crew-neck T-shirt with exposed short sleeves.",
+        "Blue circular pin sits on viewer-right T-shirt chest; no lapel.",
+        "Gold chain with round pendant visible.",
+        "Books fill wooden library shelves.",
+        "No bench visible."
+      ]
+    },
+    {
+      "id": "V14",
+      "scores": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "reasons": [
+        "Dark gray blazer visible.",
+        "White finely knitted sweater with ribbed waistband, not T-shirt.",
+        "Both lapels visibly free of pins.",
+        "Thin chain and small pendant visible.",
+        "Glass partitions, desks and office chairs visible.",
+        "One green potted plant at viewer-left."
+      ]
+    },
+    {
+      "id": "V15",
+      "scores": [
+        0,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Blazer is light gray rather than dark gray.",
+        "Gray crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Glass partitions, desks and office chairs visible.",
+        "One tall green plant in white square planter."
+      ]
+    },
+    {
+      "id": "V16",
+      "scores": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Navy blazer visible.",
+        "White crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "Both lapels visibly free of pins.",
+        "No chain or pendant visible at neck or chest.",
+        "Outdoor foliage and leafy hedges visible.",
+        "One illuminated warm-shaded floor lamp visible."
+      ]
+    },
+    {
+      "id": "V17",
+      "scores": [
+        1,
+        null,
+        0,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Green blazer visible.",
+        "Gray crew-neck T-shirt visible; sleeve length concealed by blazer.",
+        "One round blue pin is on viewer-right lapel.",
+        "No chain or pendant visible at neck or chest.",
+        "Books fill wooden library shelves.",
+        "One stone slab bench with carved stone legs visible."
+      ]
+    },
+    {
+      "id": "V18",
+      "scores": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "reasons": [
+        "Navy blazer visible.",
+        "Gray long-sleeve knit sweater with ribbed cuffs, not white T-shirt.",
+        "Gold square pin on viewer-right lapel.",
+        "No chain or pendant visible at neck or chest.",
+        "Outdoor foliage and leafy hedges visible.",
+        "One illuminated warm-shaded floor lamp visible."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "post_hoc": true,
+  "evaluator": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "images": 18,
+  "goals_per_image": 6,
+  "raters": 2,
+  "by_evaluator": {
+    "a": {
+      "full_history": {
+        "success": 23,
+        "failure": 7,
+        "unknown": 6,
+        "total": 36,
+        "images": 6
+      },
+      "unchecked_state": {
+        "success": 19,
+        "failure": 17,
+        "unknown": 0,
+        "total": 36,
+        "images": 6
+      },
+      "checked_state": {
+        "success": 28,
+        "failure": 2,
+        "unknown": 6,
+        "total": 36,
+        "images": 6
+      }
+    },
+    "b": {
+      "full_history": {
+        "success": 23,
+        "failure": 7,
+        "unknown": 6,
+        "total": 36,
+        "images": 6
+      },
+      "unchecked_state": {
+        "success": 19,
+        "failure": 17,
+        "unknown": 0,
+        "total": 36,
+        "images": 6
+      },
+      "checked_state": {
+        "success": 28,
+        "failure": 2,
+        "unknown": 6,
+        "total": 36,
+        "images": 6
+      }
+    }
+  },
+  "agreement": {
+    "equal": 108,
+    "total": 108
+  },
+  "disagreements": [],
+  "qwen7b_disagreements": {
+    "a": [
+      {
+        "id": "V01",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V02",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V02",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Large potted plant at right and another small potted plant at far left."
+      },
+      {
+        "id": "V03",
+        "field": 1,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blazer is light gray rather than dark gray."
+      },
+      {
+        "id": "V03",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V04",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Large potted plant at left plus smaller potted greenery behind the glass."
+      },
+      {
+        "id": "V05",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V05",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin is on viewer-right lapel."
+      },
+      {
+        "id": "V05",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Visible bench is wooden, not stone."
+      },
+      {
+        "id": "V06",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin is on T-shirt chest, with no lapel present."
+      },
+      {
+        "id": "V06",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": null,
+        "reason": "No bench visible."
+      },
+      {
+        "id": "V07",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V08",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck top visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V09",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V10",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V11",
+        "field": 2,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Gray top has knitted ribbed collar and waistband, appearing to be a sweater."
+      },
+      {
+        "id": "V12",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V12",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin is on viewer-right lapel."
+      },
+      {
+        "id": "V13",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin is on viewer-right T-shirt chest, with no lapel present."
+      },
+      {
+        "id": "V13",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": null,
+        "reason": "No bench visible."
+      },
+      {
+        "id": "V14",
+        "field": 2,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "White inner top has knitted ribbed hem and collar, appearing to be a sweater."
+      },
+      {
+        "id": "V15",
+        "field": 1,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blazer is light gray rather than dark gray."
+      },
+      {
+        "id": "V15",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V16",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck top visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V17",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length hidden by blazer."
+      },
+      {
+        "id": "V17",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin is on viewer-right lapel."
+      }
+    ],
+    "b": [
+      {
+        "id": "V01",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V02",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V02",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Large potted plant at right plus a second small plant at rear left."
+      },
+      {
+        "id": "V03",
+        "field": 1,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blazer is light gray, not dark gray."
+      },
+      {
+        "id": "V03",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V04",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Large potted plant at left and another small plant behind glass."
+      },
+      {
+        "id": "V05",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V05",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin is on viewer-right lapel."
+      },
+      {
+        "id": "V05",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Background bench is visibly wooden."
+      },
+      {
+        "id": "V06",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue round pin is on T-shirt, with no lapel present."
+      },
+      {
+        "id": "V06",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": null,
+        "reason": "No bench visible."
+      },
+      {
+        "id": "V07",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V08",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V09",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V10",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V11",
+        "field": 2,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Gray knit top has sweater-like ribbed collar and waistband."
+      },
+      {
+        "id": "V12",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V12",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Round blue pin is on viewer-right lapel."
+      },
+      {
+        "id": "V13",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blue circular pin sits on viewer-right T-shirt chest; no lapel."
+      },
+      {
+        "id": "V13",
+        "field": 6,
+        "gpt": 0,
+        "qwen7b": null,
+        "reason": "No bench visible."
+      },
+      {
+        "id": "V14",
+        "field": 2,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "White finely knitted sweater with ribbed waistband, not T-shirt."
+      },
+      {
+        "id": "V15",
+        "field": 1,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "Blazer is light gray rather than dark gray."
+      },
+      {
+        "id": "V15",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V16",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "White crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V17",
+        "field": 2,
+        "gpt": null,
+        "qwen7b": 1,
+        "reason": "Gray crew-neck T-shirt visible; sleeve length concealed by blazer."
+      },
+      {
+        "id": "V17",
+        "field": 3,
+        "gpt": 0,
+        "qwen7b": 1,
+        "reason": "One round blue pin is on viewer-right lapel."
+      }
+    ]
+  }
+}
