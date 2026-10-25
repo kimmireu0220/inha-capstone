@@ -35,6 +35,46 @@ def audit(folder):
         assert value in manuscript.splitlines(), f'Missing exact table row: {value}'
         checked.append(value)
 
+    invariants = source('experiments/clause-normalization-v1/invariant-audit.json')
+    assert invariants['passed'] and invariants['actual_model_calls'] == 0
+    assert not invariants['failures']
+    assert sum(group['cases'] for group in invariants['groups'].values()) == 963
+    assert all(group['cases'] == group['passed'] for group in invariants['groups'].values())
+    assert sha(ROOT / 'scripts/audit_clause_invariants.py') == invariants['verifier_sha256']
+    for name, digest in invariants['source_sha256'].items():
+        assert sha(ROOT / name) == digest
+    expect('963')
+
+    plain = source('experiments/clause-normalization-v1/plain-patch-comparison.json')
+    assert plain['posthoc_analysis'] and plain['additional_model_calls'] == 0
+    assert sha(ROOT / 'scripts/compare_plain_patch.py') == plain['verifier_sha256']
+    assert sha(ROOT / 'local-studio/request_state.py') == plain['reducer_schema_sha256']
+    for name, digest in plain['source_sha256'].items():
+        assert sha(ROOT / name) == digest
+    for study, denominator in [('clause-normalization-v1', 16), ('clause-factorial-v1', 36)]:
+        for data in plain['studies'][study].values():
+            expect(f"{data['exact_turns']}/{denominator}")
+
+    structural = source('experiments/clause-factorial-v1/results.json')
+    structural_summary = source('experiments/clause-factorial-v1/summary.json')
+    structural_verified = source('experiments/clause-factorial-v1/verification.json')
+    assert structural['complete'] and structural['actual_model_calls'] == 72
+    assert structural_verified['passed']
+    for name, digest in structural_verified['sha256'].items():
+        assert sha(ROOT / 'experiments/clause-factorial-v1' / name) == digest
+    for data in structural['methods'].values():
+        expect(f"{data['exact_turns']}/36")
+    for form, label in [('separated', '표준 분리 구절'), ('leaving', 'leaving 연결'),
+                        ('preserving', 'preserving 연결'), ('bring_back', 'bring back과 부정형 유지')]:
+        row([label] + [f"{structural_summary['forms'][mode][form]['exact_target_requests']}/3"
+                       for mode in ['baseline_restore', 'keep_remove', 'normalized_atomic']])
+    assert structural_summary['distinct_request_texts'] == 18
+    assert structural_summary['target_configurations'] == 3
+    for data in structural['methods'].values():
+        assert sum(r['exact'] for r in data['rows'] if r['turn'] == 1) == 12
+    for forms in structural_summary['forms'].values():
+        assert all(data['exact_target_requests'] == data['exact_followups'] for data in forms.values())
+
     prompt_audit = source('experiments/prompt-synthesis-expanded-v1/prompt-audit.json')
     prompt_plan = source('experiments/prompt-synthesis-expanded-v1/plan.json')
     assert sha(ROOT / 'experiments/prompt-synthesis-expanded-v1/prompt-audit.json') == prompt_plan['prompt_audit_sha256']

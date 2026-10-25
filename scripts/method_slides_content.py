@@ -19,7 +19,11 @@ SOURCES = ['paper/manuscript.ko.md', 'paper/evidence.json',
            'experiments/keep-image-v1/summary.json',
            'experiments/compound-edit-v1/summary.json',
            'experiments/clause-normalization-v1/results.json',
-           'experiments/paraphrase-contract-v1/results.json']
+           'experiments/paraphrase-contract-v1/results.json',
+           'experiments/clause-factorial-v1/results.json',
+           'experiments/clause-factorial-v1/summary.json',
+           'experiments/clause-normalization-v1/plain-patch-comparison.json',
+           'experiments/clause-normalization-v1/invariant-audit.json']
 
 
 def load(path):
@@ -44,6 +48,8 @@ def spec():
     first, second = load(SOURCES[5])['by_mode'], load(SOURCES[6])['by_mode']
     compound = load(SOURCES[8])
     normalized = load(SOURCES[9])['methods']
+    structural = load(SOURCES[11])['methods']
+    plain = load(SOURCES[13])['studies']['clause-factorial-v1']['review_then_first']
     mixed_review = compound['groups']['review']['mixed']['exact_turns']
     mixed_guarded = compound['groups']['guarded']['mixed']['exact_turns']
     images = [['AI 항목별 충족률', '기준 방법', '유지·삭제 결합']]
@@ -88,8 +94,8 @@ def spec():
              body='표현을 바꾼 32개 요청에서 기존 방법은 25/32\n원본 복원과 유지 구절을 구분하는 정규화 추가\n\n코드 고정 후 새 대화 4개, 요청 16개 검사\n'+f"기준 {normalized['baseline_restore']['exact_turns']}/16, 기존 유지·삭제 {normalized['keep_remove']['exact_turns']}/16\n정규화 {normalized['normalized_atomic']['exact_turns']}/16, 항목별 적용과 결합해도 같은 결과",
              foot='개선은 4대화 중 3대화에서 발생. 기준이 맞았던 요청의 새 오류는 0건\n측정 대상은 상태 기록이며, 제한된 영어 구절의 합성 대화를 사용',
              notes='기존 재검증과 목표를 공유하는 32개 요청의 표현을 바꾸자 기존 방법들은 모두 25/32였습니다. 모델은 셔츠와 목걸이만 원본으로 지정했지만 후처리가 뒤의 leaving 구절까지 복원하여 재킷과 배경도 원본으로 바꾸는 문제가 나타났습니다. 복원과 유지 구절을 구분하고 지원 표현을 정규화했습니다. 이 개발 자료 재계산은 정규화 29/32, 항목별 적용 27/32, 결합 32/32였습니다. 이후 코드를 고정하고 새 대화 네 개를 추론했습니다. 기준 9/16, 기존 유지·삭제 10/16, 정규화 16/16, 항목별 적용 10/16, 결합 16/16으로 새 대화의 개선은 정규화로 설명됩니다. 세 대화에서 개선됐고 일부 요청 차이는 앞선 오류의 누적입니다. 모델은 정규화 전 요청을 받아 두 응답을 공유하며 추가 호출은 없습니다. '+REPO+'/blob/main/experiments/clause-normalization-v1/RESULTS.md\n앞선 복합 요청의 오류를 분석한 뒤 수행한 짧은 대조는 최초 추출·재검토 모두 7/8이었습니다. 이 8개 요청의 결과를 별도로 집계했습니다. 모든 검사는 제한된 영어 문형과 한 종류의 추출 모델을 사용했습니다.'),
-        dict(title='논문과 재현 자료',
-             body='논문 PDF 및 Word\n각 실험의 요청, 정답, 모델 응답과 실험 코드\n전체 생성 이미지와 AI 평가 원문\n개발 과정과 실험별 결과',
-             foot='github.com/kimmireu0220/inha-capstone',
-             notes='논문 '+REPO+'/blob/main/paper/manuscript.inha.pdf\nWord '+REPO+'/blob/main/paper/manuscript.inha.docx\n실험 색인 '+REPO+'/blob/main/RESEARCH_INDEX.md\n관련 연구 및 사진 출처 전체는 논문 참고문헌에 기재했다.')
+        dict(title='문장 구조 대조와 결론',
+             body='같은 목표 3구성 × 4문장 구조 × 요청 3회\n'+f"기준 {structural['baseline_restore']['exact_turns']}/36, 기존 유지·삭제 {structural['keep_remove']['exact_turns']}/36\n단순 JSON 적용 {plain['exact_turns']}/36, 정규화 {structural['normalized_atomic']['exact_turns']}/36\n\n복원·유지 구절을 구분하여 상태 갱신 오류를 줄임",
+             foot='서로 다른 요청 문장은 18개. 세 목표 구성의 대응 검사\ngithub.com/kimmireu0220/inha-capstone',
+             notes='표준 분리 구절, leaving 연결, preserving 연결, bring back과 부정형 유지 표현을 비교했습니다. 복원·유지가 함께 있는 두 번째 요청에서 기존 유지·삭제는 문장 구조 순서대로 3/3, 3/3, 0/3, 1/3이며 정규화는 모두 3/3이었습니다. 전체 상태 일치는 기준 18/36, 기존 유지·삭제 26/36, 정규화 36/36입니다. 항목별 적용만 사용하면 26/36, 정규화와 결합하면 36/36입니다. 단순 JSON 적용을 사후 재계산하니 최초 응답과 재검토 우선 방식 모두 28/36이었습니다. 이 비교는 요청당 한 번 또는 두 번의 모델 호출을 사용하며 정규화에는 추가 호출이 없습니다. 같은 초기 설정과 후속 요청을 네 구조에서 반복했으므로 서로 다른 요청 문장은 18개입니다. 반복 요청의 응답 쌍은 모두 같았습니다. 세 가지 목표 구성에서 구조를 바꾼 결과이며 사용자 12명의 관측이 아닙니다. 지원하는 영어 구절의 상태 갱신을 측정했습니다. 정답 응답을 구성한 별도 코드 검사 963개도 통과했으며 실제 모델 실험과 구분합니다.\n문장 구조 결과 '+REPO+'/blob/main/experiments/clause-factorial-v1/RESULTS.md\n논문 '+REPO+'/blob/main/paper/manuscript.inha.pdf\nWord '+REPO+'/blob/main/paper/manuscript.inha.docx\n실험 색인 '+REPO+'/blob/main/RESEARCH_INDEX.md')
     ]

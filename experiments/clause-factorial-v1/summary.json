@@ -1,0 +1,213 @@
+{
+  "complete": true,
+  "actual_model_calls": 72,
+  "dialogues": 12,
+  "requests": 36,
+  "distinct_request_texts": 18,
+  "target_configurations": 3,
+  "forms": {
+    "baseline_restore": {
+      "separated": {
+        "exact_turns": 7,
+        "turns": 9,
+        "exact_target_requests": 2,
+        "target_requests": 3,
+        "exact_followups": 2,
+        "followups": 3
+      },
+      "leaving": {
+        "exact_turns": 3,
+        "turns": 9,
+        "exact_target_requests": 0,
+        "target_requests": 3,
+        "exact_followups": 0,
+        "followups": 3
+      },
+      "preserving": {
+        "exact_turns": 3,
+        "turns": 9,
+        "exact_target_requests": 0,
+        "target_requests": 3,
+        "exact_followups": 0,
+        "followups": 3
+      },
+      "bring_back": {
+        "exact_turns": 5,
+        "turns": 9,
+        "exact_target_requests": 1,
+        "target_requests": 3,
+        "exact_followups": 1,
+        "followups": 3
+      }
+    },
+    "keep_remove": {
+      "separated": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "leaving": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "preserving": {
+        "exact_turns": 3,
+        "turns": 9,
+        "exact_target_requests": 0,
+        "target_requests": 3,
+        "exact_followups": 0,
+        "followups": 3
+      },
+      "bring_back": {
+        "exact_turns": 5,
+        "turns": 9,
+        "exact_target_requests": 1,
+        "target_requests": 3,
+        "exact_followups": 1,
+        "followups": 3
+      }
+    },
+    "normalized_atomic": {
+      "separated": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "leaving": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "preserving": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "bring_back": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      }
+    },
+    "isolated_keep_remove": {
+      "separated": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "leaving": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "preserving": {
+        "exact_turns": 3,
+        "turns": 9,
+        "exact_target_requests": 0,
+        "target_requests": 3,
+        "exact_followups": 0,
+        "followups": 3
+      },
+      "bring_back": {
+        "exact_turns": 5,
+        "turns": 9,
+        "exact_target_requests": 1,
+        "target_requests": 3,
+        "exact_followups": 1,
+        "followups": 3
+      }
+    },
+    "normalized_isolated": {
+      "separated": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "leaving": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "preserving": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      },
+      "bring_back": {
+        "exact_turns": 9,
+        "turns": 9,
+        "exact_target_requests": 3,
+        "target_requests": 3,
+        "exact_followups": 3,
+        "followups": 3
+      }
+    }
+  },
+  "repeated_requests": [
+    {
+      "request": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+      "observations": 4,
+      "distinct_response_pairs": 1
+    },
+    {
+      "request": "Remove the pin. Keep the plant unchanged.",
+      "observations": 4,
+      "distinct_response_pairs": 1
+    },
+    {
+      "request": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.",
+      "observations": 4,
+      "distinct_response_pairs": 1
+    },
+    {
+      "request": "Remove the bench. Keep the necklace unchanged.",
+      "observations": 4,
+      "distinct_response_pairs": 1
+    },
+    {
+      "request": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.",
+      "observations": 4,
+      "distinct_response_pairs": 1
+    },
+    {
+      "request": "Change the shirt to a navy sweater. Keep the pin unchanged.",
+      "observations": 4,
+      "distinct_response_pairs": 1
+    }
+  ],
+  "different_repeated_response_groups": 0
+}

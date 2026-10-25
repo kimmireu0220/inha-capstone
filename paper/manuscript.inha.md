@@ -8,13 +8,13 @@ Explicit Preservation and Removal Constraints for State Updates in Iterative Por
 
 ## 초록
 
-반복 이미지 편집에서는 변경할 내용과 유지하거나 삭제할 내용을 다음 프롬프트에 정확히 반영해야 한다. 본 연구는 언어 모델이 변경 사항을 추출하고 재검토한 뒤 명시적인 유지·삭제 지시를 확인하는 후처리 규칙을 제안한다. 유지 규칙은 이전 값을 보존하고 삭제 규칙은 값을 없음으로 설정한다. 유지·삭제 규칙 비교 실험의 대화 8개 32턴에서 전체 상태 일치율은 기준 27/32, 유지 규칙만 27/32, 삭제 규칙만 28/32, 두 규칙 결합 29/32였다. 새로운 대화 8개 32턴의 재검증에서도 28/32에서 29/32로 증가하였다. 포즈·표정을 포함한 복합 요청 실험에서는 속성 지시 혼합 조건의 전체 상태 일치율이 재검토 4/16에서 규칙 보정 16/16으로 증가하였다. 표현 변화 검사에서 원본 복원과 유지 구절의 경계 오류를 확인하여 지시 정규화를 추가하였다. 코드를 고정한 뒤 새 대화 4개 16턴을 검사한 결과, 기준은 9/16, 기존 유지·삭제는 10/16, 정규화는 16/16이었다. 실제 인물 사진의 AI 평가에서는 설명과 점수의 불일치가 나타났다. 제안 방법은 지정된 영어 구절의 합성 대화에서 추가 모델 호출 없이 상태 갱신 오류를 줄였다.
+반복 이미지 편집에서는 변경할 내용과 유지하거나 삭제할 내용을 다음 프롬프트에 정확히 반영해야 한다. 본 연구는 언어 모델이 변경 사항을 추출하고 재검토한 뒤 명시적인 유지·삭제 지시를 확인하는 후처리 규칙을 제안한다. 유지 규칙은 이전 값을 보존하고 삭제 규칙은 값을 없음으로 설정한다. 유지·삭제 규칙 비교 실험의 대화 8개 32턴에서 전체 상태 일치율은 기준 27/32, 유지 규칙만 27/32, 삭제 규칙만 28/32, 두 규칙 결합 29/32였다. 새로운 대화 8개 32턴의 재검증에서도 28/32에서 29/32로 증가하였다. 포즈·표정을 포함한 복합 요청 실험에서는 속성 지시 혼합 조건의 전체 상태 일치율이 재검토 4/16에서 규칙 보정 16/16으로 증가하였다. 표현 변화 검사에서 원본 복원과 유지 구절의 경계 오류를 확인하여 지시 정규화를 추가하였다. 코드를 고정한 뒤 새 대화 4개 16턴을 검사한 결과, 기준은 9/16, 기존 유지·삭제는 10/16, 정규화는 16/16이었다. 같은 목표의 문장 구조 대조에서도 기존 유지·삭제 26/36, 단순 JSON 적용 28/36, 정규화 36/36이었다. 실제 인물 사진의 AI 평가에서는 설명과 점수의 불일치가 나타났다. 제안 방법은 지정된 영어 구절의 합성 대화에서 추가 모델 호출 없이 상태 갱신 오류를 줄였다.
 
-주요어: 반복 이미지 편집, 요구 상태 관리, 명시적 유지, 명시적 삭제, 프롬프트 종합
+주요어: 반복 인물 이미지 편집, 상태 추적, 유지·삭제 규칙, 지시 구절 정규화
 
 ## Abstract
 
-Iterative portrait editing requires accurate updates to requested attribute values. We apply explicit preservation and removal rules after a language model extracts and reviews the requested changes. Preservation retains the previous value, whereas removal sets an attribute to absent. Across eight synthetic English dialogues with 32 turns, all six attribute values matched the reference state in 27/32 turns for the baseline, 27/32 for preservation alone, 28/32 for removal alone, and 29/32 for their combination. In eight new dialogues with 32 turns, the full-state match rate increased from 28/32 to 29/32. In a separate experiment involving expressions and poses, the full-state match rate for mixed attribute requests increased from 4/16 after model review to 16/16 after rule correction. A paired paraphrase test exposed errors in separating restoration from preservation clauses. We added bounded instruction normalization and froze the implementation before testing four new dialogues with 16 turns. The baseline matched 9/16 reference states, the existing preservation and removal rules matched 10/16, and normalization matched 16/16. An image study revealed inconsistencies between evaluator explanations and scores. The method reduced state-update errors without additional model calls within the tested English patterns and synthetic dialogues.
+Iterative portrait editing requires accurate updates to requested attribute values. We apply explicit preservation and removal rules after a language model extracts and reviews the requested changes. Preservation retains the previous value, whereas removal sets an attribute to absent. Across eight synthetic English dialogues with 32 turns, all six attribute values matched the reference state in 27/32 turns for the baseline, 27/32 for preservation alone, 28/32 for removal alone, and 29/32 for their combination. In eight new dialogues with 32 turns, the full-state match rate increased from 28/32 to 29/32. In a separate experiment involving expressions and poses, the full-state match rate for mixed attribute requests increased from 4/16 after model review to 16/16 after rule correction. A paired paraphrase test exposed errors in separating restoration from preservation clauses. We added bounded instruction normalization and froze the implementation before testing four new dialogues with 16 turns. The baseline matched 9/16 reference states, the existing preservation and removal rules matched 10/16, and normalization matched 16/16. A paired comparison across three target configurations and four sentence structures yielded 26/36 for the existing rules, 28/36 for schema-only patch application, and 36/36 for normalization. An image study revealed inconsistencies between evaluator explanations and scores. The method reduced state-update errors without additional model calls within the tested English patterns and synthetic dialogues.
 
 ## 1. 서론
 
@@ -88,6 +88,8 @@ Self-Refine은 모델의 피드백과 수정을 반복하는 방법이다[3]. �
 
 실험 코드와 대화, 정답, 모델 응답, 생성 이미지 및 평가 원문은 연구 저장소에 공개하였다[9]. 정확한 모델 버전과 실행 설정은 실험별 기록에 포함하였으며, 개발 중 재계산한 결과와 검증 결과를 구분하였다.
 
+후처리 코드에는 별도의 자동 검사를 적용하였다. 세 가지 이전 상태에서 복원·유지 대상의 조합, 두 대상의 복원, 뒤 지시의 우선 적용, 부정·조건·인용 표현을 구성하고 기준 갱신값과 비교하였다. 구성한 963개 경우에서 정답인 변경 사항을 적용한 결과가 기준 상태와 일치하였고 입력 상태도 보존되었다. 이는 정답 응답을 구성한 코드 검사이며, 실제 모델을 호출한 대화 실험과 구분한다.
+
 ### 4.4 포즈와 표정을 포함한 복합 요청 실험
 
 포즈·표정 요청과 속성 변경을 함께 처리하는 경우를 검사하기 위해 별도의 합성 대화를 구성하였다. 네 가지 요청 구성마다 표정 단독·표정과 포즈·속성 지시 혼합 조건의 4턴 대화를 작성하여 총 12개 대화 48턴을 사용하였다. 표정 단독 조건은 표정만 변경하고, 표정과 포즈 조건은 몸 방향과 손동작을 추가한다. 속성 지시 혼합 조건은 재킷·배경·식물·목걸이의 변경·유지·삭제·복원도 포함한다. 같은 요청 구성의 표정 목표는 세 조건에서 같게 하였다.
@@ -103,6 +105,10 @@ Qwen3-4B-4bit의 온도를 0, 최대 출력을 320토큰으로 설정하고 공�
 새 대화 재검증에 사용한 여덟 대화의 목표를 그대로 두고 요청 32개의 표현을 바꾸었다. 기존 규칙을 수정 없이 적용하여 표현 변화에 따른 오류를 확인하였다. 이 자료를 개발에 사용한 뒤 구절 정규화 코드를 고정하고 새로운 대화 네 개, 요청 16개로 검증하였다. 앞선 실험과 같은 추출 모델·예시·온도·최대 출력 길이를 사용하고, 각각 추출·재검토 응답 64개와 32개를 저장하였다. 모든 방법은 같은 원응답을 공유하며 자기 이전 상태를 누적한다.
 
 새 대화에서는 기준 방법, 기존 유지·삭제, 구절 정규화, 항목별 적용, 정규화와 항목별 적용의 결합을 비교한다. 구절 정규화 조건은 일괄 적용을 유지하고, 항목별 적용 조건은 기존 유지·삭제 규칙을 사용한다. 결합 조건은 두 처리를 모두 사용한다. 전체 상태·항목별·최종 상태 일치율과 기준은 맞았지만 각 방법에서 새로 틀린 요청 수를 집계한다. 개발 자료 재계산과 새 대화 검증은 따로 보고한다.
+
+### 4.6 같은 목표의 문장 구조 대조
+
+세 가지 항목 구성에서 복원·유지 목표를 고정하고 네 문장 구조를 비교하였다. 표준 분리 구절, leaving 연결, preserving 연결, bring back과 부정형 유지 표현을 사용하였다. 각 대화는 초기 설정, 복원과 유지, 별도 변경 요청의 세 단계로 구성하였다. 총 대화 12개·요청 36개에 대해 기존 코드를 수정 없이 적용하고 추출·재검토 응답 72개를 새로 저장하였다. 목표 구성은 세 가지이며 문장 구조 사이의 목표는 같다. 같은 초기 설정과 후속 요청의 반복 호출은 새 목표 구성과 구분하였다.
 
 ## 5. 결과
 
@@ -203,6 +209,8 @@ Qwen3-4B-4bit의 온도를 0, 최대 출력을 320토큰으로 설정하고 공�
 
 이 자료에 구절 정규화를 적용한 개발 결과는 29/32, 항목별 적용은 27/32, 두 처리의 결합은 32/32였다. 정규화만 사용한 경우에는 이전 상태의 오류를 유지하여 기준이 맞았던 요청 하나를 틀렸다. 항목별 적용을 결합한 경우에는 해당 오류가 발생하지 않았다. 이 재계산 결과를 바탕으로 코드를 고정한 뒤 새 대화 네 개를 검사하였다.
 
+기존 후처리의 복잡성이 비교 결과에 미친 영향을 살펴보기 위해, 같은 응답에 단순 JSON 적용 방법을 추가로 비교하였다. 항목과 값의 형식만 검사하고 요청의 어휘를 확인하는 규칙이나 유지·복원 규칙을 사용하지 않았다. 최초 응답만 적용하면 10/16, 유효한 재검토 응답을 우선 적용하면 9/16이었다. 이 비교는 저장된 전체 응답을 이용한 사후 분석이며, 최초 응답 방식은 요청당 한 번, 재검토 방식과 제안 방법은 두 번 호출한다.
+
 | 방법 | 전체 상태 일치율 | 항목별 일치율 | 최종 상태 일치율 | 새 오류 수 |
 | --- | --- | --- | --- | --- |
 | 기준 방법 | 9/16 | 86/96 | 2/4 | 0 |
@@ -214,6 +222,21 @@ Qwen3-4B-4bit의 온도를 0, 최대 출력을 320토큰으로 설정하고 공�
 표 7의 새 오류 수는 기준 방법이 맞았으나 해당 방법 적용 후 틀린 요청 수다. 구절 정규화는 기준보다 요청 일곱 개, 기존 유지·삭제보다 여섯 개를 더 맞혔다. 차이는 첫째·둘째·넷째 대화에서 나타났고 셋째 대화는 모든 방법이 네 요청을 모두 맞혔다. 정규화만 사용한 결과와 항목별 적용을 결합한 결과는 같았다. 따라서 이 새 대화에서의 추가 개선은 구절 정규화로 설명된다.
 
 예를 들어 둘째 대화의 두 번째 요청은 셔츠와 목걸이를 원본으로 돌리되 초록 재킷과 사무실 배경은 유지하도록 지시하였다. 모델의 응답은 셔츠와 목걸이만 원본으로 지정하였다. 기존 복원 검사는 뒤의 leaving 구절까지 포함해 재킷과 배경도 원본으로 바꾸었으나, 정규화한 방법은 복원과 유지 대상을 구분하였다. 일부 후속 요청의 차이는 앞선 오류가 다음 상태에 남은 결과이다. 따라서 요청 일곱 개의 개선과 별도로, 개선이 나타난 대화 수를 함께 제시하였다.
+
+### 5.8 문장 구조에 따른 처리 차이
+
+같은 목표를 네 구조로 요청한 대조에서 전체 상태 일치율은 기준 18/36, 기존 유지·삭제 26/36, 구절 정규화 36/36이었다. 항목별 적용만 사용하면 26/36, 정규화와 결합하면 36/36으로 앞선 새 대화 검증과 같은 구성요소별 차이가 나타났다. 초기 설정은 모든 방법이 12회 모두 맞혔다. 표 8은 복원과 유지를 함께 요청한 두 번째 단계에서 세 목표 구성의 상태가 모두 맞았는지 비교한 결과다.
+
+| 문장 구조 | 기준 방법 | 기존 유지·삭제 | 구절 정규화 |
+| --- | --- | --- | --- |
+| 표준 분리 구절 | 2/3 | 3/3 | 3/3 |
+| leaving 연결 | 0/3 | 3/3 | 3/3 |
+| preserving 연결 | 0/3 | 0/3 | 3/3 |
+| bring back과 부정형 유지 | 1/3 | 1/3 | 3/3 |
+
+기존 유지·삭제 규칙은 unchanged를 포함한 leaving 구절을 처리하였으나 preserving 연결에서는 세 구성 모두 틀렸다. bring back 구조에서도 세 구성 중 한 구성만 맞혔다. 정규화는 네 구조 모두에서 세 구성을 맞혔다. 세 번째 단계의 결과는 표 8과 같아, 앞서 생긴 상태 오류가 별도 변경 후에도 남는 양상을 보였다.
+
+단순 JSON 적용을 추가로 재계산하면 최초 응답과 재검토 우선 방식이 모두 28/36이었다. 정규화는 두 단순 방식보다 여덟 요청을 더 맞혔다. 요청 문장은 서로 다른 18개이며, 같은 초기 설정과 후속 요청을 반복 호출한 응답 쌍은 모두 같았다. 따라서 이 대조는 서로 다른 요청 36개의 관측이 아니라, 세 목표 구성에서 문장 구조를 바꾼 대응 결과이다.
 
 ## 6. 논의
 
@@ -227,6 +250,8 @@ Qwen3-4B-4bit의 온도를 0, 최대 출력을 320토큰으로 설정하고 공�
 
 표현 변화 검사에서는 기존 후처리 자체가 정답인 모델 응답을 훼손하는 문제가 드러났다. 지시 구절 정규화는 이 오류를 줄였으며 새 대화 네 개에서 세 대화의 결과를 개선하였다. 개발 자료에서는 항목별 적용도 결합 효과에 기여했으나 새 대화에서는 정규화만으로 같은 결과를 얻었다. 검증 자료는 지정된 영어 어휘와 구절로 작성하였으며 정규화 규칙의 적용 범위도 이 문법에 해당한다. 새 대화 검증은 상태 기록의 정확도를 측정하였다.
 
+문장 구조 대조에서는 목표를 같게 두고 표현만 바꾸어 차이를 확인하였다. 기존 유지·삭제 규칙의 실패는 preserving과 bring back 구조에 집중되었으며, 단순 JSON 적용도 정규화와 차이를 보였다. 동일한 추출·재검토 응답에서도 지시별 적용 대상을 구분한 후처리가 상태 오류를 줄였다. 효과를 확인한 대상은 고정한 세 가지 항목 구성과 네 문장 구조이다.
+
 ## 7. 결론
 
 본 연구에서는 언어 모델의 추출·재검토 결과에 명시적 유지·삭제 제약을 적용하는 상태 갱신 방법을 제안하였다. 정해진 영어 문형의 합성 대화를 이용한 규칙 비교 실험에서 유지 규칙은 배경 값의 변경을, 삭제 규칙은 소품 값의 삭제 누락을 각각 바로잡았다. 두 규칙의 결합으로 전체 상태 일치율은 27/32에서 29/32로 증가하였다. 새 대화에서의 재검증에서도 전체 상태 일치율은 28/32에서 29/32로 증가하였으며, 항목별 적용을 결합한 경우와 동일한 결과를 보였다. 제안 방법은 추가 모델 호출 없이 유지 지시 위반과 삭제 누락을 감소시켰다.
@@ -234,6 +259,8 @@ Qwen3-4B-4bit의 온도를 0, 최대 출력을 320토큰으로 설정하고 공�
 포즈·표정을 포함한 복합 요청 실험의 혼합 조건에서는 전체 상태 일치율이 재검토 4/16에서 규칙 보정 16/16으로 증가하였다. 모델은 포즈와 표정을 정확히 추출했으나 삭제를 원본 복원으로 해석하였고, 삭제 규칙이 이를 바로잡았다. 유지·삭제 지시를 확인하는 후처리 규칙은 동일 모델의 재검토 뒤에도 남은 상태 갱신 오류를 줄였다.
 
 표현을 바꾼 요청에서 발견한 구절 경계 오류를 분석하여 지시 정규화를 추가하였다. 코드를 고정한 뒤 수행한 새 대화 검증에서 전체 상태 일치율은 기준 9/16, 기존 유지·삭제 10/16, 정규화 16/16이었다. 원본 복원과 유지 지시를 각각의 구절에 적용하는 처리가 잘못된 상태 갱신을 줄였다. 제안 방법은 편집 요구를 프롬프트로 종합하는 과정에서 지시별 적용 대상을 구분하며 추가 모델 호출 없이 동작한다.
+
+같은 목표를 네 문장 구조로 요청한 대조에서도 기존 유지·삭제 26/36, 단순 JSON 적용 28/36, 정규화 36/36이었다. 지정된 편집 어휘 안에서 복원과 유지 구절을 분리하는 처리가 상태 갱신의 정확도를 높였다.
 
 ## 참고문헌
 

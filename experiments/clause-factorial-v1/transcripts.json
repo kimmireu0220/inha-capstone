@@ -1,0 +1,254 @@
+{
+  "shirt_necklace__separated-1": {
+    "request": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "seconds": 11.939258959027939
+  },
+  "shirt_necklace__separated-2": {
+    "request": "Restore the original shirt and necklace. Keep the navy blazer and library background unchanged.",
+    "first": "{\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "second_user": "Restore the original shirt and necklace. Keep the navy blazer and library background unchanged.\nProposed patch: {\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "seconds": 9.06367354199756
+  },
+  "shirt_necklace__separated-3": {
+    "request": "Remove the pin. Keep the plant unchanged.",
+    "first": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "second_user": "Remove the pin. Keep the plant unchanged.\nProposed patch: {\"pin\": \"none\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "seconds": 7.549405416939408
+  },
+  "shirt_necklace__leaving-1": {
+    "request": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "seconds": 11.328496458008885
+  },
+  "shirt_necklace__leaving-2": {
+    "request": "Return the shirt and necklace to the original photo, leaving the navy blazer and library background unchanged.",
+    "first": "{\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "second_user": "Return the shirt and necklace to the original photo, leaving the navy blazer and library background unchanged.\nProposed patch: {\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "seconds": 9.458088708925061
+  },
+  "shirt_necklace__leaving-3": {
+    "request": "Remove the pin. Keep the plant unchanged.",
+    "first": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "second_user": "Remove the pin. Keep the plant unchanged.\nProposed patch: {\"pin\": \"none\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "seconds": 7.792856833082624
+  },
+  "shirt_necklace__preserving-1": {
+    "request": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "seconds": 11.442633917089552
+  },
+  "shirt_necklace__preserving-2": {
+    "request": "Restore the original shirt and necklace, preserving the navy blazer and library background.",
+    "first": "{\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "second_user": "Restore the original shirt and necklace, preserving the navy blazer and library background.\nProposed patch: {\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"original\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "seconds": 10.857745375018567
+  },
+  "shirt_necklace__preserving-3": {
+    "request": "Remove the pin. Keep the plant unchanged.",
+    "first": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "second_user": "Remove the pin. Keep the plant unchanged.\nProposed patch: {\"pin\": \"none\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "seconds": 8.645939083071426
+  },
+  "shirt_necklace__bring_back-1": {
+    "request": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a library background with a plant. Wear a navy blazer over a gray sweater. Add a blue circular pin on the viewer-left lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"library\", \"prop\": \"plant\", \"jacket\": \"navy\", \"top\": \"gray_sweater\", \"pin\": \"blue_circle_left\", \"necklace\": \"gold_round\"}",
+    "seconds": 12.413913832977414
+  },
+  "shirt_necklace__bring_back-2": {
+    "request": "Bring the shirt and necklace back to the original photo. Do not alter the navy blazer and library background.",
+    "first": "{\"top\": \"keep\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "second_user": "Bring the shirt and necklace back to the original photo. Do not alter the navy blazer and library background.\nProposed patch: {\"top\": \"keep\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"keep\", \"necklace\": \"original\", \"jacket\": \"keep\", \"background\": \"keep\"}",
+    "seconds": 9.311560916015878
+  },
+  "shirt_necklace__bring_back-3": {
+    "request": "Remove the pin. Keep the plant unchanged.",
+    "first": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "second_user": "Remove the pin. Keep the plant unchanged.\nProposed patch: {\"pin\": \"none\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"none\", \"prop\": \"keep\"}",
+    "seconds": 7.675535000045784
+  },
+  "pin_shirt__separated-1": {
+    "request": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.",
+    "first": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "second_user": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.\nProposed patch: {\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "seconds": 11.824008124996908
+  },
+  "pin_shirt__separated-2": {
+    "request": "Restore the original pin and shirt. Keep the beige blazer and office background unchanged.",
+    "first": "{\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"beige\", \"background\": \"original\"}",
+    "second_user": "Restore the original pin and shirt. Keep the beige blazer and office background unchanged.\nProposed patch: {\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"beige\", \"background\": \"original\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"beige\", \"background\": \"original\"}",
+    "seconds": 9.186447917018086
+  },
+  "pin_shirt__separated-3": {
+    "request": "Remove the bench. Keep the necklace unchanged.",
+    "first": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "second_user": "Remove the bench. Keep the necklace unchanged.\nProposed patch: {\"prop\": \"none\", \"necklace\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "seconds": 7.97824633307755
+  },
+  "pin_shirt__leaving-1": {
+    "request": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.",
+    "first": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "second_user": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.\nProposed patch: {\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "seconds": 11.771873499965295
+  },
+  "pin_shirt__leaving-2": {
+    "request": "Return the pin and shirt to the original photo, leaving the beige blazer and office background unchanged.",
+    "first": "{\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"keep\", \"background\": \"original\"}",
+    "second_user": "Return the pin and shirt to the original photo, leaving the beige blazer and office background unchanged.\nProposed patch: {\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"keep\", \"background\": \"original\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"keep\", \"background\": \"original\"}",
+    "seconds": 9.380396666936576
+  },
+  "pin_shirt__leaving-3": {
+    "request": "Remove the bench. Keep the necklace unchanged.",
+    "first": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "second_user": "Remove the bench. Keep the necklace unchanged.\nProposed patch: {\"prop\": \"none\", \"necklace\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "seconds": 7.7453917500097305
+  },
+  "pin_shirt__preserving-1": {
+    "request": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.",
+    "first": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "second_user": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.\nProposed patch: {\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "seconds": 11.950922666932456
+  },
+  "pin_shirt__preserving-2": {
+    "request": "Restore the original pin and shirt, preserving the beige blazer and office background.",
+    "first": "{\"pin\": \"original\", \"top\": \"original\", \"background\": \"office\", \"jacket\": \"beige\"}",
+    "second_user": "Restore the original pin and shirt, preserving the beige blazer and office background.\nProposed patch: {\"pin\": \"original\", \"top\": \"original\", \"background\": \"office\", \"jacket\": \"beige\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"beige\", \"top\": \"original\", \"background\": \"office\", \"pin\": \"original\"}",
+    "seconds": 9.15867133392021
+  },
+  "pin_shirt__preserving-3": {
+    "request": "Remove the bench. Keep the necklace unchanged.",
+    "first": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "second_user": "Remove the bench. Keep the necklace unchanged.\nProposed patch: {\"prop\": \"none\", \"necklace\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "seconds": 7.795490959077142
+  },
+  "pin_shirt__bring_back-1": {
+    "request": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.",
+    "first": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "second_user": "Use an office background with a bench. Wear a beige blazer over a white crew-neck shirt. Add a red triangular pin on the viewer-left lapel and a silver teardrop necklace.\nProposed patch: {\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"office\", \"prop\": \"bench\", \"jacket\": \"beige\", \"top\": \"white_crewneck\", \"pin\": \"red_triangle_left\", \"necklace\": \"silver_teardrop\"}",
+    "seconds": 12.044231083011255
+  },
+  "pin_shirt__bring_back-2": {
+    "request": "Bring the pin and shirt back to the original photo. Do not alter the beige blazer and office background.",
+    "first": "{\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"keep\", \"background\": \"original\"}",
+    "second_user": "Bring the pin and shirt back to the original photo. Do not alter the beige blazer and office background.\nProposed patch: {\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"keep\", \"background\": \"original\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"pin\": \"original\", \"top\": \"original\", \"jacket\": \"keep\", \"background\": \"original\"}",
+    "seconds": 9.150376125006005
+  },
+  "pin_shirt__bring_back-3": {
+    "request": "Remove the bench. Keep the necklace unchanged.",
+    "first": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "second_user": "Remove the bench. Keep the necklace unchanged.\nProposed patch: {\"prop\": \"none\", \"necklace\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"prop\": \"none\", \"necklace\": \"keep\"}",
+    "seconds": 8.421800957992673
+  },
+  "blazer_necklace__separated-1": {
+    "request": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "seconds": 13.344780000043102
+  },
+  "blazer_necklace__separated-2": {
+    "request": "Restore the original blazer and necklace. Keep the red-brick studio background and lamp unchanged.",
+    "first": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "second_user": "Restore the original blazer and necklace. Keep the red-brick studio background and lamp unchanged.\nProposed patch: {\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"keep\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "seconds": 10.151085040997714
+  },
+  "blazer_necklace__separated-3": {
+    "request": "Change the shirt to a navy sweater. Keep the pin unchanged.",
+    "first": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "second_user": "Change the shirt to a navy sweater. Keep the pin unchanged.\nProposed patch: {\"top\": \"navy_sweater\", \"pin\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "seconds": 8.336152874981053
+  },
+  "blazer_necklace__leaving-1": {
+    "request": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "seconds": 11.73711995803751
+  },
+  "blazer_necklace__leaving-2": {
+    "request": "Return the blazer and necklace to the original photo, leaving the red-brick studio background and lamp unchanged.",
+    "first": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "second_user": "Return the blazer and necklace to the original photo, leaving the red-brick studio background and lamp unchanged.\nProposed patch: {\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"keep\", \"prop\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"keep\", \"prop\": \"keep\"}",
+    "seconds": 10.735775750014
+  },
+  "blazer_necklace__leaving-3": {
+    "request": "Change the shirt to a navy sweater. Keep the pin unchanged.",
+    "first": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "second_user": "Change the shirt to a navy sweater. Keep the pin unchanged.\nProposed patch: {\"top\": \"navy_sweater\", \"pin\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "seconds": 11.567257750080898
+  },
+  "blazer_necklace__preserving-1": {
+    "request": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "seconds": 13.678326125023887
+  },
+  "blazer_necklace__preserving-2": {
+    "request": "Restore the original blazer and necklace, preserving the red-brick studio background and lamp.",
+    "first": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+    "second_user": "Restore the original blazer and necklace, preserving the red-brick studio background and lamp.\nProposed patch: {\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+    "seconds": 11.271884415997192
+  },
+  "blazer_necklace__preserving-3": {
+    "request": "Change the shirt to a navy sweater. Keep the pin unchanged.",
+    "first": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "second_user": "Change the shirt to a navy sweater. Keep the pin unchanged.\nProposed patch: {\"top\": \"navy_sweater\", \"pin\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "seconds": 11.895452250028029
+  },
+  "blazer_necklace__bring_back-1": {
+    "request": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.",
+    "first": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "second_user": "Use a red-brick studio with a floor lamp. Wear a green blazer over an ivory crew-neck shirt. Add a gold square pin on the viewer-right lapel and a gold round pendant necklace.\nProposed patch: {\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"background\": \"brick_studio\", \"prop\": \"lamp\", \"jacket\": \"green\", \"top\": \"ivory_crewneck\", \"pin\": \"gold_square_right\", \"necklace\": \"gold_round\"}",
+    "seconds": 12.05750870902557
+  },
+  "blazer_necklace__bring_back-2": {
+    "request": "Bring the blazer and necklace back to the original photo. Do not alter the red-brick studio background and lamp.",
+    "first": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+    "second_user": "Bring the blazer and necklace back to the original photo. Do not alter the red-brick studio background and lamp.\nProposed patch: {\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"jacket\": \"original\", \"necklace\": \"original\", \"background\": \"brick_studio\", \"prop\": \"lamp\"}",
+    "seconds": 9.987618083017878
+  },
+  "blazer_necklace__bring_back-3": {
+    "request": "Change the shirt to a navy sweater. Keep the pin unchanged.",
+    "first": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "second_user": "Change the shirt to a navy sweater. Keep the pin unchanged.\nProposed patch: {\"top\": \"navy_sweater\", \"pin\": \"keep\"}\nAudit this patch against the request. Correct errors; output a flat JSON patch only.",
+    "second": "{\"top\": \"navy_sweater\", \"pin\": \"keep\"}",
+    "seconds": 8.316836582962424
+  }
+}

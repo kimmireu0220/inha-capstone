@@ -23,7 +23,7 @@ class BuilderTests(unittest.TestCase):
             (source / 'manuscript.ko.md').write_text(
                 '# 검증 제목\n\nValidation Title\n\n## 초록\n\n검증 요약.\n\n주요어: 검증\n\n'
                 '## 1. 서론\n\n검증 본문.\n\n'
-                '| 방법 | 정확도 |\n| --- | --- |\n| 기준 | 1/2 |\n| 제안 | 2/2 |\n\n'
+                '| 방법 | 정확도 |\n| --- | --- |\n| 기준 | 1/2 |\n| 정규화+항목별 적용 | 2/2 |\n\n'
                 '## 참고문헌\n\n[1] Example reference.\n')
             (source / 'abstract.en.txt').write_text('Validation abstract.\n')
             (source / 'layout.json').write_text(json.dumps({
@@ -42,6 +42,7 @@ class BuilderTests(unittest.TestCase):
             self.assertFalse((source / 'manuscript.inha.docx').exists())
             table = doc.tables[0]
             self.assertEqual(len(table.rows), 3)
+            self.assertEqual(table.rows[2].cells[0].text, '정규화+\n항목별 적용')
             for row in table.rows[:-1]:
                 self.assertTrue(row.cells[0].paragraphs[0].paragraph_format.keep_with_next)
             self.assertFalse(table.rows[-1].cells[0].paragraphs[0].paragraph_format.keep_with_next)

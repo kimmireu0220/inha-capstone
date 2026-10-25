@@ -65,7 +65,7 @@ def check():
     for folder in ['state-tracking-v1', 'state-tracking-v2', 'state-format-control-v1']:
         current.extend((ROOT / 'experiments' / folder).glob('*.md'))
         assert not (ROOT / 'experiments' / folder / 'human-ratings.csv').exists()
-    for study in ['paraphrase-contract-v1', 'clause-normalization-v1']:
+    for study in ['paraphrase-contract-v1', 'clause-normalization-v1', 'clause-factorial-v1']:
         current.extend((ROOT / 'experiments' / study).glob('*.md'))
         folder = ROOT / 'experiments' / study
         verified = json.loads((folder / 'verification.json').read_text())
@@ -79,6 +79,17 @@ def check():
     development = load('experiments/clause-normalization-v1/development-replay.json')
     assert development['posthoc_development'] and development['additional_model_calls'] == 0
     for name, expected in development['sources_sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    invariants = load('experiments/clause-normalization-v1/invariant-audit.json')
+    assert invariants['passed'] and invariants['actual_model_calls'] == 0 and not invariants['failures']
+    assert digest(ROOT / 'scripts/audit_clause_invariants.py') == invariants['verifier_sha256']
+    for name, expected in invariants['source_sha256'].items():
+        assert digest(ROOT / name) == expected, name
+    plain = load('experiments/clause-normalization-v1/plain-patch-comparison.json')
+    assert plain['posthoc_analysis'] and plain['additional_model_calls'] == 0
+    assert digest(ROOT / 'scripts/compare_plain_patch.py') == plain['verifier_sha256']
+    assert digest(ROOT / 'local-studio/request_state.py') == plain['reducer_schema_sha256']
+    for name, expected in plain['source_sha256'].items():
         assert digest(ROOT / name) == expected, name
     forbidden = re.compile(r'independent_human|human-ratings\.csv|독립 인간 평가|사람용 양식')
     for path in current:
@@ -170,7 +181,7 @@ def check():
         review_status = 'complete'
     print(f'Consistency passed: {len(evidence["sources"])} evidence sources, '
           f'{len(current)} current documents, paper artifact hashes, aligned 10-slide manifest, '
-          f'AI evaluation setup and {len(verified_studies) + 2} verified text studies; '
+          f'AI evaluation setup and {len(verified_studies) + 3} verified text studies; '
           f'rejected candidate, post-hoc development and prepared image inputs preserved; 7B review {review_status}')
 
 

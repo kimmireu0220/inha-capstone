@@ -19,6 +19,9 @@ class SlidesTests(unittest.TestCase):
         self.assertIn('기준 9/16, 기존 유지·삭제 10/16', slides[8]['body'])
         self.assertIn('정규화 16/16', slides[8]['body'])
         self.assertIn('개발 자료 재계산', slides[8]['notes'])
+        self.assertIn('기준 18/36, 기존 유지·삭제 26/36', slides[9]['body'])
+        self.assertIn('단순 JSON 적용 28/36, 정규화 36/36', slides[9]['body'])
+        self.assertIn('요청 문장은 18개', slides[9]['foot'])
 
     def test_missing_targets_fail_closed(self):
         with self.assertRaises(ValueError):
