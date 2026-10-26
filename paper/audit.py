@@ -126,11 +126,15 @@ def audit(folder):
             assert record.get('passed'), name
 
     references = manuscript.split('## 참고문헌\n', 1)[1]
-    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 11)]
+    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 13)]
     assert 'Meta, “Llama 3.2 Model Card,”' in references
     repository = 'https://github.com/kimmireu0220/inha-capstone'
     assert repository in manuscript.split('### 4.3 재현 자료\n', 1)[1]
     assert repository not in references
+    cited = {int(number) for group in re.findall(r'\[([0-9,]+)\]', manuscript.split('## 참고문헌\n', 1)[0]) for number in group.split(',')}
+    assert cited == set(range(1, 13)), cited
+    citation_order = list(dict.fromkeys(int(number) for group in re.findall(r'\[([0-9,]+)\]', manuscript.split('## 참고문헌\n', 1)[0]) for number in group.split(',')))
+    assert citation_order == list(range(1, 13)), citation_order
     body = manuscript.split('## 참고문헌\n', 1)[0]
     for phrase in ['턴', '원응답', '검증 대화 S', '추가 검증 T', '근거로 삼지 않았다',
                    '아직 확인이 필요', '추가 확인이 필요', '추가 검증이 필요', '합산하지 않']:
@@ -257,7 +261,7 @@ def audit(folder):
     assert sha(ROOT/illustration['figure']) == illustration['figure_sha256']
     for item in illustration['sources']:
         assert sha(ROOT/item['source']) == item['sha256']
-    return {'date':'2026-10-25','passed':True,
+    return {'date':'2026-10-26','passed':True,
             'scope':'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256':sha(folder/'manuscript.ko.md'),
             'english_abstract_sha256':hashlib.sha256(abstract.encode()).hexdigest(),

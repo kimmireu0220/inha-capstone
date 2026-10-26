@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "document": "manuscript.inha.docx",
   "pdf": "manuscript.inha.pdf",
-  "pages": 7,
+  "pages": 9,
   "reviewed_pages": [
     1,
     2,
@@ -10,7 +10,9 @@
     4,
     5,
     6,
-    7
+    7,
+    8,
+    9
   ],
   "body_columns": 2,
   "format_references": "format-references.json",
@@ -19,20 +21,22 @@
   "tables_readable": true,
   "figure_readable": true,
   "conclusion_and_references_complete": true,
-  "pdf_sha256": "c733eba444d9dc03242b1b1a9da8ad920acf2cf07a081e862da82d3832044763",
-  "docx_sha256": "03841f10acc3c6ad2d69cff6861588c8eb5496e275dd62e5a789395d1ab69471",
-  "manuscript_sha256": "cb7aa882758606ab25c3559d42e78705002c344c8fc016f3be450e5a13c64428",
+  "pdf_sha256": "be23e1649b355970ad8eab1a83908ff778fabb8938e59db074e144876d9c987e",
+  "docx_sha256": "25b129e726519c431d08b7319c85f721d6db5ac43c79100e6c3c9ad69d5e0910",
+  "manuscript_sha256": "2011d989457277745ee65c79f608df456d178d54f67317047741b0caf0194865",
   "renderer": "Bundled render_docx.py / LibreOffice with installed Korean fonts exposed by paper/render_inha.py",
   "scope": "Visual and numeric-transcription QA; not institutional format approval or independent scientific validation",
-  "layout_sha256": "7df34954db7dcb348ccca87d62dfec63fc3292c795185650f8bda26f1f58a48d",
+  "layout_sha256": "a6365fdcb2f4bd33c13a0f2b94e806b9b8b6e21ad5d4f5b2f82c8250c91d23b0",
   "builder_sha256": "a3304cbac6473754e1172ac8d003833078938a633e1ce9d2c601f9366c6f7439",
   "page_preview_sha256": {
-    "1": "ecadc5843bfd17356d9cd23f1eaeb15446eac77ab9bc382cd0dfb207b6a366cb",
-    "2": "3384eed376e438d03e8934c061bc1e0eb6c4e2b9cce33ab0fc52df478e0718ea",
-    "3": "12dcbf93ef28ee8fee8fb906f10af55a89b1c9dfbc49bcb263be7d532df2f368",
-    "4": "c056c16c8a8d9ea98da07a402403409c203338ff0a7bbaa64d269aabb39e809d",
-    "5": "e50ba5c81bba11d96f8c75908bc7c49d3d9b6c85b10284c941646ad6a8222f0c",
-    "6": "b0c95cb267545072b79b36f2dbcdb32fe1700b24d6cc6c690b279b3569eff9c3",
-    "7": "7c6b1ad94e6dca0d3688fe5aedb05be23c29e6f99f4fe5a42eb287b4fb73e251"
+    "1": "ab199a9b3655031e132201bf6ec24d57bdde5271a74e6bd80c409c6cdfaa9f61",
+    "2": "29dea4c6d88bf2d02c8e5b90edeafe202a1d8285ad54d09242c313d526c7572f",
+    "3": "bd132b8e6d986933d7b1f13d0ff644fa66e419c771b2c6b4e832717191360cf5",
+    "4": "d816ffc90210d953005c318863473bd23718810fc1482fda49be897837da975c",
+    "5": "bc742795e84d12a0fa0a5e0ae4aa0b1ed9e23a3352a1558daca45ffa2498ceef",
+    "6": "13cfcdad43df5cc0d9232a86c5a6b67b2ab66b4adc8f8946dfe8e27e4b19ffa5",
+    "7": "a0810447a65adca6a1f0ce4b935b08114aaed2ca11ce0747d645bb8b0b9a2e31",
+    "8": "5d42d85394c417d39fd25783b37879b7f7a31624174cbb8a42f9d517d6ee4ed7",
+    "9": "3c002fc3f065828a1718e93e82e32034c29c4fee7980fd49a89c7ac36742a193"
   }
 }
