@@ -95,7 +95,7 @@ while i<len(lines):
              '최종 상태 일치율':'최종 상태\n일치율','유지 지시 위반 수':'유지 지시\n위반 수',
              '항목별 충족률':'항목별\n충족률','판단 불가 항목 수':'판단 불가\n항목 수','판단 불가 기준/결합':'판단 불가\n기준/결합','유지·삭제 결합':'유지·삭제\n결합','요청당 호출 수':'요청당\n호출 수',
              '전체 항목 충족률':'전체 항목\n충족률','얼굴 유사도 평균':'얼굴 유사도\n평균','얼굴 코사인':'얼굴\n코사인'}.get(txt,txt) if j==0 else
-             {'정규화+항목별 적용':'정규화+\n항목별 적용'}.get(txt,txt))
+             {'정규화+항목별 적용':'정규화+\n항목별 적용', '검사 없이 저장한 조건':'검사 없이 저장한\n조건', '검사 후 저장한 조건':'검사 후 저장한\n조건', '인용문 뒤의 직접 지시':'인용문 뒤의\n직접 지시'}.get(txt,txt))
     for p in c.paragraphs:
      p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_after=Pt(3);p.paragraph_format.space_before=Pt(3);p.paragraph_format.line_spacing=1
      p.paragraph_format.keep_with_next=j<len(rows)-1
@@ -115,8 +115,8 @@ while i<len(lines):
   if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT
   if line.startswith(('[','https://','http://')):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True;p.alignment=WD_ALIGN_PARAGRAPH.LEFT
  i+=1
-# Close the final body section so references balance across both columns.
-columns(1)
+# Keep the final two-column section open; an empty trailing section can
+# produce a page containing only the footer after a full reference column.
 for sec in d.sections:
  f=sec.footer.paragraphs[0];f.alignment=WD_ALIGN_PARAGRAPH.CENTER;f.paragraph_format.first_line_indent=Pt(0)
  if not f._p.find(qn('w:fldSimple')) is not None:

@@ -54,7 +54,7 @@ def main():
     expected, counts = verify(deck)
     print(f'Native text, tables, image provenance and notes verified: {counts}')
     if args.reviewed_all:
-        record = {'date': '2026-10-25', 'presentation_id': PRESENTATION_ID, 'revision_id': deck['revisionId'],
+        record = {'date': '2026-10-28', 'presentation_id': PRESENTATION_ID, 'revision_id': deck['revisionId'],
                   'slides': len(IDS), 'slide_ids': IDS,
                   'paper_alignment': 'Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording',
                   'source_sha256': {path: sha(ROOT/path) for path in SOURCES},

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-28",
+  "kind": "conceptual_method_diagram",
+  "description": "Implementation-derived data flow; not an experimental output image.",
+  "width_cm": 16,
+  "height_cm": 4.7,
+  "source_sha256": {
+    "local-studio/instruction_pipeline.py": "e65bc113f19f2f6f54415981356117c01d076299e122daad90cdf2d9a42159ac",
+    "local-studio/request_state.py": "23c8de8f2809ade07cf70369f25272b5b52574427f3fc414ebfdcf5257d07bd7",
+    "experiments/instruction-eligibility-v1/method.py": "8158cc6ac60ba5edfc72011de06d7cff4328d93e01d11eb25e10b118b8077dbc",
+    "experiments/operation-scope-v2/method.py": "c9f2d6f6d467c30efb44c844ae5b43aad682ef2b7efb2e9128e98c8f8af50c5c",
+    "experiments/clause-normalization-v1/method.py": "9ae2b2ab76573e76eb25fa692098da77e0b4d60b38464500ea4b58539b881131"
+  },
+  "script": "paper/build_method_figure.py",
+  "script_sha256": "52fdc6e3947683708f792413445e64b0ce5014c22a89a8152c6dc02d08de581b",
+  "outputs": {
+    "paper/figures/instruction-pipeline.png": "88bec38f9ed5b96b3c7aa7caca15be7a2acf56f8a270732dfacd9fe0ebd9051f",
+    "paper/figures/instruction-pipeline.svg": "84316913836431ab66bd0dd95af0da4faf1eda59c74e5eac76c8938ac2b95e93"
+  }
+}

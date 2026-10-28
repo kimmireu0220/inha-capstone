@@ -78,6 +78,7 @@ def spec():
         lo, hi = comparison['bootstrap_95_percentage_points']
         extended_notes += f"{label}는 첫 응답 단순 적용 {simple[model]}/96, 한 번 추출과 검사 {checked[model]}/96입니다. 정확도 차이는 {comparison['difference_percentage_points']:.2f}%p, 대화 단위 95% 구간은 {lo:.2f}–{hi:.2f}%p, Holm 보정 p값은 {comparison['holm_p_two_models']:.6f}입니다. "
     extended_notes += 'Llama의 오류 세 개는 같은 표현 틀에서 인용문 뒤에 나온 재킷 원본 복원을 놓친 사례입니다. 모델이 반환한 녹색 변경은 거부했지만 복원을 적용하지 못해 직전 재킷 값이 남았습니다. 대화별·요청 유형별 결과와 모든 오류를 공개했습니다. 구간은 표현 틀을 공유하는 이 합성 자료 안에서의 변동입니다. 저장한 첫 응답 192개를 실제 실행 코드에도 재생하여 상태가 모두 일치함을 확인했습니다. '+REPO+'/blob/main/experiments/extended-state-validation-v1/RESULTS.md'
+    extended_notes += ' 조건문은 조건의 참·거짓을 판단하지 않고 즉시 실행을 보류하며, 유지 지시는 직전 저장값을 우선하는 정책으로 채점했습니다. 첫 응답 단순 적용과 검사 결합은 같은 추출 응답을 쓰므로, 차이는 값 검증과 지시 검사 전체의 효과입니다.'
     mixed_review = compound['groups']['review']['mixed']['exact_turns']
     mixed_guarded = compound['groups']['guarded']['mixed']['exact_turns']
     images = [['AI 항목별 충족률', '기준 방법', '유지·삭제 결합']]
@@ -85,7 +86,7 @@ def spec():
         images.append([label] + [f"{data[m]['goals_satisfied']}/{data[m]['goal_denominator']}" for m in ['baseline_restore', 'keep_remove']])
     image_summary = load('experiments/prompt-state-image-v1/summary.json')
     comparison_rows = [['입력 방식', '평균 토큰 수', '7B 목표 충족', '얼굴\n코사인↑']]
-    for mode, label in [('full_history','전체 요청 이력'), ('unchecked_state','검사 전 현재 조건'), ('checked_state','지시 검사 후 현재 조건')]:
+    for mode, label in [('full_history','전체 요청 이력'), ('unchecked_state','검사 없이 저장한 조건'), ('checked_state','검사 후 저장한 조건')]:
         comparison_rows.append([label, f"{image_summary['prompt_lengths'][mode]['tokens']:.2f}",
                                 f"{image_summary['secondary_by_mode'][mode]['goals_satisfied']}/36",
                                 f"{image_summary['by_mode'][mode]['identity_mean']:.6f}"])
@@ -93,7 +94,7 @@ def spec():
         dict(title='반복 인물 이미지 편집에서\n지시 검사를 이용한 상태 갱신',
              body='변경 사항을 한 번 추출하고 지시를 검사하여 편집 조건을 저장\n\n김미르 · 장윤석\n지도교수 안남혁',
              foot='종합설계 연구 발표',
-             notes='처음에는 편집 대화 전체를 언어 모델에 주고 최종 프롬프트를 작성했습니다. 이때 취소한 의상과 장신구 조건이 다시 남았습니다. 그래서 편집 조건을 항목별로 저장하고, 유지·삭제 지시를 확인한 뒤 프롬프트를 작성하도록 바꿨습니다. 복원할 대상과 유지할 대상이 섞이는 오류는 두 지시를 나누어 처리하도록 고쳤습니다.'),
+             notes='처음에는 편집 대화 전체를 언어 모델에 주고 최종 프롬프트를 작성했습니다. 이때 취소한 의상과 장신구 조건이 다시 남았습니다. 그래서 편집 조건을 항목별로 저장하고, 유지·삭제 지시를 확인한 뒤 프롬프트를 작성하도록 바꿨습니다. 복원할 대상과 유지할 대상이 섞이는 오류는 두 지시를 나누어 처리하도록 고쳤습니다. 언어 모델은 새 요청과 고정 지침·예시만 읽고, 이전에 저장한 조건은 코드 검사 단계에서 참조합니다. 추출값의 허용 여부와 요청 내 근거를 확인한 뒤 삭제·복원·유지 및 실행할 지시를 검사합니다.'),
         dict(title='반복 편집과 원본 기반 생성의 비교',
              body='합성 인물 6명에게 각각 같은 10단계 편집\n순차 편집의 얼굴 LPIPS 평균: 0.042116 → 0.364015\n\n위치 보정 MAE·SSIM·LPIPS: 최종 6쌍 모두 원본 기반에 유리\n원본에 적용할 현재 조건을 정확하고 간결하게 정리',
              foot='순차 편집: 직전 출력을 재편집 / 원본 기반: 최초 사진에 현재 조건 적용',
@@ -103,7 +104,7 @@ def spec():
              table=rows(s, [('baseline_restore','기준 방법'),('keep_only','유지 규칙만'),('remove_only','삭제 규칙만'),('keep_remove','유지·삭제 결합')]),
              foot='전체 상태는 요청 처리 후, 최종 상태는 대화 종료 후 평가\n유지 위반 수는 직전까지 맞았고 그대로 둘 항목을 잘못 바꾼 횟수',
              notes='이 표는 추출·재검토 응답을 사용하는 초기 유지·삭제 구성요소 비교입니다. 전체 상태 일치율은 모든 항목이 정답과 일치한 요청의 비율입니다. 최종 상태 일치율은 마지막 요청 처리 후 모든 항목이 일치한 대화의 비율입니다. 27/32는 요청 32개 중 27개에서 여섯 항목 모두 맞았다는 뜻입니다. 세 번째 대화의 세 번째 요청에서는 삭제 규칙이 식물 삭제 누락을 막았습니다. 네 번째 요청에서는 유지 규칙이 배경을 잘못 바꾸는 것을 막았습니다. 두 규칙을 결합해야 두 요청 모두 정답과 일치했습니다. 일곱 번째 대화는 모든 방법에서 요청 네 개 중 하나만 맞았습니다. 맞은 항목 수는 표의 방법 순서대로 184, 185, 186, 187개이며 전체 항목 수는 192개입니다. 연구를 위해 만든 영어 대화로 검사했습니다. '+REPO+'/blob/main/experiments/request-contract-v3/RESULTS.md'),
-        dict(title='대화를 늘린 96개 요청의 추가 검증',
+        dict(title='96개 요청의 상태 갱신 정확도',
              intro='새 합성 대화 12개 × 요청 8개 · 두 모델에 같은 요청 적용',
              table=final_rows,
              foot=f"첫 응답 단순 적용: Qwen3 {simple['qwen3']}/96 · Llama {simple['llama32']}/96\n같은 코드·모델 설정 유지 · 요청당 필요한 모델 호출 수",
@@ -113,7 +114,7 @@ def spec():
              notes='두 방법의 편집 입력이 달랐던 두 쌍입니다. 세 번째 요청에서는 식물을 삭제하고 재킷은 유지하도록 했습니다. 네 번째 요청에서는 상의와 목걸이를 원본으로 돌리되 재킷과 연한 파란 배경은 유지하도록 했습니다. 각 이미지의 전체 영역을 보여 줍니다. Pexels 공개 사진을 사용했고 의상·장신구·배경은 AI로 편집했습니다. 원본 https://www.pexels.com/photo/confident-black-man-in-studio-6311573/\n'+REPO+'/blob/main/paper/figures/figure-provenance.json'),
         dict(title='전체 요청과 현재 조건으로 생성한 결과', comparison_images=True,
              foot='실제 인물 R02 · 같은 원본과 네 개 요청 · 조건부 지시와 인용문을 포함한 예',
-             notes='왼쪽부터 요청 전체 이력, 검사 전 현재 조건, 지시 검사 후 현재 조건으로 원본 사진에서 각각 한 번 생성했습니다. 이 대화는 녹색 재킷과 흰 상의, 파란 핀, 원본 목걸이, 도서관과 돌 벤치를 요구합니다. 조건부 소품 삭제와 캡션 속 재킷 복원은 실행하지 않고 뒤의 직접 지시를 반영해야 합니다. 전체 평가는 대화 세 개와 인물 두 명의 18조건을 사용했습니다. 세 장은 조건부·인용 대화의 예시이며 집계에는 다른 대화도 모두 포함합니다. 원본 Monstera Production / Pexels photo 6311581. '+REPO+'/blob/main/experiments/prompt-state-image-v1/RESULTS.md'),
+             notes='왼쪽부터 요청 전체 이력, 검사 없이 저장한 조건, 검사 후 저장한 조건으로 원본 사진에서 각각 한 번 생성했습니다. 이 대화는 녹색 재킷과 흰 상의, 파란 핀, 원본 모습의 목걸이, 도서관과 돌 벤치를 요구합니다. 원본 사진에는 목걸이가 없습니다. 조건부 소품 삭제와 캡션 속 재킷 복원은 실행하지 않고 뒤의 직접 지시를 반영해야 합니다. 전체 평가는 대화 세 개와 인물 두 명의 18조건을 사용했습니다. 세 장은 조건부·인용 대화의 예시이며 집계에는 다른 대화도 모두 포함합니다. 원본 Monstera Production / Pexels photo 6311581. '+REPO+'/blob/main/experiments/prompt-state-image-v1/RESULTS.md'),
         dict(title='이미지 평가 점수와 판정 오류',
              intro='인물 사진 2장 × 요청 32개 × 두 방법 = 생성 조건 128개, 실제 이미지 66개',
              table=images,
@@ -130,7 +131,7 @@ def spec():
              below='마지막 요청의 프롬프트 길이 39.87% 감소\n얼굴 LPIPS↓: 전체 이력 0.095158 / 검사 후 0.106698',
              below_y=373, below_size=18, below_h=75,
              foot='토큰: Qwen3 기준·보존 문구 포함 / 코사인↑·LPIPS↓ / 목표 평가: Qwen2.5-VL-7B',
-             notes="전체 요청 이력·검사 전 현재 조건·지시 검사 후 현재 조건을 같은 원본 사진에서 생성했습니다. Qwen3 최초 응답의 세 대화를 실제 인물 두 명에게 적용한 18조건이며 새 언어 검증과 구분합니다. 프롬프트는 공통 보존 문구를 포함하여 고정 Qwen3 토크나이저로 측정했습니다. 첫 요청에서는 상태 표현이 더 길었고 마지막 요청에서 평균 39.87% 줄었습니다. 3B 결과는 {'full_history': (29, 6), 'unchecked_state': (18, 18), 'checked_state': (30, 6)}입니다. 각 쌍은 성공 항목 수와 판단 불가 수입니다. 3B 형식 오류와 잘못된 설명을 관찰한 뒤 7B로 전체 18장을 사후 대조했습니다. 7B의 판단 불가 수는 {'full_history': 0, 'unchecked_state': 2, 'checked_state': 0}입니다. 원문 점수는 교체하지 않았습니다. 얼굴 랜드마크를 기준으로 정렬한 112×112 얼굴에서 MAE·SSIM·LPIPS를 계산했습니다. 전체 이력과 비교하면 지시 검사 후 얼굴 코사인은 높았고 나머지 세 지표는 불리했습니다. 프롬프트 길이와 얼굴 품질의 일률적인 개선은 구분합니다. https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/prompt-state-image-v1/RESULTS.md"),
+             notes="전체 요청 이력·검사 없이 저장한 조건·검사 후 저장한 조건을 같은 원본 사진에서 생성했습니다. Qwen3 최초 응답의 세 대화를 실제 인물 두 명에게 적용한 18조건이며 새 언어 검증과 구분합니다. 프롬프트는 공통 보존 문구를 포함하여 고정 Qwen3 토크나이저로 측정했습니다. 첫 요청에서는 상태 표현이 더 길었고 마지막 요청에서 평균 39.87% 줄었습니다. 3B 결과는 {'full_history': (29, 6), 'unchecked_state': (18, 18), 'checked_state': (30, 6)}입니다. 각 쌍은 성공 항목 수와 판단 불가 수입니다. 3B 형식 오류와 잘못된 설명을 관찰한 뒤 7B로 전체 18장을 사후 대조했습니다. 7B의 판단 불가 수는 {'full_history': 0, 'unchecked_state': 2, 'checked_state': 0}입니다. 원문 점수는 교체하지 않았습니다. 얼굴 랜드마크를 기준으로 정렬한 112×112 얼굴에서 MAE·SSIM·LPIPS를 계산했습니다. 전체 이력과 비교하면 지시 검사 후 얼굴 코사인은 높았고 나머지 세 지표는 불리했습니다. 프롬프트 길이와 얼굴 품질의 일률적인 개선은 구분합니다. https://github.com/kimmireu0220/inha-capstone/blob/main/experiments/prompt-state-image-v1/RESULTS.md"),
         dict(title='연구 결과와 적용 범위',
              body=f"새 요청 96개에서 지시 검사 전후 비교\nQwen3 {simple['qwen3']}/96 → {checked['qwen3']}/96 · Llama {simple['llama32']}/96 → {checked['llama32']}/96\n상태 갱신에 필요한 모델 호출은 요청당 1회\n전체 이력을 현재 조건으로 정리해 입력 길이를 줄임\n얼굴 지표의 변화 방향은 측정 항목에 따라 다름",
              foot='명시한 영어 표현과 여섯 편집 항목의 결과',
@@ -147,7 +148,7 @@ def image_sources(item):
     """Full source photographs with per-study immutable publication revisions."""
     if item.get('comparison_images'):
         provenance = load('paper/figures/prompt-state-image-provenance.json')
-        labels = ['전체 요청 이력', '검사 전 현재 조건', '지시 검사 후 현재 조건']
+        labels = ['전체 요청 이력', '검사 없이 저장한 조건', '검사 후 저장한 조건']
         return [{**r, 'label': label, 'url': f'https://raw.githubusercontent.com/kimmireu0220/inha-capstone/{PROMPT_IMAGE_COMMIT}/'+r['source']}
                 for r, label in zip(provenance['sources'], labels)]
     if 'person' in item:

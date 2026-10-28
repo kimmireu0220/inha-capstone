@@ -142,8 +142,8 @@ def audit(folder):
     assert not re.search(r'\bturns?\b', abstract, re.I)
     assert not re.search(r'\b[a-f0-9]{40}\b', manuscript)
     blocks = re.findall(r'(?m)^\|[^\n]+\|(?:\n\|[^\n]+\|)+', manuscript)
-    assert len(blocks) == 10
-    assert len(re.findall(r'^!\[', manuscript, re.M)) == 2
+    assert len(blocks) == 6
+    assert len(re.findall(r'^!\[', manuscript, re.M)) == 3
     for phrase in ['집계 후 반영', 'being evaluated']:
         assert phrase not in manuscript + abstract
 
@@ -154,19 +154,19 @@ def audit(folder):
     assert sha(ROOT/'scripts/summarize_initial_portrait.py') == initial['verifier_sha256']
     for name, digest in initial['checked_images'].items():
         assert sha(ROOT/name) == digest
-    for stage in ['1','5','10']:
-        expect(f"{initial['stage_registered_means'][stage]['lpips']:.6f}")
-    for item in initial['rows']:
-        row([item['person'], f"{item['sequential']['face']['3']['lpips']:.6f}",
-             f"{item['original_based']['face']['3']['lpips']:.6f}"])
-    expect('6/6쌍')
+    expect('순차 편집의 위치 보정 LPIPS 평균은 ' + ', '.join(
+        f"{stage}단계 {initial['stage_registered_means'][stage]['lpips']:.6f}"
+        for stage in ['1', '5', '10']))
+    expect('원본 기반 재생성은 위치 보정 MAE, SSIM, LPIPS 모두 6/6쌍에서')
 
     final = {m: source(f'experiments/single-extraction-validation-v1/results-{m}.json')['methods']
              for m in ['qwen3','llama32']}
     for model in final:
         selected = final[model]['single_extraction_checked']
         assert selected['correct_slots'] == 72 and selected['exact_final_dialogues'] == 3
-    expect('3/12'); expect('12/12')
+        assert final[model]['json_first_only']['exact_turns'] == 3
+        assert selected['exact_turns'] == 12
+    expect('기본 검증 요청 12개에서도 첫 응답 단순 적용은 두 모델 모두 3/12, 제안 방법은 모두 12/12')
 
     extended = source('experiments/extended-state-validation-v1/summary.json')
     assert extended['complete'] and extended['requests'] == 96
@@ -182,21 +182,48 @@ def audit(folder):
     for category, label in [('setup', '초기 설정'), ('replacement', '두 항목 변경'),
                             ('removal_keep', '삭제·유지'), ('restoration_keep', '복원·유지'),
                             ('negation', '부정 지시'), ('quotation', '인용문'),
-                            ('conditional', '조건문'), ('direct_priority', '뒤 직접 지시')]:
+                            ('conditional', '조건문'), ('direct_priority', '인용문 뒤의 직접 지시')]:
         row([label] + [f"{extended['by_category'][m][key][category]['correct']}/12"
                        for m, key in [('qwen3', 'json_first_only'), ('qwen3', 'single_extraction_checked'),
                                       ('llama32', 'json_first_only'), ('llama32', 'single_extraction_checked')]])
     for model in metrics:
         selected = metrics[model]['single_extraction_checked']
-        expect(f"{selected['correct_slots']}/576")
-        expect(f"{selected['exact_final_dialogues']}/12")
         for key in ['json_first_only', 'single_extraction_checked']:
             expect(f"{metrics[model][key]['exact_turns']}/96", abstract)
-        comparison = extended['paired_comparisons'][model]['json_first_only']
-        expect(f"{comparison['difference_percentage_points']:.2f}%p")
-        low, high = comparison['bootstrap_95_percentage_points']
-        expect(f"{low:.2f}–{high:.2f}%p")
-        expect(f"{comparison['holm_p_two_models']:.6f}")
+    comparisons = [extended['paired_comparisons'][m]['json_first_only'] for m in ['qwen3', 'llama32']]
+    expect('정확도 차이는 Qwen3 ' + f"{comparisons[0]['difference_percentage_points']:.2f}%p, " +
+           f"Llama {comparisons[1]['difference_percentage_points']:.2f}%p")
+    expect('대화 단위 95% 구간은 각각 ' + '와 '.join(
+        f'{low:.2f}–{high:.2f}%p' for low, high in
+        [c['bootstrap_95_percentage_points'] for c in comparisons]))
+    expect('Holm 보정 p값은 각각 ' +
+           f"{comparisons[0]['holm_p_two_models']:.6f}과 {comparisons[1]['holm_p_two_models']:.6f}")
+    expect('항목별 일치는 Qwen3 ' +
+           f"{metrics['qwen3']['single_extraction_checked']['correct_slots']}/576, Llama " +
+           f"{metrics['llama32']['single_extraction_checked']['correct_slots']}/576")
+    expect('최종 상태 일치는 각각 ' +
+           f"{metrics['qwen3']['single_extraction_checked']['exact_final_dialogues']}/12와 " +
+           f"{metrics['llama32']['single_extraction_checked']['exact_final_dialogues']}/12")
+
+    # The method example is an observed response and state transition, not an
+    # invented illustration. Keep its request, prior, error and correction linked.
+    example_records = source('experiments/extended-state-validation-v1/transcripts-qwen3.json')
+    example_methods = source('experiments/extended-state-validation-v1/results-qwen3.json')['methods']
+    example = example_records['F2-D3-3']
+    expect(example['request'])
+    assert json.loads(example['first']) == {'jacket': 'original', 'background': 'keep'}
+    checked_rows = example_methods['single_extraction_checked']['rows']
+    prior = next(r for r in checked_rows if r['dialogue'] == 'F2-D3' and r['turn'] == 2)['observed']
+    result = next(r for r in checked_rows if r['dialogue'] == 'F2-D3' and r['turn'] == 3)
+    plain = next(r for r in example_methods['json_first_only']['rows']
+                 if r['dialogue'] == 'F2-D3' and r['turn'] == 3)
+    assert prior['jacket'] == 'beige' and prior['background'] == 'garden'
+    assert result['observed'] == prior == result['expected'] and result['exact']
+    assert result['trace']['ignored_instructions']['jacket']['reason'] == 'quoted_text'
+    assert plain['observed'] == {**prior, 'jacket': 'original'} and not plain['exact']
+    expect('모델은 재킷을 ‘원본’, 배경을 ‘유지’로 추출하였다')
+    expect('직전 값인 베이지색을 보존한다')
+    expect('배경은 직접적인 유지 지시에 따라 정원으로 남는다')
 
     ablation = source('experiments/request-contract-v3/results.json')['methods']
     for key, label in [('baseline_restore','기준 방법'), ('keep_only','유지 규칙만'),
@@ -204,43 +231,65 @@ def audit(folder):
         d = ablation[key]
         row([label, f"{d['exact_turns']}/32", f"{d['correct_slots']}/192",
              f"{d['exact_final_dialogues']}/8", d['newly_corrupted_unchanged_slots']])
-    for study, label, method in [('isolated-contract-v1','유지·삭제 재검증','keep_remove'),
-          ('clause-normalization-v1','구절 정규화','normalized_atomic'),
-          ('clause-factorial-v1','문장 구조 대조','normalized_atomic'),
-          ('instruction-transfer-v1','표현·순서 변경','normalized_atomic')]:
-        d = source(f'experiments/{study}/results.json')['methods']; n = d[method]['turns']
-        row([label,'Qwen3',n,f"{d['baseline_restore']['exact_turns']}/{n}", f"{d[method]['exact_turns']}/{n}"])
-    for study, label, method in [('operation-scope-validation-v1','복원 표현 확장','expanded_normalization'),
-          ('instruction-eligibility-validation-v1','실행 대상 검사','eligible_normalization')]:
-        for model, name in [('qwen3','Qwen3'),('llama32','Llama')]:
-            d = source(f'experiments/{study}/results-{model}.json')['methods']; n = d[method]['turns']
-            row([label,name,n,f"{d['baseline_restore']['exact_turns']}/{n}",f"{d[method]['exact_turns']}/{n}"])
+    clauses = source('experiments/clause-normalization-v1/results.json')['methods']
+    n = clauses['normalized_atomic']['turns']
+    expect('구절을 분리한 비교에서는 Qwen3의 일치 건수가 ' +
+           f"{clauses['baseline_restore']['exact_turns']}/{n}에서 " +
+           f"{clauses['normalized_atomic']['exact_turns']}/{n}으로 증가")
+    restored = {}
+    for model in ['qwen3', 'llama32']:
+        d = source(f'experiments/operation-scope-validation-v1/results-{model}.json')['methods']
+        n = d['expanded_normalization']['turns']
+        restored[model] = f"{d['baseline_restore']['exact_turns']}/{n}에서 {d['expanded_normalization']['exact_turns']}/{n}"
+    expect('복원 표현을 확장한 뒤 별도의 요청 32개에 적용한 결과는 ' +
+           f"Qwen3 {restored['qwen3']}, Llama {restored['llama32']}")
+    eligibility = {m: source(f'experiments/instruction-eligibility-validation-v1/results-{m}.json')['methods']
+                   for m in ['qwen3', 'llama32']}
+    d = eligibility['qwen3']; n = d['eligible_normalization']['turns']
+    expect('실행 대상 검사 검증에서 Qwen3는 조건문·인용문을 실제 명령으로 적용하는 오류가 줄어 ' +
+           f"{d['baseline_restore']['exact_turns']}/{n}에서 {d['eligible_normalization']['exact_turns']}/{n}으로 증가")
+    d = eligibility['llama32']
+    assert d['baseline_restore']['exact_turns'] == d['eligible_normalization']['exact_turns'] == 0
+    expect(f"같은 검증의 Llama는 검사 전후 모두 0/{d['eligible_normalization']['turns']}")
     transfer = source('experiments/instruction-transfer-v1/summary.json')
     assert transfer['groups']['normalized_atomic']['unseen']['target_exact'] == 0
-    expect('0/8')
+    expect('기존 규칙에 없는 복원 표현은 0/8')
     checks = source('experiments/instruction-eligibility-v1/invariant-audit.json')
     assert checks['passed'] and checks['cases'] == 1323; expect('1323')
     implementation = source('paper/implementation-verification.json')
     assert implementation['passed'] and implementation['replayed_requests'] == 24
 
     compound = source('experiments/compound-edit-v1/summary.json')
-    for level, label in [('single','표정'),('compound','표정·포즈'),('mixed','속성 지시 혼합')]:
-        row([label]+[f"{compound['groups'][key][level]['exact_turns']}/16" for key in ['direct','review','guarded']])
+    for level in ['single', 'compound']:
+        assert all(compound['groups'][key][level]['exact_turns'] == 16
+                   for key in ['direct', 'review', 'guarded'])
+    expect('표정만 지정한 조건과 표정·포즈 조건이 각각 모든 방법에서 16/16')
+    mixed = {key: compound['groups'][key]['mixed'] for key in ['direct', 'review', 'guarded']}
+    assert mixed['direct']['exact_turns'] == mixed['review']['exact_turns']
+    expect('속성 지시를 섞은 조건은 최초 추출과 재검토가 각각 ' +
+           f"{mixed['direct']['exact_turns']}/16, 규칙 보정은 {mixed['guarded']['exact_turns']}/16")
+    expect('항목별 일치는 각각 ' + ', '.join(
+        f"{mixed[key]['correct_slots']}/{mixed[key]['slots']}" for key in ['direct', 'review', 'guarded']))
     assert compound['post_hoc_remove_only_exact_turns'] == 48
     assert compound['post_hoc_operation_control']['first_exact'] == compound['post_hoc_operation_control']['review_exact'] == 7
-    expect('124/144'); expect('144/144'); expect('각각 7/8')
+    expect('삭제 규칙만 적용한 사후 재계산도 요청 48개가 모두 일치')
+    expect('대조 요청 8개에서는 최초 추출과 재검토가 각각 7/8')
 
-    for study, label in [('contract-image-v3','Qwen2.5-VL-3B'),('contract-image-review-v1','Qwen2.5-VL-7B')]:
+    for study, label in [('contract-image-v3','3B'),('contract-image-review-v1','7B')]:
         d = source(f'experiments/{study}/summary.json')['by_mode']
-        row([label]+[f"{d[key]['goals_satisfied']}/384" for key in ['baseline_restore','keep_remove']]+
-            [f"{d['baseline_restore']['unknown_goals']}/{d['keep_remove']['unknown_goals']}"])
-    expect('0.910458'); expect('0.910535')
+        expect(f"{label} 기준 {d['baseline_restore']['goals_satisfied']}/384와 결합 {d['keep_remove']['goals_satisfied']}/384")
+        if label == '3B':
+            expect(f"판단 불가는 3B에서 각각 {d['baseline_restore']['unknown_goals']}개와 {d['keep_remove']['unknown_goals']}개")
+            expect('얼굴 코사인 평균은 기준 ' + f"{d['baseline_restore']['face_mean']:.6f}, 결합 {d['keep_remove']['face_mean']:.6f}")
+        else:
+            assert d['baseline_restore']['unknown_goals'] == d['keep_remove']['unknown_goals'] == 0
+            expect('7B에서 모두 0개')
 
     prompt = source('experiments/prompt-state-image-v1/summary.json')
     assert prompt['complete'] and prompt['conditions'] == prompt['actual_image_calls'] == 18
     assert prompt['completed_image_evaluation_responses'] == 36
     length = source('experiments/prompt-state-image-v1/prompt-lengths.json')
-    for key, label in [('full_history','전체 요청 이력'),('unchecked_state','검사 전 현재 조건'),('checked_state','지시 검사 후 현재 조건')]:
+    for key, label in [('full_history','전체 요청 이력'),('unchecked_state','검사 없이 저장한 조건'),('checked_state','검사 후 저장한 조건')]:
         d = length['final_request_means'][key]
         row([label]+[f"{d[x]:.2f}" for x in ['characters','words','tokens']])
         a,b = prompt['by_mode'][key],prompt['secondary_by_mode'][key]
@@ -252,6 +301,12 @@ def audit(folder):
     expect(f"{agreement['equal_scores']}/108"); expect(f"{agreement['equal_both_scored']}/{agreement['both_scored']}")
     assert sum(r['parse_error'] is not None for r in prompt['rows']) == 5
 
+    diagram = source('paper/figures/instruction-pipeline-provenance.json')
+    verify_dependency_hashes(diagram, ROOT/'paper/figures/instruction-pipeline-provenance.json')
+    assert sha(ROOT/diagram['script']) == diagram['script_sha256']
+    for name, digest in diagram['outputs'].items():
+        assert sha(ROOT/name) == digest, name
+
     provenance = source('paper/figures/figure-provenance.json')
     for figure in provenance['figures']:
         assert sha(folder/'figures'/figure['figure']) == figure['sha256']
@@ -261,7 +316,7 @@ def audit(folder):
     assert sha(ROOT/illustration['figure']) == illustration['figure_sha256']
     for item in illustration['sources']:
         assert sha(ROOT/item['source']) == item['sha256']
-    return {'date':'2026-10-26','passed':True,
+    return {'date':'2026-10-28','passed':True,
             'scope':'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256':sha(folder/'manuscript.ko.md'),
             'english_abstract_sha256':hashlib.sha256(abstract.encode()).hexdigest(),

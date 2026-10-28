@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-28",
   "presentation_id": "1UjTZ-HbxiGbb3QH2mnUWeFUk-_o9POx3Ay134fZ9qb8",
-  "revision_id": "__ouBm5VTnbapw",
+  "revision_id": "4LB6oK3X6lHzNA",
   "slides": 10,
   "slide_ids": [
     "p1",
@@ -17,8 +17,8 @@
   ],
   "paper_alignment": "Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording",
   "source_sha256": {
-    "paper/manuscript.ko.md": "2011d989457277745ee65c79f608df456d178d54f67317047741b0caf0194865",
-    "paper/evidence.json": "85857384045968ef0e8c3403d3da435baffa0909a7afbf47c914c7dba38c75ad",
+    "paper/manuscript.ko.md": "023c1bbd1caaa6d0520ed4b25374f2a253136aa33770f7ba7f6cfea2f12b5950",
+    "paper/evidence.json": "27a3f30741f15199f30c7234ff1c28c325e7b039b093a622ffc0bf88a5af5e0b",
     "paper/figures/figure-provenance.json": "ee52e842d82adeb9665f0a6628c142c9f30aaf417363019c04e86cad3af4191d",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
@@ -50,17 +50,17 @@
     "experiments/extended-state-validation-v1/verification.json": "cab91884e0590eea9aaa0bd8fb13b3f558c98348099f9c5e80e15526a7408c48"
   },
   "script_sha256": {
-    "scripts/method_slides_content.py": "4c163d239c97189d6a7ef6763706c82e0a82f2b4ac4ec10d1877f0dd2fc0a966",
+    "scripts/method_slides_content.py": "900be585ce4cf92ea7ed7a0dd41cbc6e6f24f5b981761df0d6b497c8c040fdd4",
     "scripts/publish_method_slides.py": "0b101ead61f755d68581abf2e791efbf6e65a9218443d4849c3d6bed3e035802",
-    "scripts/verify_method_slides.py": "1f6527ae4e960eed6fc8918f0d96e538317ec1c8ade4e92b9fd762a7a164d665"
+    "scripts/verify_method_slides.py": "a1e31072070eda819c298c4306d2cf3ef4f7c723682414af85b714faadd35abd"
   },
-  "content_sha256": "81ae5e686161b2c6568cd5fa1055c0d4f6fabb7a56f9dc4a145dd80286cd9e6c",
+  "content_sha256": "a22dbb26c89220e4c56fee15520e36bdcca9441f2dec7690f7a8527152e6e281",
   "editable_evidence": {
     "tables": 4,
     "images": 7,
     "notes": 10
   },
-  "snapshot_sha256": "41c0cce4b21bca1155a990381b7085a2fa5fcd6a7b8452e1b5c669ffe6b1d8af",
+  "snapshot_sha256": "9f1bc23897cce937bc3c70bd7077ff6a1977a554555d13800bfd1bc8b4dd589b",
   "visual_check": {
     "method": "Google Slides native LARGE thumbnails, all ten reviewed at 1600x900",
     "reviewed_slides": [
@@ -80,12 +80,12 @@
       "1": "055e65d950a9bac26e7b65122e2f6bc555573df1925feb2d6fc80d2a7717dd40",
       "2": "0483fa76687c7a492c871624941187814e6bb3f0f8c08592eb86c62eb60ec049",
       "3": "15ff0b376955058d34c2b724320565d43c2e0dc02a7e3badcbb13eac8ed11f7d",
-      "4": "0370d9646fd6a886ff4140ebf62941500e3215032dbcf099e176d168d8d35d25",
+      "4": "db0a666435c27f70294ce419da7a7fc825b7aef42e436d76fede00d01a8cd2bb",
       "5": "d363be18036a48e714c5db6b455b693190bdee50b9f7633aa751e120c95e0418",
-      "6": "61d2cf11d93ae32f4e5f4a2f714f6eff5032585a9a4e368a53a23547633206f5",
+      "6": "a1b18258675e55d5528a622799678573d2e30b63aadd472824f577ab16bb6c7f",
       "7": "77f8dfb41596cdf882c26adceeb9a78ca9326700e7b3344c66be1629437098c4",
       "8": "243870a049997a10ac3ff554b359572209f7a6860fbda4a6637b74606727be5a",
-      "9": "0748e22dfdc6553429532150f9fa01135449c456245c787d979842076ed69474",
+      "9": "5facf07755fdc68b9f758b13feba14476b4cfc4b9adc700bfee4afea487eb5cd",
       "10": "030130647dd36e495426742522c62b75910105a6673c5dd60fc2517c66209047"
     }
   },
