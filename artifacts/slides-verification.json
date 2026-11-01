@@ -17,8 +17,8 @@
   ],
   "paper_alignment": "Defined state match rates, preservation violations, separate pose/expression experiment and image-evaluation errors; latest thesis wording",
   "source_sha256": {
-    "paper/manuscript.ko.md": "023c1bbd1caaa6d0520ed4b25374f2a253136aa33770f7ba7f6cfea2f12b5950",
-    "paper/evidence.json": "27a3f30741f15199f30c7234ff1c28c325e7b039b093a622ffc0bf88a5af5e0b",
+    "paper/manuscript.ko.md": "6fd951d642d85a3ee5fd01d66e6c152cbe572376235af5d011e198a2f196d614",
+    "paper/evidence.json": "a5363c7c27d02f79292fb69c957f2aecb20846b0f9ad420538b788ddb0d35ba0",
     "paper/figures/figure-provenance.json": "ee52e842d82adeb9665f0a6628c142c9f30aaf417363019c04e86cad3af4191d",
     "experiments/request-contract-v3/results.json": "50a3180d248e41dcb5a9c61c52824765e86d5cef5733296527cb7616602ef1f5",
     "experiments/isolated-contract-v1/results.json": "8fc921fe7ad33c03a88651d35f5e941a3f78dfb43fc8ecc55ba8465bb303a744",
@@ -89,5 +89,9 @@
       "10": "030130647dd36e495426742522c62b75910105a6673c5dd60fc2517c66209047"
     }
   },
-  "scope": "Presentation fidelity and source alignment, not independent scientific validation"
+  "scope": "Presentation fidelity and source alignment, not independent scientific validation",
+  "paper_alignment_review": {
+    "date": "2026-11-01",
+    "change": "Editorial comparison in related work and relocation of auxiliary results to the paper appendix. Slide figures, metrics and wording remain aligned; native deck and its recorded visual review are unchanged."
+  }
 }

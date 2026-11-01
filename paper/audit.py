@@ -246,7 +246,7 @@ def audit(folder):
     eligibility = {m: source(f'experiments/instruction-eligibility-validation-v1/results-{m}.json')['methods']
                    for m in ['qwen3', 'llama32']}
     d = eligibility['qwen3']; n = d['eligible_normalization']['turns']
-    expect('실행 대상 검사 검증에서 Qwen3는 조건문·인용문을 실제 명령으로 적용하는 오류가 줄어 ' +
+    expect('실행할 지시를 구분하는 검사에서 Qwen3는 조건문·인용문을 실제 명령으로 적용하는 오류가 줄어 ' +
            f"{d['baseline_restore']['exact_turns']}/{n}에서 {d['eligible_normalization']['exact_turns']}/{n}으로 증가")
     d = eligibility['llama32']
     assert d['baseline_restore']['exact_turns'] == d['eligible_normalization']['exact_turns'] == 0
@@ -316,7 +316,7 @@ def audit(folder):
     assert sha(ROOT/illustration['figure']) == illustration['figure_sha256']
     for item in illustration['sources']:
         assert sha(ROOT/item['source']) == item['sha256']
-    return {'date':'2026-10-28','passed':True,
+    return {'date':'2026-11-01','passed':True,
             'scope':'Numeric transcription and provenance QA, not independent scientific validation',
             'manuscript_sha256':sha(folder/'manuscript.ko.md'),
             'english_abstract_sha256':hashlib.sha256(abstract.encode()).hexdigest(),
