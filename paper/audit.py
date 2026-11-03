@@ -251,7 +251,7 @@ def audit(folder):
            f"{d['baseline_restore']['exact_turns']}/{n}에서 {d['eligible_normalization']['exact_turns']}/{n}으로 증가")
     d = eligibility['llama32']
     assert d['baseline_restore']['exact_turns'] == d['eligible_normalization']['exact_turns'] == 0
-    expect(f"같은 검증의 Llama는 검사 전후 모두 0/{d['eligible_normalization']['turns']}")
+    expect(f"같은 검증에서 Llama의 전체 상태 일치는 검사 전후 모두 0/{d['eligible_normalization']['turns']}")
     transfer = source('experiments/instruction-transfer-v1/summary.json')
     assert transfer['groups']['normalized_atomic']['unseen']['target_exact'] == 0
     expect('기존 규칙에 없는 복원 표현은 0/8')

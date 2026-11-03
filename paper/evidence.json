@@ -2,7 +2,7 @@
   "date": "2026-11-01",
   "passed": true,
   "scope": "Numeric transcription and provenance QA, not independent scientific validation",
-  "manuscript_sha256": "fdacf9e60bdefc7829fe0eb4d0a74417ee90928225cbdd916ab15a42d9a91d02",
+  "manuscript_sha256": "72b58317e35ad332bb1813eb22b99b19b3a64ac0c513142fc656e2cf36d550b1",
   "english_abstract_sha256": "3644fb6b765719bedb176de8c36a4381a9ad9e2da28614a92ea4b746c5d54395",
   "checked_values": [
     "순차 편집의 위치 보정 LPIPS 평균은 1단계 0.042116, 5단계 0.173505, 10단계 0.364015",
@@ -40,7 +40,7 @@
     "구절을 분리한 비교에서는 Qwen3의 일치 건수가 9/16에서 16/16으로 증가",
     "복원 표현을 확장한 뒤 별도의 요청 32개에 적용한 결과는 Qwen3 14/32에서 28/32, Llama 7/32에서 17/32",
     "실행할 지시를 구분하는 검사에서 Qwen3는 조건문·인용문을 실제 명령으로 적용하는 오류가 줄어 9/16에서 16/16으로 증가",
-    "같은 검증의 Llama는 검사 전후 모두 0/16",
+    "같은 검증에서 Llama의 전체 상태 일치는 검사 전후 모두 0/16",
     "기존 규칙에 없는 복원 표현은 0/8",
     "1323",
     "표정만 지정한 조건과 표정·포즈 조건이 각각 모든 방법에서 16/16",
