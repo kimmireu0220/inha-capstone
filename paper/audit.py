@@ -222,9 +222,9 @@ def audit(folder):
     assert result['observed'] == prior == result['expected'] and result['exact']
     assert result['trace']['ignored_instructions']['jacket']['reason'] == 'quoted_text'
     assert plain['observed'] == {**prior, 'jacket': 'original'} and not plain['exact']
-    expect('모델은 재킷을 ‘원본’, 배경을 ‘유지’로 추출하였다')
-    expect('직전 값인 베이지색을 보존한다')
-    expect('배경은 직접적인 유지 지시에 따라 정원으로 남는다')
+    expect('Qwen3는 재킷을 ‘원본’, 배경을 ‘유지’로 추출하였다')
+    expect('베이지색을 보존하고')
+    expect('직접 유지 지시가 주어진 배경은 정원으로 남긴다')
 
     ablation = source('experiments/request-contract-v3/results.json')['methods']
     for key, label in [('baseline_restore','기준 방법'), ('keep_only','유지 규칙만'),

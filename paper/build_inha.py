@@ -115,6 +115,9 @@ while i<len(lines):
   p=d.add_paragraph(line.replace('`',''));p.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
   if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT
   if line.startswith(('[','https://','http://')):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True;p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+  if re.match(r'^\[\d+\]',line):
+   p.paragraph_format.space_after=Pt(2)
+   for run in p.runs:run.font.size=Pt(9)
  i+=1
 # Keep the final two-column section open; an empty trailing section can
 # produce a page containing only the footer after a full reference column.
