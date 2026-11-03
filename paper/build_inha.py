@@ -105,12 +105,15 @@ while i<len(lines):
      borders=OxmlElement('w:tcBorders');e=OxmlElement('w:bottom');e.set(qn('w:val'),'single');e.set(qn('w:sz'),'5');borders.append(e);c._tc.get_or_add_tcPr().append(borders)
   continue
  if line.startswith('!['):
-  if not wide_figures:columns(1);wide_figures=True
+  if not wide_figures:
+   section=columns(1);wide_figures=True
+   # Break at the full-width separator so the preceding two columns balance.
+   # A NEW_PAGE section can strand a few lines on a separate page.
+   d.paragraphs[-1].paragraph_format.page_break_before=True
   m=re.match(r'!\[(.*?)\]\((.*?)\)',line);shape=d.add_picture(str(SOURCE/m[2]),width=Cm(metadata.get('figure_width_cm',16.8)));shape._inline.docPr.set('descr',m[1]);figure_paragraph=d.paragraphs[-1];figure_paragraph.paragraph_format.first_line_indent=Pt(0);figure_paragraph.alignment=WD_ALIGN_PARAGRAPH.CENTER;figure_paragraph.paragraph_format.keep_with_next=True;figure_paragraph.paragraph_format.line_spacing=1;caption=d.add_paragraph(m[1],'Caption');caption.paragraph_format.first_line_indent=Pt(0)
  elif line.startswith('### '):d.add_paragraph(re.sub(r'^\d+\.(\d+) ',r'\1. ',line[4:]),'Heading 2')
  elif line.startswith('## '):
   text=line[3:];text=re.sub(r'^(\d+)\.',lambda m:roman[int(m[1])-1]+'.',text);d.add_paragraph(text,'Heading 1')
-  if line == '## 3. 제안 방법':d.paragraphs[-1].paragraph_format.page_break_before=True
  else:
   p=d.add_paragraph(line.replace('`',''));p.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
   if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT
