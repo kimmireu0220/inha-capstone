@@ -116,7 +116,7 @@ while i<len(lines):
   if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT
   if line.startswith(('[','https://','http://')):p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.keep_together=True;p.alignment=WD_ALIGN_PARAGRAPH.LEFT
   if re.match(r'^\[\d+\]',line):
-   p.paragraph_format.space_after=Pt(2)
+   p.paragraph_format.space_after=Pt(0)
    for run in p.runs:run.font.size=Pt(9)
  i+=1
 # Keep the final two-column section open; an empty trailing section can

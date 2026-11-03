@@ -126,16 +126,16 @@ def audit(folder):
             assert record.get('passed'), name
 
     references = manuscript.split('## 참고문헌\n', 1)[1]
-    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 13)]
+    assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 16)]
     assert 'Meta, “Llama 3.2 Model Card,”' in references
     repository = 'https://github.com/kimmireu0220/inha-capstone'
     assert repository not in manuscript
     assert not re.search(r'https?://', references)
     assert repository not in references
     cited = {int(number) for group in re.findall(r'\[([0-9,]+)\]', manuscript.split('## 참고문헌\n', 1)[0]) for number in group.split(',')}
-    assert cited == set(range(1, 13)), cited
+    assert cited == set(range(1, 16)), cited
     citation_order = list(dict.fromkeys(int(number) for group in re.findall(r'\[([0-9,]+)\]', manuscript.split('## 참고문헌\n', 1)[0]) for number in group.split(',')))
-    assert citation_order == list(range(1, 13)), citation_order
+    assert citation_order == list(range(1, 16)), citation_order
     body = manuscript.split('## 참고문헌\n', 1)[0]
     for phrase in ['턴', '원응답', '검증 대화 S', '추가 검증 T', '근거로 삼지 않았다',
                    '아직 확인이 필요', '추가 확인이 필요', '추가 검증이 필요', '합산하지 않']:
