@@ -1,6 +1,6 @@
-# 반복 인물 이미지 편집에서 지시 검사를 이용한 상태 갱신
+# 반복 인물 이미지 편집에서 지시 검사를 이용한 편집 조건 관리
 
-State Updates Using Instruction Validation in Iterative Portrait Editing
+Editing Condition Management Using Instruction Verification in Iterative Portrait Editing
 
 저자: 김미르, 장윤석
 
@@ -14,7 +14,7 @@ State Updates Using Instruction Validation in Iterative Portrait Editing
 
 ## Abstract
 
-Iterative portrait editing requires updating new requests while preserving or cancelling earlier conditions. We propose a method that stores editing conditions by attribute and validates changes extracted in a single language-model call. The checks cover value validity, the targets of removal, restoration and preservation, and whether negated, conditional or quoted instructions should be executed. We evaluated 96 synthetic English requests in twelve dialogues by reusing the same initial model responses across methods. Compared with directly applying those responses, the proposed method increased exact state matches from 52/96 to 96/96 for Qwen3-4B and from 27/96 to 93/96 for Llama-3.2-3B-Instruct. Each state update required one model call. A comparison of eighteen images generated from two real-person photographs and three dialogues reduced the mean final prompt length from 204.00 to 122.67 tokens by replacing full request histories with validated stored conditions. A post-hoc Qwen2.5-VL-7B evaluation found 34/36 satisfied target attributes for full histories and 36/36 for validated conditions. Facial preservation metrics varied across input methods. The results demonstrate the effect of checking extracted values against instruction actions and scope within six editing attributes, specified English forms and a predefined state-update policy.
+Iterative portrait editing requires updating new requests while preserving or cancelling earlier conditions. We propose a method that stores editing conditions by attribute and verifies changes extracted in a single language-model call. The checks cover value validity, the targets of removal, restoration and preservation, and whether negated, conditional or quoted instructions should be executed. We evaluated 96 synthetic English requests in twelve dialogues by reusing the same initial model responses across methods. Compared with directly applying those responses, the proposed method increased exact state matches from 52/96 to 96/96 for Qwen3-4B and from 27/96 to 93/96 for Llama-3.2-3B-Instruct. Each state update required one model call. A comparison of eighteen images generated from two real-person photographs and three dialogues reduced the mean final prompt length from 204.00 to 122.67 tokens by replacing full request histories with verified stored conditions. A post-hoc Qwen2.5-VL-7B evaluation found 34/36 satisfied target attributes for full histories and 36/36 for verified conditions. Facial preservation metrics varied across input methods. The results demonstrate the effect of checking extracted values against instruction actions and scope within six editing attributes, specified English forms and a predefined state-update policy.
 
 ## 1. 서론
 
@@ -72,11 +72,11 @@ Self-Refine은 모델이 생성한 첫 응답에 대해 스스로 피드백을 �
 
 ## 3. 제안 방법
 
+![그림 1 변경 내용 추출과 지시 검사를 이용한 편집 조건 구성](figures/instruction-pipeline.png)
+
 ### 3.1 편집 상태와 전체 처리 구조
 
 편집 상태는 재킷·상의·핀·목걸이·배경·소품의 여섯 항목으로 구성한다. 각 항목은 미리 정한 속성값 또는 ‘원본’을 가지며, 제거 가능한 항목에는 ‘없음’을 허용한다. ‘원본’은 최초 사진에 나타난 모습, ‘없음’은 대상의 부재를 뜻한다. 처음에는 모든 항목을 ‘원본’으로 설정하고 요청을 처리할 때마다 상태를 갱신한다.
-
-![그림 1 변경 내용 추출과 지시 검사를 이용한 편집 조건 구성](figures/instruction-pipeline.png)
 
 그림 1은 전체 처리 구조이다. 언어 모델에는 새 요청과 고정된 지침·예시를 입력한다. 모델은 변경할 항목과 값을 JSON으로 반환한다. 직전 편집 상태는 코드 검사 단계에서 참조하며, 모델의 입력에는 포함하지 않는다. 프로그램은 요청에 대한 추출 응답을 검사하여 상태를 갱신하고, 그 결과를 이미지 생성 프롬프트로 변환한다.
 
@@ -138,7 +138,6 @@ Self-Refine은 모델이 생성한 첫 응답에 대해 스스로 피드백을 �
 
 요청·정답·모델 응답, 생성 이미지, 실행 설정과 비교별 상세 결과는 연구 저장소에 공개하였다. 코드로 구성한 상태 검사 1323개를 수행하고, 기존 저장 응답 24개 및 주 검증의 첫 응답 192개를 실제 실행 코드에 재생하여 실험 구현과 대조하였다. 이 검사는 구현의 일치 여부를 확인한 것이다.
 
-https://github.com/kimmireu0220/inha-capstone
 
 ## 5. 실험 결과
 
@@ -278,26 +277,26 @@ Llama의 최종 세 오류는 추출값 검사가 잘못된 변경을 막은 뒤
 ## 참고문헌
 
 
-[1] T. Brooks, A. Holynski, and A. A. Efros, “InstructPix2Pix: Learning to Follow Image Editing Instructions,” CVPR, 2023. https://arxiv.org/abs/2211.09800
+[1] T. Brooks, A. Holynski, and A. A. Efros, “InstructPix2Pix: Learning to Follow Image Editing Instructions,” CVPR, 2023.
 
-[2] X. Cui et al., “ChatEdit: Towards Multi-Turn Interactive Facial Image Editing via Dialogue,” EMNLP, pp. 14567–14583, 2023. https://aclanthology.org/2023.emnlp-main.899/
+[2] X. Cui et al., “ChatEdit: Towards Multi-Turn Interactive Facial Image Editing via Dialogue,” EMNLP, pp. 14567–14583, 2023.
 
-[3] K. Zhang et al., “MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing,” NeurIPS, vol. 36, 2023. https://papers.neurips.cc/paper_files/paper/2023/hash/64008fa30cba9b4d1ab1bd3bd3d57d61-Abstract-Datasets_and_Benchmarks.html
+[3] K. Zhang et al., “MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing,” NeurIPS, vol. 36, 2023.
 
-[4] S. Kim et al., “Efficient Dialogue State Tracking by Selectively Overwriting Memory,” ACL, pp. 567–582, 2020. https://aclanthology.org/2020.acl-main.53/
+[4] S. Kim et al., “Efficient Dialogue State Tracking by Selectively Overwriting Memory,” ACL, pp. 567–582, 2020.
 
-[5] A. Madaan et al., “Self-Refine: Iterative Refinement with Self-Feedback,” 2023. https://arxiv.org/abs/2303.17651
+[5] A. Madaan et al., “Self-Refine: Iterative Refinement with Self-Feedback,” 2023.
 
-[6] A. Yang et al., “Qwen3 Technical Report,” arXiv:2505.09388, 2025. https://arxiv.org/abs/2505.09388
+[6] A. Yang et al., “Qwen3 Technical Report,” arXiv:2505.09388, 2025.
 
-[7] Meta, “Llama 3.2 Model Card,” 2024. https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+[7] Meta, “Llama 3.2 Model Card,” 2024.
 
-[8] Monstera Production, “Confident black man in studio,” Pexels, photo 6311573. https://www.pexels.com/photo/confident-black-man-in-studio-6311573/
+[8] Monstera Production, “Confident black man in studio,” Pexels, photo 6311573.
 
-[9] Monstera Production, “Cheerful black woman in studio,” Pexels, photo 6311581. https://www.pexels.com/photo/cheerful-black-woman-in-studio-6311581/
+[9] Monstera Production, “Cheerful black woman in studio,” Pexels, photo 6311581.
 
-[10] R. Zhang et al., “The Unreasonable Effectiveness of Deep Features as a Perceptual Metric,” CVPR, 2018. https://arxiv.org/abs/1801.03924
+[10] R. Zhang et al., “The Unreasonable Effectiveness of Deep Features as a Perceptual Metric,” CVPR, 2018.
 
-[11] InsightFace Contributors, “Model Zoo,” InsightFace. https://github.com/deepinsight/insightface/tree/master/model_zoo
+[11] InsightFace Contributors, “Model Zoo,” InsightFace.
 
-[12] S. Bai et al., “Qwen2.5-VL Technical Report,” arXiv:2502.13923, 2025. https://arxiv.org/abs/2502.13923
+[12] S. Bai et al., “Qwen2.5-VL Technical Report,” arXiv:2502.13923, 2025.

@@ -65,8 +65,8 @@ while i<len(lines):
  if not line:i+=1;continue
  if wide_figures and not line.startswith('!['):
   columns(2);wide_figures=False
- if line.startswith('### ') and next((x for x in lines[i+1:] if x.strip()),'').startswith('!['):
-  columns(1);wide_figures=True
+ if line.startswith(('## ', '### ')) and next((x for x in lines[i+1:] if x.strip()),'').startswith('!['):
+  section=columns(1);wide_figures=True
  if line.startswith('|'):
   rows=[]
   while i<len(lines) and lines[i].startswith('|'):
@@ -110,6 +110,7 @@ while i<len(lines):
  elif line.startswith('### '):d.add_paragraph(re.sub(r'^\d+\.(\d+) ',r'\1. ',line[4:]),'Heading 2')
  elif line.startswith('## '):
   text=line[3:];text=re.sub(r'^(\d+)\.',lambda m:roman[int(m[1])-1]+'.',text);d.add_paragraph(text,'Heading 1')
+  if line == '## 3. 제안 방법':d.paragraphs[-1].paragraph_format.page_break_before=True
  else:
   p=d.add_paragraph(line.replace('`',''));p.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
   if re.search(r'[a-f0-9]{40}',line):p.alignment=WD_ALIGN_PARAGRAPH.LEFT

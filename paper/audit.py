@@ -129,7 +129,8 @@ def audit(folder):
     assert re.findall(r'^\[(\d+)\]', references, re.M) == [str(n) for n in range(1, 13)]
     assert 'Meta, “Llama 3.2 Model Card,”' in references
     repository = 'https://github.com/kimmireu0220/inha-capstone'
-    assert repository in manuscript.split('### 4.3 재현 자료\n', 1)[1]
+    assert repository not in manuscript
+    assert not re.search(r'https?://', references)
     assert repository not in references
     cited = {int(number) for group in re.findall(r'\[([0-9,]+)\]', manuscript.split('## 참고문헌\n', 1)[0]) for number in group.split(',')}
     assert cited == set(range(1, 13)), cited
