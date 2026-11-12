@@ -2,7 +2,7 @@
 
 Instruction Verification-Based Editing Condition Construction for Iterative Portrait Editing
 
-저자: 김미르, 장윤석
+저자: 김미르, 장윤석 (Mi Reu Kim, Yun Seok Chang)
 
 지도교수: 안남혁
 
