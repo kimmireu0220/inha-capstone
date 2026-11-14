@@ -89,20 +89,22 @@ def start_job(pid,revision,kind,request='',options=None):
  except Exception:GPU.release();raise
 
 def worker(job,d,request):
- p=folder(d['id']);jp=p/job['id'];jp.mkdir();result=None
+ p=folder(d['id']);jp=p/job['id'];jp.mkdir()
  try:
+  status='done'
+  message='새 이미지가 완성됐어요.'
   if job['kind']=='chat':
    proc=subprocess.run([str(REPO/'.venv-local-prompt/bin/python'),str(ROOT/'state_model.py')],input=json.dumps({'state':d['state'],'request':request},ensure_ascii=False),text=True,capture_output=True,timeout=120)
    (jp/'model.log').write_text(proc.stdout+'\n'+proc.stderr)
    if proc.returncode:raise ValueError('요청 해석에 실패했습니다. 다시 시도하거나 현재 설정을 직접 수정해주세요.')
    raw=proc.stdout.strip();a=raw.find('{');b=raw.rfind('}');parsed=json.loads(raw[a:b+1])
-   if parsed.get('clarification'):
-    with LOCK:
-     latest=read(d['id']);latest['active_job']=None;latest['revision']+=1
-     latest['messages'].append({'request':request,'state':latest['state'],'reply':str(parsed['clarification'])[:200],'applied':False,'created':time.time()})
-     save(p/'project.json',latest);job.update(status='needs_input',message=str(parsed['clarification'])[:200])
-    return
-   result=valid_state(parsed['state'])
+   clarification=bool(parsed.get('clarification'))
+   if clarification:
+    status='needs_input'
+    message=str(parsed['clarification'])[:200]
+   else:
+    result=valid_state(parsed['state'])
+    message=parsed.get('message','적용 완료')
   else:
    prompt=prompt_for(d['state']);(jp/'prompt.txt').write_text(prompt)
    seed=job['seed'] if job['seed'] is not None else secrets.randbelow(2147483647)
@@ -116,10 +118,12 @@ def worker(job,d,request):
   with LOCK:
    latest=read(d['id'])
    if job['kind']=='chat':
-    latest['state']=result;latest['messages'].append({'request':request,'state':result,'reply':parsed.get('message','적용 완료'),'applied':True,'created':time.time()})
+    if not clarification:
+     latest['state']=result
+    latest['messages'].append({'request':request,'state':latest['state'],'reply':message,'applied':not clarification,'created':time.time()})
    else:latest['versions'].append(result);latest['current_version']=result['id']
    latest['active_job']=None;latest['revision']+=1;save(p/'project.json',latest)
-   job.update(status='done',message=parsed.get('message','적용 완료') if job['kind']=='chat' else '새 이미지가 완성됐어요.')
+   job.update(status=status,message=message)
  except Exception as e:
   with LOCK:
    latest=read(d['id']);latest['active_job']=None;latest['revision']+=1;save(p/'project.json',latest)

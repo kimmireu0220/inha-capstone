@@ -36,7 +36,7 @@ mkdir -p .codex-build
 
 검증: `local-studio/smoke.py`는 실제 모델을 호출해 한국어 요청→생성→결과 조회→설정 수정→버전 복원→오래된 revision 거부를 확인한다. 실행할 때 실제 생성1회와 새 로컬 작업이 생긴다. 생성까지 약1~3분 이상 걸릴 수 있다. 로그와 결과는 data에 보존한다.
 
-두 모드 입력·분기·시드 검사: `.venv-metrics/bin/python local-studio/checks/test_generation_modes.py`. 실제 웹 편집기 실험의 다인물 비교는 [studio-multiperson-v1](../experiments/studio-multiperson-v1/RESULTS.md)에 기록한다. P04 예비 비교는 [studio-policy-v1](../experiments/studio-policy-v1/PROTOCOL.md)에 보존한다. 기존 CLI 기반 비교와 별도 실험이다.
+두 모드 입력·분기·시드 및 요청 작업 완료 검사: `.venv-metrics/bin/python local-studio/checks/test_generation_modes.py`. 모델 실행을 대체하여 정상 적용·확인 질문·실패 시 상태와 이력 보존, revision 갱신과 작업 잠금 해제를 확인한다. 정상 적용과 확인 질문은 같은 완료 경로에서 상태를 저장한다. 실제 웹 편집기 실험의 다인물 비교는 [studio-multiperson-v1](../experiments/studio-multiperson-v1/RESULTS.md)에 기록한다. P04 예비 비교는 [studio-policy-v1](../experiments/studio-policy-v1/PROTOCOL.md)에 보존한다. 기존 CLI 기반 비교와 별도 실험이다.
 
 요청 해석 개선: 명확한 기본 표현은 동작 단위로 해석하고, 다른 표현은 모델이 구조화된 동작을 반환한다. 원본 복원은 색을 추정하지 않고 original로 지정한다. 모호한 이전 시점/취소 요청은 설정을 유지하고 이전 버전 선택을 안내한다. 질문은 대화 이력에도 저장된다. 최신 회귀 확인은 checks/RECHECK.md 참고.
 
